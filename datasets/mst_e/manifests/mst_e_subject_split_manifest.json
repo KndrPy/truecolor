@@ -40,6 +40,6 @@
       "maximum_mst": 8
     }
   ],
-  "fold_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_subject_disjoint_folds.parquet",
-  "loso_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_leave_one_subject_out_protocol.csv"
+  "fold_output": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/canonical_metadata/mst_e_subject_disjoint_folds.parquet",
+  "loso_output": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/canonical_metadata/mst_e_leave_one_subject_out_protocol.csv"
 }

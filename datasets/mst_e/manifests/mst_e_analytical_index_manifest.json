@@ -25,6 +25,6 @@
     9,
     10
   ],
-  "csv_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_analytical_media_index.csv",
-  "parquet_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_analytical_media_index.parquet"
+  "csv_output": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/canonical_metadata/mst_e_analytical_media_index.csv",
+  "parquet_output": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/canonical_metadata/mst_e_analytical_media_index.parquet"
 }

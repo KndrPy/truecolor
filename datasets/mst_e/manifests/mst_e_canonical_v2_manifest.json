@@ -16,6 +16,6 @@
     "duplicate_identifier_conflict": 6,
     "corrected_with_overlay": 2
   },
-  "csv_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_media_records_canonical_v2.csv",
-  "parquet_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_media_records_canonical_v2.parquet"
+  "csv_output": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/canonical_metadata/mst_e_media_records_canonical_v2.csv",
+  "parquet_output": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/canonical_metadata/mst_e_media_records_canonical_v2.parquet"
 }
