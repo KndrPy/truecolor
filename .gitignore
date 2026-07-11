@@ -7,3 +7,38 @@ __pycache__/
 data
 data/
 *.egg-info/
+
+# Raw and restricted research data
+data/
+datasets/
+raw/
+restricted/
+downloads/
+uploads/
+
+# Medical and biometric image formats
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+
+# Dataset archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Model and array artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+*.parquet
+
+# Local data roots or symlinks
+truecolor-data/
+data-local/
