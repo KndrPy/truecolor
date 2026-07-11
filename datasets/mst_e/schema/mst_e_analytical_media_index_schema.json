@@ -1,0 +1,111 @@
+{
+  "dataset": "MST-E",
+  "row_semantics": "One canonical row per physical media identifier; no media files or subject-level records included.",
+  "columns": [
+    {
+      "name": "media_id",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "physical_relative_path",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "subject_name",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "MST",
+      "dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "media_kind",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "lighting",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "pose",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "mask",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "source_row_count",
+      "dtype": "int64",
+      "nullable": false
+    },
+    {
+      "name": "source_row_numbers",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "duplicate_source_identifier",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "conflicting_fields",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "overlay_applied",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "physical_file_present",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "eligible_for_mst_analysis",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "eligible_for_pose_analysis",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "eligible_for_lighting_analysis",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "eligible_for_mask_analysis",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "record_origin",
+      "dtype": "str",
+      "nullable": false
+    },
+    {
+      "name": "excluded_redundant_binary_copy",
+      "dtype": "bool",
+      "nullable": false
+    },
+    {
+      "name": "analysis_included",
+      "dtype": "bool",
+      "nullable": false
+    }
+  ]
+}

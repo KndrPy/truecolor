@@ -1,0 +1,30 @@
+{
+  "official_unique_media": 1543,
+  "supplemental_media": 1,
+  "total_index_rows": 1544,
+  "analysis_included_rows": 1544,
+  "redundant_binary_copy_rows": 0,
+  "mst_analysis_rows": 1544,
+  "pose_analysis_rows": 1541,
+  "lighting_analysis_rows": 1543,
+  "mask_analysis_rows": 1542,
+  "media_kind_counts": {
+    "image": 1510,
+    "video": 34
+  },
+  "subject_count": 19,
+  "mst_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "csv_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_analytical_media_index.csv",
+  "parquet_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_analytical_media_index.parquet"
+}

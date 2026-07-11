@@ -1,0 +1,45 @@
+{
+  "subjects": 19,
+  "media_rows": 1544,
+  "development_folds": 5,
+  "primary_evaluation": "Leave-one-subject-out across all 19 subjects",
+  "fold_summary": [
+    {
+      "development_fold": 0,
+      "media_count": 322,
+      "subject_count": 4,
+      "minimum_mst": 3,
+      "maximum_mst": 10
+    },
+    {
+      "development_fold": 1,
+      "media_count": 264,
+      "subject_count": 3,
+      "minimum_mst": 2,
+      "maximum_mst": 6
+    },
+    {
+      "development_fold": 2,
+      "media_count": 320,
+      "subject_count": 4,
+      "minimum_mst": 2,
+      "maximum_mst": 7
+    },
+    {
+      "development_fold": 3,
+      "media_count": 317,
+      "subject_count": 4,
+      "minimum_mst": 1,
+      "maximum_mst": 9
+    },
+    {
+      "development_fold": 4,
+      "media_count": 321,
+      "subject_count": 4,
+      "minimum_mst": 2,
+      "maximum_mst": 8
+    }
+  ],
+  "fold_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_subject_disjoint_folds.parquet",
+  "loso_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_leave_one_subject_out_protocol.csv"
+}

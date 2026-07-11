@@ -1,0 +1,21 @@
+{
+  "source_rows": 1546,
+  "unique_identifiers_after_overlay": 1543,
+  "physical_file_present_rows": 1546,
+  "missing_physical_rows": 0,
+  "overlay_applied_rows": 2,
+  "duplicate_identifier_rows": 6,
+  "analysis_eligible_base_rows": 1546,
+  "analysis_eligible_unique_media_rows": 1540,
+  "media_kind_counts": {
+    "image": 1512,
+    "video": 34
+  },
+  "quality_status_counts": {
+    "valid_unique": 1538,
+    "duplicate_identifier_conflict": 6,
+    "corrected_with_overlay": 2
+  },
+  "csv_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_media_records_canonical_v2.csv",
+  "parquet_output": "/mnt/d/truecolor-data/raw/mst_e/canonical_metadata/mst_e_media_records_canonical_v2.parquet"
+}
