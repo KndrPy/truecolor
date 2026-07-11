@@ -1,0 +1,15 @@
+{
+  "images_checked": 665,
+  "valid_images": 665,
+  "invalid_images": 0,
+  "minimum_width": 194,
+  "maximum_width": 4032,
+  "minimum_height": 97,
+  "maximum_height": 4032,
+  "image_modes": {
+    "RGB": 665
+  },
+  "formats": {
+    "JPEG": 665
+  }
+}

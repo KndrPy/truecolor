@@ -1,0 +1,22 @@
+{
+  "dataset": "MST-E",
+  "evaluated_at_utc": "2026-07-11T09:32:29.721753+00:00",
+  "status": "READY_FOR_SUBJECT_DISJOINT_MST_CONSISTENCY_ANALYSIS",
+  "source_preserved": true,
+  "corrections_applied_through_overlay": true,
+  "raw_source_csv_modified": false,
+  "identity_leakage_control": "Subject-disjoint folds and leave-one-subject-out evaluation",
+  "primary_approved_uses": [
+    "MST ordinal consistency analysis",
+    "lighting robustness analysis",
+    "pose robustness analysis",
+    "mask robustness analysis",
+    "golden versus not-ideal comparison"
+  ],
+  "prohibited_interpretations": [
+    "MST-E labels are not instrument-measured melanin values.",
+    "MST-E does not establish absolute spectral reflectance ground truth.",
+    "Image-level random splitting is invalid because it leaks identity."
+  ],
+  "missing_required_manifests": []
+}

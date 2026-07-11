@@ -1,0 +1,21 @@
+{
+  "dataset": "DDI",
+  "evaluated_at_utc": "2026-07-11T09:50:11.738889+00:00",
+  "status": "READY_FOR_EXTERNAL_DERMATOLOGY_ROBUSTNESS_ANALYSIS",
+  "image_count": 656,
+  "metadata_rows": 656,
+  "skincon_annotation_rows": 656,
+  "primary_uses": [
+    "Pathology-confirmed external evaluation",
+    "Skin-tone-stratified model evaluation",
+    "Malignancy classification robustness",
+    "Dermatologic morphology analysis through SKINCON"
+  ],
+  "required_constraints": [
+    "Do not redistribute images",
+    "Do not commit raw images to GitHub",
+    "Do not use image-level leakage-prone splits where patient identifiers are available",
+    "DDI skin-tone categories are not instrument-measured pigmentation values"
+  ],
+  "missing_required_manifests": []
+}

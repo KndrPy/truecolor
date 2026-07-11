@@ -1,0 +1,12 @@
+{
+  "root": "/mnt/d/truecolor-data/raw/ddi2/data",
+  "total_files": 667,
+  "image_count": 665,
+  "image_counts_by_directory": {
+    "Final DDI2 Asian Photos (no metadata)": 665
+  },
+  "non_image_files": [
+    "desktop.ini",
+    "final_DDI2_Asian_spreadsheet.xlsx"
+  ]
+}

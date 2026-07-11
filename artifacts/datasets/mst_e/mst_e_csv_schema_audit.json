@@ -1,0 +1,59 @@
+[
+  {
+    "relative_path": "__MACOSX/mst-e_data/._golden_and_adversarial_mst-e_image_ids.csv",
+    "status": "read_successfully",
+    "encoding": "cp1252",
+    "rows": 0,
+    "columns": 1,
+    "column_names": [
+      "Unnamed: 0"
+    ],
+    "decoding_attempt_errors": [
+      "utf-8-sig: 'utf-8' codec can't decode byte 0xb0 in position 37: invalid start byte",
+      "utf-8: 'utf-8' codec can't decode byte 0xb0 in position 37: invalid start byte"
+    ]
+  },
+  {
+    "relative_path": "__MACOSX/mst-e_data/._mst-e_image_details.csv",
+    "status": "read_successfully",
+    "encoding": "cp1252",
+    "rows": 0,
+    "columns": 1,
+    "column_names": [
+      "Unnamed: 0"
+    ],
+    "decoding_attempt_errors": [
+      "utf-8-sig: 'utf-8' codec can't decode byte 0xaf in position 37: invalid start byte",
+      "utf-8: 'utf-8' codec can't decode byte 0xaf in position 37: invalid start byte"
+    ]
+  },
+  {
+    "relative_path": "mst-e_data/golden_and_adversarial_mst-e_image_ids.csv",
+    "status": "read_successfully",
+    "encoding": "utf-8-sig",
+    "rows": 19,
+    "columns": 3,
+    "column_names": [
+      "subject",
+      "golden_image_id",
+      "not_ideal_image_id"
+    ],
+    "decoding_attempt_errors": []
+  },
+  {
+    "relative_path": "mst-e_data/mst-e_image_details.csv",
+    "status": "read_successfully",
+    "encoding": "utf-8-sig",
+    "rows": 1546,
+    "columns": 6,
+    "column_names": [
+      "image_ID",
+      "pose",
+      "lighting",
+      "mask",
+      "subject_name",
+      "MST"
+    ],
+    "decoding_attempt_errors": []
+  }
+]

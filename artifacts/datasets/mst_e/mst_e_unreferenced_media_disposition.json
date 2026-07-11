@@ -1,0 +1,16 @@
+{
+  "Copy of PXL_20220922_141158574.jpg": {
+    "classification": "redundant_exact_binary_copy",
+    "analysis_eligible": false,
+    "delete_from_governed_source": false,
+    "reason": "Preserve source package; exclude redundant copy from analytical inventory."
+  },
+  "PXL_20220922_173738996.jpg": {
+    "classification": "reconciled_to_source_row_1352",
+    "analysis_eligible": true
+  },
+  "PXL_20220922_183259162.jpg": {
+    "classification": "supplemental_golden_reference",
+    "analysis_eligible": "golden_adversarial_MST_analysis_only"
+  }
+}

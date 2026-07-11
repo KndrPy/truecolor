@@ -1,0 +1,11 @@
+{
+  "metadata_rows": 16577,
+  "unique_urls": 16536,
+  "downloaded_image_files": 0,
+  "candidate_roots": [
+    "/mnt/d/truecolor-data/raw/fitzpatrick17k/images",
+    "/mnt/d/truecolor-data/raw/fitzpatrick17k/source/images",
+    "/mnt/d/truecolor-data/raw/fitzpatrick17k/data"
+  ],
+  "complete_by_simple_count": false
+}

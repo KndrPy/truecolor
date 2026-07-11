@@ -1,0 +1,27 @@
+{
+  "dataset": "DDI-2",
+  "evaluated_at_utc": "2026-07-11T10:12:24.418720+00:00",
+  "status": "READY_FOR_PATIENT_DISJOINT_DERMATOLOGY_ROBUSTNESS_ANALYSIS",
+  "source_image_count": 665,
+  "source_metadata_rows": 665,
+  "canonical_linked_rows": 665,
+  "analysis_eligible_rows": 665,
+  "patient_count": 550,
+  "filename_overlay_rows": 4,
+  "patient_leakage_detected": false,
+  "primary_uses": [
+    "Patient-disjoint dermatology evaluation",
+    "Fitzpatrick-stratified robustness analysis",
+    "Benign versus malignant analysis",
+    "Anatomical-site robustness analysis",
+    "Capture-artifact and crop robustness analysis",
+    "Diagnosis and presentation stratification"
+  ],
+  "required_constraints": [
+    "Do not redistribute images",
+    "Do not commit raw images or patient-linked metadata to public GitHub",
+    "Use deidentified_patient_id for every experimental partition",
+    "Do not perform image-level random splitting",
+    "Fitzpatrick type is not an instrument-measured pigmentation value"
+  ]
+}
