@@ -10,7 +10,6 @@ data/
 
 # Raw and restricted research data
 data/
-datasets/
 raw/
 restricted/
 downloads/
@@ -42,3 +41,25 @@ uploads/
 # Local data roots or symlinks
 truecolor-data/
 data-local/
+# Repository dataset metadata is tracked; raw datasets are not
+datasets/raw/
+datasets/images/
+datasets/archives/
+datasets/restricted/
+datasets/cache/
+datasets/**/*.jpg
+datasets/**/*.jpeg
+datasets/**/*.png
+datasets/**/*.webp
+datasets/**/*.tif
+datasets/**/*.tiff
+datasets/**/*.zip
+datasets/**/*.tar
+datasets/**/*.tar.gz
+datasets/**/*.tgz
+datasets/**/*.7z
+datasets/**/*.npy
+datasets/**/*.npz
+datasets/**/*.pt
+datasets/**/*.pth
+datasets/**/*.ckpt

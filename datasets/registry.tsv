@@ -1,0 +1,15 @@
+dataset	primary_role	access_mode	raw_redistribution	github_policy
+ISSA	measured spectral reflectance	public download	review source terms	manifest-only
+Camera_CSS	camera spectral sensitivity	public download	review source terms	manifest-only
+CIE	official colorimetry	public download	per official terms	small authoritative files permitted
+Hyper-Skin	hyperspectral reconstruction	access request	no assumed redistribution	code and access record only
+Fitzpatrick17k	domain robustness	URL manifest plus request	no blanket image redistribution	metadata and scripts only
+CleanPatrick	corrected Fitzpatrick metadata	public download	metadata license only	metadata permitted with license
+MST-E	ordinal skin-tone calibration	official download	review included license	manifest-only until verified
+CHROMA-FIT	measured tone ground truth	manual or author access	do not assume permission	access record only
+PASSION	dark-skin teledermatology	request access	reposting prohibited	never commit raw data
+FairFace	demographic robustness	public download	CC BY 4.0 reported	manifest-only due scale and biometric content
+DDI	pathology-confirmed evaluation	Stanford Redivis	terms-controlled	never commit without explicit permission
+DDI-2	Asian biopsy-proven evaluation	Stanford Redivis	terms-controlled	never commit without explicit permission
+SKINCON	dermatology concept labels	public annotations	inherits upstream image rights	annotations and manifest only
+SCIN	teledermatology plus eFST/eMST	public cloud bucket	custom data-use license	manifest-only

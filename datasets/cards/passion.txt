@@ -1,0 +1,3 @@
+Dataset images require access through the official PASSION website.
+The dataset is non-commercial and may not be reposted.
+Do not record or commit the direct dataset download URL.

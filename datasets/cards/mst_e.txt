@@ -1,0 +1,3 @@
+Obtain MST-E from the official Google Skin Tone site.
+Preserve the downloaded license and version metadata.
+Do not use third-party mirrors.

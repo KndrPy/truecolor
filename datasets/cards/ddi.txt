@@ -1,0 +1,3 @@
+Obtain DDI through Stanford AIMI / Redivis.
+Preserve the accepted terms, dataset DOI and download receipt.
+Do not republish the image files.

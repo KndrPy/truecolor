@@ -1,0 +1,3 @@
+Obtain DDI-2 through the official Stanford dataset portal.
+Preserve the accepted terms and download receipt.
+Do not republish the image files.

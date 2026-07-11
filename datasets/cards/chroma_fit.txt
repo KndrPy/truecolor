@@ -1,0 +1,3 @@
+CHROMA-FIT is a priority measured-skin-tone dataset.
+Locate the official dataset release or request access from the authors.
+Do not use unofficial mirrors and do not assume redistribution permission.
