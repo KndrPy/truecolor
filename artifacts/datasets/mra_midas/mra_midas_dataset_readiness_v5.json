@@ -1,0 +1,32 @@
+{
+  "analysis_eligible_records": 3404,
+  "canonical_csv": "${TRUECOLOR_DATA_ROOT}/raw/mra_midas/canonical_metadata/mra_midas_metadata_canonical_v5.csv",
+  "canonical_parquet": "${TRUECOLOR_DATA_ROOT}/raw/mra_midas/canonical_metadata/mra_midas_metadata_canonical_v5.parquet",
+  "canonical_status": "READY_WITH_12_DOCUMENTED_MISSING_IMAGES",
+  "correction_overlay": "${TRUECOLOR_DATA_ROOT}/manifests/mra_midas_filename_correction_overlay_v5.csv",
+  "dataset": "MRA-MIDAS",
+  "eligible_for_patient_disjoint_analysis": true,
+  "filename_overlay_linked_records": 1,
+  "generated_at_utc": "2026-07-11T11:52:47.421191+00:00",
+  "limitations": [
+    "Twelve workbook records have no corresponding physical image in the distributed package.",
+    "Seven physical files are notebook checkpoint artifacts.",
+    "Five non-checkpoint physical files are unassigned alternate or extra variants and are excluded pending authoritative metadata.",
+    "The dataset does not provide instrument-grounded skin color or colorimeter-based ITA labels."
+  ],
+  "missing_physical_image_records": 12,
+  "missing_records": "${TRUECOLOR_DATA_ROOT}/manifests/mra_midas_missing_physical_images_v5.csv",
+  "notebook_checkpoint_artifacts": 7,
+  "physical_file_disposition": "${TRUECOLOR_DATA_ROOT}/manifests/mra_midas_unused_physical_file_disposition_v5.csv",
+  "physical_image_files_in_package": 3416,
+  "selected_overlay_mapping": {
+    "basis": "same s-prd identifier, same .jpeg extension, unique match after retaining extension and allowing _cropped suffix",
+    "confidence": "CERTAIN",
+    "physical_filename": "s-prd-653440846_cropped.jpeg",
+    "source_filename": "s-prd-653440846.jpeg"
+  },
+  "source_workbook_rows": 3416,
+  "strictly_linked_records": 3403,
+  "total_linked_records": 3404,
+  "unassigned_extra_physical_variants": 5
+}

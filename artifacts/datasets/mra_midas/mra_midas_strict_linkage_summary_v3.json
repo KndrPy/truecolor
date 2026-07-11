@@ -1,0 +1,11 @@
+{
+  "dataset": "MRA-MIDAS",
+  "physical_image_files": 3416,
+  "same_numeric_id_candidate_pairs": 2,
+  "source_workbook_rows": 3416,
+  "status": "RECONCILIATION_REQUIRED",
+  "strictly_assigned_rows": 3403,
+  "unique_one_to_one_numeric_candidates": 0,
+  "unresolved_workbook_rows": 13,
+  "unused_physical_files": 13
+}

@@ -1,0 +1,16 @@
+{
+  "dataset": "MRA-MIDAS",
+  "format_counts": {
+    "JPEG": 3416
+  },
+  "image_file_count": 3416,
+  "invalid_image_count": 0,
+  "maximum_height": 4096,
+  "maximum_width": 5184,
+  "minimum_height": 240,
+  "minimum_width": 292,
+  "mode_counts": {
+    "RGB": 3416
+  },
+  "valid_image_count": 3416
+}
