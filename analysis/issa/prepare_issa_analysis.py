@@ -23,6 +23,7 @@ EXPECTED_MEASUREMENTS = 15_256
 EXPECTED_SUBJECTS = 2_107
 WAVELENGTHS = list(range(400, 701, 10))
 TARGET_COLUMNS = ["L*", "a*", "b*"]
+FEATURE_RENAME = {wavelength: f"reflectance_{wavelength}" for wavelength in WAVELENGTHS}
 METADATA_RENAME = {
     "A": "record_number",
     "B": "origin_code",
@@ -87,7 +88,7 @@ def main() -> None:
         raise ValueError(f"Missing recovered ISSA columns: {missing}")
 
     selected = frame[required].copy()
-    selected.rename(columns=METADATA_RENAME, inplace=True)
+    selected.rename(columns={**METADATA_RENAME, **FEATURE_RENAME}, inplace=True)
 
     for column in ["origin_code", "subject_number", "record_number"]:
         selected[column] = pd.to_numeric(selected[column], errors="raise").astype("int64")
@@ -102,7 +103,37 @@ def main() -> None:
     if unique_subjects != EXPECTED_SUBJECTS:
         raise ValueError(f"Expected {EXPECTED_SUBJECTS} subjects, found {unique_subjects}")
 
-    analysis_columns = [
+    feature_columns = [FEATURE_RENAME[wavelength] for wavelength in WAVELENGTHS]
+    required_complete_columns = [
+        "record_number",
+        "origin_code",
+        "subject_number",
+        "subject_id",
+        *feature_columns,
+        *TARGET_COLUMNS,
+    ]
+
+    numeric_columns = [*feature_columns, *TARGET_COLUMNS]
+    selected[numeric_columns] = selected[numeric_columns].apply(pd.to_numeric, errors="raise")
+    null_counts = selected[required_complete_columns].isna().sum()
+    if int(null_counts.sum()) > 0:
+        raise ValueError(
+            "Required analysis columns contain null values: "
+            f"{null_counts[null_counts.gt(0)].to_dict()}"
+        )
+
+    X = selected[feature_columns].to_numpy(dtype=np.float64)
+    Y = selected[TARGET_COLUMNS].to_numpy(dtype=np.float64)
+    subject_ids = selected["subject_id"].astype(str).to_numpy()
+
+    if not np.isfinite(X).all() or not np.isfinite(Y).all():
+        raise ValueError("Non-finite values found in ISSA matrices")
+    if X.shape != (EXPECTED_MEASUREMENTS, len(WAVELENGTHS)):
+        raise ValueError(f"Unexpected X shape: {X.shape}")
+    if Y.shape != (EXPECTED_MEASUREMENTS, len(TARGET_COLUMNS)):
+        raise ValueError(f"Unexpected Y shape: {Y.shape}")
+
+    ordered_columns = [
         "record_number",
         "origin_code",
         "subject_number",
@@ -116,27 +147,10 @@ def main() -> None:
         "start_wavelength_nm",
         "end_wavelength_nm",
         "wavelength_interval_nm",
-        *WAVELENGTHS,
+        *feature_columns,
         *TARGET_COLUMNS,
     ]
-    selected = selected[analysis_columns].copy()
-
-    numeric_columns = [*WAVELENGTHS, *TARGET_COLUMNS]
-    selected[numeric_columns] = selected[numeric_columns].apply(pd.to_numeric, errors="raise")
-    null_counts = selected[analysis_columns].isna().sum()
-    if int(null_counts.sum()) > 0:
-        raise ValueError(f"Null values in analysis table: {null_counts[null_counts.gt(0)].to_dict()}")
-
-    X = selected[WAVELENGTHS].to_numpy(dtype=np.float64)
-    Y = selected[TARGET_COLUMNS].to_numpy(dtype=np.float64)
-    subject_ids = selected["subject_id"].astype(str).to_numpy()
-
-    if not np.isfinite(X).all() or not np.isfinite(Y).all():
-        raise ValueError("Non-finite values found in ISSA matrices")
-    if X.shape != (EXPECTED_MEASUREMENTS, len(WAVELENGTHS)):
-        raise ValueError(f"Unexpected X shape: {X.shape}")
-    if Y.shape != (EXPECTED_MEASUREMENTS, len(TARGET_COLUMNS)):
-        raise ValueError(f"Unexpected Y shape: {Y.shape}")
+    selected = selected[ordered_columns].copy()
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     parquet_path = args.output_dir / "issa_analysis_table.parquet"
@@ -170,6 +184,7 @@ def main() -> None:
         "features": int(X.shape[1]),
         "targets": int(Y.shape[1]),
         "subject_key": "origin_code::subject_number",
+        "feature_columns": feature_columns,
         "wavelengths_nm": WAVELENGTHS,
         "target_columns": TARGET_COLUMNS,
         "feature_min": float(X.min()),
