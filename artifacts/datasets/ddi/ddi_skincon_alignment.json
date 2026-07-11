@@ -7,6 +7,6 @@
   "extra_skincon_annotations": [],
   "one_to_one_complete": true,
   "skincon_label_columns": 49,
-  "csv_output": "/mnt/d/truecolor-data/raw/ddi/canonical_metadata/ddi_with_skincon_annotations.csv",
-  "parquet_output": "/mnt/d/truecolor-data/raw/ddi/canonical_metadata/ddi_with_skincon_annotations.parquet"
+  "csv_output": "${TRUECOLOR_DATA_ROOT}/raw/ddi/canonical_metadata/ddi_with_skincon_annotations.csv",
+  "parquet_output": "${TRUECOLOR_DATA_ROOT}/raw/ddi/canonical_metadata/ddi_with_skincon_annotations.parquet"
 }

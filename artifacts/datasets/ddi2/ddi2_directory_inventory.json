@@ -1,5 +1,5 @@
 {
-  "root": "/mnt/d/truecolor-data/raw/ddi2/data",
+  "root": "${TRUECOLOR_DATA_ROOT}/raw/ddi2/data",
   "total_files": 667,
   "image_count": 665,
   "image_counts_by_directory": {

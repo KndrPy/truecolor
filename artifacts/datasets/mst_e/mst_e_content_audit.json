@@ -1,5 +1,5 @@
 {
-  "root": "/mnt/d/truecolor-data/raw/mst_e/data",
+  "root": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/data",
   "total_files": 3119,
   "total_bytes": 5777941862,
   "image_files": 2978,
