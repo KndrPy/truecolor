@@ -1,0 +1,10 @@
+{
+  "automatic_mapping_performed": false,
+  "candidate_comparison_rows": 78,
+  "dataset": "MRA-MIDAS",
+  "status": "MANUAL_OR_VISUAL_RECONCILIATION_REQUIRED",
+  "unresolved_workbook_rows": 13,
+  "unused_checkpoint_files": 7,
+  "unused_physical_files": 13,
+  "unused_real_image_files": 6
+}

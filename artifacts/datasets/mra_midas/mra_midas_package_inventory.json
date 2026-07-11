@@ -1,0 +1,15 @@
+{
+  "dataset": "MRA-MIDAS",
+  "duplicate_hash_group_count": 6,
+  "extension_counts": {
+    ".jpeg": 26,
+    ".jpg": 3390,
+    ".xlsx": 1
+  },
+  "file_count": 3417,
+  "generated_at_utc": "2026-07-11T11:42:04.194765+00:00",
+  "root": "${TRUECOLOR_DATA_ROOT}/raw/mra_midas/data",
+  "total_bytes": 3807825440,
+  "total_gib": 3.5463137924671173,
+  "unique_sha256_count": 3409
+}

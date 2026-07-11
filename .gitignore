@@ -1,65 +1,100 @@
-.venv/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.mypy_cache/
-.ipynb_checkpoints/
-data
-data/
-*.egg-info/
 
-# Raw and restricted research data
-data/
-raw/
-restricted/
-downloads/
-uploads/
-
+# Credentials and governed access records
+# Dataset archives
+# External data formats
+# External governed datasets — never commit
+# Image assets from governed datasets
+# Local data roots or symlinks
 # Medical and biometric image formats
+# Model and array artifacts
+# Patient-, subject-, lesion-, or image-level canonical metadata
+# Raw and restricted research data
+# Repository dataset metadata is tracked; raw datasets are not
+**/*access_record*
+**/*access_status*
+**/*canonical*.csv
+**/*canonical*.parquet
+**/*credential*
+**/*duplicate_hash*.csv
+**/*file_manifest*.csv
+**/*filename_correction_overlay*.csv
+**/*image_manifest*.csv
+**/*linkage_audit*.csv
+**/*missing_physical_images*.csv
+**/*patient*.csv
+**/*patient*.parquet
+**/*physical_file_disposition*.csv
+**/*sas*
+**/*sha256*.csv
+**/*subject*.csv
+**/*subject*.parquet
+**/*unresolved*.csv
+**/canonical_metadata/
+*.7z
+*.ckpt
 *.dcm
 *.dicom
+*.dng
+*.egg-info/
+*.env
+*.jpeg
+*.jpg
+*.mp4
 *.nii
 *.nii.gz
-
-# Dataset archives
-*.zip
+*.npy
+*.npz
+*.onnx
+*.parquet
+*.png
+*.pt
+*.pth
+*.py[cod]
+*.rar
 *.tar
 *.tar.gz
 *.tgz
-*.7z
-*.rar
-
-# Model and array artifacts
-*.pt
-*.pth
-*.ckpt
-*.onnx
-*.npz
-*.npy
-*.parquet
-
-# Local data roots or symlinks
-truecolor-data/
+*.tif
+*.tiff
+*.xls
+*.xlsx
+*.zip
+.env.*
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.venv/
+__pycache__/
+access_records/
+data
 data-local/
-# Repository dataset metadata is tracked; raw datasets are not
-datasets/raw/
-datasets/images/
-datasets/archives/
-datasets/restricted/
-datasets/cache/
-datasets/**/*.jpg
+data/
+data/interim/
+data/processed/
+data/raw/
+datasets/**/*.7z
+datasets/**/*.ckpt
 datasets/**/*.jpeg
+datasets/**/*.jpg
+datasets/**/*.npy
+datasets/**/*.npz
 datasets/**/*.png
-datasets/**/*.webp
-datasets/**/*.tif
-datasets/**/*.tiff
-datasets/**/*.zip
+datasets/**/*.pt
+datasets/**/*.pth
 datasets/**/*.tar
 datasets/**/*.tar.gz
 datasets/**/*.tgz
-datasets/**/*.7z
-datasets/**/*.npy
-datasets/**/*.npz
-datasets/**/*.pt
-datasets/**/*.pth
-datasets/**/*.ckpt
+datasets/**/*.tif
+datasets/**/*.tiff
+datasets/**/*.webp
+datasets/**/*.zip
+datasets/archives/
+datasets/cache/
+datasets/images/
+datasets/raw/
+datasets/restricted/
+downloads/
+raw/
+restricted/
+truecolor-data/
+uploads/

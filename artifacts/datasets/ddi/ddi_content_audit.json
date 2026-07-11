@@ -1,0 +1,27 @@
+{
+  "total_files": 657,
+  "image_files": 656,
+  "expected_image_count": 656,
+  "image_count_matches_expected": true,
+  "extension_counts": {
+    ".png": 656,
+    ".csv": 1
+  },
+  "csv_files": [
+    {
+      "relative_path": "ddi_metadata.csv",
+      "status": "read_successfully",
+      "encoding": "utf-8-sig",
+      "rows": 656,
+      "columns": 6,
+      "column_names": [
+        "Unnamed: 0",
+        "DDI_ID",
+        "DDI_file",
+        "skin_tone",
+        "malignant",
+        "disease"
+      ]
+    }
+  ]
+}

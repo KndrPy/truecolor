@@ -1,0 +1,43 @@
+{
+  "root": "${TRUECOLOR_DATA_ROOT}/raw/mst_e/data",
+  "total_files": 3119,
+  "total_bytes": 5777941862,
+  "image_files": 2978,
+  "video_files": 68,
+  "metadata_files": 4,
+  "documentation_files": 4,
+  "expected_release_description": {
+    "images": 1515,
+    "videos": 31
+  },
+  "image_count_matches_expected": false,
+  "video_count_matches_expected": false,
+  "extensions": {
+    ".csv": 4,
+    ".dng": 44,
+    ".ds_store": 1,
+    ".jpg": 2978,
+    ".md": 2,
+    ".mp4": 68,
+    ".pdf": 2,
+    "<no_extension>": 20
+  },
+  "metadata_paths": [
+    "__MACOSX/mst-e_data/._golden_and_adversarial_mst-e_image_ids.csv",
+    "__MACOSX/mst-e_data/._mst-e_image_details.csv",
+    "mst-e_data/golden_and_adversarial_mst-e_image_ids.csv",
+    "mst-e_data/mst-e_image_details.csv"
+  ],
+  "documentation_paths": [
+    "__MACOSX/mst-e_data/._Monk Skin Tone Examples (MST-E) Dataset Cover Page.pdf",
+    "__MACOSX/mst-e_data/._README.md",
+    "mst-e_data/Monk Skin Tone Examples (MST-E) Dataset Cover Page.pdf",
+    "mst-e_data/README.md"
+  ],
+  "license_candidates": [
+    "__MACOSX/mst-e_data/._Monk Skin Tone Examples (MST-E) Dataset Cover Page.pdf",
+    "__MACOSX/mst-e_data/._README.md",
+    "mst-e_data/Monk Skin Tone Examples (MST-E) Dataset Cover Page.pdf",
+    "mst-e_data/README.md"
+  ]
+}

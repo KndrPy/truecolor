@@ -1,0 +1,16 @@
+{
+  "images_checked": 656,
+  "valid_images": 656,
+  "invalid_images": 0,
+  "minimum_width": 155,
+  "maximum_width": 1914,
+  "minimum_height": 79,
+  "maximum_height": 1429,
+  "image_modes": {
+    "RGB": 428,
+    "RGBA": 228
+  },
+  "formats": {
+    "PNG": 656
+  }
+}

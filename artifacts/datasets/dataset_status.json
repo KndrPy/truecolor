@@ -1,0 +1,49 @@
+{
+  "datasets": {
+    "issa": {
+      "status": "COMPLETE_VALIDATED",
+      "public_artifact_scope": "aggregate validation and model results"
+    },
+    "fitzpatrick17k": {
+      "status": "COMPLETE",
+      "public_artifact_scope": "aggregate metadata only"
+    },
+    "scin": {
+      "status": "COMPLETE",
+      "public_artifact_scope": "aggregate metadata only"
+    },
+    "skincon": {
+      "status": "COMPLETE",
+      "public_artifact_scope": "aggregate annotation alignment only"
+    },
+    "mst_e": {
+      "status": "COMPLETE_GOVERNED",
+      "public_artifact_scope": "schema, aggregate validation and protocol"
+    },
+    "ddi": {
+      "status": "COMPLETE_VALIDATED",
+      "image_count": 656,
+      "public_artifact_scope": "aggregate validation only"
+    },
+    "ddi2": {
+      "status": "COMPLETE_VALIDATED",
+      "image_count": 665,
+      "patient_count": 550,
+      "public_artifact_scope": "aggregate validation and split protocol only"
+    },
+    "mra_midas": {
+      "status": "READY_WITH_12_DOCUMENTED_MISSING_IMAGES",
+      "source_workbook_records": 3416,
+      "analysis_eligible_records": 3404,
+      "public_artifact_scope": "aggregate validation and integration protocol only"
+    },
+    "passion": {
+      "status": "AWAITING_APPROVAL",
+      "public_artifact_scope": "status only"
+    },
+    "chroma_fit": {
+      "status": "NOT_ACQUIRED",
+      "public_artifact_scope": "status only"
+    }
+  }
+}

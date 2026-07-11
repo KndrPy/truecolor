@@ -1,0 +1,69 @@
+{
+  "duplicate_identifier_groups": 3,
+  "duplicate_source_rows": 6,
+  "groups": [
+    {
+      "image_ID": "PXL_20220922_134538984.PORTRAIT.jpg",
+      "source_row_numbers": [
+        730,
+        821
+      ],
+      "conflicting_fields": {
+        "pose": [
+          "facing_camera",
+          "side"
+        ]
+      },
+      "invariant_fields": {
+        "lighting": "well_lit",
+        "mask": "0",
+        "subject_name": "subject_9",
+        "MST": "4"
+      },
+      "physical_relative_path": "mst-e_data/subject_9/PXL_20220922_134538984.PORTRAIT.jpg",
+      "recommended_use": "Exclude from pose/mask/lighting-conditioned training; retain one physical image for subject-level MST evaluation because subject_name and MST agree."
+    },
+    {
+      "image_ID": "PXL_20220922_194043213.PORTRAIT.jpg",
+      "source_row_numbers": [
+        555,
+        662
+      ],
+      "conflicting_fields": {
+        "mask": [
+          "0",
+          "1"
+        ]
+      },
+      "invariant_fields": {
+        "pose": "facing_camera",
+        "lighting": "well_lit",
+        "subject_name": "subject_11",
+        "MST": "5"
+      },
+      "physical_relative_path": "mst-e_data/subject_11/PXL_20220922_194043213.PORTRAIT.jpg",
+      "recommended_use": "Exclude from pose/mask/lighting-conditioned training; retain one physical image for subject-level MST evaluation because subject_name and MST agree."
+    },
+    {
+      "image_ID": "PXL_20220922_195423628.jpg",
+      "source_row_numbers": [
+        663,
+        729
+      ],
+      "conflicting_fields": {
+        "pose": [
+          "facing_camera",
+          "side"
+        ]
+      },
+      "invariant_fields": {
+        "lighting": "well_lit",
+        "mask": "0",
+        "subject_name": "subject_10",
+        "MST": "9"
+      },
+      "physical_relative_path": "mst-e_data/subject_10/PXL_20220922_195423628.jpg",
+      "recommended_use": "Exclude from pose/mask/lighting-conditioned training; retain one physical image for subject-level MST evaluation because subject_name and MST agree."
+    }
+  ]
+}

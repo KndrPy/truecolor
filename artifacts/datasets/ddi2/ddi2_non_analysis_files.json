@@ -1,0 +1,11 @@
+{
+  "records": [
+    {
+      "relative_path": "desktop.ini",
+      "classification": "operating_system_metadata",
+      "analysis_eligible": false,
+      "delete_from_governed_source": false
+    }
+  ],
+  "count": 1
+}

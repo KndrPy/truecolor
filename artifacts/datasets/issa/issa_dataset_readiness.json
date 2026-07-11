@@ -1,0 +1,38 @@
+{
+  "dataset": "ISSA",
+  "limitation": "does not independently validate smartphone RGB to CIELAB or smartphone RGB to ITA calibration",
+  "maximum_wavelength_nm": 700,
+  "measurement_count": 15256,
+  "minimum_wavelength_nm": 400,
+  "public_artifact_scope": [
+    "aggregate validation",
+    "spectral grid definition",
+    "split methodology without assignments",
+    "aggregate model evaluation",
+    "model coefficient summaries"
+  ],
+  "scientific_role": "instrument-derived spectral reflectance to colorimetric transformation",
+  "spectral_band_count": 31,
+  "split_counts": {
+    "test": 2314,
+    "train": 10662,
+    "validation": 2280
+  },
+  "split_method": "subject_or_component_disjoint",
+  "status": "COMPLETE_VALIDATED",
+  "subject_or_composite_id_count": 2107,
+  "validated_alignment": {
+    "measurement_id_alignment": true,
+    "reflectance_shape": [
+      15256,
+      31
+    ],
+    "subject_id_alignment": true,
+    "target_columns": [
+      "cie_L_star",
+      "cie_a_star",
+      "cie_b_star"
+    ]
+  },
+  "wavelength_interval_nm": 10
+}

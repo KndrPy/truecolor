@@ -1,0 +1,31 @@
+{
+  "metadata_rows": 1546,
+  "metadata_unique_ids_original": 1543,
+  "metadata_unique_ids_trimmed": 1543,
+  "metadata_image_rows_including_dng": 1511,
+  "metadata_video_rows": 34,
+  "metadata_unknown_rows": 1,
+  "physical_media_files": 1545,
+  "missing_before_whitespace_normalization": [
+    "PXL_20220922_183142438.jpg ",
+    "bottom"
+  ],
+  "missing_after_whitespace_normalization": [
+    "bottom"
+  ],
+  "unreferenced_after_whitespace_normalization": [
+    "Copy of PXL_20220922_141158574.jpg",
+    "PXL_20220922_173738996.jpg",
+    "PXL_20220922_183259162.jpg"
+  ],
+  "unknown_records": [
+    {
+      "image_ID_original": "bottom",
+      "pose": "side",
+      "lighting": "poorly_lit",
+      "mask": "0",
+      "subject_name": "subject_2",
+      "MST": "8"
+    }
+  ]
+}
