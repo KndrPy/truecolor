@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Build the private NPZ input bundle consumed by bootstrap_linear_stability.py.
 
-This script never writes raw records to GitHub. It converts a local CSV or
-Parquet table into a compact local NPZ with validated feature, target, and
-subject arrays.
+This script never writes raw records to GitHub. It converts a local CSV,
+Parquet, or Excel worksheet into a compact local NPZ with validated feature,
+target, and subject arrays.
 """
 
 from __future__ import annotations
@@ -21,6 +21,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--sheet", help="Excel worksheet name or zero-based index")
+    parser.add_argument("--header", type=int, default=0, help="Zero-based header row")
     parser.add_argument("--subject-column", required=True)
     parser.add_argument("--target-columns", nargs="+", required=True)
     parser.add_argument(
@@ -36,14 +38,25 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def read_table(path: Path) -> pd.DataFrame:
+def parse_sheet(value: str | None) -> str | int:
+    if value is None:
+        return 0
+    try:
+        return int(value)
+    except ValueError:
+        return value
+
+
+def read_table(path: Path, sheet: str | None, header: int) -> pd.DataFrame:
     if not path.exists():
         raise FileNotFoundError(path)
     suffix = path.suffix.lower()
     if suffix == ".csv":
-        return pd.read_csv(path)
+        return pd.read_csv(path, header=header)
     if suffix in {".parquet", ".pq"}:
         return pd.read_parquet(path)
+    if suffix in {".xlsx", ".xlsm", ".xls"}:
+        return pd.read_excel(path, sheet_name=parse_sheet(sheet), header=header)
     raise ValueError(f"Unsupported input format: {suffix}")
 
 
@@ -85,7 +98,7 @@ def resolve_features(frame: pd.DataFrame, args: argparse.Namespace) -> tuple[lis
 
 def main() -> None:
     args = parse_args()
-    frame = read_table(args.input)
+    frame = read_table(args.input, args.sheet, args.header)
     required = [args.subject_column, *args.target_columns]
     missing = [name for name in required if name not in frame.columns]
     if missing:
@@ -117,6 +130,9 @@ def main() -> None:
     )
 
     summary = {
+        "input": str(args.input),
+        "sheet": args.sheet,
+        "header": args.header,
         "output": str(args.output),
         "measurements": int(X.shape[0]),
         "subjects": int(len(np.unique(subject_ids))),
