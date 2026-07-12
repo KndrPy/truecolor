@@ -1,0 +1,55 @@
+data_unit_rules:
+- id: A01
+  rule: ISSA inference unit is subject or resolved composite component, never measurement
+    row alone.
+- id: A02
+  rule: MST-E inference unit is subject; repeated images and video frames are nested
+    observations.
+- id: A03
+  rule: DDI and DDI-2 inference unit is patient.
+- id: A04
+  rule: MRA-MIDAS inference unit is the highest verified patient/case/lesion/visit
+    identity.
+split_rules:
+- id: A05
+  rule: No subject, patient, case, lesion, or deduplicated component may cross train,
+    validation, or test partitions.
+- id: A06
+  rule: The ISSA test split remains sealed until all preprocessing, thresholds, estimators,
+    and code hashes are frozen.
+- id: A07
+  rule: External datasets are never merged with discovery data before separate reporting.
+measurement_rules:
+- id: A08
+  rule: Instrument, geometry, body site, and SCI/SCE convention remain explicit covariates
+    or strata until metrology analysis permits pooling.
+- id: A09
+  rule: Reflectance outside declared physical bounds, unresolved spectrum columns,
+    or malformed wavelength order are inadmissible.
+- id: A10
+  rule: A facial regional mean is a sampling operator, not exhaustive facial truth.
+- id: A11
+  rule: Image-only datasets cannot validate spectral reconstruction or chromophore
+    concentration.
+model_rules:
+- id: A12
+  rule: All smoothing and transform choices must be target-independent and selected
+    inside training folds.
+- id: A13
+  rule: Hyperparameters, bands, preprocessing, and representations are nested inside
+    subject-disjoint resampling.
+- id: A14
+  rule: Model confidence is inadmissible as evidence of identifiability without calibration
+    and evidence/prior decomposition.
+- id: A15
+  rule: Physical parameters are claimable only if the forward model passes fit, residual,
+    solver, and identifiability gates.
+reporting_rules:
+- id: A16
+  rule: Every estimate reports effect size, uncertainty interval, inference unit,
+    stratum, and metrology floor.
+- id: A17
+  rule: Null and contradictory results are retained and adjudicated under the same
+    thresholds.
+- id: A18
+  rule: Specification curves include all preregistered admissible analysis choices.

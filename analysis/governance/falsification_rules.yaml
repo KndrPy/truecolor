@@ -1,0 +1,37 @@
+global:
+- id: F00
+  condition: A prior work is identified that closes the registered novelty with equivalent
+    evidence.
+  action: reopen Stage 1 and suspend affected claim.
+- id: F01
+  condition: Metrology floor exceeds the registered effect across admissible strata.
+  action: downgrade claim to unresolved or within-instrument only.
+- id: F02
+  condition: Permutation pipeline discovers registered effects above the declared
+    false-positive threshold.
+  action: invalidate pipeline and rerun after correction.
+per_estimand:
+- estimand_id: E01
+  condition: effective dimension is estimator-unstable or instrument-confounded
+  action: do not claim intrinsic dimensionality; report descriptive spectra only
+- estimand_id: E02
+  condition: principal angles are small and tone-invariant
+  action: reject camera-misalignment fairness hypothesis
+- estimand_id: E03
+  condition: realistic metamer rate is negligible
+  action: remove metamerism as dominant empirical mechanism
+- estimand_id: E04
+  condition: recoverability error is flat across tone and below floor
+  action: reject tone-dependent recoverability claim
+- estimand_id: E05
+  condition: empirical variance is below CRB or CRB is model-unstable
+  action: reject bound implementation
+- estimand_id: E06
+  condition: mechanism attribution is order- or model-unstable
+  action: do not publish fractional attribution
+- estimand_id: E07
+  condition: sensor gain is below floor or solution unstable
+  action: do not claim minimum sufficient measurement
+- estimand_id: E08
+  condition: physics score has no incremental value or fails DDI-2 replication
+  action: reject clinical bridge

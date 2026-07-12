@@ -1,0 +1,134 @@
+stage: 2
+name: estimand_and_claim_registration
+status: closed
+version: 1.0.0
+registered_on: '2026-07-12'
+primary_measurands:
+- id: M01
+  name: spectral_reflectance
+  symbol: R(lambda)
+  unit: dimensionless reflectance ratio
+  domain: 400-700 nm at 10 nm for ISSA
+  source: instrument-measured spectrum
+  interpretation: surface-and-subsurface optical response under the acquisition geometry
+  exclusions:
+  - not electric-field phase
+  - not depth-resolved optical properties
+  - not direct chromophore concentration
+  - not consumer-camera RGB
+- id: M02
+  name: CIELAB
+  symbol: '[L*, a*, b*]'
+  unit: CIELAB units
+  source: paired instrument colorimetry or deterministic CIE integration where explicitly
+    declared
+  interpretation: colorimetric appearance under a declared illuminant, observer, and
+    reference white
+  exclusions:
+  - not device-independent unless measurement conditions are fixed
+  - not a direct biological parameter
+- id: M03
+  name: individual_typology_angle
+  symbol: ITA
+  unit: degrees
+  definition: atan((L* - 50)/b*) * 180/pi
+  source: derived from M02
+  interpretation: continuous colorimetric appearance descriptor
+  exclusions:
+  - not melanin concentration
+  - not invariant to erythema, body site, specular convention, instrument, or capture
+    condition
+primary_estimands:
+- id: E01
+  name: effective_spectral_dimension
+  population: admissible ISSA individual measurements
+  quantity: effective dimension of the measured skin spectral distribution
+  estimators:
+  - participation ratio
+  - stable rank
+  - variance-threshold rank
+  - functional-PCA dimension
+  - nonlinear intrinsic dimension
+  primary_estimator: participation ratio with bootstrap interval
+  strata:
+  - instrument
+  - origin
+  - body_location
+  - SCI_SCE
+  - ITA_quantile
+  kill: dimension estimate is not stable across admissible estimators or disappears
+    within instrument strata
+- id: E02
+  name: camera_manifold_alignment
+  population: admissible spectra projected through declared camera-illuminant operators
+  quantity: principal angles and subspace overlap between empirical skin variation
+    and camera row space
+  primary_estimator: principal-angle spectrum
+  secondary_estimators:
+  - projection residual energy
+  - canonical correlation
+  strata:
+  - camera
+  - illuminant
+  - instrument
+  - body_location
+  - SCI_SCE
+  - ITA_quantile
+  kill: angles are uniformly small and tone-invariant under realistic operator uncertainty
+- id: E03
+  name: real_skin_metamer_rate
+  population: admissible measured spectra
+  quantity: probability that materially different spectra are indistinguishable in
+    camera space within a declared noise/calibration tolerance
+  primary_estimator: subject-clustered nearest-neighbor collision rate
+  secondary_estimators:
+  - pairwise collision rate
+  - null-space severity
+  kill: collision rate is negligible under all realistic tolerances
+- id: E04
+  name: recoverability_error
+  population: held-out subjects
+  quantity: error in recovering L*, a*, b*, ITA, or spectral coefficients from a declared
+    observation operator
+  primary_metrics:
+  - MAE
+  - RMSE
+  - DeltaE00
+  - calibration error
+  reporting: overall and stratified with subject-cluster bootstrap intervals
+  kill: error is flat across tone and below metrology floor
+- id: E05
+  name: information_bound
+  population: declared forward-model parameter space and observation family
+  quantity: CRB or posterior lower-bound analogue for registered targets
+  primary_target: ITA and spectral latent coordinates
+  secondary_targets:
+  - L*
+  - a*
+  - b*
+  - declared physical parameters only where model is admissible
+  kill: empirical estimator variance violates the claimed bound or the bound is unstable
+    to admissible model uncertainty
+- id: E06
+  name: mechanism_fractional_attribution
+  population: camera-illuminant-tone operating conditions
+  quantity: main and interaction contributions of projection, photon, derivative,
+    tissue-collinearity, specular, camera, illuminant, ISP, and data-quality mechanisms
+  primary_method: factorial intervention design with Shapley interaction attribution
+  kill: attribution is unstable across intervention order, camera family, or bootstrap
+    samples
+- id: E07
+  name: minimum_sufficient_added_measurement
+  population: declared sensor-design search space
+  quantity: lowest-cost added measurement that achieves a registered error or uncertainty
+    target under subgroup-parity constraints
+  primary_method: minimax Pareto optimization
+  kill: gain is below the metrology floor or optimum is unstable across strata and
+    priors
+- id: E08
+  name: clinical_incremental_explanatory_value
+  population: DDI discovery and DDI-2 replication patients
+  quantity: incremental out-of-sample explanatory value of physics-derived recoverability
+    after contrast, diagnosis, prevalence, acquisition, and data-quality controls
+  primary_method: nested patient-disjoint model comparison
+  kill: physics adds no incremental value or fails external replication

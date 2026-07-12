@@ -1,0 +1,36 @@
+primary_family:
+  family_id: PF1
+  claims:
+  - C-A1
+  - C-B1
+  - C-B2
+  - C-C1
+  - C-C2
+  control: Holm family-wise error control at alpha=0.05 for confirmatory tests
+  note: Geometry-only descriptive quantities still receive bootstrap intervals; hypothesis
+    tests enter PF1 only when registered.
+clinical_family:
+  family_id: PF2
+  claims:
+  - C-D1
+  control: single primary incremental-value test in DDI and one directional replication
+    test in DDI-2
+  note: Subgroup/disease analyses are secondary and FDR-controlled.
+secondary_families:
+- family_id: SF1
+  scope: wavelength, band, transform, and representation discovery
+  control: Benjamini-Hochberg FDR at q=0.05
+- family_id: SF2
+  scope: MST-E capture-condition interactions
+  control: Benjamini-Hochberg FDR at q=0.05
+- family_id: SF3
+  scope: Fitzpatrick17k/CleanPatrick cleaning ablations
+  control: Benjamini-Hochberg FDR at q=0.05
+- family_id: SF4
+  scope: camera x illuminant sensitivity family
+  control: simultaneous bootstrap bands or FDR as appropriate
+forbidden:
+- separate uncorrected p-values for every wavelength
+- post-hoc selection of the most favorable camera or illuminant
+- reporting only the best transform or model
+- using record-level bootstrap for clustered data
