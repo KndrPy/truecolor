@@ -1,0 +1,66 @@
+stage: Stage 1 — prior-art extraction and claim lock
+status: CLOSED
+primary_novelty_claims:
+- id: N1
+  claim: Real-skin camera observability atlas
+  test: Principal angles, null-space energy, conditioning, and real collision enumeration
+    across camera, illuminant, tone, site, instrument, and specular strata.
+  kill: Angles are small and tone-invariant; realistic collision rate is negligible.
+- id: N2
+  claim: Physically plausible skin-metamer prevalence and severity
+  test: Direct measured collisions plus constrained metamer generation inside measured/forward-model
+    support.
+  kill: Generated alternatives are not physiologically plausible or yield no material
+    target ambiguity.
+- id: N3
+  claim: Measurement-versus-prior information accounting
+  test: Compare measurement-only, prior-only, and combined posterior recovery; report
+    posterior contraction and abstention.
+  kill: Model confidence does not track added measurement or remains high under known
+    non-identifiability.
+- id: N4
+  claim: Interaction-aware mechanism attribution
+  test: Factorial/Shapley decomposition of projection, photon, camera, illuminant,
+    tissue collinearity, specular, ISP, and data quality.
+  kill: Attribution is unstable across operator families, bootstrap samples, or ablation
+    order.
+- id: N5
+  claim: Minimum sufficient added measurement
+  test: Minimax/Pareto sensor design across candidate added measurements under cost
+    and subgroup-parity constraints.
+  kill: Gain is below metrology floor or optimum is unstable across strata and priors.
+- id: N6
+  claim: Clinical bridge, treated as separate paper/question
+  test: Physics score versus lesion contrast and data quality in DDI, replicated in
+    DDI-2, controlled with CleanPatrick.
+  kill: Physics adds no incremental value after alternatives or fails replication.
+prohibited_claims:
+- Universal RGB-to-spectrum inversion from processed RGB
+- Metamerism as a new discovery
+- CRB or wavelength optimization as standalone novelty
+- Skin low-dimensionality as standalone novelty
+- Generic skin biophysical inversion
+- Generic camera calibration or sensitivity estimation
+- ITA as direct melanin concentration
+- Tone disparity in dermatology AI as standalone novelty
+- Validated RGB-to-true-color corrector using current assets
+paper_partition:
+- paper: P1
+  question: What real-skin information is observable through realistic camera operators,
+    and what uncertainty is irreducible?
+  evidence: ISSA primary; NIST, Hyper-Skin, 2025 facial HSI external validation.
+- paper: P2
+  question: Which minimum added measurement contracts uncertainty most robustly and
+    equitably?
+  evidence: P1 operators and bounds; simulated/available added channels; held-out
+    spectra.
+- paper: P3
+  question: Does physics-derived recoverability explain clinical model error beyond
+    contrast and data quality?
+  evidence: DDI discovery; DDI-2 replication; CleanPatrick/Fitz17k control; MST-E
+    manifestation.
+- paper: P4
+  question: Can an evidence-calibrated posterior reconstruct skin appearance under
+    real capture?
+  evidence: Requires new paired RAW/JPEG + spectrum + colorimeter acquisition; not
+    currently claimable.

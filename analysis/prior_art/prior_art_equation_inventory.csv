@@ -1,0 +1,11 @@
+equation_id,object,canonical_form,paper_basis,truecolor_use
+E01,Camera projection,y_k = Σλ S_k(λ) E(λ) R(λ) Δλ,"P02,P03,P09,P10,P18",core observation operator
+E02,Null-space decomposition,"R = R_parallel + R_perp, with A R_perp = 0","P02,P18",metameric observability
+E03,Affine color correction,x_ref ≈ M x_device + b,P01,calibration baseline
+E04,Color difference,ΔE in CIELAB / CIEDE2000,"P01,P08,P09,P15",colorimetric validation
+E05,ITA,atan((L* - 50)/b*) · 180/π,"P01,P06,P08,P16",appearance descriptor
+E06,Fisher information,I(θ)=J(θ)^T Σ(θ)^(-1) J(θ),related tissue-sensing prior art,information bound machinery
+E07,CRB,Cov(θ_hat) ⪰ I(θ)^(-1),related tissue-sensing prior art,lower-bound machinery
+E08,Skin reflectance forward model,"R(λ)=F(μ_a(λ), μ_s'(λ), layers, geometry)",P12,physical modeling
+E09,Hyperspectral calibration ratio,R(λ) ∝ β_skin(λ)/β_reference(λ),"P14,P15",traceable reflectance estimation
+E10,RGB reprojection consistency,RGB_hat = A R_hat; compare RGB_hat to RGB_obs,"P03,P18",physical-consistency check
