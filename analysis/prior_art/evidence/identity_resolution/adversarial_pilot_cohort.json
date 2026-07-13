@@ -1,0 +1,535 @@
+{
+  "artifact": "identity_resolution_adversarial_pilot_cohort",
+  "record_count": 48,
+  "records": [
+    {
+      "candidate_key": "doi:10.1117/1.jbo.28.10.107001",
+      "doi": "10.1117/1.jbo.28.10.107001",
+      "global_rank": 9,
+      "pmid": "37915398",
+      "reasons": [
+        "DOI_AND_PMID"
+      ],
+      "title": "Measuring and imaging of transcutaneous bilirubin, hemoglobin, and melanin based on diffuse reflectance spectroscopy",
+      "year": 2023
+    },
+    {
+      "candidate_key": "doi:10.1117/1.jbo.28.3.035001",
+      "doi": "10.1117/1.jbo.28.3.035001",
+      "global_rank": 11,
+      "pmid": "36992693",
+      "reasons": [
+        "DOI_AND_PMID"
+      ],
+      "title": "Deep learning-based optical approach for skin analysis of melanin and hemoglobin distribution.",
+      "year": "2023"
+    },
+    {
+      "candidate_key": "doi:10.1117/12.3078827",
+      "doi": "10.1117/12.3078827",
+      "global_rank": 12,
+      "pmid": null,
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Characterization and correction of bias in diffuse reflectance-based skin diagnostics via optical scattering models of benign and malignant skin tissues",
+      "year": 2026
+    },
+    {
+      "candidate_key": "doi:10.1117/12.3098404",
+      "doi": "10.1117/12.3098404",
+      "global_rank": 15,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "Monte Carlo simulation of spectral reflectance images of human skin with embedded lesions",
+      "year": 2025
+    },
+    {
+      "candidate_key": "doi:10.1038/s41597-025-04382-5",
+      "doi": "10.1038/s41597-025-04382-5",
+      "global_rank": 17,
+      "pmid": "39893183",
+      "reasons": [
+        "DOI_AND_PMID"
+      ],
+      "title": "Investigating the Quality of DermaMNIST and Fitzpatrick17k Dermatological Image Datasets.",
+      "year": "2025"
+    },
+    {
+      "candidate_key": "doi:10.1007/s13534-024-00409-9",
+      "doi": "10.1007/s13534-024-00409-9",
+      "global_rank": 23,
+      "pmid": "39465115",
+      "reasons": [
+        "DOI_AND_PMID"
+      ],
+      "title": "Integrated deep learning approach for generating cross-polarized images and analyzing skin melanin and hemoglobin distributions.",
+      "year": "2024"
+    },
+    {
+      "candidate_key": "doi:10.1364/ecbo.2025.tu2a.20",
+      "doi": "10.1364/ecbo.2025.tu2a.20",
+      "global_rank": 27,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "Monte Carlo Simulation of Spectral Reflectance Images of Human Skin with Embedded Lesions",
+      "year": 2025
+    },
+    {
+      "candidate_key": "doi:10.1002/mp.70521",
+      "doi": "10.1002/mp.70521",
+      "global_rank": 34,
+      "pmid": "42259769",
+      "reasons": [
+        "DOI_AND_PMID"
+      ],
+      "title": "Monte Carlo modeling and phantom studies show Cherenkov emission per unit dose during total skin electron therapy is a function of tissue optical properties.",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "doi:10.1093/ced/llaf145",
+      "doi": "10.1093/ced/llaf145",
+      "global_rank": 38,
+      "pmid": null,
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Comment on ‘Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study’",
+      "year": 2025
+    },
+    {
+      "candidate_key": "doi:10.7759/cureus.94909",
+      "doi": "10.7759/cureus.94909",
+      "global_rank": 39,
+      "pmid": "41262830",
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Exploring the Diagnostic Capability of Artificial Intelligence in Dermatology for Darker Skin Tones: A Narrative Review.",
+      "year": "2025"
+    },
+    {
+      "candidate_key": "doi:10.1117/12.889626",
+      "doi": "10.1117/12.889626",
+      "global_rank": 42,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "Spectral reflectance fitting based on Monte Carlo simulation using a multi-layered skin tissue model",
+      "year": 2011
+    },
+    {
+      "candidate_key": "doi:10.1364/ecbo.2011.80880p",
+      "doi": "10.1364/ecbo.2011.80880p",
+      "global_rank": 49,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "Spectral reflectance fitting based on Monte Carlo simulation using a multi-layered skin tissue model",
+      "year": 2011
+    },
+    {
+      "candidate_key": "doi:10.1038/s41698-025-00940-7",
+      "doi": "10.1038/s41698-025-00940-7",
+      "global_rank": 69,
+      "pmid": null,
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Systematic scoping review of external validation studies of AI pathology models for lung cancer diagnosis",
+      "year": 2025
+    },
+    {
+      "candidate_key": "doi:10.1145/1409060.1409093",
+      "doi": "10.1145/1409060.1409093",
+      "global_rank": 82,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "A layered, heterogeneous reflectance model for acquiring and rendering human skin",
+      "year": 2008
+    },
+    {
+      "candidate_key": "doi:10.5220/0004790201140121",
+      "doi": "10.5220/0004790201140121",
+      "global_rank": 93,
+      "pmid": null,
+      "reasons": [
+        "MISSING_AUTHORS"
+      ],
+      "title": "Preliminary Monte Carlo based Inverse Model to Extract Optical Tissue Properties from Experimental Diffuse Reflectance Measurements - Coefficients Extraction for Gastrointestinal Dysplasia Detection",
+      "year": 2014
+    },
+    {
+      "candidate_key": "doi:10.3390/s26082337",
+      "doi": "10.3390/s26082337",
+      "global_rank": 113,
+      "pmid": "42076446",
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Modelling Skin Pigmentation Using the Monte Carlo Technique: A Review.",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "doi:10.1145/1201775.882344",
+      "doi": "10.1145/1201775.882344",
+      "global_rank": 116,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "Image-based skin color and texture analysis/synthesis by extracting hemoglobin and melanin information in the skin",
+      "year": 2003
+    },
+    {
+      "candidate_key": "doi:10.70675/0c97866fz636dz4ec3z8fefz60b8d89b91b6",
+      "doi": "10.70675/0c97866fz636dz4ec3z8fefz60b8d89b91b6",
+      "global_rank": 120,
+      "pmid": null,
+      "reasons": [
+        "MISSING_YEAR"
+      ],
+      "title": "Human skin characterization and analysis based on hyperspectral reflectance using machine learning",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.20965/jaciii.2026.p0156",
+      "doi": "10.20965/jaciii.2026.p0156",
+      "global_rank": 137,
+      "pmid": null,
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Low Illumination Image Enhancement Method Based on White Balance Correction for Conveying Foreign Objects Detection",
+      "year": 2026
+    },
+    {
+      "candidate_key": "doi:10.7759/cureus.105167",
+      "doi": "10.7759/cureus.105167",
+      "global_rank": 140,
+      "pmid": "41994757",
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Artificial Intelligence and Machine Learning in Diagnostic Pathology: A Systematic Review of Applications, Challenges, and Clinical Implications.",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "doi:10.1109/iccvw60793.2023.00122",
+      "doi": "10.1109/iccvw60793.2023.00122",
+      "global_rank": 147,
+      "pmid": null,
+      "reasons": [
+        "CORRECTION_COMMENT_REVIEW"
+      ],
+      "title": "Deterministic Neural Illumination Mapping for Efficient Auto-White Balance Correction",
+      "year": 2023
+    },
+    {
+      "candidate_key": "doi:10.1145/1457515.1409093",
+      "doi": "10.1145/1457515.1409093",
+      "global_rank": 163,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "A layered, heterogeneous reflectance model for acquiring and rendering human skin",
+      "year": 2008
+    },
+    {
+      "candidate_key": "doi:10.1134/s0030400x1410021x",
+      "doi": "10.1134/s0030400x1410021x",
+      "global_rank": 185,
+      "pmid": null,
+      "reasons": [
+        "DUPLICATE_NORMALIZED_TITLE"
+      ],
+      "title": "Retrieval of chromophore concentration in a tissue phantom by diffuse reflectance spectroscopy",
+      "year": 2014
+    },
+    {
+      "candidate_key": "doi:10.11606/t.76.2021.tde-02092021-160416",
+      "doi": "10.11606/t.76.2021.tde-02092021-160416",
+      "global_rank": 204,
+      "pmid": null,
+      "reasons": [
+        "MISSING_YEAR"
+      ],
+      "title": "Monte Carlo simulations to investigate light coupling with optical skin phantom",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.33915/etd.3700",
+      "doi": "10.33915/etd.3700",
+      "global_rank": 235,
+      "pmid": null,
+      "reasons": [
+        "MISSING_YEAR"
+      ],
+      "title": "Automated Cleaning of Identity Label Noise in A Large-scale Face Dataset Using A Face Image Quality Control",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.1117/1.jbo.23.7.071202",
+      "doi": "10.1117/1.jbo.23.7.071202",
+      "global_rank": 292,
+      "pmid": null,
+      "reasons": [
+        "MISSING_AUTHORS"
+      ],
+      "title": "Optimal wavelength selection for optical spectroscopy of hemoglobin and water within a simulated light-scattering tissue",
+      "year": 2018
+    },
+    {
+      "candidate_key": "doi:10.1109/cleopr.2005.1569539",
+      "doi": "10.1109/cleopr.2005.1569539",
+      "global_rank": 300,
+      "pmid": null,
+      "reasons": [
+        "MISSING_YEAR"
+      ],
+      "title": "Simulation of skin spectral reflectance based on an empirical model",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.46300/9106.2020.14.76",
+      "doi": "10.46300/9106.2020.14.76",
+      "global_rank": 325,
+      "pmid": null,
+      "reasons": [
+        "MISSING_AUTHORS"
+      ],
+      "title": "An Improved White Patch Method for Image Illumination Estimation",
+      "year": 2020
+    },
+    {
+      "candidate_key": "title:a dual-mode near-infrared optical probe and monte carlo framework for functional monitoring of rheumatoid arthritis: addressing diagnostic ambiguity and skin tone robustness|year:2026",
+      "doi": null,
+      "global_rank": 337,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "A Dual-Mode Near-Infrared Optical Probe and Monte Carlo Framework for Functional Monitoring of Rheumatoid Arthritis: Addressing Diagnostic Ambiguity and Skin Tone Robustness",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "doi:10.1016/j.jaad.2015.02.110",
+      "doi": "10.1016/j.jaad.2015.02.110",
+      "global_rank": 344,
+      "pmid": null,
+      "reasons": [
+        "MISSING_AUTHORS"
+      ],
+      "title": "Loss of skin elasticity is more dependent on Fitzpatrick skin type than chronologic age",
+      "year": 2015
+    },
+    {
+      "candidate_key": "doi:10.1201/9781420033236-10",
+      "doi": "10.1201/9781420033236-10",
+      "global_rank": 402,
+      "pmid": null,
+      "reasons": [
+        "MISSING_AUTHORS"
+      ],
+      "title": "Multilayer high-reflectance coatings",
+      "year": 2001
+    },
+    {
+      "candidate_key": "doi:10.1887/0750306882/b856c5",
+      "doi": "10.1887/0750306882/b856c5",
+      "global_rank": 406,
+      "pmid": null,
+      "reasons": [
+        "MISSING_YEAR"
+      ],
+      "title": "Multilayer high-reflectance coatings",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.1007/0-387-22440-8_7",
+      "doi": "10.1007/0-387-22440-8_7",
+      "global_rank": 1000,
+      "pmid": null,
+      "reasons": [
+        "LONG_TAIL_RANK"
+      ],
+      "title": "Principal Component Analysis and Factor Analysis",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.1016/j.media.2025.103564",
+      "doi": "10.1016/j.media.2025.103564",
+      "global_rank": 1001,
+      "pmid": null,
+      "reasons": [
+        "LONG_TAIL_RANK"
+      ],
+      "title": "Bi-variational physics-informed operator network for fractional flow reserve curve assessment from coronary angiography",
+      "year": 2025
+    },
+    {
+      "candidate_key": "doi:10.31235/osf.io/pdf4c",
+      "doi": "10.31235/osf.io/pdf4c",
+      "global_rank": 1002,
+      "pmid": null,
+      "reasons": [
+        "LONG_TAIL_RANK"
+      ],
+      "title": "The Monk Skin Tone Scale",
+      "year": 2023
+    },
+    {
+      "candidate_key": "doi:10.1016/j.jaad.2018.05.058",
+      "doi": "10.1016/j.jaad.2018.05.058",
+      "global_rank": 1003,
+      "pmid": null,
+      "reasons": [
+        "LONG_TAIL_RANK"
+      ],
+      "title": "An ανβ3 integrin–linked “stromal response” expression signature to identify high-risk melanoma: Report on a 330-patient multicenter validation cohort",
+      "year": 2018
+    },
+    {
+      "candidate_key": "doi:10.1016/j.jaad.2012.12.371",
+      "doi": "10.1016/j.jaad.2012.12.371",
+      "global_rank": 1004,
+      "pmid": null,
+      "reasons": [
+        "LONG_TAIL_RANK"
+      ],
+      "title": "Patient satisfaction with a novel, patient-centered model for psoriasis follow-up care: Results from a randomized controlled trial",
+      "year": 2013
+    },
+    {
+      "candidate_key": "title:save: spectrum-aided visual enhancement for ai-based skin cancer detection|year:2026",
+      "doi": null,
+      "global_rank": 1200,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "SAVE: Spectrum-Aided Visual Enhancement for AI-Based Skin Cancer Detection",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "title:recent advances in automated mitosis detection in digital pathology: a prisma-guided systematic review with evaluation-regime stratification (2018–2025)|year:2026",
+      "doi": null,
+      "global_rank": 1201,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "Recent Advances in Automated Mitosis Detection in Digital Pathology: A PRISMA-Guided Systematic Review with Evaluation-Regime Stratification (2018–2025)",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "title:a systematic review of contrastive learning in medical ai: foundations, biomedical modalities, and future directions|year:2026",
+      "doi": null,
+      "global_rank": 1258,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "A Systematic Review of Contrastive Learning in Medical AI: Foundations, Biomedical Modalities, and Future Directions",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "title:global sensitivity analysis for robust xai: quantifying clinical risk and prediction instability in dermoscopic image classification|year:2026",
+      "doi": null,
+      "global_rank": 1259,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "Global Sensitivity Analysis for Robust XAI: Quantifying Clinical Risk and Prediction Instability in Dermoscopic Image Classification",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "title:analysis of the uptake of hypericin by candida albicans yeast cells using fluorescence methods and comparison of the dynamics of this process over time|year:2026",
+      "doi": null,
+      "global_rank": 1260,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "Analysis of the Uptake of Hypericin by Candida albicans Yeast Cells Using Fluorescence Methods and Comparison of the Dynamics of This Process over Time",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "title:artificial intelligence for preoperative prediction of lymph node metastasis and depth of invasion in oral tongue squamous cell carcinoma: a systematic review and meta-analysis|year:2026",
+      "doi": null,
+      "global_rank": 1261,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "Artificial Intelligence for Preoperative Prediction of Lymph Node Metastasis and Depth of Invasion in Oral Tongue Squamous Cell Carcinoma: A Systematic Review and Meta-Analysis",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "title:artificial intelligence, deep learning, and computer vision in hysteroscopy: a systematic review|year:2026",
+      "doi": null,
+      "global_rank": 1262,
+      "pmid": null,
+      "reasons": [
+        "NO_STRUCTURED_IDENTIFIER"
+      ],
+      "title": "Artificial Intelligence, Deep Learning, and Computer Vision in Hysteroscopy: A Systematic Review",
+      "year": "2026"
+    },
+    {
+      "candidate_key": "doi:10.7287/peerj.preprints.27447/supp-1",
+      "doi": "10.7287/peerj.preprints.27447/supp-1",
+      "global_rank": 1300,
+      "pmid": null,
+      "reasons": [
+        "MISSING_TITLE"
+      ],
+      "title": "",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.7287/peerj.preprints.27447v1/supp-1",
+      "doi": "10.7287/peerj.preprints.27447v1/supp-1",
+      "global_rank": 1301,
+      "pmid": null,
+      "reasons": [
+        "MISSING_TITLE"
+      ],
+      "title": "",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.3030/101158062",
+      "doi": "10.3030/101158062",
+      "global_rank": 1302,
+      "pmid": null,
+      "reasons": [
+        "MISSING_TITLE"
+      ],
+      "title": "",
+      "year": null
+    },
+    {
+      "candidate_key": "doi:10.3030/893082",
+      "doi": "10.3030/893082",
+      "global_rank": 1303,
+      "pmid": null,
+      "reasons": [
+        "MISSING_TITLE"
+      ],
+      "title": "",
+      "year": null
+    }
+  ],
+  "stage": 1
+}
