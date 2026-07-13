@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/screening-decision.schema.json",
+  "title": "TrueColor Prior-Art Screening Decision",
+  "type": "object",
+  "required": [
+    "candidate_key",
+    "title",
+    "domain",
+    "decision",
+    "decision_reason",
+    "primary_source_verified",
+    "identifier_verified",
+    "full_text_reviewed",
+    "claims_addressed",
+    "reviewer"
+  ],
+  "properties": {
+    "candidate_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "enum": [
+        "INCLUDE",
+        "EXCLUDE",
+        "DEFER"
+      ]
+    },
+    "decision_reason": {
+      "enum": [
+        "PRIMARY_SOURCE_MATERIAL_OVERLAP",
+        "PRIMARY_SOURCE_BACKGROUND_ONLY",
+        "SECONDARY_SOURCE",
+        "WRONG_DOMAIN",
+        "WRONG_MODALITY",
+        "NON_SKIN_APPLICATION",
+        "INSUFFICIENT_TECHNICAL_DETAIL",
+        "DUPLICATE_VERSION",
+        "COMMENT_EDITORIAL_CORRECTION",
+        "IDENTITY_UNRESOLVED",
+        "FULL_TEXT_UNAVAILABLE",
+        "REQUIRES_ADDITIONAL_REVIEW"
+      ]
+    },
+    "primary_source_verified": {
+      "type": "boolean"
+    },
+    "identifier_verified": {
+      "type": "boolean"
+    },
+    "full_text_reviewed": {
+      "type": "boolean"
+    },
+    "claims_addressed": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^TC-NOV-[0-9]{3}$"
+      },
+      "uniqueItems": true
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "INCLUDE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "primary_source_verified": {
+            "const": true
+          },
+          "identifier_verified": {
+            "const": true
+          },
+          "full_text_reviewed": {
+            "const": true
+          },
+          "claims_addressed": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}
