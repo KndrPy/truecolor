@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/artifact_intake.schema.json",
+  "title": "TrueColor Prior-Art Artifact Intake Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "artifact_id",
+    "intake_attempt_id",
+    "content_sha256",
+    "byte_length",
+    "original_name",
+    "detected_media_type",
+    "media_detection",
+    "storage",
+    "ingested_at",
+    "status",
+    "state_history"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^artifact:sha256:[a-f0-9]{64}$"
+    },
+    "intake_attempt_id": {
+      "type": "string",
+      "pattern": "^intake:[a-f0-9]{32}$"
+    },
+    "content_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "byte_length": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "original_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_uri": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "declared_media_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "detected_media_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "media_type_mismatch": {
+      "type": "boolean"
+    },
+    "media_detection": {
+      "type": "object",
+      "required": [
+        "detector_version",
+        "method",
+        "confidence",
+        "evidence"
+      ],
+      "properties": {
+        "detector_version": {
+          "const": "1.0.0"
+        },
+        "method": {
+          "enum": [
+            "EMPTY",
+            "BYTE_SIGNATURE",
+            "ARCHIVE_STRUCTURE",
+            "STRUCTURAL_TEXT_PROBE",
+            "TEXT_HEURISTIC",
+            "UNKNOWN"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "storage": {
+      "type": "object",
+      "required": [
+        "object_path",
+        "object_relative_path",
+        "deduplicated",
+        "immutable"
+      ],
+      "properties": {
+        "object_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "object_relative_path": {
+          "type": "string",
+          "pattern": "^objects/sha256/[a-f0-9]{2}/[a-f0-9]{2}/[a-f0-9]{64}\\.blob$"
+        },
+        "deduplicated": {
+          "type": "boolean"
+        },
+        "immutable": {
+          "const": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "ingested_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "const": "STORED_IMMUTABLY"
+    },
+    "state_history": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "state",
+          "occurred_at"
+        ],
+        "properties": {
+          "state": {
+            "enum": [
+              "RECEIVED",
+              "HASHED",
+              "MEDIA_TYPE_DETECTED",
+              "STORED_IMMUTABLY"
+            ]
+          },
+          "occurred_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "implementation": {
+      "type": "object",
+      "required": [
+        "module",
+        "version"
+      ],
+      "properties": {
+        "module": {
+          "const": "analysis.prior_art.ingestion.artifact_intake"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,77 @@
+{
+  "artifacts": [
+    {
+      "bytes": 368,
+      "path": "analysis/prior_art/ingestion/__init__.py",
+      "sha256": "168f32e79e5b50a85d0c35bdb01a7a246443796ce17c80d3a2ec92989faecf0e"
+    },
+    {
+      "bytes": 22855,
+      "path": "analysis/prior_art/ingestion/artifact_intake.py",
+      "sha256": "94f39fd638383426109a53ffb9d3b97f81213b297cff673560b86adc25310b1c"
+    },
+    {
+      "bytes": 4193,
+      "path": "analysis/prior_art/ingestion/validate_artifact_intake.py",
+      "sha256": "cd9dd37a3d78fc9b52d08cf30a26aed8c93d48c953d3f68e6c2cee730c9029d2"
+    },
+    {
+      "bytes": 9981,
+      "path": "analysis/prior_art/ingestion/test_artifact_intake.py",
+      "sha256": "24ca9875287a0924ce878e73ca7b64d1891667ef3a32dc2ba90980fe524f8633"
+    },
+    {
+      "bytes": 4895,
+      "path": "analysis/prior_art/ingestion/run_intake_falsification.py",
+      "sha256": "79423b5da629b110600cea732b47aa1467ae73b3292cdeb108692068f2630c58"
+    },
+    {
+      "bytes": 3777,
+      "path": "analysis/prior_art/ingestion/schemas/artifact_intake.schema.json",
+      "sha256": "1e87cb71d1205c8d506893e85652ed95e37cfb2c6241164dfbdd82bca06bd79f"
+    },
+    {
+      "bytes": 2212,
+      "path": "analysis/prior_art/ingestion/WP_INGEST_01_SLICE_A.md",
+      "sha256": "5abec0e584d53d6ca94fb02e8aa48ff204df855b4e52e60ee5456e8a8413f5f8"
+    },
+    {
+      "bytes": 1497,
+      "path": "analysis/prior_art/ingestion/reports/intake-unit-tests.txt",
+      "sha256": "e6f625c6540ec9ab37ca2a7f30ba37dceed3007bb4711ab5e5b589c555e762f3"
+    },
+    {
+      "bytes": 764,
+      "path": "analysis/prior_art/ingestion/reports/intake-falsification.json",
+      "sha256": "c99811853056ebe44c62d679896479413ea8e3c7a6d0a7a12e476324da638e56"
+    },
+    {
+      "bytes": 632,
+      "path": "analysis/prior_art/ingestion/reports/intake-pilot-result.json",
+      "sha256": "287b52a42432d94799084a2dd36dc432094a50e2bbaf57bc154fd5741deb3092"
+    },
+    {
+      "bytes": 227,
+      "path": "analysis/prior_art/ingestion/reports/intake-pilot-validation.json",
+      "sha256": "414644ad04d4f78e1199cc45bfe83bcffa6f8d578cde83e101c44fc48838c3c6"
+    }
+  ],
+  "capabilities": [
+    "CAP-INTAKE-001",
+    "CAP-INTAKE-002",
+    "CAP-INTAKE-003"
+  ],
+  "gates": {
+    "falsification_passed": true,
+    "pilot_media_detected": true,
+    "pilot_stored_immutably": true,
+    "pilot_validation_passed": true,
+    "required_files_exist": true,
+    "unit_tests_passed": true
+  },
+  "missing_required_files": [],
+  "schema_version": "1.0.0",
+  "slice": "A",
+  "status": "PASS",
+  "work_package": "WP-INGEST-01"
+}

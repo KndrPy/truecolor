@@ -1,0 +1,34 @@
+{
+  "capabilities": [
+    "CAP-INTAKE-001",
+    "CAP-INTAKE-002",
+    "CAP-INTAKE-003"
+  ],
+  "falsification_status": "PASS",
+  "tests": [
+    {
+      "expected_code": "CHECKSUM_MISMATCH",
+      "observed_code": "CHECKSUM_MISMATCH",
+      "passed": true,
+      "test": "checksum_mismatch"
+    },
+    {
+      "expected_code": "SIZE_LIMIT_EXCEEDED",
+      "observed_code": "SIZE_LIMIT_EXCEEDED",
+      "passed": true,
+      "test": "size_limit"
+    },
+    {
+      "expected_code": "SOURCE_NOT_FOUND",
+      "observed_code": "SOURCE_NOT_FOUND",
+      "passed": true,
+      "test": "missing_source"
+    },
+    {
+      "expected_code": "INVALID_MAX_BYTES",
+      "observed_code": "INVALID_MAX_BYTES",
+      "passed": true,
+      "test": "invalid_max_bytes"
+    }
+  ]
+}
