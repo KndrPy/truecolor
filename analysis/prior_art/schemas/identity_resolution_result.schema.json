@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/identity-resolution-result.schema.json",
+  "title": "Stage 1 Authoritative Identity Resolution Result",
+  "type": "object",
+  "required": [
+    "candidate_key",
+    "global_rank",
+    "attempted_identifiers",
+    "resolution_state",
+    "resolution_reason",
+    "authoritative_source",
+    "retrieval_evidence",
+    "normalized_metadata",
+    "field_comparison",
+    "version_relationship",
+    "related_candidate_keys",
+    "conflicts"
+  ],
+  "properties": {
+    "candidate_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "global_rank": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1303
+    },
+    "attempted_identifiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "identifier_type",
+          "identifier_value",
+          "attempted"
+        ],
+        "properties": {
+          "identifier_type": {
+            "enum": [
+              "doi",
+              "pmid",
+              "arxiv",
+              "title_author_year"
+            ]
+          },
+          "identifier_value": {
+            "type": ["string", "null"]
+          },
+          "attempted": {
+            "type": "boolean"
+          },
+          "result": {
+            "type": ["string", "null"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "resolution_state": {
+      "enum": [
+        "VERIFIED",
+        "CONFLICT",
+        "UNRESOLVED",
+        "DUPLICATE_VERSION",
+        "RETRACTED",
+        "CORRECTION_ONLY",
+        "NON_SCHOLARLY"
+      ]
+    },
+    "resolution_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authoritative_source": {
+      "type": ["string", "null"]
+    },
+    "retrieval_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "request_identity",
+          "retrieved_at_utc",
+          "http_status",
+          "raw_path",
+          "raw_sha256"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "request_identity": {
+            "type": "string"
+          },
+          "retrieved_at_utc": {
+            "type": "string"
+          },
+          "http_status": {
+            "type": ["integer", "null"]
+          },
+          "raw_path": {
+            "type": ["string", "null"]
+          },
+          "raw_sha256": {
+            "type": ["string", "null"],
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "normalized_metadata": {
+      "type": "object"
+    },
+    "field_comparison": {
+      "type": "object"
+    },
+    "version_relationship": {
+      "enum": [
+        "CANONICAL_VERSION",
+        "PREPRINT_OF_PUBLISHED_ARTICLE",
+        "PUBLISHED_VERSION_OF_PREPRINT",
+        "CONFERENCE_VERSION",
+        "EXTENDED_JOURNAL_VERSION",
+        "CORRECTION_OF",
+        "RETRACTION_OF",
+        "DUPLICATE_METADATA_RECORD",
+        "UNRESOLVED"
+      ]
+    },
+    "related_candidate_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": false
+}

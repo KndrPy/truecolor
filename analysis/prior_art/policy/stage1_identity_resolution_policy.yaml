@@ -1,0 +1,76 @@
+policy_version: 1.0.0
+policy_name: authoritative_stage1_identity_resolution
+
+candidate_count: 1303
+
+resolution_order:
+  - doi
+  - pmid
+  - arxiv
+  - title_author_year
+
+authoritative_sources:
+  doi:
+    - crossref
+    - publisher
+  pmid:
+    - pubmed
+    - europe_pmc
+  arxiv:
+    - arxiv
+  title_author_year:
+    - crossref
+    - europe_pmc
+
+minimum_verification_conditions:
+  - authoritative_identifier_resolves
+  - normalized_title_similarity_at_least_threshold
+  - publication_year_consistent_or_explained
+  - authorship_overlap_at_least_threshold
+  - publication_status_resolved
+  - correction_retraction_status_resolved
+  - duplicate_version_relationship_resolved
+
+thresholds:
+  normalized_title_similarity: 0.92
+  normalized_title_conflict_below: 0.75
+  author_token_overlap: 0.50
+
+resolution_states:
+  - VERIFIED
+  - CONFLICT
+  - UNRESOLVED
+  - DUPLICATE_VERSION
+  - RETRACTED
+  - CORRECTION_ONLY
+  - NON_SCHOLARLY
+
+evidence_requirements:
+  retain_raw_response: true
+  retain_response_sha256: true
+  retain_http_status: true
+  retain_retrieval_timestamp_utc: true
+  retain_request_identity: true
+  retain_normalized_projection: true
+  retain_field_comparison: true
+  overwrite_existing_verified_record: false
+
+execution:
+  resumable: true
+  checkpoint_after_each_record: true
+  retry_count: 3
+  retry_backoff_seconds:
+    - 1
+    - 2
+    - 4
+  request_delay_seconds: 0.25
+  failure_isolation: per_candidate
+  all_candidates_attempted: true
+
+prohibited_inferences:
+  - identity_verification_is_not_source_admission
+  - identity_verification_is_not_method_quality
+  - identity_verification_is_not_claim_overlap
+  - identity_verification_is_not_novelty
+  - missing_metadata_is_not_automatically_non_scholarly
+  - unresolved_identity_is_not_automatic_exclusion
