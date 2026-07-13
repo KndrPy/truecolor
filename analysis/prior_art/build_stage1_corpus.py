@@ -254,6 +254,13 @@ def main() -> int:
         if row["query_family_id"] not in query_by_id
     })
 
+    unresolved_search_source_references = sorted({
+        source_id
+        for row in search_rows
+        for source_id in row["included_source_ids"]
+        if source_id not in source_id_set
+    })
+
     search_domain_mismatches: list[dict[str, str]] = []
 
     for row in search_rows:
@@ -315,6 +322,17 @@ def main() -> int:
         source_claim_references - claim_ids
     )
 
+    source_domain_references = {
+        domain
+        for row in source_rows
+        for domain in row["domains"]
+    }
+
+    invalid_source_domain_references = sorted(
+        source_domain_references
+        - required_domains
+    )
+
     gates = {
         "source_records_schema_valid": (
             not source_errors
@@ -350,8 +368,14 @@ def main() -> int:
         "source_claim_references_resolved": (
             not invalid_source_claim_references
         ),
+        "source_domain_references_resolved": (
+            not invalid_source_domain_references
+        ),
         "search_query_references_resolved": (
             not invalid_search_query_references
+        ),
+        "search_source_references_resolved": (
+            not unresolved_search_source_references
         ),
         "search_domains_match_query_registry": (
             not search_domain_mismatches
@@ -368,40 +392,62 @@ def main() -> int:
                 required_domains
                 <= completed_domains
             ),
-            "all_searches_include_backward_review": all(
-                row["backward_reference_search"]
-                for row in search_rows
-                if row["status"] == "COMPLETE"
+            "all_searches_include_backward_review": (
+                bool(search_rows)
+                and all(
+                    row["backward_reference_search"]
+                    for row in search_rows
+                    if row["status"] == "COMPLETE"
+                )
             ),
-            "all_searches_include_forward_review": all(
-                row["forward_citation_search"]
-                for row in search_rows
-                if row["status"] == "COMPLETE"
+            "all_searches_include_forward_review": (
+                bool(search_rows)
+                and all(
+                    row["forward_citation_search"]
+                    for row in search_rows
+                    if row["status"] == "COMPLETE"
+                )
             ),
-            "all_searches_include_preprint_review": all(
-                row["current_preprint_search"]
-                for row in search_rows
-                if row["status"] == "COMPLETE"
+            "all_searches_include_preprint_review": (
+                bool(search_rows)
+                and all(
+                    row["current_preprint_search"]
+                    for row in search_rows
+                    if row["status"] == "COMPLETE"
+                )
             ),
         })
 
     if args.require_complete_overlap:
         gates.update({
+            "source_corpus_nonempty": bool(
+                source_rows
+            ),
+            "overlap_corpus_nonempty": bool(
+                overlap_rows
+            ),
             "all_claims_have_overlap_records": (
-                not claims_without_overlap_records
+                bool(overlap_rows)
+                and not claims_without_overlap_records
             ),
-            "all_sources_fully_extracted": all(
-                row["extraction_status"]
-                in {
-                    "EXTRACTED",
-                    "SECOND_PASS_VALIDATED",
-                }
-                for row in source_rows
+            "all_sources_fully_extracted": (
+                bool(source_rows)
+                and all(
+                    row["extraction_status"]
+                    in {
+                        "EXTRACTED",
+                        "SECOND_PASS_VALIDATED",
+                    }
+                    for row in source_rows
+                )
             ),
-            "all_overlap_records_adjudicated": all(
-                row["overlap_state"]
-                != "UNRESOLVED"
-                for row in overlap_rows
+            "all_overlap_records_adjudicated": (
+                bool(overlap_rows)
+                and all(
+                    row["overlap_state"]
+                    != "UNRESOLVED"
+                    for row in overlap_rows
+                )
             ),
         })
 
@@ -500,8 +546,14 @@ def main() -> int:
         "invalid_source_claim_references": (
             invalid_source_claim_references
         ),
+        "invalid_source_domain_references": (
+            invalid_source_domain_references
+        ),
         "invalid_search_query_references": (
             invalid_search_query_references
+        ),
+        "unresolved_search_source_references": (
+            unresolved_search_source_references
         ),
         "search_domain_mismatches": (
             search_domain_mismatches
