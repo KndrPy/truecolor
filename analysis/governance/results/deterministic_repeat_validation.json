@@ -1,0 +1,44 @@
+{
+  "comparisons": [
+    {
+      "identical": true,
+      "path": "environment_capture.json",
+      "run1_sha256": "511ec0a17a4d33f2dd3196ff27f44cba85e2a9b266a82e8eeafbb9a77f5436a7",
+      "run2_sha256": "511ec0a17a4d33f2dd3196ff27f44cba85e2a9b266a82e8eeafbb9a77f5436a7"
+    },
+    {
+      "identical": true,
+      "path": "governance_manifest.json",
+      "run1_sha256": "513b4fd359dea20d66196aba1731620db57f879514205c104d892092cfc70315",
+      "run2_sha256": "513b4fd359dea20d66196aba1731620db57f879514205c104d892092cfc70315"
+    },
+    {
+      "identical": true,
+      "path": "pip_freeze.txt",
+      "run1_sha256": "ab791fb54dab9ad38088c1cc961ea1e19c7dc519e5bdf77af742a134d2d0e36b",
+      "run2_sha256": "ab791fb54dab9ad38088c1cc961ea1e19c7dc519e5bdf77af742a134d2d0e36b"
+    },
+    {
+      "identical": true,
+      "path": "sha256_manifest.json",
+      "run1_sha256": "079dc3331c1d02a7babd5c6d94815bed980ba8b3afb639ce1331c8dd89499e5c",
+      "run2_sha256": "079dc3331c1d02a7babd5c6d94815bed980ba8b3afb639ce1331c8dd89499e5c"
+    },
+    {
+      "identical": true,
+      "path": "stage0_summary.json",
+      "run1_sha256": "7363f0257da0c1f65f92b5abdaa8b6839ebf5b122c14d97bead9622628d8ad52",
+      "run2_sha256": "7363f0257da0c1f65f92b5abdaa8b6839ebf5b122c14d97bead9622628d8ad52"
+    },
+    {
+      "identical": true,
+      "path": "stage0_validation_report.md",
+      "run1_sha256": "f0b3be99edf2adb14cf1ad8f4182c90552a0c6c9e992524794f3488934255b56",
+      "run2_sha256": "f0b3be99edf2adb14cf1ad8f4182c90552a0c6c9e992524794f3488934255b56"
+    }
+  ],
+  "failed_files": [],
+  "files_compared": 6,
+  "stage": 0,
+  "status": "PASS"
+}

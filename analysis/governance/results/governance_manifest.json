@@ -1,0 +1,102 @@
+[
+  {
+    "bytes": 174,
+    "path": "/home/vsam/truecolor/analysis/governance/STAGE_0_READY.yaml",
+    "sha256": "93d63dcd9d5fd12d1300a34a29f75f7b03503705758b113054deef5074f84755"
+  },
+  {
+    "bytes": 0,
+    "path": "/home/vsam/truecolor/analysis/governance/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "bytes": 517,
+    "path": "/home/vsam/truecolor/analysis/governance/artifact_contract.yaml",
+    "sha256": "7eb95720fd2ed2708a66806e3e300dc63ccd76c51b0159bd4bcea79d2b8098cb"
+  },
+  {
+    "bytes": 617,
+    "path": "/home/vsam/truecolor/analysis/governance/claim_dataset_matrix.yaml",
+    "sha256": "82c009a8e71087dc748816a3465c84420824f29563a0363da95be6658a5ef7d1"
+  },
+  {
+    "bytes": 577,
+    "path": "/home/vsam/truecolor/analysis/governance/closure_requirements.yaml",
+    "sha256": "aeca9d5bee4607d00d5d9d7309baaaee0c6a4712bb84ea6b2ed4bebf07111518"
+  },
+  {
+    "bytes": 4056,
+    "path": "/home/vsam/truecolor/analysis/governance/data_asset_registry.yaml",
+    "sha256": "fb4dd489681d1cc6f527c1f17b1b4336421bae96ebb38580f505775f7afd29c3"
+  },
+  {
+    "bytes": 372,
+    "path": "/home/vsam/truecolor/analysis/governance/data_governance.yaml",
+    "sha256": "3f24aa117f949f4b2c696d3068398896336662321221b021f2bbdc1aaafe0312"
+  },
+  {
+    "bytes": 162,
+    "path": "/home/vsam/truecolor/analysis/governance/deviation_register.yaml",
+    "sha256": "de033df2ed8f6ba3e3cf6f51af4eecde943b6e970ea61bbbe403379b066e6f9b"
+  },
+  {
+    "bytes": 938,
+    "path": "/home/vsam/truecolor/analysis/governance/environment_registry.yaml",
+    "sha256": "730a2494621b6d67f5e3d9ac9e4f1d130c922fa523fff71e4a0da107312013d8"
+  },
+  {
+    "bytes": 391,
+    "path": "/home/vsam/truecolor/analysis/governance/falsification_policy.yaml",
+    "sha256": "802f970d93a725967acf3f1bf27066c692d940e1d01a5f50c183df5b40332eec"
+  },
+  {
+    "bytes": 1198,
+    "path": "/home/vsam/truecolor/analysis/governance/legacy_evidence_registry.yaml",
+    "sha256": "e1b083dc5dfd32c521a9b89ade4f0cbdbf77a4d47c84ed48127497daaafa2c7f"
+  },
+  {
+    "bytes": 1308,
+    "path": "/home/vsam/truecolor/analysis/governance/program_registry.yaml",
+    "sha256": "b4b76919641d64ef9b94e7bdd209772c4c119baa31fe0653a0b12300d142eec4"
+  },
+  {
+    "bytes": 1097,
+    "path": "/home/vsam/truecolor/analysis/governance/reproducibility_policy.md",
+    "sha256": "d900590b27cc3ade95557ef4a2be370a7b0d66fa3b6f0543a8918857f6b6b0a1"
+  },
+  {
+    "bytes": 13257,
+    "path": "/home/vsam/truecolor/analysis/governance/run_stage0.py",
+    "sha256": "5f18e0f7e3e0817911a6aecb7c9fbaa990a879aaecdefebcd7cb9fd7400b333b"
+  },
+  {
+    "bytes": 116,
+    "path": "/home/vsam/truecolor/analysis/governance/run_stage0.sh",
+    "sha256": "5a444b1df4fc639af53bcde889a059545576bc1ef79c47c2ab344d33fd6ce661"
+  },
+  {
+    "bytes": 5198,
+    "path": "/home/vsam/truecolor/analysis/governance/run_stage0_falsification.py",
+    "sha256": "0d7af06f01acb468245276bb0344d7d5dcdf579bacc40c529b96f0e89e812a6f"
+  },
+  {
+    "bytes": 1862,
+    "path": "/home/vsam/truecolor/analysis/governance/schemas/stage_state.schema.json",
+    "sha256": "42bbe69ec147f77185c92729603aab27ff35fd40790e8af552e43762d04b71be"
+  },
+  {
+    "bytes": 417,
+    "path": "/home/vsam/truecolor/analysis/governance/seed_registry.yaml",
+    "sha256": "82c7bc6d8e86dadcb987d8be3d6946814ccc7b8b16a3b9eab031bd328cf7fa18"
+  },
+  {
+    "bytes": 6915,
+    "path": "/home/vsam/truecolor/analysis/governance/stage_registry.yaml",
+    "sha256": "ddb454f44e226fd96065cbb1002394f9bb03838970f266a44e47585beccfe61e"
+  },
+  {
+    "bytes": 382,
+    "path": "/home/vsam/truecolor/analysis/governance/templates/stage_closure_template.yaml",
+    "sha256": "c131c7796f70a07b20342101a76bb3784d40e1013bc013a1f4ed3c8e8844ece3"
+  }
+]

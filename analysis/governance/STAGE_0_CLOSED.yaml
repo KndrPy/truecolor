@@ -1,0 +1,157 @@
+stage: 0
+name: program_governance_and_reproducibility_foundation
+state: CLOSED
+entry_conditions:
+- condition: branch_created_from_main
+  passed: true
+  baseline_commit: b7f921e4554c27d867b5c173a85dce939813f493
+- condition: committed_stage0_implementation_executed
+  passed: true
+  implementation_commit: 06323e5a32a003683bda27ef51bcdb543f068d22
+- condition: clean_primary_execution_completed
+  passed: true
+scientific_question: Can the complete TrueColor analysis program be executed as a deterministic, falsifiable,
+  identity-aware and artifact-governed sequence without omitted datasets or unregistered claims?
+estimands:
+- name: governance_gate_pass_fraction
+  value: 1.0
+  numerator: 18
+  denominator: 18
+- name: falsification_detection_fraction
+  value: 1.0
+  numerator: 3
+  denominator: 3
+- name: deterministic_artifact_identity_fraction
+  value: 1.0
+  numerator: 6
+  denominator: 6
+- name: required_asset_registration_fraction
+  value: 1.0
+  numerator: 12
+  denominator: 12
+data_admissibility:
+  raw_governed_data_in_repository: false
+  registered_data_asset_count: 12
+  required_assets_registered: true
+  scin_registered: true
+  canonical_stage_count: 29
+  downstream_dataset_admissibility_resolved: false
+  downstream_dataset_admissibility_rule: Each registered asset remains subject to its own provenance,
+    licensing, identity, integrity and scientific admissibility closure.
+primary_method:
+  method: machine-enforced governance registries, repository-state validation, active mutation testing
+    and byte-level repeat execution
+  implementation_commit: 06323e5a32a003683bda27ef51bcdb543f068d22
+  registered_stage_count: 29
+  registered_asset_count: 12
+  gate_count: 18
+  passed_gate_count: 18
+independent_validation:
+- validation: second_clean_execution_from_same_commit
+  result: PASS
+  implementation_commit: 06323e5a32a003683bda27ef51bcdb543f068d22
+- validation: byte_level_repeat_comparison
+  result: PASS
+  files_compared: 6
+  files_identical: 6
+falsification_tests:
+- expected_failed_gates:
+  - required_assets_registered
+  - scin_registered
+  observed_failed_gates:
+  - required_assets_registered
+  - scin_registered
+  passed: true
+  runner_returncode: 1
+  status: OPEN_FAILED_GATES
+  test: missing_scin_registration
+- expected_failed_gates:
+  - stage_ids_exact
+  observed_failed_gates:
+  - stage_ids_exact
+  passed: true
+  runner_returncode: 1
+  status: OPEN_FAILED_GATES
+  test: invalid_stage_numbering
+- expected_failed_gates:
+  - gitignore_hygiene
+  observed_failed_gates:
+  - gitignore_hygiene
+  passed: true
+  runner_returncode: 1
+  status: OPEN_FAILED_GATES
+  test: missing_work_ignore_rule
+kill_condition_adjudication:
+- condition: missing_required_dataset_is_not_detected
+  triggered: false
+  evidence_test: missing_scin_registration
+- condition: invalid_stage_numbering_is_not_detected
+  triggered: false
+  evidence_test: invalid_stage_numbering
+- condition: repository_hygiene_failure_is_not_detected
+  triggered: false
+  evidence_test: missing_work_ignore_rule
+- condition: repeat_execution_is_nondeterministic
+  triggered: false
+  files_compared: 6
+- condition: scin_is_omitted_from_program_governance
+  triggered: false
+  scin_registered: true
+scope_restrictions:
+- Stage 0 establishes program governance, falsification and reproducibility controls. It does not validate
+  downstream scientific claims.
+- Registration of a dataset establishes its intended and prohibited analytical roles; registration does
+  not establish dataset-level admissibility.
+- SCIN is registered for image-domain robustness, acquisition heterogeneity, condition diversity and domain-shift
+  analysis. It is not admitted as spectral, calibrated colorimetric, melanin or pathology-confirmed ground
+  truth.
+- Legacy evidence remains noncanonical until re-executed or explicitly admitted under the canonical artifact
+  contract.
+immutable_artifacts:
+- analysis/governance/results/stage0_summary.json
+- analysis/governance/results/environment_capture.json
+- analysis/governance/results/pip_freeze.txt
+- analysis/governance/results/governance_manifest.json
+- analysis/governance/results/stage0_validation_report.md
+- analysis/governance/results/sha256_manifest.json
+- analysis/governance/results/stage0_falsification_results.json
+- analysis/governance/results/deterministic_repeat_validation.json
+artifact_hashes:
+- path: analysis/governance/results/stage0_summary.json
+  bytes: 1491
+  sha256: 7363f0257da0c1f65f92b5abdaa8b6839ebf5b122c14d97bead9622628d8ad52
+- path: analysis/governance/results/environment_capture.json
+  bytes: 3724
+  sha256: 511ec0a17a4d33f2dd3196ff27f44cba85e2a9b266a82e8eeafbb9a77f5436a7
+- path: analysis/governance/results/pip_freeze.txt
+  bytes: 351
+  sha256: ab791fb54dab9ad38088c1cc961ea1e19c7dc519e5bdf77af742a134d2d0e36b
+- path: analysis/governance/results/governance_manifest.json
+  bytes: 3761
+  sha256: 513b4fd359dea20d66196aba1731620db57f879514205c104d892092cfc70315
+- path: analysis/governance/results/stage0_validation_report.md
+  bytes: 303
+  sha256: f0b3be99edf2adb14cf1ad8f4182c90552a0c6c9e992524794f3488934255b56
+- path: analysis/governance/results/sha256_manifest.json
+  bytes: 874
+  sha256: 079dc3331c1d02a7babd5c6d94815bed980ba8b3afb639ce1331c8dd89499e5c
+- path: analysis/governance/results/stage0_falsification_results.json
+  bytes: 985
+  sha256: fdb07ebbfcce46d735da21b00f9c7ad21ba3c924167e580dcdfe4d16f8c7641d
+- path: analysis/governance/results/deterministic_repeat_validation.json
+  bytes: 1631
+  sha256: c7ab087116b2c1a030362066d6321ef8c75050ede51b6b4f7a885d807d904968
+code_commit: 06323e5a32a003683bda27ef51bcdb543f068d22
+reproduction_command: rm -rf analysis/governance/results && python -m analysis.governance.run_stage0 --output-dir
+  analysis/governance/results
+downstream_inheritance:
+- only_registered_stage_states_are_permitted
+- partial_closure_is_prohibited
+- all_stages_require_independent_validation
+- all_stages_require_active_falsification
+- all_stages_require_kill_condition_adjudication
+- all_stages_require_hashed_immutable_artifacts
+- all_datasets_require_explicit_primary_and_prohibited_role_registration
+- volatile_runtime_telemetry_is_excluded_from_deterministic_environment_identity
+- scin_is_retained_as_image_domain_external_validation
+- legacy_evidence_requires_canonical_reexecution_or_formal_admission

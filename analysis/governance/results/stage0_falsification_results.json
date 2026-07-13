@@ -1,0 +1,44 @@
+{
+  "falsification_status": "PASS",
+  "stage": 0,
+  "tests": [
+    {
+      "expected_failed_gates": [
+        "required_assets_registered",
+        "scin_registered"
+      ],
+      "observed_failed_gates": [
+        "required_assets_registered",
+        "scin_registered"
+      ],
+      "passed": true,
+      "runner_returncode": 1,
+      "status": "OPEN_FAILED_GATES",
+      "test": "missing_scin_registration"
+    },
+    {
+      "expected_failed_gates": [
+        "stage_ids_exact"
+      ],
+      "observed_failed_gates": [
+        "stage_ids_exact"
+      ],
+      "passed": true,
+      "runner_returncode": 1,
+      "status": "OPEN_FAILED_GATES",
+      "test": "invalid_stage_numbering"
+    },
+    {
+      "expected_failed_gates": [
+        "gitignore_hygiene"
+      ],
+      "observed_failed_gates": [
+        "gitignore_hygiene"
+      ],
+      "passed": true,
+      "runner_returncode": 1,
+      "status": "OPEN_FAILED_GATES",
+      "test": "missing_work_ignore_rule"
+    }
+  ]
+}

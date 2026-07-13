@@ -1,0 +1,27 @@
+[
+  {
+    "bytes": 1491,
+    "path": "analysis/governance/results/stage0_summary.json",
+    "sha256": "7363f0257da0c1f65f92b5abdaa8b6839ebf5b122c14d97bead9622628d8ad52"
+  },
+  {
+    "bytes": 3724,
+    "path": "analysis/governance/results/environment_capture.json",
+    "sha256": "511ec0a17a4d33f2dd3196ff27f44cba85e2a9b266a82e8eeafbb9a77f5436a7"
+  },
+  {
+    "bytes": 351,
+    "path": "analysis/governance/results/pip_freeze.txt",
+    "sha256": "ab791fb54dab9ad38088c1cc961ea1e19c7dc519e5bdf77af742a134d2d0e36b"
+  },
+  {
+    "bytes": 3761,
+    "path": "analysis/governance/results/governance_manifest.json",
+    "sha256": "513b4fd359dea20d66196aba1731620db57f879514205c104d892092cfc70315"
+  },
+  {
+    "bytes": 303,
+    "path": "analysis/governance/results/stage0_validation_report.md",
+    "sha256": "f0b3be99edf2adb14cf1ad8f4182c90552a0c6c9e992524794f3488934255b56"
+  }
+]
