@@ -94,6 +94,67 @@ def load_json(
     return value
 
 
+def resolve_root_artifact_id(
+    parent: dict[str, Any],
+    *,
+    metadata_root: Path,
+) -> str:
+    parent_attempt_id = parent[
+        "intake_attempt_id"
+    ]
+
+    matches: list[
+        dict[str, Any]
+    ] = []
+
+    if metadata_root.exists():
+        for path in sorted(
+            metadata_root.rglob(
+                "*.metadata.json"
+            )
+        ):
+            record = load_json(
+                path
+            )
+
+            if (
+                record.get(
+                    "intake_attempt_id"
+                )
+                == parent_attempt_id
+            ):
+                matches.append(
+                    record
+                )
+
+    if len(matches) > 1:
+        raise ArchiveExpansionError(
+            "DUPLICATE_PARENT_METADATA",
+            parent_attempt_id,
+        )
+
+    if not matches:
+        return parent[
+            "artifact_id"
+        ]
+
+    root_artifact_id = (
+        matches[0]
+        .get(
+            "lineage",
+            {},
+        )
+        .get(
+            "root_artifact_id"
+        )
+    )
+
+    return (
+        root_artifact_id
+        or parent["artifact_id"]
+    )
+
+
 def safe_member_path(
     raw_name: str,
 ) -> str:
@@ -250,16 +311,27 @@ def zip_plans(
     archive: zipfile.ZipFile,
 ) -> list[MemberPlan]:
     plans: list[MemberPlan] = []
+    observed_paths: set[str] = set()
 
     for index, info in enumerate(
         archive.infolist()
     ):
+        if info.is_dir():
+            continue
+
         member_path = safe_member_path(
             info.filename
         )
 
-        if info.is_dir():
-            continue
+        if member_path in observed_paths:
+            raise ArchiveExpansionError(
+                "DUPLICATE_MEMBER_PATH",
+                member_path,
+            )
+
+        observed_paths.add(
+            member_path
+        )
 
         unix_mode = (
             info.external_attr >> 16
@@ -297,16 +369,27 @@ def tar_plans(
     archive: tarfile.TarFile,
 ) -> list[MemberPlan]:
     plans: list[MemberPlan] = []
+    observed_paths: set[str] = set()
 
     for index, info in enumerate(
         archive.getmembers()
     ):
+        if info.isdir():
+            continue
+
         member_path = safe_member_path(
             info.name
         )
 
-        if info.isdir():
-            continue
+        if member_path in observed_paths:
+            raise ArchiveExpansionError(
+                "DUPLICATE_MEMBER_PATH",
+                member_path,
+            )
+
+        observed_paths.add(
+            member_path
+        )
 
         if (
             info.issym()
@@ -456,7 +539,12 @@ def expand_archive(
     ]
 
     root_artifact_id = (
-        parent_artifact_id
+        resolve_root_artifact_id(
+            parent,
+            metadata_root=(
+                metadata_root
+            ),
+        )
     )
 
     children: list[

@@ -550,5 +550,341 @@ class ArchiveExpansionTests(
         )
 
 
+    def test_zip_allows_explicit_directory_entries(
+        self,
+    ) -> None:
+        archive_path = (
+            self.sources
+            / "directories.zip"
+        )
+
+        with zipfile.ZipFile(
+            archive_path,
+            "w",
+        ) as archive:
+            archive.writestr(
+                "paper/",
+                b"",
+            )
+
+            archive.writestr(
+                "paper/article.xml",
+                "<article/>",
+            )
+
+        parent = self.ingest(
+            archive_path
+        )
+
+        expansion, _ = self.expand(
+            parent.manifest_path
+        )
+
+        self.assertEqual(
+            expansion["member_count"],
+            1,
+        )
+
+        self.assertEqual(
+            expansion["children"][0][
+                "member_path"
+            ],
+            "paper/article.xml",
+        )
+
+    def test_duplicate_member_path_is_rejected(
+        self,
+    ) -> None:
+        archive_path = (
+            self.sources
+            / "duplicate-path.zip"
+        )
+
+        with zipfile.ZipFile(
+            archive_path,
+            "w",
+        ) as archive:
+            archive.writestr(
+                "paper.txt",
+                "first",
+            )
+
+            archive.writestr(
+                "paper.txt",
+                "second",
+            )
+
+        parent = self.ingest(
+            archive_path
+        )
+
+        with self.assertRaises(
+            ArchiveExpansionError
+        ) as raised:
+            self.expand(
+                parent.manifest_path
+            )
+
+        self.assertEqual(
+            raised.exception.code,
+            "DUPLICATE_MEMBER_PATH",
+        )
+
+    def test_failure_before_commit_leaves_no_children(
+        self,
+    ) -> None:
+        archive_path = (
+            self.sources
+            / "late-invalid.zip"
+        )
+
+        with zipfile.ZipFile(
+            archive_path,
+            "w",
+        ) as archive:
+            archive.writestr(
+                "valid.txt",
+                "valid",
+            )
+
+            archive.writestr(
+                "../invalid.txt",
+                "invalid",
+            )
+
+        parent = self.ingest(
+            archive_path
+        )
+
+        manifests_before = {
+            path
+            for path in self.manifests.rglob(
+                "intake_*.json"
+            )
+        }
+
+        objects_before = {
+            path
+            for path in self.store.rglob(
+                "*.blob"
+            )
+        }
+
+        with self.assertRaises(
+            ArchiveExpansionError
+        ):
+            self.expand(
+                parent.manifest_path
+            )
+
+        manifests_after = {
+            path
+            for path in self.manifests.rglob(
+                "intake_*.json"
+            )
+        }
+
+        objects_after = {
+            path
+            for path in self.store.rglob(
+                "*.blob"
+            )
+        }
+
+        self.assertEqual(
+            manifests_after,
+            manifests_before,
+        )
+
+        self.assertEqual(
+            objects_after,
+            objects_before,
+        )
+
+        self.assertEqual(
+            list(
+                self.metadata.rglob(
+                    "*.metadata.json"
+                )
+            ),
+            [],
+        )
+
+        self.assertEqual(
+            list(
+                self.expansions.rglob(
+                    "*.json"
+                )
+            ),
+            [],
+        )
+
+    def test_nested_expansion_preserves_root_artifact(
+        self,
+    ) -> None:
+        inner_archive = (
+            self.sources / "inner.zip"
+        )
+
+        with zipfile.ZipFile(
+            inner_archive,
+            "w",
+        ) as archive:
+            archive.writestr(
+                "paper.txt",
+                "nested",
+            )
+
+        outer_archive = (
+            self.sources / "outer.zip"
+        )
+
+        with zipfile.ZipFile(
+            outer_archive,
+            "w",
+        ) as archive:
+            archive.writestr(
+                "nested/inner.zip",
+                inner_archive.read_bytes(),
+            )
+
+        outer = self.ingest(
+            outer_archive
+        )
+
+        outer_expansion, _ = (
+            self.expand(
+                outer.manifest_path
+            )
+        )
+
+        inner_manifest = Path(
+            outer_expansion[
+                "children"
+            ][0][
+                "child_manifest_path"
+            ]
+        )
+
+        inner_expansion, _ = (
+            self.expand(
+                inner_manifest,
+                archive_depth=1,
+            )
+        )
+
+        nested_attempt_id = (
+            inner_expansion[
+                "children"
+            ][0][
+                "child_intake_attempt_id"
+            ]
+        )
+
+        matching_metadata = []
+
+        for metadata_path in (
+            self.metadata.rglob(
+                "*.metadata.json"
+            )
+        ):
+            payload = json.loads(
+                metadata_path.read_text(
+                    encoding="utf-8"
+                )
+            )
+
+            if (
+                payload[
+                    "intake_attempt_id"
+                ]
+                == nested_attempt_id
+            ):
+                matching_metadata.append(
+                    payload
+                )
+
+        self.assertEqual(
+            len(matching_metadata),
+            1,
+        )
+
+        self.assertEqual(
+            matching_metadata[0][
+                "lineage"
+            ][
+                "root_artifact_id"
+            ],
+            outer.manifest[
+                "artifact_id"
+            ],
+        )
+
+        self.assertEqual(
+            matching_metadata[0][
+                "lineage"
+            ][
+                "archive_depth"
+            ],
+            2,
+        )
+
+    def test_compression_ratio_is_rejected_before_commit(
+        self,
+    ) -> None:
+        archive_path = (
+            self.sources
+            / "ratio.zip"
+        )
+
+        with zipfile.ZipFile(
+            archive_path,
+            "w",
+            compression=(
+                zipfile.ZIP_DEFLATED
+            ),
+        ) as archive:
+            archive.writestr(
+                "highly-compressible.txt",
+                "x" * 100000,
+            )
+
+        parent = self.ingest(
+            archive_path
+        )
+
+        manifests_before = {
+            path
+            for path in self.manifests.rglob(
+                "intake_*.json"
+            )
+        }
+
+        with self.assertRaises(
+            ArchiveExpansionError
+        ) as raised:
+            self.expand(
+                parent.manifest_path,
+                max_compression_ratio=2.0,
+            )
+
+        self.assertEqual(
+            raised.exception.code,
+            "COMPRESSION_RATIO_EXCEEDED",
+        )
+
+        manifests_after = {
+            path
+            for path in self.manifests.rglob(
+                "intake_*.json"
+            )
+        }
+
+        self.assertEqual(
+            manifests_after,
+            manifests_before,
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
