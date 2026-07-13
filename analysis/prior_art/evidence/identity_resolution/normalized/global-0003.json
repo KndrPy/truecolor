@@ -1,0 +1,54 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s10043-015-0177-3",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s10043-015-0177-3",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_year": 2016,
+    "doi_match": true,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0
+  },
+  "global_rank": 3,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Takumi Yokokawa",
+      "Izumi Nishidate"
+    ],
+    "doi": "10.1007/s10043-015-0177-3",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluation of light scattering properties and chromophore concentrations in skin tissue based on diffuse reflectance signals at isosbestic wavelengths of hemoglobin",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s10043-015-0177-3",
+    "venue": "Optical Review",
+    "year": 2016
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved and normalized title met the verification threshold.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0003/crossref_doi__e02fa10cefed1de6.json",
+      "raw_sha256": "b7e760cb1bb8fd20311a05d427738f388f12366fb437bda29539668be0014b28",
+      "request_identity": "doi:10.1007/s10043-015-0177-3",
+      "retrieved_at_utc": "2026-07-13T04:42:22Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,55 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1046/j.0022-202x.2001.01577.x",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_year": 2001,
+    "doi_match": true,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0
+  },
+  "global_rank": 1,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "George Zonios",
+      "Julie Bykowski",
+      "Nikiforos Kollias"
+    ],
+    "doi": "10.1046/j.0022-202x.2001.01577.x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin Melanin, Hemoglobin, and Light Scattering Properties can be Quantitatively Assessed In Vivo Using Diffuse Reflectance Spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1046/j.0022-202x.2001.01577.x",
+    "venue": "Journal of Investigative Dermatology",
+    "year": 2001
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved and normalized title met the verification threshold.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0001/crossref_doi__f16a44a056ee1d90.json",
+      "raw_sha256": "5457fbe5d78ba35d396b10f4478ac2465e59140e662ecb94cc8c07141a13acca",
+      "request_identity": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "retrieved_at_utc": "2026-07-13T04:42:21Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

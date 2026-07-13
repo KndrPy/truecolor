@@ -1,0 +1,55 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.19184/cerimre.v5i2.31668",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.19184/cerimre.v5i2.31668",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0
+  },
+  "global_rank": 7,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Muhamad Affiq Bin Misran",
+      "Anubha Bilgaiyan",
+      "Reiji Hattori"
+    ],
+    "doi": "10.19184/cerimre.v5i2.31668",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Optical Ray Tracing Simulation by Using Monte Carlo Method for Reflectance-based Photoplethysmography Sensor in Human Skin and Fingertip Model",
+    "update_to": [],
+    "url": "https://doi.org/10.19184/cerimre.v5i2.31668",
+    "venue": "Computational And Experimental Research In Materials And Renewable Energy",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved and normalized title met the verification threshold.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0007/crossref_doi__279512c38e323944.json",
+      "raw_sha256": "298f47200999ede0e069f74928e3398ec4878b28050189ef62acd89e2c4b1158",
+      "request_identity": "doi:10.19184/cerimre.v5i2.31668",
+      "retrieved_at_utc": "2026-07-13T04:42:24Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

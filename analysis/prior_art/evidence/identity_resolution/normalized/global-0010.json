@@ -1,0 +1,58 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.17.7.077005",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.17.7.077005",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_year": 2012,
+    "doi_match": true,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0
+  },
+  "global_rank": 10,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sheng-Hao Tseng",
+      "Chao-Kai Hsu",
+      "Julia Yu-Yun Lee",
+      "Shih-Yu Tzeng",
+      "Wan-Rung Chen",
+      "Yu-Kai Liaw"
+    ],
+    "doi": "10.1117/1.jbo.17.7.077005",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Noninvasive evaluation of collagen and hemoglobin contents and scattering property of in vivo keloid scars and normal skin using diffuse reflectance spectroscopy: pilot study",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.17.7.077005",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2012
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved and normalized title met the verification threshold.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0010/crossref_doi__1b055ef470f8193c.json",
+      "raw_sha256": "aebe64f4a36c6643efc97a56686dec8602cb44fcad2045280d23f8e218f18746",
+      "request_identity": "doi:10.1117/1.jbo.17.7.077005",
+      "retrieved_at_utc": "2026-07-13T04:42:26Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}
