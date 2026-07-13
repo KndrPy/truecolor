@@ -1,0 +1,15 @@
+test_entities_and_inline_text_normalize (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_entities_and_inline_text_normalize) ... ok
+test_excluded_content_is_absent (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_excluded_content_is_absent) ... ok
+test_mismatched_closing_tag_recovers (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_mismatched_closing_tag_recovers) ... ok
+test_nested_semantic_tags_do_not_duplicate (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_nested_semantic_tags_do_not_duplicate) ... ok
+test_ranges_resolve_exactly (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_ranges_resolve_exactly) ... ok
+test_repeated_parse_is_deterministic (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_repeated_parse_is_deterministic) ... ok
+test_semantic_kinds_and_order (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_semantic_kinds_and_order) ... ok
+test_sibling_paths_are_indexed (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_sibling_paths_are_indexed) ... ok
+test_unmatched_closing_tag_does_not_pop (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_unmatched_closing_tag_does_not_pop) ... ok
+test_void_break_preserves_word_boundary (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_void_break_preserves_word_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.006s
+
+OK

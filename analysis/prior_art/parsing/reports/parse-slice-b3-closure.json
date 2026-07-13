@@ -1,0 +1,68 @@
+{
+  "artifacts": [
+    {
+      "bytes": 17148,
+      "path": "analysis/prior_art/parsing/xml_parser.py",
+      "sha256": "0604aba164a00049f36ba3305ca76872d2be75d8aed26503429976f56a2d39d8"
+    },
+    {
+      "bytes": 7764,
+      "path": "analysis/prior_art/parsing/test_html_parser.py",
+      "sha256": "a5a1ea5a3e8f1277adaa5a8f887011e89a8fb676897e78df27d5c815f75935a9"
+    },
+    {
+      "bytes": 3123,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B3.md",
+      "sha256": "be7d508a72e2c53afa2a3d9bf724feb0ec7d81c4341629a7d8d07e97f58543a0"
+    },
+    {
+      "bytes": 1505,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b3-html-tests.txt",
+      "sha256": "afb4962e48c42b95604e1890e7dd791a04acf38fe96cc88a4b7df449c358e82d"
+    },
+    {
+      "bytes": 5935,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b3-regression-tests.txt",
+      "sha256": "6b4c49b7610e4680a0eac08fac9e96f87c9f7c726ab74b3f6a498c6d70d36271"
+    }
+  ],
+  "capabilities": [
+    "CAP-PARSE-006"
+  ],
+  "gates": {
+    "html_tests_passed": true,
+    "implementation_contract_present": true,
+    "regression_tests_passed": true,
+    "required_files_exist": true
+  },
+  "implementation_evidence": {
+    "excluded_tags": true,
+    "explicit_html_failure": true,
+    "heading_recovery": true,
+    "indexed_paths": true,
+    "list_item_recovery": true,
+    "matched_close_recovery": true,
+    "paragraph_recovery": true,
+    "semantic_kinds": true,
+    "startendtag_handling": true,
+    "void_tags": true
+  },
+  "missing_files": [],
+  "schema_version": "1.0.0",
+  "slice": "B3",
+  "status": "PASS",
+  "test_evidence": {
+    "final_expected_total": 51,
+    "html_tests": {
+      "count": 10,
+      "expected": 10,
+      "passed": true
+    },
+    "regression_tests": {
+      "count": 41,
+      "expected": 41,
+      "passed": true
+    }
+  },
+  "work_package": "WP-PARSE-01"
+}
