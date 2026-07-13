@@ -482,6 +482,11 @@ def main():
                     **metric,
                 })
     angle_df = pd.DataFrame(angle_rows)
+    write_table(
+        angle_df,
+        out / "cross_site_subspace_angles",
+    )
+
     (
         subject_site,
         subject_balanced_site_metrics,

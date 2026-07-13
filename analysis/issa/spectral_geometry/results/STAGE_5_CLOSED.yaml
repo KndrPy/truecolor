@@ -1,0 +1,86 @@
+stage: 5
+name: spectral_geometry_and_effective_information_dimension
+status: CLOSED_WITH_SCOPE_LIMITATION
+canonical_path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+canonical_sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+canonical_rows: 15256
+admissible_rows: 15256
+inadmissible_rows: 0
+reflectance_scale:
+  source_scale: percent
+  normalization_factor: 0.01
+  raw_min: 0.03
+  raw_median: 25.07
+  raw_max: 73.27
+  normalized_min: 0.0003
+  normalized_median: 0.25070000000000003
+  normalized_max: 0.7327
+body_site_column: body_location_code
+body_site_levels: 12
+eligible_body_sites:
+- '1'
+- '10'
+- '11'
+- '12'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- '9'
+eligible_rows: 15256
+eligible_row_fraction: 1.0
+pooled_diagnostic_participation_ratio: 1.1457492781082543
+pooled_diagnostic_shannon_effective_rank: 1.3530707100662236
+pooled_diagnostic_components_for_targets:
+  '0.9': 1
+  '0.95': 2
+  '0.99': 3
+within_site_participation_ratio: 1.1173358763919996
+within_site_shannon_effective_rank: 1.2951490677238324
+within_site_components_for_targets:
+  '0.9': 1
+  '0.95': 2
+  '0.99': 3
+subject_balanced_participation_ratio: 1.1220300268213095
+subject_balanced_shannon_effective_rank: 1.3048059324459265
+subject_balanced_components_for_targets:
+  '0.9': 1
+  '0.95': 2
+  '0.99': 3
+subject_balanced_subject_site_rows: 14543
+between_site_spectral_variance_fraction: 0.07096879168625443
+analysis_unit: body_location_code_conditioned_spectrum
+global_subject_tone_scalar_admissible: false
+inherited_scope_limitations:
+- instrument_effect_not_estimable_single_level
+- sci_sce_effect_not_estimable_single_level
+- protected_exposed_effect_not_testable
+gates:
+  stage4_scope_status_admissible: true
+  stage4_body_site_restriction_inherited: true
+  canonical_row_count_match: true
+  required_columns_resolved: true
+  wavelength_grid_exact: true
+  reflectance_scale_resolved: true
+  nonzero_admissible_rows: true
+  body_site_level_count_match: true
+  eligible_site_count_nontrivial: true
+  eligible_row_fraction_sufficient: true
+  within_site_geometry_computed: true
+  per_site_geometry_computed: true
+  cross_site_subspace_computed: true
+  subject_balanced_geometry_computed: true
+  subject_balanced_dimension_stable: true
+hard_failed_gates: []
+next_stage:
+  id: 6
+  name: site_conditioned_spectral_representation_and_validation
+  inherited_restrictions:
+  - condition_or_stratify_by_body_location_code
+  - do_not_claim_cross_instrument_stability
+  - do_not_claim_SCI_SCE_equivalence
+  - do_not_claim_protected_exposed_equivalence
+  - do_not_use_global_subject_skin_tone_scalar
