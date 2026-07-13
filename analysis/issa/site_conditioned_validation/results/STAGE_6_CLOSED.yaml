@@ -1,0 +1,84 @@
+stage: 6
+name: site_conditioned_spectral_representation_and_validation
+status: CLOSED_WITH_SCOPE_LIMITATION
+canonical_path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+canonical_sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+canonical_rows: 15256
+admissible_rows: 15256
+subject_count: 2107
+body_site_levels: 12
+wavelength_count: 31
+reflectance_scale:
+  source_scale: percent
+  normalization_factor: 0.01
+  raw_min: 0.03
+  raw_median: 25.07
+  raw_max: 73.27
+  normalized_min: 0.0003
+  normalized_median: 0.25070000000000003
+  normalized_max: 0.7327
+folds: 5
+components_evaluated:
+- 1
+- 2
+- 3
+- 5
+- 10
+component_selection_policy: registered_compact_representation
+registered_compact_component_count: 3
+best_evaluated_component_count: 10
+best_evaluated_mean_rmse: 0.0005882210858354239
+site_centering_relative_improvement_at_3_components: 0.10902373294969021
+site_specific_relative_improvement_over_centered_at_3_components: 0.08477422473510081
+site_centering_material: true
+site_specific_basis_material: true
+preferred_representation: site_specific_basis
+preferred_mean_rmse: 0.0040065267969385775
+preferred_p95_rmse: 0.008828736451160796
+preferred_p975_rmse: 0.010342145089204745
+preferred_p99_rmse: 0.012440776587243536
+preferred_max_rmse: 0.03229285211869556
+preferred_fold_mean_std: 1.4707577886381338e-05
+preferred_rmse_fraction_of_reflectance_range: 0.00547040796960483
+preferred_p95_rmse_fraction_of_reflectance_range: 0.012054528196560345
+preferred_p975_rmse_fraction_of_reflectance_range: 0.014120897172589766
+preferred_p99_rmse_fraction_of_reflectance_range: 0.01698631429170335
+preferred_max_rmse_fraction_of_reflectance_range: 0.04409182430187815
+preferred_p95_to_mean_ratio: 2.2035885190901285
+preferred_p975_to_mean_ratio: 2.5813243273718447
+preferred_p99_to_mean_ratio: 3.1051275126250606
+preferred_relative_fold_std: 0.0036709046592723472
+subject_leakage_count: 0
+global_subject_tone_scalar_admissible: false
+analysis_unit: body_location_code_conditioned_spectrum
+inherited_scope_limitations:
+- instrument_effect_not_estimable_single_level
+- sci_sce_effect_not_estimable_single_level
+- protected_exposed_effect_not_testable
+gates:
+  stage5_status_admissible: true
+  stage5_body_site_conditioning_inherited: true
+  canonical_row_count_match: true
+  subject_count_match: true
+  body_site_level_count_match: true
+  wavelength_grid_exact: true
+  reflectance_scale_resolved: true
+  nonzero_admissible_rows: true
+  subject_disjoint_folds: true
+  all_test_rows_covered: true
+  all_representations_evaluated: true
+  all_component_counts_evaluated: true
+  preferred_representation_rmse_bounded: true
+  fold_stability_acceptable: true
+  tail_metrics_computed: true
+  tail_quantiles_monotonic: true
+hard_failed_gates: []
+next_stage:
+  id: 7
+  name: dominant_axis_interpretation_and_wavelength_attribution
+  inherited_restrictions:
+  - condition_or_stratify_by_body_location_code
+  - do_not_claim_cross_instrument_stability
+  - do_not_claim_SCI_SCE_equivalence
+  - do_not_claim_protected_exposed_equivalence
+  - do_not_use_global_subject_skin_tone_scalar

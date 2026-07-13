@@ -1,0 +1,71 @@
+stage: 6
+name: site_conditioned_spectral_representation_and_validation
+status: closed_with_scope_limitation
+
+canonical_source:
+  path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+  sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+  rows: 15256
+  admissible_rows: 15256
+  subjects: 2107
+  body_site_levels: 12
+  wavelengths: 31
+
+validation:
+  method: subject_disjoint_group_k_fold
+  folds: 5
+  subject_leakage_count: 0
+  fallback_count: 0
+  all_rows_tested: true
+  all_body_sites_supported: true
+
+representation:
+  selected_family: site_specific_basis
+  component_selection_policy: registered_compact_representation
+  registered_compact_components: 3
+  best_rmse_components_among_evaluated: 10
+  best_evaluated_mean_rmse: 0.0005882210858354239
+
+held_out_compact_performance:
+  mean_rmse: 0.0040065267969385775
+  p95_rmse: 0.008828736451160796
+  p97_5_rmse: 0.010342145089204745
+  p99_rmse: 0.012440776587243536
+  maximum_rmse: 0.03229285211869556
+  p95_to_mean_ratio: 2.2035885190901285
+  p97_5_to_mean_ratio: 2.5813243273718447
+  p99_to_mean_ratio: 3.1051275126250606
+  mean_fraction_of_observed_reflectance_range: 0.00547040796960483
+  p95_fraction_of_observed_reflectance_range: 0.012054528196560345
+  p97_5_fraction_of_observed_reflectance_range: 0.014120897172589766
+  p99_fraction_of_observed_reflectance_range: 0.01698631429170335
+  maximum_fraction_of_observed_reflectance_range: 0.04409182430187815
+  relative_fold_standard_deviation: 0.0036709046592723472
+
+representation_effects:
+  site_centering_relative_improvement_at_3_components: 0.10902373294969021
+  site_specific_basis_improvement_over_centered_at_3_components: 0.08477422473510081
+  sites_improved_by_centering: 11
+  sites_improved_by_site_specific_basis: 12
+  total_sites: 12
+
+adjudication:
+  analysis_unit: body_location_code_conditioned_spectrum
+  body_site_conditioning_required: true
+  site_specific_basis_required_for_compact_representation: true
+  global_subject_tone_scalar_admissible: false
+  three_components_interpretation: validated_compact_representation
+  ten_components_interpretation: lowest_rmse_among_evaluated
+  dominant_component_biological_identity: unresolved
+
+inherited_scope_limitations:
+  - instrument_effect_not_estimable_single_level
+  - sci_sce_effect_not_estimable_single_level
+  - protected_exposed_effect_not_testable
+  - cross_instrument_stability_not_established
+  - sci_sce_equivalence_not_established
+  - protected_exposed_equivalence_not_established
+
+next_stage:
+  id: 7
+  name: dominant_axis_interpretation_and_wavelength_attribution
