@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fpls.2026.1794157",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42328083",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fpls.2026.1794157",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Juan Camilo Henao-Rojas",
+      "Cindy Umbacia-Ramirez",
+      "Tatiana Rodriguez-Quiroz",
+      "Joaquin Guillermo Ramirez-Gil",
+      "Edison Osorio"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Plant Science",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Henao-Rojas JC",
+      "Umbacia-Ramirez C",
+      "Rodriguez-Quiroz T",
+      "Ramirez-Gil JG",
+      "Osorio E."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 886,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Juan Camilo Henao-Rojas",
+      "Cindy Umbacia-Ramirez",
+      "Tatiana Rodriguez-Quiroz",
+      "Joaquin Guillermo Ramirez-Gil",
+      "Edison Osorio"
+    ],
+    "doi": "10.3389/fpls.2026.1794157",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A desirability index framework for the bioprospecting of carrots grown in the Andean region for fresh, feed, cosmetic and nutraceutical applications",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fpls.2026.1794157",
+    "venue": "Frontiers in Plant Science",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0886/crossref_doi__1ece6c7fe9cb03e7__20260713T084243963382Z.json",
+      "raw_sha256": "ddac2c38a41a28193de88eb83c24c3c1049c716abf3507c70d3e030b271967d9",
+      "request_identity": "doi:10.3389/fpls.2026.1794157",
+      "retrieved_at_utc": "2026-07-13T08:42:43.963382Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0886/europe_pmc_pmid__6a5ffdc18e3a341e__20260713T084244993691Z.json",
+      "raw_sha256": "58cc5b07d799b1f2f9ec50c4fe365fd9b58c5b058636cbf995011dff42066abd",
+      "request_identity": "pmid:42328083",
+      "retrieved_at_utc": "2026-07-13T08:42:44.993691Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

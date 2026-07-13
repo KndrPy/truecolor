@@ -1,0 +1,131 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2025.1686593",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41244760",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2025.1686593",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yue Yan",
+      "Daniel A. Alexander",
+      "Bryan P. Bednarz",
+      "Lawrence F. Bronk",
+      "Huixiao Chen",
+      "David J. Gladstone",
+      "Bin Han",
+      "Christopher M. Iannuzzi",
+      "Yuting Li",
+      "Ngoc Nguyen",
+      "Natasha Mulenga",
+      "Natalie N. Viscariello",
+      "Yuenan Wang",
+      "Joseph Weygand",
+      "Yana Zlateva",
+      "Fada Guan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yan Y",
+      "Alexander DA",
+      "Bednarz BP",
+      "Bronk LF",
+      "Chen H",
+      "Gladstone DJ",
+      "Han B",
+      "Iannuzzi CM",
+      "Li Y",
+      "Nguyen N",
+      "Mulenga N",
+      "Viscariello NN",
+      "Wang Y",
+      "Weygand J",
+      "Zlateva Y",
+      "Guan F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 752,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yue Yan",
+      "Daniel A. Alexander",
+      "Bryan P. Bednarz",
+      "Lawrence F. Bronk",
+      "Huixiao Chen",
+      "David J. Gladstone",
+      "Bin Han",
+      "Christopher M. Iannuzzi",
+      "Yuting Li",
+      "Ngoc Nguyen",
+      "Natasha Mulenga",
+      "Natalie N. Viscariello",
+      "Yuenan Wang",
+      "Joseph Weygand",
+      "Yana Zlateva",
+      "Fada Guan"
+    ],
+    "doi": "10.3389/fmed.2025.1686593",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Innovative approaches in precision radiation oncology: advanced imaging technologies and challenges which shape the future of radiation therapy",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2025.1686593",
+    "venue": "Frontiers in Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0752/crossref_doi__45e16a1b80ba35fa__20260713T083826068051Z.json",
+      "raw_sha256": "f35366a7ad048a5c8e15df6153f16d7a9c16c9f208656215c2c4a5056181f1a6",
+      "request_identity": "doi:10.3389/fmed.2025.1686593",
+      "retrieved_at_utc": "2026-07-13T08:38:26.068051Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0752/europe_pmc_pmid__f5dd7846e7811596__20260713T083827045315Z.json",
+      "raw_sha256": "5fe542673ec760aa5b8154ac364f057c98a28d67826c775102e3e93db2d72d22",
+      "request_identity": "pmid:41244760",
+      "retrieved_at_utc": "2026-07-13T08:38:27.045315Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

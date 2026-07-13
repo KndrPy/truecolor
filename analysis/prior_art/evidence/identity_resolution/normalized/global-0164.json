@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/ao.33.003281",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/ao.33.003281",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "John C. Price"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Applied Optics",
+    "canonical_year": 1994,
+    "doi_match": true,
+    "harvested_authors": [
+      "John C. Price"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Applied Optics",
+    "harvested_year": 1994,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 164,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "John C. Price"
+    ],
+    "doi": "10.1364/ao.33.003281",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Band selection procedure for multispectral scanners",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/ao.33.003281",
+    "venue": "Applied Optics",
+    "year": 1994
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0164/crossref_doi__0b0f762bda7f2957__20260713T082559431066Z.json",
+      "raw_sha256": "2625d7ec0268a6d3f0af6ee83e31905be13e8cd9fd05d191dbe456ba73e78d83",
+      "request_identity": "doi:10.1364/ao.33.003281",
+      "retrieved_at_utc": "2026-07-13T08:25:59.431066Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

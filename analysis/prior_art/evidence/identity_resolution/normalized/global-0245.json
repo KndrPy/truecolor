@@ -1,0 +1,83 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5220/0006147101260133",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5220/0006147101260133",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Iveta Bryjova",
+      "Jan Kubicek",
+      "Vladimir Kasik",
+      "Daniel Kamensky",
+      "Hana Klosova",
+      "Marek Penhaker",
+      "Martin Cerny"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Proceedings of the 10th International Joint Conference on Biomedical Engineering Systems and Technologies",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "Iveta Bryjova",
+      "Jan Kubicek",
+      "Vladimir Kasik",
+      "Daniel Kamensky",
+      "Hana Klosova",
+      "Marek Penhaker",
+      "Martin Cerny"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Proceedings of the 10th International Joint Conference on Biomedical Engineering Systems and Technologies",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 245,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Iveta Bryjova",
+      "Jan Kubicek",
+      "Vladimir Kasik",
+      "Daniel Kamensky",
+      "Hana Klosova",
+      "Marek Penhaker",
+      "Martin Cerny"
+    ],
+    "doi": "10.5220/0006147101260133",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Objective Measurement of Hypertrophic Scars using Skin Colorimeter",
+    "update_to": [],
+    "url": "https://doi.org/10.5220/0006147101260133",
+    "venue": "Proceedings of the 10th International Joint Conference on Biomedical Engineering Systems and Technologies",
+    "year": 2017
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0245/crossref_doi__723f8b40cd24c3e5__20260713T082716228937Z.json",
+      "raw_sha256": "6056c65740b18ebab9f82b4fd6cc431b10e6a60f92e0ab67b113fb2bd0dfcfe7",
+      "request_identity": "doi:10.5220/0006147101260133",
+      "retrieved_at_utc": "2026-07-13T08:27:16.228937Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

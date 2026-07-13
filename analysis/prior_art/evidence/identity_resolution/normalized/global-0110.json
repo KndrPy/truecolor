@@ -1,0 +1,119 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2147/ccid.s589014",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41939261",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2147/ccid.s589014",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Hongfei Ouyang",
+      "Jungang Yang",
+      "Xiaoli Ning",
+      "Qingyue Xia",
+      "Xianbo Zuo",
+      "Jingkai Xu",
+      "Yujun Sheng",
+      "Jinyan Song",
+      "Zitao Ma",
+      "Liang Wu",
+      "Xuejiao Song",
+      "Yong Cui"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Clinical, Cosmetic and Investigational Dermatology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ouyang H",
+      "Yang J",
+      "Ning X",
+      "Xia Q",
+      "Zuo X",
+      "Xu J",
+      "Sheng Y",
+      "Song J",
+      "Ma Z",
+      "Wu L",
+      "Song X",
+      "Cui Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 110,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hongfei Ouyang",
+      "Jungang Yang",
+      "Xiaoli Ning",
+      "Qingyue Xia",
+      "Xianbo Zuo",
+      "Jingkai Xu",
+      "Yujun Sheng",
+      "Jinyan Song",
+      "Zitao Ma",
+      "Liang Wu",
+      "Xuejiao Song",
+      "Yong Cui"
+    ],
+    "doi": "10.2147/ccid.s589014",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Bridging Accessibility and Precision: Evaluating the Reliability and Validity of a Smartphone-Based Skin Colorimeter",
+    "update_to": [],
+    "url": "https://doi.org/10.2147/ccid.s589014",
+    "venue": "Clinical, Cosmetic and Investigational Dermatology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0110/crossref_doi__6760edf91e977ac8__20260713T081625376744Z.json",
+      "raw_sha256": "61ed1f9fa084ff55b82b4c99cd2aa54dd3a59cbb6b33edaf9ae32aa8757da798",
+      "request_identity": "doi:10.2147/ccid.s589014",
+      "retrieved_at_utc": "2026-07-13T08:16:25.376744Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0110/europe_pmc_pmid__4bc113755f873917__20260713T081626569340Z.json",
+      "raw_sha256": "83bf7b20e7cb9d9fe1c3ed0ea974bddb2890b85b1878b773738cd8ddd18abb18",
+      "request_identity": "pmid:41939261",
+      "retrieved_at_utc": "2026-07-13T08:16:26.569340Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

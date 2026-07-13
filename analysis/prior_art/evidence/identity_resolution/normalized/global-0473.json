@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/nano13091531",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37177076",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/nano13091531",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Stepan Sysak",
+      "Beata Czarczynska-Goslinska",
+      "Piotr Szyk",
+      "Tomasz Koczorowski",
+      "Dariusz T. Mlynarczyk",
+      "Wojciech Szczolko",
+      "Roman Lesyk",
+      "Tomasz Goslinski"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nanomaterials",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sysak S",
+      "Czarczynska-Goslinska B",
+      "Szyk P",
+      "Koczorowski T",
+      "Mlynarczyk DT",
+      "Szczolko W",
+      "Lesyk R",
+      "Goslinski T."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 473,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Stepan Sysak",
+      "Beata Czarczynska-Goslinska",
+      "Piotr Szyk",
+      "Tomasz Koczorowski",
+      "Dariusz T. Mlynarczyk",
+      "Wojciech Szczolko",
+      "Roman Lesyk",
+      "Tomasz Goslinski"
+    ],
+    "doi": "10.3390/nano13091531",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Metal Nanoparticle-Flavonoid Connections: Synthesis, Physicochemical and Biological Properties, as Well as Potential Applications in Medicine",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/nano13091531",
+    "venue": "Nanomaterials",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0473/crossref_doi__8d57e15913ac2ead__20260713T083212571706Z.json",
+      "raw_sha256": "9298f42a21d70c9e5da150ba8897d37526b157d796ee4f5d14de54333d1baf3d",
+      "request_identity": "doi:10.3390/nano13091531",
+      "retrieved_at_utc": "2026-07-13T08:32:12.571706Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0473/europe_pmc_pmid__34560f03bea9af15__20260713T083215726421Z.json",
+      "raw_sha256": "2ce56a51a9f91ffea1e317273c84fa44ed28f2e924bfc4ba777092da67a7a934",
+      "request_identity": "pmid:37177076",
+      "retrieved_at_utc": "2026-07-13T08:32:15.726421Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

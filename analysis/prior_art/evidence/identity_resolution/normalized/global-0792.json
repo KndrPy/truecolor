@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/hbm.70578",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42316441",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/hbm.70578",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Patrick O'Connor",
+      "Turner Lime",
+      "Douglas W. Barrett",
+      "Li‐da Huang",
+      "F. Gonzalez‐Lima"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Human Brain Mapping",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "O'Connor P",
+      "Lime T",
+      "Barrett DW",
+      "Huang LD",
+      "Gonzalez-Lima F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 792,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Patrick O'Connor",
+      "Turner Lime",
+      "Douglas W. Barrett",
+      "Li‐da Huang",
+      "F. Gonzalez‐Lima"
+    ],
+    "doi": "10.1002/hbm.70578",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Interhemispheric Metabolic Effects of Transcranial Infrared Laser Stimulation of the Prefrontal Cortex",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/hbm.70578",
+    "venue": "Human Brain Mapping",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0792/crossref_doi__3db0ce2f576f6450__20260713T083937110256Z.json",
+      "raw_sha256": "a422d65da2a272a65d8454149d48369e68ffb39a020f59367190d5be75ae00f2",
+      "request_identity": "doi:10.1002/hbm.70578",
+      "retrieved_at_utc": "2026-07-13T08:39:37.110256Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0792/europe_pmc_pmid__52059087fa4929a9__20260713T083938098357Z.json",
+      "raw_sha256": "d8c91816559f34ad93f63d3bcc0a05b4dfd80b9b782d94e6fcface4aadefc587",
+      "request_identity": "pmid:42316441",
+      "retrieved_at_utc": "2026-07-13T08:39:38.098357Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

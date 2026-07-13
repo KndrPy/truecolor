@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fonc.2026.1779358",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42200024",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fonc.2026.1779358",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yicheng Li",
+      "Yanping Bai",
+      "Lina Asihaer"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Oncology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Li Y",
+      "Bai Y",
+      "Asihaer L."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 880,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yicheng Li",
+      "Yanping Bai",
+      "Lina Asihaer"
+    ],
+    "doi": "10.3389/fonc.2026.1779358",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Global trends and academic landscapes of AI applications in basal cell carcinoma research: a bibliometric analysis",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fonc.2026.1779358",
+    "venue": "Frontiers in Oncology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0880/crossref_doi__fb743be597ddbcec__20260713T084229158218Z.json",
+      "raw_sha256": "25e1e20fa1e262ba52f4300ac48976994ed7200f64a8cbd2daf6fe81eec7f5bc",
+      "request_identity": "doi:10.3389/fonc.2026.1779358",
+      "retrieved_at_utc": "2026-07-13T08:42:29.158218Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0880/europe_pmc_pmid__823f8343f17166d8__20260713T084230276905Z.json",
+      "raw_sha256": "2fab086a1862a2c249c7753b9ae351b89473bd44132bd2dfc1fb84735615c5e7",
+      "request_identity": "pmid:42200024",
+      "retrieved_at_utc": "2026-07-13T08:42:30.276905Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/j.1365-2133.2010.09639.x",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/j.1365-2133.2010.09639.x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "P.R. Bargo",
+      "N. Kollias"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "British Journal of Dermatology",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "P.R. Bargo",
+      "N. Kollias"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "British Journal of Dermatology",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 446,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "P.R. Bargo",
+      "N. Kollias"
+    ],
+    "doi": "10.1111/j.1365-2133.2010.09639.x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Measurement of skin texture through polarization imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/j.1365-2133.2010.09639.x",
+    "venue": "British Journal of Dermatology",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0446/crossref_doi__d4d3c5e360b761ed__20260713T083137708259Z.json",
+      "raw_sha256": "b2572783af778626c74e4d241d53073a041a82c27a5d7e4ec5c70cab60eb0c40",
+      "request_identity": "doi:10.1111/j.1365-2133.2010.09639.x",
+      "retrieved_at_utc": "2026-07-13T08:31:37.708259Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.pacs.2025.100792",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41626289",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.pacs.2025.100792",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Refik Mert Cam",
+      "Seonyeong Park",
+      "Umberto Villa",
+      "Mark A. Anastasio"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Photoacoustics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Cam RM",
+      "Park S",
+      "Villa U",
+      "Anastasio MA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 806,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Refik Mert Cam",
+      "Seonyeong Park",
+      "Umberto Villa",
+      "Mark A. Anastasio"
+    ],
+    "doi": "10.1016/j.pacs.2025.100792",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Application of a virtual imaging framework for investigating a deep learning-based reconstruction method for 3D quantitative photoacoustic computed tomography",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.pacs.2025.100792",
+    "venue": "Photoacoustics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0806/crossref_doi__a75060d7675531de__20260713T084003601040Z.json",
+      "raw_sha256": "d7331110c4a206e1f53980704afc560866651c31a6b57b4828178306f6826447",
+      "request_identity": "doi:10.1016/j.pacs.2025.100792",
+      "retrieved_at_utc": "2026-07-13T08:40:03.601040Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0806/europe_pmc_pmid__10721a07a9295fe8__20260713T084004660676Z.json",
+      "raw_sha256": "73b34846829723ea41064b229100c629b4215f03996ea37c9e7960b7bd0a9adb",
+      "request_identity": "pmid:41626289",
+      "retrieved_at_utc": "2026-07-13T08:40:04.660676Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

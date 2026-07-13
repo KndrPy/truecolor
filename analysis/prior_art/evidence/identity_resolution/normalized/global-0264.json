@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1177/00037028241279323",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39314060",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1177/00037028241279323",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Andreia E. Gomes",
+      "Sérgio M. C. Nascimento",
+      "João M. M. Linhares"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Applied Spectroscopy",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gomes AE",
+      "Nascimento SMC",
+      "Linhares JMM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 264,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Andreia E. Gomes",
+      "Sérgio M. C. Nascimento",
+      "João M. M. Linhares"
+    ],
+    "doi": "10.1177/00037028241279323",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral Imaging Database of Human Facial Skin",
+    "update_to": [],
+    "url": "https://doi.org/10.1177/00037028241279323",
+    "venue": "Applied Spectroscopy",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0264/crossref_doi__87044ea0f584b2dd__20260713T082738630067Z.json",
+      "raw_sha256": "9cf87e43f2e65981d1e8996bf3cb6d7f1ac5b7aef18dbf7b6a5337c600de781a",
+      "request_identity": "doi:10.1177/00037028241279323",
+      "retrieved_at_utc": "2026-07-13T08:27:38.630067Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0264/europe_pmc_pmid__2c4d6b5f646700cc__20260713T082742084370Z.json",
+      "raw_sha256": "118a9e90a28c5d1b779d0b2e64d51e21aa5cb7a6b695080e449749f045ca6314",
+      "request_identity": "pmid:39314060",
+      "retrieved_at_utc": "2026-07-13T08:27:42.084370Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

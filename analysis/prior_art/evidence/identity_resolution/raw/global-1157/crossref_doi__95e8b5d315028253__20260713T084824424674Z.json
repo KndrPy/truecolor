@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.7717/peerj-cs.970/fig-6",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,2,28]],\"date-time\":\"2026-02-28T09:38:52Z\",\"timestamp\":1772271532000,\"version\":\"3.50.1\"},\"reference-count\":0,\"publisher\":\"PeerJ\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.7717\\/peerj-cs.970\\/fig-6\",\"type\":\"component\",\"created\":{\"date-parts\":[[2022,5,10]],\"date-time\":\"2022-05-10T04:10:11Z\",\"timestamp\":1652155811000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Figure 6: (A\\u2013F) Visual comparison results for grayscale image denoising methods on the image \\u201cMonarch\\u201d from Set12 dataset with noise level 50.\"],\"prefix\":\"10.7717\",\"member\":\"4443\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2022,5,10]],\"date-time\":\"2022-05-10T04:10:18Z\",\"timestamp\":1652155818000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/peerj.com\\/articles\\/cs-970\\/fig-6\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.7717\\/peerj-cs.970\\/fig-6\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.7717\\/peerj-cs.970\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:48:24.424674Z",
+  "source": "crossref_doi"
+}

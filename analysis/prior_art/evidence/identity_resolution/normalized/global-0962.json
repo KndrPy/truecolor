@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2025.1709891",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41282029",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2025.1709891",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Attila Biró",
+      "László Barna Iantovics",
+      "László Fekete",
+      "Gyula László Fekete"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Biró A",
+      "Iantovics LB",
+      "Fekete L",
+      "Fekete GL."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 962,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Attila Biró",
+      "László Barna Iantovics",
+      "László Fekete",
+      "Gyula László Fekete"
+    ],
+    "doi": "10.3389/fmed.2025.1709891",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Prototype of a multimodal AI system for vitiligo detection and mental health monitoring",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2025.1709891",
+    "venue": "Frontiers in Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0962/crossref_doi__7be7eaa319f34027__20260713T084507835007Z.json",
+      "raw_sha256": "e4b619ca7a9f1b8774d2dd9c0a492b5ead1dbb33bfb8304ecf2de976004d0daf",
+      "request_identity": "doi:10.3389/fmed.2025.1709891",
+      "retrieved_at_utc": "2026-07-13T08:45:07.835007Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0962/europe_pmc_pmid__bb775b234a8727a3__20260713T084508930373Z.json",
+      "raw_sha256": "dbc9e1801f56681b873d37e36c5a92404452dda03e886e276b858bb7587a5753",
+      "request_identity": "pmid:41282029",
+      "retrieved_at_utc": "2026-07-13T08:45:08.930373Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

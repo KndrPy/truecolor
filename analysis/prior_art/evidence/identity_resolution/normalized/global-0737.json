@@ -1,0 +1,181 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1159/000550153",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41411218",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1159/000550153",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Jiawen Deng",
+          "Heather Jianbo Zhao",
+          "Jaehyun Hwang",
+          "Aya Alsefaou",
+          "Eddie Guo",
+          "Kiyan Heybati",
+          "Myron Moskalyk"
+        ],
+        "doi": "10.1159/000550153",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {
+          "is-supplemented-by": [
+            {
+              "asserted-by": "subject",
+              "id": "10.6084/m9.figshare.30909323",
+              "id-type": "doi"
+            }
+          ]
+        },
+        "title": "When Jack of All Trades Is a Master of None: Comparing the Performance of GPT-4 Omni against Specialised Neural Networks in Identifying Malignant Dermatological Lesions from Smartphone Images and Structured Clinical Data",
+        "update_to": [],
+        "url": "https://doi.org/10.1159/000550153",
+        "venue": "Dermatology",
+        "year": 2025
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Jiawen Deng",
+          "Heather Jianbo Zhao",
+          "Jaehyun Hwang",
+          "Aya Alsefaou",
+          "Eddie Guo",
+          "Kiyan Heybati",
+          "Myron Moskalyk"
+        ],
+        "doi": "10.1159/000550153",
+        "is_retracted": false,
+        "pmcid": "PMC12875639",
+        "pmid": "41411218",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "When Jack of All Trades Is a Master of None: Comparing the Performance of GPT-4 Omni against Specialised Neural Networks in Identifying Malignant Dermatological Lesions from Smartphone Images and Structured Clinical Data.",
+        "url": "https://europepmc.org/article/MED/41411218",
+        "venue": null,
+        "year": 2026
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2025,
+      "field": "year",
+      "harvested": 2026
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Jiawen Deng",
+      "Heather Jianbo Zhao",
+      "Jaehyun Hwang",
+      "Aya Alsefaou",
+      "Eddie Guo",
+      "Kiyan Heybati",
+      "Myron Moskalyk"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Dermatology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Deng J",
+      "Zhao HJ",
+      "Hwang J",
+      "Alsefaou A",
+      "Guo E",
+      "Heybati K",
+      "Moskalyk M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 737,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jiawen Deng",
+      "Heather Jianbo Zhao",
+      "Jaehyun Hwang",
+      "Aya Alsefaou",
+      "Eddie Guo",
+      "Kiyan Heybati",
+      "Myron Moskalyk"
+    ],
+    "doi": "10.1159/000550153",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "is-supplemented-by": [
+        {
+          "asserted-by": "subject",
+          "id": "10.6084/m9.figshare.30909323",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "When Jack of All Trades Is a Master of None: Comparing the Performance of GPT-4 Omni against Specialised Neural Networks in Identifying Malignant Dermatological Lesions from Smartphone Images and Structured Clinical Data",
+    "update_to": [],
+    "url": "https://doi.org/10.1159/000550153",
+    "venue": "Dermatology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0737/crossref_doi__40b5431845d43d44__20260713T083757275848Z.json",
+      "raw_sha256": "f45837eb441c5028b3fbf95f7f5016a302a7c1993b2cd6e65479b4d52d401d91",
+      "request_identity": "doi:10.1159/000550153",
+      "retrieved_at_utc": "2026-07-13T08:37:57.275848Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0737/europe_pmc_pmid__96d7f75a5ec878b7__20260713T083758279207Z.json",
+      "raw_sha256": "8bb113687bcf114507501719b1c8900cf5012ee6fb2135ed65349353fd20e25a",
+      "request_identity": "pmid:41411218",
+      "retrieved_at_utc": "2026-07-13T08:37:58.279207Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

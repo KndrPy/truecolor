@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.30.1.015001",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39845727",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.30.1.015001",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Maria A. T. Hoffman",
+      "Mark A. Keppler",
+      "Andrea L. Smith",
+      "Anjelyka Fasci",
+      "Matthew E. Macasadia",
+      "Amanda J. Tijerina",
+      "Robert Lyle Hood",
+      "Michael P. DeLisi",
+      "Joel N. Bixler"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hoffman MAT",
+      "Keppler MA",
+      "Smith AL",
+      "Fasci A",
+      "Macasadia ME",
+      "Tijerina AJ",
+      "Lyle Hood R",
+      "DeLisi MP",
+      "Bixler JN."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 713,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Maria A. T. Hoffman",
+      "Mark A. Keppler",
+      "Andrea L. Smith",
+      "Anjelyka Fasci",
+      "Matthew E. Macasadia",
+      "Amanda J. Tijerina",
+      "Robert Lyle Hood",
+      "Michael P. DeLisi",
+      "Joel N. Bixler"
+    ],
+    "doi": "10.1117/1.jbo.30.1.015001",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Effects of cold storage on double integrating sphere optical property measurements of porcine dermis and subcutaneous fat from 400 to 1100 nm",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.30.1.015001",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0713/crossref_doi__5f83b1ac72e07f45__20260713T083717236925Z.json",
+      "raw_sha256": "453c9591541da66e7ba760b7c04c52748d012b78802d68b52a1ac59c8fcc0a64",
+      "request_identity": "doi:10.1117/1.jbo.30.1.015001",
+      "retrieved_at_utc": "2026-07-13T08:37:17.236925Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0713/europe_pmc_pmid__3633f41319c148e7__20260713T083718228508Z.json",
+      "raw_sha256": "4891c6ee6e1c0e2e6fcdccca2f63f4ba7e1c93c04e9155cc7bfec9e16f3b2984",
+      "request_identity": "pmid:39845727",
+      "retrieved_at_utc": "2026-07-13T08:37:18.228508Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

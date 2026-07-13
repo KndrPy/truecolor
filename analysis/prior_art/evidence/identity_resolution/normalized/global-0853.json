@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.579269",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41532113",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.579269",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ye-Chan Cho",
+      "Jin Hee Hong",
+      "Sungsam Kang",
+      "Wonjun Choi",
+      "Wonshik Choi",
+      "Yookyung Jung"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Cho YC",
+      "Hong JH",
+      "Kang S",
+      "Choi W",
+      "Choi W",
+      "Jung Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 0.916667,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 853,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ye-Chan Cho",
+      "Jin Hee Hong",
+      "Sungsam Kang",
+      "Wonjun Choi",
+      "Wonshik Choi",
+      "Yookyung Jung"
+    ],
+    "doi": "10.1364/boe.579269",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Long-wavelength oblique back-illumination microscopy for deep\n                     in vivo \n                    imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.579269",
+    "venue": "Biomedical Optics Express",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative metadata resolved, but identity similarity remained between verification and conflict thresholds.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0853/crossref_doi__7b253a6db6c1457d__20260713T084138521142Z.json",
+      "raw_sha256": "597a8eac49dce6fd2cf0ff6aa1bdc94b8c2063ff80151daa9b64112e0b73580d",
+      "request_identity": "doi:10.1364/boe.579269",
+      "retrieved_at_utc": "2026-07-13T08:41:38.521142Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0853/europe_pmc_pmid__c708f71c90c42875__20260713T084139706781Z.json",
+      "raw_sha256": "282504db377bbc766c3dbf58ba1bc65dc008230305c6b637cfd93fe458a9e886",
+      "request_identity": "pmid:41532113",
+      "retrieved_at_utc": "2026-07-13T08:41:39.706781Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

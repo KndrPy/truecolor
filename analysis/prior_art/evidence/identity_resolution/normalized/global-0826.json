@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-026-48640-x",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42009879",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-026-48640-x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Tae-In Jeong",
+      "Jae-Young Kim",
+      "Eunji Choi",
+      "San Kim",
+      "Sehyeon Kim",
+      "Munki Song",
+      "Junho Lee",
+      "Alexander Gliserin",
+      "Robert A. Taylor",
+      "Seungchul Kim"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jeong TI",
+      "Kim JY",
+      "Choi E",
+      "Kim S",
+      "Kim S",
+      "Song M",
+      "Lee J",
+      "Gliserin A",
+      "Taylor RA",
+      "Kim S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 826,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tae-In Jeong",
+      "Jae-Young Kim",
+      "Eunji Choi",
+      "San Kim",
+      "Sehyeon Kim",
+      "Munki Song",
+      "Junho Lee",
+      "Alexander Gliserin",
+      "Robert A. Taylor",
+      "Seungchul Kim"
+    ],
+    "doi": "10.1038/s41598-026-48640-x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectrometer-free time-division multiplexed NIR time-of-flight vision system for visually similar material recognition",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-026-48640-x",
+    "venue": "Scientific Reports",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0826/crossref_doi__fa77f4fa3056959f__20260713T084042456591Z.json",
+      "raw_sha256": "4913196715d32d83b23d03c3ee4eee07d9db5c55f3a08b3bf69bf27e964176ba",
+      "request_identity": "doi:10.1038/s41598-026-48640-x",
+      "retrieved_at_utc": "2026-07-13T08:40:42.456591Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0826/europe_pmc_pmid__8cae6562bbfb9974__20260713T084043553282Z.json",
+      "raw_sha256": "6ea2692c8477444330d7e29d2b93e0ce0f0f031f856cf95908c565c6667d2999",
+      "request_identity": "pmid:42009879",
+      "retrieved_at_utc": "2026-07-13T08:40:43.553282Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

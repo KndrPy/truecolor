@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s25041143",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40006372",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s25041143",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Davide Marelli",
+      "Simone Bianco",
+      "Gianluigi Ciocca"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Marelli D",
+      "Bianco S",
+      "Ciocca G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 980,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Davide Marelli",
+      "Simone Bianco",
+      "Gianluigi Ciocca"
+    ],
+    "doi": "10.3390/s25041143",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Acquisition and Modeling of Material Appearance Using a Portable, Low Cost, Device",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s25041143",
+    "venue": "Sensors",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0980/crossref_doi__6877e1b2604703da__20260713T084541453078Z.json",
+      "raw_sha256": "6e959a5db7f67a424a0bd92a8d02881ebbeb9665d80c9d8d5f5deda7afb516a9",
+      "request_identity": "doi:10.3390/s25041143",
+      "retrieved_at_utc": "2026-07-13T08:45:41.453078Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0980/europe_pmc_pmid__ed6fbeb2dc3f86f1__20260713T084542561421Z.json",
+      "raw_sha256": "515b0af97bf727134dd4948c73b6b5cadfc3d213c762dafeb33f8956a8f2d255",
+      "request_identity": "pmid:40006372",
+      "retrieved_at_utc": "2026-07-13T08:45:42.561421Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

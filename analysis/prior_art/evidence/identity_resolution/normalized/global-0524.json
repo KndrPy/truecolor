@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/adma.202418425",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40052638",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/adma.202418425",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Dong Wook Kim",
+      "Paul Wrede",
+      "Andrés Rodríguez‐Camargo",
+      "Yi Chen",
+      "Nihal Olcay Dogan",
+      "Chaim Glück",
+      "Bettina V. Lotsch",
+      "Daniel Razansky",
+      "Metin Sitti"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advanced Materials",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kim DW",
+      "Wrede P",
+      "Rodríguez-Camargo A",
+      "Chen Y",
+      "Dogan NO",
+      "Glück C",
+      "Lotsch BV",
+      "Razansky D",
+      "Sitti M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 524,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Dong Wook Kim",
+      "Paul Wrede",
+      "Andrés Rodríguez‐Camargo",
+      "Yi Chen",
+      "Nihal Olcay Dogan",
+      "Chaim Glück",
+      "Bettina V. Lotsch",
+      "Daniel Razansky",
+      "Metin Sitti"
+    ],
+    "doi": "10.1002/adma.202418425",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Upconversion Nanoparticle‐Covalent Organic Framework Core–shell Particles as Therapeutic Microrobots Trackable With Optoacoustic Imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/adma.202418425",
+    "venue": "Advanced Materials",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0524/crossref_doi__0c3fe4bd1707ac30__20260713T083314229139Z.json",
+      "raw_sha256": "de62d53df4d4a59121c47efc4bd3b0bc03332f9437ca09c218497ac2cbf22804",
+      "request_identity": "doi:10.1002/adma.202418425",
+      "retrieved_at_utc": "2026-07-13T08:33:14.229139Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0524/europe_pmc_pmid__27d9c193f32c9769__20260713T083315228942Z.json",
+      "raw_sha256": "2e832091213f2c1a80d76923edd0ff6fbf7e3de5d3ed2583a9753f8411f5b9f9",
+      "request_identity": "pmid:40052638",
+      "retrieved_at_utc": "2026-07-13T08:33:15.228942Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

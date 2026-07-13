@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/diagnostics16101546",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42196912",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/diagnostics16101546",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ayomide Adeyemi Abe",
+      "Mpumelelo Nyathi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Abe AA",
+      "Nyathi M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 900,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ayomide Adeyemi Abe",
+      "Mpumelelo Nyathi"
+    ],
+    "doi": "10.3390/diagnostics16101546",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "SULBA: A Task-Agnostic Data Augmentation Framework for Deep Learning in Medical Image Analysis",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics16101546",
+    "venue": "Diagnostics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0900/crossref_doi__dcd00addf8bc4de0__20260713T084308105020Z.json",
+      "raw_sha256": "72f954cded0a6b16c865e8e5074176dbdebe28e78b5c6ebd444167c5f6c44698",
+      "request_identity": "doi:10.3390/diagnostics16101546",
+      "retrieved_at_utc": "2026-07-13T08:43:08.105020Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0900/europe_pmc_pmid__01f1db0b9f1a5353__20260713T084309084792Z.json",
+      "raw_sha256": "93dbfb2f9e12f2b60b785efb31d7d9e262b9f795fa321b713be8c594b7cfd103",
+      "request_identity": "pmid:42196912",
+      "retrieved_at_utc": "2026-07-13T08:43:09.084792Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

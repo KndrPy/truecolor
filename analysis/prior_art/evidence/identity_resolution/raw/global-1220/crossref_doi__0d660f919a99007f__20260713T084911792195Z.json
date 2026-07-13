@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1093/oed/1074625539",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,3,20]],\"date-time\":\"2026-03-20T11:37:35Z\",\"timestamp\":1774006655453,\"version\":\"3.50.1\"},\"edition-number\":\"3\",\"reference-count\":0,\"publisher\":\"Oxford University Press\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"published-print\":{\"date-parts\":[[2026,1,22]]},\"DOI\":\"10.1093\\/oed\\/1074625539\",\"type\":\"book-chapter\",\"created\":{\"date-parts\":[[2026,3,20]],\"date-time\":\"2026-03-20T09:20:05Z\",\"timestamp\":1773998405000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"skin tone, n.\"],\"prefix\":\"10.1093\",\"member\":\"286\",\"container-title\":[\"Oxford English Dictionary\"],\"original-title\":[],\"language\":\"en\",\"deposited\":{\"date-parts\":[[2026,3,20]],\"date-time\":\"2026-03-20T09:21:21Z\",\"timestamp\":1773998481000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/oed.com\\/dictionary\\/skin-tone_n\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[2026,1,22]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1093\\/oed\\/1074625539\",\"relation\":{},\"subject\":[],\"published\":{\"date-parts\":[[2026,1,22]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:49:11.792195Z",
+  "source": "crossref_doi"
+}

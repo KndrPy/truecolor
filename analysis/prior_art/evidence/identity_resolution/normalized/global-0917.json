@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s26031021",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41682537",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s26031021",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Armin Eskandarinasab",
+      "Laura Rey-Barroso",
+      "Francisco J. Burgos-Fernández",
+      "Meritxell Vilaseca"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Eskandarinasab A",
+      "Rey-Barroso L",
+      "Burgos-Fernández FJ",
+      "Vilaseca M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 917,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Armin Eskandarinasab",
+      "Laura Rey-Barroso",
+      "Francisco J. Burgos-Fernández",
+      "Meritxell Vilaseca"
+    ],
+    "doi": "10.3390/s26031021",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Comprehensive and Region-Specific Retinal Health Assessment Using Phasor Analysis of Multispectral Images and Machine Learning",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26031021",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0917/crossref_doi__5b3c350c83af6246__20260713T084341678454Z.json",
+      "raw_sha256": "8a53dcab2e0bf3ad84ddd51f50662bc10e1ac2e3c5e834ad3efae0423319fa17",
+      "request_identity": "doi:10.3390/s26031021",
+      "retrieved_at_utc": "2026-07-13T08:43:41.678454Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0917/europe_pmc_pmid__ba3c2ce11e6a1438__20260713T084342795459Z.json",
+      "raw_sha256": "a039d2a363dc5ee20b43c6d292926a3a297ed5fbc9abc293da33634bab749995",
+      "request_identity": "pmid:41682537",
+      "retrieved_at_utc": "2026-07-13T08:43:42.795459Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

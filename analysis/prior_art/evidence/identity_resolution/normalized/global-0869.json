@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/falgy.2026.1786200",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42099893",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/falgy.2026.1786200",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Karoline Lukaschek",
+      "Kiran Kumar Bali",
+      "Konstantin Agelopoulos",
+      "Mustafa Kaplan",
+      "Sonja Ständer",
+      "Roman Rukwied",
+      "Elke Weisshaar"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Allergy",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lukaschek K",
+      "Bali KK",
+      "Agelopoulos K",
+      "Kaplan M",
+      "Ständer S",
+      "Rukwied R",
+      "Weisshaar E."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 869,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Karoline Lukaschek",
+      "Kiran Kumar Bali",
+      "Konstantin Agelopoulos",
+      "Mustafa Kaplan",
+      "Sonja Ständer",
+      "Roman Rukwied",
+      "Elke Weisshaar"
+    ],
+    "doi": "10.3389/falgy.2026.1786200",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Nickel(II) sulphate–induced allergic contact dermatitis as experimental tool to investigate inflammatory pruritus in humans",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/falgy.2026.1786200",
+    "venue": "Frontiers in Allergy",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0869/crossref_doi__30cc16b3fc5af51e__20260713T084210506076Z.json",
+      "raw_sha256": "4aef9cefb0038a1fd2b13a97b0e6a3ab45cfa776cd7026bf3bc68853318f242a",
+      "request_identity": "doi:10.3389/falgy.2026.1786200",
+      "retrieved_at_utc": "2026-07-13T08:42:10.506076Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0869/europe_pmc_pmid__4eb6fb7d2a34d937__20260713T084211491294Z.json",
+      "raw_sha256": "a3f46c4fffe6807df1c1fa93c1f6340051ffb8bf8a8565374e5d33321d91c52b",
+      "request_identity": "pmid:42099893",
+      "retrieved_at_utc": "2026-07-13T08:42:11.491294Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

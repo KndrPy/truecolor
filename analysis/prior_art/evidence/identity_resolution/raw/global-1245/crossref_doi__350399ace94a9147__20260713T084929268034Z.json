@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.7717/peerj.16342/fig-4",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,2,28]],\"date-time\":\"2026-02-28T08:50:17Z\",\"timestamp\":1772268617046,\"version\":\"3.50.1\"},\"reference-count\":0,\"publisher\":\"PeerJ\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.7717\\/peerj.16342\\/fig-4\",\"type\":\"component\",\"created\":{\"date-parts\":[[2023,11,16]],\"date-time\":\"2023-11-16T03:25:32Z\",\"timestamp\":1700105132000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Figure 4: Experimental validation of model in breast cancer cell and patient-derived PDAC cell lines.\"],\"prefix\":\"10.7717\",\"member\":\"4443\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2023,11,16]],\"date-time\":\"2023-11-16T03:25:34Z\",\"timestamp\":1700105134000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/peerj.com\\/articles\\/16342\\/fig-4\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.7717\\/peerj.16342\\/fig-4\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.7717\\/peerj.16342\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:49:29.268034Z",
+  "source": "crossref_doi"
+}

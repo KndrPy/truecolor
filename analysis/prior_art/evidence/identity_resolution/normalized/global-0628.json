@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.21203/rs.3.rs-7600341/v1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.21203/rs.3.rs-7600341/v1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Jieping Gao",
+      "Lei Sun",
+      "Pengyun Zhang"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jieping Gao",
+      "Lei Sun",
+      "Pengyun Zhang"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 628,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jieping Gao",
+      "Lei Sun",
+      "Pengyun Zhang"
+    ],
+    "doi": "10.21203/rs.3.rs-7600341/v1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "Skin-LiteNet: A Lightweight ConvolutionalModule for Skin Disease Image Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.21203/rs.3.rs-7600341/v1",
+    "venue": null,
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0628/crossref_doi__542ee907073db4f3__20260713T083526572561Z.json",
+      "raw_sha256": "d273b15deda74461d8e1ed9dfec92be0e2314df80b00d371d53baa79b9bed182",
+      "request_identity": "doi:10.21203/rs.3.rs-7600341/v1",
+      "retrieved_at_utc": "2026-07-13T08:35:26.572561Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

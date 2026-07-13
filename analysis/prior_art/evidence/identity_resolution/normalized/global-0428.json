@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2165/11209370-000000000-00000",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2165/11209370-000000000-00000",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Sheridan M. Hoy"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "American Journal of Clinical Dermatology",
+    "canonical_year": 2012,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sheridan M. Hoy"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "American Journal of Clinical Dermatology",
+    "harvested_year": 2012,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 428,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sheridan M. Hoy"
+    ],
+    "doi": "10.2165/11209370-000000000-00000",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Polyphenon E 10% Ointment",
+    "update_to": [],
+    "url": "https://doi.org/10.2165/11209370-000000000-00000",
+    "venue": "American Journal of Clinical Dermatology",
+    "year": 2012
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0428/crossref_doi__49b593031f78083e__20260713T083123603588Z.json",
+      "raw_sha256": "6b164b7fa946db53dc9322ef1e69ce4bd8cd13c3f3be018b55ac97a4adec85b7",
+      "request_identity": "doi:10.2165/11209370-000000000-00000",
+      "retrieved_at_utc": "2026-07-13T08:31:23.603588Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

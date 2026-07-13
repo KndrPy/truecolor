@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/ijms27093960",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42123541",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/ijms27093960",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Antonio Di Guardo",
+      "Marco Virone",
+      "Umberto Gallo",
+      "Francesca Feresin",
+      "Antonio Ricupito",
+      "Roberta De Carolis",
+      "Vincenzo Coppolelli",
+      "Steven Paul Nisticò",
+      "Giovanni Pellacani",
+      "Carmen Cantisani"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "International Journal of Molecular Sciences",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Di Guardo A",
+      "Virone M",
+      "Gallo U",
+      "Feresin F",
+      "Ricupito A",
+      "De Carolis R",
+      "Coppolelli V",
+      "Nisticò SP",
+      "Pellacani G",
+      "Cantisani C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 370,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Antonio Di Guardo",
+      "Marco Virone",
+      "Umberto Gallo",
+      "Francesca Feresin",
+      "Antonio Ricupito",
+      "Roberta De Carolis",
+      "Vincenzo Coppolelli",
+      "Steven Paul Nisticò",
+      "Giovanni Pellacani",
+      "Carmen Cantisani"
+    ],
+    "doi": "10.3390/ijms27093960",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Photodynamic Therapy in Dermatology",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/ijms27093960",
+    "venue": "International Journal of Molecular Sciences",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0370/crossref_doi__32125247547176fd__20260713T083006706503Z.json",
+      "raw_sha256": "bf5e4e78fd1ffddd92d586b71b0b894bf482fc32ca9f88725c510a41b819dd66",
+      "request_identity": "doi:10.3390/ijms27093960",
+      "retrieved_at_utc": "2026-07-13T08:30:06.706503Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0370/europe_pmc_pmid__ea40e9bcb7dbd5b8__20260713T083007706132Z.json",
+      "raw_sha256": "590f471e88b9d297a0030ca4f01cdf058d7e79a0bece9990e40a5f75aa2c9f25",
+      "request_identity": "pmid:42123541",
+      "retrieved_at_utc": "2026-07-13T08:30:07.706132Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

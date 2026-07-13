@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/iccit64611.2024.11022114",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/iccit64611.2024.11022114",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Fakrul Hassan",
+      "Shahriar Ahmad Fahim",
+      "Md.Tawfiq Zaman",
+      "Nusrat Jahan Farin"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2024 27th International Conference on Computer and Information Technology (ICCIT)",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fakrul Hassan",
+      "Shahriar Ahmad Fahim",
+      "Md.Tawfiq Zaman",
+      "Nusrat Jahan Farin"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2024 27th International Conference on Computer and Information Technology (ICCIT)",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 194,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Fakrul Hassan",
+      "Shahriar Ahmad Fahim",
+      "Md.Tawfiq Zaman",
+      "Nusrat Jahan Farin"
+    ],
+    "doi": "10.1109/iccit64611.2024.11022114",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Addressing Racial Bias in HAM10000 with Fitzpatrick Skin Tone Labeling for Skin Cancer Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/iccit64611.2024.11022114",
+    "venue": "2024 27th International Conference on Computer and Information Technology (ICCIT)",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0194/crossref_doi__9903e2745c3557da__20260713T082621570358Z.json",
+      "raw_sha256": "518bbc7979f10fdf5dc24f39092f46e559182cbfc5a484005dd7b1c82e2a58ba",
+      "request_identity": "doi:10.1109/iccit64611.2024.11022114",
+      "retrieved_at_utc": "2026-07-13T08:26:21.570358Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

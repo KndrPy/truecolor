@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1186/s44398-025-00011-8",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40994833",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1186/s44398-025-00011-8",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Alexander Gherardi",
+      "Wei Bo",
+      "Ahmet Demirbas",
+      "Ye Zhan",
+      "Wenyao Xu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "BMC Artificial Intelligence",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gherardi A",
+      "Bo W",
+      "Demirbas A",
+      "Zhan Y",
+      "Xu W."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 340,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alexander Gherardi",
+      "Wei Bo",
+      "Ahmet Demirbas",
+      "Ye Zhan",
+      "Wenyao Xu"
+    ],
+    "doi": "10.1186/s44398-025-00011-8",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral reconstruction for mobile diabetic foot blood perfusion monitoring",
+    "update_to": [],
+    "url": "https://doi.org/10.1186/s44398-025-00011-8",
+    "venue": "BMC Artificial Intelligence",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0340/crossref_doi__256d2e5e7ae2b150__20260713T082917048642Z.json",
+      "raw_sha256": "2f83cdf9bda41288c1e58ff7d1f4d5e6905f0924551faf10ff25abefc3ce05c0",
+      "request_identity": "doi:10.1186/s44398-025-00011-8",
+      "retrieved_at_utc": "2026-07-13T08:29:17.048642Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0340/europe_pmc_pmid__7f28bab5a56ffaa7__20260713T082918047616Z.json",
+      "raw_sha256": "acd8eb31d668cc0c6e2cd17e7af988ec35e1f111c8a6a9cd540645c1c060de93",
+      "request_identity": "pmid:40994833",
+      "retrieved_at_utc": "2026-07-13T08:29:18.047616Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

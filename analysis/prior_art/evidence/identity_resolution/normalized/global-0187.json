@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.porgcoat.2015.06.020",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.porgcoat.2015.06.020",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "José M. Medina",
+      "José A. Díaz"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Progress in Organic Coatings",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "José M. Medina",
+      "José A. Díaz"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Progress in Organic Coatings",
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 187,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "José M. Medina",
+      "José A. Díaz"
+    ],
+    "doi": "10.1016/j.porgcoat.2015.06.020",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Classification of batch processes in automotive metallic coatings using principal component analysis similarity factors from reflectance spectra",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.porgcoat.2015.06.020",
+    "venue": "Progress in Organic Coatings",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0187/crossref_doi__9fc81ddae8b38d0c__20260713T082617286487Z.json",
+      "raw_sha256": "5843d69bb523321ca207579f8bb87c800a99d15255641c26dd4f402ae200308c",
+      "request_identity": "doi:10.1016/j.porgcoat.2015.06.020",
+      "retrieved_at_utc": "2026-07-13T08:26:17.286487Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

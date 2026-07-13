@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s40820-026-02113-y",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41762371",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s40820-026-02113-y",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Hanyuan Zhang",
+      "Zhenhui Huang",
+      "Changyuan Chen",
+      "Yi Long",
+      "Weilin Xu",
+      "Zhengui Zhou",
+      "Jun Wan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nano-Micro Letters",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhang H",
+      "Huang Z",
+      "Chen C",
+      "Long Y",
+      "Xu W",
+      "Zhou Z",
+      "Wan J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 767,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hanyuan Zhang",
+      "Zhenhui Huang",
+      "Changyuan Chen",
+      "Yi Long",
+      "Weilin Xu",
+      "Zhengui Zhou",
+      "Jun Wan"
+    ],
+    "doi": "10.1007/s40820-026-02113-y",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Mid-Infrared Transparent Materials: from Mechanisms to Cutting-Edge Applications",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s40820-026-02113-y",
+    "venue": "Nano-Micro Letters",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0767/crossref_doi__62c7cad81feefd3c__20260713T083854082672Z.json",
+      "raw_sha256": "a408d11f14f869532484a460ddb00cc97c355f8bbeeb080ee4f6df30b50b0611",
+      "request_identity": "doi:10.1007/s40820-026-02113-y",
+      "retrieved_at_utc": "2026-07-13T08:38:54.082672Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0767/europe_pmc_pmid__00d43f2716f98711__20260713T083855031527Z.json",
+      "raw_sha256": "6280f26f640409b04d78aadabe0b1a412c762fd0681f0dd4c30bb8159370cd4f",
+      "request_identity": "pmid:41762371",
+      "retrieved_at_utc": "2026-07-13T08:38:55.031527Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1063/5.0156102",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1063/5.0156102",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "S. Hubert",
+      "F. Boubault"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Review of Scientific Instruments",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "S. Hubert",
+      "F. Boubault"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Review of Scientific Instruments",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 252,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "S. Hubert",
+      "F. Boubault"
+    ],
+    "doi": "10.1063/5.0156102",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Absolute calibration of the spectral sensitivity of an x-ray streak camera over the 0.1–10 keV spectral range equipped with CsI photocathode",
+    "update_to": [],
+    "url": "https://doi.org/10.1063/5.0156102",
+    "venue": "Review of Scientific Instruments",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0252/crossref_doi__092a1322388e9ccf__20260713T082723668135Z.json",
+      "raw_sha256": "db077863a7c1e0021404445ad02e3a27d64b87790fac5f7108d9c096f96435bc",
+      "request_identity": "doi:10.1063/5.0156102",
+      "retrieved_at_utc": "2026-07-13T08:27:23.668135Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/978-1-84882-862-9_31",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/978-1-84882-862-9_31",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Zohra Zaidi",
+      "Sean W. Lanigan"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Dermatology in Clinical Practice",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zohra Zaidi",
+      "Sean W. Lanigan"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Dermatology in Clinical Practice",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1074,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zohra Zaidi",
+      "Sean W. Lanigan"
+    ],
+    "doi": "10.1007/978-1-84882-862-9_31",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Diseases of the External Genitalia",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/978-1-84882-862-9_31",
+    "venue": "Dermatology in Clinical Practice",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1074/crossref_doi__7712f60bc38e76b7__20260713T084721276752Z.json",
+      "raw_sha256": "269e693188ea74d68c0502988fb442b28024f97d042b48b460a59bf82ec1b667",
+      "request_identity": "doi:10.1007/978-1-84882-862-9_31",
+      "retrieved_at_utc": "2026-07-13T08:47:21.276752Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1163/9789004231559_009",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1163/9789004231559_009",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "N. Michelle Hughes",
+      "Cedric Herring"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Reinventing Race, Reinventing Racism",
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [
+      "N. Michelle Hughes",
+      "Cedric Herring"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Reinventing Race, Reinventing Racism",
+    "harvested_year": 2013,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 496,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "N. Michelle Hughes",
+      "Cedric Herring"
+    ],
+    "doi": "10.1163/9789004231559_009",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Fairness on the Job: Skin Tone, the Beauty Myth, and the Treatment of African American Women at Work",
+    "update_to": [],
+    "url": "https://doi.org/10.1163/9789004231559_009",
+    "venue": "Reinventing Race, Reinventing Racism",
+    "year": 2013
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0496/crossref_doi__13d8c0c4a5715d0b__20260713T083233994769Z.json",
+      "raw_sha256": "02b046a3065dde0fbf87672a7a1d4591ed7e052f51eb90ae4dd147d42aab7869",
+      "request_identity": "doi:10.1163/9789004231559_009",
+      "retrieved_at_utc": "2026-07-13T08:32:33.994769Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

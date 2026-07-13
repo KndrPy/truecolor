@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/iwssip.2009.5367766",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/iwssip.2009.5367766",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Iztok Kramberger"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2009 16th International Conference on Systems, Signals and Image Processing",
+    "canonical_year": 2009,
+    "doi_match": true,
+    "harvested_authors": [
+      "Iztok Kramberger"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2009 16th International Conference on Systems, Signals and Image Processing",
+    "harvested_year": 2009,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 699,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Iztok Kramberger"
+    ],
+    "doi": "10.1109/iwssip.2009.5367766",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Reflectance Measurement System for Skin Color Modeling in Chromaticity Color Space",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/iwssip.2009.5367766",
+    "venue": "2009 16th International Conference on Systems, Signals and Image Processing",
+    "year": 2009
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0699/crossref_doi__c0c2d8dedefdf13f__20260713T083658521909Z.json",
+      "raw_sha256": "651de3da15e1a407abbb989847210578a847b943cb68eb93b6a5271bc96d7266",
+      "request_identity": "doi:10.1109/iwssip.2009.5367766",
+      "retrieved_at_utc": "2026-07-13T08:36:58.521909Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

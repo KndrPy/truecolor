@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/frai.2026.1825132",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42273173",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/frai.2026.1825132",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Stewart Muchuchuti",
+      "Serestina Viriri"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Artificial Intelligence",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Muchuchuti S",
+      "Viriri S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 891,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Stewart Muchuchuti",
+      "Serestina Viriri"
+    ],
+    "doi": "10.3389/frai.2026.1825132",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Adaptive Gating and Focal Debiasing for robust few-shot retinal disease classification",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/frai.2026.1825132",
+    "venue": "Frontiers in Artificial Intelligence",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0891/crossref_doi__df19ad51e0999f41__20260713T084252675566Z.json",
+      "raw_sha256": "5eaacd5d8435020e06f0092720104ced223d033df3cf1f2af3911eaf4248e274",
+      "request_identity": "doi:10.3389/frai.2026.1825132",
+      "retrieved_at_utc": "2026-07-13T08:42:52.675566Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0891/europe_pmc_pmid__b174438450cbce6d__20260713T084253685542Z.json",
+      "raw_sha256": "1ef68f919cc33ca9c0f28cb7f852bdd6419b3a2a221a4d49fa92e91b9fde1785",
+      "request_identity": "pmid:42273173",
+      "retrieved_at_utc": "2026-07-13T08:42:53.685542Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

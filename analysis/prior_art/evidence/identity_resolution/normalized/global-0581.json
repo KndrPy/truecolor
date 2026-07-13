@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pone.0255109",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "34437544",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pone.0255109",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mitchell J. P. Van Zuijlen",
+      "Hubert Lin",
+      "Kavita Bala",
+      "Sylvia C. Pont",
+      "Maarten W. A. Wijntjes"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS ONE",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Van Zuijlen MJP",
+      "Lin H",
+      "Bala K",
+      "Pont SC",
+      "Wijntjes MWA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 581,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mitchell J. P. Van Zuijlen",
+      "Hubert Lin",
+      "Kavita Bala",
+      "Sylvia C. Pont",
+      "Maarten W. A. Wijntjes"
+    ],
+    "doi": "10.1371/journal.pone.0255109",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Materials In Paintings (MIP): An interdisciplinary dataset for perception, art history, and computer vision",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pone.0255109",
+    "venue": "PLOS ONE",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0581/crossref_doi__d5de6f0f0d76684e__20260713T083418224160Z.json",
+      "raw_sha256": "c386668d1afde75fffb95fd61662885587f92e3eef4934fad10df84174ddce3f",
+      "request_identity": "doi:10.1371/journal.pone.0255109",
+      "retrieved_at_utc": "2026-07-13T08:34:18.224160Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0581/europe_pmc_pmid__c45be54540c9b652__20260713T083419316160Z.json",
+      "raw_sha256": "e25cf220f4b71ce74df24b20a5debc161ccd60977914038b2accffb3ecd44467",
+      "request_identity": "pmid:34437544",
+      "retrieved_at_utc": "2026-07-13T08:34:19.316160Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

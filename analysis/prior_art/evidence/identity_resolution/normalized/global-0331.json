@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/ani16020203",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41594392",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/ani16020203",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jiahui Hu",
+      "Yingying Xiong",
+      "Rui Liu",
+      "Xu Chen",
+      "Ai-Ping Liang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Animals",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hu J",
+      "Xiong Y",
+      "Liu R",
+      "Chen X",
+      "Liang AP."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 331,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jiahui Hu",
+      "Yingying Xiong",
+      "Rui Liu",
+      "Xu Chen",
+      "Ai-Ping Liang"
+    ],
+    "doi": "10.3390/ani16020203",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin Coloration Changes and Thermoregulation in Anolis carolinensis Across Different Thermal Environments",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/ani16020203",
+    "venue": "Animals",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0331/crossref_doi__ef189b19f2e9ec14__20260713T082901679511Z.json",
+      "raw_sha256": "7d442181f52cf890e1f2ad9086428ef74b4c2b08be8c4c76c5fe0514c7e02dd5",
+      "request_identity": "doi:10.3390/ani16020203",
+      "retrieved_at_utc": "2026-07-13T08:29:01.679511Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0331/europe_pmc_pmid__44ac33c92b475e52__20260713T082902671642Z.json",
+      "raw_sha256": "70495e1bed81a341007fd2a31f113e74b743a10be5d34deea582e5edf6c1d36f",
+      "request_identity": "pmid:41594392",
+      "retrieved_at_utc": "2026-07-13T08:29:02.671642Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

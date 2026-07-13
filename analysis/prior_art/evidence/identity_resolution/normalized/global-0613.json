@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/0266-5611/26/8/085016",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/0266-5611/26/8/085016",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Hajer Ben Joud"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Inverse Problems",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hajer Ben Joud"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Inverse Problems",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 613,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hajer Ben Joud"
+    ],
+    "doi": "10.1088/0266-5611/26/8/085016",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Stability estimate for an inverse problem for the electro-magnetic wave equation and spectral boundary value problem",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/0266-5611/26/8/085016",
+    "venue": "Inverse Problems",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0613/crossref_doi__908f7de4451a51fb__20260713T083505758664Z.json",
+      "raw_sha256": "0711365767f178d9cdc3f022ee11418a29b6cded985a324e8e89c923f60b0cb8",
+      "request_identity": "doi:10.1088/0266-5611/26/8/085016",
+      "retrieved_at_utc": "2026-07-13T08:35:05.758664Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

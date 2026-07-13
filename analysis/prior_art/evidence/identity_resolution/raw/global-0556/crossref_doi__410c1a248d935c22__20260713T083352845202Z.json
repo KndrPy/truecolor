@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.32657/10220/47633",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"institution\":[{\"name\":\"Nanyang Technological University\"}],\"indexed\":{\"date-parts\":[[2022,3,30]],\"date-time\":\"2022-03-30T20:34:35Z\",\"timestamp\":1648672475616},\"reference-count\":0,\"publisher\":\"Nanyang Technological University\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.32657\\/10220\\/47633\",\"type\":\"dissertation\",\"created\":{\"date-parts\":[[2019,9,11]],\"date-time\":\"2019-09-11T03:09:57Z\",\"timestamp\":1568171397000},\"approved\":{\"date-parts\":[[2019]]},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Improving 3D reconstruction via RGB-D camera registration and shading-based surface refinement\"],\"prefix\":\"10.32657\",\"author\":[{\"given\":\"Teng\",\"family\":\"Deng\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"13751\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2019,9,11]],\"date-time\":\"2019-09-11T03:09:57Z\",\"timestamp\":1568171397000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"http:\\/\\/hdl.handle.net\\/10220\\/47633\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.32657\\/10220\\/47633\",\"relation\":{},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:33:52.845202Z",
+  "source": "crossref_doi"
+}

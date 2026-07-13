@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5220/0014632400004084",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5220/0014632400004084",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Guillermo Castillo",
+      "Xavier Soria",
+      "Angel Sappa"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Proceedings of the 21st International Conference on Computer Vision Theory and Applications",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Guillermo Castillo",
+      "Xavier Soria",
+      "Angel Sappa"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Proceedings of the 21st International Conference on Computer Vision Theory and Applications",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 190,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Guillermo Castillo",
+      "Xavier Soria",
+      "Angel Sappa"
+    ],
+    "doi": "10.5220/0014632400004084",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "SynShapes: A Synthetic Image-Annotation Dataset for Edge Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.5220/0014632400004084",
+    "venue": "Proceedings of the 21st International Conference on Computer Vision Theory and Applications",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0190/crossref_doi__e087b5eb5c4ae87f__20260713T082619105736Z.json",
+      "raw_sha256": "b916ca5fe20d42ad0f358566e6f04e9e402803f27e90933cd2ab4154b0f29aae",
+      "request_identity": "doi:10.5220/0014632400004084",
+      "retrieved_at_utc": "2026-07-13T08:26:19.105736Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

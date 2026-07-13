@@ -1,0 +1,77 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1089/photob.2022.0111",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1089/photob.2022.0111",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Luismar Barbosa da Cruz",
+      "Carlos Eduardo Girasol",
+      "Pedro Soler Coltro",
+      "Rinaldo Roberto de Jesus Guirro",
+      "Luciano Bachmann"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Photobiomodulation, Photomedicine, and Laser Surgery",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Luismar Barbosa da Cruz",
+      "Carlos Eduardo Girasol",
+      "Pedro Soler Coltro",
+      "Rinaldo Roberto de Jesus Guirro",
+      "Luciano Bachmann"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Photobiomodulation, Photomedicine, and Laser Surgery",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 785,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Luismar Barbosa da Cruz",
+      "Carlos Eduardo Girasol",
+      "Pedro Soler Coltro",
+      "Rinaldo Roberto de Jesus Guirro",
+      "Luciano Bachmann"
+    ],
+    "doi": "10.1089/photob.2022.0111",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Optical Properties of Human Skin Phototypes and Their Correlation with Individual Angle Typology",
+    "update_to": [],
+    "url": "https://doi.org/10.1089/photob.2022.0111",
+    "venue": "Photobiomodulation, Photomedicine, and Laser Surgery",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0785/crossref_doi__419b27e0c59ec2f7__20260713T083926933487Z.json",
+      "raw_sha256": "eb1425f807cb94f21e0310cd94c642fde1e001a1b5e8198151e9d85447d2b06e",
+      "request_identity": "doi:10.1089/photob.2022.0111",
+      "retrieved_at_utc": "2026-07-13T08:39:26.933487Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

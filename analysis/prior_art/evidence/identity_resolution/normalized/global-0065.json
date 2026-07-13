@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.853928",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.853928",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Dainis Jakovels",
+      "Janis Spigulis",
+      "Inga Saknite"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "Dainis Jakovels",
+      "Janis Spigulis",
+      "Inga Saknite"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SPIE Proceedings Biophotonics: Photonic Solutions for Better Health Care II",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.2,
+    "year_match": true
+  },
+  "global_rank": 65,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Dainis Jakovels",
+      "Janis Spigulis",
+      "Inga Saknite"
+    ],
+    "doi": "10.1117/12.853928",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Multi-spectral mapping of in vivo skin hemoglobin and melanin",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.853928",
+    "venue": "SPIE Proceedings",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0065/crossref_doi__53ce371489779924__20260713T081544427698Z.json",
+      "raw_sha256": "703b23c2fb48047581fd38610d901a400995f3a5399d98a65a1ad46fa56c3737",
+      "request_identity": "doi:10.1117/12.853928",
+      "retrieved_at_utc": "2026-07-13T08:15:44.427698Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1148/rg.250113.q2",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2025,12,18]],\"date-time\":\"2025-12-18T15:50:03Z\",\"timestamp\":1766073003528,\"version\":\"3.48.0\"},\"reference-count\":0,\"publisher\":\"Radiological Society of North America (RSNA)\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"published-print\":{\"date-parts\":[[2025,12,18]]},\"DOI\":\"10.1148\\/rg.250113.q2\",\"type\":\"dataset\",\"created\":{\"date-parts\":[[2025,12,18]],\"date-time\":\"2025-12-18T15:46:11Z\",\"timestamp\":1766072771000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Dual\\u2013Contrast Agent Liver MRI for Liver Lesion Characterization\"],\"prefix\":\"10.1148\",\"member\":\"1577\",\"container-title\":[\"RadioGraphics\"],\"original-title\":[],\"deposited\":{\"date-parts\":[[2025,12,18]],\"date-time\":\"2025-12-18T15:46:26Z\",\"timestamp\":1766072786000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"http:\\/\\/pubs.rsna.org\\/do\\/10.1148\\/rg.250113.q2\\/abs\\/\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[2025,12,18]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1148\\/rg.250113.q2\",\"relation\":{},\"subject\":[],\"published\":{\"date-parts\":[[2025,12,18]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:46:23.612191Z",
+  "source": "crossref_doi"
+}

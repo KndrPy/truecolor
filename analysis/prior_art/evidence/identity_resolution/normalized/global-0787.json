@@ -1,0 +1,134 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1001/jamadermatol.2026.0597",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41984449",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1001/jamadermatol.2026.0597",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Rory Sayres",
+      "Ayush Jain",
+      "Maya Venkatraman",
+      "Preeti Singh",
+      "Yuan Liu",
+      "Samantha Winter",
+      "Mike Schaekermann",
+      "Aaron Loh",
+      "Sonali Verma",
+      "Yossi Matias",
+      "Greg S. Corrado",
+      "Avinatan Hassidim",
+      "Dale R. Webster",
+      "Peggy Bui",
+      "Steven Lin",
+      "Justin Ko",
+      "Yun Liu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "JAMA Dermatology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sayres R",
+      "Jain A",
+      "Venkatraman M",
+      "Singh P",
+      "Liu Y",
+      "Winter S",
+      "Schaekermann M",
+      "Loh A",
+      "Verma S",
+      "Matias Y",
+      "Corrado GS",
+      "Hassidim A",
+      "Webster DR",
+      "Bui P",
+      "Lin S",
+      "Ko J",
+      "Liu Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 787,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rory Sayres",
+      "Ayush Jain",
+      "Maya Venkatraman",
+      "Preeti Singh",
+      "Yuan Liu",
+      "Samantha Winter",
+      "Mike Schaekermann",
+      "Aaron Loh",
+      "Sonali Verma",
+      "Yossi Matias",
+      "Greg S. Corrado",
+      "Avinatan Hassidim",
+      "Dale R. Webster",
+      "Peggy Bui",
+      "Steven Lin",
+      "Justin Ko",
+      "Yun Liu"
+    ],
+    "doi": "10.1001/jamadermatol.2026.0597",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Consumer Understanding of Skin Concerns With an AI-Powered Informational Tool",
+    "update_to": [],
+    "url": "https://doi.org/10.1001/jamadermatol.2026.0597",
+    "venue": "JAMA Dermatology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0787/crossref_doi__55b77dabef28e6b3__20260713T083928286095Z.json",
+      "raw_sha256": "1cf8b40a9c897a349eaee181e42caf41195fb99196d17e9382cc9ea0b9610e4f",
+      "request_identity": "doi:10.1001/jamadermatol.2026.0597",
+      "retrieved_at_utc": "2026-07-13T08:39:28.286095Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0787/europe_pmc_pmid__a29358e90cec0774__20260713T083929325390Z.json",
+      "raw_sha256": "421185a2232b8abf05f2d1374465f6b595a1d58359abcb0722c507a0e2b8de45",
+      "request_identity": "pmid:41984449",
+      "retrieved_at_utc": "2026-07-13T08:39:29.325390Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

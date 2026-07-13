@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5753/sbcas.2026.21435",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5753/sbcas.2026.21435",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Pedro H. G. Bouzon",
+      "Eduarda P. Magesk",
+      "Luis A. de Souza Jr.",
+      "André G. C. Pacheco"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Anais do XXVI Simpósio Brasileiro de Computação Aplicada à Saúde (SBCAS 2026)",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Pedro H. G. Bouzon",
+      "Eduarda P. Magesk",
+      "Luis A. de Souza Jr.",
+      "André G. C. Pacheco"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Anais do XXVI Simpósio Brasileiro de Computação Aplicada à Saúde (SBCAS 2026)",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 139,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Pedro H. G. Bouzon",
+      "Eduarda P. Magesk",
+      "Luis A. de Souza Jr.",
+      "André G. C. Pacheco"
+    ],
+    "doi": "10.5753/sbcas.2026.21435",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Enabling safe AI deployment: an automated Fitzpatrick skin type guardrail for out-of-distribution dermatology",
+    "update_to": [],
+    "url": "https://doi.org/10.5753/sbcas.2026.21435",
+    "venue": "Anais do XXVI Simpósio Brasileiro de Computação Aplicada à Saúde (SBCAS 2026)",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0139/crossref_doi__b4cc63bc4150aeae__20260713T082535080486Z.json",
+      "raw_sha256": "d5e300ef61d80a18272553ffb4b5c1cb0f4182f9c1eb3a0ed59f873d32d696ba",
+      "request_identity": "doi:10.5753/sbcas.2026.21435",
+      "retrieved_at_utc": "2026-07-13T08:25:35.080486Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

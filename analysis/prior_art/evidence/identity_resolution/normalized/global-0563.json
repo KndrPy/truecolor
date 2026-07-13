@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7717/peerj-cs.1480/table-2",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7717/peerj-cs.1480/table-2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "component",
+    "canonical_venue": null,
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "component",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 563,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.7717/peerj-cs.1480/table-2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "component",
+    "relation": {
+      "is-component-of": [
+        {
+          "asserted-by": "object",
+          "id": "10.7717/peerj-cs.1480",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Table 2: Test set accuracy of active learning methods with the simple label quality control method on the MNIST dataset.",
+    "update_to": [],
+    "url": "https://doi.org/10.7717/peerj-cs.1480/table-2",
+    "venue": null,
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0563/crossref_doi__fb2efa7f38543f88__20260713T083401364050Z.json",
+      "raw_sha256": "d7088622eadc591e54612f673c76ab2c4a8c23503cf72ecaed2cc0bdd7499963",
+      "request_identity": "doi:10.7717/peerj-cs.1480/table-2",
+      "retrieved_at_utc": "2026-07-13T08:34:01.364050Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

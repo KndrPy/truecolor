@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pone.0319891",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40857339",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pone.0319891",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Alexandra M. Maldonado López",
+      "Emily A. Gallagher",
+      "Aiden Curry",
+      "Kylie Q. Sahloff",
+      "Ivan Domicio da Silva Souza"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS One",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Maldonado López AM",
+      "Gallagher EA",
+      "Curry A",
+      "Sahloff KQ",
+      "da Silva Souza ID."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 953,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alexandra M. Maldonado López",
+      "Emily A. Gallagher",
+      "Aiden Curry",
+      "Kylie Q. Sahloff",
+      "Ivan Domicio da Silva Souza"
+    ],
+    "doi": "10.1371/journal.pone.0319891",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A standardized scoring method for measuring white cast of mineral sunscreens and improving user compliance across diverse skin tones",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pone.0319891",
+    "venue": "PLOS One",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0953/crossref_doi__b8fbb4c1657de14e__20260713T084449655370Z.json",
+      "raw_sha256": "e2a855a052743b5d52c532fb20f43487cbd7ce7017dca20175760e45589f8cb4",
+      "request_identity": "doi:10.1371/journal.pone.0319891",
+      "retrieved_at_utc": "2026-07-13T08:44:49.655370Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0953/europe_pmc_pmid__79d5ae636636c489__20260713T084450649807Z.json",
+      "raw_sha256": "d77430c54e48f4d5c54e13b9c01ba7dc6ec952e7c030ba200e7040cad61f8a51",
+      "request_identity": "pmid:40857339",
+      "retrieved_at_utc": "2026-07-13T08:44:50.649807Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

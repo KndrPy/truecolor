@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41467-025-65649-4",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41298398",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41467-025-65649-4",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Hansadi Jayamaha",
+      "Kyuin Park",
+      "Larissa M. Shepherd"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nature Communications",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jayamaha H",
+      "Park K",
+      "Shepherd LM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 743,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hansadi Jayamaha",
+      "Kyuin Park",
+      "Larissa M. Shepherd"
+    ],
+    "doi": "10.1038/s41467-025-65649-4",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Ultrablack wool textiles inspired by hierarchical avian structure",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41467-025-65649-4",
+    "venue": "Nature Communications",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0743/crossref_doi__cf1c94604b15b6aa__20260713T083810396796Z.json",
+      "raw_sha256": "d471f4d21b423218658d50c2f00e17a598f40d1f65cc4dfaf6736be9cb973037",
+      "request_identity": "doi:10.1038/s41467-025-65649-4",
+      "retrieved_at_utc": "2026-07-13T08:38:10.396796Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0743/europe_pmc_pmid__ffca561a0b41a74f__20260713T083811355406Z.json",
+      "raw_sha256": "8e2988559ac5280e84eede76c8ab56bf09a1ab22d5cd5c70b9d0d2027bd26abf",
+      "request_identity": "pmid:41298398",
+      "retrieved_at_utc": "2026-07-13T08:38:11.355406Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,122 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/exd.70287",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42249670",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/exd.70287",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Corrado Zengarini",
+      "Tommaso Giacometti",
+      "Yuri Merli",
+      "Davide Griffa",
+      "Luca Rapparini",
+      "Alessio Natale",
+      "Michele Fruci",
+      "Gastone Castellani",
+      "Daniel Remondini",
+      "Michelangelo La Placa",
+      "Alessandro Pileri",
+      "Michela Starace",
+      "Nico Curti"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Experimental Dermatology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zengarini C",
+      "Giacometti T",
+      "Merli Y",
+      "Griffa D",
+      "Rapparini L",
+      "Natale A",
+      "Fruci M",
+      "Castellani G",
+      "Remondini D",
+      "La Placa M",
+      "Pileri A",
+      "Starace M",
+      "Curti N."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 837,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Corrado Zengarini",
+      "Tommaso Giacometti",
+      "Yuri Merli",
+      "Davide Griffa",
+      "Luca Rapparini",
+      "Alessio Natale",
+      "Michele Fruci",
+      "Gastone Castellani",
+      "Daniel Remondini",
+      "Michelangelo La Placa",
+      "Alessandro Pileri",
+      "Michela Starace",
+      "Nico Curti"
+    ],
+    "doi": "10.1111/exd.70287",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Toward Objective Wound Edge Classification in Clinical Practice",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/exd.70287",
+    "venue": "Experimental Dermatology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0837/crossref_doi__c26b74a2f398ed19__20260713T084107377491Z.json",
+      "raw_sha256": "6f8f843ccf82d5e09f8e30633420115777205e7b6b500cc5b3e9d27389880a37",
+      "request_identity": "doi:10.1111/exd.70287",
+      "retrieved_at_utc": "2026-07-13T08:41:07.377491Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0837/europe_pmc_pmid__c692e9b49ed45f83__20260713T084108333673Z.json",
+      "raw_sha256": "eb06e44837b0b3e1ec31cbd883243647f8f674230b4f45da01b844ebef435c8b",
+      "request_identity": "pmid:42249670",
+      "retrieved_at_utc": "2026-07-13T08:41:08.333673Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

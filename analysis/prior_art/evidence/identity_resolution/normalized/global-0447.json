@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.386338",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "32637250",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.386338",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Samuel Ortega",
+      "Martin Halicek",
+      "Himar Fabelo",
+      "Gustavo M. Callico",
+      "Baowei Fei"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ortega S",
+      "Halicek M",
+      "Fabelo H",
+      "Callico GM",
+      "Fei B."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2020,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 447,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Samuel Ortega",
+      "Martin Halicek",
+      "Himar Fabelo",
+      "Gustavo M. Callico",
+      "Baowei Fei"
+    ],
+    "doi": "10.1364/boe.386338",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral and multispectral imaging in digital and computational pathology: a systematic review [Invited]",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.386338",
+    "venue": "Biomedical Optics Express",
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0447/crossref_doi__078d48e4ecc33e50__20260713T083138474699Z.json",
+      "raw_sha256": "f64c034342567d8aee540bd6e9af621b242ead7edb96f82d6b7f7b818880ee5b",
+      "request_identity": "doi:10.1364/boe.386338",
+      "retrieved_at_utc": "2026-07-13T08:31:38.474699Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0447/europe_pmc_pmid__1983f396b46b6629__20260713T083141686875Z.json",
+      "raw_sha256": "20b3e2f81996438be0c2b1bcc5109605d452738cee7bcbb39dbbc58d0eb63f4a",
+      "request_identity": "pmid:32637250",
+      "retrieved_at_utc": "2026-07-13T08:31:41.686875Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

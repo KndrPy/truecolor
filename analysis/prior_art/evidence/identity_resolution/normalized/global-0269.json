@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/advs.202505619",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40799083",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/advs.202505619",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Denis Davydov",
+      "Alexey Kurnikov",
+      "Pavel Subochev",
+      "Gleb Budylin",
+      "Nikolay Fadeev",
+      "Ivan Filippov",
+      "Natalia Mokrysheva",
+      "Liliya Urusova",
+      "Daniel Razansky",
+      "Evgeny Shirshin"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advanced Science",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Davydov D",
+      "Kurnikov A",
+      "Subochev P",
+      "Budylin G",
+      "Fadeev N",
+      "Filippov I",
+      "Mokrysheva N",
+      "Urusova L",
+      "Razansky D",
+      "Shirshin E."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 269,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Denis Davydov",
+      "Alexey Kurnikov",
+      "Pavel Subochev",
+      "Gleb Budylin",
+      "Nikolay Fadeev",
+      "Ivan Filippov",
+      "Natalia Mokrysheva",
+      "Liliya Urusova",
+      "Daniel Razansky",
+      "Evgeny Shirshin"
+    ],
+    "doi": "10.1002/advs.202505619",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Water, Collagen, and Lipid Content in the Human Skin and Muscles Assessed with Near‐Infrared Diffuse Reflectance Spectroscopy and Multi‐Spectral Optoacoustic Tomography",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/advs.202505619",
+    "venue": "Advanced Science",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0269/crossref_doi__9af8928d97c33ac1__20260713T082747572455Z.json",
+      "raw_sha256": "259498323353cf7d44aa0d38c45b859e269665662214d5fb61419ce4103dd34c",
+      "request_identity": "doi:10.1002/advs.202505619",
+      "retrieved_at_utc": "2026-07-13T08:27:47.572455Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0269/europe_pmc_pmid__ae22f927f7e56015__20260713T082748574089Z.json",
+      "raw_sha256": "121be6e11c24440caa350d3aea5150a203d2826ef40802ebce417ee6392bc1c7",
+      "request_identity": "pmid:40799083",
+      "retrieved_at_utc": "2026-07-13T08:27:48.574089Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

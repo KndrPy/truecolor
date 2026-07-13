@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2293623",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2293623",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Christian Herrmann",
+      "Jürgen Metzler",
+      "Dieter Willersinn",
+      "Jürgen Beyerer"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Medical Imaging 2018: Image-Guided Procedures, Robotic Interventions, and Modeling",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [
+      "Christian Herrmann",
+      "Jürgen Metzler",
+      "Dieter Willersinn",
+      "Jürgen Beyerer"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Medical Imaging 2018: Image-Guided Procedures, Robotic Interventions, and Modeling",
+    "harvested_year": 2018,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 610,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Christian Herrmann",
+      "Jürgen Metzler",
+      "Dieter Willersinn",
+      "Jürgen Beyerer"
+    ],
+    "doi": "10.1117/12.2293623",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Distant pulse oximetry based on skin region extraction and multi-spectral measurement",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2293623",
+    "venue": "Medical Imaging 2018: Image-Guided Procedures, Robotic Interventions, and Modeling",
+    "year": 2018
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0610/crossref_doi__ab8f0fbaa62d2c36__20260713T083503920125Z.json",
+      "raw_sha256": "6cb0e90c9d773c13ef0fa4199854509068c13f29bb4966eb844301355de497bc",
+      "request_identity": "doi:10.1117/12.2293623",
+      "retrieved_at_utc": "2026-07-13T08:35:03.920125Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

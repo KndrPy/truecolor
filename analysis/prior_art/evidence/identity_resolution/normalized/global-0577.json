@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1063/5.0240444",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39660034",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1063/5.0240444",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Chun-Liang Lai",
+      "Riya Karmakar",
+      "Arvind Mukundan",
+      "Ragul Kumar Natarajan",
+      "Song-Cun Lu",
+      "Cheng-Yi Wang",
+      "Hsiang-Chen Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "APL Bioengineering",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lai CL",
+      "Karmakar R",
+      "Mukundan A",
+      "Natarajan RK",
+      "Lu SC",
+      "Wang CY",
+      "Wang HC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 577,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Chun-Liang Lai",
+      "Riya Karmakar",
+      "Arvind Mukundan",
+      "Ragul Kumar Natarajan",
+      "Song-Cun Lu",
+      "Cheng-Yi Wang",
+      "Hsiang-Chen Wang"
+    ],
+    "doi": "10.1063/5.0240444",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advancing hyperspectral imaging and machine learning tools toward clinical adoption in tissue diagnostics: A comprehensive review",
+    "update_to": [],
+    "url": "https://doi.org/10.1063/5.0240444",
+    "venue": "APL Bioengineering",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0577/crossref_doi__552f7ab15634db15__20260713T083411392386Z.json",
+      "raw_sha256": "4929bd8f8cfb7a8ff65c71b23f76453919fa5071e8dfc6594530bd5063158e25",
+      "request_identity": "doi:10.1063/5.0240444",
+      "retrieved_at_utc": "2026-07-13T08:34:11.392386Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0577/europe_pmc_pmid__e71f54115367b40c__20260713T083412459391Z.json",
+      "raw_sha256": "570c85db960d3e963f6c44dec48649d653b3216c068b7fead6ed4a77595d4edf",
+      "request_identity": "pmid:39660034",
+      "retrieved_at_utc": "2026-07-13T08:34:12.459391Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

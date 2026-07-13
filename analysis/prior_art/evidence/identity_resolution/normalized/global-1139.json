@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.14428/dvn/deqcim",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.14428/dvn/deqcim",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "database",
+    "canonical_venue": null,
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "database",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1139,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.14428/dvn/deqcim",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "database",
+    "relation": {},
+    "title": "Raw Natural Image Noise Dataset",
+    "update_to": [],
+    "url": "https://doi.org/10.14428/dvn/deqcim",
+    "venue": null,
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1139/crossref_doi__dbe57dc1a8335bb0__20260713T084809612329Z.json",
+      "raw_sha256": "129f11a3bedb2138c450973a5ed2a450c5d8dc9728a9201b2947a68bdbbb26d8",
+      "request_identity": "doi:10.14428/dvn/deqcim",
+      "retrieved_at_utc": "2026-07-13T08:48:09.612329Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

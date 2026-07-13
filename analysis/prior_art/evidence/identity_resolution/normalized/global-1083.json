@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1201/9781420009781.ch3",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1201/9781420009781.ch3",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Graham Finlayson"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Image Processing Series",
+    "canonical_year": 2006,
+    "doi_match": true,
+    "harvested_authors": [
+      "Graham Finlayson"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Image Processing Series Color Image Processing",
+    "harvested_year": 2006,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.75,
+    "year_match": true
+  },
+  "global_rank": 1083,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Graham Finlayson"
+    ],
+    "doi": "10.1201/9781420009781.ch3",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Three-, Two-, One-, and Six-Dimensional Color Constancy",
+    "update_to": [],
+    "url": "https://doi.org/10.1201/9781420009781.ch3",
+    "venue": "Image Processing Series",
+    "year": 2006
+  },
+  "related_candidate_keys": [
+    "doi:10.1201/9781315221526-11"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1083/crossref_doi__ecb14268b5c5e5d2__20260713T084728567198Z.json",
+      "raw_sha256": "019ef3bddaa425ad89e7de0cb6783f6b5cf02e6df302543d5f7d2f1a1d183d67",
+      "request_identity": "doi:10.1201/9781420009781.ch3",
+      "retrieved_at_utc": "2026-07-13T08:47:28.567198Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,73 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.25039/cie.ds.mjdd2enu",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.25039/cie.ds.mjdd2enu",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "International Commission on Illumination (CIE)"
+    ],
+    "canonical_publication_type": "dataset",
+    "canonical_venue": "CIEdataTableDatabase",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "International Commission on Illumination (CIE)"
+    ],
+    "harvested_publication_type": "dataset",
+    "harvested_venue": "CIEdataTableDatabase",
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": null
+  },
+  "global_rank": 1057,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "International Commission on Illumination (CIE)"
+    ],
+    "doi": "10.25039/cie.ds.mjdd2enu",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dataset",
+    "relation": {
+      "is-part-of": [
+        {
+          "asserted-by": "subject",
+          "id": "10.25039/tr.015.2018",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Relative spectral power distributions of CIE illuminant C",
+    "update_to": [],
+    "url": "https://doi.org/10.25039/cie.ds.mjdd2enu",
+    "venue": "CIEdataTableDatabase",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "The DOI resolves to a dataset record rather than a scholarly publication.",
+  "resolution_state": "NON_SCHOLARLY",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1057/crossref_doi__7bd32761f5ae7114__20260713T084704269443Z.json",
+      "raw_sha256": "577ea14c9e20f5afadb4a7193443ef848089d32345515568cd9ef16bfa4cd5ab",
+      "request_identity": "doi:10.25039/cie.ds.mjdd2enu",
+      "retrieved_at_utc": "2026-07-13T08:47:04.269443Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

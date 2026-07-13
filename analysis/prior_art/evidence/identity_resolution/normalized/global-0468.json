@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/adhm.201901410",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "31994845",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/adhm.201901410",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mark F. Coughlin",
+      "Roger D. Kamm"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advanced Healthcare Materials",
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [
+      "Coughlin MF",
+      "Kamm RD."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2020,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 468,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mark F. Coughlin",
+      "Roger D. Kamm"
+    ],
+    "doi": "10.1002/adhm.201901410",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The Use of Microfluidic Platforms to Probe the Mechanism of Cancer Cell Extravasation",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/adhm.201901410",
+    "venue": "Advanced Healthcare Materials",
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0468/crossref_doi__d37a880eb928cbf5__20260713T083205822220Z.json",
+      "raw_sha256": "7d913a13a62a4bb4bae57701e230d6ea21476c51dca8a345b1c31bde551cd6e0",
+      "request_identity": "doi:10.1002/adhm.201901410",
+      "retrieved_at_utc": "2026-07-13T08:32:05.822220Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0468/europe_pmc_pmid__872dc940a14d6835__20260713T083207012836Z.json",
+      "raw_sha256": "1b49f165269ea0576f14f7cf39ca37c52fadc45dc88a3cf843c05b5b07bff210",
+      "request_identity": "pmid:31994845",
+      "retrieved_at_utc": "2026-07-13T08:32:07.012836Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

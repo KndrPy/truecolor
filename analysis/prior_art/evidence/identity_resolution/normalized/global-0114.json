@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s24217010",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39517908",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s24217010",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sonia Buendia-Aviles",
+      "Margarita Cunill-Rodríguez",
+      "José A. Delgado-Atencio",
+      "Enrique González-Gutiérrez",
+      "José L. Arce-Diego",
+      "Félix Fanjul-Vélez"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Buendia-Aviles S",
+      "Cunill-Rodríguez M",
+      "Delgado-Atencio JA",
+      "González-Gutiérrez E",
+      "Arce-Diego JL",
+      "Fanjul-Vélez F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 114,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sonia Buendia-Aviles",
+      "Margarita Cunill-Rodríguez",
+      "José A. Delgado-Atencio",
+      "Enrique González-Gutiérrez",
+      "José L. Arce-Diego",
+      "Félix Fanjul-Vélez"
+    ],
+    "doi": "10.3390/s24217010",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluation of Diffuse Reflectance Spectroscopy Vegetal Phantoms for Human Pigmented Skin Lesions",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s24217010",
+    "venue": "Sensors",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0114/crossref_doi__ada6298c0ebfaf80__20260713T081632631607Z.json",
+      "raw_sha256": "0ecfda90f431c84bb734ef2713146f94a6f8b512eceb1c5a3e01971957ed5702",
+      "request_identity": "doi:10.3390/s24217010",
+      "retrieved_at_utc": "2026-07-13T08:16:32.631607Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0114/europe_pmc_pmid__b21dc02a5e1807e1__20260713T081633645900Z.json",
+      "raw_sha256": "1faac29b862602ba31cd5b8e32e8e49436ff849ee79e90da2c24a9ee0ae8efb8",
+      "request_identity": "pmid:39517908",
+      "retrieved_at_utc": "2026-07-13T08:16:33.645900Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

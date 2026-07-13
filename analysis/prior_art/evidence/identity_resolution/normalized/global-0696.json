@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.15587/2312-8372.2013.14893",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.15587/2312-8372.2013.14893",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Юлия Андреевна Квашина"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Technology audit and production reserves",
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [
+      "Юлия Андреевна Квашина"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Technology audit and production reserves",
+    "harvested_year": 2013,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 696,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Юлия Андреевна Квашина"
+    ],
+    "doi": "10.15587/2312-8372.2013.14893",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Search methods of duplicate of the compose scientific stylistics texts",
+    "update_to": [],
+    "url": "https://doi.org/10.15587/2312-8372.2013.14893",
+    "venue": "Technology audit and production reserves",
+    "year": 2013
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0696/crossref_doi__7c28a79826c0355d__20260713T083656661752Z.json",
+      "raw_sha256": "58daaba7077f37eb382ec9ba3c72470150bfdd8cee5f57b8cac44a18d2976d10",
+      "request_identity": "doi:10.15587/2312-8372.2013.14893",
+      "retrieved_at_utc": "2026-07-13T08:36:56.661752Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

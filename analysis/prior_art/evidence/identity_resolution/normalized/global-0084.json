@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1070/qe2013v043n10abeh015075",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1070/qe2013v043n10abeh015075",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "V V Barun",
+      "A P Ivanov"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Quantum Electronics",
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [
+      "V V Barun",
+      "A P Ivanov"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Quantum Electronics",
+    "harvested_year": 2013,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 84,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "V V Barun",
+      "A P Ivanov"
+    ],
+    "doi": "10.1070/qe2013v043n10abeh015075",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Light scattering by a rough surface of human skin. 2. Diffuse reflectance",
+    "update_to": [],
+    "url": "https://doi.org/10.1070/qe2013v043n10abeh015075",
+    "venue": "Quantum Electronics",
+    "year": 2013
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0084/crossref_doi__82d6e87ccee0e290__20260713T081559494356Z.json",
+      "raw_sha256": "2b4bbfe31a646d927453659e018c704ca7f53f441aa746aa04cceba106c19696",
+      "request_identity": "doi:10.1070/qe2013v043n10abeh015075",
+      "retrieved_at_utc": "2026-07-13T08:15:59.494356Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,86 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1080/16549716.2026.2642546",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41885802",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1080/16549716.2026.2642546",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Katijah Khoza-Shangase"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Global Health Action",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Khoza-Shangase K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 356,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Katijah Khoza-Shangase"
+    ],
+    "doi": "10.1080/16549716.2026.2642546",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial intelligence and hearing health: a global evidence review of biases and equity implications for Africa",
+    "update_to": [],
+    "url": "https://doi.org/10.1080/16549716.2026.2642546",
+    "venue": "Global Health Action",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0356/crossref_doi__a36b1cd54d2d70c1__20260713T082941163132Z.json",
+      "raw_sha256": "c7bf0f5c91f82716a2927ba7e1020a9ab19b808fb37c3c700ad526ff9d1cd39d",
+      "request_identity": "doi:10.1080/16549716.2026.2642546",
+      "retrieved_at_utc": "2026-07-13T08:29:41.163132Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0356/europe_pmc_pmid__ac336db10e72e68d__20260713T082942295633Z.json",
+      "raw_sha256": "a8fac003df4c25bbc6fd36983805cfc41219bb5a5c56d2014c6f0c9d1672ef23",
+      "request_identity": "pmid:41885802",
+      "retrieved_at_utc": "2026-07-13T08:29:42.295633Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/diagnostics15030355",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39941285",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/diagnostics15030355",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Laura Rey-Barroso",
+      "Meritxell Vilaseca",
+      "Santiago Royo",
+      "Fernando Díaz-Doutón",
+      "Ilze Lihacova",
+      "Andrey Bondarenko",
+      "Francisco J. Burgos-Fernández"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rey-Barroso L",
+      "Vilaseca M",
+      "Royo S",
+      "Díaz-Doutón F",
+      "Lihacova I",
+      "Bondarenko A",
+      "Burgos-Fernández FJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 119,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Laura Rey-Barroso",
+      "Meritxell Vilaseca",
+      "Santiago Royo",
+      "Fernando Díaz-Doutón",
+      "Ilze Lihacova",
+      "Andrey Bondarenko",
+      "Francisco J. Burgos-Fernández"
+    ],
+    "doi": "10.3390/diagnostics15030355",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Training State-of-the-Art Deep Learning Algorithms with Visible and Extended Near-Infrared Multispectral Images of Skin Lesions for the Improvement of Skin Cancer Diagnosis",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics15030355",
+    "venue": "Diagnostics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0119/crossref_doi__e8cb7d569a2802a2__20260713T082508367149Z.json",
+      "raw_sha256": "ccbb95bf851db58dd5152a191282fe9614a22aa2e65ecd5db7e7e0352fba4a12",
+      "request_identity": "doi:10.3390/diagnostics15030355",
+      "retrieved_at_utc": "2026-07-13T08:25:08.367149Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0119/europe_pmc_pmid__5ce95fdd8911338e__20260713T082509539195Z.json",
+      "raw_sha256": "4d4b78f2f89d1d18b41f2885be3af55ea76fd01b1eef78ab8913e2d4a860906d",
+      "request_identity": "pmid:39941285",
+      "retrieved_at_utc": "2026-07-13T08:25:09.539195Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

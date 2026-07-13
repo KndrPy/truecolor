@@ -1,0 +1,152 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1017/pcm.2025.10006",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41409212",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1017/pcm.2025.10006",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Arslaan Javaeed",
+      "Anna Schuh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cambridge Prisms: Precision Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Javaeed A",
+      "Schuh A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 937,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Arslaan Javaeed",
+      "Anna Schuh"
+    ],
+    "doi": "10.1017/pcm.2025.10006",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-review": [
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr6",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr7",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr4",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr5",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr2",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr3",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr12",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr11",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr10",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr8",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1017/pcm.2025.10006.pr9",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Artificial intelligence in breast cancer diagnosis: A systematic literature review",
+    "update_to": [],
+    "url": "https://doi.org/10.1017/pcm.2025.10006",
+    "venue": "Cambridge Prisms: Precision Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0937/crossref_doi__77fe3d206fb65cb5__20260713T084421082092Z.json",
+      "raw_sha256": "58e479d394756bad466719e4fc6b7f94314c09d58e23164e4f4edea858607c50",
+      "request_identity": "doi:10.1017/pcm.2025.10006",
+      "retrieved_at_utc": "2026-07-13T08:44:21.082092Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0937/europe_pmc_pmid__b354e4d67f86d913__20260713T084423730919Z.json",
+      "raw_sha256": "ec2dc28279bb05424555c97ec026cf3a3aefef5a32d4b1f446559e0c54a67fa6",
+      "request_identity": "pmid:41409212",
+      "retrieved_at_utc": "2026-07-13T08:44:23.730919Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

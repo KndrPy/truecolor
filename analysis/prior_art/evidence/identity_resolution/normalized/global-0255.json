@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/ao.10.002617",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/ao.10.002617",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "C. J. Kok",
+      "M. C. Boshoff"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Applied Optics",
+    "canonical_year": 1971,
+    "doi_match": true,
+    "harvested_authors": [
+      "C. J. Kok",
+      "M. C. Boshoff"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Applied Optics",
+    "harvested_year": 1971,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 255,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "C. J. Kok",
+      "M. C. Boshoff"
+    ],
+    "doi": "10.1364/ao.10.002617",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "New Spectrophotometer and Tristimulus Mask Colorimeter",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/ao.10.002617",
+    "venue": "Applied Optics",
+    "year": 1971
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0255/crossref_doi__b828b5486891fad7__20260713T082726658044Z.json",
+      "raw_sha256": "bcb26a105e2741da5ff918fb00172bdd5c6b3e4756f48aaefc19bc4f45d4ea18",
+      "request_identity": "doi:10.1364/ao.10.002617",
+      "retrieved_at_utc": "2026-07-13T08:27:26.658044Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

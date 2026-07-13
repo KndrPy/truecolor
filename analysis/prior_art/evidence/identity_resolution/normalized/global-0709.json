@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1186/s12880-025-02118-w",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41491470",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1186/s12880-025-02118-w",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Fahad Ahmed",
+      "Naila Sammar Naz",
+      "Sunawar Khan",
+      "Ateeq Ur Rehman",
+      "Waleed M. Ismael",
+      "Muhammad Adnan Khan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "BMC Medical Imaging",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ahmed F",
+      "Naz NS",
+      "Khan S",
+      "Rehman AU",
+      "Ismael WM",
+      "Khan MA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 709,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Fahad Ahmed",
+      "Naila Sammar Naz",
+      "Sunawar Khan",
+      "Ateeq Ur Rehman",
+      "Waleed M. Ismael",
+      "Muhammad Adnan Khan"
+    ],
+    "doi": "10.1186/s12880-025-02118-w",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Explainable artificial intelligence (XAI) in medical imaging: a systematic review of techniques, applications, and challenges",
+    "update_to": [],
+    "url": "https://doi.org/10.1186/s12880-025-02118-w",
+    "venue": "BMC Medical Imaging",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0709/crossref_doi__4b59c4059c0f6da9__20260713T083710275130Z.json",
+      "raw_sha256": "1cb62c7759cdd3cbc8a559178d84bbf6fd5bd7295f6214d048c965b481791efe",
+      "request_identity": "doi:10.1186/s12880-025-02118-w",
+      "retrieved_at_utc": "2026-07-13T08:37:10.275130Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0709/europe_pmc_pmid__e323f5cefee5224d__20260713T083711391643Z.json",
+      "raw_sha256": "324c19a6d7eb4fee3d5c08aeaad448fce7777c2596535820d9e740f60750071d",
+      "request_identity": "pmid:41491470",
+      "retrieved_at_utc": "2026-07-13T08:37:11.391643Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

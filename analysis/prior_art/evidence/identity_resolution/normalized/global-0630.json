@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/fsn3.71611",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41809495",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/fsn3.71611",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Vanshika Adiani",
+      "Archana Mishra"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Food Science & Nutrition",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Adiani V",
+      "Mishra A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 630,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Vanshika Adiani",
+      "Archana Mishra"
+    ],
+    "doi": "10.1002/fsn3.71611",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advanced Spectroscopic, Imaging, and Nanotechnology Tools for Diagnosing Fungal Diseases in Fruits",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/fsn3.71611",
+    "venue": "Food Science & Nutrition",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0630/crossref_doi__f380637c8e8908af__20260713T083527839568Z.json",
+      "raw_sha256": "5e4237782826238fee211f8b1867a3122b954c308256581c010af78b18e7e63c",
+      "request_identity": "doi:10.1002/fsn3.71611",
+      "retrieved_at_utc": "2026-07-13T08:35:27.839568Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0630/europe_pmc_pmid__0407a6f16c43c4d3__20260713T083528855280Z.json",
+      "raw_sha256": "55cb62c3598c953303b017c30384d74e5f9863ede5acff093c83a80e4a6f2ab5",
+      "request_identity": "pmid:41809495",
+      "retrieved_at_utc": "2026-07-13T08:35:28.855280Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

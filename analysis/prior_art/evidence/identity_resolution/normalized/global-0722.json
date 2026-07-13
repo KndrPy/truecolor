@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.43886",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37746366",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.43886",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Priyadarshani Pawar",
+      "Anjali  G Borle",
+      "Rohit M Patil",
+      "Pradnya Patil",
+      "Vaishali M Pawar",
+      "Muskan Pachori"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Pawar P",
+      "Borle AG",
+      "Patil RM",
+      "Patil P",
+      "Pawar VM",
+      "Pachori M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 722,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Priyadarshani Pawar",
+      "Anjali  G Borle",
+      "Rohit M Patil",
+      "Pradnya Patil",
+      "Vaishali M Pawar",
+      "Muskan Pachori"
+    ],
+    "doi": "10.7759/cureus.43886",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Digitization in Skin Shade Matching for Maxillofacial Prostheses: A Systematic Review",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.43886",
+    "venue": "Cureus",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0722/crossref_doi__bf9a78cbd62c5ad2__20260713T083735182846Z.json",
+      "raw_sha256": "7456139d51fe786ebd2bd11a0d55c1c160b9b6854fb3a07b734840e89878b5f7",
+      "request_identity": "doi:10.7759/cureus.43886",
+      "retrieved_at_utc": "2026-07-13T08:37:35.182846Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0722/europe_pmc_pmid__698fd203c78139f0__20260713T083736152003Z.json",
+      "raw_sha256": "6a801a8a110281be2586682ddc56634d3c55a0c2c13a9d5730b086f3cae974af",
+      "request_identity": "pmid:37746366",
+      "retrieved_at_utc": "2026-07-13T08:37:36.152003Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

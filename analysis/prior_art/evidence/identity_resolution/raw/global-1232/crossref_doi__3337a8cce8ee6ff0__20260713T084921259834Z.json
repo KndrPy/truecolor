@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1021/acs.jpclett.1c03535.s001",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,2,26]],\"date-time\":\"2026-02-26T17:59:52Z\",\"timestamp\":1772128792991,\"version\":\"3.50.1\"},\"description\":\"Supplemental Information for 10.1021\\/acs.jpclett.1c03535\",\"reference-count\":0,\"publisher\":\"American Chemical Society (ACS)\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.1021\\/acs.jpclett.1c03535.s001\",\"type\":\"component\",\"created\":{\"date-parts\":[[2021,11,5]],\"date-time\":\"2021-11-05T16:06:58Z\",\"timestamp\":1636128418000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Optimal Excitation Wavelength for Surface-Enhanced Raman Spectroscopy: The Role of Chemical Interface Damping\"],\"prefix\":\"10.1021\",\"member\":\"316\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2021,11,18]],\"date-time\":\"2021-11-18T03:56:06Z\",\"timestamp\":1637207766000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/pubs.acs.org\\/doi\\/suppl\\/10.1021\\/acs.jpclett.1c03535\\/suppl_file\\/jz1c03535_si_001.pdf\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1021\\/acs.jpclett.1c03535.s001\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.1021\\/acs.jpclett.1c03535\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:49:21.259834Z",
+  "source": "crossref_doi"
+}

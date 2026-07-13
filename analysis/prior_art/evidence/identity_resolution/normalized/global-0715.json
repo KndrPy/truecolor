@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2025.1681542",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41158448",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2025.1681542",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Muhammad Fiaz",
+      "Muhammad Bilal Shoaib Khan",
+      "Abdul Hannan Khan",
+      "Anas Bilal",
+      "Monir Abdullah",
+      "Abdulbasit A. Darem",
+      "Raheem Sarwar"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fiaz M",
+      "Shoaib Khan MB",
+      "Khan AH",
+      "Bilal A",
+      "Abdullah M",
+      "Darem AA",
+      "Sarwar R."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 715,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Muhammad Fiaz",
+      "Muhammad Bilal Shoaib Khan",
+      "Abdul Hannan Khan",
+      "Anas Bilal",
+      "Monir Abdullah",
+      "Abdulbasit A. Darem",
+      "Raheem Sarwar"
+    ],
+    "doi": "10.3389/fmed.2025.1681542",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "An explainable hybrid deep learning framework for precise skin lesion segmentation and multi-class classification",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2025.1681542",
+    "venue": "Frontiers in Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0715/crossref_doi__152cd09bb4de717c__20260713T083720697948Z.json",
+      "raw_sha256": "80b7bed07de6892995490ef1c0a8dad50ce67882ecab63880dd81b44e90d2716",
+      "request_identity": "doi:10.3389/fmed.2025.1681542",
+      "retrieved_at_utc": "2026-07-13T08:37:20.697948Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0715/europe_pmc_pmid__bef5e56fd7575f2f__20260713T083721679505Z.json",
+      "raw_sha256": "ad0dfd3c26cf728492d0e00db119ac89aa102766f22410f33a998a35b6b39b63",
+      "request_identity": "pmid:41158448",
+      "retrieved_at_utc": "2026-07-13T08:37:21.679505Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,155 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fdgth.2025.1667423",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41561164",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fdgth.2025.1667423",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Alora Brown",
+          "Joeri Tulkens",
+          "Maxime Mattelin",
+          "Tanguy Sanglet",
+          "Brecht Dhuyvetters"
+        ],
+        "doi": "10.3389/fdgth.2025.1667423",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Remote photoplethysmography for health assessment: a review informed by IntelliProve technology",
+        "update_to": [],
+        "url": "https://doi.org/10.3389/fdgth.2025.1667423",
+        "venue": "Frontiers in Digital Health",
+        "year": 2026
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Alora Brown",
+          "Joeri Tulkens",
+          "Maxime Mattelin",
+          "Tanguy Sanglet",
+          "Brecht Dhuyvetters"
+        ],
+        "doi": "10.3389/fdgth.2025.1667423",
+        "is_retracted": false,
+        "pmcid": "PMC12812591",
+        "pmid": "41561164",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Remote photoplethysmography for health assessment: a review informed by IntelliProve technology.",
+        "url": "https://europepmc.org/article/MED/41561164",
+        "venue": null,
+        "year": 2025
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2026,
+      "field": "year",
+      "harvested": 2025
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Alora Brown",
+      "Joeri Tulkens",
+      "Maxime Mattelin",
+      "Tanguy Sanglet",
+      "Brecht Dhuyvetters"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Digital Health",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Brown A",
+      "Tulkens J",
+      "Mattelin M",
+      "Sanglet T",
+      "Dhuyvetters B."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 960,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alora Brown",
+      "Joeri Tulkens",
+      "Maxime Mattelin",
+      "Tanguy Sanglet",
+      "Brecht Dhuyvetters"
+    ],
+    "doi": "10.3389/fdgth.2025.1667423",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Remote photoplethysmography for health assessment: a review informed by IntelliProve technology",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fdgth.2025.1667423",
+    "venue": "Frontiers in Digital Health",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0960/crossref_doi__1d26982cc15c36a0__20260713T084504502046Z.json",
+      "raw_sha256": "7922c2e79e42bbc41b7cca7f1d012059d047a62b213b32e4f8cdf6b4b85250b2",
+      "request_identity": "doi:10.3389/fdgth.2025.1667423",
+      "retrieved_at_utc": "2026-07-13T08:45:04.502046Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0960/europe_pmc_pmid__46047ea8e50a4299__20260713T084505487903Z.json",
+      "raw_sha256": "9a5ff30f5816e6212964d7bf618229fe77febae4179458bbf70cc560f69ff1d2",
+      "request_identity": "pmid:41561164",
+      "retrieved_at_utc": "2026-07-13T08:45:05.487903Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

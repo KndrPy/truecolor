@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/icdh.2018.00026",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/icdh.2018.00026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Liying Xie",
+      "Jinxin Ruan",
+      "Yilin Wu",
+      "Qiang Chen"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2018 7th International Conference on Digital Home (ICDH)",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [
+      "Liying Xie",
+      "Jinxin Ruan",
+      "Yilin Wu",
+      "Qiang Chen"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2018 7th International Conference on Digital Home (ICDH)",
+    "harvested_year": 2018,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1188,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Liying Xie",
+      "Jinxin Ruan",
+      "Yilin Wu",
+      "Qiang Chen"
+    ],
+    "doi": "10.1109/icdh.2018.00026",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Multi-parameter Estimation and Its Cramer-Rao Lower Bound for Underwater Acoustic Signal",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/icdh.2018.00026",
+    "venue": "2018 7th International Conference on Digital Home (ICDH)",
+    "year": 2018
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1188/crossref_doi__1517324b244afd8d__20260713T084847191480Z.json",
+      "raw_sha256": "f7ea3402acd7b62c4bd9345ac6cc9d4fe7c0e702bb10ff52a7ab96cff801c6d1",
+      "request_identity": "doi:10.1109/icdh.2018.00026",
+      "retrieved_at_utc": "2026-07-13T08:48:47.191480Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

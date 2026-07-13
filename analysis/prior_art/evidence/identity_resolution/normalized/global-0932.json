@@ -1,0 +1,128 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/btm2.70067",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41244343",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/btm2.70067",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Chaoqun Lv",
+      "Xinyue Hu",
+      "Xiang Li",
+      "Wen Shi",
+      "Wenbo Li",
+      "Yan He",
+      "Hongqing Li",
+      "Jianxi Bai",
+      "Zhenxing Li",
+      "Zhipeng Wen",
+      "Xinxin Liu",
+      "Yuanyuan Ai",
+      "Jingchao Li",
+      "Xiao Chen",
+      "Kaijun Liu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Bioengineering & Translational Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lv C",
+      "Hu X",
+      "Li X",
+      "Shi W",
+      "Li W",
+      "He Y",
+      "Li H",
+      "Bai J",
+      "Li Z",
+      "Wen Z",
+      "Liu X",
+      "Ai Y",
+      "Li J",
+      "Chen X",
+      "Liu K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 932,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Chaoqun Lv",
+      "Xinyue Hu",
+      "Xiang Li",
+      "Wen Shi",
+      "Wenbo Li",
+      "Yan He",
+      "Hongqing Li",
+      "Jianxi Bai",
+      "Zhenxing Li",
+      "Zhipeng Wen",
+      "Xinxin Liu",
+      "Yuanyuan Ai",
+      "Jingchao Li",
+      "Xiao Chen",
+      "Kaijun Liu"
+    ],
+    "doi": "10.1002/btm2.70067",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Engineered probiotic alleviates ulcerative colitis by inhibiting\n                     M1 \n                    macrophage polarization via glycolytic reprogramming",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/btm2.70067",
+    "venue": "Bioengineering & Translational Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0932/crossref_doi__b2480f4be6fc6d9a__20260713T084412328192Z.json",
+      "raw_sha256": "9eaf633d849c25e6a62a40b10343287a49d7e1233232c42d748a4eff73cd1082",
+      "request_identity": "doi:10.1002/btm2.70067",
+      "retrieved_at_utc": "2026-07-13T08:44:12.328192Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0932/europe_pmc_pmid__5feab72e5313bf1b__20260713T084413355567Z.json",
+      "raw_sha256": "9e7e6f09afa8f0c5575d45609e8b30c0b139169fa06d41fcd4440c6bf661da2d",
+      "request_identity": "pmid:41244343",
+      "retrieved_at_utc": "2026-07-13T08:44:13.355567Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

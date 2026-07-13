@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.compbiomed.2020.104065",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "33246265",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.compbiomed.2020.104065",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Manu Goyal",
+      "Thomas Knackstedt",
+      "Shaofeng Yan",
+      "Saeed Hassanpour"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Computers in Biology and Medicine",
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [
+      "Goyal M",
+      "Knackstedt T",
+      "Yan S",
+      "Hassanpour S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2020,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 429,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Manu Goyal",
+      "Thomas Knackstedt",
+      "Shaofeng Yan",
+      "Saeed Hassanpour"
+    ],
+    "doi": "10.1016/j.compbiomed.2020.104065",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial intelligence-based image classification methods for diagnosis of skin cancer: Challenges and opportunities",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.compbiomed.2020.104065",
+    "venue": "Computers in Biology and Medicine",
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0429/crossref_doi__c02bd1fcce0d552c__20260713T083124285605Z.json",
+      "raw_sha256": "62d3445504af06f853e1984b424af73eef8082b46a2b10148c4c4345020bb491",
+      "request_identity": "doi:10.1016/j.compbiomed.2020.104065",
+      "retrieved_at_utc": "2026-07-13T08:31:24.285605Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0429/europe_pmc_pmid__82660c37a2e384bc__20260713T083125277602Z.json",
+      "raw_sha256": "633e40d4a62136de794ede0468e01e6bacaa3cc9b28183c8c86013826ece928d",
+      "request_identity": "pmid:33246265",
+      "retrieved_at_utc": "2026-07-13T08:31:25.277602Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

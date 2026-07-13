@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/lsp.2005.859498",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/lsp.2005.859498",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Zhiping Lin",
+      "Qiyue Zou",
+      "E.S. Ward",
+      "R.J. Ober"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Signal Processing Letters",
+    "canonical_year": 2005,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhiping Lin",
+      "Qiyue Zou",
+      "E.S. Ward",
+      "R.J. Ober"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "IEEE Signal Processing Letters",
+    "harvested_year": 2005,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1045,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zhiping Lin",
+      "Qiyue Zou",
+      "E.S. Ward",
+      "R.J. Ober"
+    ],
+    "doi": "10.1109/lsp.2005.859498",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Cramer-Rao lower bound for parameter estimation in nonlinear systems",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/lsp.2005.859498",
+    "venue": "IEEE Signal Processing Letters",
+    "year": 2005
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1045/crossref_doi__85a368be8790e755__20260713T084649209303Z.json",
+      "raw_sha256": "74d6c638379fbc7db783e4e79d9c4d96b3c807d37a11db8ad3556946afaf386e",
+      "request_identity": "doi:10.1109/lsp.2005.859498",
+      "retrieved_at_utc": "2026-07-13T08:46:49.209303Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

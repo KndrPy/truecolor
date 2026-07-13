@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging9100202",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37888309",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging9100202",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yuta Hino",
+      "Koichi Ashida",
+      "Keiko Ogawa-Ochiai",
+      "Norimichi Tsumura"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hino Y",
+      "Ashida K",
+      "Ogawa-Ochiai K",
+      "Tsumura N."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 992,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yuta Hino",
+      "Koichi Ashida",
+      "Keiko Ogawa-Ochiai",
+      "Norimichi Tsumura"
+    ],
+    "doi": "10.3390/jimaging9100202",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Noise-Robust Pulse Wave Estimation from Near-Infrared Face Video Images Using the Wiener Estimation Method",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging9100202",
+    "venue": "Journal of Imaging",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0992/crossref_doi__10eb76e8669e466d__20260713T084602916729Z.json",
+      "raw_sha256": "cbd834c5a80a1782513131783d7bf3132ae27a187fa4956ad6d4110d984a76ab",
+      "request_identity": "doi:10.3390/jimaging9100202",
+      "retrieved_at_utc": "2026-07-13T08:46:02.916729Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0992/europe_pmc_pmid__40a38d2205605e6e__20260713T084605899682Z.json",
+      "raw_sha256": "09594e170c6d67a37bf3e232d315ad03313bd0b99d4b92c39a8ad8bdf71cd8b9",
+      "request_identity": "pmid:37888309",
+      "retrieved_at_utc": "2026-07-13T08:46:05.899682Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

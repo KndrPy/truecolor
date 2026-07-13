@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/foods15111919",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42279706",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/foods15111919",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mariana Rusu",
+      "Irina Gabriela Cara",
+      "Iuliana Motrescu",
+      "Florina Stoica",
+      "Denis Constantin Țopa",
+      "Gerard Jităreanu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Foods",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rusu M",
+      "Cara IG",
+      "Motrescu I",
+      "Stoica F",
+      "Țopa DC",
+      "Jităreanu G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 905,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mariana Rusu",
+      "Irina Gabriela Cara",
+      "Iuliana Motrescu",
+      "Florina Stoica",
+      "Denis Constantin Țopa",
+      "Gerard Jităreanu"
+    ],
+    "doi": "10.3390/foods15111919",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Linking Soil–Orchard Fruit Quality and Circular Food Innovation Through the Valorization of Dried Cherry Pomace in Dairy-Based Spreadable Products",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/foods15111919",
+    "venue": "Foods",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0905/crossref_doi__75cdea8fb7135f10__20260713T084319498663Z.json",
+      "raw_sha256": "931c3eef9df1b27c8c91a58f188070109a09e89616513308fd6490dd127cbd4b",
+      "request_identity": "doi:10.3390/foods15111919",
+      "retrieved_at_utc": "2026-07-13T08:43:19.498663Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0905/europe_pmc_pmid__68a7564c8e9779a8__20260713T084320501196Z.json",
+      "raw_sha256": "018549c883fb10bfbf1e19013dc7c7cdbd9bfeef98f367c0301f810a3775ffbd",
+      "request_identity": "pmid:42279706",
+      "retrieved_at_utc": "2026-07-13T08:43:20.501196Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

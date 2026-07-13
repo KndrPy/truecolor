@@ -1,0 +1,66 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "acnp 55th annual meeting poster session i december 5 2016",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:acnp 55th annual meeting: poster session i december 5, 2016|year:2016",
+  "conflicts": [
+    {
+      "authoritative": "ACNP 55th Annual Meeting: Poster Session I",
+      "field": "title",
+      "harvested": "ACNP 55th Annual Meeting: Poster Session I December 5, 2016",
+      "similarity": 0.7
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Neuropsychopharmacology",
+    "canonical_year": 2016,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2016,
+    "pmid_match": null,
+    "title_similarity": 0.7,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1282,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1038/npp.2016.240",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "ACNP 55th Annual Meeting: Poster Session I",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/npp.2016.240",
+    "venue": "Neuropsychopharmacology",
+    "year": 2016
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1282/crossref_title__812bc7a62be5897f__20260713T085003292986Z.json",
+      "raw_sha256": "6d78d4b27b825310c13ca531ca6492a8c00b12803905a1697c4f34c69b560ff9",
+      "request_identity": "title:acnp 55th annual meeting poster session i december 5 2016|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:50:03.292986Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.63620/mkwjcd.2025.1006",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.63620/mkwjcd.2025.1006",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Mohsen Sharifzadeh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "World Journal of Clinical Dermatology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mohsen Sharifzadeh"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "World Journal of Clinical Dermatology",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 124,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mohsen Sharifzadeh"
+    ],
+    "doi": "10.63620/mkwjcd.2025.1006",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Accurate Quantification of Carotenoids in Human Skin: Correcting for Melanin and Hemoglobin Interference",
+    "update_to": [],
+    "url": "https://doi.org/10.63620/mkwjcd.2025.1006",
+    "venue": "World Journal of Clinical Dermatology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0124/crossref_doi__c57ae07f05793fb7__20260713T082516016010Z.json",
+      "raw_sha256": "4edca3636ef86d125e96967ad313efc925f1522a22267d759eb088449c81e4dd",
+      "request_identity": "doi:10.63620/mkwjcd.2025.1006",
+      "retrieved_at_utc": "2026-07-13T08:25:16.016010Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,119 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1126/sciadv.adt4831",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40465724",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1126/sciadv.adt4831",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sang Mok Park",
+      "Semin Kwon",
+      "Yuhyun Ji",
+      "Haripriya Sakthivel",
+      "Jung Woo Leem",
+      "Yunsang Kwak",
+      "Jonathan Huang",
+      "George T.-C. Chiu",
+      "Andrew R. O’Brien",
+      "Raymond L. Konger",
+      "Ying Wang",
+      "Young L. Kim"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Science Advances",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Park SM",
+      "Kwon S",
+      "Ji Y",
+      "Sakthivel H",
+      "Leem JW",
+      "Kwak Y",
+      "Huang J",
+      "Chiu GT",
+      "O'Brien AR",
+      "Konger RL",
+      "Wang Y",
+      "Kim YL."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 632,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sang Mok Park",
+      "Semin Kwon",
+      "Yuhyun Ji",
+      "Haripriya Sakthivel",
+      "Jung Woo Leem",
+      "Yunsang Kwak",
+      "Jonathan Huang",
+      "George T.-C. Chiu",
+      "Andrew R. O’Brien",
+      "Raymond L. Konger",
+      "Ying Wang",
+      "Young L. Kim"
+    ],
+    "doi": "10.1126/sciadv.adt4831",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Machine reading and recovery of colors for hemoglobin-related bioassays and bioimaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1126/sciadv.adt4831",
+    "venue": "Science Advances",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0632/crossref_doi__3f050a057a2289b6__20260713T083534180527Z.json",
+      "raw_sha256": "74a21129621e7edfea67dc018b21860ba71c1180212a569788a2e1e90d42e291",
+      "request_identity": "doi:10.1126/sciadv.adt4831",
+      "retrieved_at_utc": "2026-07-13T08:35:34.180527Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0632/europe_pmc_pmid__e374a2509a40e523__20260713T083535357046Z.json",
+      "raw_sha256": "19bddfb09445f506c2125c149d0eae9699d3852b34bf76a01cec494bb9037441",
+      "request_identity": "pmid:40465724",
+      "retrieved_at_utc": "2026-07-13T08:35:35.357046Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

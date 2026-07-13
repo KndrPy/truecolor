@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/j.1600-0846.1997.tb00191.x",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/j.1600-0846.1997.tb00191.x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "A. Fullerton",
+      "J. Keiding"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Skin Research and Technology",
+    "canonical_year": 1997,
+    "doi_match": true,
+    "harvested_authors": [
+      "A. Fullerton",
+      "J. Keiding"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Skin Research and Technology",
+    "harvested_year": 1997,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 129,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "A. Fullerton",
+      "J. Keiding"
+    ],
+    "doi": "10.1111/j.1600-0846.1997.tb00191.x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A comparison between a tristimulus colorimeter (Minolta ChromaMeter CR‐200) and two spectrophotometers (Minolta Spectrophotometer CM‐508i and CM‐2002). Quantification of UV‐B induced erythema in a hairless guinea pig model",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/j.1600-0846.1997.tb00191.x",
+    "venue": "Skin Research and Technology",
+    "year": 1997
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0129/crossref_doi__e7f3fc0263e72f79__20260713T082518981382Z.json",
+      "raw_sha256": "a4856c92482918a0c6217ef2b2258e30bafdfd459142b50ff874d18d0cef1e8a",
+      "request_identity": "doi:10.1111/j.1600-0846.1997.tb00191.x",
+      "retrieved_at_utc": "2026-07-13T08:25:18.981382Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/isit.2015.7282773",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/isit.2015.7282773",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Erwin Riegler",
+      "David Stotz",
+      "Helmut Bolcskei"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2015 IEEE International Symposium on Information Theory (ISIT)",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "Erwin Riegler",
+      "David Stotz",
+      "Helmut Bolcskei"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2015 IEEE International Symposium on Information Theory (ISIT)",
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1060,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Erwin Riegler",
+      "David Stotz",
+      "Helmut Bolcskei"
+    ],
+    "doi": "10.1109/isit.2015.7282773",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Information-theoretic limits of matrix completion",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/isit.2015.7282773",
+    "venue": "2015 IEEE International Symposium on Information Theory (ISIT)",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1060/crossref_doi__8ea17b55d0b135a0__20260713T084707140702Z.json",
+      "raw_sha256": "5301c3d4e8055773c21ee96f94a0d1c3297c9bae4f6838ff5650710dfadc380d",
+      "request_identity": "doi:10.1109/isit.2015.7282773",
+      "retrieved_at_utc": "2026-07-13T08:47:07.140702Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

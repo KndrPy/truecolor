@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jmi.10.s2.s22406",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37056579",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jmi.10.s2.s22406",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Colin Schaeffer",
+      "Bahaa Ghammraoui",
+      "Katsuyuki Taguchi",
+      "Stephen J. Glick"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Medical Imaging",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Schaeffer C",
+      "Ghammraoui B",
+      "Taguchi K",
+      "Glick SJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 653,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Colin Schaeffer",
+      "Bahaa Ghammraoui",
+      "Katsuyuki Taguchi",
+      "Stephen J. Glick"
+    ],
+    "doi": "10.1117/1.jmi.10.s2.s22406",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Theoretical comparison and optimization of cadmium telluride and gallium arsenide photon-counting detectors for contrast-enhanced spectral mammography",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jmi.10.s2.s22406",
+    "venue": "Journal of Medical Imaging",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0653/crossref_doi__e4df6baf368acc49__20260713T083614280902Z.json",
+      "raw_sha256": "5f0a7556402e5e94e24008753046b7694a5efcf8f4742cc39d70af756f86a6a3",
+      "request_identity": "doi:10.1117/1.jmi.10.s2.s22406",
+      "retrieved_at_utc": "2026-07-13T08:36:14.280902Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0653/europe_pmc_pmid__8e10116a9dc8998c__20260713T083615243431Z.json",
+      "raw_sha256": "ae7975604640b03cb61daa6e31d6d4b3b73c950a1ee3164ad52e26d1e9ff64bb",
+      "request_identity": "pmid:37056579",
+      "retrieved_at_utc": "2026-07-13T08:36:15.243431Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

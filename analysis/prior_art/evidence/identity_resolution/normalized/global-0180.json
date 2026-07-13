@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2615428",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2615428",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Vysakh Vasudevan",
+      "N. Sujatha"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Diffuse Optical Spectroscopy and Imaging VIII",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Vysakh Vasudevan",
+      "N. Sujatha"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Diffuse Optical Spectroscopy and Imaging VIII",
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 180,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Vysakh Vasudevan",
+      "N. Sujatha"
+    ],
+    "doi": "10.1117/12.2615428",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Tissue chromophore concentration estimation aided by artificial neural network trained with finite element modelled diffuse reflectance spectrum",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2615428",
+    "venue": "Diffuse Optical Spectroscopy and Imaging VIII",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0180/crossref_doi__5d5e8a4cf6075784__20260713T082610564836Z.json",
+      "raw_sha256": "f83c91a2c6969ebecbdb6e2e58a82d5cc5023d65c36b0497b51db928afefce06",
+      "request_identity": "doi:10.1117/12.2615428",
+      "retrieved_at_utc": "2026-07-13T08:26:10.564836Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

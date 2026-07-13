@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1021/acsapm.4c01588.s001",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,2,26]],\"date-time\":\"2026-02-26T16:51:21Z\",\"timestamp\":1772124681950,\"version\":\"3.50.1\"},\"description\":\"Supplemental Information for 10.1021\\/acsapm.4c01588\",\"reference-count\":0,\"publisher\":\"American Chemical Society (ACS)\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.1021\\/acsapm.4c01588.s001\",\"type\":\"component\",\"created\":{\"date-parts\":[[2024,9,10]],\"date-time\":\"2024-09-10T08:04:55Z\",\"timestamp\":1725955495000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Electroactive Melanin Tattoo Inks for Effectively Reducing Skin Impedances\"],\"prefix\":\"10.1021\",\"member\":\"316\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2024,9,27]],\"date-time\":\"2024-09-27T03:53:53Z\",\"timestamp\":1727409233000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/pubs.acs.org\\/doi\\/suppl\\/10.1021\\/acsapm.4c01588\\/suppl_file\\/ap4c01588_si_001.pdf\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1021\\/acsapm.4c01588.s001\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.1021\\/acsapm.4c01588\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:47:35.418087Z",
+  "source": "crossref_doi"
+}

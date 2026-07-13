@@ -1,0 +1,82 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.36227/techrxiv.170956855.54692429/v1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.36227/techrxiv.170956855.54692429/v1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Michiya Kibe",
+      "Takeru Inoue",
+      "Junya Morioka",
+      "Ryusuke Miyamoto"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Michiya Kibe",
+      "Takeru Inoue",
+      "Junya Morioka",
+      "Ryusuke Miyamoto"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 281,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Michiya Kibe",
+      "Takeru Inoue",
+      "Junya Morioka",
+      "Ryusuke Miyamoto"
+    ],
+    "doi": "10.36227/techrxiv.170956855.54692429/v1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {
+      "is-preprint-of": [
+        {
+          "asserted-by": "subject",
+          "id": "10.1117/1.OE.64.9.092203",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Automatic Annotation Method for Day-Night Aerial Infrared Image Dataset Creation and Its Application to Semantic Segmentation",
+    "update_to": [],
+    "url": "https://doi.org/10.36227/techrxiv.170956855.54692429/v1",
+    "venue": null,
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0281/crossref_doi__497d5ee0631fa7a3__20260713T082757183703Z.json",
+      "raw_sha256": "8ccbcf3efd10442a822e6e80fcac9c81ea1d8d1f38d5d8e208cb446a8f8eb69d",
+      "request_identity": "doi:10.36227/techrxiv.170956855.54692429/v1",
+      "retrieved_at_utc": "2026-07-13T08:27:57.183703Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

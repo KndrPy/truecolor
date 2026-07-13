@@ -1,0 +1,134 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.bios.2.3.032506",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42028256",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.bios.2.3.032506",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Arjun Putcha",
+      "Kevin Schichlein",
+      "Tien Nguyen",
+      "Brayden Davis",
+      "Rachel Choffin",
+      "Simran Malik",
+      "Aastha Sharma",
+      "Grace Sosa",
+      "Sara Saffari",
+      "Joseph Ribaudo",
+      "Jessica Guidici",
+      "Robert Lampman",
+      "John Eian",
+      "Michael Kosorok",
+      "Leonid Shmuylovich",
+      "Mitchell Pet",
+      "Wubin Bai"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biophotonics Discovery",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Putcha A",
+      "Schichlein K",
+      "Nguyen T",
+      "Davis B",
+      "Choffin R",
+      "Malik S",
+      "Sharma A",
+      "Sosa G",
+      "Saffari S",
+      "Ribaudo J",
+      "Guidici J",
+      "Lampman R",
+      "Eian J",
+      "Kosorok M",
+      "Shmuylovich L",
+      "Pet M",
+      "Bai W."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 383,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Arjun Putcha",
+      "Kevin Schichlein",
+      "Tien Nguyen",
+      "Brayden Davis",
+      "Rachel Choffin",
+      "Simran Malik",
+      "Aastha Sharma",
+      "Grace Sosa",
+      "Sara Saffari",
+      "Joseph Ribaudo",
+      "Jessica Guidici",
+      "Robert Lampman",
+      "John Eian",
+      "Michael Kosorok",
+      "Leonid Shmuylovich",
+      "Mitchell Pet",
+      "Wubin Bai"
+    ],
+    "doi": "10.1117/1.bios.2.3.032506",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Characterizing the influence of skin pigmentation on pulse oximetry",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.bios.2.3.032506",
+    "venue": "Biophotonics Discovery",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0383/crossref_doi__00b824da36f37f59__20260713T083028420944Z.json",
+      "raw_sha256": "ff87841ccfac66c410af1b66edf37077b10186a44752b11ee80b89ce3f2d3f06",
+      "request_identity": "doi:10.1117/1.bios.2.3.032506",
+      "retrieved_at_utc": "2026-07-13T08:30:28.420944Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0383/europe_pmc_pmid__225bb6caf0e6bb04__20260713T083029411789Z.json",
+      "raw_sha256": "b7d151696f87be11c4f29afb156ae7398165c8c29ef50ea69cde60835899c659",
+      "request_identity": "pmid:42028256",
+      "retrieved_at_utc": "2026-07-13T08:30:29.411789Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

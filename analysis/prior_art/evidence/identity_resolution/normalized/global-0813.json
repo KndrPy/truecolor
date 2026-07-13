@@ -1,0 +1,122 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41378-026-01362-6",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42324249",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41378-026-01362-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Qiuqian Ou",
+      "Hongwei Chu",
+      "Yujian Liu",
+      "Liangling Cai",
+      "Zhenhe Huang",
+      "Dan Li",
+      "Jiating Lin",
+      "Yue Hu",
+      "Jiyu Li",
+      "Peng Li",
+      "Jiao Yang",
+      "Xinge Yu",
+      "Yingchun Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Microsystems & Nanoengineering",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ou Q",
+      "Chu H",
+      "Liu Y",
+      "Cai L",
+      "Huang Z",
+      "Li D",
+      "Lin J",
+      "Hu Y",
+      "Li J",
+      "Li P",
+      "Yang J",
+      "Yu X",
+      "Li Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 813,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Qiuqian Ou",
+      "Hongwei Chu",
+      "Yujian Liu",
+      "Liangling Cai",
+      "Zhenhe Huang",
+      "Dan Li",
+      "Jiating Lin",
+      "Yue Hu",
+      "Jiyu Li",
+      "Peng Li",
+      "Jiao Yang",
+      "Xinge Yu",
+      "Yingchun Li"
+    ],
+    "doi": "10.1038/s41378-026-01362-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Sweat and air permeable electronics enabled by engineered hierarchical fabric system for exercise management",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41378-026-01362-6",
+    "venue": "Microsystems & Nanoengineering",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0813/crossref_doi__f2ede36d4773ab76__20260713T084017791976Z.json",
+      "raw_sha256": "023f7d32a7e3c2b7ad80e6b34283a83e4dbe8659528bd4b5c3535308921c62f0",
+      "request_identity": "doi:10.1038/s41378-026-01362-6",
+      "retrieved_at_utc": "2026-07-13T08:40:17.791976Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0813/europe_pmc_pmid__38804f0f62c44782__20260713T084021374676Z.json",
+      "raw_sha256": "1b46e8ae0d3b787d05308dbde9448b6d0386a952528c428b12c3e45ec4c75325",
+      "request_identity": "pmid:42324249",
+      "retrieved_at_utc": "2026-07-13T08:40:21.374676Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

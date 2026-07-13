@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.573069",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41394495",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.573069",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Zachary D. Jones",
+      "Dominik Reitzle",
+      "Alwin Kienle"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jones ZD",
+      "Reitzle D",
+      "Kienle A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 0.888889,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 341,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zachary D. Jones",
+      "Dominik Reitzle",
+      "Alwin Kienle"
+    ],
+    "doi": "10.1364/boe.573069",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectrally-resolved errors in absorption and reduced scattering due to\n                     µ \n                     a \n                    -\n                     µ \n                     s \n                    ’ cross-talk in layered media",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.573069",
+    "venue": "Biomedical Optics Express",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative metadata resolved, but identity similarity remained between verification and conflict thresholds.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0341/crossref_doi__03ddfb5cecc5f27d__20260713T082918741283Z.json",
+      "raw_sha256": "8fb24bc36ddb6ec69262414a9f3e15b6cf31a727e8ab81ed385fcac1bfcf6598",
+      "request_identity": "doi:10.1364/boe.573069",
+      "retrieved_at_utc": "2026-07-13T08:29:18.741283Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0341/europe_pmc_pmid__827eefb21dac4dbd__20260713T082919705413Z.json",
+      "raw_sha256": "a0fb8e08c78d1cb67f33c0c7663793cb34e98e3f2dc5bf0207158cabcfba6ea8",
+      "request_identity": "pmid:41394495",
+      "retrieved_at_utc": "2026-07-13T08:29:19.705413Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

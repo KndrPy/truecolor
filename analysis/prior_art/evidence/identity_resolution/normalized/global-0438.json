@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5040/9781501374616.ch-7",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5040/9781501374616.ch-7",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "other",
+    "canonical_venue": "Multi-Camera Cinematography and Production",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "other",
+    "harvested_venue": "Multi-Camera Cinematography and Production",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 438,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.5040/9781501374616.ch-7",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "other",
+    "relation": {},
+    "title": "Multi-camera Lighting and Camera Operation Basics",
+    "update_to": [],
+    "url": "https://doi.org/10.5040/9781501374616.ch-7",
+    "venue": "Multi-Camera Cinematography and Production",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0438/crossref_doi__11ceb0942ab651e7__20260713T083132746642Z.json",
+      "raw_sha256": "3245704bad5f63fae0934367241e0edd5e141c3e79d3d4ef9c7ee0c390b4ed08",
+      "request_identity": "doi:10.5040/9781501374616.ch-7",
+      "retrieved_at_utc": "2026-07-13T08:31:32.746642Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

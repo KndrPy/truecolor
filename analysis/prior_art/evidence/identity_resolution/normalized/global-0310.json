@@ -1,0 +1,77 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1034/j.1600-0846.2001.80206.x",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1034/j.1600-0846.2001.80206.x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "H. Takiwaki",
+      "Y. Miyaoka",
+      "N. Skrebova",
+      "H. Kohno",
+      "S. Arase"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Skin Research and Technology",
+    "canonical_year": 2002,
+    "doi_match": true,
+    "harvested_authors": [
+      "H. Takiwaki",
+      "Y. Miyaoka",
+      "N. Skrebova",
+      "H. Kohno",
+      "S. Arase"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Skin Research and Technology",
+    "harvested_year": 2002,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 310,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "H. Takiwaki",
+      "Y. Miyaoka",
+      "N. Skrebova",
+      "H. Kohno",
+      "S. Arase"
+    ],
+    "doi": "10.1034/j.1600-0846.2001.80206.x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin reflectance‐spectra and colour‐value dependency on measuring‐head aperture area in ordinary reflectance spectrophotometry and tristimulus colourimetry",
+    "update_to": [],
+    "url": "https://doi.org/10.1034/j.1600-0846.2001.80206.x",
+    "venue": "Skin Research and Technology",
+    "year": 2002
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0310/crossref_doi__f16a32bd83fccf76__20260713T082831694805Z.json",
+      "raw_sha256": "19e97e431ca7f9ee037ea501cd92ea5f4c543a35a8c99230755f5254356b31da",
+      "request_identity": "doi:10.1034/j.1600-0846.2001.80206.x",
+      "retrieved_at_utc": "2026-07-13T08:28:31.694805Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

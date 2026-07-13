@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "isev2020 abstract book",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:isev2020 abstract book|year:unknown",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Extracellular Vesicles",
+    "canonical_year": 2020,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1289,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1080/20013078.2020.1784511",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "ISEV2020 Abstract Book",
+    "update_to": [],
+    "url": "https://doi.org/10.1080/20013078.2020.1784511",
+    "venue": "Journal of Extracellular Vesicles",
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1289/crossref_title__b336a9e6c579b8be__20260713T085014185532Z.json",
+      "raw_sha256": "bdb7eba826733c7529ab8d2e693c8e82693773059193d0d9478ef9bf55dd16bf",
+      "request_identity": "title:isev2020 abstract book|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:50:14.185532Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

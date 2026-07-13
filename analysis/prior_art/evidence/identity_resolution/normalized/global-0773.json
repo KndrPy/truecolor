@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/ijms27114704",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42278244",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/ijms27114704",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Elżbieta Sąsiadek-Andrzejczak",
+      "Malwina Jaszczak-Kuligowska",
+      "Marta Safandowska",
+      "Marek Kozicki",
+      "Bożena Rokita",
+      "Laura Florentino-Madiedo",
+      "Marcin Barburski",
+      "David Ranz",
+      "Reyes Mallada"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "International Journal of Molecular Sciences",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sąsiadek-Andrzejczak E",
+      "Jaszczak-Kuligowska M",
+      "Safandowska M",
+      "Kozicki M",
+      "Rokita B",
+      "Florentino-Madiedo L",
+      "Barburski M",
+      "Ranz D",
+      "Mallada R."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 773,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Elżbieta Sąsiadek-Andrzejczak",
+      "Malwina Jaszczak-Kuligowska",
+      "Marta Safandowska",
+      "Marek Kozicki",
+      "Bożena Rokita",
+      "Laura Florentino-Madiedo",
+      "Marcin Barburski",
+      "David Ranz",
+      "Reyes Mallada"
+    ],
+    "doi": "10.3390/ijms27114704",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Molecular Identification and Characterisation of a Spiro-Indoline-Benzoxadiazine Derivative for Photochromic Textile Sensors",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/ijms27114704",
+    "venue": "International Journal of Molecular Sciences",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0773/crossref_doi__4a4280193a74f25f__20260713T083904149960Z.json",
+      "raw_sha256": "98c725d144ea404f9056fa80f4a47f3edbd9cf549a08a7f7915afcb2a50dd7d6",
+      "request_identity": "doi:10.3390/ijms27114704",
+      "retrieved_at_utc": "2026-07-13T08:39:04.149960Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0773/europe_pmc_pmid__f08a6c410a0415a9__20260713T083905295714Z.json",
+      "raw_sha256": "4333e495795fc250fc8ff24f7cee5b6805b0896301d0cd9f7ff6b0292e00f0d6",
+      "request_identity": "pmid:42278244",
+      "retrieved_at_utc": "2026-07-13T08:39:05.295714Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

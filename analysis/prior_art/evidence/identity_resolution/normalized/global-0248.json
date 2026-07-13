@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2352/cic.2014.22.1.art00038",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2352/cic.2014.22.1.art00038",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Joschua Thomas Simon-Liedtke",
+      "Jon Yngve Hardeberg",
+      "Per Ove Husøy;"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Color and Imaging Conference",
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [
+      "Joschua Thomas Simon-Liedtke",
+      "Jon Yngve Hardeberg",
+      "Per Ove Husøy;"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Color and Imaging Conference",
+    "harvested_year": 2014,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 248,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Joschua Thomas Simon-Liedtke",
+      "Jon Yngve Hardeberg",
+      "Per Ove Husøy;"
+    ],
+    "doi": "10.2352/cic.2014.22.1.art00038",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Pixel-wise illuminant estimation for mixed illuminant scenes based on near-infrared camera information",
+    "update_to": [],
+    "url": "https://doi.org/10.2352/cic.2014.22.1.art00038",
+    "venue": "Color and Imaging Conference",
+    "year": 2014
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0248/crossref_doi__b67167be5cf098a2__20260713T082718044672Z.json",
+      "raw_sha256": "fea7427754bf196ae56683b617b7a191070145d59c646fc687ec7de61d21d429",
+      "request_identity": "doi:10.2352/cic.2014.22.1.art00038",
+      "retrieved_at_utc": "2026-07-13T08:27:18.044672Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

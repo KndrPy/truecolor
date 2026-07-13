@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.22.11.110504",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.22.11.110504",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Alexey P. Popov",
+      "Alexander V. Bykov",
+      "Igor V. Meglinski"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "Alexey P. Popov",
+      "Alexander V. Bykov",
+      "Igor V. Meglinski"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Biomedical Optics",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1043,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alexey P. Popov",
+      "Alexander V. Bykov",
+      "Igor V. Meglinski"
+    ],
+    "doi": "10.1117/1.jbo.22.11.110504",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Influence of probe pressure on diffuse reflectance spectra of human skin measured in vivo",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.22.11.110504",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2017
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1043/crossref_doi__ab8ec51dd64b8996__20260713T084647808304Z.json",
+      "raw_sha256": "f70aac7477175ecce681af354458d5fd50aa6df079be23e7ae2465cc9b0c90fa",
+      "request_identity": "doi:10.1117/1.jbo.22.11.110504",
+      "retrieved_at_utc": "2026-07-13T08:46:47.808304Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

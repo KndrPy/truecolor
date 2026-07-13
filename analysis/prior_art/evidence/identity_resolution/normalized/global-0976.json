@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/ma19010011",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41515679",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/ma19010011",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Hui Zheng",
+      "Xiao Yang",
+      "Chunyang Wang",
+      "Yujie Xu",
+      "Haisheng Chen",
+      "Ting Zhang",
+      "Xinghua Zheng"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Materials",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zheng H",
+      "Yang X",
+      "Wang C",
+      "Xu Y",
+      "Chen H",
+      "Zhang T",
+      "Zheng X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 976,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hui Zheng",
+      "Xiao Yang",
+      "Chunyang Wang",
+      "Yujie Xu",
+      "Haisheng Chen",
+      "Ting Zhang",
+      "Xinghua Zheng"
+    ],
+    "doi": "10.3390/ma19010011",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Research Progress in Thermal Functional Fibers",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/ma19010011",
+    "venue": "Materials",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0976/crossref_doi__c5666724bdef12ad__20260713T084534731828Z.json",
+      "raw_sha256": "ed0da2b8f3b757b1586515ecd170ae3dc74a387418268bb79a960b4c8f1aebea",
+      "request_identity": "doi:10.3390/ma19010011",
+      "retrieved_at_utc": "2026-07-13T08:45:34.731828Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0976/europe_pmc_pmid__502f914cea7015ea__20260713T084535718294Z.json",
+      "raw_sha256": "e906ae08bba061d25ffb9f38666f04b92e6b76a44d91ecbe9e96cceb8f40394c",
+      "request_identity": "pmid:41515679",
+      "retrieved_at_utc": "2026-07-13T08:45:35.718294Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

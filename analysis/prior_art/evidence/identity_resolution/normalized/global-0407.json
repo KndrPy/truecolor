@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.70675/3c4b1638z1c96z43ffz9fa0zd63bb4f91fb2",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.70675/3c4b1638z1c96z43ffz9fa0zd63bb4f91fb2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Victor Colas"
+    ],
+    "canonical_publication_type": "dissertation",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Victor Colas"
+    ],
+    "harvested_publication_type": "dissertation",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 407,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Victor Colas"
+    ],
+    "doi": "10.70675/3c4b1638z1c96z43ffz9fa0zd63bb4f91fb2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dissertation",
+    "relation": {},
+    "title": "Modeling and estimation of human skin optical properties using spatially resolved autofluorescence and diffuse reflectance spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.70675/3c4b1638z1c96z43ffz9fa0zd63bb4f91fb2",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0407/crossref_doi__3c0365b62ad2ede4__20260713T083109197393Z.json",
+      "raw_sha256": "cbf25729de5382423564c09b0253f817a5d755bc8cf9becdddae1fb4b75c8498",
+      "request_identity": "doi:10.70675/3c4b1638z1c96z43ffz9fa0zd63bb4f91fb2",
+      "retrieved_at_utc": "2026-07-13T08:31:09.197393Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

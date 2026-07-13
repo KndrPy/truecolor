@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "glaucoma detection through a novel hyperspectral imaging band selection and vision transformer integration",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:glaucoma detection through a novel hyperspectral imaging band selection and vision transformer integration|year:2024",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Ching-Yu Wang",
+      "Hong-Thai Nguyen",
+      "Wen-Shuang Fan",
+      "Jiann-Hwa Lue",
+      "Penchun Saenprasarn",
+      "Meei-Maan Chen",
+      "Shuan-Yu Huang",
+      "Fen-Chi Lin",
+      "Hsiang-Chen Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2024,
+    "doi_match": null,
+    "harvested_authors": [
+      "Wang C",
+      "Nguyen H",
+      "Fan W",
+      "Lue J",
+      "Saenprasarn P",
+      "Chen M",
+      "Huang S",
+      "Lin F",
+      "Wang H."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1274,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ching-Yu Wang",
+      "Hong-Thai Nguyen",
+      "Wen-Shuang Fan",
+      "Jiann-Hwa Lue",
+      "Penchun Saenprasarn",
+      "Meei-Maan Chen",
+      "Shuan-Yu Huang",
+      "Fen-Chi Lin",
+      "Hsiang-Chen Wang"
+    ],
+    "doi": "10.3390/diagnostics14121285",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Glaucoma Detection through a Novel Hyperspectral Imaging Band Selection and Vision Transformer Integration",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics14121285",
+    "venue": "Diagnostics",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1274/crossref_title__1b38133ef61de519__20260713T084955614594Z.json",
+      "raw_sha256": "7230ce76e8dc40073c3fa2dfebce362af974a45956e64a53b208966ee3944129",
+      "request_identity": "title:glaucoma detection through a novel hyperspectral imaging band selection and vision transformer integration|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:55.614594Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

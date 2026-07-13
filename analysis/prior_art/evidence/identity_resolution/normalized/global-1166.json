@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/0191-8869(81)90008-8",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/0191-8869(81)90008-8",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Barry J. McGurk"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Personality and Individual Differences",
+    "canonical_year": 1981,
+    "doi_match": true,
+    "harvested_authors": [
+      "Barry J. McGurk"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Personality and Individual Differences",
+    "harvested_year": 1981,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1166,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Barry J. McGurk"
+    ],
+    "doi": "10.1016/0191-8869(81)90008-8",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The validity and utility of a typology of homicides based on Megargee's theory of control",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/0191-8869(81)90008-8",
+    "venue": "Personality and Individual Differences",
+    "year": 1981
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1166/crossref_doi__d4d284473a7c6fa9__20260713T084831156133Z.json",
+      "raw_sha256": "6748ddee8990f672adb0d70dfc7fb9606186b441c1075e5293d475e832176f79",
+      "request_identity": "doi:10.1016/0191-8869(81)90008-8",
+      "retrieved_at_utc": "2026-07-13T08:48:31.156133Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

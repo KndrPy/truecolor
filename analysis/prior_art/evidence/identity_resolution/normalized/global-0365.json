@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2026.1614681",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41836935",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2026.1614681",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Rawan Rammal",
+      "Ahmad Mohy U Din",
+      "Tanvir Alam"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rammal R",
+      "Mohy U Din A",
+      "Alam T."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 365,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rawan Rammal",
+      "Ahmad Mohy U Din",
+      "Tanvir Alam"
+    ],
+    "doi": "10.3389/fmed.2026.1614681",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Revolutionizing dermatopathology using AI in skin diagnostics: scoping review",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2026.1614681",
+    "venue": "Frontiers in Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0365/crossref_doi__4b2070ebbd1c90f6__20260713T082955174565Z.json",
+      "raw_sha256": "a884603130a87aa0d58036d2fb981fea318be3cf93564440dac1f5ac18613cd0",
+      "request_identity": "doi:10.3389/fmed.2026.1614681",
+      "retrieved_at_utc": "2026-07-13T08:29:55.174565Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0365/europe_pmc_pmid__995a72fb81f8fe82__20260713T082958346067Z.json",
+      "raw_sha256": "8718aa3158bccaab43629708cc81028488da327d31fe9a302700cbce6864862e",
+      "request_identity": "pmid:41836935",
+      "retrieved_at_utc": "2026-07-13T08:29:58.346067Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

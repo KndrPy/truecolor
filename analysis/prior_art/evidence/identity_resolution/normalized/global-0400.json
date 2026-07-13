@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fnins.2022.1031505",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36340788",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fnins.2022.1031505",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Duan Liu",
+      "Xinwei Wu",
+      "Jinxing Liang",
+      "Tengfeng Wang",
+      "Xiaoxia Wan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Neuroscience",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Liu D",
+      "Wu X",
+      "Liang J",
+      "Wang T",
+      "Wan X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 400,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Duan Liu",
+      "Xinwei Wu",
+      "Jinxing Liang",
+      "Tengfeng Wang",
+      "Xiaoxia Wan"
+    ],
+    "doi": "10.3389/fnins.2022.1031505",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "An improved spectral estimation method based on color perception features of mobile phone camera",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fnins.2022.1031505",
+    "venue": "Frontiers in Neuroscience",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0400/crossref_doi__7231261477dcd7e4__20260713T083058017466Z.json",
+      "raw_sha256": "4ec69b7703553caad20ebb8981e4557f1a9d717cce5404fb8bf8a9be1ba0aa49",
+      "request_identity": "doi:10.3389/fnins.2022.1031505",
+      "retrieved_at_utc": "2026-07-13T08:30:58.017466Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0400/europe_pmc_pmid__ca512f5ff33f0f7b__20260713T083059047520Z.json",
+      "raw_sha256": "43f26616824d8bfdac824fc25c2af34a3f364b5ba65a47af2d4b27be4ab6804a",
+      "request_identity": "pmid:36340788",
+      "retrieved_at_utc": "2026-07-13T08:30:59.047520Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

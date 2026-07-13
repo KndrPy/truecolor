@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.89668",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40926912",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.89668",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "NJASS Jayasuriya",
+      "BM Munasinghe",
+      "KAL Ravihari",
+      "SAAAN Sirimanna",
+      "MKDHV Jayalath",
+      "GGSY Weerasundara"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jayasuriya N",
+      "Munasinghe BM",
+      "Ravihari K",
+      "Sirimanna S",
+      "Jayalath M",
+      "Weerasundara G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 985,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "NJASS Jayasuriya",
+      "BM Munasinghe",
+      "KAL Ravihari",
+      "SAAAN Sirimanna",
+      "MKDHV Jayalath",
+      "GGSY Weerasundara"
+    ],
+    "doi": "10.7759/cureus.89668",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "More Than Just a Click: A Five-Step Guide to Mobile Medical Photography for Amateurs",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.89668",
+    "venue": "Cureus",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0985/crossref_doi__9248fbb653e7552d__20260713T084551851525Z.json",
+      "raw_sha256": "ba64fd794800db769994ceda4378c2c395fa08db03872c8123b57453672e66e1",
+      "request_identity": "doi:10.7759/cureus.89668",
+      "retrieved_at_utc": "2026-07-13T08:45:51.851525Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0985/europe_pmc_pmid__834f181e7001f586__20260713T084552833999Z.json",
+      "raw_sha256": "ea6fd9f490e64c4ad07c467baf4e9f40122feee4d1b1efe53107c2bfba479ac1",
+      "request_identity": "pmid:40926912",
+      "retrieved_at_utc": "2026-07-13T08:45:52.833999Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

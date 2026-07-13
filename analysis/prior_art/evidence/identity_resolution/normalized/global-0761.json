@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bioengineering10111322",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38002446",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bioengineering10111322",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Francesca Brutti",
+      "Federica La La Rosa",
+      "Linda Lazzeri",
+      "Chiara Benvenuti",
+      "Giovanni Bagnoni",
+      "Daniela Massi",
+      "Marco Laurino"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Bioengineering",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Brutti F",
+      "La Rosa F",
+      "Lazzeri L",
+      "Benvenuti C",
+      "Bagnoni G",
+      "Massi D",
+      "Laurino M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 761,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Francesca Brutti",
+      "Federica La La Rosa",
+      "Linda Lazzeri",
+      "Chiara Benvenuti",
+      "Giovanni Bagnoni",
+      "Daniela Massi",
+      "Marco Laurino"
+    ],
+    "doi": "10.3390/bioengineering10111322",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial Intelligence Algorithms for Benign vs. Malignant Dermoscopic Skin Lesion Image Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bioengineering10111322",
+    "venue": "Bioengineering",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0761/crossref_doi__6298996b727c8ff9__20260713T083846164000Z.json",
+      "raw_sha256": "bb4a7a8a0d2ecd06f01decef712af2e0d80c079ac3f326d6f2089f67a13aa748",
+      "request_identity": "doi:10.3390/bioengineering10111322",
+      "retrieved_at_utc": "2026-07-13T08:38:46.164000Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0761/europe_pmc_pmid__beb65c7a68a90131__20260713T083847136642Z.json",
+      "raw_sha256": "b08b2353c9cd168cb801f983a331e23e9f020fcac90d0f696ecfee81735cc95f",
+      "request_identity": "pmid:38002446",
+      "retrieved_at_utc": "2026-07-13T08:38:47.136642Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

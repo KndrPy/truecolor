@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.18.3.037003",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.18.3.037003",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Ricky Hennessy",
+      "Sam L. Lim",
+      "Mia K. Markey",
+      "James W. Tunnell"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ricky Hennessy",
+      "Sam L. Lim",
+      "Mia K. Markey",
+      "James W. Tunnell"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Biomedical Optics",
+    "harvested_year": 2013,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 41,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ricky Hennessy",
+      "Sam L. Lim",
+      "Mia K. Markey",
+      "James W. Tunnell"
+    ],
+    "doi": "10.1117/1.jbo.18.3.037003",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Monte Carlo lookup table-based inverse model for extracting optical properties from tissue-simulating phantoms using diffuse reflectance spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.18.3.037003",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2013
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0041/crossref_doi__b2029249dd6d56a4__20260713T081524586703Z.json",
+      "raw_sha256": "d9b777fc83c57a1f15eeaa7d0cfa65b065a5b7b0bb772aa29babfadd86926095",
+      "request_identity": "doi:10.1117/1.jbo.18.3.037003",
+      "retrieved_at_utc": "2026-07-13T08:15:24.586703Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

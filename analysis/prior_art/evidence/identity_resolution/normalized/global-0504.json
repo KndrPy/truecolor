@@ -1,0 +1,119 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bios15050297",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40422036",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bios15050297",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Luke Horton",
+      "Joseph W. Fakhoury",
+      "Rayyan Manwar",
+      "Ali Rajabi-Estarabadi",
+      "Dilara Turk",
+      "Sean O’Leary",
+      "Audrey Fotouhi",
+      "Steven Daveluy",
+      "Manu Jain",
+      "Keyvan Nouri",
+      "Darius Mehregan",
+      "Kamran Avanaki"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biosensors",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Horton L",
+      "Fakhoury JW",
+      "Manwar R",
+      "Rajabi-Estarabadi A",
+      "Turk D",
+      "O'Leary S",
+      "Fotouhi A",
+      "Daveluy S",
+      "Jain M",
+      "Nouri K",
+      "Mehregan D",
+      "Avanaki K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 504,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Luke Horton",
+      "Joseph W. Fakhoury",
+      "Rayyan Manwar",
+      "Ali Rajabi-Estarabadi",
+      "Dilara Turk",
+      "Sean O’Leary",
+      "Audrey Fotouhi",
+      "Steven Daveluy",
+      "Manu Jain",
+      "Keyvan Nouri",
+      "Darius Mehregan",
+      "Kamran Avanaki"
+    ],
+    "doi": "10.3390/bios15050297",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Review of Non-Invasive Imaging Technologies for Cutaneous Melanoma",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bios15050297",
+    "venue": "Biosensors",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0504/crossref_doi__f3f132e57f0a43cd__20260713T083243714711Z.json",
+      "raw_sha256": "c9fd1893baab9c90d2ec6400db5e0b12f03b43deda2c4b9be6f84fd003a1af29",
+      "request_identity": "doi:10.3390/bios15050297",
+      "retrieved_at_utc": "2026-07-13T08:32:43.714711Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0504/europe_pmc_pmid__ae8d4269aaa6febb__20260713T083244752706Z.json",
+      "raw_sha256": "3759f35a8f458b643321952815f19718543d49e2f873f91f62424fc687abba7c",
+      "request_identity": "pmid:40422036",
+      "retrieved_at_utc": "2026-07-13T08:32:44.752706Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/diagnostics16030440",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41681756",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/diagnostics16030440",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Inzamam Mashood Nasir",
+      "Hend Alshaya",
+      "Sara Tehsin",
+      "Wided Bouchelligua"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nasir IM",
+      "Alshaya H",
+      "Tehsin S",
+      "Bouchelligua W."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 897,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Inzamam Mashood Nasir",
+      "Hend Alshaya",
+      "Sara Tehsin",
+      "Wided Bouchelligua"
+    ],
+    "doi": "10.3390/diagnostics16030440",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Transformer-Based Foundation Learning for Robust and Data-Efficient Skin Disease Imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics16030440",
+    "venue": "Diagnostics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0897/crossref_doi__357e43a9e72c0f27__20260713T084303004358Z.json",
+      "raw_sha256": "716be2582c8797fd6387d9ae9f7102552c3ed1fd283d1a2eba029b90702cc30f",
+      "request_identity": "doi:10.3390/diagnostics16030440",
+      "retrieved_at_utc": "2026-07-13T08:43:03.004358Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0897/europe_pmc_pmid__b05dcbb07b81e195__20260713T084304101355Z.json",
+      "raw_sha256": "60f54f02069d13ee623eedf685f786525cad9f5a39d9b833e33b6b29f2033573",
+      "request_identity": "pmid:41681756",
+      "retrieved_at_utc": "2026-07-13T08:43:04.101355Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1145/1198555.1198594",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1145/1198555.1198594",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Mark Sagar"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "ACM SIGGRAPH 2005 Courses on   - SIGGRAPH '05",
+    "canonical_year": 2005,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mark Sagar"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "ACM SIGGRAPH 2005 Courses on   - SIGGRAPH '05",
+    "harvested_year": 2005,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 518,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mark Sagar"
+    ],
+    "doi": "10.1145/1198555.1198594",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Reflectance field rendering of human faces for \"Spider-Man 2\"",
+    "update_to": [],
+    "url": "https://doi.org/10.1145/1198555.1198594",
+    "venue": "ACM SIGGRAPH 2005 Courses on   - SIGGRAPH '05",
+    "year": 2005
+  },
+  "related_candidate_keys": [
+    "doi:10.1145/1186223.1186371"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0518/crossref_doi__50484284aad3d798__20260713T083306026179Z.json",
+      "raw_sha256": "3e8e96fbf51b4a7678c0bd94de5b7444cef391fd6f4d5321822727cc0a89758b",
+      "request_identity": "doi:10.1145/1198555.1198594",
+      "retrieved_at_utc": "2026-07-13T08:33:06.026179Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

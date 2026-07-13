@@ -1,0 +1,77 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1145/3230744.3230795",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1145/3230744.3230795",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Yuliya Gitlina",
+      "Daljit Singh J. Dhillon",
+      "Jan Hansen",
+      "Dinesh K. Pai",
+      "Abhijeet Ghosh"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "ACM SIGGRAPH 2018 Posters",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yuliya Gitlina",
+      "Daljit Singh J. Dhillon",
+      "Jan Hansen",
+      "Dinesh K. Pai",
+      "Abhijeet Ghosh"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "ACM SIGGRAPH 2018 Posters",
+    "harvested_year": 2018,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 529,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yuliya Gitlina",
+      "Daljit Singh J. Dhillon",
+      "Jan Hansen",
+      "Dinesh K. Pai",
+      "Abhijeet Ghosh"
+    ],
+    "doi": "10.1145/3230744.3230795",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Practical measurement-based spectral rendering of human skin",
+    "update_to": [],
+    "url": "https://doi.org/10.1145/3230744.3230795",
+    "venue": "ACM SIGGRAPH 2018 Posters",
+    "year": 2018
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0529/crossref_doi__52ce73475f7f32e6__20260713T083325420848Z.json",
+      "raw_sha256": "10b5876cc0684b9545119fbc2cc151b34035bf60373cecd73639956874fa1a78",
+      "request_identity": "doi:10.1145/3230744.3230795",
+      "retrieved_at_utc": "2026-07-13T08:33:25.420848Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

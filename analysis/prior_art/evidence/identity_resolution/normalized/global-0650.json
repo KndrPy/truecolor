@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pbio.3002867",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39625994",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pbio.3002867",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Benedict G. Hogan",
+      "Mary Caswell Stoddard"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS Biology",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hogan BG",
+      "Stoddard MC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 650,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Benedict G. Hogan",
+      "Mary Caswell Stoddard"
+    ],
+    "doi": "10.1371/journal.pbio.3002867",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral imaging in animal coloration research: A user-friendly pipeline for image generation, analysis, and integration with 3D modeling",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pbio.3002867",
+    "venue": "PLOS Biology",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0650/crossref_doi__3f57a5b12aa60df0__20260713T083609100376Z.json",
+      "raw_sha256": "89e4e8712395a2ef67c3b06e8036767a72022fe9999d42830d22f4e127425e64",
+      "request_identity": "doi:10.1371/journal.pbio.3002867",
+      "retrieved_at_utc": "2026-07-13T08:36:09.100376Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0650/europe_pmc_pmid__2711a49dc670eab2__20260713T083610121258Z.json",
+      "raw_sha256": "355b23db2c5535a1c07ad2aff95a7f22fbb1fb49ec3fcac851234cf6bf1f13ee",
+      "request_identity": "pmid:39625994",
+      "retrieved_at_utc": "2026-07-13T08:36:10.121258Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

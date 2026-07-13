@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.nph.11.1.010701",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38389718",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.nph.11.1.010701",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ke Peng",
+      "Keerthana Deepti Karunakaran",
+      "Stephen Green",
+      "David Borsook"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Neurophotonics",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Peng K",
+      "Karunakaran KD",
+      "Green S",
+      "Borsook D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 721,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ke Peng",
+      "Keerthana Deepti Karunakaran",
+      "Stephen Green",
+      "David Borsook"
+    ],
+    "doi": "10.1117/1.nph.11.1.010701",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Machines, mathematics, and modules: the potential to provide real-time metrics for pain under anesthesia",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.nph.11.1.010701",
+    "venue": "Neurophotonics",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0721/crossref_doi__1f3caa16adcae583__20260713T083733503093Z.json",
+      "raw_sha256": "63f028d13a80e7def8db3f1962f9fd8dcd788531b41aa73bf47bfafe0f6c978f",
+      "request_identity": "doi:10.1117/1.nph.11.1.010701",
+      "retrieved_at_utc": "2026-07-13T08:37:33.503093Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0721/europe_pmc_pmid__cdb0cdeb293f38df__20260713T083734507784Z.json",
+      "raw_sha256": "3dd1d0e2233bd3e2f71b331b4bf4519ca963fe870ead32fded30bca2ba2c0896",
+      "request_identity": "pmid:38389718",
+      "retrieved_at_utc": "2026-07-13T08:37:34.507784Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

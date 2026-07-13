@@ -1,0 +1,14 @@
+{
+  "artifact": "identity_resolution_checkpoint",
+  "completed_ranks": [
+    24,
+    25,
+    26
+  ],
+  "end_rank": 26,
+  "failures": [],
+  "skipped_existing_ranks": [],
+  "stage": 1,
+  "start_rank": 24,
+  "updated_at_utc": "2026-07-13T08:15:09.218431Z"
+}

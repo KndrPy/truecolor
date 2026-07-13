@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2147/jir.s604053",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42333256",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2147/jir.s604053",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jingwen Li",
+      "Wen Ru",
+      "Yan Zhao",
+      "Chen Liu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Inflammation Research",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Li J",
+      "Ru W",
+      "Zhao Y",
+      "Liu C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 865,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jingwen Li",
+      "Wen Ru",
+      "Yan Zhao",
+      "Chen Liu"
+    ],
+    "doi": "10.2147/jir.s604053",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Central Nervous System Involvement in Inflammatory Bowel Disease: A Bibliometric Analysis of Collaboration, Hotspots, and Research Trends",
+    "update_to": [],
+    "url": "https://doi.org/10.2147/jir.s604053",
+    "venue": "Journal of Inflammation Research",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0865/crossref_doi__cb7a41def78e2bc6__20260713T084200901002Z.json",
+      "raw_sha256": "caf164f9c3ed148345d095d2a629736ab60fc8d56907f0ab98739a6062e50539",
+      "request_identity": "doi:10.2147/jir.s604053",
+      "retrieved_at_utc": "2026-07-13T08:42:00.901002Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0865/europe_pmc_pmid__e3389bc840d5153c__20260713T084202009899Z.json",
+      "raw_sha256": "fb87d998d63e4c1d04ed61e7bdf11ba3e6444967b52845ce2c3a81810b2a11b8",
+      "request_identity": "pmid:42333256",
+      "retrieved_at_utc": "2026-07-13T08:42:02.009899Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

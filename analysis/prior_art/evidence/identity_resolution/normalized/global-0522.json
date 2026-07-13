@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/oe.441063",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "35106053",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/oe.441063",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Takuma Morimoto",
+      "Cong Zhang",
+      "Kazuho Fukuda",
+      "Keiji Uchikawa"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Optics Express",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Morimoto T",
+      "Zhang C",
+      "Fukuda K",
+      "Uchikawa K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 522,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Takuma Morimoto",
+      "Cong Zhang",
+      "Kazuho Fukuda",
+      "Keiji Uchikawa"
+    ],
+    "doi": "10.1364/oe.441063",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectral measurement of daylights and surface properties of natural objects in Japan",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/oe.441063",
+    "venue": "Optics Express",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0522/crossref_doi__2d0dac0c710e904f__20260713T083310723188Z.json",
+      "raw_sha256": "7d541eb42e29cd9b69690cec4a607a64975cfd9058a4f7913763866824a721e2",
+      "request_identity": "doi:10.1364/oe.441063",
+      "retrieved_at_utc": "2026-07-13T08:33:10.723188Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0522/europe_pmc_pmid__b4c2e80e116a51b2__20260713T083311894334Z.json",
+      "raw_sha256": "e513c3d5c4e85bc3787b6e596e1178f402344d8f3559fe70a22ddfbb8a8b2c65",
+      "request_identity": "pmid:35106053",
+      "retrieved_at_utc": "2026-07-13T08:33:11.894334Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

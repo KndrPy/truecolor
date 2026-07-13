@@ -1,0 +1,116 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/srt.70310",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41562471",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/srt.70310",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mingkwan Na Takuathung",
+      "Kantirat Yaja",
+      "Jakkrit Aisara",
+      "Preeyaporn Klinjan",
+      "Pannita Anek",
+      "Ratchanon Inpan",
+      "Tattiya Kantasa",
+      "Jeeraporn Chitphan",
+      "Kankanit Yeerong",
+      "Supanimit Teekachunhatean",
+      "Nut Koonrungsesomboon"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Skin Research and Technology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Na Takuathung M",
+      "Yaja K",
+      "Aisara J",
+      "Klinjan P",
+      "Anek P",
+      "Inpan R",
+      "Kantasa T",
+      "Chitphan J",
+      "Yeerong K",
+      "Teekachunhatean S",
+      "Koonrungsesomboon N."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 357,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mingkwan Na Takuathung",
+      "Kantirat Yaja",
+      "Jakkrit Aisara",
+      "Preeyaporn Klinjan",
+      "Pannita Anek",
+      "Ratchanon Inpan",
+      "Tattiya Kantasa",
+      "Jeeraporn Chitphan",
+      "Kankanit Yeerong",
+      "Supanimit Teekachunhatean",
+      "Nut Koonrungsesomboon"
+    ],
+    "doi": "10.1111/srt.70310",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Randomized Controlled Trial of the Genistein Plus Bakuchiol and Vitamins (GEN\n                     + \n                    ) Product for Male Facial Skin: Effects on Skin Appearance and Properties",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/srt.70310",
+    "venue": "Skin Research and Technology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0357/crossref_doi__6133586b7005cb99__20260713T082942992493Z.json",
+      "raw_sha256": "c4a5183716093f1b1ff84f54c3b2d823c1aff41f5fd91d5b60b4cbedfb3e834c",
+      "request_identity": "doi:10.1111/srt.70310",
+      "retrieved_at_utc": "2026-07-13T08:29:42.992493Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0357/europe_pmc_pmid__392d94c4984bb25f__20260713T082943989110Z.json",
+      "raw_sha256": "039c14b9d6d0cb2f046f8455bc14d073637a2791c36ee8b1cf121a4c64ddda6b",
+      "request_identity": "pmid:41562471",
+      "retrieved_at_utc": "2026-07-13T08:29:43.989110Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

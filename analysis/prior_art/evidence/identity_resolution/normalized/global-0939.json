@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-025-31122-x",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41466036",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-025-31122-x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Pradyumn Pandey",
+      "Shrabanti Mandal"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Pandey P",
+      "Mandal S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 939,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Pradyumn Pandey",
+      "Shrabanti Mandal"
+    ],
+    "doi": "10.1038/s41598-025-31122-x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A hybrid quantum–classical convolutional neural network with a quantum attention mechanism for skin cancer",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-025-31122-x",
+    "venue": "Scientific Reports",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0939/crossref_doi__5184d66acce7d4c9__20260713T084426121387Z.json",
+      "raw_sha256": "3b00d679bbbfd0f8e2544dbf0ec8d957aa89156c3c19412945d4f78808fa8180",
+      "request_identity": "doi:10.1038/s41598-025-31122-x",
+      "retrieved_at_utc": "2026-07-13T08:44:26.121387Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0939/europe_pmc_pmid__d09d755c1c239e85__20260713T084427103054Z.json",
+      "raw_sha256": "614d3f0ecb1b2529babc1a3a972ecfe32539665a4797b38cbeb942b5fa408221",
+      "request_identity": "pmid:41466036",
+      "retrieved_at_utc": "2026-07-13T08:44:27.103054Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2026.1850030",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42180745",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2026.1850030",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Xuan Guo",
+      "Haixia Wang",
+      "Xueqing Wang",
+      "Nan Cao",
+      "Zhiqiang Zhang",
+      "Shengli Chen",
+      "Guangliang Zhang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Guo X",
+      "Wang H",
+      "Wang X",
+      "Cao N",
+      "Zhang Z",
+      "Chen S",
+      "Zhang G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 879,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xuan Guo",
+      "Haixia Wang",
+      "Xueqing Wang",
+      "Nan Cao",
+      "Zhiqiang Zhang",
+      "Shengli Chen",
+      "Guangliang Zhang"
+    ],
+    "doi": "10.3389/fmed.2026.1850030",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Photodynamic technology for delineating surgical margins in recurrent extramammary Paget’s disease: a case report",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2026.1850030",
+    "venue": "Frontiers in Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0879/crossref_doi__9eaa6de0e93e1edc__20260713T084227424610Z.json",
+      "raw_sha256": "fa00fd735e224a4b90c50ae65341c453f1d7ac703574d1f9480d9f751683ef6f",
+      "request_identity": "doi:10.3389/fmed.2026.1850030",
+      "retrieved_at_utc": "2026-07-13T08:42:27.424610Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0879/europe_pmc_pmid__4873f2bafe9a9dfc__20260713T084228457609Z.json",
+      "raw_sha256": "56f153221656c9a9ee33242b5dbca5613757c1101814320dbd54cc08036a48fc",
+      "request_identity": "pmid:42180745",
+      "retrieved_at_utc": "2026-07-13T08:42:28.457609Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

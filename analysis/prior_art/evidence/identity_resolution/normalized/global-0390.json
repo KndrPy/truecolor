@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/medicina61122186",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41470188",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/medicina61122186",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jeng-Wei Tjiu",
+      "Chia-Fang Lu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Medicina",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Tjiu JW",
+      "Lu CF."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 390,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jeng-Wei Tjiu",
+      "Chia-Fang Lu"
+    ],
+    "doi": "10.3390/medicina61122186",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Equity and Generalizability of Artificial Intelligence for Skin-Lesion Diagnosis Using Clinical, Dermoscopic, and Smartphone Images: A Systematic Review and Meta-Analysis",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/medicina61122186",
+    "venue": "Medicina",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0390/crossref_doi__da40115466f5e203__20260713T083042257274Z.json",
+      "raw_sha256": "7472c655f4dbcaa7282eeb93f4a74b12db33f71eb1e9bbe2e95b225199d0279c",
+      "request_identity": "doi:10.3390/medicina61122186",
+      "retrieved_at_utc": "2026-07-13T08:30:42.257274Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0390/europe_pmc_pmid__33bcd0ac2f992be0__20260713T083043239948Z.json",
+      "raw_sha256": "85536a055e752f24ea8e5358fb35a5e477f851fa4bc3cdff845566fbad627b4e",
+      "request_identity": "pmid:41470188",
+      "retrieved_at_utc": "2026-07-13T08:30:43.239948Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

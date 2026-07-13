@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.apro.2025.100088",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.apro.2025.100088",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Ellie Choi",
+      "Ruo Chen Du",
+      "Nisha Chandran",
+      "Valencia Long",
+      "Phillip Phan",
+      "Jose Valderas"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advances in Patient-Reported Outcomes",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ellie Choi",
+      "Ruo Chen Du",
+      "Nisha Chandran",
+      "Valencia Long",
+      "Phillip Phan",
+      "Jose Valderas"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Advances in Patient-Reported Outcomes",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 481,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ellie Choi",
+      "Ruo Chen Du",
+      "Nisha Chandran",
+      "Valencia Long",
+      "Phillip Phan",
+      "Jose Valderas"
+    ],
+    "doi": "10.1016/j.apro.2025.100088",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Development and validation of the dermatology social comparison scale",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.apro.2025.100088",
+    "venue": "Advances in Patient-Reported Outcomes",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0481/crossref_doi__913249b3a8f1a86a__20260713T083221673812Z.json",
+      "raw_sha256": "c5f47835f248a9011fc1fc970547b85dca2f00c9290e86bd34918d4ccb014e92",
+      "request_identity": "doi:10.1016/j.apro.2025.100088",
+      "retrieved_at_utc": "2026-07-13T08:32:21.673812Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

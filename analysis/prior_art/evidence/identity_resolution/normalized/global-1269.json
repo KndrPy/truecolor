@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "seconds matter rapid non contact monitoring of heart and respiratory rate from face videos",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:seconds matter: rapid non-contact monitoring of heart and respiratory rate from face videos|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Taha Khan",
+      "Péter Pál Boda",
+      "Annette Björklund",
+      "Stefan Malmberg"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Khan T",
+      "Boda P",
+      "Björklund A",
+      "Malmberg S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1269,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Taha Khan",
+      "Péter Pál Boda",
+      "Annette Björklund",
+      "Stefan Malmberg"
+    ],
+    "doi": "10.3390/s26051506",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Seconds Matter: Rapid Non-Contact Monitoring of Heart and Respiratory Rate from Face Videos",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26051506",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1269/crossref_title__46e87fae64dbe69a__20260713T084950883700Z.json",
+      "raw_sha256": "824e8f2d5a0638dc90cb578c32a69638a281a48d17414bc8e21f396fad9bad51",
+      "request_identity": "title:seconds matter rapid non contact monitoring of heart and respiratory rate from face videos|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:50.883700Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/sspd.2017.8233252",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/sspd.2017.8233252",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Xiaoyu He",
+      "Xiaojian Xu"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2017 Sensor Signal Processing for Defence Conference (SSPD)",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "Xiaoyu He",
+      "Xiaojian Xu"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2017 Sensor Signal Processing for Defence Conference (SSPD)",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 244,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xiaoyu He",
+      "Xiaojian Xu"
+    ],
+    "doi": "10.1109/sspd.2017.8233252",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Optimal Band Selection of Multispectral Sensors for Wildfire Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/sspd.2017.8233252",
+    "venue": "2017 Sensor Signal Processing for Defence Conference (SSPD)",
+    "year": 2017
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0244/crossref_doi__84d13c9ff7b1df95__20260713T082715622716Z.json",
+      "raw_sha256": "5a5dfc667213b452785c73d2184d21502bbc6da48ccb5b54dd4de364b3e39797",
+      "request_identity": "doi:10.1109/sspd.2017.8233252",
+      "retrieved_at_utc": "2026-07-13T08:27:15.622716Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

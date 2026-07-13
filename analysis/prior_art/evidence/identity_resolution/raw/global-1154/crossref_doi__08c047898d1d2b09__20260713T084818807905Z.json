@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.7717/peerj-cs.3002/fig-5",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,2,28]],\"date-time\":\"2026-02-28T09:36:16Z\",\"timestamp\":1772271376042,\"version\":\"3.50.1\"},\"reference-count\":0,\"publisher\":\"PeerJ\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.7717\\/peerj-cs.3002\\/fig-5\",\"type\":\"component\",\"created\":{\"date-parts\":[[2025,7,28]],\"date-time\":\"2025-07-28T08:12:37Z\",\"timestamp\":1753690357000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Figure 5: Confusion matrix on skin disease classification.\"],\"prefix\":\"10.7717\",\"member\":\"4443\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2025,7,28]],\"date-time\":\"2025-07-28T08:12:38Z\",\"timestamp\":1753690358000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/peerj.com\\/articles\\/cs-3002\\/fig-5\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.7717\\/peerj-cs.3002\\/fig-5\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.7717\\/peerj-cs.3002\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:48:18.807905Z",
+  "source": "crossref_doi"
+}

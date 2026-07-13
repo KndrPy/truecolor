@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1302/3114-220966",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2025,8,15]],\"date-time\":\"2025-08-15T00:13:50Z\",\"timestamp\":1755216830090,\"version\":\"3.43.0\"},\"reference-count\":0,\"publisher\":\"British Editorial Society of Bone & Joint Surgery\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"published-print\":{\"date-parts\":[[2022,1,13]]},\"DOI\":\"10.1302\\/3114-220966\",\"type\":\"dataset\",\"created\":{\"date-parts\":[[2022,1,13]],\"date-time\":\"2022-01-13T06:25:52Z\",\"timestamp\":1642055152000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Validation of a Patient Specific Statistical Shape Model for Predicting Pre-Morbid Glenoid Morphology\"],\"prefix\":\"10.1302\",\"member\":\"42\",\"container-title\":[\"OrthoMedia\"],\"original-title\":[\"Validation of a Patient Specific Statistical Shape Model for Predicting Pre-Morbid Glenoid Morphology\"],\"deposited\":{\"date-parts\":[[2025,8,4]],\"date-time\":\"2025-08-04T21:50:01Z\",\"timestamp\":1754344201000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/orthomedia.org.uk\\/Media\\/FA40314D-E379-43C7-B553-487924ED6C60\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[2022,1,13]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1302\\/3114-220966\",\"relation\":{},\"subject\":[],\"published\":{\"date-parts\":[[2022,1,13]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:49:08.111944Z",
+  "source": "crossref_doi"
+}

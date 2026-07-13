@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bioengineering12070714",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40722406",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bioengineering12070714",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Nan-Chieh Huang",
+      "Arvind Mukundan",
+      "Riya Karmakar",
+      "Syna Syna",
+      "Wen-Yen Chang",
+      "Hsiang-Chen Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Bioengineering",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Huang NC",
+      "Mukundan A",
+      "Karmakar R",
+      "Syna S",
+      "Chang WY",
+      "Wang HC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 636,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Nan-Chieh Huang",
+      "Arvind Mukundan",
+      "Riya Karmakar",
+      "Syna Syna",
+      "Wen-Yen Chang",
+      "Hsiang-Chen Wang"
+    ],
+    "doi": "10.3390/bioengineering12070714",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Novel Snapshot-Based Hyperspectral Conversion for Dermatological Lesion Detection via YOLO Object Detection Models",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bioengineering12070714",
+    "venue": "Bioengineering",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0636/crossref_doi__fe1864dc77e4a0ef__20260713T083540125357Z.json",
+      "raw_sha256": "14fabad350294e9624a67eacfcb323849c7b5e17bfab2863244ca43c63f89cab",
+      "request_identity": "doi:10.3390/bioengineering12070714",
+      "retrieved_at_utc": "2026-07-13T08:35:40.125357Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0636/europe_pmc_pmid__3227e23b02f7a3c8__20260713T083543537981Z.json",
+      "raw_sha256": "3ba1408eadd5212e58940f12ec61744725395cce4c780bddb547f7e6c9fb9c09",
+      "request_identity": "pmid:40722406",
+      "retrieved_at_utc": "2026-07-13T08:35:43.537981Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.2307/2794703",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2023,11,20]],\"date-time\":\"2023-11-20T17:57:21Z\",\"timestamp\":1700503041019},\"reference-count\":0,\"publisher\":\"JSTOR\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[\"Man\"],\"published-print\":{\"date-parts\":[[1951,11]]},\"DOI\":\"10.2307\\/2794703\",\"type\":\"journal-article\",\"created\":{\"date-parts\":[[2006,6,16]],\"date-time\":\"2006-06-16T13:25:14Z\",\"timestamp\":1150464314000},\"page\":\"152\",\"source\":\"Crossref\",\"is-referenced-by-count\":31,\"title\":[\"253. A Spectrophotometer for Measurement of Skin Colour\"],\"prefix\":\"10.2307\",\"volume\":\"51\",\"author\":[{\"given\":\"J. S.\",\"family\":\"Weiner\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"1121\",\"container-title\":[\"Man\"],\"original-title\":[],\"deposited\":{\"date-parts\":[[2018,4,18]],\"date-time\":\"2018-04-18T11:50:27Z\",\"timestamp\":1524052227000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/www.jstor.org\\/stable\\/2794703?origin=crossref\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[1951,11]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.2307\\/2794703\",\"relation\":{},\"ISSN\":[\"0025-1496\"],\"issn-type\":[{\"value\":\"0025-1496\",\"type\":\"print\"}],\"subject\":[],\"published\":{\"date-parts\":[[1951,11]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:32:16.344148Z",
+  "source": "crossref_doi"
+}

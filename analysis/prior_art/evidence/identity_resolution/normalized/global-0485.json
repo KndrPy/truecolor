@@ -1,0 +1,83 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.94144",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.94144",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Nitin Chetla",
+      "Trisha Naidu",
+      "Shivam Patel",
+      "Andrew Bouras",
+      "Harshita Kacham",
+      "Vinisha Bonagiri",
+      "Nasif Zaman"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nitin Chetla",
+      "Trisha Naidu",
+      "Shivam Patel",
+      "Andrew Bouras",
+      "Harshita Kacham",
+      "Vinisha Bonagiri",
+      "Nasif Zaman"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Cureus",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 485,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Nitin Chetla",
+      "Trisha Naidu",
+      "Shivam Patel",
+      "Andrew Bouras",
+      "Harshita Kacham",
+      "Vinisha Bonagiri",
+      "Nasif Zaman"
+    ],
+    "doi": "10.7759/cureus.94144",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluation of Gemini 2.0 AI in Classifying Breast Lesion Status From Dynamic Contrast-Enhanced MRI: A Preliminary Study",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.94144",
+    "venue": "Cureus",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0485/crossref_doi__2a26ad94dd544c84__20260713T083226010216Z.json",
+      "raw_sha256": "1a3dbaf9cecc8817182670c6d642b7ad0e8078ff687c4ecd824f64ea6d501e2b",
+      "request_identity": "doi:10.7759/cureus.94144",
+      "retrieved_at_utc": "2026-07-13T08:32:26.010216Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

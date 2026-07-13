@@ -1,0 +1,69 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1021/acs.nanolett.3c04755.s001",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1021/acs.nanolett.3c04755.s001",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "component",
+    "canonical_venue": null,
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "component",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1233,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1021/acs.nanolett.3c04755.s001",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "component",
+    "relation": {
+      "is-component-of": [
+        {
+          "asserted-by": "object",
+          "id": "10.1021/acs.nanolett.3c04755",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Color-Shifting Iontronic Skin for On-Site, Nonpixelated Pressure Mapping Visualization",
+    "update_to": [],
+    "url": "https://doi.org/10.1021/acs.nanolett.3c04755.s001",
+    "venue": null,
+    "year": 2024
+  },
+  "related_candidate_keys": [
+    "doi:10.1021/acs.nanolett.3c04755.s002"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1233/crossref_doi__a06ce87f2fd8c5c9__20260713T084921867101Z.json",
+      "raw_sha256": "f98efe530c86172f7a7568b0bedd8e4a7545659414416155776a6bcf6836ee1c",
+      "request_identity": "doi:10.1021/acs.nanolett.3c04755.s001",
+      "retrieved_at_utc": "2026-07-13T08:49:21.867101Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

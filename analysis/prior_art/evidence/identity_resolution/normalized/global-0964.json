@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fonc.2025.1468753",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41383515",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fonc.2025.1468753",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Leila Bagheriye",
+      "Johan Kwisthout"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Oncology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Bagheriye L",
+      "Kwisthout J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 964,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Leila Bagheriye",
+      "Johan Kwisthout"
+    ],
+    "doi": "10.3389/fonc.2025.1468753",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advancements in real-time oncology diagnosis: harnessing AI and image fusion techniques",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fonc.2025.1468753",
+    "venue": "Frontiers in Oncology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0964/crossref_doi__f7f543b871093dd0__20260713T084511255979Z.json",
+      "raw_sha256": "e81e01bd4e3a3f5cc8a21962eac004e2004a04ee957c12c3b798a88e58f3d027",
+      "request_identity": "doi:10.3389/fonc.2025.1468753",
+      "retrieved_at_utc": "2026-07-13T08:45:11.255979Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0964/europe_pmc_pmid__3f4db97a9a9d0ca8__20260713T084512338326Z.json",
+      "raw_sha256": "dce63fc7bff9d1ba93f57fe5d0713ab4db5bd8bffc8635f19028d940fdd52e86",
+      "request_identity": "pmid:41383515",
+      "retrieved_at_utc": "2026-07-13T08:45:12.338326Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

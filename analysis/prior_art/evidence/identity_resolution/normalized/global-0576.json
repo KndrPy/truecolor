@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2025.1667087",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40978739",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2025.1667087",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Fuhua Hu",
+      "Yuan Shao",
+      "Junjie Liu",
+      "Jialong Liu",
+      "Xiaolong Xiao",
+      "Kaibing Shi",
+      "Yangzong Zheng",
+      "Jianfeng Zhang",
+      "Xuelian Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hu F",
+      "Shao Y",
+      "Liu J",
+      "Liu J",
+      "Xiao X",
+      "Shi K",
+      "Zheng Y",
+      "Zhang J",
+      "Wang X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 576,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Fuhua Hu",
+      "Yuan Shao",
+      "Junjie Liu",
+      "Jialong Liu",
+      "Xiaolong Xiao",
+      "Kaibing Shi",
+      "Yangzong Zheng",
+      "Jianfeng Zhang",
+      "Xuelian Wang"
+    ],
+    "doi": "10.3389/fmed.2025.1667087",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advances in intelligent recognition and diagnosis of skin scar images: concepts, methods, challenges, and future trends",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2025.1667087",
+    "venue": "Frontiers in Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0576/crossref_doi__8deb12d145de2449__20260713T083409562885Z.json",
+      "raw_sha256": "98f689b2454f11149f2bbc1858b42ee170a9ae607df866408b555c7c51c20ac1",
+      "request_identity": "doi:10.3389/fmed.2025.1667087",
+      "retrieved_at_utc": "2026-07-13T08:34:09.562885Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0576/europe_pmc_pmid__93b6dda8dfd5e03c__20260713T083410653115Z.json",
+      "raw_sha256": "fcd2db90ac556b4f5398d61b17c9cf07b0ce74b437d0f9ef6f00f6f7ce0e1f8a",
+      "request_identity": "pmid:40978739",
+      "retrieved_at_utc": "2026-07-13T08:34:10.653115Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1039/d5ra04833h",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41647407",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1039/d5ra04833h",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Xin Feng",
+      "Yiqing Zhang",
+      "Song Chen",
+      "Yanfeng Ding"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "RSC Advances",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Feng X",
+      "Zhang Y",
+      "Chen S",
+      "Ding Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 830,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xin Feng",
+      "Yiqing Zhang",
+      "Song Chen",
+      "Yanfeng Ding"
+    ],
+    "doi": "10.1039/d5ra04833h",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Acid-responsive metal organic frameworks with photothermal effects for osteoarthritis multiple therapy",
+    "update_to": [],
+    "url": "https://doi.org/10.1039/d5ra04833h",
+    "venue": "RSC Advances",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0830/crossref_doi__df7bfc6442d8b332__20260713T084049292893Z.json",
+      "raw_sha256": "50c2462715821e14c204cb1cb7871feed612ac17643074f95420c2f14791cae6",
+      "request_identity": "doi:10.1039/d5ra04833h",
+      "retrieved_at_utc": "2026-07-13T08:40:49.292893Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0830/europe_pmc_pmid__b2e7c82f1389574c__20260713T084050264429Z.json",
+      "raw_sha256": "4b8c5363031da7e0a07ef9629571279b769f2867a6e0c4517a1f9be62aa1d3b9",
+      "request_identity": "pmid:41647407",
+      "retrieved_at_utc": "2026-07-13T08:40:50.264429Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

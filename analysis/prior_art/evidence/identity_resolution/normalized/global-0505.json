@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/trpms.2021.3084539",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "34553105",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/trpms.2021.3084539",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Dennis R. Schaart",
+      "Georg Schramm",
+      "Johan Nuyts",
+      "Suleman Surti"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Transactions on Radiation and Plasma Medical Sciences",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Schaart DR",
+      "Schramm G",
+      "Nuyts J",
+      "Surti S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 505,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Dennis R. Schaart",
+      "Georg Schramm",
+      "Johan Nuyts",
+      "Suleman Surti"
+    ],
+    "doi": "10.1109/trpms.2021.3084539",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Time of Flight in Perspective: Instrumental and Computational Aspects of Time Resolution in Positron Emission Tomography",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/trpms.2021.3084539",
+    "venue": "IEEE Transactions on Radiation and Plasma Medical Sciences",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0505/crossref_doi__7d6575c2357a36bf__20260713T083245463745Z.json",
+      "raw_sha256": "2ad6c69320ceff6691c99513361c46f18cf256682910847323703eceb691c0f3",
+      "request_identity": "doi:10.1109/trpms.2021.3084539",
+      "retrieved_at_utc": "2026-07-13T08:32:45.463745Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0505/europe_pmc_pmid__e1a440f3c856a665__20260713T083246598875Z.json",
+      "raw_sha256": "4f5ebb6b841349d829daefbb67b83fa705dfbb51a2e026c3f1cdf1b9777c62ff",
+      "request_identity": "pmid:34553105",
+      "retrieved_at_utc": "2026-07-13T08:32:46.598875Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

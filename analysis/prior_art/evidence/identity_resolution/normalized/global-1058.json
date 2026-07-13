@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/s0923-5965(00)00044-8",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/s0923-5965(00)00044-8",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Hyung Sun Kim",
+      "Hyun Wook Park"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Signal Processing: Image Communication",
+    "canonical_year": 2001,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hyung Sun Kim",
+      "Hyun Wook Park"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Signal Processing: Image Communication",
+    "harvested_year": 2001,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1058,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hyung Sun Kim",
+      "Hyun Wook Park"
+    ],
+    "doi": "10.1016/s0923-5965(00)00044-8",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Wavelet-based moving-picture coding using shift-invariant motion estimation in wavelet domain",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/s0923-5965(00)00044-8",
+    "venue": "Signal Processing: Image Communication",
+    "year": 2001
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1058/crossref_doi__6ba2e9e0e9ce1eef__20260713T084704892713Z.json",
+      "raw_sha256": "fc750084f137f596955e160a5ad6e3251cc6d15f477ecdf92e0028c62fb3822e",
+      "request_identity": "doi:10.1016/s0923-5965(00)00044-8",
+      "retrieved_at_utc": "2026-07-13T08:47:04.892713Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

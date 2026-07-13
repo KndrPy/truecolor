@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s44385-025-00037-7",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41048873",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s44385-025-00037-7",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Hina Imtiaz",
+      "Ellaine Ray",
+      "Enosh Lim",
+      "Mansour Tahernezhadi",
+      "Mohammad J. Moghimi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Biomedical Innovations",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Imtiaz H",
+      "Ray E",
+      "Lim E",
+      "Tahernezhadi M",
+      "Moghimi MJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 940,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hina Imtiaz",
+      "Ellaine Ray",
+      "Enosh Lim",
+      "Mansour Tahernezhadi",
+      "Mohammad J. Moghimi"
+    ],
+    "doi": "10.1038/s44385-025-00037-7",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Wearable battery-free chip-less patch for bioimpedance measurement of cutaneous lesions",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s44385-025-00037-7",
+    "venue": "npj Biomedical Innovations",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0940/crossref_doi__b180573d3029a447__20260713T084427804761Z.json",
+      "raw_sha256": "dcd2c638a2933950f7b80aa4912cfee688031b7542997f2e2b41ce9d51f4974b",
+      "request_identity": "doi:10.1038/s44385-025-00037-7",
+      "retrieved_at_utc": "2026-07-13T08:44:27.804761Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0940/europe_pmc_pmid__5ec9e616dda41317__20260713T084428773905Z.json",
+      "raw_sha256": "c1e70dec6c22c9d734e4c5502b486b5a718fb3ba924c78ea2eca4f214630e417",
+      "request_identity": "pmid:41048873",
+      "retrieved_at_utc": "2026-07-13T08:44:28.773905Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

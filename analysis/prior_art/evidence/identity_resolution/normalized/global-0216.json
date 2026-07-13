@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.prrv.2023.12.006",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38233229",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.prrv.2023.12.006",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Megha Sharma",
+      "Andrew W Brown",
+      "Nicholas M. Powell",
+      "Narasimhan Rajaram",
+      "Lauren Tong",
+      "Peter M. Mourani",
+      "Mario Schootman"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Paediatric Respiratory Reviews",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sharma M",
+      "Brown AW",
+      "Powell NM",
+      "Rajaram N",
+      "Tong L",
+      "Mourani PM",
+      "Schootman M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 216,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Megha Sharma",
+      "Andrew W Brown",
+      "Nicholas M. Powell",
+      "Narasimhan Rajaram",
+      "Lauren Tong",
+      "Peter M. Mourani",
+      "Mario Schootman"
+    ],
+    "doi": "10.1016/j.prrv.2023.12.006",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Racial and skin color mediated disparities in pulse oximetry in infants and young children",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.prrv.2023.12.006",
+    "venue": "Paediatric Respiratory Reviews",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0216/crossref_doi__5956e0faa0c41455__20260713T082642415452Z.json",
+      "raw_sha256": "1f1c4243d08b6475817bad556cd246d1023e68b2bcffd4893e231e215bf3d63b",
+      "request_identity": "doi:10.1016/j.prrv.2023.12.006",
+      "retrieved_at_utc": "2026-07-13T08:26:42.415452Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0216/europe_pmc_pmid__1d6b18cb5d9875c4__20260713T082643511831Z.json",
+      "raw_sha256": "5b17521c0847257fdaf867f951ee0db4eb8f12d378b0fc5f2ab78c8eefc71bc4",
+      "request_identity": "pmid:38233229",
+      "retrieved_at_utc": "2026-07-13T08:26:43.511831Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

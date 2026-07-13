@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bios15110711",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41294723",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bios15110711",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Tae Wuk Bae",
+      "Byoung Ik Kim",
+      "Kee Koo Kwon",
+      "Kwang Yong Kim"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biosensors",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Bae TW",
+      "Kim BI",
+      "Kwon KK",
+      "Kim KY."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 780,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tae Wuk Bae",
+      "Byoung Ik Kim",
+      "Kee Koo Kwon",
+      "Kwang Yong Kim"
+    ],
+    "doi": "10.3390/bios15110711",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Feasibility Study on Noninvasive Blood Glucose Estimation Using Machine Learning Analysis of Near-Infrared Spectroscopy Data",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bios15110711",
+    "venue": "Biosensors",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0780/crossref_doi__f45333ab53a2b921__20260713T083918834840Z.json",
+      "raw_sha256": "706c75ddbf66af432b3bb573c74ed73ec06ee3ef33095c14ee04630198c8c4d4",
+      "request_identity": "doi:10.3390/bios15110711",
+      "retrieved_at_utc": "2026-07-13T08:39:18.834840Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0780/europe_pmc_pmid__78cfb04bdeec3e0b__20260713T083919773652Z.json",
+      "raw_sha256": "8659fd97de5188d1411f97742082a6400620f418420a285a06782f5b03ce7857",
+      "request_identity": "pmid:41294723",
+      "retrieved_at_utc": "2026-07-13T08:39:19.773652Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

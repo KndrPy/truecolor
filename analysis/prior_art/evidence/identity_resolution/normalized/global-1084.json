@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/b0-12-369397-7/00430-1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/b0-12-369397-7/00430-1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "C. Burgess"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Encyclopedia of Analytical Science",
+    "canonical_year": 2005,
+    "doi_match": true,
+    "harvested_authors": [
+      "C. Burgess"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Encyclopedia of Analytical Science",
+    "harvested_year": 2005,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1084,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "C. Burgess"
+    ],
+    "doi": "10.1016/b0-12-369397-7/00430-1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "OPTICAL SPECTROSCOPY | Wavelength Selection Devices",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/b0-12-369397-7/00430-1",
+    "venue": "Encyclopedia of Analytical Science",
+    "year": 2005
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1084/crossref_doi__3a991bb1be447581__20260713T084729222018Z.json",
+      "raw_sha256": "3ab842f4c43dbf3e192e1c1e3203eddafcf825d38b748a9c2327cbf19f11aa6c",
+      "request_identity": "doi:10.1016/b0-12-369397-7/00430-1",
+      "retrieved_at_utc": "2026-07-13T08:47:29.222018Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

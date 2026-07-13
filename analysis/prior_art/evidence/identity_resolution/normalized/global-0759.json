@@ -1,0 +1,86 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/clockssleep6040047",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39584976",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/clockssleep6040047",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Christian Cajochen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Clocks & Sleep",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Cajochen C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 759,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Christian Cajochen"
+    ],
+    "doi": "10.3390/clockssleep6040047",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Thirty-Fifth Annual Meeting of the Society for Light Treatment and Biological Rhythms (SLTBR), 20 June–22 June, Prague, Czech Republic",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/clockssleep6040047",
+    "venue": "Clocks & Sleep",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0759/crossref_doi__3c331a194e5a0bb9__20260713T083842698660Z.json",
+      "raw_sha256": "dc09de534a5cfef00d0cfbdaf2fbede1e24b45d7e0f4e49044c375c20bc58417",
+      "request_identity": "doi:10.3390/clockssleep6040047",
+      "retrieved_at_utc": "2026-07-13T08:38:42.698660Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0759/europe_pmc_pmid__84d6229a564256e7__20260713T083843793471Z.json",
+      "raw_sha256": "029ed8598390a0c14539a9ed3dbbc6417024133103ede7f7c561e71737a9456e",
+      "request_identity": "pmid:39584976",
+      "retrieved_at_utc": "2026-07-13T08:38:43.793471Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

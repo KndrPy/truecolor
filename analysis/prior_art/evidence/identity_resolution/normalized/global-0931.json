@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.109272",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42326238",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.109272",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jesús Iván Martínez-Ortega",
+      "Sri Naidnur"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Martínez-Ortega JI",
+      "Naidnur S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 931,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jesús Iván Martínez-Ortega",
+      "Sri Naidnur"
+    ],
+    "doi": "10.7759/cureus.109272",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Acral Subcorneal Hematoma Mimicking Melanoma: Dermoscopic Features and Exploratory Digital Color Analysis",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.109272",
+    "venue": "Cureus",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0931/crossref_doi__b2783989c2303152__20260713T084408604697Z.json",
+      "raw_sha256": "d0df8212cc8f918ccbce891cbea0af85f7c795a93bc0af25aa767e2a8777da92",
+      "request_identity": "doi:10.7759/cureus.109272",
+      "retrieved_at_utc": "2026-07-13T08:44:08.604697Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0931/europe_pmc_pmid__3d3d9d1adbc0f0fc__20260713T084409710049Z.json",
+      "raw_sha256": "324f0775a35a909da75bc9bb1419e0cc465ef16c216773e5fb765a9492a9300a",
+      "request_identity": "pmid:42326238",
+      "retrieved_at_utc": "2026-07-13T08:44:09.710049Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

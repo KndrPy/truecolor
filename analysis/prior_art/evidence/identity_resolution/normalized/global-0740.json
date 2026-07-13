@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/advs.202412745",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40019846",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/advs.202412745",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mengyi Huang",
+      "Haoyu Yu",
+      "Rongyao Gao",
+      "Yuxin Liu",
+      "Xuhui Zhou",
+      "Limin Fu",
+      "Jing Zhou",
+      "Luoyuan Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advanced Science",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Huang M",
+      "Yu H",
+      "Gao R",
+      "Liu Y",
+      "Zhou X",
+      "Fu L",
+      "Zhou J",
+      "Li L."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 740,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mengyi Huang",
+      "Haoyu Yu",
+      "Rongyao Gao",
+      "Yuxin Liu",
+      "Xuhui Zhou",
+      "Limin Fu",
+      "Jing Zhou",
+      "Luoyuan Li"
+    ],
+    "doi": "10.1002/advs.202412745",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Photoacoustic Imaging in Inflammatory Orthopedic Diseases: Progress toward Precise Diagnostics and Predictive Regulation",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/advs.202412745",
+    "venue": "Advanced Science",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0740/crossref_doi__acb23932bdb696c6__20260713T083805148964Z.json",
+      "raw_sha256": "544611be5407a14cf492f8e3a87c33c3178c0c122117bf4cc04ba2fa941f9f5e",
+      "request_identity": "doi:10.1002/advs.202412745",
+      "retrieved_at_utc": "2026-07-13T08:38:05.148964Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0740/europe_pmc_pmid__f21e742f7c5f1ab3__20260713T083806124792Z.json",
+      "raw_sha256": "e80804e3658f4df8831c9f9fda45c7cd19b827922eccda66388d3d8ab4b719f6",
+      "request_identity": "pmid:40019846",
+      "retrieved_at_utc": "2026-07-13T08:38:06.124792Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

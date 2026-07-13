@@ -1,0 +1,83 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1056/aioa2300099",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1056/aioa2300099",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Sayon Dutta",
+      "Dustin S. McEvoy",
+      "Lisette N. Dunham",
+      "Ronelle Stevens",
+      "David Rubins",
+      "Gearoid M. McMahon",
+      "Lipika Samal"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "NEJM AI",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sayon Dutta",
+      "Dustin S. McEvoy",
+      "Lisette N. Dunham",
+      "Ronelle Stevens",
+      "David Rubins",
+      "Gearoid M. McMahon",
+      "Lipika Samal"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "NEJM AI",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 345,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sayon Dutta",
+      "Dustin S. McEvoy",
+      "Lisette N. Dunham",
+      "Ronelle Stevens",
+      "David Rubins",
+      "Gearoid M. McMahon",
+      "Lipika Samal"
+    ],
+    "doi": "10.1056/aioa2300099",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "External Validation of a Commercial Acute Kidney Injury Predictive Model",
+    "update_to": [],
+    "url": "https://doi.org/10.1056/aioa2300099",
+    "venue": "NEJM AI",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0345/crossref_doi__02f6e85e98637853__20260713T082927550995Z.json",
+      "raw_sha256": "b8e3dec966d05bdfbade0590828ef929a95c12d209e2ad806772acfd3bcb8157",
+      "request_identity": "doi:10.1056/aioa2300099",
+      "retrieved_at_utc": "2026-07-13T08:29:27.550995Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

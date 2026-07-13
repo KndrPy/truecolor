@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/ictai66417.2025.00104",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/ictai66417.2025.00104",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Haoming Lu"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2025 IEEE 37th International Conference on Tools with Artificial Intelligence (ICTAI)",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Haoming Lu"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2025 IEEE 37th International Conference on Tools with Artificial Intelligence (ICTAI)",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 241,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Haoming Lu"
+    ],
+    "doi": "10.1109/ictai66417.2025.00104",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Trueskin: Towards Fair and Accurate Skin Tone Recognition and Generation",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/ictai66417.2025.00104",
+    "venue": "2025 IEEE 37th International Conference on Tools with Artificial Intelligence (ICTAI)",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0241/crossref_doi__7bd822ae5e36207e__20260713T082713796142Z.json",
+      "raw_sha256": "8a91cdf070ad3f6445301df0dc40bbfa7f9ec40dbf582432d8b01f7cf3560aa5",
+      "request_identity": "doi:10.1109/ictai66417.2025.00104",
+      "retrieved_at_utc": "2026-07-13T08:27:13.796142Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

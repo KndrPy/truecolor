@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/qomex.2013.6603227",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/qomex.2013.6603227",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Amornched Jinda-Apiraksa",
+      "Vassilios Vonikakis",
+      "Stefan Winkler"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2013 Fifth International Workshop on Quality of Multimedia Experience (QoMEX)",
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [
+      "Amornched Jinda-Apiraksa",
+      "Vassilios Vonikakis",
+      "Stefan Winkler"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2013 Fifth International Workshop on Quality of Multimedia Experience (QoMEX)",
+    "harvested_year": 2013,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 89,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Amornched Jinda-Apiraksa",
+      "Vassilios Vonikakis",
+      "Stefan Winkler"
+    ],
+    "doi": "10.1109/qomex.2013.6603227",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "California-ND: An annotated dataset for near-duplicate detection in personal photo collections",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/qomex.2013.6603227",
+    "venue": "2013 Fifth International Workshop on Quality of Multimedia Experience (QoMEX)",
+    "year": 2013
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0089/crossref_doi__7d0841cfecd66775__20260713T081603713251Z.json",
+      "raw_sha256": "93a7837f46b5450badfc6f3251d14cd543b3d8de87752a6b17936055f21ab4db",
+      "request_identity": "doi:10.1109/qomex.2013.6603227",
+      "retrieved_at_utc": "2026-07-13T08:16:03.713251Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

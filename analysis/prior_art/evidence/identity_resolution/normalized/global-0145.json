@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1177/0003702820987847",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1177/0003702820987847",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "J. Renwick Beattie",
+      "Francis W. L. Esmonde-White"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Applied Spectroscopy",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "J. Renwick Beattie",
+      "Francis W. L. Esmonde-White"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Applied Spectroscopy",
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 145,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "J. Renwick Beattie",
+      "Francis W. L. Esmonde-White"
+    ],
+    "doi": "10.1177/0003702820987847",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Exploration of Principal Component Analysis: Deriving Principal Component Analysis Visually Using Spectra",
+    "update_to": [],
+    "url": "https://doi.org/10.1177/0003702820987847",
+    "venue": "Applied Spectroscopy",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0145/crossref_doi__44ae13e2bee83438__20260713T082542496435Z.json",
+      "raw_sha256": "808eae43e687240cc6936d129fec12fccf5b5d9134aaf2352588e179ac441fb0",
+      "request_identity": "doi:10.1177/0003702820987847",
+      "retrieved_at_utc": "2026-07-13T08:25:42.496435Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-026-44959-7",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41862624",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-026-44959-7",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ivan Montes-Gonzalez",
+      "Judit Bisbal-Amat",
+      "Armando Perez-Torres",
+      "Evelyn Pulido-Camarillo",
+      "Monica Canabal-Carbia",
+      "juan Campos",
+      "Irene Estevez",
+      "Angel Lizana"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Montes-Gonzalez I",
+      "Bisbal-Amat J",
+      "Perez-Torres A",
+      "Pulido-Camarillo E",
+      "Canabal-Carbia M",
+      "Campos J",
+      "Estevez I",
+      "Lizana A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 825,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ivan Montes-Gonzalez",
+      "Judit Bisbal-Amat",
+      "Armando Perez-Torres",
+      "Evelyn Pulido-Camarillo",
+      "Monica Canabal-Carbia",
+      "juan Campos",
+      "Irene Estevez",
+      "Angel Lizana"
+    ],
+    "doi": "10.1038/s41598-026-44959-7",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Macroscopic polarimetric discrimination and quantification of antiangiogenic effect of AGRO aptamer and GK1 peptide in a preclinical melanoma model",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-026-44959-7",
+    "venue": "Scientific Reports",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0825/crossref_doi__6de0c47746fb815c__20260713T084040790036Z.json",
+      "raw_sha256": "1a4f28548749f0246f795f2615750a36dd7c0867b600bbbddc9f7268db69e54a",
+      "request_identity": "doi:10.1038/s41598-026-44959-7",
+      "retrieved_at_utc": "2026-07-13T08:40:40.790036Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0825/europe_pmc_pmid__0a35cb8c2a86aba9__20260713T084041767176Z.json",
+      "raw_sha256": "802560c175ede2aae98c4c2b7f334e14dc3e7d77781670b524792ce455d01c6b",
+      "request_identity": "pmid:41862624",
+      "retrieved_at_utc": "2026-07-13T08:40:41.767176Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

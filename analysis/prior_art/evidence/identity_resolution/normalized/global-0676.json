@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.31237/osf.io/sk9t6",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.31237/osf.io/sk9t6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Ruijia Chen",
+      "Hassan Ali Aden"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ruijia Chen",
+      "Hassan Ali Aden"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 676,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ruijia Chen",
+      "Hassan Ali Aden"
+    ],
+    "doi": "10.31237/osf.io/sk9t6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "Heart Rate Measurement through Facial Skin-Spectra Analysis in Facial RGB Video",
+    "update_to": [],
+    "url": "https://doi.org/10.31237/osf.io/sk9t6",
+    "venue": null,
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0676/crossref_doi__a21d873b722d1842__20260713T083639775130Z.json",
+      "raw_sha256": "bbe140bb8f8e98becf3a75ef5867f8658146978d5be2637b17f9d06d013aac44",
+      "request_identity": "doi:10.31237/osf.io/sk9t6",
+      "retrieved_at_utc": "2026-07-13T08:36:39.775130Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7717/peerj.21222",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42291431",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7717/peerj.21222",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mike Climstein",
+      "Michael Stapelberg",
+      "Ian J. Miller",
+      "Nedeljka Rosic",
+      "Jeremy Hudson",
+      "Paul Coxon",
+      "Nathaniel Milani",
+      "Chris Robinson",
+      "Joe Walsh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PeerJ",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Climstein M",
+      "Stapelberg M",
+      "Miller IJ",
+      "Rosic N",
+      "Hudson J",
+      "Coxon P",
+      "Milani N",
+      "Robinson C",
+      "Walsh J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 927,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mike Climstein",
+      "Michael Stapelberg",
+      "Ian J. Miller",
+      "Nedeljka Rosic",
+      "Jeremy Hudson",
+      "Paul Coxon",
+      "Nathaniel Milani",
+      "Chris Robinson",
+      "Joe Walsh"
+    ],
+    "doi": "10.7717/peerj.21222",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin-cancer screening preferences and trust in clinicians among outdoor enthusiasts: preference for specialist-led checks",
+    "update_to": [],
+    "url": "https://doi.org/10.7717/peerj.21222",
+    "venue": "PeerJ",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0927/crossref_doi__506b12f1503ee500__20260713T084401780384Z.json",
+      "raw_sha256": "20af1b3debc3d44d1e564fe45cacc13fd53578e1c53216e9a92366f4d1bbfbb8",
+      "request_identity": "doi:10.7717/peerj.21222",
+      "retrieved_at_utc": "2026-07-13T08:44:01.780384Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0927/europe_pmc_pmid__ac63967c99c781f5__20260713T084402773422Z.json",
+      "raw_sha256": "569580b12b6ab2c3ac7c404909b5d6d86b27c9fe702a0f50b455aacce0dd09b3",
+      "request_identity": "pmid:42291431",
+      "retrieved_at_utc": "2026-07-13T08:44:02.773422Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

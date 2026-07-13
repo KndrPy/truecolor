@@ -1,0 +1,61 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3403/02608258u",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3403/02608258u",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "standard",
+    "canonical_venue": null,
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "standard",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1151,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.3403/02608258u",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "standard",
+    "relation": {},
+    "title": "Optical fibre amplifiers. Basic specification. Test methods for reflectance parameters",
+    "update_to": [],
+    "url": "https://doi.org/10.3403/02608258u",
+    "venue": null,
+    "year": 2015
+  },
+  "related_candidate_keys": [
+    "doi:10.3403/02608258"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1151/crossref_doi__c6709583da4039aa__20260713T084816962537Z.json",
+      "raw_sha256": "ad7da8e8ee896d5ad2c9a91bbfe0bccba74f46dd32a33515c07ad69dafc8c180",
+      "request_identity": "doi:10.3403/02608258u",
+      "retrieved_at_utc": "2026-07-13T08:48:16.962537Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

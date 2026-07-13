@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.705481",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.705481",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Shankar Sadasivam",
+      "Pierre Moulin"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2007,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shankar Sadasivam",
+      "Pierre Moulin"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SPIE Proceedings Security, Steganography, and Watermarking of Multimedia Contents IX",
+    "harvested_year": 2007,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.2,
+    "year_match": true
+  },
+  "global_rank": 1196,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shankar Sadasivam",
+      "Pierre Moulin"
+    ],
+    "doi": "10.1117/12.705481",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Cramer-Rao bound on watermark desynchronization parameter estimation accuracy",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.705481",
+    "venue": "SPIE Proceedings",
+    "year": 2007
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1196/crossref_doi__468a8d8f4ab598d1__20260713T084854428383Z.json",
+      "raw_sha256": "7e84bc4ddcf8dc368d3af9f44493e346694b87423571be17455fdd282b9e324d",
+      "request_identity": "doi:10.1117/12.705481",
+      "retrieved_at_utc": "2026-07-13T08:48:54.428383Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

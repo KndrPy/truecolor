@@ -1,0 +1,119 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging12060270",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42346933",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging12060270",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Constantin-Adrian Andrei",
+      "Serban Dragosloveanu",
+      "Alex-Gabriel Grigore",
+      "Andreea Alexandra Anghel",
+      "Atanasie-Andrei Gogu",
+      "Rares-Mircea Birlutiu",
+      "Christiana Diana Maria Dragosloveanu",
+      "Catalin Anghel",
+      "Adrian Iftime",
+      "Romica Cergan",
+      "Constantin Caruntu",
+      "Cristian Scheau"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Andrei CA",
+      "Dragosloveanu S",
+      "Grigore AG",
+      "Anghel AA",
+      "Gogu AA",
+      "Birlutiu RM",
+      "Dragosloveanu CDM",
+      "Anghel C",
+      "Iftime A",
+      "Cergan R",
+      "Caruntu C",
+      "Scheau C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 371,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Constantin-Adrian Andrei",
+      "Serban Dragosloveanu",
+      "Alex-Gabriel Grigore",
+      "Andreea Alexandra Anghel",
+      "Atanasie-Andrei Gogu",
+      "Rares-Mircea Birlutiu",
+      "Christiana Diana Maria Dragosloveanu",
+      "Catalin Anghel",
+      "Adrian Iftime",
+      "Romica Cergan",
+      "Constantin Caruntu",
+      "Cristian Scheau"
+    ],
+    "doi": "10.3390/jimaging12060270",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Cutaneous Thermography in Arthropathies: Quantitative Imaging, Machine Learning, and Clinical Translation",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging12060270",
+    "venue": "Journal of Imaging",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0371/crossref_doi__0fb8276e6d85fb23__20260713T083008482040Z.json",
+      "raw_sha256": "b7479e0180efe3562806df2655c0a26eb793630abf9820b8dcef858d6126b04e",
+      "request_identity": "doi:10.3390/jimaging12060270",
+      "retrieved_at_utc": "2026-07-13T08:30:08.482040Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0371/europe_pmc_pmid__9495b65427ff37c8__20260713T083009619682Z.json",
+      "raw_sha256": "a1c344d2cf1d6a71ddbdfa7187a8a943ad5586a1b790d9ca44074910f818e3b6",
+      "request_identity": "pmid:42346933",
+      "retrieved_at_utc": "2026-07-13T08:30:09.619682Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

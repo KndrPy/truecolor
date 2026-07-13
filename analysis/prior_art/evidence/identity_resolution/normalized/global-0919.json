@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s26092576",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42122298",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s26092576",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Hamza Mustafa",
+      "Federico Fina",
+      "Mario Molinara",
+      "Luigi Ferrigno",
+      "Andrea Ria",
+      "Paolo Bruschi",
+      "Simone Contardi",
+      "Fabio Leccese",
+      "Hafiz Tayyab Mustafa"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mustafa H",
+      "Fina F",
+      "Molinara M",
+      "Ferrigno L",
+      "Ria A",
+      "Bruschi P",
+      "Contardi S",
+      "Leccese F",
+      "Mustafa HT."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 919,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hamza Mustafa",
+      "Federico Fina",
+      "Mario Molinara",
+      "Luigi Ferrigno",
+      "Andrea Ria",
+      "Paolo Bruschi",
+      "Simone Contardi",
+      "Fabio Leccese",
+      "Hafiz Tayyab Mustafa"
+    ],
+    "doi": "10.3390/s26092576",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Machine-Learning-Based Color Sensing Using Wearable SENSIPATCH Spectrometer Module: An Experimental Study",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26092576",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0919/crossref_doi__346eb5302b66b6e9__20260713T084345379178Z.json",
+      "raw_sha256": "72add3a1e88890f71c8faa3ff7d6a7c9e046e08fecdfb0a51959ffc16e6c89a4",
+      "request_identity": "doi:10.3390/s26092576",
+      "retrieved_at_utc": "2026-07-13T08:43:45.379178Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0919/europe_pmc_pmid__e7050c31d0f04b19__20260713T084346424261Z.json",
+      "raw_sha256": "a5f9de94bc5f8a1286a5f671de3efa6cf537a879e89a1fb5be6b1a515f7abba4",
+      "request_identity": "pmid:42122298",
+      "retrieved_at_utc": "2026-07-13T08:43:46.424261Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

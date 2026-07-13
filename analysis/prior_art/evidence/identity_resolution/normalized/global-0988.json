@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/josaa.523194",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39873575",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/josaa.523194",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ola Abdalsalam",
+      "Scott Howard",
+      "Thomas D. O’Sullivan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of the Optical Society of America A",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Abdalsalam O",
+      "Howard S",
+      "O'Sullivan TD."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 988,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ola Abdalsalam",
+      "Scott Howard",
+      "Thomas D. O’Sullivan"
+    ],
+    "doi": "10.1364/josaa.523194",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Phase-based structured interrogation frequency-domain near-infrared spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/josaa.523194",
+    "venue": "Journal of the Optical Society of America A",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0988/crossref_doi__4b7e22e136b94677__20260713T084557016879Z.json",
+      "raw_sha256": "5fd59fcca28459ddf010cf00e8618cc6bdc7acfdeb38985dca0241c16da5a30c",
+      "request_identity": "doi:10.1364/josaa.523194",
+      "retrieved_at_utc": "2026-07-13T08:45:57.016879Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0988/europe_pmc_pmid__1ba9ea40a5dc083a__20260713T084557989719Z.json",
+      "raw_sha256": "0a6c6e648b723baa9e426acd5e2fc21ff3e7145506c6fd9adf529e9015f273e0",
+      "request_identity": "pmid:39873575",
+      "retrieved_at_utc": "2026-07-13T08:45:57.989719Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

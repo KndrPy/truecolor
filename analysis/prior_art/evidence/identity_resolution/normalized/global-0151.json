@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.imavis.2025.105541",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.imavis.2025.105541",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Jiangxiao Han",
+      "Shikang Wang",
+      "Lianjun Wu",
+      "Wenyu Liu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Image and Vision Computing",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jiangxiao Han",
+      "Shikang Wang",
+      "Lianjun Wu",
+      "Wenyu Liu"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Image and Vision Computing",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 151,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jiangxiao Han",
+      "Shikang Wang",
+      "Lianjun Wu",
+      "Wenyu Liu"
+    ],
+    "doi": "10.1016/j.imavis.2025.105541",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Dynamic feature extraction and histopathology domain shift alignment for mitosis detection",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.imavis.2025.105541",
+    "venue": "Image and Vision Computing",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0151/crossref_doi__d4bf0b00c379121b__20260713T082547677542Z.json",
+      "raw_sha256": "7ce6568c7c8123785adbf252b38c5dfb7a2dd766849504c227dfc0cd0367f303",
+      "request_identity": "doi:10.1016/j.imavis.2025.105541",
+      "retrieved_at_utc": "2026-07-13T08:25:47.677542Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

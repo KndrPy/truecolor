@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s00216-025-05932-x",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40471253",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s00216-025-05932-x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Buse Tezcan",
+      "Aslıhan Dalmaz",
+      "Sezen Sivrikaya Özak"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Analytical and Bioanalytical Chemistry",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Tezcan B",
+      "Dalmaz A",
+      "Sivrikaya Özak S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 933,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Buse Tezcan",
+      "Aslıhan Dalmaz",
+      "Sezen Sivrikaya Özak"
+    ],
+    "doi": "10.1007/s00216-025-05932-x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Green and simple microextraction method based on deep eutectic solvent-assisted smartphone digital imaging colorimetry (SDIC) for Rhodamine B analysis in food products",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s00216-025-05932-x",
+    "venue": "Analytical and Bioanalytical Chemistry",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0933/crossref_doi__14961e8946752139__20260713T084414124648Z.json",
+      "raw_sha256": "e8d1700ca2f88c4078461870209b630677e6fc7dd7d5a82fe4842e861c8a992b",
+      "request_identity": "doi:10.1007/s00216-025-05932-x",
+      "retrieved_at_utc": "2026-07-13T08:44:14.124648Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0933/europe_pmc_pmid__55bf7e4c4dabe816__20260713T084415116705Z.json",
+      "raw_sha256": "d2cbcced40c3db3b14f5fd325cd0418ee6eb04d1cf92e4e811586af2033b7ead",
+      "request_identity": "pmid:40471253",
+      "retrieved_at_utc": "2026-07-13T08:44:15.116705Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

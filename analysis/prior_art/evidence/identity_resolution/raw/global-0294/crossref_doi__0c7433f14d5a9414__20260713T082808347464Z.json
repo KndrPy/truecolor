@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1117/2.4201410.09",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2022,4,5]],\"date-time\":\"2022-04-05T14:25:33Z\",\"timestamp\":1649168733514},\"reference-count\":0,\"publisher\":\"SPIE-Intl Soc Optical Eng\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[\"SPIE Professional\"],\"DOI\":\"10.1117\\/2.4201410.09\",\"type\":\"journal-article\",\"created\":{\"date-parts\":[[2016,1,29]],\"date-time\":\"2016-01-29T21:38:39Z\",\"timestamp\":1454103519000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"NIST seeks collaborators on human skin-reflectance standards\"],\"prefix\":\"10.1117\",\"author\":[{\"family\":\"SPIE\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"189\",\"published-online\":{\"date-parts\":[[2014,10,1]]},\"container-title\":[\"SPIE Professional\"],\"original-title\":[],\"deposited\":{\"date-parts\":[[2016,1,29]],\"date-time\":\"2016-01-29T21:38:39Z\",\"timestamp\":1454103519000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"http:\\/\\/www.spie.org\\/x110246.xml\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[2014,10,1]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1117\\/2.4201410.09\",\"relation\":{},\"ISSN\":[\"1994-4403\"],\"issn-type\":[{\"value\":\"1994-4403\",\"type\":\"electronic\"}],\"subject\":[],\"published\":{\"date-parts\":[[2014,10,1]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:28:08.347464Z",
+  "source": "crossref_doi"
+}

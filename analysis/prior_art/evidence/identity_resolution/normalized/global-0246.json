@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/icip.2015.7351032",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/icip.2015.7351032",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Zengqiang Yan",
+      "Li Yu",
+      "Zixiang Xiong"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2015 IEEE International Conference on Image Processing (ICIP)",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zengqiang Yan",
+      "Li Yu",
+      "Zixiang Xiong"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2015 IEEE International Conference on Image Processing (ICIP)",
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 246,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zengqiang Yan",
+      "Li Yu",
+      "Zixiang Xiong"
+    ],
+    "doi": "10.1109/icip.2015.7351032",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Large-area depth recovery for RGB-D camera",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/icip.2015.7351032",
+    "venue": "2015 IEEE International Conference on Image Processing (ICIP)",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0246/crossref_doi__471e2b66a26d823f__20260713T082716841779Z.json",
+      "raw_sha256": "889ac8d6eb000579743d1c0bdc4212d074bf4524adb695e3fee8b2aa8c7960ce",
+      "request_identity": "doi:10.1109/icip.2015.7351032",
+      "retrieved_at_utc": "2026-07-13T08:27:16.841779Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

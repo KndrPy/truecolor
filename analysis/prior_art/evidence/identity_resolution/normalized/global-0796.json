@@ -1,0 +1,145 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s10278-025-01693-2",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41003966",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s10278-025-01693-2",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Jiwon Park",
+          "Seunggyu Lee",
+          "Younghoon Lee"
+        ],
+        "doi": "10.1007/s10278-025-01693-2",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "FairDITA: Disentangled Image-Text Alignment for Fair Skin Cancer Diagnosis",
+        "update_to": [],
+        "url": "https://doi.org/10.1007/s10278-025-01693-2",
+        "venue": "Journal of Imaging Informatics in Medicine",
+        "year": 2025
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Jiwon Park",
+          "Seunggyu Lee",
+          "Younghoon Lee"
+        ],
+        "doi": "10.1007/s10278-025-01693-2",
+        "is_retracted": false,
+        "pmcid": "PMC13230438",
+        "pmid": "41003966",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "FairDITA: Disentangled Image-Text Alignment for Fair Skin Cancer Diagnosis.",
+        "url": "https://europepmc.org/article/MED/41003966",
+        "venue": null,
+        "year": 2026
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2025,
+      "field": "year",
+      "harvested": 2026
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Jiwon Park",
+      "Seunggyu Lee",
+      "Younghoon Lee"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging Informatics in Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Park J",
+      "Lee S",
+      "Lee Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 796,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jiwon Park",
+      "Seunggyu Lee",
+      "Younghoon Lee"
+    ],
+    "doi": "10.1007/s10278-025-01693-2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "FairDITA: Disentangled Image-Text Alignment for Fair Skin Cancer Diagnosis",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s10278-025-01693-2",
+    "venue": "Journal of Imaging Informatics in Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0796/crossref_doi__ee1cc6ebe98afab4__20260713T083946538809Z.json",
+      "raw_sha256": "82d0366b4ecd4303bad6c1fc68286b3510014a711a85c1ddcf99bd00417c543a",
+      "request_identity": "doi:10.1007/s10278-025-01693-2",
+      "retrieved_at_utc": "2026-07-13T08:39:46.538809Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0796/europe_pmc_pmid__e64e5160312a8f30__20260713T083947536304Z.json",
+      "raw_sha256": "b3a48c7b4548e2776985dbc67dbc2841da0e11d3a5c886eaa9562ba64510eaf4",
+      "request_identity": "pmid:41003966",
+      "retrieved_at_utc": "2026-07-13T08:39:47.536304Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

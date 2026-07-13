@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/s0037-6337(07)70274-7",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/s0037-6337(07)70274-7",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "KATE JOHNSON"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Skin & Allergy News",
+    "canonical_year": 2007,
+    "doi_match": true,
+    "harvested_authors": [
+      "KATE JOHNSON"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Skin &amp; Allergy News",
+    "harvested_year": 2007,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 701,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "KATE JOHNSON"
+    ],
+    "doi": "10.1016/s0037-6337(07)70274-7",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Classification of Vulvar Disease Blends Specialties",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/s0037-6337(07)70274-7",
+    "venue": "Skin & Allergy News",
+    "year": 2007
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0701/crossref_doi__48fe60e98e4d553b__20260713T083659749761Z.json",
+      "raw_sha256": "4961b2f4cc44b356c20d4624e9500d39a1068f8cdddb0f7fa1932ea5ea591cf9",
+      "request_identity": "doi:10.1016/s0037-6337(07)70274-7",
+      "retrieved_at_utc": "2026-07-13T08:36:59.749761Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

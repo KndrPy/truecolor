@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bioengineering12121362",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41463659",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bioengineering12121362",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Wen-Shou Lin",
+      "Chia-Ling Chen",
+      "Shih-Wun Liang",
+      "Hsiang-Chen Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Bioengineering",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lin WS",
+      "Chen CL",
+      "Liang SW",
+      "Wang HC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 656,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Wen-Shou Lin",
+      "Chia-Ling Chen",
+      "Shih-Wun Liang",
+      "Hsiang-Chen Wang"
+    ],
+    "doi": "10.3390/bioengineering12121362",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Dementia Detection via Retinal Hyperspectral Imaging and Deep Learning: Clinical Dataset Analysis and Comparative Evaluation of Multiple Architectures",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bioengineering12121362",
+    "venue": "Bioengineering",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0656/crossref_doi__7a33c0f3969be08c__20260713T083621434944Z.json",
+      "raw_sha256": "15bd306deb0b85fc04eb46dac6244e089a6ff271440e1f41eac200f8d454a3b9",
+      "request_identity": "doi:10.3390/bioengineering12121362",
+      "retrieved_at_utc": "2026-07-13T08:36:21.434944Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0656/europe_pmc_pmid__7d876c2dc3030c02__20260713T083622433762Z.json",
+      "raw_sha256": "bfc54ff492fe03e9d8f5cba82cfa3a5c8deb40a0ac5beb6f6363cbbd16c2a6da",
+      "request_identity": "pmid:41463659",
+      "retrieved_at_utc": "2026-07-13T08:36:22.433762Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-026-44334-6",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41839983",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-026-44334-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Chandra Prakash Sharma",
+      "Dimple Bhatia",
+      "Rajinder Singh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sharma CP",
+      "Bhatia D",
+      "Singh R."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 824,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Chandra Prakash Sharma",
+      "Dimple Bhatia",
+      "Rajinder Singh"
+    ],
+    "doi": "10.1038/s41598-026-44334-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Species-level identification and differentiation of deer antlers using ATR-FTIR spectroscopy and chemometrics",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-026-44334-6",
+    "venue": "Scientific Reports",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0824/crossref_doi__c3b33a133820291a__20260713T084039169635Z.json",
+      "raw_sha256": "bc5c5ed72d0f306778c9e4bced33193088c2b054f7b6242bb393f8733adf3243",
+      "request_identity": "doi:10.1038/s41598-026-44334-6",
+      "retrieved_at_utc": "2026-07-13T08:40:39.169635Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0824/europe_pmc_pmid__e80622ab1ec1ed60__20260713T084040115008Z.json",
+      "raw_sha256": "664990d73b2d5cc0cd6f340a2d011b5ffab226f96102fdf7f1bdd3c5310d1afd",
+      "request_identity": "pmid:41839983",
+      "retrieved_at_utc": "2026-07-13T08:40:40.115008Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

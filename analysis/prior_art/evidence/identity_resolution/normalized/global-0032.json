@@ -1,0 +1,77 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2290559",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2290559",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Izumi Nishidate",
+      "Wares M. Abdul",
+      "Mizuki Ohtsu",
+      "Kazuya Nakano",
+      "Hideaki Haneishi"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Optical Diagnostics and Sensing XVIII: Toward Point-of-Care Diagnostics",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [
+      "Izumi Nishidate",
+      "Wares M. Abdul",
+      "Mizuki Ohtsu",
+      "Kazuya Nakano",
+      "Hideaki Haneishi"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Optical Diagnostics and Sensing XVIII: Toward Point-of-Care Diagnostics",
+    "harvested_year": 2018,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 32,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Izumi Nishidate",
+      "Wares M. Abdul",
+      "Mizuki Ohtsu",
+      "Kazuya Nakano",
+      "Hideaki Haneishi"
+    ],
+    "doi": "10.1117/12.2290559",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Simultaneous estimation of transcutaneous bilirubin, hemoglobin, and melanin based on diffuse reflectance spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2290559",
+    "venue": "Optical Diagnostics and Sensing XVIII: Toward Point-of-Care Diagnostics",
+    "year": 2018
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0032/crossref_doi__f803c85abd1532aa__20260713T081513892169Z.json",
+      "raw_sha256": "8bdd1d4342f2b01a360f6ad5835e0e0f9dc025a019e1624a229334c1f1346806",
+      "request_identity": "doi:10.1117/12.2290559",
+      "retrieved_at_utc": "2026-07-13T08:15:13.892169Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

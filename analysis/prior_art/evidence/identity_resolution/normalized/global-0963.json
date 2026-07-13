@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmedt.2025.1648973",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41089884",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmedt.2025.1648973",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Nila N. Sari",
+      "Quoc C. Ngo",
+      "Nemuel D. Pah",
+      "Rajna Ogrin",
+      "Elif Ekinci",
+      "Akram Hourani",
+      "Barbara Polus",
+      "Dinesh K. Kumar"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medical Technology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sari NN",
+      "Ngo QC",
+      "Pah ND",
+      "Ogrin R",
+      "Ekinci E",
+      "Hourani A",
+      "Polus B",
+      "Kumar DK."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 963,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Nila N. Sari",
+      "Quoc C. Ngo",
+      "Nemuel D. Pah",
+      "Rajna Ogrin",
+      "Elif Ekinci",
+      "Akram Hourani",
+      "Barbara Polus",
+      "Dinesh K. Kumar"
+    ],
+    "doi": "10.3389/fmedt.2025.1648973",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Non-invasive imaging techniques for predicting healing status of diabetic foot ulcers: a ten-year systematic review",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmedt.2025.1648973",
+    "venue": "Frontiers in Medical Technology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0963/crossref_doi__78cb32beed250e4b__20260713T084509601834Z.json",
+      "raw_sha256": "e744b3e6a76a3c5e6490b5e6db4f323de6d109425af2d46256329f60978aaa26",
+      "request_identity": "doi:10.3389/fmedt.2025.1648973",
+      "retrieved_at_utc": "2026-07-13T08:45:09.601834Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0963/europe_pmc_pmid__6a153da8dbf38133__20260713T084510590080Z.json",
+      "raw_sha256": "64d52ac14da26af0da4b236a7340f53fba682dfea88eff53b540b76fdf9fed30",
+      "request_identity": "pmid:41089884",
+      "retrieved_at_utc": "2026-07-13T08:45:10.590080Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

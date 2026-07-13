@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.33915/etd.8617",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.33915/etd.8617",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Shi Cheng"
+    ],
+    "canonical_publication_type": "dissertation",
+    "canonical_venue": null,
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shi Cheng"
+    ],
+    "harvested_publication_type": "dissertation",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1241,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shi Cheng"
+    ],
+    "doi": "10.33915/etd.8617",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dissertation",
+    "relation": {},
+    "title": "Coded continuous-phase FSK: Information theoretic limits and receiver design.",
+    "update_to": [],
+    "url": "https://doi.org/10.33915/etd.8617",
+    "venue": null,
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1241/crossref_doi__0ed20d03a663fcdc__20260713T084926774720Z.json",
+      "raw_sha256": "fdbe2c7ba43f6c4ec2fad22e08f6e9141ad01071906347b464235d646804762a",
+      "request_identity": "doi:10.33915/etd.8617",
+      "retrieved_at_utc": "2026-07-13T08:49:26.774720Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

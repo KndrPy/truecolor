@@ -1,0 +1,125 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fimmu.2026.1853327",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42305543",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fimmu.2026.1853327",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kaiqiao He",
+      "Tianle Xu",
+      "Yining Feng",
+      "Yafei Lu",
+      "Xinju Wang",
+      "Linhan Jiang",
+      "Sen Guo",
+      "Yuanmin He",
+      "Wei Dai",
+      "Wei Zhang",
+      "Jianglin Zhang",
+      "Hongbing Lu",
+      "Dong Huang",
+      "Shuli Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Immunology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "He K",
+      "Xu T",
+      "Feng Y",
+      "Lu Y",
+      "Wang X",
+      "Jiang L",
+      "Guo S",
+      "He Y",
+      "Dai W",
+      "Zhang W",
+      "Zhang J",
+      "Lu H",
+      "Huang D",
+      "Li S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 364,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kaiqiao He",
+      "Tianle Xu",
+      "Yining Feng",
+      "Yafei Lu",
+      "Xinju Wang",
+      "Linhan Jiang",
+      "Sen Guo",
+      "Yuanmin He",
+      "Wei Dai",
+      "Wei Zhang",
+      "Jianglin Zhang",
+      "Hongbing Lu",
+      "Dong Huang",
+      "Shuli Li"
+    ],
+    "doi": "10.3389/fimmu.2026.1853327",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A two-stage workflow for vitiligo diagnosis: clinical characteristic classification and large language model (LLM)–based report generation",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fimmu.2026.1853327",
+    "venue": "Frontiers in Immunology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0364/crossref_doi__029dfb0711fcf171__20260713T082953469324Z.json",
+      "raw_sha256": "795ce0f49ee60b889757fca77932f3f9cd5e88e0484f26ab0abc970a2f4adb99",
+      "request_identity": "doi:10.3389/fimmu.2026.1853327",
+      "retrieved_at_utc": "2026-07-13T08:29:53.469324Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0364/europe_pmc_pmid__6a289ff353113eb1__20260713T082954473629Z.json",
+      "raw_sha256": "77ec5553a17c30dfd9b49929ac9791ad42fc9e99dfb34c56891eb518e47f3108",
+      "request_identity": "pmid:42305543",
+      "retrieved_at_utc": "2026-07-13T08:29:54.473629Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

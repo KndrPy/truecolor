@@ -1,0 +1,137 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.31.2.026004",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41769154",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.31.2.026004",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Marco Hübner",
+      "Ahmad Bin Qasim",
+      "Alexander Studier-Fischer",
+      "Maike Rees",
+      "Viet Tran Ba",
+      "Jan-Hinrich Nölke",
+      "Silvia Seidlitz",
+      "Jan Sellner",
+      "Janne Heinecke",
+      "Jule Brandt",
+      "Berkin Özdemir",
+      "Kris Dreher",
+      "Alexander Seitel",
+      "Felix Nickel",
+      "Caelan Max Haney",
+      "Karl-Friedrich Kowalewski",
+      "Leonardo Ayala",
+      "Lena Maier-Hein"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hübner M",
+      "Bin Qasim A",
+      "Studier-Fischer A",
+      "Rees M",
+      "Tran Ba V",
+      "Nölke JH",
+      "Seidlitz S",
+      "Sellner J",
+      "Heinecke J",
+      "Brandt J",
+      "Özdemir B",
+      "Dreher K",
+      "Seitel A",
+      "Nickel F",
+      "Max Haney C",
+      "Kowalewski KF",
+      "Ayala L",
+      "Maier-Hein L."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 261,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Marco Hübner",
+      "Ahmad Bin Qasim",
+      "Alexander Studier-Fischer",
+      "Maike Rees",
+      "Viet Tran Ba",
+      "Jan-Hinrich Nölke",
+      "Silvia Seidlitz",
+      "Jan Sellner",
+      "Janne Heinecke",
+      "Jule Brandt",
+      "Berkin Özdemir",
+      "Kris Dreher",
+      "Alexander Seitel",
+      "Felix Nickel",
+      "Caelan Max Haney",
+      "Karl-Friedrich Kowalewski",
+      "Leonardo Ayala",
+      "Lena Maier-Hein"
+    ],
+    "doi": "10.1117/1.jbo.31.2.026004",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Learning to simulate realistic human diffuse reflectance spectra",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.31.2.026004",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0261/crossref_doi__4f1c31569fee8dea__20260713T082733302121Z.json",
+      "raw_sha256": "f6bf7f068e361ed58c89bc322239b3408511c910f707d2b18742fa801a3a6a01",
+      "request_identity": "doi:10.1117/1.jbo.31.2.026004",
+      "retrieved_at_utc": "2026-07-13T08:27:33.302121Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0261/europe_pmc_pmid__0534165b83943919__20260713T082734461011Z.json",
+      "raw_sha256": "111984d6934e94e963150de248d4d48c221caac777fa9e8fae19c52472bdfe91",
+      "request_identity": "pmid:41769154",
+      "retrieved_at_utc": "2026-07-13T08:27:34.461011Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

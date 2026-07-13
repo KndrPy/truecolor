@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "pulse oximetry a perioperative perspective",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:pulse oximetry—a perioperative perspective|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Kellie Moon",
+      "Naema Daino",
+      "Paula Gomez",
+      "Juan Arias",
+      "Ammar Toubasi",
+      "Sri Varsha Pulijal"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Moon K",
+      "Daino N",
+      "Gomez P",
+      "Arias J",
+      "Toubasi A",
+      "Pulijal S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1268,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kellie Moon",
+      "Naema Daino",
+      "Paula Gomez",
+      "Juan Arias",
+      "Ammar Toubasi",
+      "Sri Varsha Pulijal"
+    ],
+    "doi": "10.3390/diagnostics16121812",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Pulse Oximetry—A Perioperative Perspective",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics16121812",
+    "venue": "Diagnostics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1268/crossref_title__5f9e8831164f9571__20260713T084949598927Z.json",
+      "raw_sha256": "7f661fd21890a52106c33e7e5329695af5ccacd977a8a35d474868eacd296e26",
+      "request_identity": "title:pulse oximetry a perioperative perspective|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:49.598927Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

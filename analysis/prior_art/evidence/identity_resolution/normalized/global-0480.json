@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.52783/jchr.v16.i3.13798",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.52783/jchr.v16.i3.13798",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Chemical Health Risks",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Chemical Health Risks",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 480,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.52783/jchr.v16.i3.13798",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Impact of Skin Tone on Pulse Oximetry Performance and Its Agreement with Arterial Oxygen Saturation in Hospitalized Indian Children",
+    "update_to": [],
+    "url": "https://doi.org/10.52783/jchr.v16.i3.13798",
+    "venue": "Journal of Chemical Health Risks",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0480/crossref_doi__d38185ef6c97a941__20260713T083221062262Z.json",
+      "raw_sha256": "5185d56df96f46412b02b9856d21f63b53c9dfb7cce3f2f9fd38b6f03325631d",
+      "request_identity": "doi:10.52783/jchr.v16.i3.13798",
+      "retrieved_at_utc": "2026-07-13T08:32:21.062262Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

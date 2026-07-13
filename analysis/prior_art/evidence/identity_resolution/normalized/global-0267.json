@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1037/t59351-000",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1037/t59351-000",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "A. Y. Finlay",
+      "G. K. Khan"
+    ],
+    "canonical_publication_type": "dataset",
+    "canonical_venue": "PsycTESTS Dataset",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [
+      "A. Y. Finlay",
+      "G. K. Khan"
+    ],
+    "harvested_publication_type": "dataset",
+    "harvested_venue": "PsycTESTS Dataset",
+    "harvested_year": 2018,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 267,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "A. Y. Finlay",
+      "G. K. Khan"
+    ],
+    "doi": "10.1037/t59351-000",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dataset",
+    "relation": {},
+    "title": "Dermatology Life Quality Index",
+    "update_to": [],
+    "url": "https://doi.org/10.1037/t59351-000",
+    "venue": "PsycTESTS Dataset",
+    "year": 2018
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "The DOI resolves to a dataset record rather than a scholarly publication.",
+  "resolution_state": "NON_SCHOLARLY",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0267/crossref_doi__913cca57a138d7c1__20260713T082746246768Z.json",
+      "raw_sha256": "1b516cd3aef2f0d02e171dcc9351a12650fd254055a06d4bd57f65069438c79f",
+      "request_identity": "doi:10.1037/t59351-000",
+      "retrieved_at_utc": "2026-07-13T08:27:46.246768Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

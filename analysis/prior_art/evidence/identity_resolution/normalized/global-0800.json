@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s13555-026-01651-y",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41557111",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s13555-026-01651-y",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Minghui Li",
+      "Yang Song",
+      "Junfeng Zhou"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Dermatology and Therapy",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Li M",
+      "Song Y",
+      "Zhou J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 800,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Minghui Li",
+      "Yang Song",
+      "Junfeng Zhou"
+    ],
+    "doi": "10.1007/s13555-026-01651-y",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The Diagnosis and Treatment Technology of Port-Wine Stain, and the Prospect of Future Treatment",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s13555-026-01651-y",
+    "venue": "Dermatology and Therapy",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0800/crossref_doi__34b6cbfc7fcb9e8e__20260713T083953457554Z.json",
+      "raw_sha256": "9e636fd921422bfbd12100dfd94592610bbdf1554aa5d6c3cd8b78cd180cf6ed",
+      "request_identity": "doi:10.1007/s13555-026-01651-y",
+      "retrieved_at_utc": "2026-07-13T08:39:53.457554Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0800/europe_pmc_pmid__2b082ab2478026bd__20260713T083954411487Z.json",
+      "raw_sha256": "070bee7f3ca263eddc28f3310802bccf983b5bcd97031a3ad06b3312bc17b048",
+      "request_identity": "pmid:41557111",
+      "retrieved_at_utc": "2026-07-13T08:39:54.411487Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

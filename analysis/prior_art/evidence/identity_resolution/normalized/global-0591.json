@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1146/annurev-bioeng-061008-124811",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "20617940",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1146/annurev-bioeng-061008-124811",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Nada N. Boustany",
+      "Stephen A. Boppart",
+      "Vadim Backman"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Annual Review of Biomedical Engineering",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "Boustany NN",
+      "Boppart SA",
+      "Backman V."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 591,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Nada N. Boustany",
+      "Stephen A. Boppart",
+      "Vadim Backman"
+    ],
+    "doi": "10.1146/annurev-bioeng-061008-124811",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Microscopic Imaging and Spectroscopy with Scattered Light",
+    "update_to": [],
+    "url": "https://doi.org/10.1146/annurev-bioeng-061008-124811",
+    "venue": "Annual Review of Biomedical Engineering",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0591/crossref_doi__fb01f1283403bc57__20260713T083439389483Z.json",
+      "raw_sha256": "bdf08d04539ce9abde17e6bb3cff735f6805fe9566c573c74b6f947b7c847ea8",
+      "request_identity": "doi:10.1146/annurev-bioeng-061008-124811",
+      "retrieved_at_utc": "2026-07-13T08:34:39.389483Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0591/europe_pmc_pmid__e1676fb5ecc938bc__20260713T083440379282Z.json",
+      "raw_sha256": "9bdc2eaaa7b5335d4d47402e11574249e478fcf12983f592962b75343c390f64",
+      "request_identity": "pmid:20617940",
+      "retrieved_at_utc": "2026-07-13T08:34:40.379282Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

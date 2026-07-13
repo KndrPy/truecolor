@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1070/qe2014v044n01abeh015233",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1070/qe2014v044n01abeh015233",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "S A Lisenko",
+      "M M Kugeiko",
+      "V A Firago",
+      "A N Sobchuk"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Quantum Electronics",
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [
+      "S A Lisenko",
+      "M M Kugeiko",
+      "V A Firago",
+      "A N Sobchuk"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Quantum Electronics",
+    "harvested_year": 2014,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 184,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "S A Lisenko",
+      "M M Kugeiko",
+      "V A Firago",
+      "A N Sobchuk"
+    ],
+    "doi": "10.1070/qe2014v044n01abeh015233",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Analytical model of diffuse reflectance spectrum of skin tissue",
+    "update_to": [],
+    "url": "https://doi.org/10.1070/qe2014v044n01abeh015233",
+    "venue": "Quantum Electronics",
+    "year": 2014
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0184/crossref_doi__366e95871aa0bc62__20260713T082613049563Z.json",
+      "raw_sha256": "ac151c430077e0e07bf5301184f109cb892215aad41198616aa3b18179f9efed",
+      "request_identity": "doi:10.1070/qe2014v044n01abeh015233",
+      "retrieved_at_utc": "2026-07-13T08:26:13.049563Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.ohx.2026.e00787",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42181762",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.ohx.2026.e00787",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Michal Labuda",
+      "Ivan Kuchta",
+      "Veronika Wohlmuthova",
+      "Jan Seleng"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "HardwareX",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Labuda M",
+      "Kuchta I",
+      "Wohlmuthova V",
+      "Seleng J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 804,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Michal Labuda",
+      "Ivan Kuchta",
+      "Veronika Wohlmuthova",
+      "Jan Seleng"
+    ],
+    "doi": "10.1016/j.ohx.2026.e00787",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A low-cost three-wavelength illumination system for camera-based photoplethysmography imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.ohx.2026.e00787",
+    "venue": "HardwareX",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0804/crossref_doi__0b443b097c2fab29__20260713T084000213305Z.json",
+      "raw_sha256": "e8e1ec2825d217a435444870fdb6ee526d14f696c54bf7e7c8d969ebccaeaa68",
+      "request_identity": "doi:10.1016/j.ohx.2026.e00787",
+      "retrieved_at_utc": "2026-07-13T08:40:00.213305Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0804/europe_pmc_pmid__e9590b1d2dfc99fa__20260713T084001192268Z.json",
+      "raw_sha256": "cd78a5af41f18325188c0aa0cfc1741be2d3cd203e998f612547970cce5275e9",
+      "request_identity": "pmid:42181762",
+      "retrieved_at_utc": "2026-07-13T08:40:01.192268Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

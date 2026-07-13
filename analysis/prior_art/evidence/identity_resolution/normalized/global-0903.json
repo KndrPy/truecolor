@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/foods15030475",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41683063",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/foods15030475",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Chenxue Su",
+      "Jia Che",
+      "Zehao Wu",
+      "Kai Li",
+      "Xiangyu Sun",
+      "Yulin Fang",
+      "Wenzheng Liu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Foods",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Su C",
+      "Che J",
+      "Wu Z",
+      "Li K",
+      "Sun X",
+      "Fang Y",
+      "Liu W."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 0.954545,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 903,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Chenxue Su",
+      "Jia Che",
+      "Zehao Wu",
+      "Kai Li",
+      "Xiangyu Sun",
+      "Yulin Fang",
+      "Wenzheng Liu"
+    ],
+    "doi": "10.3390/foods15030475",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Development of a Dynamic Multi-Parameter Prediction Model for the Maturation Process of ‘Ugni Blanc’ Grapes Using Visible and Near-Infrared Spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/foods15030475",
+    "venue": "Foods",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0903/crossref_doi__0a040fea8ce90d69__20260713T084315947127Z.json",
+      "raw_sha256": "eac4805239d00e1f7ae268cc49abe3f5a04b6e9baca57a59fac151530c0c60a3",
+      "request_identity": "doi:10.3390/foods15030475",
+      "retrieved_at_utc": "2026-07-13T08:43:15.947127Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0903/europe_pmc_pmid__e5f43652f6ef5b25__20260713T084317065572Z.json",
+      "raw_sha256": "556bd9f20e69633dccdb29923b2f5f715fbdcf90bccefceb41f1e0b8166ce41d",
+      "request_identity": "pmid:41683063",
+      "retrieved_at_utc": "2026-07-13T08:43:17.065572Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.70675/e541d247z613az47dcz960az564bda672628",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.70675/e541d247z613az47dcz960az564bda672628",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Cécile Bouette"
+    ],
+    "canonical_publication_type": "dissertation",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Cécile Bouette"
+    ],
+    "harvested_publication_type": "dissertation",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1218,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Cécile Bouette"
+    ],
+    "doi": "10.70675/e541d247z613az47dcz960az564bda672628",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dissertation",
+    "relation": {},
+    "title": "Information-theoretic limits of covert communication over additive-noise channels",
+    "update_to": [],
+    "url": "https://doi.org/10.70675/e541d247z613az47dcz960az564bda672628",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1218/crossref_doi__a2c0f5e1820aa8d5__20260713T084910565387Z.json",
+      "raw_sha256": "a5fd4046a96517441e678e6f3a75c3daa84c0067333fdaf9037ac51978087d7e",
+      "request_identity": "doi:10.70675/e541d247z613az47dcz960az564bda672628",
+      "retrieved_at_utc": "2026-07-13T08:49:10.565387Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

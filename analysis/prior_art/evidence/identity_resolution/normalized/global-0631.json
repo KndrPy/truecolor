@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1186/s42492-025-00213-x",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41620547",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1186/s42492-025-00213-x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Lei Wang",
+      "Weiming Zeng",
+      "Kai Long",
+      "Hongyu Chen",
+      "Rongfeng Lan",
+      "Li Liu",
+      "Wai Ting Siok",
+      "Nizhuan Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Visual Computing for Industry, Biomedicine, and Art",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Wang L",
+      "Zeng W",
+      "Long K",
+      "Chen H",
+      "Lan R",
+      "Liu L",
+      "Siok WT",
+      "Wang N."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 631,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Lei Wang",
+      "Weiming Zeng",
+      "Kai Long",
+      "Hongyu Chen",
+      "Rongfeng Lan",
+      "Li Liu",
+      "Wai Ting Siok",
+      "Nizhuan Wang"
+    ],
+    "doi": "10.1186/s42492-025-00213-x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advances in photoacoustic imaging reconstruction and quantitative analysis for biomedical applications",
+    "update_to": [],
+    "url": "https://doi.org/10.1186/s42492-025-00213-x",
+    "venue": "Visual Computing for Industry, Biomedicine, and Art",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0631/crossref_doi__29056ad6ec36db01__20260713T083529668932Z.json",
+      "raw_sha256": "c15b573503512e4701578d31a4190838a3b4d0822a4aaf1c459a1a4a144a7077",
+      "request_identity": "doi:10.1186/s42492-025-00213-x",
+      "retrieved_at_utc": "2026-07-13T08:35:29.668932Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0631/europe_pmc_pmid__7d02e0abc6af16ca__20260713T083531110044Z.json",
+      "raw_sha256": "85e41432d7a06322a87b02f62ad8714178f91f92415b0c74a95281261ae4e232",
+      "request_identity": "pmid:41620547",
+      "retrieved_at_utc": "2026-07-13T08:35:31.110044Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

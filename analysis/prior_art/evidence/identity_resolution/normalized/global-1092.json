@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1190/1.2793048",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1190/1.2793048",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Shouwei Liu",
+      "Huazhong Wang"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SEG Technical Program Expanded Abstracts 2007",
+    "canonical_year": 2007,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shouwei Liu",
+      "Huazhong Wang"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SEG Technical Program Expanded Abstracts 2007",
+    "harvested_year": 2007,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1092,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shouwei Liu",
+      "Huazhong Wang"
+    ],
+    "doi": "10.1190/1.2793048",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Time‐shift angle‐domain common‐image gathers for migration velocity analysis",
+    "update_to": [],
+    "url": "https://doi.org/10.1190/1.2793048",
+    "venue": "SEG Technical Program Expanded Abstracts 2007",
+    "year": 2007
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1092/crossref_doi__1bf5e5b912106027__20260713T084734188830Z.json",
+      "raw_sha256": "316b20f8b3dbb05ae54568a287a4bafaeade0d8866138d7cb1cd8571a9c5026e",
+      "request_identity": "doi:10.1190/1.2793048",
+      "retrieved_at_utc": "2026-07-13T08:47:34.188830Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,96 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/jocd.70900",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42144286",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/jocd.70900",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ömer Karakoyun",
+      "Kadir Kaya",
+      "Ayşegül Tel Kankılıç",
+      "Nur Ecer"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Cosmetic Dermatology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Karakoyun Ö",
+      "Kaya K",
+      "Kankılıç AT",
+      "Ecer N",
+      "Ecer N."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 839,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ömer Karakoyun",
+      "Kadir Kaya",
+      "Ayşegül Tel Kankılıç",
+      "Nur Ecer"
+    ],
+    "doi": "10.1111/jocd.70900",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial Intelligence‐Augmented Morphometric Reporting for Standardized Facial Aesthetic Treatment Planning: A Multi‐Rater Reliability Study",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/jocd.70900",
+    "venue": "Journal of Cosmetic Dermatology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0839/crossref_doi__d455142716c472d7__20260713T084110594463Z.json",
+      "raw_sha256": "f639eb048756f65d6519e499d31a9dbfe06107efb78d760a6a7e33d1878eae64",
+      "request_identity": "doi:10.1111/jocd.70900",
+      "retrieved_at_utc": "2026-07-13T08:41:10.594463Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0839/europe_pmc_pmid__8549958e76ba6899__20260713T084111629693Z.json",
+      "raw_sha256": "91f0305e6a3bf77c7aba617ae87def685c7a1c4d320d10dcd1c1171ea87adccc",
+      "request_identity": "pmid:42144286",
+      "retrieved_at_utc": "2026-07-13T08:41:11.629693Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

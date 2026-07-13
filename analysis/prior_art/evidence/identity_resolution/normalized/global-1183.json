@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.36227/techrxiv.176834656.66652387/v2",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.36227/techrxiv.176834656.66652387/v2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Andrew Michael Brilliant"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Andrew Michael Brilliant"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1183,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Andrew Michael Brilliant"
+    ],
+    "doi": "10.36227/techrxiv.176834656.66652387/v2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "Limits of Self-Correction in LLMs: An Information-Theoretic Analysis of Correlated Errors",
+    "update_to": [],
+    "url": "https://doi.org/10.36227/techrxiv.176834656.66652387/v2",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [
+    "doi:10.36227/techrxiv.176834656.66652387/v1"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1183/crossref_doi__a9582dbaba933acd__20260713T084843416288Z.json",
+      "raw_sha256": "55ce161a8faa60903383ee4c1e0a6a5423f7d83453a8bbfa8cd9562947bc2722",
+      "request_identity": "doi:10.36227/techrxiv.176834656.66652387/v2",
+      "retrieved_at_utc": "2026-07-13T08:48:43.416288Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

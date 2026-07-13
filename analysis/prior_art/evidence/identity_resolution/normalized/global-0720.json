@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s25082467",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40285157",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s25082467",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ghada Salem Sasi",
+      "Adrien Alexis Paul Chauvet"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sasi GS",
+      "Chauvet AAP."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 720,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ghada Salem Sasi",
+      "Adrien Alexis Paul Chauvet"
+    ],
+    "doi": "10.3390/s25082467",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Using Optical Coherence Tomography in Plant Biology Research: Review and Prospects",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s25082467",
+    "venue": "Sensors",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0720/crossref_doi__1351921795e02311__20260713T083731746198Z.json",
+      "raw_sha256": "8128712087edd487377d799d4a92179cb84ca566b74bb976ab32e1083424de70",
+      "request_identity": "doi:10.3390/s25082467",
+      "retrieved_at_utc": "2026-07-13T08:37:31.746198Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0720/europe_pmc_pmid__94b7267addd36eb6__20260713T083732873182Z.json",
+      "raw_sha256": "1a591e9ac98d6990f9ca74285fac0428bdfc774d2c60d88e2bbfc341a556bac1",
+      "request_identity": "pmid:40285157",
+      "retrieved_at_utc": "2026-07-13T08:37:32.873182Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

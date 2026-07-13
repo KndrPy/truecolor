@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/wacvw60836.2024.00067",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/wacvw60836.2024.00067",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Pratinav Seth",
+      "Abhilash K. Pai"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2024 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Pratinav Seth",
+      "Abhilash K. Pai"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2024 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 48,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Pratinav Seth",
+      "Abhilash K. Pai"
+    ],
+    "doi": "10.1109/wacvw60836.2024.00067",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/wacvw60836.2024.00067",
+    "venue": "2024 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0048/crossref_doi__3043caf9e757ba1d__20260713T081530133612Z.json",
+      "raw_sha256": "eff2d91892bdb813a1d0d459d5e6b5d8790222d717aea7c757c4b3be3e4f3c2a",
+      "request_identity": "doi:10.1109/wacvw60836.2024.00067",
+      "retrieved_at_utc": "2026-07-13T08:15:30.133612Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "the 15th asia pacific conferenceon vision apcv 2019",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:the 15th asia-pacific conferenceon vision (apcv), 2019|year:2019",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "i-Perception",
+    "canonical_year": 2019,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2019,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1285,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1177/2041669519877985",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The 15th Asia-Pacific Conferenceon Vision (APCV), 2019",
+    "update_to": [],
+    "url": "https://doi.org/10.1177/2041669519877985",
+    "venue": "i-Perception",
+    "year": 2019
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1285/crossref_title__47b7497b7306a9b3__20260713T085008567604Z.json",
+      "raw_sha256": "6f612b5d21d1902d392c812415847c6e5db862cb3e8ede220f9b572cb43ad552",
+      "request_identity": "title:the 15th asia pacific conferenceon vision apcv 2019|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:50:08.567604Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

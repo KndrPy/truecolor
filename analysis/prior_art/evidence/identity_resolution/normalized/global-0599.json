@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fendo.2024.1379130",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38988999",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fendo.2024.1379130",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yunfan Gu",
+      "Xinglan Ye",
+      "Wenting Zhao",
+      "Shiwei He",
+      "Weiming Zhang",
+      "Xianyu Zeng"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Endocrinology",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gu Y",
+      "Ye X",
+      "Zhao W",
+      "He S",
+      "Zhang W",
+      "Zeng X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 599,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yunfan Gu",
+      "Xinglan Ye",
+      "Wenting Zhao",
+      "Shiwei He",
+      "Weiming Zhang",
+      "Xianyu Zeng"
+    ],
+    "doi": "10.3389/fendo.2024.1379130",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The circadian syndrome is a better predictor for psoriasis than the metabolic syndrome via an explainable machine learning method — the NHANES survey during 2005–2006 and 2009–2014",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fendo.2024.1379130",
+    "venue": "Frontiers in Endocrinology",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0599/crossref_doi__3b9838706bfa875e__20260713T083451956376Z.json",
+      "raw_sha256": "6149c9d96fc0fbd234f5f02766a9c85d7febccbdea2b1538c363132221fe0724",
+      "request_identity": "doi:10.3389/fendo.2024.1379130",
+      "retrieved_at_utc": "2026-07-13T08:34:51.956376Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0599/europe_pmc_pmid__bc5950599724c954__20260713T083453069318Z.json",
+      "raw_sha256": "fe756ec9e323b98e80064c1062f080b3b76476b613636652005352cffd961f3c",
+      "request_identity": "pmid:38988999",
+      "retrieved_at_utc": "2026-07-13T08:34:53.069318Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

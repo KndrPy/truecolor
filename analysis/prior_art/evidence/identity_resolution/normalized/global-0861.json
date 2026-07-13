@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pone.0340777",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41557752",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pone.0340777",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Thi Lan Nhi Vu",
+      "Vimal Chandran",
+      "Christina Haberl",
+      "Otmar Scherzer",
+      "Julia Binder"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS One",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Vu TLN",
+      "Chandran V",
+      "Haberl C",
+      "Scherzer O",
+      "Binder J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 861,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Thi Lan Nhi Vu",
+      "Vimal Chandran",
+      "Christina Haberl",
+      "Otmar Scherzer",
+      "Julia Binder"
+    ],
+    "doi": "10.1371/journal.pone.0340777",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multi-resolution tone mapping for high dynamic range medical ultrasound images",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pone.0340777",
+    "venue": "PLOS One",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0861/crossref_doi__b4da1e70dfa2bc70__20260713T084154078861Z.json",
+      "raw_sha256": "31473d82b2549cca033b4eb3cef24399dd50446e7a4b82d6e3f6ed982feb557f",
+      "request_identity": "doi:10.1371/journal.pone.0340777",
+      "retrieved_at_utc": "2026-07-13T08:41:54.078861Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0861/europe_pmc_pmid__8a7c83f769b2f9db__20260713T084155145753Z.json",
+      "raw_sha256": "68d79a0d8111230c8809aa169c50c81ec567739591cc1f02fb92f11397665798",
+      "request_identity": "pmid:41557752",
+      "retrieved_at_utc": "2026-07-13T08:41:55.145753Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

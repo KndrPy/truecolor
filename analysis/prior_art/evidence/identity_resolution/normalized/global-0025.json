@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2648157",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2648157",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Yu Shimojo",
+      "Takahiro Nishimura",
+      "Kunio Awazu"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Optical Interactions with Tissue and Cells XXXIV",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yu Shimojo",
+      "Takahiro Nishimura",
+      "Kunio Awazu"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Optical Interactions with Tissue and Cells XXXIV",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 25,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yu Shimojo",
+      "Takahiro Nishimura",
+      "Kunio Awazu"
+    ],
+    "doi": "10.1117/12.2648157",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Quantitative evaluation of light distribution in skin tissue for short-pulsed laser treatment using Monte Carlo simulation combined with nonlinear absorption model of melanin",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2648157",
+    "venue": "Optical Interactions with Tissue and Cells XXXIV",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0025/crossref_doi__19210272bf07a416__20260713T081508265444Z.json",
+      "raw_sha256": "7b718bd95216354ac3ab9537ebe256a5782609e938a219b011f9e7342135c417",
+      "request_identity": "doi:10.1117/12.2648157",
+      "retrieved_at_utc": "2026-07-13T08:15:08.265444Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

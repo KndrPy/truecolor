@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1108/sr-02-2012-618",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1108/sr-02-2012-618",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Mahshid Montazeri",
+      "Ali Shams Nateri",
+      "Keivan Ansari"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensor Review",
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mahshid Montazeri",
+      "Ali Shams Nateri",
+      "Keivan Ansari"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Sensor Review",
+    "harvested_year": 2014,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 432,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mahshid Montazeri",
+      "Ali Shams Nateri",
+      "Keivan Ansari"
+    ],
+    "doi": "10.1108/sr-02-2012-618",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Recovering spectral data of metallic paints at various observation angles by digital camera",
+    "update_to": [],
+    "url": "https://doi.org/10.1108/sr-02-2012-618",
+    "venue": "Sensor Review",
+    "year": 2014
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0432/crossref_doi__705b0a3ab37dce27__20260713T083128959255Z.json",
+      "raw_sha256": "d60f339f3bdd933ec65f4bd47bb72ac6d0e4982fe695e0bcac5f11d281266282",
+      "request_identity": "doi:10.1108/sr-02-2012-618",
+      "retrieved_at_utc": "2026-07-13T08:31:28.959255Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

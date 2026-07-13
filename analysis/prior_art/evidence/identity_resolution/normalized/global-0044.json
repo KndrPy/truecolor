@@ -1,0 +1,83 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.29.2.026003",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.29.2.026003",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Md. Anowar Parvez",
+      "Kazuhiro Yashiro",
+      "Yuki Nagahama",
+      "Yasuyuki Tsunoi",
+      "Daizoh Saitoh",
+      "Shunichi Sato",
+      "Izumi Nishidate"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Md. Anowar Parvez",
+      "Kazuhiro Yashiro",
+      "Yuki Nagahama",
+      "Yasuyuki Tsunoi",
+      "Daizoh Saitoh",
+      "Shunichi Sato",
+      "Izumi Nishidate"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Biomedical Optics",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 44,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Md. Anowar Parvez",
+      "Kazuhiro Yashiro",
+      "Yuki Nagahama",
+      "Yasuyuki Tsunoi",
+      "Daizoh Saitoh",
+      "Shunichi Sato",
+      "Izumi Nishidate"
+    ],
+    "doi": "10.1117/1.jbo.29.2.026003",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "In vivo visualization of burn depth in skin tissue of rats using hemoglobin parameters estimated by diffuse reflectance spectral imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.29.2.026003",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0044/crossref_doi__9360d06b5383870f__20260713T081527628853Z.json",
+      "raw_sha256": "74bed437e994c63aace9ea31a91ecefedf24dffb6a39c25197c397e1e8b3ed8e",
+      "request_identity": "doi:10.1117/1.jbo.29.2.026003",
+      "retrieved_at_utc": "2026-07-13T08:15:27.628853Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

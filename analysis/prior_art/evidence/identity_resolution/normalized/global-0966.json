@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fpubh.2025.1667502",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41368675",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fpubh.2025.1667502",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yuxi Weng",
+      "Qimei Chen",
+      "Xiabin Lin",
+      "Yuxuan Chi",
+      "Kai Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Public Health",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Weng Y",
+      "Chen Q",
+      "Lin X",
+      "Chi Y",
+      "Li K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 966,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yuxi Weng",
+      "Qimei Chen",
+      "Xiabin Lin",
+      "Yuxuan Chi",
+      "Kai Li"
+    ],
+    "doi": "10.3389/fpubh.2025.1667502",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Restorative effects of small urban parks: a multi-method study using eye-tracking and psychophysiological measures in Fuzhou, China",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fpubh.2025.1667502",
+    "venue": "Frontiers in Public Health",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0966/crossref_doi__2e98004a69490098__20260713T084514836540Z.json",
+      "raw_sha256": "b343f000ed589de0f2c5139e9e624b1b537a0a7ba9be3f4f563d81da64a89787",
+      "request_identity": "doi:10.3389/fpubh.2025.1667502",
+      "retrieved_at_utc": "2026-07-13T08:45:14.836540Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0966/europe_pmc_pmid__2f73772587f093f2__20260713T084515801288Z.json",
+      "raw_sha256": "2389a7249c558649e745d7b2a51346e0b8dfb6ecb13e52bb6ce913be06d81802",
+      "request_identity": "pmid:41368675",
+      "retrieved_at_utc": "2026-07-13T08:45:15.801288Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

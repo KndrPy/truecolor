@@ -1,0 +1,116 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.fochx.2026.103773",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42006649",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.fochx.2026.103773",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Shuai Che",
+      "Ang Li",
+      "Huan Wang",
+      "Changting An",
+      "Xiang Fang",
+      "Qing Wang",
+      "Qiyou Tao",
+      "Yun Li",
+      "Changlin Liu",
+      "Shufang Liu",
+      "Zhimeng Zhuang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Food Chemistry: X",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Che S",
+      "Li A",
+      "Wang H",
+      "An C",
+      "Fang X",
+      "Wang Q",
+      "Tao Q",
+      "Li Y",
+      "Liu C",
+      "Liu S",
+      "Zhuang Z."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 0.944444,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 352,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shuai Che",
+      "Ang Li",
+      "Huan Wang",
+      "Changting An",
+      "Xiang Fang",
+      "Qing Wang",
+      "Qiyou Tao",
+      "Yun Li",
+      "Changlin Liu",
+      "Shufang Liu",
+      "Zhimeng Zhuang"
+    ],
+    "doi": "10.1016/j.fochx.2026.103773",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Quantitative analysis and visualization of live spotted seabass (Lateolabrax maculatus) flesh texture using hyperspectral imaging and machine learning",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.fochx.2026.103773",
+    "venue": "Food Chemistry: X",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0352/crossref_doi__d00c82be50a595a4__20260713T082935275065Z.json",
+      "raw_sha256": "092b4dbd0953483e5b43b7807f1f46c5f94cd4be9a0b6d86224fe168742d1708",
+      "request_identity": "doi:10.1016/j.fochx.2026.103773",
+      "retrieved_at_utc": "2026-07-13T08:29:35.275065Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0352/europe_pmc_pmid__05c7413d9fb67ae1__20260713T082936288676Z.json",
+      "raw_sha256": "6951cb4427aa1a93ed048569ba0740d39215357bf4012cc47669982c65c4fbf8",
+      "request_identity": "pmid:42006649",
+      "retrieved_at_utc": "2026-07-13T08:29:36.288676Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

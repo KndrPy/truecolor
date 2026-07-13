@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.heliyon.2024.e39816",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39553684",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.heliyon.2024.e39816",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Tadej Tomanic",
+      "Jost Stergar",
+      "Tim Bozic",
+      "Bostjan Markelc",
+      "Simona Kranjc Brezar",
+      "Gregor Sersa",
+      "Matija Milanic"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Heliyon",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Tomanic T",
+      "Stergar J",
+      "Bozic T",
+      "Markelc B",
+      "Kranjc Brezar S",
+      "Sersa G",
+      "Milanic M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 987,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tadej Tomanic",
+      "Jost Stergar",
+      "Tim Bozic",
+      "Bostjan Markelc",
+      "Simona Kranjc Brezar",
+      "Gregor Sersa",
+      "Matija Milanic"
+    ],
+    "doi": "10.1016/j.heliyon.2024.e39816",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Towards reliable hyperspectral imaging biomarkers of CT26 murine tumor model",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.heliyon.2024.e39816",
+    "venue": "Heliyon",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0987/crossref_doi__0a7b68a356e29deb__20260713T084555209404Z.json",
+      "raw_sha256": "81ac796abf5c8464d4183a34bf3573cb6ca59d2760688ee462ac06db9b8d31be",
+      "request_identity": "doi:10.1016/j.heliyon.2024.e39816",
+      "retrieved_at_utc": "2026-07-13T08:45:55.209404Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0987/europe_pmc_pmid__2bbb20dcf4f8aae0__20260713T084556345722Z.json",
+      "raw_sha256": "3870293470c838b2443958eb7e9b4db0ece16eb226a9429734d6885c6b9f2e85",
+      "request_identity": "pmid:39553684",
+      "retrieved_at_utc": "2026-07-13T08:45:56.345722Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

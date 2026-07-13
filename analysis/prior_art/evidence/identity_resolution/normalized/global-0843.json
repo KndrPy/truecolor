@@ -1,0 +1,170 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.bios.3.1.012509",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42028045",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.bios.3.1.012509",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Rutendo Jakachira",
+          "Wenyuan Yan",
+          "Sian C. Thomas",
+          "Yareli Macias-Sanchez",
+          "Lovisa Werner",
+          "Joshua A. Burrow",
+          "Shira Dunsiger",
+          "Kimani C. Toussaint"
+        ],
+        "doi": "10.1117/1.bios.3.1.012509",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Evaluation of a polarization-sensitive, dual-wavelength wearable photoplethysmography sensor across a range of skin tones",
+        "update_to": [],
+        "url": "https://doi.org/10.1117/1.bios.3.1.012509",
+        "venue": "Biophotonics Discovery",
+        "year": 2025
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Rutendo Jakachira",
+          "Wenyuan Yan",
+          "Sian C Thomas",
+          "Yareli Macias-Sanchez",
+          "Lovisa Werner",
+          "Joshua A Burrow",
+          "Shira Dunsiger",
+          "Kimani C Toussaint"
+        ],
+        "doi": "10.1117/1.bios.3.1.012509",
+        "is_retracted": false,
+        "pmcid": "PMC13052480",
+        "pmid": "42028045",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Evaluation of a polarization-sensitive, dual-wavelength wearable photoplethysmography sensor across a range of skin tones.",
+        "url": "https://europepmc.org/article/MED/42028045",
+        "venue": null,
+        "year": 2026
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2025,
+      "field": "year",
+      "harvested": 2026
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Rutendo Jakachira",
+      "Wenyuan Yan",
+      "Sian C. Thomas",
+      "Yareli Macias-Sanchez",
+      "Lovisa Werner",
+      "Joshua A. Burrow",
+      "Shira Dunsiger",
+      "Kimani C. Toussaint"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biophotonics Discovery",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jakachira R",
+      "Yan W",
+      "Thomas SC",
+      "Macias-Sanchez Y",
+      "Werner L",
+      "Burrow JA",
+      "Dunsiger S",
+      "Toussaint KC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 843,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rutendo Jakachira",
+      "Wenyuan Yan",
+      "Sian C. Thomas",
+      "Yareli Macias-Sanchez",
+      "Lovisa Werner",
+      "Joshua A. Burrow",
+      "Shira Dunsiger",
+      "Kimani C. Toussaint"
+    ],
+    "doi": "10.1117/1.bios.3.1.012509",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluation of a polarization-sensitive, dual-wavelength wearable photoplethysmography sensor across a range of skin tones",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.bios.3.1.012509",
+    "venue": "Biophotonics Discovery",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0843/crossref_doi__7eb0c18199055c9b__20260713T084118268166Z.json",
+      "raw_sha256": "631d057c6e6c9c6357de0f70901d8f1739f26fa2527213ae5124ce2dc31a1d85",
+      "request_identity": "doi:10.1117/1.bios.3.1.012509",
+      "retrieved_at_utc": "2026-07-13T08:41:18.268166Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0843/europe_pmc_pmid__0f59dff4baee08a6__20260713T084119498592Z.json",
+      "raw_sha256": "5523c5d509e5ff00f08d0be6157359b4bcbd89a87f28ad80faf38dbb450540a9",
+      "request_identity": "pmid:42028045",
+      "retrieved_at_utc": "2026-07-13T08:41:19.498592Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.oe.51.9.093202",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.oe.51.9.093202",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Kuihua Huang",
+      "Jun Zhang",
+      "Guohui Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Optical Engineering",
+    "canonical_year": 2012,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kuihua Huang",
+      "Jun Zhang",
+      "Guohui Li"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Optical Engineering",
+    "harvested_year": 2012,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 508,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kuihua Huang",
+      "Jun Zhang",
+      "Guohui Li"
+    ],
+    "doi": "10.1117/1.oe.51.9.093202",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Noise-optimal capture for coded exposure photography",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.oe.51.9.093202",
+    "venue": "Optical Engineering",
+    "year": 2012
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0508/crossref_doi__7d62ce66654c6eb7__20260713T083253809118Z.json",
+      "raw_sha256": "7086ad11775ee28e0d845d47bc3ce84085a0c572a5e97fbd7bae03327c748ef1",
+      "request_identity": "doi:10.1117/1.oe.51.9.093202",
+      "retrieved_at_utc": "2026-07-13T08:32:53.809118Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

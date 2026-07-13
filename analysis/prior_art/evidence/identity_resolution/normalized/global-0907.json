@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jcm15031306",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41682987",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jcm15031306",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "James Chmiel",
+      "Donata Kurpas"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Clinical Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Chmiel J",
+      "Kurpas D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 907,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "James Chmiel",
+      "Donata Kurpas"
+    ],
+    "doi": "10.3390/jcm15031306",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Mapping Executive Function Performance Based on Resting-State EEG in Healthy Individuals: A Systematic and Mechanistic Review",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jcm15031306",
+    "venue": "Journal of Clinical Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0907/crossref_doi__d659a785a2231b52__20260713T084324999877Z.json",
+      "raw_sha256": "c321621176c3b37a37842b46a4fb467d0590ef887788b3f6616023728c6c49e7",
+      "request_identity": "doi:10.3390/jcm15031306",
+      "retrieved_at_utc": "2026-07-13T08:43:24.999877Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0907/europe_pmc_pmid__3f01843ea6cbd927__20260713T084326075746Z.json",
+      "raw_sha256": "65df566656ab0d8ff5ac92596398e765f8a8c6fb9126eb1bbad70c553026f9fb",
+      "request_identity": "pmid:41682987",
+      "retrieved_at_utc": "2026-07-13T08:43:26.075746Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

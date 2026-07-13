@@ -1,0 +1,122 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/adma.202511870",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41137660",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/adma.202511870",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Fan Wang",
+      "Erdost Yildiz",
+      "Xosé Luís Deán‐Ben",
+      "Yan Yu",
+      "Daniil Nozdriukhin",
+      "Wenbin Kang",
+      "Shuaizhong Zhang",
+      "Jelena Zinnanti",
+      "Devin Sheehan",
+      "Ren Hao Soon",
+      "Shuxin Lyu",
+      "Daniel Razansky",
+      "Metin Sitti"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advanced Materials",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Wang F",
+      "Yildiz E",
+      "Deán-Ben XL",
+      "Yu Y",
+      "Nozdriukhin D",
+      "Kang W",
+      "Zhang S",
+      "Zinnanti J",
+      "Sheehan D",
+      "Soon RH",
+      "Lyu S",
+      "Razansky D",
+      "Sitti M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 731,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Fan Wang",
+      "Erdost Yildiz",
+      "Xosé Luís Deán‐Ben",
+      "Yan Yu",
+      "Daniil Nozdriukhin",
+      "Wenbin Kang",
+      "Shuaizhong Zhang",
+      "Jelena Zinnanti",
+      "Devin Sheehan",
+      "Ren Hao Soon",
+      "Shuxin Lyu",
+      "Daniel Razansky",
+      "Metin Sitti"
+    ],
+    "doi": "10.1002/adma.202511870",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Optoacoustic‐Guided Magnetic Microrobot Platform for Precision Drug Delivery",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/adma.202511870",
+    "venue": "Advanced Materials",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0731/crossref_doi__01680350a0a12962__20260713T083745122774Z.json",
+      "raw_sha256": "99aa548fd6d0783b84be1725ba35757d67c794b7cb100aa3411ba07a633e42e7",
+      "request_identity": "doi:10.1002/adma.202511870",
+      "retrieved_at_utc": "2026-07-13T08:37:45.122774Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0731/europe_pmc_pmid__2b65fc5dc536615d__20260713T083746210607Z.json",
+      "raw_sha256": "9130890eab482a4ca78793e8b591313eb607728cf4a733e995007664da5502a1",
+      "request_identity": "pmid:41137660",
+      "retrieved_at_utc": "2026-07-13T08:37:46.210607Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1515/mr-2021-0018",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37724302",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1515/mr-2021-0018",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jiacheng Xie",
+      "Congcong Jing",
+      "Ziyang Zhang",
+      "Jiatuo Xu",
+      "Ye Duan",
+      "Dong Xu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Medical Review",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Xie J",
+      "Jing C",
+      "Zhang Z",
+      "Xu J",
+      "Duan Y",
+      "Xu D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 528,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jiacheng Xie",
+      "Congcong Jing",
+      "Ziyang Zhang",
+      "Jiatuo Xu",
+      "Ye Duan",
+      "Dong Xu"
+    ],
+    "doi": "10.1515/mr-2021-0018",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Digital tongue image analyses for health assessment",
+    "update_to": [],
+    "url": "https://doi.org/10.1515/mr-2021-0018",
+    "venue": "Medical Review",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0528/crossref_doi__dc15a79b752c7de6__20260713T083321563104Z.json",
+      "raw_sha256": "7e7ef0c08cabfcf329a2bf9ce2f32066a3d905ad7698302806dbda750061a6eb",
+      "request_identity": "doi:10.1515/mr-2021-0018",
+      "retrieved_at_utc": "2026-07-13T08:33:21.563104Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0528/europe_pmc_pmid__fbcad8c95e43c115__20260713T083324812368Z.json",
+      "raw_sha256": "9c1bf1e14e49ffec4bb1655c1a8262e36541cd3c211312566f54407e4c33fb19",
+      "request_identity": "pmid:37724302",
+      "retrieved_at_utc": "2026-07-13T08:33:24.812368Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

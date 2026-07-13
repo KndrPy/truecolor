@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1039/d5ra09237j",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41726223",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1039/d5ra09237j",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Walaa M. Nouman",
+      "Fatma A. Sayed",
+      "Arafa H. Aly",
+      "S. E.-S. Abd El-Ghany",
+      "Samira M. Sallam"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "RSC Advances",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nouman WM",
+      "Sayed FA",
+      "Aly AH",
+      "El-Ghany SEA",
+      "Sallam SM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 831,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Walaa M. Nouman",
+      "Fatma A. Sayed",
+      "Arafa H. Aly",
+      "S. E.-S. Abd El-Ghany",
+      "Samira M. Sallam"
+    ],
+    "doi": "10.1039/d5ra09237j",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Chemical-enhanced thyroid cell detection using photonic crystal biosensors with phase-change materials",
+    "update_to": [],
+    "url": "https://doi.org/10.1039/d5ra09237j",
+    "venue": "RSC Advances",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0831/crossref_doi__36f6167722330889__20260713T084050948231Z.json",
+      "raw_sha256": "9a037d7a668f0a293e784881dedff3a704d0db28cd8a74958a59a8ea03a66157",
+      "request_identity": "doi:10.1039/d5ra09237j",
+      "retrieved_at_utc": "2026-07-13T08:40:50.948231Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0831/europe_pmc_pmid__2fc25498fe4baa04__20260713T084052018367Z.json",
+      "raw_sha256": "f8bdec1c775b11d314a0092a718c644cfa0255584261c76e1577c3f822b49c1f",
+      "request_identity": "pmid:41726223",
+      "retrieved_at_utc": "2026-07-13T08:40:52.018367Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

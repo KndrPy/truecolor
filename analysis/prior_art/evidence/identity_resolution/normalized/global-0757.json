@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/jtehm.2023.3318643",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38088997",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/jtehm.2023.3318643",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Soma Sasaki",
+      "Norihiro Sugita",
+      "Takanori Terai",
+      "Makoto Yoshizawa"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Journal of Translational Engineering in Health and Medicine",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sasaki S",
+      "Sugita N",
+      "Terai T",
+      "Yoshizawa M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 757,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Soma Sasaki",
+      "Norihiro Sugita",
+      "Takanori Terai",
+      "Makoto Yoshizawa"
+    ],
+    "doi": "10.1109/jtehm.2023.3318643",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Non-Contact Measurement of Blood Oxygen Saturation Using Facial Video Without Reference Values",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/jtehm.2023.3318643",
+    "venue": "IEEE Journal of Translational Engineering in Health and Medicine",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0757/crossref_doi__a20ed2e73043b331__20260713T083839066613Z.json",
+      "raw_sha256": "aa0f7e4bc07135e8f64f9a60557c479b9b0509ffdb3cd579263417e8ca5d2cab",
+      "request_identity": "doi:10.1109/jtehm.2023.3318643",
+      "retrieved_at_utc": "2026-07-13T08:38:39.066613Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0757/europe_pmc_pmid__e17a262d8698ac1c__20260713T083840107074Z.json",
+      "raw_sha256": "ed65949a8136903d628465f4b65210d72e874447ae0e506a23f118ddfc2516f5",
+      "request_identity": "pmid:38088997",
+      "retrieved_at_utc": "2026-07-13T08:38:40.107074Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,122 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41597-025-04993-y",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40399336",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41597-025-04993-y",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Alberto Martín-Pérez",
+      "Manuel Villa",
+      "Gonzalo Rosa Olmeda",
+      "Jaime Sancho",
+      "Guillermo Vazquez",
+      "Gemma Urbanos",
+      "Alejandro Martinez de Ternero",
+      "Miguel Chavarrías",
+      "Luis Jimenez-Roldan",
+      "Angel Perez-Nuñez",
+      "Alfonso Lagares",
+      "Eduardo Juarez",
+      "César Sanz"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Data",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Martín-Pérez A",
+      "Villa M",
+      "Rosa Olmeda G",
+      "Sancho J",
+      "Vazquez G",
+      "Urbanos G",
+      "Martinez de Ternero A",
+      "Chavarrías M",
+      "Jimenez-Roldan L",
+      "Perez-Nuñez A",
+      "Lagares A",
+      "Juarez E",
+      "Sanz C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 583,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alberto Martín-Pérez",
+      "Manuel Villa",
+      "Gonzalo Rosa Olmeda",
+      "Jaime Sancho",
+      "Guillermo Vazquez",
+      "Gemma Urbanos",
+      "Alejandro Martinez de Ternero",
+      "Miguel Chavarrías",
+      "Luis Jimenez-Roldan",
+      "Angel Perez-Nuñez",
+      "Alfonso Lagares",
+      "Eduardo Juarez",
+      "César Sanz"
+    ],
+    "doi": "10.1038/s41597-025-04993-y",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "SLIMBRAIN database: A multimodal image database of in vivo human brains for tumour detection",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41597-025-04993-y",
+    "venue": "Scientific Data",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0583/crossref_doi__6eee078f442e1840__20260713T083423587292Z.json",
+      "raw_sha256": "b62df1d64a5fd84889bcbd2a1bc12e1c5f487716c9c5986e8388737f175038fb",
+      "request_identity": "doi:10.1038/s41597-025-04993-y",
+      "retrieved_at_utc": "2026-07-13T08:34:23.587292Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0583/europe_pmc_pmid__1de9465d440dd748__20260713T083424705165Z.json",
+      "raw_sha256": "a5136c0311177199959947d8699647063b511cd0d94c504b4401d12cb976c5a7",
+      "request_identity": "pmid:40399336",
+      "retrieved_at_utc": "2026-07-13T08:34:24.705165Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

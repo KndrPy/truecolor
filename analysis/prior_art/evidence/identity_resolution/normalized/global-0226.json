@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pone.0280670",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36791068",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pone.0280670",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Teresa Kränke",
+      "Katharina Tripolt-Droschl",
+      "Lukas Röd",
+      "Rainer Hofmann-Wellenhof",
+      "Michael Koppitz",
+      "Michael Tripolt"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS ONE",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kränke T",
+      "Tripolt-Droschl K",
+      "Röd L",
+      "Hofmann-Wellenhof R",
+      "Koppitz M",
+      "Tripolt M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 226,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Teresa Kränke",
+      "Katharina Tripolt-Droschl",
+      "Lukas Röd",
+      "Rainer Hofmann-Wellenhof",
+      "Michael Koppitz",
+      "Michael Tripolt"
+    ],
+    "doi": "10.1371/journal.pone.0280670",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "New AI-algorithms on smartphones to detect skin cancer in a clinical setting—A validation study",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pone.0280670",
+    "venue": "PLOS ONE",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0226/crossref_doi__caacedd3bf88372c__20260713T082652021866Z.json",
+      "raw_sha256": "dd8252b5c96e1074f7672ad47c9b8ec3e754d1bdd42771d0c8c4e9ca4bb7456c",
+      "request_identity": "doi:10.1371/journal.pone.0280670",
+      "retrieved_at_utc": "2026-07-13T08:26:52.021866Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0226/europe_pmc_pmid__13a81e4d172bef26__20260713T082653002000Z.json",
+      "raw_sha256": "492f15a7161a4ed8e74b459654e157580ef4cede791bf122209b3fefe20d882f",
+      "request_identity": "pmid:36791068",
+      "retrieved_at_utc": "2026-07-13T08:26:53.002000Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

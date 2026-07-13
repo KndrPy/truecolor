@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s11042-022-14211-1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s11042-022-14211-1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Adam Corbin",
+      "Oge Marques"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Multimedia Tools and Applications",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Adam Corbin",
+      "Oge Marques"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Multimedia Tools and Applications",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 413,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Adam Corbin",
+      "Oge Marques"
+    ],
+    "doi": "10.1007/s11042-022-14211-1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Exploring strategies to generate Fitzpatrick skin type metadata for dermoscopic images using individual typology angle techniques",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s11042-022-14211-1",
+    "venue": "Multimedia Tools and Applications",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0413/crossref_doi__5b9a4b286974b74e__20260713T083114290962Z.json",
+      "raw_sha256": "e7980be563e696b02e56e4eba473fd49397b6a6ce5b1cf2b7680736f92d23864",
+      "request_identity": "doi:10.1007/s11042-022-14211-1",
+      "retrieved_at_utc": "2026-07-13T08:31:14.290962Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.31.3.035003",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41908358",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.31.3.035003",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Alexa Nazarian",
+      "Steven L. Jacques",
+      "Joshua Tam",
+      "Richard Rox Anderson",
+      "Sandra J. Shefelbine"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nazarian A",
+      "Jacques SL",
+      "Tam J",
+      "Anderson RR",
+      "Shefelbine SJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 359,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alexa Nazarian",
+      "Steven L. Jacques",
+      "Joshua Tam",
+      "Richard Rox Anderson",
+      "Sandra J. Shefelbine"
+    ],
+    "doi": "10.1117/1.jbo.31.3.035003",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Structure of tendon causes highly optical anisotropic properties and transport",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.31.3.035003",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0359/crossref_doi__c49cb7e567a3169a__20260713T082946183885Z.json",
+      "raw_sha256": "1094803930ad01eef07b4c311ebdfd90a316fa35ba3fead5738451a058d09ade",
+      "request_identity": "doi:10.1117/1.jbo.31.3.035003",
+      "retrieved_at_utc": "2026-07-13T08:29:46.183885Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0359/europe_pmc_pmid__23e3569a46287f8c__20260713T082947183380Z.json",
+      "raw_sha256": "6fe9e433c4ea66aa8f1df2a04d78d4c63932c3c3ed553c5fe54cf9fa67198c78",
+      "request_identity": "pmid:41908358",
+      "retrieved_at_utc": "2026-07-13T08:29:47.183380Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

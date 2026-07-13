@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.930952",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.930952",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Inga Saknite",
+      "Marta Lange",
+      "Dainis Jakovels",
+      "Janis Spigulis"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2012,
+    "doi_match": true,
+    "harvested_authors": [
+      "Inga Saknite",
+      "Marta Lange",
+      "Dainis Jakovels",
+      "Janis Spigulis"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SPIE Proceedings Optical Processes in Organic Materials and Nanostructures",
+    "harvested_year": 2012,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.222222,
+    "year_match": true
+  },
+  "global_rank": 697,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Inga Saknite",
+      "Marta Lange",
+      "Dainis Jakovels",
+      "Janis Spigulis"
+    ],
+    "doi": "10.1117/12.930952",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Determination of chromophore distribution in skin by spectral imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.930952",
+    "venue": "SPIE Proceedings",
+    "year": 2012
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0697/crossref_doi__2ff5e519d60b020b__20260713T083657284230Z.json",
+      "raw_sha256": "3cdfbcaca1a83946890e257b7bf9c17d9f5bd2cfe3c1fa2f3b2b9c798d50d106",
+      "request_identity": "doi:10.1117/12.930952",
+      "retrieved_at_utc": "2026-07-13T08:36:57.284230Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

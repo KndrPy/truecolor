@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/dh.2010.dwa6",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/dh.2010.dwa6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Peng Ye",
+      "Henry Arguello",
+      "Gonzalo Arce"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Biomedical Optics and 3-D Imaging",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "Peng Ye",
+      "Henry Arguello",
+      "Gonzalo Arce"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Biomedical Optics and 3-D Imaging",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1172,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Peng Ye",
+      "Henry Arguello",
+      "Gonzalo Arce"
+    ],
+    "doi": "10.1364/dh.2010.dwa6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Spectral Aperture Code Design for Multi-Shot Compressive Spectral Imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/dh.2010.dwa6",
+    "venue": "Biomedical Optics and 3-D Imaging",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1172/crossref_doi__d7acd1b0160448e2__20260713T084834868044Z.json",
+      "raw_sha256": "1a32e34564d2a391bd99fe10b345d388ff4853afe0c11a9a9036f4e6a01b3018",
+      "request_identity": "doi:10.1364/dh.2010.dwa6",
+      "retrieved_at_utc": "2026-07-13T08:48:34.868044Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

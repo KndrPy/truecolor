@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2196/preprints.84189",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2196/preprints.84189",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Subashini N J",
+      "Venkatesh K"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Subashini N J",
+      "Venkatesh K"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 673,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Subashini N J",
+      "Venkatesh K"
+    ],
+    "doi": "10.2196/preprints.84189",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "Priority-Queue Weighted Ensemble (PQWE) for KDIGO GFR-Based Chronic Kidney Disease Stage Prediction: Internal–External Validation Study (Preprint)",
+    "update_to": [],
+    "url": "https://doi.org/10.2196/preprints.84189",
+    "venue": null,
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0673/crossref_doi__37be16369be5ad2e__20260713T083637960755Z.json",
+      "raw_sha256": "9606a9bf73a96d3447b83823131944c61d846fef91a8c8bb76698b9cdb21f2de",
+      "request_identity": "doi:10.2196/preprints.84189",
+      "retrieved_at_utc": "2026-07-13T08:36:37.960755Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

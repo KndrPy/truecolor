@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/jamiaopen/ooaf165",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41376846",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/jamiaopen/ooaf165",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yunfeng Liang",
+      "Lin Zou",
+      "Millie Ming Rong Goh",
+      "Alvin Jia Hao Ngeow",
+      "Ngiap Chuan Tan",
+      "Andy Wee An Ta",
+      "Han Leong Goh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "JAMIA Open",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Liang Y",
+      "Zou L",
+      "Goh MMR",
+      "Ngeow AJH",
+      "Tan NC",
+      "Ta AWA",
+      "Goh HL."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 943,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yunfeng Liang",
+      "Lin Zou",
+      "Millie Ming Rong Goh",
+      "Alvin Jia Hao Ngeow",
+      "Ngiap Chuan Tan",
+      "Andy Wee An Ta",
+      "Han Leong Goh"
+    ],
+    "doi": "10.1093/jamiaopen/ooaf165",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multimodal feature analysis for automated neonatal jaundice assessment using machine learning",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/jamiaopen/ooaf165",
+    "venue": "JAMIA Open",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0943/crossref_doi__9e6781ed956d11c4__20260713T084432689429Z.json",
+      "raw_sha256": "9b0e3da8c1ff9339dd945652433ebbf7b24475f9d1d7634b730b323fdee7213b",
+      "request_identity": "doi:10.1093/jamiaopen/ooaf165",
+      "retrieved_at_utc": "2026-07-13T08:44:32.689429Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0943/europe_pmc_pmid__3b0fbe790c566905__20260713T084433778740Z.json",
+      "raw_sha256": "828f48fec0a0afb20691069b85be5710a49930989116e0a9dddf823e172e658e",
+      "request_identity": "pmid:41376846",
+      "retrieved_at_utc": "2026-07-13T08:44:33.778740Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2581926",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2581926",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Eleni Aloupogianni",
+      "Hiroyuki Suzuki",
+      "Takaya Ichimura",
+      "Atsushi Sasaki",
+      "Hiroto Yanagisawa",
+      "Tetsuya Tsuchida",
+      "Masahiro Ishikawa",
+      "Naoki Kobayashi",
+      "Takashi Obi"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Medical Imaging 2021: Digital Pathology",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Eleni Aloupogianni",
+      "Hiroyuki Suzuki",
+      "Takaya Ichimura",
+      "Atsushi Sasaki",
+      "Hiroto Yanagisawa",
+      "Tetsuya Tsuchida",
+      "Masahiro Ishikawa",
+      "Naoki Kobayashi",
+      "Takashi Obi"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Medical Imaging 2021: Digital Pathology",
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 491,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Eleni Aloupogianni",
+      "Hiroyuki Suzuki",
+      "Takaya Ichimura",
+      "Atsushi Sasaki",
+      "Hiroto Yanagisawa",
+      "Tetsuya Tsuchida",
+      "Masahiro Ishikawa",
+      "Naoki Kobayashi",
+      "Takashi Obi"
+    ],
+    "doi": "10.1117/12.2581926",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Effect of formalin fixing on chromophore saliency maps derived from multi-spectral macropathology skin images",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2581926",
+    "venue": "Medical Imaging 2021: Digital Pathology",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0491/crossref_doi__bfbae9938048f2c9__20260713T083229713614Z.json",
+      "raw_sha256": "1d1e911084266517a95058ce062e9d1e228d720b2f08f4a58eb2ec356f74a5cb",
+      "request_identity": "doi:10.1117/12.2581926",
+      "retrieved_at_utc": "2026-07-13T08:32:29.713614Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

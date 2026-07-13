@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/icip.2005.1530559",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/icip.2005.1530559",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "K. Hirakawa",
+      "T.W. Parks"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "IEEE International Conference on Image Processing 2005",
+    "canonical_year": 2005,
+    "doi_match": true,
+    "harvested_authors": [
+      "K. Hirakawa",
+      "T.W. Parks"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "IEEE International Conference on Image Processing 2005",
+    "harvested_year": 2005,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1062,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "K. Hirakawa",
+      "T.W. Parks"
+    ],
+    "doi": "10.1109/icip.2005.1530559",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Chromatic adaptation and white-balance problem",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/icip.2005.1530559",
+    "venue": "IEEE International Conference on Image Processing 2005",
+    "year": 2005
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1062/crossref_doi__cafe018f7f0fa743__20260713T084708436354Z.json",
+      "raw_sha256": "39dca5935f42cacf1b7f7b6f04cc9c531b829fe8efc78872ee62ac8c27520577",
+      "request_identity": "doi:10.1109/icip.2005.1530559",
+      "retrieved_at_utc": "2026-07-13T08:47:08.436354Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

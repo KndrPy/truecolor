@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-025-15767-2",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40830190",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-025-15767-2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mohamed El Masry",
+      "Runjia Li",
+      "Goundappa K. Balasubramani",
+      "Sashwati Roy",
+      "Chandan K. Sen",
+      "Surya C. Gnyawali"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "El Masry M",
+      "Li R",
+      "Balasubramani GK",
+      "Roy S",
+      "Sen CK",
+      "Gnyawali SC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 655,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mohamed El Masry",
+      "Runjia Li",
+      "Goundappa K. Balasubramani",
+      "Sashwati Roy",
+      "Chandan K. Sen",
+      "Surya C. Gnyawali"
+    ],
+    "doi": "10.1038/s41598-025-15767-2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Comparative assessment of healthy tissue oxygenation using near-infrared imaging, transcutaneous oxygen measurement, and plethysmography",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-025-15767-2",
+    "venue": "Scientific Reports",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0655/crossref_doi__d9bf2636237a6591__20260713T083619761599Z.json",
+      "raw_sha256": "9f3468ea68543048f0544023cbef73a27e9af11614f8f5231e60521a2fb434c6",
+      "request_identity": "doi:10.1038/s41598-025-15767-2",
+      "retrieved_at_utc": "2026-07-13T08:36:19.761599Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0655/europe_pmc_pmid__8f6306ddee3d5db4__20260713T083620756946Z.json",
+      "raw_sha256": "9bc80b124105c1a5caaef92595b10514793f76c2691b2e0ee5755c38c21f35de",
+      "request_identity": "pmid:40830190",
+      "retrieved_at_utc": "2026-07-13T08:36:20.756946Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

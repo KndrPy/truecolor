@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s24113666",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38894457",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s24113666",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Abdelhamid Fsian",
+      "Jean-Baptiste Thomas",
+      "Jon Hardeberg",
+      "Pierre Gouton"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fsian AN",
+      "Thomas JB",
+      "Hardeberg JY",
+      "Gouton P."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 88,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Abdelhamid Fsian",
+      "Jean-Baptiste Thomas",
+      "Jon Hardeberg",
+      "Pierre Gouton"
+    ],
+    "doi": "10.3390/s24113666",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectral Reconstruction from RGB Imagery: A Potential Option for Infinite Spectral Data?",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s24113666",
+    "venue": "Sensors",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0088/crossref_doi__9f17c3d265eee13c__20260713T081601953521Z.json",
+      "raw_sha256": "f3ac4950709fd2a59217595b4cb2a0f906702976acb3642bea1c097375649dd9",
+      "request_identity": "doi:10.3390/s24113666",
+      "retrieved_at_utc": "2026-07-13T08:16:01.953521Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0088/europe_pmc_pmid__4ed89fb621bfbf16__20260713T081603106901Z.json",
+      "raw_sha256": "cb5a3d9994683da74920fc1435b4548f011d0fb549315e394598f429e0bfe8bf",
+      "request_identity": "pmid:38894457",
+      "retrieved_at_utc": "2026-07-13T08:16:03.106901Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

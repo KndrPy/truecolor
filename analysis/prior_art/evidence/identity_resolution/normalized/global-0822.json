@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-026-37711-8",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41792225",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-026-37711-8",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Georgia Mappa",
+      "Pika Miklavc",
+      "Michele Cummings",
+      "Richard Oliver",
+      "Harriet Pyrah",
+      "Clare Freer",
+      "Huda Alzahrani",
+      "Tiehan H. Shen",
+      "Nicolas M. Orsi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mappa G",
+      "Miklavc P",
+      "Cummings M",
+      "Oliver R",
+      "Pyrah H",
+      "Freer C",
+      "Alzahrani H",
+      "Shen TH",
+      "Orsi NM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 822,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Georgia Mappa",
+      "Pika Miklavc",
+      "Michele Cummings",
+      "Richard Oliver",
+      "Harriet Pyrah",
+      "Clare Freer",
+      "Huda Alzahrani",
+      "Tiehan H. Shen",
+      "Nicolas M. Orsi"
+    ],
+    "doi": "10.1038/s41598-026-37711-8",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Polarimetric imaging of collagen in histopathology specimens: an investigation of congo red and picrosirius red-stained placenta and skin",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-026-37711-8",
+    "venue": "Scientific Reports",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0822/crossref_doi__2eb91a19e4dcb17b__20260713T084035875389Z.json",
+      "raw_sha256": "d4a9f5ccc73635321d0a58060454924552227a12e12384d3ff31caa5af6e1fa1",
+      "request_identity": "doi:10.1038/s41598-026-37711-8",
+      "retrieved_at_utc": "2026-07-13T08:40:35.875389Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0822/europe_pmc_pmid__94b693c781a46e38__20260713T084036872471Z.json",
+      "raw_sha256": "1152f585038e1e3987247b803ac3a4a86bf3cda11b0d2bd69ee2ad065f4235ae",
+      "request_identity": "pmid:41792225",
+      "retrieved_at_utc": "2026-07-13T08:40:36.872471Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

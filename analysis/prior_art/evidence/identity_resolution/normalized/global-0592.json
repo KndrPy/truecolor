@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s19051090",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "30836613",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s19051090",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Gamal ElMasry",
+      "Nasser Mandour",
+      "Salim Al-Rejaie",
+      "Etienne Belin",
+      "David Rousseau"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2019,
+    "doi_match": true,
+    "harvested_authors": [
+      "ElMasry G",
+      "Mandour N",
+      "Al-Rejaie S",
+      "Belin E",
+      "Rousseau D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2019,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 592,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Gamal ElMasry",
+      "Nasser Mandour",
+      "Salim Al-Rejaie",
+      "Etienne Belin",
+      "David Rousseau"
+    ],
+    "doi": "10.3390/s19051090",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Recent Applications of Multispectral Imaging in Seed Phenotyping and Quality Monitoring—An Overview",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s19051090",
+    "venue": "Sensors",
+    "year": 2019
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0592/crossref_doi__2a2d7626f737e003__20260713T083441157248Z.json",
+      "raw_sha256": "bd6acb49909c4aaf25ae244a41cee68c3603a9f4138c31e5ac1fc57b774e0594",
+      "request_identity": "doi:10.3390/s19051090",
+      "retrieved_at_utc": "2026-07-13T08:34:41.157248Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0592/europe_pmc_pmid__362187eaf704ed19__20260713T083442163402Z.json",
+      "raw_sha256": "ee37e042b447d2a3519719961c2d9e905bbad832024fac2d7b822cc5b0740c04",
+      "request_identity": "pmid:30836613",
+      "retrieved_at_utc": "2026-07-13T08:34:42.163402Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

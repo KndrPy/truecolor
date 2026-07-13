@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1520/e1345-98r14",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1520/e1345-98r14",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "standard",
+    "canonical_venue": null,
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "standard",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1146,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1520/e1345-98r14",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "standard",
+    "relation": {},
+    "title": "Practice for Reducing the Effect of Variability of Color Measurement by Use of Multiple Measurements",
+    "update_to": [],
+    "url": "https://doi.org/10.1520/e1345-98r14",
+    "venue": null,
+    "year": 2014
+  },
+  "related_candidate_keys": [
+    "doi:10.1520/e1345",
+    "doi:10.1520/e1345-24",
+    "doi:10.1520/e1345-98",
+    "doi:10.1520/e1345-98r03",
+    "doi:10.1520/e1345-98r08",
+    "doi:10.1520/e1345-98r08e01",
+    "doi:10.1520/e1345-98r19"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1146/crossref_doi__70c65f298607a7ac__20260713T084813898834Z.json",
+      "raw_sha256": "0ca461b970bdf36ab64e9cba486a17c5f3556e9f37f00024e0eda4a745ff1aa3",
+      "request_identity": "doi:10.1520/e1345-98r14",
+      "retrieved_at_utc": "2026-07-13T08:48:13.898834Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

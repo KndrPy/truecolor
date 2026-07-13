@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/molecules30193964",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41097383",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/molecules30193964",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Krastena Nikolova",
+      "Tinko Eftimov",
+      "Natalina Panova",
+      "Veselin Vladev",
+      "Samia Fouzar",
+      "Kristian Nikolov"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Molecules",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nikolova K",
+      "Eftimov T",
+      "Panova N",
+      "Vladev V",
+      "Fouzar S",
+      "Nikolov K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 978,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Krastena Nikolova",
+      "Tinko Eftimov",
+      "Natalina Panova",
+      "Veselin Vladev",
+      "Samia Fouzar",
+      "Kristian Nikolov"
+    ],
+    "doi": "10.3390/molecules30193964",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Characterization of Bulgarian Rosehip Oil by GC-MS, UV-VIS Spectroscopy, Colorimetry, FTIR Spectroscopy, and 3D Excitation–Emission Fluorescence Spectra",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/molecules30193964",
+    "venue": "Molecules",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0978/crossref_doi__cb7280ab90bad6ba__20260713T084538100030Z.json",
+      "raw_sha256": "cf2d620fb7d69341915b61209d255b4264ad72ace18a3e633431f9cc671f626a",
+      "request_identity": "doi:10.3390/molecules30193964",
+      "retrieved_at_utc": "2026-07-13T08:45:38.100030Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0978/europe_pmc_pmid__5f48b6165d47f263__20260713T084539091643Z.json",
+      "raw_sha256": "68c5a20112498d0a8401d77bab3a24a703991a48dac3236ce3f3591bb06b83cc",
+      "request_identity": "pmid:41097383",
+      "retrieved_at_utc": "2026-07-13T08:45:39.091643Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

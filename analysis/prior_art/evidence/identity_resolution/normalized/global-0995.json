@@ -1,0 +1,61 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1017/cbo9780511763120.014",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1017/cbo9780511763120.014",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Optical Physics",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Optical Physics",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 995,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1017/cbo9780511763120.014",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Image formation",
+    "update_to": [],
+    "url": "https://doi.org/10.1017/cbo9780511763120.014",
+    "venue": "Optical Physics",
+    "year": 2010
+  },
+  "related_candidate_keys": [
+    "doi:10.1017/cbo9781139170413.015"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0995/crossref_doi__5a1f9caaa40ec126__20260713T084610049610Z.json",
+      "raw_sha256": "61d283a7b83ca8c0b831f56e1dd6f4b308777bdbc459b7a943563526c85edb4b",
+      "request_identity": "doi:10.1017/cbo9780511763120.014",
+      "retrieved_at_utc": "2026-07-13T08:46:10.049610Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

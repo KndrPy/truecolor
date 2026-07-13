@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s21113745",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s21113745",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Bin Chen",
+      "Yong Zhang",
+      "Shang Gao",
+      "Dong Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Bin Chen",
+      "Yong Zhang",
+      "Shang Gao",
+      "Dong Li"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Sensors",
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 18,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Bin Chen",
+      "Yong Zhang",
+      "Shang Gao",
+      "Dong Li"
+    ],
+    "doi": "10.3390/s21113745",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Extraction of the Structural Properties of Skin Tissue via Diffuse Reflectance Spectroscopy: An Inverse Methodology",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s21113745",
+    "venue": "Sensors",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0018/crossref_doi__9603205fc8233158__20260713T081502507095Z.json",
+      "raw_sha256": "2c70b3676a9eed99073dc890e3fee72a4c050c0a03d5cdbe31305881b23822e9",
+      "request_identity": "doi:10.3390/s21113745",
+      "retrieved_at_utc": "2026-07-13T08:15:02.507095Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

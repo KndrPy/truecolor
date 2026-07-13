@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1002/btm2.10415/v1/review1",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,5,21]],\"date-time\":\"2026-05-21T21:06:33Z\",\"timestamp\":1779397593590,\"version\":\"3.53.1\"},\"reference-count\":0,\"publisher\":\"Wiley\",\"content-domain\":{\"domain\":[]},\"short-container-title\":[],\"published-print\":{\"date-parts\":[[2022,5,5]]},\"DOI\":\"10.1002\\/btm2.10415\\/v1\\/review1\",\"type\":\"peer-review\",\"created\":{\"date-parts\":[[2022,9,27]],\"date-time\":\"2022-09-27T17:02:58Z\",\"timestamp\":1664298178000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Review for \\\"Investigation into the effect of skin tone modulators and exogenous stress on skin pigmentation utilizing a novel bioengineered skin equivalent\\\"\"],\"prefix\":\"10.1002\",\"member\":\"311\",\"container-title\":[],\"review\":{\"type\":\"referee-report\",\"running-number\":\"PR1V1\",\"revision-round\":\"1\",\"stage\":\"pre-publication\"},\"original-title\":[],\"deposited\":{\"date-parts\":[[2022,9,27]],\"date-time\":\"2022-09-27T17:03:02Z\",\"timestamp\":1664298182000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/publons.com\\/publon\\/54254928\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[2022,5,5]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1002\\/btm2.10415\\/v1\\/review1\",\"relation\":{\"is-review-of\":[{\"id-type\":\"doi\",\"id\":\"10.1002\\/BTM2.10415\",\"asserted-by\":\"subject\"}]},\"subject\":[],\"published\":{\"date-parts\":[[2022,5,5]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:49:35.553687Z",
+  "source": "crossref_doi"
+}

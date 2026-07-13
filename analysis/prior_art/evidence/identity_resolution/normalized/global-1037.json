@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/s0093-3619(09)79384-0",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/s0093-3619(09)79384-0",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "J. Levin",
+      "J.Q. Del Rosso"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Yearbook of Dermatology and Dermatologic Surgery",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "J. Levin",
+      "J.Q. Del Rosso"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Yearbook of Dermatology and Dermatologic Surgery",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1037,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "J. Levin",
+      "J.Q. Del Rosso"
+    ],
+    "doi": "10.1016/s0093-3619(09)79384-0",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Assessing the Value of Supportive Skin Care: Development and Validation of an Instrument for Evaluating Patient-Relevant Benefit",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/s0093-3619(09)79384-0",
+    "venue": "Yearbook of Dermatology and Dermatologic Surgery",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1037/crossref_doi__6310f7989cc3e097__20260713T084642553599Z.json",
+      "raw_sha256": "21566e10838c585a721416534e69a3f5b8566ee0140b57231e80da07ebf848ee",
+      "request_identity": "doi:10.1016/s0093-3619(09)79384-0",
+      "retrieved_at_utc": "2026-07-13T08:46:42.553599Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

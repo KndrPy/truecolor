@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1145/3309074.3309118",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1145/3309074.3309118",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "En Chen",
+      "Tzren-Ru Chou"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Proceedings of the 3rd International Conference on Cryptography, Security and Privacy",
+    "canonical_year": 2019,
+    "doi_match": true,
+    "harvested_authors": [
+      "En Chen",
+      "Tzren-Ru Chou"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Proceedings of the 3rd International Conference on Cryptography, Security and Privacy",
+    "harvested_year": 2019,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 570,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "En Chen",
+      "Tzren-Ru Chou"
+    ],
+    "doi": "10.1145/3309074.3309118",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Spectral reflectance recovery of various materials based on linear interpolation with nonparametric metameric spectra of extreme points",
+    "update_to": [],
+    "url": "https://doi.org/10.1145/3309074.3309118",
+    "venue": "Proceedings of the 3rd International Conference on Cryptography, Security and Privacy",
+    "year": 2019
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0570/crossref_doi__cb1d4deffacc6ea9__20260713T083405713752Z.json",
+      "raw_sha256": "3b59305e0221db7a93ac71d91e38b54811c9c4c69cab1bba4a42833374e64a37",
+      "request_identity": "doi:10.1145/3309074.3309118",
+      "retrieved_at_utc": "2026-07-13T08:34:05.713752Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

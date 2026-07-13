@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1080/713818667",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1080/713818667",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "W.D. Wright"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Optica Acta: International Journal of Optics",
+    "canonical_year": 1954,
+    "doi_match": true,
+    "harvested_authors": [
+      "W.D. Wright"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Optica Acta: International Journal of Optics",
+    "harvested_year": 1954,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 211,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "W.D. Wright"
+    ],
+    "doi": "10.1080/713818667",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Photoelectric Spectrophotometer and Tristimulus Colorimeter Designed for Teaching and Research",
+    "update_to": [],
+    "url": "https://doi.org/10.1080/713818667",
+    "venue": "Optica Acta: International Journal of Optics",
+    "year": 1954
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0211/crossref_doi__c795ebd5defc5f1f__20260713T082638162069Z.json",
+      "raw_sha256": "95aa9bddde004f1c0f45d7e5d33cc3b88a4674af5b47dbed183981fcd0422bb3",
+      "request_identity": "doi:10.1080/713818667",
+      "retrieved_at_utc": "2026-07-13T08:26:38.162069Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.aiia.2021.01.005",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.aiia.2021.01.005",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Anitha Raghavendra",
+      "D.S. Guru",
+      "Mahesh K. Rao"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Artificial Intelligence in Agriculture",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Anitha Raghavendra",
+      "D.S. Guru",
+      "Mahesh K. Rao"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Artificial Intelligence in Agriculture",
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 103,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Anitha Raghavendra",
+      "D.S. Guru",
+      "Mahesh K. Rao"
+    ],
+    "doi": "10.1016/j.aiia.2021.01.005",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Mango internal defect detection based on optimal wavelength selection method using NIR spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.aiia.2021.01.005",
+    "venue": "Artificial Intelligence in Agriculture",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0103/crossref_doi__61d8eab6b1d7ba6e__20260713T081621089534Z.json",
+      "raw_sha256": "889d6aab79a28b830a895161344a2043b4ca28555e342389d79743aea5fa5d4c",
+      "request_identity": "doi:10.1016/j.aiia.2021.01.005",
+      "retrieved_at_utc": "2026-07-13T08:16:21.089534Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

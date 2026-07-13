@@ -1,0 +1,131 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41746-025-01975-7",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41044148",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41746-025-01975-7",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Cassandra W. Cu",
+      "Nicole E. Dundas",
+      "Timothy Heintz",
+      "Zahida A. Sheikh",
+      "Bianca Alonso-Bermudez",
+      "Jasmine Walker",
+      "Avery Wooten",
+      "Anusha Badathala",
+      "Allyson Chapman",
+      "Odinakachukwu Ehie",
+      "Karthik Raghunathan",
+      "Hunter Mills",
+      "Edie Espejo",
+      "John Boscardin",
+      "Arthur W. Wallace",
+      "Julien Cobert"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Digital Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Cu CW",
+      "Dundas NE",
+      "Heintz T",
+      "Sheikh ZA",
+      "Alonso-Bermudez B",
+      "Walker J",
+      "Wooten A",
+      "Badathala A",
+      "Chapman A",
+      "Ehie O",
+      "Raghunathan K",
+      "Mills H",
+      "Espejo E",
+      "Boscardin J",
+      "Wallace AW",
+      "Cobert J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 142,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Cassandra W. Cu",
+      "Nicole E. Dundas",
+      "Timothy Heintz",
+      "Zahida A. Sheikh",
+      "Bianca Alonso-Bermudez",
+      "Jasmine Walker",
+      "Avery Wooten",
+      "Anusha Badathala",
+      "Allyson Chapman",
+      "Odinakachukwu Ehie",
+      "Karthik Raghunathan",
+      "Hunter Mills",
+      "Edie Espejo",
+      "John Boscardin",
+      "Arthur W. Wallace",
+      "Julien Cobert"
+    ],
+    "doi": "10.1038/s41746-025-01975-7",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Validity of two subjective skin tone scales and its implications on healthcare model fairness",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41746-025-01975-7",
+    "venue": "npj Digital Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0142/crossref_doi__67477d6bf923c33f__20260713T082539695210Z.json",
+      "raw_sha256": "206795a85cf53f004f07836cc165065425622e9ba67a2d58c4a3f84a721dd200",
+      "request_identity": "doi:10.1038/s41746-025-01975-7",
+      "retrieved_at_utc": "2026-07-13T08:25:39.695210Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0142/europe_pmc_pmid__aba21c351a930e52__20260713T082540668389Z.json",
+      "raw_sha256": "0369a277e7c550d85672b183b6cc9766cedfd4fb67d731dfd3c9681966e19347",
+      "request_identity": "pmid:41044148",
+      "retrieved_at_utc": "2026-07-13T08:25:40.668389Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

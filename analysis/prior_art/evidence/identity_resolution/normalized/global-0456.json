@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/icdici62993.2024.10810876",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/icdici62993.2024.10810876",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Shiva Mehta",
+      "Aseem Aneja"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2024 5th International Conference on Data Intelligence and Cognitive Informatics (ICDICI)",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shiva Mehta",
+      "Aseem Aneja"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2024 5th International Conference on Data Intelligence and Cognitive Informatics (ICDICI)",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 456,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shiva Mehta",
+      "Aseem Aneja"
+    ],
+    "doi": "10.1109/icdici62993.2024.10810876",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Hybrid AI Models for Dermatology: Combining CNN and RF for Skin Lesion Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/icdici62993.2024.10810876",
+    "venue": "2024 5th International Conference on Data Intelligence and Cognitive Informatics (ICDICI)",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0456/crossref_doi__5e35ed887aa169b7__20260713T083150176466Z.json",
+      "raw_sha256": "718c761da36b0daa341026d35e0236bd0e0af358d3b0cba003550b386b019791",
+      "request_identity": "doi:10.1109/icdici62993.2024.10810876",
+      "retrieved_at_utc": "2026-07-13T08:31:50.176466Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

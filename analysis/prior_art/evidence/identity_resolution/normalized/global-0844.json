@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.bios.3.1.015002",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42028051",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.bios.3.1.015002",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kseniia Tumanova",
+      "Eric Min",
+      "Daniel C. Louie",
+      "Mehrnoosh Neshatian",
+      "Sara Shalviry",
+      "Nimish Mittal",
+      "Laurent Bozec",
+      "Alex Vitkin"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biophotonics Discovery",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Tumanova K",
+      "Min E",
+      "Louie DC",
+      "Neshatian M",
+      "Shalviry S",
+      "Mittal N",
+      "Bozec L",
+      "Vitkin A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 844,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kseniia Tumanova",
+      "Eric Min",
+      "Daniel C. Louie",
+      "Mehrnoosh Neshatian",
+      "Sara Shalviry",
+      "Nimish Mittal",
+      "Laurent Bozec",
+      "Alex Vitkin"
+    ],
+    "doi": "10.1117/1.bios.3.1.015002",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Label-free differentiation of classical and hypermobile Ehlers–Danlos syndromes using Mueller matrix polarimetry",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.bios.3.1.015002",
+    "venue": "Biophotonics Discovery",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0844/crossref_doi__2370e0cc3befbc4b__20260713T084120361056Z.json",
+      "raw_sha256": "ccb84a984571b26247488b84c65a12fb2a3617576d952024b79f3fb24cd69f96",
+      "request_identity": "doi:10.1117/1.bios.3.1.015002",
+      "retrieved_at_utc": "2026-07-13T08:41:20.361056Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0844/europe_pmc_pmid__44571bb2ccf381e4__20260713T084121411435Z.json",
+      "raw_sha256": "48832df701437c689fae0859b682e0dccc3ccc74eb80678b7d0d9b0b3e1811c3",
+      "request_identity": "pmid:42028051",
+      "retrieved_at_utc": "2026-07-13T08:41:21.411435Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

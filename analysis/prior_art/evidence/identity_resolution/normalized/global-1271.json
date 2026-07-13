@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "validation of paw skin hyperspectral imaging for assessing neuropathic pain severity in a chronic constriction injury model",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:validation of paw skin hyperspectral imaging for assessing neuropathic pain severity in a chronic constriction injury model|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Hsin-Che Wang",
+      "Liang-Yi Pan",
+      "Jason Sheehan",
+      "Meei-Ling Sheu",
+      "De-Wei Lai",
+      "Ying Ju Chen",
+      "Chien-Chia Wang",
+      "Hong Lin Su",
+      "Hsian-Min Chen",
+      "Hung-Chuan Pan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "International Journal of Molecular Sciences",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Wang H",
+      "Pan L",
+      "Sheehan J",
+      "Sheu M",
+      "Lai D",
+      "Chen Y",
+      "Wang C",
+      "Su H",
+      "Chen H",
+      "Pan H."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1271,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hsin-Che Wang",
+      "Liang-Yi Pan",
+      "Jason Sheehan",
+      "Meei-Ling Sheu",
+      "De-Wei Lai",
+      "Ying Ju Chen",
+      "Chien-Chia Wang",
+      "Hong Lin Su",
+      "Hsian-Min Chen",
+      "Hung-Chuan Pan"
+    ],
+    "doi": "10.3390/ijms27125164",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Validation of Paw Skin Hyperspectral Imaging for Assessing Neuropathic Pain Severity in a Chronic Constriction Injury Model",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/ijms27125164",
+    "venue": "International Journal of Molecular Sciences",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1271/crossref_title__eadde82e78d6371c__20260713T084952970973Z.json",
+      "raw_sha256": "3167135378649525b2e4c7e1833824299befc5acd0d03f87c158bd394ed7a369",
+      "request_identity": "title:validation of paw skin hyperspectral imaging for assessing neuropathic pain severity in a chronic constriction injury model|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:52.970973Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

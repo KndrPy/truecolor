@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "the cutaneous mirror leveraging drug induced skin phenotypes as early visual risk signals for systemic toxicity a comprehensive review",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:the cutaneous mirror: leveraging drug-induced skin phenotypes as early visual risk signals for systemic toxicity, a comprehensive review|year:unknown",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Hind B. Alshalhoob",
+      "Lama M. Albelowi",
+      "Aseel S. Alotaibi",
+      "Shada Khalid Alanazi",
+      "Leen E. Alturki",
+      "Zahra Saleh Alsindi",
+      "Waad Abdulelah Alduraywish",
+      "Sarah Anwar Almulla",
+      "Ahmed Anwar Almulla",
+      "Nouf Abdulaziz Almagushi",
+      "Sarah Khalifah Alkhezzi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Drug Safety and Regulation",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Alshalhoob H",
+      "Albelowi L",
+      "Alotaibi A",
+      "Alanazi S",
+      "Alturki L",
+      "Alsindi Z",
+      "Alduraywish W",
+      "Almulla S",
+      "Almulla A",
+      "Almagushi N",
+      "Alkhezzi S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1290,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hind B. Alshalhoob",
+      "Lama M. Albelowi",
+      "Aseel S. Alotaibi",
+      "Shada Khalid Alanazi",
+      "Leen E. Alturki",
+      "Zahra Saleh Alsindi",
+      "Waad Abdulelah Alduraywish",
+      "Sarah Anwar Almulla",
+      "Ahmed Anwar Almulla",
+      "Nouf Abdulaziz Almagushi",
+      "Sarah Khalifah Alkhezzi"
+    ],
+    "doi": "10.3389/fdsfr.2026.1825005",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The cutaneous mirror: leveraging drug-induced skin phenotypes as early visual risk signals for systemic toxicity, a comprehensive review",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fdsfr.2026.1825005",
+    "venue": "Frontiers in Drug Safety and Regulation",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1290/crossref_title__7e5c1b6fc646ae84__20260713T085015344834Z.json",
+      "raw_sha256": "82141ecca71ab7640bd32e0a98d8b5a9bfeb0b4bea1f21ecc56b0bab4272e214",
+      "request_identity": "title:the cutaneous mirror leveraging drug induced skin phenotypes as early visual risk signals for systemic toxicity a comprehensive review|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:50:15.344834Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

@@ -1,0 +1,86 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.21203/rs.3.rs-9053537/v1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.21203/rs.3.rs-9053537/v1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Li Zhu",
+      "Migyeong Gwak",
+      "Korosh Vatanparvar",
+      "Qijia Shao",
+      "Sharanya Desai",
+      "Jungmok Bae",
+      "Jilong Kuang",
+      "Alex Gao"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Li Zhu",
+      "Migyeong Gwak",
+      "Korosh Vatanparvar",
+      "Qijia Shao",
+      "Sharanya Desai",
+      "Jungmok Bae",
+      "Jilong Kuang",
+      "Alex Gao"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 97,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Li Zhu",
+      "Migyeong Gwak",
+      "Korosh Vatanparvar",
+      "Qijia Shao",
+      "Sharanya Desai",
+      "Jungmok Bae",
+      "Jilong Kuang",
+      "Alex Gao"
+    ],
+    "doi": "10.21203/rs.3.rs-9053537/v1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "Contactless Human Oxygen Saturation Detection Using RGB Camera in an Induced Hypoxemia Study with Varied Skin Types",
+    "update_to": [],
+    "url": "https://doi.org/10.21203/rs.3.rs-9053537/v1",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0097/crossref_doi__f39b2d4a6fa0959d__20260713T081614047418Z.json",
+      "raw_sha256": "3a9f315352f7b11b58a0eb0f48f964fd8e5fa5a8666630d26cfc7df19481f9c8",
+      "request_identity": "doi:10.21203/rs.3.rs-9053537/v1",
+      "retrieved_at_utc": "2026-07-13T08:16:14.047418Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

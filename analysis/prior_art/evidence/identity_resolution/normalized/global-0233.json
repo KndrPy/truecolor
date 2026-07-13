@@ -1,0 +1,160 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.30.2.023512",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39544341",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.30.2.023512",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Alankar Kotwal",
+          "Vishwanath Saragadam",
+          "Joshua D. Bernstock",
+          "Alfredo Sandoval",
+          "Ashok Veeraraghavan",
+          "Pablo A. Valdés"
+        ],
+        "doi": "10.1117/1.jbo.30.2.023512",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Hyperspectral imaging in neurosurgery: a review of systems, computational methods, and clinical applications",
+        "update_to": [],
+        "url": "https://doi.org/10.1117/1.jbo.30.2.023512",
+        "venue": "Journal of Biomedical Optics",
+        "year": 2024
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Alankar Kotwal",
+          "Vishwanath Saragadam",
+          "Joshua D Bernstock",
+          "Alfredo Sandoval",
+          "Ashok Veeraraghavan",
+          "Pablo A Valdés"
+        ],
+        "doi": "10.1117/1.jbo.30.2.023512",
+        "is_retracted": false,
+        "pmcid": "PMC11559659",
+        "pmid": "39544341",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Hyperspectral imaging in neurosurgery: a review of systems, computational methods, and clinical applications.",
+        "url": "https://europepmc.org/article/MED/39544341",
+        "venue": null,
+        "year": 2025
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2024,
+      "field": "year",
+      "harvested": 2025
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Alankar Kotwal",
+      "Vishwanath Saragadam",
+      "Joshua D. Bernstock",
+      "Alfredo Sandoval",
+      "Ashok Veeraraghavan",
+      "Pablo A. Valdés"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kotwal A",
+      "Saragadam V",
+      "Bernstock JD",
+      "Sandoval A",
+      "Veeraraghavan A",
+      "Valdés PA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 233,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alankar Kotwal",
+      "Vishwanath Saragadam",
+      "Joshua D. Bernstock",
+      "Alfredo Sandoval",
+      "Ashok Veeraraghavan",
+      "Pablo A. Valdés"
+    ],
+    "doi": "10.1117/1.jbo.30.2.023512",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral imaging in neurosurgery: a review of systems, computational methods, and clinical applications",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.30.2.023512",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0233/crossref_doi__bc3c594f4a615680__20260713T082701400473Z.json",
+      "raw_sha256": "b563ee8d79e4dd3d5e11c9a0272f7a73c249748d6ba18eaf5a91dd16ea632db4",
+      "request_identity": "doi:10.1117/1.jbo.30.2.023512",
+      "retrieved_at_utc": "2026-07-13T08:27:01.400473Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0233/europe_pmc_pmid__108cf253ef9c2d30__20260713T082702460405Z.json",
+      "raw_sha256": "8329464f422c42bb180c9784efe154f0cdcb84ebaba59a4a00e75c4c80bf281a",
+      "request_identity": "pmid:39544341",
+      "retrieved_at_utc": "2026-07-13T08:27:02.460405Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

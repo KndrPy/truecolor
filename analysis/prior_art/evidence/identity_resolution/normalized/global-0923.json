@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.34133/csbj.0023",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41982676",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.34133/csbj.0023",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Usama Ali",
+      "Imran Shafi",
+      "Jamil Ahmad",
+      "Arlette Zarate Caceres",
+      "Thania Candelaria Chio Montero",
+      "Hafiz Muhammad Raza ur Rehman",
+      "Imran Ashraf"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Computational and Structural Biotechnology Journal",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ali U",
+      "Shafi I",
+      "Ahmad J",
+      "Caceres AZ",
+      "Chio Montero TC",
+      "Raza Ur Rehman HM",
+      "Ashraf I."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 923,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Usama Ali",
+      "Imran Shafi",
+      "Jamil Ahmad",
+      "Arlette Zarate Caceres",
+      "Thania Candelaria Chio Montero",
+      "Hafiz Muhammad Raza ur Rehman",
+      "Imran Ashraf"
+    ],
+    "doi": "10.34133/csbj.0023",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Systematic Literature Review on Integrated Deep Learning and Multiagent Vision-Language Frameworks for Pathology Image Analysis and Report Generation",
+    "update_to": [],
+    "url": "https://doi.org/10.34133/csbj.0023",
+    "venue": "Computational and Structural Biotechnology Journal",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0923/crossref_doi__36c36097f63f9e26__20260713T084355138987Z.json",
+      "raw_sha256": "55cfb2602869a04f63c902a6c1c8aa59658d6751bec9d2dc0d6e5ff82abe35c8",
+      "request_identity": "doi:10.34133/csbj.0023",
+      "retrieved_at_utc": "2026-07-13T08:43:55.138987Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0923/europe_pmc_pmid__58bc812a83832944__20260713T084356119471Z.json",
+      "raw_sha256": "01acf6626f780faa2c88f9aab11724b6825384410b4bb90231789b6bce3ae12e",
+      "request_identity": "pmid:41982676",
+      "retrieved_at_utc": "2026-07-13T08:43:56.119471Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

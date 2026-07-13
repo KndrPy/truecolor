@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2252097",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2252097",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Jacob R. Bauer",
+      "Jon Y. Hardeberg",
+      "Rudolf Verdaasdonk"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jacob R. Bauer",
+      "Jon Y. Hardeberg",
+      "Rudolf Verdaasdonk"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SPIE Proceedings Multimodal Biomedical Imaging XII",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.333333,
+    "year_match": true
+  },
+  "global_rank": 26,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jacob R. Bauer",
+      "Jon Y. Hardeberg",
+      "Rudolf Verdaasdonk"
+    ],
+    "doi": "10.1117/12.2252097",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Optical skin assessment based on spectral reflectance estimation and Monte Carlo simulation",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2252097",
+    "venue": "SPIE Proceedings",
+    "year": 2017
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0026/crossref_doi__2f480ff77be7cce7__20260713T081508867699Z.json",
+      "raw_sha256": "812ffa4b0ebd5602daf77dbe8fbc41c0864dbcd4fefe66097c4298e467df62ea",
+      "request_identity": "doi:10.1117/12.2252097",
+      "retrieved_at_utc": "2026-07-13T08:15:08.867699Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

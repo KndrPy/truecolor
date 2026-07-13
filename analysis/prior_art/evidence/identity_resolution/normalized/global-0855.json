@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.586407",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42145673",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.586407",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Inkyu Moon",
+      "Bahram Javidi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Moon I",
+      "Javidi B."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 855,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Inkyu Moon",
+      "Bahram Javidi"
+    ],
+    "doi": "10.1364/boe.586407",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "AI-driven digital holographic microscopy for label-free quantitative cellular analysis: toward low-cost and field-deployable platforms",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.586407",
+    "venue": "Biomedical Optics Express",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0855/crossref_doi__02ef2ae9d89da946__20260713T084142362771Z.json",
+      "raw_sha256": "e5bc82c2b81bce22ad5423adca1a6983239f0c81b18e9c6b4c0de40fc485f490",
+      "request_identity": "doi:10.1364/boe.586407",
+      "retrieved_at_utc": "2026-07-13T08:41:42.362771Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0855/europe_pmc_pmid__6794a1ef41dd2149__20260713T084143333009Z.json",
+      "raw_sha256": "a6479dd4cbb55360635ad8df2a4ceb5a1e3c770419c5e96e7f3ffacb3721faf6",
+      "request_identity": "pmid:42145673",
+      "retrieved_at_utc": "2026-07-13T08:41:43.333009Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

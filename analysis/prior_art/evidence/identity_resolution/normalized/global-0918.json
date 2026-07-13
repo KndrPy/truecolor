@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s26082343",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42076455",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s26082343",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Licai Chen",
+      "Zheng Zou",
+      "Shulin Yin",
+      "Jiang Luo",
+      "Xinhai Wu",
+      "Huaichun Xiao",
+      "Jing Xu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Chen L",
+      "Zou Z",
+      "Yin S",
+      "Luo J",
+      "Wu X",
+      "Xiao H",
+      "Xu J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 918,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Licai Chen",
+      "Zheng Zou",
+      "Shulin Yin",
+      "Jiang Luo",
+      "Xinhai Wu",
+      "Huaichun Xiao",
+      "Jing Xu"
+    ],
+    "doi": "10.3390/s26082343",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Study on Quality Detection Methods for Table Grapes Based on Spectral and Imaging Information",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26082343",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0918/crossref_doi__4627bb532046e8fb__20260713T084343481955Z.json",
+      "raw_sha256": "213189035b0921bd1c809c318cecf21adc8bb3bf6a2f6c2aaab75dc8890b8ffa",
+      "request_identity": "doi:10.3390/s26082343",
+      "retrieved_at_utc": "2026-07-13T08:43:43.481955Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0918/europe_pmc_pmid__315a136cfa5bab1d__20260713T084344661214Z.json",
+      "raw_sha256": "0f5b39364331e6471745a1aaf231cde0e9cfc7122f05bccaa57a58ab6e321d05",
+      "request_identity": "pmid:42076455",
+      "retrieved_at_utc": "2026-07-13T08:43:44.661214Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

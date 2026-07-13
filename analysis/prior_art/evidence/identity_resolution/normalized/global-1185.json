@@ -1,0 +1,79 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41416030",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "europe_pmc_pmid",
+  "candidate_key": "pmid:41416030",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Elizabeth V Seiverling",
+      "Asghar Shah",
+      "Martin A Weinstock",
+      "Jane M Grant-Kels",
+      "Nathan P Falk",
+      "Daniel M Siegel"
+    ],
+    "canonical_publication_type": null,
+    "canonical_venue": null,
+    "canonical_year": 2025,
+    "doi_match": null,
+    "harvested_authors": [
+      "Seiverling EV",
+      "Shah A",
+      "Weinstock MA",
+      "Grant-Kels JM",
+      "Falk NP",
+      "Siegel DM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": true,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1185,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Elizabeth V Seiverling",
+      "Asghar Shah",
+      "Martin A Weinstock",
+      "Jane M Grant-Kels",
+      "Nathan P Falk",
+      "Daniel M Siegel"
+    ],
+    "doi": null,
+    "is_retracted": false,
+    "pmcid": "PMC12710988",
+    "pmid": "41416030",
+    "publication_status": "PUBLISHED",
+    "publication_type": null,
+    "title": "Enhancing Diagnostic Precision in Primary Care: A Multireader Multicase (MRMC) Study of an AI-Powered Handheld Elastic Scattering Spectroscopy Device for Informed Referral Decisions in Melanoma Evaluation.",
+    "url": "https://europepmc.org/article/MED/41416030",
+    "venue": null,
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1185/europe_pmc_pmid__cad107fcc69b3e29__20260713T084845295989Z.json",
+      "raw_sha256": "c64cfcb89bbd44ddc2d333d59c207e19e1cd44a5e1c884fe12a6b0d25e478861",
+      "request_identity": "pmid:41416030",
+      "retrieved_at_utc": "2026-07-13T08:48:45.295989Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

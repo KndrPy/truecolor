@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/icip.2009.5414325",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/icip.2009.5414325",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Jayanta Mukhopadhyay",
+      "Sanjit K. Mitra"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2009 16th IEEE International Conference on Image Processing (ICIP)",
+    "canonical_year": 2009,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jayanta Mukhopadhyay",
+      "Sanjit K. Mitra"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2009 16th IEEE International Conference on Image Processing (ICIP)",
+    "harvested_year": 2009,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 574,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jayanta Mukhopadhyay",
+      "Sanjit K. Mitra"
+    ],
+    "doi": "10.1109/icip.2009.5414325",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Color constancy in the compressed domain",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/icip.2009.5414325",
+    "venue": "2009 16th IEEE International Conference on Image Processing (ICIP)",
+    "year": 2009
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0574/crossref_doi__47599c4de1a37eed__20260713T083408204065Z.json",
+      "raw_sha256": "674e9a9fa3d3d4054d144500d35e93276d49fb0e990004cb59bc5f4f24b13502",
+      "request_identity": "doi:10.1109/icip.2009.5414325",
+      "retrieved_at_utc": "2026-07-13T08:34:08.204065Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/jama/9780195176339.021.71",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/jama/9780195176339.021.71",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Annette Flanagin"
+    ],
+    "canonical_publication_type": "book",
+    "canonical_venue": "AMA Manual of Style",
+    "canonical_year": 2009,
+    "doi_match": true,
+    "harvested_authors": [
+      "Annette Flanagin"
+    ],
+    "harvested_publication_type": "book",
+    "harvested_venue": "AMA Manual of Style",
+    "harvested_year": 2009,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1107,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Annette Flanagin"
+    ],
+    "doi": "10.1093/jama/9780195176339.021.71",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book",
+    "relation": {},
+    "title": "Duplicate Publication",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/jama/9780195176339.021.71",
+    "venue": "AMA Manual of Style",
+    "year": 2009
+  },
+  "related_candidate_keys": [
+    "doi:10.1093/jama/9780195176339.022.64"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1107/crossref_doi__951443076689a9f1__20260713T084746178016Z.json",
+      "raw_sha256": "52ed69fee8f0941a1d3ca0f918c6155e8611edf237ad9b6205f58b7f9ad2f4da",
+      "request_identity": "doi:10.1093/jama/9780195176339.021.71",
+      "retrieved_at_utc": "2026-07-13T08:47:46.178016Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

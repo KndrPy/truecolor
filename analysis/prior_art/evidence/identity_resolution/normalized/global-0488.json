@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2648514",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2648514",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Marc Gluyas",
+      "Alexander Doronin"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Multimodal Biomedical Imaging XVIII",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Marc Gluyas",
+      "Alexander Doronin"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Multimodal Biomedical Imaging XVIII",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 488,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Marc Gluyas",
+      "Alexander Doronin"
+    ],
+    "doi": "10.1117/12.2648514",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Real-time photorealistic 3D spectral rendering of human skin appearance (Conference Presentation)",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2648514",
+    "venue": "Multimodal Biomedical Imaging XVIII",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0488/crossref_doi__6b43e4da448bdd30__20260713T083227851563Z.json",
+      "raw_sha256": "381dd310f31c718575f154646154b1fbed0bba18cd460a72cff8148083b6cd28",
+      "request_identity": "doi:10.1117/12.2648514",
+      "retrieved_at_utc": "2026-07-13T08:32:27.851563Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

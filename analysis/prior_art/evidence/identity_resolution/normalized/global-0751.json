@@ -1,0 +1,137 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2147/jpr.s526855",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41245474",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2147/jpr.s526855",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jana Luisa Aulenkamp",
+      "Rasmus Nedergaard",
+      "Imran Khan Niazi",
+      "Donghua Liao",
+      "Louise Kuhlmann",
+      "Fredy Rojas",
+      "Kamran Rasool",
+      "Anna Phillips",
+      "Dhiraj Yadav",
+      "Enrique De-Madaria",
+      "Peter Hegyi",
+      "Pramod Garg",
+      "Søren Olesen",
+      "Soumya Jagannath",
+      "Rasmus Hagn-Meincke",
+      "Zoltán Hajnády",
+      "Christina Brock",
+      "Asbjørn Drewes"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Pain Research",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Aulenkamp JL",
+      "Nedergaard RB",
+      "Niazi IK",
+      "Liao D",
+      "Kuhlmann L",
+      "Rojas F",
+      "Rasool K",
+      "Phillips AE",
+      "Yadav D",
+      "De-Madaria E",
+      "Hegyi P",
+      "Garg P",
+      "Olesen SS",
+      "Jagannath S",
+      "Hagn-Meincke R",
+      "Hajnády Z",
+      "Brock C",
+      "Drewes AM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 751,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jana Luisa Aulenkamp",
+      "Rasmus Nedergaard",
+      "Imran Khan Niazi",
+      "Donghua Liao",
+      "Louise Kuhlmann",
+      "Fredy Rojas",
+      "Kamran Rasool",
+      "Anna Phillips",
+      "Dhiraj Yadav",
+      "Enrique De-Madaria",
+      "Peter Hegyi",
+      "Pramod Garg",
+      "Søren Olesen",
+      "Soumya Jagannath",
+      "Rasmus Hagn-Meincke",
+      "Zoltán Hajnády",
+      "Christina Brock",
+      "Asbjørn Drewes"
+    ],
+    "doi": "10.2147/jpr.s526855",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Individual Autonomic Profiles Influence Brain–Heart Connectivity in Tonic Pain",
+    "update_to": [],
+    "url": "https://doi.org/10.2147/jpr.s526855",
+    "venue": "Journal of Pain Research",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0751/crossref_doi__3da73c6b6f29ede7__20260713T083824224179Z.json",
+      "raw_sha256": "a5b08939c694a4ab8229ede4db8384bf083e18873bbcddeccaf0463328f037a0",
+      "request_identity": "doi:10.2147/jpr.s526855",
+      "retrieved_at_utc": "2026-07-13T08:38:24.224179Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0751/europe_pmc_pmid__e090620073294221__20260713T083825206837Z.json",
+      "raw_sha256": "0aacbae44b254c197b0a8ea3cea6d0ba0568aa02436aeed6efe25326d06ae967",
+      "request_identity": "pmid:41245474",
+      "retrieved_at_utc": "2026-07-13T08:38:25.206837Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

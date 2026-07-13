@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging11110388",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41295105",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging11110388",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Thathsara Nanayakkara",
+      "Hadi Sedigh Malekroodi",
+      "Jaeuk Sul",
+      "Chang-Su Na",
+      "Myunggi Yi",
+      "Byeong-il Lee"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nanayakkara T",
+      "Malekroodi HS",
+      "Sul J",
+      "Na CS",
+      "Yi M",
+      "Lee BI."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 389,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Thathsara Nanayakkara",
+      "Hadi Sedigh Malekroodi",
+      "Jaeuk Sul",
+      "Chang-Su Na",
+      "Myunggi Yi",
+      "Byeong-il Lee"
+    ],
+    "doi": "10.3390/jimaging11110388",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluating Feature-Based Homography Pipelines for Dual-Camera Registration in Acupoint Annotation",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging11110388",
+    "venue": "Journal of Imaging",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0389/crossref_doi__4daf818e9d726232__20260713T083040440899Z.json",
+      "raw_sha256": "273b4e9a6107688b80b851667aca76a20f3c385b50c32d747854379cbdda3738",
+      "request_identity": "doi:10.3390/jimaging11110388",
+      "retrieved_at_utc": "2026-07-13T08:30:40.440899Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0389/europe_pmc_pmid__07e04750a34b71d8__20260713T083041563054Z.json",
+      "raw_sha256": "5ccab283061f4dfd3ba509934151b94b782eac8fc476d9a82372ebd27f67700f",
+      "request_identity": "pmid:41295105",
+      "retrieved_at_utc": "2026-07-13T08:30:41.563054Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

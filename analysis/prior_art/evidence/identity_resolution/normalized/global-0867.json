@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2340/actadv.v106.adv-2026-0512",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42163824",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2340/actadv.v106.adv-2026-0512",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Alexander Detlefsen",
+      "Tine Vestergaard",
+      "Niels Kvorning Ternov",
+      "Lars Konge",
+      "Åsa Ingvar",
+      "Kari Nielsen",
+      "Kasper Bostlund Assersen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Acta Dermato-Venereologica",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Detlefsen A",
+      "Vestergaard T",
+      "Ternov NK",
+      "Konge L",
+      "Ingvar Å",
+      "Nielsen K",
+      "Assersen KB."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 867,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alexander Detlefsen",
+      "Tine Vestergaard",
+      "Niels Kvorning Ternov",
+      "Lars Konge",
+      "Åsa Ingvar",
+      "Kari Nielsen",
+      "Kasper Bostlund Assersen"
+    ],
+    "doi": "10.2340/actadv.v106.adv-2026-0512",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "European Expert Consensus on Essential Variables for Teledermatological Assessment of Skin Tumours",
+    "update_to": [],
+    "url": "https://doi.org/10.2340/actadv.v106.adv-2026-0512",
+    "venue": "Acta Dermato-Venereologica",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0867/crossref_doi__72f3d10bde3d8a2f__20260713T084206994658Z.json",
+      "raw_sha256": "702b120ccb7ec397936d44efc7fb753b7aaabda61e55873fac1ddbdc32ddf18a",
+      "request_identity": "doi:10.2340/actadv.v106.adv-2026-0512",
+      "retrieved_at_utc": "2026-07-13T08:42:06.994658Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0867/europe_pmc_pmid__18b8311f034cfec1__20260713T084207999536Z.json",
+      "raw_sha256": "e9a29a85f95d56d7b1e5d948821b598b879928ef2426f5e8d95e4052d7dd0b3b",
+      "request_identity": "pmid:42163824",
+      "retrieved_at_utc": "2026-07-13T08:42:07.999536Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

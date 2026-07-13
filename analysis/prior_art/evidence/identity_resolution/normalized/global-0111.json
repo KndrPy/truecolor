@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2026.1763105",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41743087",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2026.1763105",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Vilen Jumutc",
+      "Andrey Bondarenko",
+      "Mihails Kovalovs",
+      "Ilze Lihacova",
+      "Alexey Lihachev",
+      "Dmitrijs Bļizņuks"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jumutc V",
+      "Bondarenko A",
+      "Kovalovs M",
+      "Lihacova I",
+      "Lihachev A",
+      "Bļizņuks D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 111,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Vilen Jumutc",
+      "Andrey Bondarenko",
+      "Mihails Kovalovs",
+      "Ilze Lihacova",
+      "Alexey Lihachev",
+      "Dmitrijs Bļizņuks"
+    ],
+    "doi": "10.3389/fmed.2026.1763105",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multispectral imaging and autofluorescence photobleaching combined in a multi-head neural network for skin cancer classification",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2026.1763105",
+    "venue": "Frontiers in Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0111/crossref_doi__cfd14bde8fd8bb58__20260713T081627240975Z.json",
+      "raw_sha256": "b854cf3b1df2bb0a9b7f085f37a057529492860ddd1954d697b34b3a0d587513",
+      "request_identity": "doi:10.3389/fmed.2026.1763105",
+      "retrieved_at_utc": "2026-07-13T08:16:27.240975Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0111/europe_pmc_pmid__fa66e5433ac63d46__20260713T081628451038Z.json",
+      "raw_sha256": "7da415f9e5f1e129919243fcb7d5c22fec9485bdfb96f71bf43bf2b8ad640a0f",
+      "request_identity": "pmid:41743087",
+      "retrieved_at_utc": "2026-07-13T08:16:28.451038Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

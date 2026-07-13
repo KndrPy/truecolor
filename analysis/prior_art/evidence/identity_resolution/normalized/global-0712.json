@@ -1,0 +1,191 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s40820-025-01805-1",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40526263",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s40820-025-01805-1",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 0.666667,
+        "year_match": true
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Ruoning Yang",
+          "Jiefu Chen",
+          "Xiang Li",
+          "Yaxin Zhang",
+          "Baofu Ding",
+          "Yujiangsheng Xu",
+          "Shaoqiang Luo",
+          "Shaohua Ma",
+          "Xingang Ren",
+          "Gang Liu",
+          "Ling Qiu",
+          "Hui-Ming Cheng"
+        ],
+        "doi": "10.1007/s40820-025-01805-1",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Two-Dimensional TiO2 Ultraviolet Filters for Sunscreens",
+        "update_to": [],
+        "url": "https://doi.org/10.1007/s40820-025-01805-1",
+        "venue": "Nano-Micro Letters",
+        "year": 2025
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Ruoning Yang",
+          "Jiefu Chen",
+          "Xiang Li",
+          "Yaxin Zhang",
+          "Baofu Ding",
+          "Yujiangsheng Xu",
+          "Shaoqiang Luo",
+          "Shaohua Ma",
+          "Xingang Ren",
+          "Gang Liu",
+          "Ling Qiu",
+          "Hui-Ming Cheng"
+        ],
+        "doi": "10.1007/s40820-025-01805-1",
+        "is_retracted": false,
+        "pmcid": "PMC12173993",
+        "pmid": "40526263",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Two-Dimensional TiO<sub>2</sub> Ultraviolet Filters for Sunscreens.",
+        "url": "https://europepmc.org/article/MED/40526263",
+        "venue": null,
+        "year": 2025
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": "Two-Dimensional TiO2 Ultraviolet Filters for Sunscreens",
+      "field": "title",
+      "harvested": "Two-Dimensional TiO&lt;sub&gt;2&lt;/sub&gt; Ultraviolet Filters for Sunscreens.",
+      "similarity": 0.6
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 0.666667,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ruoning Yang",
+      "Jiefu Chen",
+      "Xiang Li",
+      "Yaxin Zhang",
+      "Baofu Ding",
+      "Yujiangsheng Xu",
+      "Shaoqiang Luo",
+      "Shaohua Ma",
+      "Xingang Ren",
+      "Gang Liu",
+      "Ling Qiu",
+      "Hui-Ming Cheng"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nano-Micro Letters",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yang R",
+      "Chen J",
+      "Li X",
+      "Zhang Y",
+      "Ding B",
+      "Xu Y",
+      "Luo S",
+      "Ma S",
+      "Ren X",
+      "Liu G",
+      "Qiu L",
+      "Cheng HM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 0.6,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 712,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ruoning Yang",
+      "Jiefu Chen",
+      "Xiang Li",
+      "Yaxin Zhang",
+      "Baofu Ding",
+      "Yujiangsheng Xu",
+      "Shaoqiang Luo",
+      "Shaohua Ma",
+      "Xingang Ren",
+      "Gang Liu",
+      "Ling Qiu",
+      "Hui-Ming Cheng"
+    ],
+    "doi": "10.1007/s40820-025-01805-1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Two-Dimensional TiO2 Ultraviolet Filters for Sunscreens",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s40820-025-01805-1",
+    "venue": "Nano-Micro Letters",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0712/crossref_doi__840e7fcd4d7b8d68__20260713T083715499709Z.json",
+      "raw_sha256": "4861be8c37790cb910d123689686d337af03368676949d1489d6803fdbbc5fd1",
+      "request_identity": "doi:10.1007/s40820-025-01805-1",
+      "retrieved_at_utc": "2026-07-13T08:37:15.499709Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0712/europe_pmc_pmid__f6ae6d11527e68b1__20260713T083716616434Z.json",
+      "raw_sha256": "4650414b160221ca22292361dfc7d9bda2cd8d9f42b824bf48c112e695f15997",
+      "request_identity": "pmid:40526263",
+      "retrieved_at_utc": "2026-07-13T08:37:16.616434Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

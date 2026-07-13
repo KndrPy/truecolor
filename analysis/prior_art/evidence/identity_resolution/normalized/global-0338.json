@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.bios.2.3.032505",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42028249",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.bios.2.3.032505",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Tananant Boonya-ananta",
+      "Andres J. Rodriguez",
+      "Ajmal Ajmal",
+      "JunZhu Pei",
+      "Kimberly L. Branan",
+      "Amanda Sanchez",
+      "Marianne Porras Bouzas",
+      "Michael Alzamora",
+      "Gerard L. Coté",
+      "Jessica C. Ramella-Roman"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biophotonics Discovery",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Boonya-Ananta T",
+      "Rodriguez AJ",
+      "Ajmal A",
+      "Pei J",
+      "Branan KL",
+      "Sanchez A",
+      "Bouzas MP",
+      "Alzamora M",
+      "Coté GL",
+      "Ramella-Roman JC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 338,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tananant Boonya-ananta",
+      "Andres J. Rodriguez",
+      "Ajmal Ajmal",
+      "JunZhu Pei",
+      "Kimberly L. Branan",
+      "Amanda Sanchez",
+      "Marianne Porras Bouzas",
+      "Michael Alzamora",
+      "Gerard L. Coté",
+      "Jessica C. Ramella-Roman"
+    ],
+    "doi": "10.1117/1.bios.2.3.032505",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "What do we know about the epidermis’ optical properties and their influence on optical device functionality?",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.bios.2.3.032505",
+    "venue": "Biophotonics Discovery",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0338/crossref_doi__af1b94f683f0c71d__20260713T082913617850Z.json",
+      "raw_sha256": "2b5494d939a876112893628bc846c80dda5ff58fa0594d86cb07b074e39ff8c7",
+      "request_identity": "doi:10.1117/1.bios.2.3.032505",
+      "retrieved_at_utc": "2026-07-13T08:29:13.617850Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0338/europe_pmc_pmid__d9689d2f77f26c55__20260713T082914755887Z.json",
+      "raw_sha256": "47d53127a40c814335ca880afbfdba713eb637b54b239f989b168a1a9fc837f8",
+      "request_identity": "pmid:42028249",
+      "retrieved_at_utc": "2026-07-13T08:29:14.755887Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

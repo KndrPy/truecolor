@@ -1,0 +1,82 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1101/765958",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1101/765958",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Benedict Diederich",
+      "Barbora Marsikova",
+      "Brad Amos",
+      "Rainer Heintzmann"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2019,
+    "doi_match": true,
+    "harvested_authors": [
+      "Benedict Diederich",
+      "Barbora Marsikova",
+      "Brad Amos",
+      "Rainer Heintzmann"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2019,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 442,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Benedict Diederich",
+      "Barbora Marsikova",
+      "Brad Amos",
+      "Rainer Heintzmann"
+    ],
+    "doi": "10.1101/765958",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {
+      "is-preprint-of": [
+        {
+          "asserted-by": "subject",
+          "id": "10.1371/journal.pone.0227096",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "One-Shot phase-recovery using a Cellphone RGB Camera on a Jamin-Lebedeff Microscope",
+    "update_to": [],
+    "url": "https://doi.org/10.1101/765958",
+    "venue": null,
+    "year": 2019
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0442/crossref_doi__afa895550167b7ca__20260713T083135252227Z.json",
+      "raw_sha256": "490a82ed0ff82a373aa53debf100bfe6cc0e672fce95e71e3f768459e8b5b40d",
+      "request_identity": "doi:10.1101/765958",
+      "retrieved_at_utc": "2026-07-13T08:31:35.252227Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

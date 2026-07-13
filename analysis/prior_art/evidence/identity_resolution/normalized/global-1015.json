@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2139/ssrn.5626139",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2139/ssrn.5626139",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Yongjian Zhu",
+      "Ziyang Zhang",
+      "Kangjun Du",
+      "Yu Zhang"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yongjian Zhu",
+      "Ziyang Zhang",
+      "Kangjun Du",
+      "Yu Zhang"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1015,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yongjian Zhu",
+      "Ziyang Zhang",
+      "Kangjun Du",
+      "Yu Zhang"
+    ],
+    "doi": "10.2139/ssrn.5626139",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "Low-light underwater image enhancement algorithm based on improved white balance and RRDNet",
+    "update_to": [],
+    "url": "https://doi.org/10.2139/ssrn.5626139",
+    "venue": null,
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1015/crossref_doi__5ab6fb0d617b69b9__20260713T084624847903Z.json",
+      "raw_sha256": "7951caf42721ef0947e90f292d573d1c9c93b059ee2b417993b13b87499d6915",
+      "request_identity": "doi:10.2139/ssrn.5626139",
+      "retrieved_at_utc": "2026-07-13T08:46:24.847903Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

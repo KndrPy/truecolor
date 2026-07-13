@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.4028/www.scientific.net/amm.556-562.5034",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.4028/www.scientific.net/amm.556-562.5034",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Li Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Applied Mechanics and Materials",
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [
+      "Li Li"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Applied Mechanics and Materials",
+    "harvested_year": 2014,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1042,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Li Li"
+    ],
+    "doi": "10.4028/www.scientific.net/amm.556-562.5034",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Cramer-Rao Bound for Parameter Estimation in Narrowband Bistatic MIMO Radar",
+    "update_to": [],
+    "url": "https://doi.org/10.4028/www.scientific.net/amm.556-562.5034",
+    "venue": "Applied Mechanics and Materials",
+    "year": 2014
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1042/crossref_doi__b4113b0b210e46b8__20260713T084646826006Z.json",
+      "raw_sha256": "13e9a8657a088c45d5a523f1041341596b201021e39d91da9d2a4828b5c38a4a",
+      "request_identity": "doi:10.4028/www.scientific.net/amm.556-562.5034",
+      "retrieved_at_utc": "2026-07-13T08:46:46.826006Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

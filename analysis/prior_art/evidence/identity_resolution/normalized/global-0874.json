@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2026.1710354",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42131616",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2026.1710354",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Xing Ren",
+      "Jing Yang",
+      "Yanan Sun",
+      "Qianghua Quan",
+      "Peilin Zhang",
+      "Yunong Wang",
+      "Yi Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ren X",
+      "Yang J",
+      "Sun Y",
+      "Quan Q",
+      "Zhang P",
+      "Wang Y",
+      "Wang Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 874,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xing Ren",
+      "Jing Yang",
+      "Yanan Sun",
+      "Qianghua Quan",
+      "Peilin Zhang",
+      "Yunong Wang",
+      "Yi Wang"
+    ],
+    "doi": "10.3389/fmed.2026.1710354",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Biomedical optical imaging of acne pathology: from single-modality methods to multimodal integration",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2026.1710354",
+    "venue": "Frontiers in Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0874/crossref_doi__e6a52804e0cfde1e__20260713T084219145008Z.json",
+      "raw_sha256": "da0011f687c011539fd03317a1e68d06632ff72e5834a2d6b0ec65ab1b28fdb9",
+      "request_identity": "doi:10.3389/fmed.2026.1710354",
+      "retrieved_at_utc": "2026-07-13T08:42:19.145008Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0874/europe_pmc_pmid__6e916d661869ad53__20260713T084220110173Z.json",
+      "raw_sha256": "f8786b8d4d23e9c68abdb65307d2f43a2ff3f15377f424472c38b1f9ba00b76e",
+      "request_identity": "pmid:42131616",
+      "retrieved_at_utc": "2026-07-13T08:42:20.110173Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

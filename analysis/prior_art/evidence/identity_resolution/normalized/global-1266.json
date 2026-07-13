@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "hair number per follicular unit as a marker of treatment response to combined autologous scalp derived micrografts and allogeneic shed cm in male androgenetic alopecia",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:hair number per follicular unit as a marker of treatment response to combined autologous scalp‐derived micrografts and allogeneic shed‐cm in male androgenetic alopecia|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Tomoko Kamishima",
+      "Ai Minamimura",
+      "Chie Hirabe",
+      "Junichi Taguchi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Cosmetic Dermatology",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Kamishima T",
+      "Minamimura A",
+      "Hirabe C",
+      "Taguchi J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1266,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tomoko Kamishima",
+      "Ai Minamimura",
+      "Chie Hirabe",
+      "Junichi Taguchi"
+    ],
+    "doi": "10.1111/jocd.70982",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hair Number per Follicular Unit as a Marker of Treatment Response to Combined Autologous Scalp‐Derived Micrografts and Allogeneic\n                     SHED \n                    ‐\n                     CM \n                    in Male Androgenetic Alopecia",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/jocd.70982",
+    "venue": "Journal of Cosmetic Dermatology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1266/crossref_title__6e219b512394e5b4__20260713T084947643829Z.json",
+      "raw_sha256": "b21d94fd8b12d06774108dcd2505fbb63312a832e8322cf10d2a0c0de8aeda7d",
+      "request_identity": "title:hair number per follicular unit as a marker of treatment response to combined autologous scalp derived micrografts and allogeneic shed cm in male androgenetic alopecia|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:47.643829Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

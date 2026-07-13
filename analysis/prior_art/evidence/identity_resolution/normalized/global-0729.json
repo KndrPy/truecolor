@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.media.2023.102831",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.media.2023.102831",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "E. Ferdian",
+      "D. Marlevi",
+      "J. Schollenberger",
+      "M. Aristova",
+      "E.R. Edelman",
+      "S. Schnell",
+      "C.A. Figueroa",
+      "D.A. Nordsletten",
+      "A.A. Young"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Medical Image Analysis",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "E. Ferdian",
+      "D. Marlevi",
+      "J. Schollenberger",
+      "M. Aristova",
+      "E.R. Edelman",
+      "S. Schnell",
+      "C.A. Figueroa",
+      "D.A. Nordsletten",
+      "A.A. Young"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Medical Image Analysis",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 729,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "E. Ferdian",
+      "D. Marlevi",
+      "J. Schollenberger",
+      "M. Aristova",
+      "E.R. Edelman",
+      "S. Schnell",
+      "C.A. Figueroa",
+      "D.A. Nordsletten",
+      "A.A. Young"
+    ],
+    "doi": "10.1016/j.media.2023.102831",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Cerebrovascular super-resolution 4D Flow MRI – Sequential combination of resolution enhancement by deep learning and physics-informed image processing to non-invasively quantify intracranial velocity, flow, and relative pressure",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.media.2023.102831",
+    "venue": "Medical Image Analysis",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0729/crossref_doi__273d51dcef41fb4a__20260713T083742895994Z.json",
+      "raw_sha256": "531f4fb35b5cf251cafcbdd5c50e1186d05bc24d15d2b705158bdf60d2ba3542",
+      "request_identity": "doi:10.1016/j.media.2023.102831",
+      "retrieved_at_utc": "2026-07-13T08:37:42.895994Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

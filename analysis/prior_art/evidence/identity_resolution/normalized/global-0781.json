@@ -1,0 +1,108 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/diagnostics15141752",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40722502",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/diagnostics15141752",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Panagiotis Derekas",
+      "Charalampos Theodoridis",
+      "Aristidis Likas",
+      "Ioannis Bassukas",
+      "Georgios Gaitanis",
+      "Athanasia Zampeta",
+      "Despina Exadaktylou",
+      "Panagiota Spyridonos"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Derekas P",
+      "Derekas P",
+      "Theodoridis C",
+      "Likas A",
+      "Bassukas I",
+      "Gaitanis G",
+      "Zampeta A",
+      "Exadaktylou D",
+      "Spyridonos P."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 781,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Panagiotis Derekas",
+      "Charalampos Theodoridis",
+      "Aristidis Likas",
+      "Ioannis Bassukas",
+      "Georgios Gaitanis",
+      "Athanasia Zampeta",
+      "Despina Exadaktylou",
+      "Panagiota Spyridonos"
+    ],
+    "doi": "10.3390/diagnostics15141752",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "AΚtransU-Net: Transformer-Equipped U-Net Model for Improved Actinic Keratosis Detection in Clinical Photography",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics15141752",
+    "venue": "Diagnostics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0781/crossref_doi__6e68ff1b74c13730__20260713T083920444557Z.json",
+      "raw_sha256": "2774017353b0f75c1ccc0353662c767cf65805a15260e5029adfe2f47794efb8",
+      "request_identity": "doi:10.3390/diagnostics15141752",
+      "retrieved_at_utc": "2026-07-13T08:39:20.444557Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0781/europe_pmc_pmid__949124f44fb22360__20260713T083921418756Z.json",
+      "raw_sha256": "2a1fb81ff5f1d11294443082d722f9d8500fc701ac7129e7f057b7914bd38506",
+      "request_identity": "pmid:40722502",
+      "retrieved_at_utc": "2026-07-13T08:39:21.418756Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

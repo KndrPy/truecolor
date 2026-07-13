@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.577163",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41394500",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.577163",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Darren Roblyer",
+      "Anahita Pilvar",
+      "Thao Pham",
+      "Sam Spink",
+      "Carole K. Hayakawa",
+      "Vasan Venugopalan",
+      "Mark C. Pierce"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Roblyer D",
+      "Pilvar A",
+      "Pham T",
+      "Spink S",
+      "Hayakawa CK",
+      "Venugopalan V",
+      "Pierce MC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 498,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Darren Roblyer",
+      "Anahita Pilvar",
+      "Thao Pham",
+      "Sam Spink",
+      "Carole K. Hayakawa",
+      "Vasan Venugopalan",
+      "Mark C. Pierce"
+    ],
+    "doi": "10.1364/boe.577163",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Review of shortwave infrared imaging and spectroscopy in tissue [Invited]",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.577163",
+    "venue": "Biomedical Optics Express",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0498/crossref_doi__2b75b7b2a212846d__20260713T083235346554Z.json",
+      "raw_sha256": "c3332ca721929f9cda7c379998632dd1bdf3c44d536dcbf5250995ed19543012",
+      "request_identity": "doi:10.1364/boe.577163",
+      "retrieved_at_utc": "2026-07-13T08:32:35.346554Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0498/europe_pmc_pmid__4495375441013a59__20260713T083236328806Z.json",
+      "raw_sha256": "bbca4deb29ee179a2c522f7764dac55c1843f1e34a35d75b7bdc7cac6bd5b85d",
+      "request_identity": "pmid:41394500",
+      "retrieved_at_utc": "2026-07-13T08:32:36.328806Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

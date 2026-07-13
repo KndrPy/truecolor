@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1186/s12938-025-01405-5",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40542336",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1186/s12938-025-01405-5",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Uday Debnath",
+      "Sungho Kim"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "BioMedical Engineering OnLine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Debnath U",
+      "Kim S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 623,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Uday Debnath",
+      "Sungho Kim"
+    ],
+    "doi": "10.1186/s12938-025-01405-5",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A comprehensive review of heart rate measurement using remote photoplethysmography and deep learning",
+    "update_to": [],
+    "url": "https://doi.org/10.1186/s12938-025-01405-5",
+    "venue": "BioMedical Engineering OnLine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0623/crossref_doi__d2295e9c35bfc695__20260713T083519166242Z.json",
+      "raw_sha256": "30d8c1cfa0101de73eea6bf09372e8eba78e7baecfcdb039e4da5e6e8f86f404",
+      "request_identity": "doi:10.1186/s12938-025-01405-5",
+      "retrieved_at_utc": "2026-07-13T08:35:19.166242Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0623/europe_pmc_pmid__6787c68408b5d68e__20260713T083520167573Z.json",
+      "raw_sha256": "2581d10990e2d3ac459f7f52a8a62f64023063544bd18f21732df7af3bcb5840",
+      "request_identity": "pmid:40542336",
+      "retrieved_at_utc": "2026-07-13T08:35:20.167573Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

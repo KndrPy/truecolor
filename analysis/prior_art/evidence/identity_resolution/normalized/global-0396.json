@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.4103/jips.jips_194_24",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40227942",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.4103/jips.jips_194_24",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Priyadarshani Gulabrao Pawar",
+      "Anjali Borle",
+      "Pradnya R. Patil",
+      "Rohit M. Patil",
+      "Priyanka S. Gadakh",
+      "Gita Rani"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "The Journal of Indian Prosthodontic Society",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Pawar PG",
+      "Borle A",
+      "Patil PR",
+      "Patil RM",
+      "Gadakh PS",
+      "Rani G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 396,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Priyadarshani Gulabrao Pawar",
+      "Anjali Borle",
+      "Pradnya R. Patil",
+      "Rohit M. Patil",
+      "Priyanka S. Gadakh",
+      "Gita Rani"
+    ],
+    "doi": "10.4103/jips.jips_194_24",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Facial skin color assessment and proposed skin shade guide for maxillofacial prosthesis using cluster analysis in a cohort of Indian adults",
+    "update_to": [],
+    "url": "https://doi.org/10.4103/jips.jips_194_24",
+    "venue": "The Journal of Indian Prosthodontic Society",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0396/crossref_doi__23e21454e40c48c9__20260713T083054564136Z.json",
+      "raw_sha256": "1ce926f3621b6c89dcc4e09a5d6ca2b1a0fc6b614035dedba3c121345f802a73",
+      "request_identity": "doi:10.4103/jips.jips_194_24",
+      "retrieved_at_utc": "2026-07-13T08:30:54.564136Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0396/europe_pmc_pmid__fbdb5a4ba4a9029f__20260713T083055570439Z.json",
+      "raw_sha256": "2019aa51ff49ee9a493112f2a51c6776c7ee89fc1ca2229f5bf9bdfba47e093e",
+      "request_identity": "pmid:40227942",
+      "retrieved_at_utc": "2026-07-13T08:30:55.570439Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

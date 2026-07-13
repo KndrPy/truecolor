@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2352/cic.2012.20.1.art00010",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2352/cic.2012.20.1.art00010",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Milan Mosny",
+      "Brian Funt"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Color and Imaging Conference",
+    "canonical_year": 2012,
+    "doi_match": true,
+    "harvested_authors": [
+      "Milan Mosny",
+      "Brian Funt"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Color and Imaging Conference",
+    "harvested_year": 2012,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 296,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Milan Mosny",
+      "Brian Funt"
+    ],
+    "doi": "10.2352/cic.2012.20.1.art00010",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Reducing Worst-Case Illumination Estimates for Better Automatic White Balance",
+    "update_to": [],
+    "url": "https://doi.org/10.2352/cic.2012.20.1.art00010",
+    "venue": "Color and Imaging Conference",
+    "year": 2012
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0296/crossref_doi__b42704d622fc1236__20260713T082809573251Z.json",
+      "raw_sha256": "cee0a7e25e96c9d659c33661ee5661617cbdc700ad64e2e41f05ffbc69ac801e",
+      "request_identity": "doi:10.2352/cic.2012.20.1.art00010",
+      "retrieved_at_utc": "2026-07-13T08:28:09.573251Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

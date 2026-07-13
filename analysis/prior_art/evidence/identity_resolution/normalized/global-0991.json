@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.heliyon.2023.e20698",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37867829",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.heliyon.2023.e20698",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Vlad Atanasiu",
+      "Peter Fornaro"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Heliyon",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Atanasiu V",
+      "Fornaro P."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 991,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Vlad Atanasiu",
+      "Peter Fornaro"
+    ],
+    "doi": "10.1016/j.heliyon.2023.e20698",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "On the utility of Colour in shape analysis: An introduction to Colour science via palaeographical case studies",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.heliyon.2023.e20698",
+    "venue": "Heliyon",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0991/crossref_doi__8a666b5df2c36005__20260713T084601241055Z.json",
+      "raw_sha256": "63091b2a5f3932a6f6bd3413fb68a324fa7636e966083d8004a337e5706ddbbc",
+      "request_identity": "doi:10.1016/j.heliyon.2023.e20698",
+      "retrieved_at_utc": "2026-07-13T08:46:01.241055Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0991/europe_pmc_pmid__4b64f3b1a247ba6e__20260713T084602285846Z.json",
+      "raw_sha256": "2e751f4448ddde27b6e9004a031ade047f9b07f0c85675bdb74e81c689637654",
+      "request_identity": "pmid:37867829",
+      "retrieved_at_utc": "2026-07-13T08:46:02.285846Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

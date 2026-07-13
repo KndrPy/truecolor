@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/diagnostics15081034",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/diagnostics15081034",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Daniel Fried",
+      "Yihua Zhu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Daniel Fried",
+      "Yihua Zhu"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Diagnostics",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 115,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Daniel Fried",
+      "Yihua Zhu"
+    ],
+    "doi": "10.3390/diagnostics15081034",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Optimal Wavelengths for Multispectral Short Wavelength Infrared Transillumination and Reflectance Imaging for Caries Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics15081034",
+    "venue": "Diagnostics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0115/crossref_doi__2080657fe1d03c1d__20260713T081634253615Z.json",
+      "raw_sha256": "0bc641f080ea4690eb2ba33aab641bb5b4c9c0e8913079f9057e6a421469bd93",
+      "request_identity": "doi:10.3390/diagnostics15081034",
+      "retrieved_at_utc": "2026-07-13T08:16:34.253615Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

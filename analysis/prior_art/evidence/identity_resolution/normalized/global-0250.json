@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bioengineering13010075",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41596006",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bioengineering13010075",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Tejrao Panjabrao Marode",
+      "Vikas K. Bhangdiya",
+      "Shon Nemane",
+      "Dhiraj Tulaskar",
+      "Vaishnavi M. Sarad",
+      "K. Sankar",
+      "Sonam Chopade",
+      "Ankita Avthankar",
+      "Manish Bhaiyya",
+      "Madhusudan B. Kulkarni"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Bioengineering",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Marode TP",
+      "Bhangdiya VK",
+      "Nemane S",
+      "Tulaskar D",
+      "Sarad VM",
+      "Sankar K",
+      "Chopade S",
+      "Avthankar A",
+      "Bhaiyya M",
+      "Kulkarni MB."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 250,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tejrao Panjabrao Marode",
+      "Vikas K. Bhangdiya",
+      "Shon Nemane",
+      "Dhiraj Tulaskar",
+      "Vaishnavi M. Sarad",
+      "K. Sankar",
+      "Sonam Chopade",
+      "Ankita Avthankar",
+      "Manish Bhaiyya",
+      "Madhusudan B. Kulkarni"
+    ],
+    "doi": "10.3390/bioengineering13010075",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial Intelligence Meets Nail Diagnostics: Emerging Image-Based Sensing Platforms for Non-Invasive Disease Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bioengineering13010075",
+    "venue": "Bioengineering",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0250/crossref_doi__db4237c6d75c4748__20260713T082719367667Z.json",
+      "raw_sha256": "267d7a5cb3fca645820e68500d223b5847540b788c088d07ebbb0875143895a5",
+      "request_identity": "doi:10.3390/bioengineering13010075",
+      "retrieved_at_utc": "2026-07-13T08:27:19.367667Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0250/europe_pmc_pmid__6ec6155e5f0ea085__20260713T082720373645Z.json",
+      "raw_sha256": "f48602639a372c7903de4bbde23414c2b89c66f6ba4584ae8e6ac73145d2e431",
+      "request_identity": "pmid:41596006",
+      "retrieved_at_utc": "2026-07-13T08:27:20.373645Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

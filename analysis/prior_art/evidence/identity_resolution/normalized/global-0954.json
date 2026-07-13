@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.18621/eurj.1692575",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.18621/eurj.1692575",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Yeliz Başar"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "The European Research Journal",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yeliz Başar"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "The European Research Journal",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 954,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yeliz Başar"
+    ],
+    "doi": "10.18621/eurj.1692575",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "AI-driven nodule detection in chest X-rays: Validation with radiologist-confirmed CT and X-ray findings",
+    "update_to": [],
+    "url": "https://doi.org/10.18621/eurj.1692575",
+    "venue": "The European Research Journal",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0954/crossref_doi__101c4a3bcc506cf2__20260713T084451264557Z.json",
+      "raw_sha256": "3cd80e155c51065054b1934ee10efd52c16bde236745d6b8afade7715601acd6",
+      "request_identity": "doi:10.18621/eurj.1692575",
+      "retrieved_at_utc": "2026-07-13T08:44:51.264557Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bios16020121",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41744739",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bios16020121",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Murad Althobaiti",
+      "Gameel Saleh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biosensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Althobaiti M",
+      "Saleh G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 893,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Murad Althobaiti",
+      "Gameel Saleh"
+    ],
+    "doi": "10.3390/bios16020121",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "In Silico Optimization of a Non-Invasive Optical Sensor for Hemoconcentration Monitoring in Dengue Fever Management",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bios16020121",
+    "venue": "Biosensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0893/crossref_doi__9e8481aa1bf342f0__20260713T084256120534Z.json",
+      "raw_sha256": "b0d2b053000f3f4d7006168cd43041b8cb86f8ce0c142f9bb60e4b210796b560",
+      "request_identity": "doi:10.3390/bios16020121",
+      "retrieved_at_utc": "2026-07-13T08:42:56.120534Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0893/europe_pmc_pmid__beb5bc9faed079d1__20260713T084257083673Z.json",
+      "raw_sha256": "47580c1e86105bccce56aa44ff639b8776586c86263ed3df3d405cbba13c6894",
+      "request_identity": "pmid:41744739",
+      "retrieved_at_utc": "2026-07-13T08:42:57.083673Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

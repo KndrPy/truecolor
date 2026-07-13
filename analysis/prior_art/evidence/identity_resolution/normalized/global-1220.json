@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/oed/1074625539",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/oed/1074625539",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Oxford English Dictionary",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Oxford English Dictionary",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1220,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1093/oed/1074625539",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "skin tone, n.",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/oed/1074625539",
+    "venue": "Oxford English Dictionary",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1220/crossref_doi__0d660f919a99007f__20260713T084911792195Z.json",
+      "raw_sha256": "e4c706eb13c6ae73e7cdcb0df8712dd9c71ea526d5675f5a43b51373094ce4c3",
+      "request_identity": "doi:10.1093/oed/1074625539",
+      "retrieved_at_utc": "2026-07-13T08:49:11.792195Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

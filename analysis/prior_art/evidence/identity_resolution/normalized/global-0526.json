@@ -1,0 +1,125 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.dcn.2024.101505",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39954600",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.dcn.2024.101505",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Emma T. Margolis",
+      "Paige M. Nelson",
+      "Abigail Fiske",
+      "Juliette L.Y. Champaud",
+      "Halie A. Olson",
+      "María José C. Gomez",
+      "Áine T. Dineen",
+      "Chiara Bulgarelli",
+      "Sonya V. Troller-Renfree",
+      "Kirsten A. Donald",
+      "Marisa N. Spann",
+      "Brittany Howell",
+      "Dustin Scheinost",
+      "Marta Korom"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Developmental Cognitive Neuroscience",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Margolis ET",
+      "Nelson PM",
+      "Fiske A",
+      "Champaud JLY",
+      "Olson HA",
+      "Gomez MJC",
+      "Dineen ÁT",
+      "Bulgarelli C",
+      "Troller-Renfree SV",
+      "Donald KA",
+      "Spann MN",
+      "Howell B",
+      "Scheinost D",
+      "Korom M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 526,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Emma T. Margolis",
+      "Paige M. Nelson",
+      "Abigail Fiske",
+      "Juliette L.Y. Champaud",
+      "Halie A. Olson",
+      "María José C. Gomez",
+      "Áine T. Dineen",
+      "Chiara Bulgarelli",
+      "Sonya V. Troller-Renfree",
+      "Kirsten A. Donald",
+      "Marisa N. Spann",
+      "Brittany Howell",
+      "Dustin Scheinost",
+      "Marta Korom"
+    ],
+    "doi": "10.1016/j.dcn.2024.101505",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Modality-level obstacles and initiatives to improve representation in fetal, infant, and toddler neuroimaging research samples",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.dcn.2024.101505",
+    "venue": "Developmental Cognitive Neuroscience",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0526/crossref_doi__1ee7f101e919b722__20260713T083317856023Z.json",
+      "raw_sha256": "509ee5a72b75b4320908402a0dcc832686715bee6d34193172313dc60e54aaa0",
+      "request_identity": "doi:10.1016/j.dcn.2024.101505",
+      "retrieved_at_utc": "2026-07-13T08:33:17.856023Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0526/europe_pmc_pmid__7536734271d61323__20260713T083318986562Z.json",
+      "raw_sha256": "71266e0a33e32359fae22ecc4e4f8adfb9058dc7d8b1aa46b1cb8683351bfbd8",
+      "request_identity": "pmid:39954600",
+      "retrieved_at_utc": "2026-07-13T08:33:18.986562Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

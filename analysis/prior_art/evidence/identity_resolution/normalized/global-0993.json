@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fnins.2022.1024599",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36590304",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fnins.2022.1024599",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Zhen Liu",
+      "Yi-Xuan Liu",
+      "Gui-Ai Gao",
+      "Yong Kong",
+      "Bing Wu",
+      "Jin-Xing Liang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Neuroscience",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Liu Z",
+      "Liu YX",
+      "Gao GA",
+      "Kong Y",
+      "Wu B",
+      "Liang JX."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 993,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zhen Liu",
+      "Yi-Xuan Liu",
+      "Gui-Ai Gao",
+      "Yong Kong",
+      "Bing Wu",
+      "Jin-Xing Liang"
+    ],
+    "doi": "10.3389/fnins.2022.1024599",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "An integrated method for color correction based on color constancy for early mural images in Mogao Grottoes",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fnins.2022.1024599",
+    "venue": "Frontiers in Neuroscience",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0993/crossref_doi__41896aa9ea247af0__20260713T084606629484Z.json",
+      "raw_sha256": "5934a89d7601472b4c046b87188cb400b751fd5a44e10c17048086e2d9932ca7",
+      "request_identity": "doi:10.3389/fnins.2022.1024599",
+      "retrieved_at_utc": "2026-07-13T08:46:06.629484Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0993/europe_pmc_pmid__79328350dd5aa1b3__20260713T084607614777Z.json",
+      "raw_sha256": "3b22b68c9cb2cf61e6c5da9bdcd9384784f86dad9ae8f3fc5524975eed71be9b",
+      "request_identity": "pmid:36590304",
+      "retrieved_at_utc": "2026-07-13T08:46:07.614777Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

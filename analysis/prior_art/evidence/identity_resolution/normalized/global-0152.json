@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1063/1.1634365",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1063/1.1634365",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "P. J. Pardo",
+      "A. L. Pérez",
+      "M. I. Suero"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Review of Scientific Instruments",
+    "canonical_year": 2004,
+    "doi_match": true,
+    "harvested_authors": [
+      "P. J. Pardo",
+      "A. L. Pérez",
+      "M. I. Suero"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Review of Scientific Instruments",
+    "harvested_year": 2004,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 152,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "P. J. Pardo",
+      "A. L. Pérez",
+      "M. I. Suero"
+    ],
+    "doi": "10.1063/1.1634365",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Converting a fluorescence spectrophotometer into a three-channel colorimeter for color vision research",
+    "update_to": [],
+    "url": "https://doi.org/10.1063/1.1634365",
+    "venue": "Review of Scientific Instruments",
+    "year": 2004
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0152/crossref_doi__92a67c781d4a8ba8__20260713T082548299219Z.json",
+      "raw_sha256": "2a97cb0bde7a6e2e40bb62f6cfb7729a2221f96084fc2b582d1c492774f1bad9",
+      "request_identity": "doi:10.1063/1.1634365",
+      "retrieved_at_utc": "2026-07-13T08:25:48.299219Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

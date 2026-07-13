@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.569995",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41368102",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.569995",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Felix Hilge",
+      "Michael Wang-Evers",
+      "Lara Buhl",
+      "Heather Downs",
+      "Maron Dolling",
+      "Lukas Pohl",
+      "Reginald Birngruber",
+      "Hinnerk Schulz-Hildebrandt",
+      "Gereon Hüttmann",
+      "Dieter Manstein"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hilge F",
+      "Wang-Evers M",
+      "Buhl L",
+      "Downs H",
+      "Dolling M",
+      "Pohl L",
+      "Birngruber R",
+      "Schulz-Hildebrandt H",
+      "Hüttmann G",
+      "Manstein D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 319,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Felix Hilge",
+      "Michael Wang-Evers",
+      "Lara Buhl",
+      "Heather Downs",
+      "Maron Dolling",
+      "Lukas Pohl",
+      "Reginald Birngruber",
+      "Hinnerk Schulz-Hildebrandt",
+      "Gereon Hüttmann",
+      "Dieter Manstein"
+    ],
+    "doi": "10.1364/boe.569995",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Label-free visualization and quantitative analysis of Far UV-C skin safety with dynamic optical coherence tomography with subcellular resolution",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.569995",
+    "venue": "Biomedical Optics Express",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0319/crossref_doi__7d329dc3822c6947__20260713T082842898652Z.json",
+      "raw_sha256": "59a51ed46b8b51949e4fcf7885399830aef97182f8aafc8359ed0b3fb644616e",
+      "request_identity": "doi:10.1364/boe.569995",
+      "retrieved_at_utc": "2026-07-13T08:28:42.898652Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0319/europe_pmc_pmid__03aa70200b532215__20260713T082843928784Z.json",
+      "raw_sha256": "e4170421aab87d5ea9f935efb199cf2c0c422ce4029626027a368afdf56fc940",
+      "request_identity": "pmid:41368102",
+      "retrieved_at_utc": "2026-07-13T08:28:43.928784Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.sigpro.2003.11.002",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.sigpro.2003.11.002",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Fabrizio Sellone",
+      "Emanuela Falletti"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Signal Processing",
+    "canonical_year": 2004,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fabrizio Sellone",
+      "Emanuela Falletti"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Signal Processing",
+    "harvested_year": 2004,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1101,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Fabrizio Sellone",
+      "Emanuela Falletti"
+    ],
+    "doi": "10.1016/j.sigpro.2003.11.002",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Cramer–Rao bound of spatio-temporal linear pre-processing in parameter estimation from sensor array",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.sigpro.2003.11.002",
+    "venue": "Signal Processing",
+    "year": 2004
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1101/crossref_doi__7b101f9a10dd6511__20260713T084740769626Z.json",
+      "raw_sha256": "466441ebeacfab4a70a4d840fdd49df8745d32ca9b6dac8aed688e922946b325",
+      "request_identity": "doi:10.1016/j.sigpro.2003.11.002",
+      "retrieved_at_utc": "2026-07-13T08:47:40.769626Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1177/09612033221114805",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "35835534",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1177/09612033221114805",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "April M Jorge",
+      "Dylan Smith",
+      "Zhiyao Wu",
+      "Tashrif Chowdhury",
+      "Karen Costenbader",
+      "Yuqing Zhang",
+      "Hyon K Choi",
+      "Candace H Feldman",
+      "Yijun Zhao"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Lupus",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jorge AM",
+      "Smith D",
+      "Wu Z",
+      "Chowdhury T",
+      "Costenbader K",
+      "Zhang Y",
+      "Choi HK",
+      "Feldman CH",
+      "Zhao Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 517,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "April M Jorge",
+      "Dylan Smith",
+      "Zhiyao Wu",
+      "Tashrif Chowdhury",
+      "Karen Costenbader",
+      "Yuqing Zhang",
+      "Hyon K Choi",
+      "Candace H Feldman",
+      "Yijun Zhao"
+    ],
+    "doi": "10.1177/09612033221114805",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Exploration of machine learning methods to predict systemic lupus erythematosus hospitalizations",
+    "update_to": [],
+    "url": "https://doi.org/10.1177/09612033221114805",
+    "venue": "Lupus",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0517/crossref_doi__ab2c9588c28b6a5a__20260713T083304278225Z.json",
+      "raw_sha256": "e646ed00b79fe5474f4cfb71ba8ecce10052322c64810b1436a6a08a6f751aba",
+      "request_identity": "doi:10.1177/09612033221114805",
+      "retrieved_at_utc": "2026-07-13T08:33:04.278225Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0517/europe_pmc_pmid__6e2a0d85e452b6ca__20260713T083305407801Z.json",
+      "raw_sha256": "8941c30570bfe31c7eb82b8f6c5ad2892c872eaebac518672f0c9d9bf20ad997",
+      "request_identity": "pmid:35835534",
+      "retrieved_at_utc": "2026-07-13T08:33:05.407801Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,116 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/2056-4538.70082",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41841638",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/2056-4538.70082",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Anne Petzold",
+      "Anja Wessely",
+      "Stefan Schliep",
+      "Hong Jiang",
+      "Manuel Tran",
+      "Elias AT Koch",
+      "Tingying Peng",
+      "Hans Starz",
+      "Carola Berking",
+      "Carsten Marr",
+      "Markus V Heppt"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "The Journal of Pathology: Clinical Research",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Petzold A",
+      "Wessely A",
+      "Schliep S",
+      "Jiang H",
+      "Tran M",
+      "Koch EA",
+      "Peng T",
+      "Starz H",
+      "Berking C",
+      "Marr C",
+      "Heppt MV."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 349,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Anne Petzold",
+      "Anja Wessely",
+      "Stefan Schliep",
+      "Hong Jiang",
+      "Manuel Tran",
+      "Elias AT Koch",
+      "Tingying Peng",
+      "Hans Starz",
+      "Carola Berking",
+      "Carsten Marr",
+      "Markus V Heppt"
+    ],
+    "doi": "10.1002/2056-4538.70082",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Weakly supervised deep learning for cutaneous squamous and basal cell carcinoma in whole‐slide histopathology",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/2056-4538.70082",
+    "venue": "The Journal of Pathology: Clinical Research",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0349/crossref_doi__ea2007643b54d605__20260713T082930087998Z.json",
+      "raw_sha256": "0c85ddc306e972aeb36009d0d9dd1f2dee95ec1cb6abd85bbc1a2fe96a6075ab",
+      "request_identity": "doi:10.1002/2056-4538.70082",
+      "retrieved_at_utc": "2026-07-13T08:29:30.087998Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0349/europe_pmc_pmid__ee3f494bc7ca5e61__20260713T082931242824Z.json",
+      "raw_sha256": "77e2a77808444c444ebebabbed3c3096a18b21b4f32d4015fb092a1f7f102498",
+      "request_identity": "pmid:41841638",
+      "retrieved_at_utc": "2026-07-13T08:29:31.242824Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

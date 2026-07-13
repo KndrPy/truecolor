@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/ofc.2015.w3k.1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/ofc.2015.w3k.1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Frank R Kschischang"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Optical Fiber Communication Conference",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "Frank R Kschischang"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Optical Fiber Communication Conference",
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1169,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Frank R Kschischang"
+    ],
+    "doi": "10.1364/ofc.2015.w3k.1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Information-theoretic Limits on Coherent Nonlinear Optical-fiber Communication",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/ofc.2015.w3k.1",
+    "venue": "Optical Fiber Communication Conference",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1169/crossref_doi__8d676ec025c291b4__20260713T084833036964Z.json",
+      "raw_sha256": "31b2bff4487e27f0557dc1377e549a00888c9b2606ca93defe2a3448230a42c9",
+      "request_identity": "doi:10.1364/ofc.2015.w3k.1",
+      "retrieved_at_utc": "2026-07-13T08:48:33.036964Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

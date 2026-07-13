@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1152/jappl.1955.7.5.523",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1152/jappl.1955.7.5.523",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "John A. Jacquez",
+      "Hans F. Kuppenheim"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Applied Physiology",
+    "canonical_year": 1955,
+    "doi_match": true,
+    "harvested_authors": [
+      "John A. Jacquez",
+      "Hans F. Kuppenheim"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Applied Physiology",
+    "harvested_year": 1955,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 70,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "John A. Jacquez",
+      "Hans F. Kuppenheim"
+    ],
+    "doi": "10.1152/jappl.1955.7.5.523",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectral Reflectance of Human Skin in the Region 2351000 mµ",
+    "update_to": [],
+    "url": "https://doi.org/10.1152/jappl.1955.7.5.523",
+    "venue": "Journal of Applied Physiology",
+    "year": 1955
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0070/crossref_doi__5bb7dd88bac9905c__20260713T081548595888Z.json",
+      "raw_sha256": "048e1a261e894684594ccfca7ffcf2aeba5f7eb6c365eb8668098302ec84e99e",
+      "request_identity": "doi:10.1152/jappl.1955.7.5.523",
+      "retrieved_at_utc": "2026-07-13T08:15:48.595888Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

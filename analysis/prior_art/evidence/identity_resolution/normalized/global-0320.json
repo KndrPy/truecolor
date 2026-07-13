@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.570414",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41394505",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.570414",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Michael Pircher",
+      "Elisabeth Brunner",
+      "Ionela-Mariana Nagelreiter",
+      "Christopher Kremslehner",
+      "Wenting Hu",
+      "Bahar Golabi",
+      "Christian Freystätter",
+      "Florian Gruber"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Pircher M",
+      "Brunner E",
+      "Nagelreiter IM",
+      "Kremslehner C",
+      "Hu W",
+      "Golabi B",
+      "Freystätter C",
+      "Gruber F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 320,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Michael Pircher",
+      "Elisabeth Brunner",
+      "Ionela-Mariana Nagelreiter",
+      "Christopher Kremslehner",
+      "Wenting Hu",
+      "Bahar Golabi",
+      "Christian Freystätter",
+      "Florian Gruber"
+    ],
+    "doi": "10.1364/boe.570414",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Dynamic contrast in dual-beam optical coherence tomography imaging of human skin",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.570414",
+    "venue": "Biomedical Optics Express",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0320/crossref_doi__37d387d2ae7cd099__20260713T082844629531Z.json",
+      "raw_sha256": "d9222b6c98bf0b44ea1b56eac3cff7e2dc001dfd41c6b3d52d52f7acdaebcbff",
+      "request_identity": "doi:10.1364/boe.570414",
+      "retrieved_at_utc": "2026-07-13T08:28:44.629531Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0320/europe_pmc_pmid__f88eb18f3a86dce6__20260713T082845622933Z.json",
+      "raw_sha256": "af36047213e98c7ba5fab627795957909487cf6496952eb23d1682624158aff2",
+      "request_identity": "pmid:41394505",
+      "retrieved_at_utc": "2026-07-13T08:28:45.622933Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

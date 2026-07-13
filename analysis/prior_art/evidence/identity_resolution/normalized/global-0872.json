@@ -1,0 +1,119 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2026.1618306",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41924746",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2026.1618306",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Houriah Y. Nukaly",
+      "Ibrahim R. Halawani",
+      "H. M. Irtaza",
+      "Talah Alturkistani",
+      "Mohammed Rehab Serafi",
+      "Waseem Alhawsawi",
+      "Hassan Omar Bogari",
+      "Ferdous A. Ahmed",
+      "Yara Alhaddad",
+      "Asem Shadid",
+      "Ruaa Alharithy",
+      "Abdulhadi Jfri"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nukaly HY",
+      "Halawani IR",
+      "Irtaza HM",
+      "Alturkistani T",
+      "Serafi MR",
+      "Alhawsawi W",
+      "Bogari HO",
+      "Ahmed FA",
+      "Alhaddad Y",
+      "Shadid A",
+      "Alharithy R",
+      "Jfri A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 872,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Houriah Y. Nukaly",
+      "Ibrahim R. Halawani",
+      "H. M. Irtaza",
+      "Talah Alturkistani",
+      "Mohammed Rehab Serafi",
+      "Waseem Alhawsawi",
+      "Hassan Omar Bogari",
+      "Ferdous A. Ahmed",
+      "Yara Alhaddad",
+      "Asem Shadid",
+      "Ruaa Alharithy",
+      "Abdulhadi Jfri"
+    ],
+    "doi": "10.3389/fmed.2026.1618306",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Oral and topical peptides for skin aging: systematic review and meta-analysis of randomized controlled trials",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2026.1618306",
+    "venue": "Frontiers in Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0872/crossref_doi__9f656ebe1c3da0b3__20260713T084215905487Z.json",
+      "raw_sha256": "9cfaeca607c5d6de47f3bfe5ef36bc0702a8b3abcc1b0112dd8a633edc57a345",
+      "request_identity": "doi:10.3389/fmed.2026.1618306",
+      "retrieved_at_utc": "2026-07-13T08:42:15.905487Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0872/europe_pmc_pmid__5815eaec025539e3__20260713T084216855905Z.json",
+      "raw_sha256": "e9c8325a741f512876570c2e8be4140ab5429a5ca32ca089ce3a9c6b2aa0019e",
+      "request_identity": "pmid:41924746",
+      "retrieved_at_utc": "2026-07-13T08:42:16.855905Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

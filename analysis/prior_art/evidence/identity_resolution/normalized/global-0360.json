@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.31.4.045001",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42058458",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.31.4.045001",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Hsin-Hua Chen",
+      "Hsin-Che Wang",
+      "Kuo-Lung Lai",
+      "Chiu-Chin Sung",
+      "Jun-Peng Chen",
+      "Yu-Wen Fu",
+      "Shao-Jen Weng",
+      "Hsian-Min Chen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Chen HH",
+      "Wang HC",
+      "Lai KL",
+      "Sung CC",
+      "Chen JP",
+      "Fu YW",
+      "Weng SJ",
+      "Chen HM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 360,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hsin-Hua Chen",
+      "Hsin-Che Wang",
+      "Kuo-Lung Lai",
+      "Chiu-Chin Sung",
+      "Jun-Peng Chen",
+      "Yu-Wen Fu",
+      "Shao-Jen Weng",
+      "Hsian-Min Chen"
+    ],
+    "doi": "10.1117/1.jbo.31.4.045001",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Quantitative assessment of rheumatoid arthritis treatment response using short-wave infrared hyperspectral imaging soft abundance scoring",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.31.4.045001",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0360/crossref_doi__e989e2204a81e15f__20260713T082947803653Z.json",
+      "raw_sha256": "7e212f0cfb216e7f171f5e2d812cf0e2ad781de6bb6a6d21830869b6d53b8ff4",
+      "request_identity": "doi:10.1117/1.jbo.31.4.045001",
+      "retrieved_at_utc": "2026-07-13T08:29:47.803653Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0360/europe_pmc_pmid__b54729ef0d76aac7__20260713T082948811053Z.json",
+      "raw_sha256": "5d24fd20934d38b077f555fa37b29ba677d67f9130265bcaa7946659d07ea6b6",
+      "request_identity": "pmid:42058458",
+      "retrieved_at_utc": "2026-07-13T08:29:48.811053Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

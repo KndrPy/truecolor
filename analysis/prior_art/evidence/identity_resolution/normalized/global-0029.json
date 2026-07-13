@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/app15158321",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/app15158321",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Sara Seabra Reis",
+      "Luis Pinto-Coelho",
+      "Maria Carolina Sousa",
+      "Mariana Neto",
+      "Marta Silva",
+      "Miguela Sequeira"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Applied Sciences",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sara Seabra Reis",
+      "Luis Pinto-Coelho",
+      "Maria Carolina Sousa",
+      "Mariana Neto",
+      "Marta Silva",
+      "Miguela Sequeira"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Applied Sciences",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 29,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sara Seabra Reis",
+      "Luis Pinto-Coelho",
+      "Maria Carolina Sousa",
+      "Mariana Neto",
+      "Marta Silva",
+      "Miguela Sequeira"
+    ],
+    "doi": "10.3390/app15158321",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluating Skin Tone Fairness in Convolutional Neural Networks for the Classification of Diabetic Foot Ulcers",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/app15158321",
+    "venue": "Applied Sciences",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0029/crossref_doi__b9227342ba9f0446__20260713T081512039563Z.json",
+      "raw_sha256": "8dd4029276d25e4401acb5f0aed05ebe6738e0cc1351131fb5d6636b8ca316a5",
+      "request_identity": "doi:10.3390/app15158321",
+      "retrieved_at_utc": "2026-07-13T08:15:12.039563Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,45 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "c",
+      "result": "NOT_RESOLVED"
+    }
+  ],
+  "authoritative_source": null,
+  "candidate_key": "title:c|year:2020",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": null,
+    "canonical_venue": null,
+    "canonical_year": null,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2020,
+    "pmid_match": null,
+    "title_similarity": 0.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1298,
+  "normalized_metadata": {},
+  "related_candidate_keys": [],
+  "resolution_reason": "No authoritative metadata record resolved from attempted identifiers.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1298/crossref_title__6be2b7f7b3fd49f0__20260713T085020706916Z.json",
+      "raw_sha256": "e15e3d8f36335c5e20a1272cd9edf4bc6b0317d66d1d3587a5f2f457b5b69214",
+      "request_identity": "title:c|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:50:20.706916Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

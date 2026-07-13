@@ -1,0 +1,116 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.588946",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42110988",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.588946",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Rongrui Zhang",
+      "Jing Liu",
+      "Jing Lv",
+      "Junduo Liu",
+      "Yuxin Ma",
+      "Yawen Wang",
+      "Jingrui Zhao",
+      "Lei Fu",
+      "Weihui Zeng",
+      "Qiangzhou Rong",
+      "Cuiping Yao"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhang R",
+      "Liu J",
+      "Lv J",
+      "Liu J",
+      "Ma Y",
+      "Wang Y",
+      "Zhao J",
+      "Fu L",
+      "Zeng W",
+      "Rong Q",
+      "Yao C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 856,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rongrui Zhang",
+      "Jing Liu",
+      "Jing Lv",
+      "Junduo Liu",
+      "Yuxin Ma",
+      "Yawen Wang",
+      "Jingrui Zhao",
+      "Lei Fu",
+      "Weihui Zeng",
+      "Qiangzhou Rong",
+      "Cuiping Yao"
+    ],
+    "doi": "10.1364/boe.588946",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Dual-threshold adaptive irradiation strategy for vascular-targeted photodynamic therapy based on hyperspectral-photoacoustic dual-modality imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.588946",
+    "venue": "Biomedical Optics Express",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0856/crossref_doi__8d49eae44f39af0e__20260713T084144061172Z.json",
+      "raw_sha256": "0f4205ec9e28bb5562743748047bddadc5437077ed28fb064726d5412c89faa1",
+      "request_identity": "doi:10.1364/boe.588946",
+      "retrieved_at_utc": "2026-07-13T08:41:44.061172Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0856/europe_pmc_pmid__be156acac9605d7f__20260713T084145041248Z.json",
+      "raw_sha256": "f0f65831c69491164cbc864dbc9677535977026bcd50870f8ca8cd0d8cbc4779",
+      "request_identity": "pmid:42110988",
+      "retrieved_at_utc": "2026-07-13T08:41:45.041248Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,116 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41597-025-05763-6",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40849320",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41597-025-05763-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Giulia Rotunno",
+      "Massimo Salvi",
+      "Julia Deinsberger",
+      "Lisa Krainz",
+      "Benedikt Weber",
+      "Christoph Sinz",
+      "Harald Kittler",
+      "Leopold Schmetterer",
+      "Wolfgang Drexler",
+      "Mengyang Liu",
+      "Kristen M. Meiburger"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Data",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rotunno G",
+      "Salvi M",
+      "Deinsberger J",
+      "Krainz L",
+      "Weber B",
+      "Sinz C",
+      "Kittler H",
+      "Schmetterer L",
+      "Drexler W",
+      "Liu M",
+      "Meiburger KM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 645,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Giulia Rotunno",
+      "Massimo Salvi",
+      "Julia Deinsberger",
+      "Lisa Krainz",
+      "Benedikt Weber",
+      "Christoph Sinz",
+      "Harald Kittler",
+      "Leopold Schmetterer",
+      "Wolfgang Drexler",
+      "Mengyang Liu",
+      "Kristen M. Meiburger"
+    ],
+    "doi": "10.1038/s41597-025-05763-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "DERMA-OCTA: A Comprehensive Dataset and Preprocessing Pipeline for Dermatological OCTA Vessel Segmentation",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41597-025-05763-6",
+    "venue": "Scientific Data",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0645/crossref_doi__728968f8105c0e30__20260713T083600520243Z.json",
+      "raw_sha256": "5534288cd7ec2f4d1e384db9f341f6d46afe0be532cffd0bab6abc240177bdaf",
+      "request_identity": "doi:10.1038/s41597-025-05763-6",
+      "retrieved_at_utc": "2026-07-13T08:36:00.520243Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0645/europe_pmc_pmid__3e3957db0e6d89a1__20260713T083601535416Z.json",
+      "raw_sha256": "babadc390f8ff9608e45637005e66daebbab4c1c3ae2be13870709f67921bcbd",
+      "request_identity": "pmid:40849320",
+      "retrieved_at_utc": "2026-07-13T08:36:01.535416Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

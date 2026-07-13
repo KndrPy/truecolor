@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1201/9781315368351-3",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1201/9781315368351-3",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Ahmad Fadzil Mohamad Hani",
+      "Hermawan Nugroho",
+      "Norashikin Shamsudin",
+      "Suraiya H. Hussein"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Optical Imaging for Biomedical and Clinical Applications",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ahmad Fadzil Mohamad Hani",
+      "Hermawan Nugroho",
+      "Norashikin Shamsudin",
+      "Suraiya H. Hussein"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Optical Imaging for Biomedical and Clinical Applications",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1225,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ahmad Fadzil Mohamad Hani",
+      "Hermawan Nugroho",
+      "Norashikin Shamsudin",
+      "Suraiya H. Hussein"
+    ],
+    "doi": "10.1201/9781315368351-3",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Skin image analysis for vitiligo assessment",
+    "update_to": [],
+    "url": "https://doi.org/10.1201/9781315368351-3",
+    "venue": "Optical Imaging for Biomedical and Clinical Applications",
+    "year": 2017
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1225/crossref_doi__29d1b1c0876dc1ed__20260713T084914863374Z.json",
+      "raw_sha256": "80965d688328adbca90f2a653476e99fb5649f60656201549d6a8189406f6cf1",
+      "request_identity": "doi:10.1201/9781315368351-3",
+      "retrieved_at_utc": "2026-07-13T08:49:14.863374Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5040/9781501374616.ch-6",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5040/9781501374616.ch-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "other",
+    "canonical_venue": "Multi-Camera Cinematography and Production",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "other",
+    "harvested_venue": "Multi-Camera Cinematography and Production",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 543,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.5040/9781501374616.ch-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "other",
+    "relation": {},
+    "title": "Lighting, Lamps, and Electricity",
+    "update_to": [],
+    "url": "https://doi.org/10.5040/9781501374616.ch-6",
+    "venue": "Multi-Camera Cinematography and Production",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0543/crossref_doi__0478f64cbe85aec9__20260713T083344820090Z.json",
+      "raw_sha256": "27f2f6037080ce120f6c300c2bac60ee7d709a469099d5e1fafac87196d5078a",
+      "request_identity": "doi:10.5040/9781501374616.ch-6",
+      "retrieved_at_utc": "2026-07-13T08:33:44.820090Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

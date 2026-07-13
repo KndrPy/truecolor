@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pdig.0000296",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37437005",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pdig.0000296",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yihang Jiang",
+      "Connor Spies",
+      "Justin Magin",
+      "Satasuk Joy Bhosai",
+      "Laurie Snyder",
+      "Jessilyn Dunn"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS Digital Health",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jiang Y",
+      "Spies C",
+      "Magin J",
+      "Bhosai SJ",
+      "Snyder L",
+      "Dunn J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 513,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yihang Jiang",
+      "Connor Spies",
+      "Justin Magin",
+      "Satasuk Joy Bhosai",
+      "Laurie Snyder",
+      "Jessilyn Dunn"
+    ],
+    "doi": "10.1371/journal.pdig.0000296",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Investigating the accuracy of blood oxygen saturation measurements in common consumer smartwatches",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pdig.0000296",
+    "venue": "PLOS Digital Health",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0513/crossref_doi__122450c6c410b5a9__20260713T083257983069Z.json",
+      "raw_sha256": "11db0ef0303c169a6f9fd040f4405c7017d578896b98e1eb83b35eb61bef2686",
+      "request_identity": "doi:10.1371/journal.pdig.0000296",
+      "retrieved_at_utc": "2026-07-13T08:32:57.983069Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0513/europe_pmc_pmid__1caa722f4b59ee70__20260713T083259560445Z.json",
+      "raw_sha256": "b0af48239603eb1bc24c7c38dac0ab316089f5726301473e3e747b38dd9e8f23",
+      "request_identity": "pmid:37437005",
+      "retrieved_at_utc": "2026-07-13T08:32:59.560445Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

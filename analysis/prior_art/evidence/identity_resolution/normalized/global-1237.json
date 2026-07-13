@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1021/bi0484825.s001",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1021/bi0484825.s001",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "component",
+    "canonical_venue": null,
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "component",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1237,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1021/bi0484825.s001",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "component",
+    "relation": {
+      "is-component-of": [
+        {
+          "asserted-by": "object",
+          "id": "10.1021/bi0484825",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Structural and Spectral Response of  Aequorea victoria Green Fluorescent  Proteins to Chromophore Fluorination",
+    "update_to": [],
+    "url": "https://doi.org/10.1021/bi0484825.s001",
+    "venue": null,
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1237/crossref_doi__7bb47edd06e8109e__20260713T084924310404Z.json",
+      "raw_sha256": "d06e8369e716bf0ca09277604bbe0f040b9988e2c969eb2c986a884356f9852e",
+      "request_identity": "doi:10.1021/bi0484825.s001",
+      "retrieved_at_utc": "2026-07-13T08:49:24.310404Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

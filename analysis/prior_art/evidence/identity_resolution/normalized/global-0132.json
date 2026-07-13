@@ -1,0 +1,160 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s10278-025-01594-4",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40659969",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s10278-025-01594-4",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Shivani Joshi",
+          "Rajiv Kumar",
+          "Avinash Dwivedi",
+          "Ashish Kumar",
+          "Praveen Kumar Rai",
+          "Amrita"
+        ],
+        "doi": "10.1007/s10278-025-01594-4",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "An Adaptive Generative 3D VNet Model for Enhanced Monkeypox Lesion Classification Using Deep Learning and Augmented Image Fusion",
+        "update_to": [],
+        "url": "https://doi.org/10.1007/s10278-025-01594-4",
+        "venue": "Journal of Imaging Informatics in Medicine",
+        "year": 2025
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Shivani Joshi",
+          "Rajiv Kumar",
+          "Avinash Dwivedi",
+          "Ashish Kumar",
+          "Praveen Kumar Rai",
+          "Amrita"
+        ],
+        "doi": "10.1007/s10278-025-01594-4",
+        "is_retracted": false,
+        "pmcid": "PMC13103179",
+        "pmid": "40659969",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "An Adaptive Generative 3D VNet Model for Enhanced Monkeypox Lesion Classification Using Deep Learning and Augmented Image Fusion.",
+        "url": "https://europepmc.org/article/MED/40659969",
+        "venue": null,
+        "year": 2026
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2025,
+      "field": "year",
+      "harvested": 2026
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Shivani Joshi",
+      "Rajiv Kumar",
+      "Avinash Dwivedi",
+      "Ashish Kumar",
+      "Praveen Kumar Rai",
+      "Amrita"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging Informatics in Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Joshi S",
+      "Kumar R",
+      "Dwivedi A",
+      "Kumar A",
+      "Rai PK",
+      "Amrita."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 132,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shivani Joshi",
+      "Rajiv Kumar",
+      "Avinash Dwivedi",
+      "Ashish Kumar",
+      "Praveen Kumar Rai",
+      "Amrita"
+    ],
+    "doi": "10.1007/s10278-025-01594-4",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "An Adaptive Generative 3D VNet Model for Enhanced Monkeypox Lesion Classification Using Deep Learning and Augmented Image Fusion",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s10278-025-01594-4",
+    "venue": "Journal of Imaging Informatics in Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0132/crossref_doi__f7bca81079889a02__20260713T082523620701Z.json",
+      "raw_sha256": "c8077dc2d0f66c160107e839adac25257a8f5410a8ab71dd97253bbc0d58f410",
+      "request_identity": "doi:10.1007/s10278-025-01594-4",
+      "retrieved_at_utc": "2026-07-13T08:25:23.620701Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0132/europe_pmc_pmid__cb16ed3c142f1d25__20260713T082525091195Z.json",
+      "raw_sha256": "43c973204d15c724d24a85f33af7f6a12cca74825afd580eac5b4c6a694bdfa4",
+      "request_identity": "pmid:40659969",
+      "retrieved_at_utc": "2026-07-13T08:25:25.091195Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

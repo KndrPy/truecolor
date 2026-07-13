@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3724/sp.j.1087.2009.02659",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3724/sp.j.1087.2009.02659",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Zhi-jun PEI",
+      "Ji-xiang ZHANG",
+      "Ji-hua CAO"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Computer Applications",
+    "canonical_year": 2009,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhi-jun PEI",
+      "Ji-xiang ZHANG",
+      "Ji-hua CAO"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Computer Applications",
+    "harvested_year": 2009,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1195,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zhi-jun PEI",
+      "Ji-xiang ZHANG",
+      "Ji-hua CAO"
+    ],
+    "doi": "10.3724/sp.j.1087.2009.02659",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Noise estimation for Cramer-Rao Bound analysis of multi-scale matching",
+    "update_to": [],
+    "url": "https://doi.org/10.3724/sp.j.1087.2009.02659",
+    "venue": "Journal of Computer Applications",
+    "year": 2009
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1195/crossref_doi__d09b31beae2f05db__20260713T084853793031Z.json",
+      "raw_sha256": "855275679634b66125f5e3290d9d65b28d89917efcb2ebfcc275ff96dcfde9ff",
+      "request_identity": "doi:10.3724/sp.j.1087.2009.02659",
+      "retrieved_at_utc": "2026-07-13T08:48:53.793031Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

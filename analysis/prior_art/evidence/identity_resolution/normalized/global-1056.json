@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.2710240",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "17343493",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.2710240",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yueli Chen",
+      "Peter Willett",
+      "Quing Zhu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2007,
+    "doi_match": true,
+    "harvested_authors": [
+      "Chen Y",
+      "Willett P",
+      "Zhu Q."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2007,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1056,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yueli Chen",
+      "Peter Willett",
+      "Quing Zhu"
+    ],
+    "doi": "10.1117/1.2710240",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Frequency tracking in optical Doppler tomography using an adaptive notch filter",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.2710240",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2007
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1056/crossref_doi__25ea4a1b7957e69a__20260713T084702538062Z.json",
+      "raw_sha256": "f1feb36187b7bd29950e6898f6d0b44ec96e1bdbcea340611125448eb5470ec8",
+      "request_identity": "doi:10.1117/1.2710240",
+      "retrieved_at_utc": "2026-07-13T08:47:02.538062Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1056/europe_pmc_pmid__206a36a713845d34__20260713T084703652831Z.json",
+      "raw_sha256": "f55c037b64c5da77ebc8902e1276dc59e977212280da304d7b74c0fb6589da06",
+      "request_identity": "pmid:17343493",
+      "retrieved_at_utc": "2026-07-13T08:47:03.652831Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

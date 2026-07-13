@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "title:c|year:unknown",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message-version\":\"1.0.0\",\"message\":{\"facets\":{},\"total-results\":0,\"items\":[],\"items-per-page\":5,\"query\":{\"start-index\":0,\"search-terms\":null}}}",
+  "retrieved_at_utc": "2026-07-13T08:50:20.706916Z",
+  "source": "crossref_title"
+}

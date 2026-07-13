@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1186/s40478-024-01764-5",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38671536",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1186/s40478-024-01764-5",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Theresa Kraft",
+      "Konrad Grützmann",
+      "Matthias Meinhardt",
+      "Friedegund Meier",
+      "Dana Westphal",
+      "Michael Seifert"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Acta Neuropathologica Communications",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kraft T",
+      "Grützmann K",
+      "Meinhardt M",
+      "Meier F",
+      "Westphal D",
+      "Seifert M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 589,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Theresa Kraft",
+      "Konrad Grützmann",
+      "Matthias Meinhardt",
+      "Friedegund Meier",
+      "Dana Westphal",
+      "Michael Seifert"
+    ],
+    "doi": "10.1186/s40478-024-01764-5",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Personalized identification and characterization of genome-wide gene expression differences between patient-matched intracranial and extracranial melanoma metastasis pairs",
+    "update_to": [],
+    "url": "https://doi.org/10.1186/s40478-024-01764-5",
+    "venue": "Acta Neuropathologica Communications",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0589/crossref_doi__26b3aa097470ca8e__20260713T083435851641Z.json",
+      "raw_sha256": "877da45c9333a0751d7d30ce317e63b2d3282920ff1b513225dc1330df373b64",
+      "request_identity": "doi:10.1186/s40478-024-01764-5",
+      "retrieved_at_utc": "2026-07-13T08:34:35.851641Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0589/europe_pmc_pmid__d4ddc987500f9170__20260713T083436885546Z.json",
+      "raw_sha256": "c0b20531664e1cb6aa0e0df5d70e98be55303e5bac14afbec3201ec6700c75e3",
+      "request_identity": "pmid:38671536",
+      "retrieved_at_utc": "2026-07-13T08:34:36.885546Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

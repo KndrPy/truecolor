@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s10462-026-11494-w",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41625196",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s10462-026-11494-w",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Nantheera Anantrasirichai",
+      "Fan Zhang",
+      "David Bull"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Artificial Intelligence Review",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Anantrasirichai N",
+      "Zhang F",
+      "Bull D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 732,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Nantheera Anantrasirichai",
+      "Fan Zhang",
+      "David Bull"
+    ],
+    "doi": "10.1007/s10462-026-11494-w",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advances in artificial intelligence: a review for the creative industries",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s10462-026-11494-w",
+    "venue": "Artificial Intelligence Review",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0732/crossref_doi__b39f2ae697a61d1d__20260713T083748828862Z.json",
+      "raw_sha256": "0466d8cf79748eaa6256b0bf051c3b19cd31431d4c23e022a221bcfef14ce008",
+      "request_identity": "doi:10.1007/s10462-026-11494-w",
+      "retrieved_at_utc": "2026-07-13T08:37:48.828862Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0732/europe_pmc_pmid__729ff708da289106__20260713T083749811593Z.json",
+      "raw_sha256": "e2cb3cb1f6a3f56768793fe0270176bbb4b9689615eb710b8fcaf3e167371869",
+      "request_identity": "pmid:41625196",
+      "retrieved_at_utc": "2026-07-13T08:37:49.811593Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

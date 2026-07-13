@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.30.4.046008",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40271202",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.30.4.046008",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Guowu Huang",
+      "Yansen Hu",
+      "Weihao Lin",
+      "Chenfan Shen",
+      "Jianmin Yang",
+      "Zhineng Xie",
+      "Yifan Ge",
+      "Xin Jin",
+      "Xiafei Qian",
+      "Min Xu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Huang G",
+      "Hu Y",
+      "Lin W",
+      "Shen C",
+      "Yang J",
+      "Xie Z",
+      "Ge Y",
+      "Jin X",
+      "Qian X",
+      "Xu M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 384,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Guowu Huang",
+      "Yansen Hu",
+      "Weihao Lin",
+      "Chenfan Shen",
+      "Jianmin Yang",
+      "Zhineng Xie",
+      "Yifan Ge",
+      "Xin Jin",
+      "Xiafei Qian",
+      "Min Xu"
+    ],
+    "doi": "10.1117/1.jbo.30.4.046008",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Deep-learning–enabled spatial frequency domain imaging of the spatiotemporal dynamics of skin physiology",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.30.4.046008",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0384/crossref_doi__d5d3a96f90e14788__20260713T083030035672Z.json",
+      "raw_sha256": "f0d33416fd958753014439f9f1b885692cc188e41173679997c9f0909b240e69",
+      "request_identity": "doi:10.1117/1.jbo.30.4.046008",
+      "retrieved_at_utc": "2026-07-13T08:30:30.035672Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0384/europe_pmc_pmid__cf3c445628f53401__20260713T083033095905Z.json",
+      "raw_sha256": "ef4551b76eeb8d41d744c9a06d1c63858b556163e47f774a0508a828f98f3ffd",
+      "request_identity": "pmid:40271202",
+      "retrieved_at_utc": "2026-07-13T08:30:33.095905Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

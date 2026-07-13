@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.29.9.093507",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.29.9.093507",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Thomas T. Livecchi",
+      "Steven L. Jacques",
+      "Hrebesh M. Subhash",
+      "Mark C. Pierce"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Thomas T. Livecchi",
+      "Steven L. Jacques",
+      "Hrebesh M. Subhash",
+      "Mark C. Pierce"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Biomedical Optics",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 45,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Thomas T. Livecchi",
+      "Steven L. Jacques",
+      "Hrebesh M. Subhash",
+      "Mark C. Pierce"
+    ],
+    "doi": "10.1117/1.jbo.29.9.093507",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral imaging with deep learning for quantification of tissue hemoglobin, melanin, and scattering",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.29.9.093507",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0045/crossref_doi__ead1102aae0c938a__20260713T081528239076Z.json",
+      "raw_sha256": "976b4b6d46fb9b3fc1bbb4aaf77d3609779891637314eb9849373d69c4b15237",
+      "request_identity": "doi:10.1117/1.jbo.29.9.093507",
+      "retrieved_at_utc": "2026-07-13T08:15:28.239076Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

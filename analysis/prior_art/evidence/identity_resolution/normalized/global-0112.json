@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging12050203",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42188240",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging12050203",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Andreas Karge",
+      "Maximilian Klammer",
+      "Bernhard Eberhardt",
+      "Andreas Schilling"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Karge A",
+      "Klammer M",
+      "Eberhardt B",
+      "Schilling A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 112,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Andreas Karge",
+      "Maximilian Klammer",
+      "Bernhard Eberhardt",
+      "Andreas Schilling"
+    ],
+    "doi": "10.3390/jimaging12050203",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Characterization of RGB-Polarization Sensor-Based Cameras",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging12050203",
+    "venue": "Journal of Imaging",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0112/crossref_doi__216e636378952ff3__20260713T081629115260Z.json",
+      "raw_sha256": "5b73e5fb28f88b676179731addd599ecee026633544eadb2a4bbb743370ecaa6",
+      "request_identity": "doi:10.3390/jimaging12050203",
+      "retrieved_at_utc": "2026-07-13T08:16:29.115260Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0112/europe_pmc_pmid__f2893b6fff386de1__20260713T081630104885Z.json",
+      "raw_sha256": "450b224b0cb23e438b7c0b82b667f0ff14f5d5a16a4b18d76e1fc37bd5ddc1fe",
+      "request_identity": "pmid:42188240",
+      "retrieved_at_utc": "2026-07-13T08:16:30.104885Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

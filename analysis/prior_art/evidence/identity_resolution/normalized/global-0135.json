@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/skinhd/vzaf086",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41646534",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/skinhd/vzaf086",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Charlotte McRae",
+      "Michael Anderson",
+      "Laci Turner",
+      "Alexandra Savage",
+      "Saleem Mohammad",
+      "Rachael Cowan",
+      "Lauren V Graham"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Skin Health and Disease",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "McRae C",
+      "Anderson M",
+      "Turner L",
+      "Savage A",
+      "Mohammad S",
+      "Cowan R",
+      "Graham LV."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 135,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Charlotte McRae",
+      "Michael Anderson",
+      "Laci Turner",
+      "Alexandra Savage",
+      "Saleem Mohammad",
+      "Rachael Cowan",
+      "Lauren V Graham"
+    ],
+    "doi": "10.1093/skinhd/vzaf086",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Patient perceptions of artificial intelligence integration in dermatology: a cross-sectional study of trust, comfort and equity across multiple care modalities",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/skinhd/vzaf086",
+    "venue": "Skin Health and Disease",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0135/crossref_doi__13dd1e1f7670c3ae__20260713T082529224203Z.json",
+      "raw_sha256": "69633423f61fce2fd1a44669a7a3a2018c840a77063cef98da957a1f3ce0bb79",
+      "request_identity": "doi:10.1093/skinhd/vzaf086",
+      "retrieved_at_utc": "2026-07-13T08:25:29.224203Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0135/europe_pmc_pmid__4d1e134f172ceba5__20260713T082530261966Z.json",
+      "raw_sha256": "34a49dce26ec291dd5b5833d3e50e7c44c6f037133e3bc45a84b1ea413987ecb",
+      "request_identity": "pmid:41646534",
+      "retrieved_at_utc": "2026-07-13T08:25:30.261966Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

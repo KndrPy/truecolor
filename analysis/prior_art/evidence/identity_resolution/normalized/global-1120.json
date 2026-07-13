@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/springerreference_13103",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/springerreference_13103",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "reference-entry",
+    "canonical_venue": "SpringerReference",
+    "canonical_year": 2011,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "reference-entry",
+    "harvested_venue": "SpringerReference",
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": null
+  },
+  "global_rank": 1120,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1007/springerreference_13103",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "reference-entry",
+    "relation": {},
+    "title": "duplicate key value",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/springerreference_13103",
+    "venue": "SpringerReference",
+    "year": 2011
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1120/crossref_doi__be219638f9d08047__20260713T084756276221Z.json",
+      "raw_sha256": "d283b863f7b412dd017e791fd82d6b0dbcdccd9327d9b292d7435d83c9ff1228",
+      "request_identity": "doi:10.1007/springerreference_13103",
+      "retrieved_at_utc": "2026-07-13T08:47:56.276221Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

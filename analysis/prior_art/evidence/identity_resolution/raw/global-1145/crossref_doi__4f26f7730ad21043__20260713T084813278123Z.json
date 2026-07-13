@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1520/e1345-98r08e01",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2022,4,1]],\"date-time\":\"2022-04-01T18:22:23Z\",\"timestamp\":1648837343697},\"publisher-location\":\"West Conshohocken, PA\",\"standards-body\":{\"name\":\"ASTM International\",\"acronym\":\"ASTM\"},\"reference-count\":0,\"publisher\":\"ASTM International\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.1520\\/e1345-98r08e01\",\"type\":\"standard\",\"created\":{\"date-parts\":[[2010,4,1]],\"date-time\":\"2010-04-01T12:00:43Z\",\"timestamp\":1270123243000},\"approved\":{\"date-parts\":[[2008,6,1]]},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Practice for Reducing the Effect of Variability of Color Measurement by Use of Multiple Measurements\"],\"prefix\":\"10.1520\",\"author\":[{\"name\":\"E12 Committee\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"381\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2015,6,27]],\"date-time\":\"2015-06-27T03:28:04Z\",\"timestamp\":1435375684000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"http:\\/\\/www.astm.org\\/cgi-bin\\/resolver.cgi?E1345-98R08E1\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1520\\/e1345-98r08e01\",\"relation\":{},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:48:13.278123Z",
+  "source": "crossref_doi"
+}

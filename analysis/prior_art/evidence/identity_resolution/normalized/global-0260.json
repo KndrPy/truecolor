@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-026-48855-y",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41981093",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-026-48855-y",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Robin van Zutphen",
+      "Ton G. van Leeuwen",
+      "Xavier Attendu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zutphen RV",
+      "Leeuwen TGV",
+      "Attendu X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 260,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Robin van Zutphen",
+      "Ton G. van Leeuwen",
+      "Xavier Attendu"
+    ],
+    "doi": "10.1038/s41598-026-48855-y",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Quantitative model for imaging single fiber reflectance spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-026-48855-y",
+    "venue": "Scientific Reports",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0260/crossref_doi__433874b288b5e6a3__20260713T082729788282Z.json",
+      "raw_sha256": "8e97c7d3ec30b762da395eb9178ab63a156a1f4b3d902d0287000472059886e2",
+      "request_identity": "doi:10.1038/s41598-026-48855-y",
+      "retrieved_at_utc": "2026-07-13T08:27:29.788282Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0260/europe_pmc_pmid__b9e8da12e2d4dec8__20260713T082730805925Z.json",
+      "raw_sha256": "098f95a344d65b44a7e687455c5468c1e7d8be99cbc3a4babd5b72e11cfb8214",
+      "request_identity": "pmid:41981093",
+      "retrieved_at_utc": "2026-07-13T08:27:30.805925Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

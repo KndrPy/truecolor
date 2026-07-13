@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.20944/preprints202201.0260.v1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.20944/preprints202201.0260.v1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Jordi Inglada"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jordi Inglada"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 605,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jordi Inglada"
+    ],
+    "doi": "10.20944/preprints202201.0260.v1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "A Bayesian Model for Annual Crop Phenological Parameter Estimation Using Optical High Resolution Image Time Series",
+    "update_to": [],
+    "url": "https://doi.org/10.20944/preprints202201.0260.v1",
+    "venue": null,
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0605/crossref_doi__ca4dc4948c2217a4__20260713T083458893750Z.json",
+      "raw_sha256": "746c3f07bae388ec7fe4b4992843ddf937459ba5199eafeb17e3a92a8bc61f00",
+      "request_identity": "doi:10.20944/preprints202201.0260.v1",
+      "retrieved_at_utc": "2026-07-13T08:34:58.893750Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,140 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fbioe.2025.1732519",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41625066",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fbioe.2025.1732519",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Haiyu Qin",
+          "Yang Wang"
+        ],
+        "doi": "10.3389/fbioe.2025.1732519",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Precision measurement of stratum corneum thickness in OCT images using variational autoencoders and advanced DSP techniques",
+        "update_to": [],
+        "url": "https://doi.org/10.3389/fbioe.2025.1732519",
+        "venue": "Frontiers in Bioengineering and Biotechnology",
+        "year": 2026
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Haiyu Qin",
+          "Yang Wang"
+        ],
+        "doi": "10.3389/fbioe.2025.1732519",
+        "is_retracted": false,
+        "pmcid": "PMC12852406",
+        "pmid": "41625066",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Precision measurement of stratum corneum thickness in OCT images using variational autoencoders and advanced DSP techniques.",
+        "url": "https://europepmc.org/article/MED/41625066",
+        "venue": null,
+        "year": 2025
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2026,
+      "field": "year",
+      "harvested": 2025
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Haiyu Qin",
+      "Yang Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Bioengineering and Biotechnology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Qin H",
+      "Wang Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 959,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Haiyu Qin",
+      "Yang Wang"
+    ],
+    "doi": "10.3389/fbioe.2025.1732519",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Precision measurement of stratum corneum thickness in OCT images using variational autoencoders and advanced DSP techniques",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fbioe.2025.1732519",
+    "venue": "Frontiers in Bioengineering and Biotechnology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0959/crossref_doi__aef119b7f0e20596__20260713T084502704540Z.json",
+      "raw_sha256": "7d90fc753941e56e5608168764f2082363aeddee782398c6383bab642578b5f4",
+      "request_identity": "doi:10.3389/fbioe.2025.1732519",
+      "retrieved_at_utc": "2026-07-13T08:45:02.704540Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0959/europe_pmc_pmid__3ee4d93405310e0c__20260713T084503816421Z.json",
+      "raw_sha256": "a89792edc26b18c8e972458461975f75811acdc702192c54f9eb191b2742ccf7",
+      "request_identity": "pmid:41625066",
+      "retrieved_at_utc": "2026-07-13T08:45:03.816421Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fnut.2023.1253341",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38035360",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fnut.2023.1253341",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Maša Hribar",
+      "Igor Pravst",
+      "Tina Pogačnik",
+      "Katja Žmitek"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Nutrition",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hribar M",
+      "Pravst I",
+      "Pogačnik T",
+      "Žmitek K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 265,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Maša Hribar",
+      "Igor Pravst",
+      "Tina Pogačnik",
+      "Katja Žmitek"
+    ],
+    "doi": "10.3389/fnut.2023.1253341",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Results of longitudinal Nutri-D study: factors influencing winter and summer vitamin D status in a Caucasian population",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fnut.2023.1253341",
+    "venue": "Frontiers in Nutrition",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0265/crossref_doi__d674894be1751c73__20260713T082742792347Z.json",
+      "raw_sha256": "143f55e02bff58f30f7340d7582df46ae51f51c57834ef605c449e9f2b2a1ddd",
+      "request_identity": "doi:10.3389/fnut.2023.1253341",
+      "retrieved_at_utc": "2026-07-13T08:27:42.792347Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0265/europe_pmc_pmid__9e6236752d7ca2b5__20260713T082743835215Z.json",
+      "raw_sha256": "8075da602ea28decdeb3ea96722fa27a798c6f25a1393f0aecc953229d396a22",
+      "request_identity": "pmid:38035360",
+      "retrieved_at_utc": "2026-07-13T08:27:43.835215Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

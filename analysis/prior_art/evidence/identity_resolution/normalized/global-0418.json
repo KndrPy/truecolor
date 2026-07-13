@@ -1,0 +1,86 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.28.12.121207",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.28.12.121207",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Celina L. Li",
+      "Carl J. Fisher",
+      "Katarzyna Komolibus",
+      "Konstantin Grygoryev",
+      "Huihui Lu",
+      "Ray Burke",
+      "Andrea Visentin",
+      "Stefan Andersson-Engels"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Celina L. Li",
+      "Carl J. Fisher",
+      "Katarzyna Komolibus",
+      "Konstantin Grygoryev",
+      "Huihui Lu",
+      "Ray Burke",
+      "Andrea Visentin",
+      "Stefan Andersson-Engels"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Biomedical Optics",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 418,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Celina L. Li",
+      "Carl J. Fisher",
+      "Katarzyna Komolibus",
+      "Konstantin Grygoryev",
+      "Huihui Lu",
+      "Ray Burke",
+      "Andrea Visentin",
+      "Stefan Andersson-Engels"
+    ],
+    "doi": "10.1117/1.jbo.28.12.121207",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Frameworks of wavelength selection in diffuse reflectance spectroscopy for tissue differentiation in orthopedic surgery",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.28.12.121207",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0418/crossref_doi__fc825b491e29d094__20260713T083117367095Z.json",
+      "raw_sha256": "baa3ede12bfa1c6b4c4f7925417c32e378e4820418b2bb51aaadacda1c039f4c",
+      "request_identity": "doi:10.1117/1.jbo.28.12.121207",
+      "retrieved_at_utc": "2026-07-13T08:31:17.367095Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

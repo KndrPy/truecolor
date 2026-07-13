@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fonc.2026.1771804",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41982233",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fonc.2026.1771804",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Avijit Paul",
+      "Marvin Xavierselvan",
+      "David Aebisher",
+      "Tomasz Kubrak",
+      "Dorota Bartusik-Aebisher",
+      "Srivalleesha Mallidi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Oncology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Paul A",
+      "Xavierselvan M",
+      "Aebisher D",
+      "Kubrak T",
+      "Bartusik-Aebisher D",
+      "Mallidi S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 738,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Avijit Paul",
+      "Marvin Xavierselvan",
+      "David Aebisher",
+      "Tomasz Kubrak",
+      "Dorota Bartusik-Aebisher",
+      "Srivalleesha Mallidi"
+    ],
+    "doi": "10.3389/fonc.2026.1771804",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Empowering photodynamic therapy with artificial intelligence: current trends and future directions",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fonc.2026.1771804",
+    "venue": "Frontiers in Oncology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0738/crossref_doi__1e7b18255ce51dee__20260713T083759119441Z.json",
+      "raw_sha256": "293f0f0c599a210cd146f52460e007010873b0e507b036cd93372d24f4300b02",
+      "request_identity": "doi:10.3389/fonc.2026.1771804",
+      "retrieved_at_utc": "2026-07-13T08:37:59.119441Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0738/europe_pmc_pmid__2f900fcfa2194f1e__20260713T083802725901Z.json",
+      "raw_sha256": "805d8038e05d09c2635cf2c08df8582a23eabea3db78c52514c1cd603fc24f8b",
+      "request_identity": "pmid:41982233",
+      "retrieved_at_utc": "2026-07-13T08:38:02.725901Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

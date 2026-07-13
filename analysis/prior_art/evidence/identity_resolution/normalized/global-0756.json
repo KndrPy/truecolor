@@ -1,0 +1,109 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-024-73084-6",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39358371",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-024-73084-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Boris Yakimov",
+      "Kirill Buiankin",
+      "Georgy Denisenko",
+      "Yuliya Shitova",
+      "Andrey Shkoda",
+      "Evgeny Shirshin"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yakimov B",
+      "Buiankin K",
+      "Denisenko G",
+      "Shitova Y",
+      "Shkoda A",
+      "Shirshin E."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 756,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Boris Yakimov",
+      "Kirill Buiankin",
+      "Georgy Denisenko",
+      "Yuliya Shitova",
+      "Andrey Shkoda",
+      "Evgeny Shirshin"
+    ],
+    "doi": "10.1038/s41598-024-73084-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-preprint": [
+        {
+          "asserted-by": "object",
+          "id": "10.21203/rs.3.rs-4270513/v1",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Diffuse reflectance spectroscopy and RGB-imaging: a comparative study of non-invasive haemoglobin assessment",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-024-73084-6",
+    "venue": "Scientific Reports",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0756/crossref_doi__b4b274212ae252c4__20260713T083832843357Z.json",
+      "raw_sha256": "8bafa593f3b05bc503976c8a2efaa4e657ae48c5f3f70ef3c41d7761053035d2",
+      "request_identity": "doi:10.1038/s41598-024-73084-6",
+      "retrieved_at_utc": "2026-07-13T08:38:32.843357Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0756/europe_pmc_pmid__3438a4f1b48076ef__20260713T083833871519Z.json",
+      "raw_sha256": "fab3d1690e31863849f769f6fb4c51a05a48a5928cb8f65be6943d28cbf00872",
+      "request_identity": "pmid:39358371",
+      "retrieved_at_utc": "2026-07-13T08:38:33.871519Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

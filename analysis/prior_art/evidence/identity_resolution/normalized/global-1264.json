@@ -1,0 +1,79 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "deciphering false maturity in mountain coffee a multimodal hyperspectral framework for non destructive sugar content assessment",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:deciphering “false maturity” in mountain coffee: a multimodal hyperspectral framework for non-destructive sugar content assessment|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [
+      "Hongbo Zhao",
+      "Zhijia Wang",
+      "Linrui Deng",
+      "Huijuan Yang",
+      "Luoyi Zheng",
+      "Guangyao Jian",
+      "Jiyuan Cai",
+      "Yuanhao Zhang",
+      "Zhiyong Cao"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Foods",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1264,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hongbo Zhao",
+      "Zhijia Wang",
+      "Linrui Deng",
+      "Huijuan Yang",
+      "Luoyi Zheng",
+      "Guangyao Jian",
+      "Jiyuan Cai",
+      "Yuanhao Zhang",
+      "Zhiyong Cao"
+    ],
+    "doi": "10.3390/foods15122149",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Deciphering “False Maturity” in Mountain Coffee: A Multimodal Hyperspectral Framework for Non-Destructive Sugar Content Assessment",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/foods15122149",
+    "venue": "Foods",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1264/crossref_title__073e20a9bd210b7e__20260713T084945275466Z.json",
+      "raw_sha256": "daf91b458320e109e5a621e5ec8b44a7d040aa3f08c461f74e553633fb53ae5e",
+      "request_identity": "title:deciphering false maturity in mountain coffee a multimodal hyperspectral framework for non destructive sugar content assessment|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:45.275466Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

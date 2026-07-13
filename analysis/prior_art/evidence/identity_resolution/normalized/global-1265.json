@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "fine tuning a small vision language model using synthetic data for explaining bacterial skin disease images",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:fine-tuning a small vision language model using synthetic data for explaining bacterial skin disease images|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Shiwan Zhang",
+      "Abdurrahim Yilmaz",
+      "Gulsum Gencoglan",
+      "Burak Temelkuran"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Zhang S",
+      "Yilmaz A",
+      "Gencoglan G",
+      "Temelkuran B."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1265,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shiwan Zhang",
+      "Abdurrahim Yilmaz",
+      "Gulsum Gencoglan",
+      "Burak Temelkuran"
+    ],
+    "doi": "10.3390/diagnostics16040603",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Fine-Tuning a Small Vision Language Model Using Synthetic Data for Explaining Bacterial Skin Disease Images",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics16040603",
+    "venue": "Diagnostics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1265/crossref_title__306ec1c254406b97__20260713T084946699981Z.json",
+      "raw_sha256": "b0b3212d7176fbae02eb25e4a326ca4b0d480ab326338023af4954e74daab46e",
+      "request_identity": "title:fine tuning a small vision language model using synthetic data for explaining bacterial skin disease images|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:46.699981Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

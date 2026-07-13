@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/frai.2026.1808770",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42131690",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/frai.2026.1808770",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "S. Rajeshkumar",
+      "Chiranji Lal Chowdhary"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Artificial Intelligence",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rajeshkumar S",
+      "Chowdhary CL."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 890,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "S. Rajeshkumar",
+      "Chiranji Lal Chowdhary"
+    ],
+    "doi": "10.3389/frai.2026.1808770",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Improved CNN with BiLSTM model for early melanoma and skin lesion classification",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/frai.2026.1808770",
+    "venue": "Frontiers in Artificial Intelligence",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0890/crossref_doi__f555a178824bbb3c__20260713T084251035937Z.json",
+      "raw_sha256": "316c07cfe26ba74ca5859af821cdbb052609b63510177bef0d24737928a0dc47",
+      "request_identity": "doi:10.3389/frai.2026.1808770",
+      "retrieved_at_utc": "2026-07-13T08:42:51.035937Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0890/europe_pmc_pmid__24b367686d0074ab__20260713T084251996759Z.json",
+      "raw_sha256": "8391fbc881bbe9ed1210b607bd7596a1ce8b910ed8fc01690dfd0802be3c7aeb",
+      "request_identity": "pmid:42131690",
+      "retrieved_at_utc": "2026-07-13T08:42:51.996759Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

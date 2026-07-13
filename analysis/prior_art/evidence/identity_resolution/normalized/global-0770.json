@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s44303-026-00161-y",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42082688",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s44303-026-00161-y",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Taylor L. Bobrow",
+      "Mayank Golhar",
+      "Suchapa Arayakarnkul",
+      "Anthony A. Song",
+      "Saowanee Ngamruengphong",
+      "Nicholas J. Durr"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Imaging",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Bobrow TL",
+      "Golhar M",
+      "Arayakarnkul S",
+      "Song AA",
+      "Ngamruengphong S",
+      "Durr NJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 770,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Taylor L. Bobrow",
+      "Mayank Golhar",
+      "Suchapa Arayakarnkul",
+      "Anthony A. Song",
+      "Saowanee Ngamruengphong",
+      "Nicholas J. Durr"
+    ],
+    "doi": "10.1038/s44303-026-00161-y",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multi-contrast laser endoscopy for in vivo gastrointestinal imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s44303-026-00161-y",
+    "venue": "npj Imaging",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0770/crossref_doi__c392319c41986eaa__20260713T083858977621Z.json",
+      "raw_sha256": "ca317e7161ad3d3bbcbd3e5bb37249840cc5536975c154222733b4108f8e9f10",
+      "request_identity": "doi:10.1038/s44303-026-00161-y",
+      "retrieved_at_utc": "2026-07-13T08:38:58.977621Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0770/europe_pmc_pmid__fc303a9bfa05f32c__20260713T083859954530Z.json",
+      "raw_sha256": "ebc710f8b24f0e00de0cf866ab45292ceba0d69b5c636cea9d8fac25ca6efbe0",
+      "request_identity": "pmid:42082688",
+      "retrieved_at_utc": "2026-07-13T08:38:59.954530Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

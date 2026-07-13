@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1046/j.1365-2230.1998.00299.x",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1046/j.1365-2230.1998.00299.x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "GIBBON"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Clinical and Experimental Dermatology",
+    "canonical_year": 1998,
+    "doi_match": true,
+    "harvested_authors": [
+      "GIBBON"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Clinical and Experimental Dermatology",
+    "harvested_year": 1998,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 728,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "GIBBON"
+    ],
+    "doi": "10.1046/j.1365-2230.1998.00299.x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Pigmented lesion clinics - are they a waste of resources?",
+    "update_to": [],
+    "url": "https://doi.org/10.1046/j.1365-2230.1998.00299.x",
+    "venue": "Clinical and Experimental Dermatology",
+    "year": 1998
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0728/crossref_doi__d88576ca5e60677f__20260713T083742216171Z.json",
+      "raw_sha256": "5643969f7a8e70abf5a8af48a1a5b2c7686d1d7b3310a1d45f02a5da682da301",
+      "request_identity": "doi:10.1046/j.1365-2230.1998.00299.x",
+      "retrieved_at_utc": "2026-07-13T08:37:42.216171Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

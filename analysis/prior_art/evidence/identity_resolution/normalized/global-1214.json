@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1302/3114-220966",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1302/3114-220966",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "dataset",
+    "canonical_venue": "OrthoMedia",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "dataset",
+    "harvested_venue": "OrthoMedia",
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1214,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1302/3114-220966",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dataset",
+    "relation": {},
+    "title": "Validation of a Patient Specific Statistical Shape Model for Predicting Pre-Morbid Glenoid Morphology",
+    "update_to": [],
+    "url": "https://doi.org/10.1302/3114-220966",
+    "venue": "OrthoMedia",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "The DOI resolves to a dataset record rather than a scholarly publication.",
+  "resolution_state": "NON_SCHOLARLY",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1214/crossref_doi__72c54807da707ab5__20260713T084908111944Z.json",
+      "raw_sha256": "68c62813ef46418150f008f56bf808744deeab35b3c1b1c13401347caf07d256",
+      "request_identity": "doi:10.1302/3114-220966",
+      "retrieved_at_utc": "2026-07-13T08:49:08.111944Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

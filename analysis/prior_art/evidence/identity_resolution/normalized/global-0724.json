@@ -1,0 +1,86 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/molecules26216651",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "34771060",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/molecules26216651",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Daniel L. Farkas"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Molecules",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Farkas DL."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 724,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Daniel L. Farkas"
+    ],
+    "doi": "10.3390/molecules26216651",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Biomedical Applications of Translational Optical Imaging: From Molecules to Humans",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/molecules26216651",
+    "venue": "Molecules",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0724/crossref_doi__6df7c5b4c3b29026__20260713T083737551093Z.json",
+      "raw_sha256": "6b213d40fe0144f7f98846f71b921599955d2dd4af6e9510052744d43e325106",
+      "request_identity": "doi:10.3390/molecules26216651",
+      "retrieved_at_utc": "2026-07-13T08:37:37.551093Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0724/europe_pmc_pmid__034d0fd12e1a11e1__20260713T083738568043Z.json",
+      "raw_sha256": "4c49652a41a308270925d3dc000f137b857ea68d145f8d6da60aadfa30937c78",
+      "request_identity": "pmid:34771060",
+      "retrieved_at_utc": "2026-07-13T08:37:38.568043Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

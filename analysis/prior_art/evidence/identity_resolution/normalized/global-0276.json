@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.64898/2026.01.17.26344327",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.64898/2026.01.17.26344327",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Ibrahim Ibrahim Shuaibu",
+      "Muhammad Ayan Khan",
+      "Diyaa Alkhamis",
+      "Anas Alkhamis"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ibrahim Ibrahim Shuaibu",
+      "Muhammad Ayan Khan",
+      "Diyaa Alkhamis",
+      "Anas Alkhamis"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 276,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ibrahim Ibrahim Shuaibu",
+      "Muhammad Ayan Khan",
+      "Diyaa Alkhamis",
+      "Anas Alkhamis"
+    ],
+    "doi": "10.64898/2026.01.17.26344327",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "GEOGRAPHIC DOMAIN SHIFT PRECIPITATES DIVERGENT FAILURE MODES IN DEEP LEARNING–BASED TUBERCULOSIS SCREENING: A MULTI-NATIONAL EXTERNAL VALIDATION STUDY",
+    "update_to": [],
+    "url": "https://doi.org/10.64898/2026.01.17.26344327",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0276/crossref_doi__33d81231f5a656bf__20260713T082754154724Z.json",
+      "raw_sha256": "912edf8151713ceae89055fe878c3adf89eb42b1766233db01b92d1414892397",
+      "request_identity": "doi:10.64898/2026.01.17.26344327",
+      "retrieved_at_utc": "2026-07-13T08:27:54.154724Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

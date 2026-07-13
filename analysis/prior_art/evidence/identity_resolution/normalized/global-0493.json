@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/jmri.28689",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37010113",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/jmri.28689",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Marcelo V. W. Zibetti",
+      "Rajiv G. Menon",
+      "Hector L. de Moura",
+      "Xiaoxia Zhang",
+      "Richard Kijowski",
+      "Ravinder R. Regatte"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Magnetic Resonance Imaging",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zibetti MVW",
+      "Menon RG",
+      "de Moura HL",
+      "Zhang X",
+      "Kijowski R",
+      "Regatte RR."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 493,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Marcelo V. W. Zibetti",
+      "Rajiv G. Menon",
+      "Hector L. de Moura",
+      "Xiaoxia Zhang",
+      "Richard Kijowski",
+      "Ravinder R. Regatte"
+    ],
+    "doi": "10.1002/jmri.28689",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Updates on Compositional  MRI  Mapping of the Cartilage: Emerging Techniques and Applications",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/jmri.28689",
+    "venue": "Journal of Magnetic Resonance Imaging",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0493/crossref_doi__88c8c0659f5b7970__20260713T083231020194Z.json",
+      "raw_sha256": "f72e0176a7f3ac0b72036742c2c09eb5904ea773bc19255188135ebe052f09ca",
+      "request_identity": "doi:10.1002/jmri.28689",
+      "retrieved_at_utc": "2026-07-13T08:32:31.020194Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0493/europe_pmc_pmid__360717b693a97d78__20260713T083232158284Z.json",
+      "raw_sha256": "1b5ea6f96dee8b620e63fe5e6d206cc8048786187cff95d977e761da2c936bf4",
+      "request_identity": "pmid:37010113",
+      "retrieved_at_utc": "2026-07-13T08:32:32.158284Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging12040178",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42042521",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging12040178",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jordan Ali Rashid",
+      "Stuart Criley"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rashid JA",
+      "Criley S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 911,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jordan Ali Rashid",
+      "Stuart Criley"
+    ],
+    "doi": "10.3390/jimaging12040178",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Method for Paired Comparisons of Glo Germ Quantity in Images of Hands Before and After Washing",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging12040178",
+    "venue": "Journal of Imaging",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0911/crossref_doi__b76447d2bf0e6e55__20260713T084331528995Z.json",
+      "raw_sha256": "0dca738e3b2083d87036aab15fe2b7cef5bae598d6ebc75412fcaa9de8e95545",
+      "request_identity": "doi:10.3390/jimaging12040178",
+      "retrieved_at_utc": "2026-07-13T08:43:31.528995Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0911/europe_pmc_pmid__a357c7e5fcc898d6__20260713T084332470547Z.json",
+      "raw_sha256": "d990f074b5b681a92b7638d1a467a9b2ed4de7c997ea83d92db655424bf288e4",
+      "request_identity": "pmid:42042521",
+      "retrieved_at_utc": "2026-07-13T08:43:32.470547Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

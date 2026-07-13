@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/biomedicines14040816",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42072357",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/biomedicines14040816",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Oluwagbenga Dada",
+      "Shikshita Singh",
+      "Francheska Sumadchat",
+      "Madison Lather",
+      "Benjamin Brooks",
+      "JuliAnne E. Allgood"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedicines",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Dada O",
+      "Singh S",
+      "Sumadchat F",
+      "Lather M",
+      "Brooks B",
+      "Allgood JE."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 892,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Oluwagbenga Dada",
+      "Shikshita Singh",
+      "Francheska Sumadchat",
+      "Madison Lather",
+      "Benjamin Brooks",
+      "JuliAnne E. Allgood"
+    ],
+    "doi": "10.3390/biomedicines14040816",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Emerging In Vivo Imaging Modalities for Improved Glioblastoma Surgery and Monitoring",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/biomedicines14040816",
+    "venue": "Biomedicines",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0892/crossref_doi__14954e206be0c992__20260713T084254447872Z.json",
+      "raw_sha256": "892657ac5e0dd6d37b349cecfccdb19fda5a19764cb02d221e02826cee4cd330",
+      "request_identity": "doi:10.3390/biomedicines14040816",
+      "retrieved_at_utc": "2026-07-13T08:42:54.447872Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0892/europe_pmc_pmid__a27afc7edbbaebad__20260713T084255451339Z.json",
+      "raw_sha256": "76d0c5d589cdf407d9c0e893e3f1cd80681c14b802a3e8efd80f51f07dc0180b",
+      "request_identity": "pmid:42072357",
+      "retrieved_at_utc": "2026-07-13T08:42:55.451339Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

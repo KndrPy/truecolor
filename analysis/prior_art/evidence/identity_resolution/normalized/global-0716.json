@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fphys.2025.1605426",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40800735",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fphys.2025.1605426",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Zhengzheng Jiang",
+      "YaWen Shen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Physiology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jiang Z",
+      "Shen Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 716,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zhengzheng Jiang",
+      "YaWen Shen"
+    ],
+    "doi": "10.3389/fphys.2025.1605426",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multimodal learning for enhanced SPECT/CT imaging in sports injury diagnosis",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fphys.2025.1605426",
+    "venue": "Frontiers in Physiology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0716/crossref_doi__278ff5a949cc41b0__20260713T083722361537Z.json",
+      "raw_sha256": "9fc9bd10158e0f79e3ec2b427341295b07fe72227ebacabf3eb874ba2498e9a3",
+      "request_identity": "doi:10.3389/fphys.2025.1605426",
+      "retrieved_at_utc": "2026-07-13T08:37:22.361537Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0716/europe_pmc_pmid__d0f2866329ce6445__20260713T083723343761Z.json",
+      "raw_sha256": "2b2df43433757ac1086f0943d8427e2e8d1f66c04c49a616477e9ebcb802087e",
+      "request_identity": "pmid:40800735",
+      "retrieved_at_utc": "2026-07-13T08:37:23.343761Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

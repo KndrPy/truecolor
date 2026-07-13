@@ -1,0 +1,119 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.85428",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40621347",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.85428",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Haruyo Yamamoto",
+      "Chisa Nakashima",
+      "Kenichiro Kasai",
+      "Hiroyuki Irie",
+      "Hitonari Kanetomo",
+      "Shigeto Yanagihara",
+      "Sanae Miyake",
+      "Keiko Watanabe",
+      "Sayuri Sato",
+      "Hisashi Uhara",
+      "Fumiaki Takeda",
+      "Atsushi Otsuka"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yamamoto H",
+      "Nakashima C",
+      "Kasai K",
+      "Irie H",
+      "Kanetomo H",
+      "Yanagihara S",
+      "Miyake S",
+      "Watanabe K",
+      "Sato S",
+      "Uhara H",
+      "Takeda F",
+      "Otsuka A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 754,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Haruyo Yamamoto",
+      "Chisa Nakashima",
+      "Kenichiro Kasai",
+      "Hiroyuki Irie",
+      "Hitonari Kanetomo",
+      "Shigeto Yanagihara",
+      "Sanae Miyake",
+      "Keiko Watanabe",
+      "Sayuri Sato",
+      "Hisashi Uhara",
+      "Fumiaki Takeda",
+      "Atsushi Otsuka"
+    ],
+    "doi": "10.7759/cureus.85428",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Deep Learning-Based Classification System for Facial Pigmented Lesions to Aid Laser Treatment Decisions",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.85428",
+    "venue": "Cureus",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0754/crossref_doi__12d0efe907bbb850__20260713T083829413763Z.json",
+      "raw_sha256": "9bfb52d5e72d40d8b63a8c47c85f46d94ac31a242680cfff92cce7d6efa86c8e",
+      "request_identity": "doi:10.7759/cureus.85428",
+      "retrieved_at_utc": "2026-07-13T08:38:29.413763Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0754/europe_pmc_pmid__90daedb4dc05bfcc__20260713T083830439643Z.json",
+      "raw_sha256": "1ba9980b16e93ac0a4d4444dfff11092965a1c99335505a16994898a984c081c",
+      "request_identity": "pmid:40621347",
+      "retrieved_at_utc": "2026-07-13T08:38:30.439643Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

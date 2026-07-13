@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/icpr.2010.284",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/icpr.2010.284",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Zhenhau Guo",
+      "Lei Zhang",
+      "David Zhang"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2010 20th International Conference on Pattern Recognition",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhenhau Guo",
+      "Lei Zhang",
+      "David Zhang"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2010 20th International Conference on Pattern Recognition",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 182,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zhenhau Guo",
+      "Lei Zhang",
+      "David Zhang"
+    ],
+    "doi": "10.1109/icpr.2010.284",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Feature Band Selection for Multispectral Palmprint Recognition",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/icpr.2010.284",
+    "venue": "2010 20th International Conference on Pattern Recognition",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0182/crossref_doi__c0722e0bd43daa6b__20260713T082611776605Z.json",
+      "raw_sha256": "4f0f1fb9170b00e84b71610404a78bed7ab3e0aeb7690fbb98469f8c1d16bee6",
+      "request_identity": "doi:10.1109/icpr.2010.284",
+      "retrieved_at_utc": "2026-07-13T08:26:11.776605Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

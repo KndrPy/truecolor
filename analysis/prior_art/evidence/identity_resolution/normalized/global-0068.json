@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.3098393",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.3098393",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Annekatrin Pfahl",
+      "Hannes Köhler",
+      "Andreas Melzer"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Diffuse Optical Spectroscopy and Imaging X",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Annekatrin Pfahl",
+      "Hannes Köhler",
+      "Andreas Melzer"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Diffuse Optical Spectroscopy and Imaging X",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 68,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Annekatrin Pfahl",
+      "Hannes Köhler",
+      "Andreas Melzer"
+    ],
+    "doi": "10.1117/12.3098393",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Optimal wavelength selection for laparoscopic multispectral imaging to visualize tissue oxygenation",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.3098393",
+    "venue": "Diffuse Optical Spectroscopy and Imaging X",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0068/crossref_doi__6e42032f8e26b0dd__20260713T081546236173Z.json",
+      "raw_sha256": "0e61e0c2c2620dc135f0c924f1f786d42859f99587be65fcad7df9e7c8eea276",
+      "request_identity": "doi:10.1117/12.3098393",
+      "retrieved_at_utc": "2026-07-13T08:15:46.236173Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

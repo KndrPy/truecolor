@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/cancers18101543",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42192906",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/cancers18101543",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sai Kiran Kuchana",
+      "Uday Kumar Repalle",
+      "Nikhilesh V. Alahari",
+      "Manpreet Kondamuri",
+      "Sai Kiran Manduva",
+      "Raghu Vamsi Vanguru",
+      "Sri Anjali Gorle",
+      "Suresh K. Alahari"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cancers",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kuchana SK",
+      "Repalle UK",
+      "Alahari NV",
+      "Kondamuri M",
+      "Manduva SK",
+      "Vanguru RV",
+      "Gorle SA",
+      "Alahari SK."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 895,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sai Kiran Kuchana",
+      "Uday Kumar Repalle",
+      "Nikhilesh V. Alahari",
+      "Manpreet Kondamuri",
+      "Sai Kiran Manduva",
+      "Raghu Vamsi Vanguru",
+      "Sri Anjali Gorle",
+      "Suresh K. Alahari"
+    ],
+    "doi": "10.3390/cancers18101543",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial Intelligence in Oncology: A Comprehensive Cross-Cancer Translational Readiness Analysis Across 18 Malignancies",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/cancers18101543",
+    "venue": "Cancers",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0895/crossref_doi__34dd2309288ff1a0__20260713T084259572874Z.json",
+      "raw_sha256": "a1c4381ee27ef8014d55e796f760f5dfc83490aa282715413ab7d5833690c57c",
+      "request_identity": "doi:10.3390/cancers18101543",
+      "retrieved_at_utc": "2026-07-13T08:42:59.572874Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0895/europe_pmc_pmid__9d3acbc88a098218__20260713T084300560108Z.json",
+      "raw_sha256": "bd30336a7b07ca218bbecc2970ac0a1384aa12b5bd5d6c9258126c07d983552a",
+      "request_identity": "pmid:42192906",
+      "retrieved_at_utc": "2026-07-13T08:43:00.560108Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

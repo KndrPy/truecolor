@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.17760/d20698941",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"institution\":[{\"name\":\"Northeastern University\"}],\"indexed\":{\"date-parts\":[[2025,3,6]],\"date-time\":\"2025-03-06T05:23:00Z\",\"timestamp\":1741238580767,\"version\":\"3.38.0\"},\"reference-count\":0,\"publisher\":\"Northeastern University Library\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.17760\\/d20698941\",\"type\":\"dissertation\",\"created\":{\"date-parts\":[[2025,3,5]],\"date-time\":\"2025-03-05T15:46:51Z\",\"timestamp\":1741189611000},\"approved\":{\"date-parts\":[[2024]]},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Physics-informed motion planning using RGB-based spectral analysis\"],\"prefix\":\"10.17760\",\"author\":[{\"given\":\"Sarvesh\",\"family\":\"Prajapati\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"7402\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2025,3,5]],\"date-time\":\"2025-03-05T15:48:46Z\",\"timestamp\":1741189726000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/hdl.handle.net\\/2047\\/D20698941\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.17760\\/d20698941\",\"relation\":{},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:49:26.160620Z",
+  "source": "crossref_doi"
+}

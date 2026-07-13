@@ -1,0 +1,61 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.4324/9780080926933-11",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.4324/9780080926933-11",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Studio Photography: Essential Skills",
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Studio Photography: Essential Skills",
+    "harvested_year": 2013,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1294,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.4324/9780080926933-11",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Image capture",
+    "update_to": [],
+    "url": "https://doi.org/10.4324/9780080926933-11",
+    "venue": "Studio Photography: Essential Skills",
+    "year": 2013
+  },
+  "related_candidate_keys": [
+    "doi:10.4324/9780080551340-19"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1294/crossref_doi__5aee7e95551aba61__20260713T085017800600Z.json",
+      "raw_sha256": "fe2df04ec38345fbd7b7d3ffaab8583b046b66e57b1f7dc9f3a4d78066e3d3a7",
+      "request_identity": "doi:10.4324/9780080926933-11",
+      "retrieved_at_utc": "2026-07-13T08:50:17.800600Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s26103215",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42198024",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s26103215",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kiyarash Aminfar",
+      "Katherine Scafide",
+      "Janusz Wojtusiak",
+      "David Lattanzi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Aminfar K",
+      "Scafide K",
+      "Wojtusiak J",
+      "Lattanzi D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 335,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kiyarash Aminfar",
+      "Katherine Scafide",
+      "Janusz Wojtusiak",
+      "David Lattanzi"
+    ],
+    "doi": "10.3390/s26103215",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluation Framework for Bruise Detection: Systematic ALS/White-Light Training and Skin-Tone Balancing with Deep Learning",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26103215",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0335/crossref_doi__1db61d55490cf192__20260713T082908443447Z.json",
+      "raw_sha256": "08f1003554d1561ceac647c075dd997fce1f9f3f2642867d8ca99a207c0e37f7",
+      "request_identity": "doi:10.3390/s26103215",
+      "retrieved_at_utc": "2026-07-13T08:29:08.443447Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0335/europe_pmc_pmid__df2c5b6ab4293690__20260713T082909466175Z.json",
+      "raw_sha256": "d83c864b39e178b1432252b42f0253125d5dae66523b8ae004613b6d42656353",
+      "request_identity": "pmid:42198024",
+      "retrieved_at_utc": "2026-07-13T08:29:09.466175Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

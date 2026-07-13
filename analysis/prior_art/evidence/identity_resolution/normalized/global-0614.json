@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.805404",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.805404",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Matthias Sajjaa",
+      "Gregor Fischer"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2009,
+    "doi_match": true,
+    "harvested_authors": [
+      "Matthias Sajjaa",
+      "Gregor Fischer"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SPIE Proceedings Digital Photography V",
+    "harvested_year": 2009,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.4,
+    "year_match": true
+  },
+  "global_rank": 614,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Matthias Sajjaa",
+      "Gregor Fischer"
+    ],
+    "doi": "10.1117/12.805404",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Automatic white balance: whitebalPR using the dichromatic reflection model",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.805404",
+    "venue": "SPIE Proceedings",
+    "year": 2009
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0614/crossref_doi__1ca9252846d77989__20260713T083508786293Z.json",
+      "raw_sha256": "004eb7b86c9a7614c235ea4c54d3e689f7763040e0475c28b900d87b5b46c075",
+      "request_identity": "doi:10.1117/12.805404",
+      "retrieved_at_utc": "2026-07-13T08:35:08.786293Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

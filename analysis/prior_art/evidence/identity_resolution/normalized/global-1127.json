@@ -1,0 +1,70 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1021/acs.macromol.2c00506.s003",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1021/acs.macromol.2c00506.s003",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "component",
+    "canonical_venue": null,
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "component",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1127,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1021/acs.macromol.2c00506.s003",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "component",
+    "relation": {
+      "is-component-of": [
+        {
+          "asserted-by": "object",
+          "id": "10.1021/acs.macromol.2c00506",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Boosting the Optical Absorption of Melanin-like Polymers",
+    "update_to": [],
+    "url": "https://doi.org/10.1021/acs.macromol.2c00506.s003",
+    "venue": null,
+    "year": 2022
+  },
+  "related_candidate_keys": [
+    "doi:10.1021/acs.macromol.2c00506.s001",
+    "doi:10.1021/acs.macromol.2c00506.s002"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1127/crossref_doi__a8b3b66826cacc84__20260713T084800565160Z.json",
+      "raw_sha256": "a3efd91177910f5ed7c0408ff8892405776633e47d4acd04aa922aa2b423040f",
+      "request_identity": "doi:10.1021/acs.macromol.2c00506.s003",
+      "retrieved_at_utc": "2026-07-13T08:48:00.565160Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

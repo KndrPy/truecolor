@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1186/1752-0509-3-60",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "19505344",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1186/1752-0509-3-60",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 0.6,
+    "authoritative_source_agreement": {
+      "author_overlap": 0.6,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Josef Thingnes",
+      "Leiv Øyehaug",
+      "Eivind Hovig",
+      "Stig W Omholt"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "BMC Systems Biology",
+    "canonical_year": 2009,
+    "doi_match": true,
+    "harvested_authors": [
+      "Thingnes J",
+      "Oyehaug L",
+      "Hovig E",
+      "Omholt SW."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2009,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1055,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Josef Thingnes",
+      "Leiv Øyehaug",
+      "Eivind Hovig",
+      "Stig W Omholt"
+    ],
+    "doi": "10.1186/1752-0509-3-60",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The mathematics of tanning",
+    "update_to": [],
+    "url": "https://doi.org/10.1186/1752-0509-3-60",
+    "venue": "BMC Systems Biology",
+    "year": 2009
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1055/crossref_doi__4f402954d034d046__20260713T084700696817Z.json",
+      "raw_sha256": "32e21e4d03ae8de129159f3a00a5a85386e6e80c395a2f9213c0e27f1ef0e606",
+      "request_identity": "doi:10.1186/1752-0509-3-60",
+      "retrieved_at_utc": "2026-07-13T08:47:00.696817Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1055/europe_pmc_pmid__32903983b7098567__20260713T084701908329Z.json",
+      "raw_sha256": "b4fef40abadd6b818a6db792f4c7e1d9999d6e7b145ffb9ab6a66fd90b95df47",
+      "request_identity": "pmid:19505344",
+      "retrieved_at_utc": "2026-07-13T08:47:01.908329Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

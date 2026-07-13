@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.4324/9781315271187-9",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.4324/9781315271187-9",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "William C. Kenyon"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Theatre & Stage Photography",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "William C. Kenyon"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Theatre &amp; Stage Photography",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1251,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "William C. Kenyon"
+    ],
+    "doi": "10.4324/9781315271187-9",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "white balance",
+    "update_to": [],
+    "url": "https://doi.org/10.4324/9781315271187-9",
+    "venue": "Theatre & Stage Photography",
+    "year": 2017
+  },
+  "related_candidate_keys": [
+    "doi:10.1201/b16488-13",
+    "doi:10.5040/9781350088733.0251"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1251/crossref_doi__4051a845b5e290d1__20260713T084936166033Z.json",
+      "raw_sha256": "198d7853f4c90bf8cd35fabc6231a615fc7da22185851ce1380773c16b627878",
+      "request_identity": "doi:10.4324/9781315271187-9",
+      "retrieved_at_utc": "2026-07-13T08:49:36.166033Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

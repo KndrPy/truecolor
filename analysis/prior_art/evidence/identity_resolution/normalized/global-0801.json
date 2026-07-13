@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s13555-026-01805-y",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42189399",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s13555-026-01805-y",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Anthony Brown",
+      "Thierry Passeron",
+      "Yolanda Gilaberte",
+      "Jaime Piquero-Casals",
+      "Sergio Schalka",
+      "Carla Simonetto",
+      "Monica Foyaca",
+      "Henry W. Lim",
+      "Jean Krutmann"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Dermatology and Therapy",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Brown A",
+      "Passeron T",
+      "Gilaberte Y",
+      "Piquero-Casals J",
+      "Schalka S",
+      "Simonetto C",
+      "Foyaca M",
+      "Lim HW",
+      "Krutmann J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 801,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Anthony Brown",
+      "Thierry Passeron",
+      "Yolanda Gilaberte",
+      "Jaime Piquero-Casals",
+      "Sergio Schalka",
+      "Carla Simonetto",
+      "Monica Foyaca",
+      "Henry W. Lim",
+      "Jean Krutmann"
+    ],
+    "doi": "10.1007/s13555-026-01805-y",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Biological Photoprotection: A Review of its Mechanisms, Evidence, and Clinical Implications",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s13555-026-01805-y",
+    "venue": "Dermatology and Therapy",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0801/crossref_doi__8be98c00c2b48369__20260713T083955088158Z.json",
+      "raw_sha256": "5a31566cdc5383ca53bc6e9b4642215cced0f07f37db632710e295a4e1291e54",
+      "request_identity": "doi:10.1007/s13555-026-01805-y",
+      "retrieved_at_utc": "2026-07-13T08:39:55.088158Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0801/europe_pmc_pmid__8557b0e457762e84__20260713T083956160830Z.json",
+      "raw_sha256": "4c234ae4d7b5e94916d3328c43ab10fb52da24d4f7cf80fdba6c4e7822e60672",
+      "request_identity": "pmid:42189399",
+      "retrieved_at_utc": "2026-07-13T08:39:56.160830Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

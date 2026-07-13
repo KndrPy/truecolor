@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2026.1816102",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42180732",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2026.1816102",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Katie L. Frederickson",
+      "Samuel E. Adunyah",
+      "Qingguo Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Frederickson KL",
+      "Adunyah SE",
+      "Wang Q."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 366,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Katie L. Frederickson",
+      "Samuel E. Adunyah",
+      "Qingguo Wang"
+    ],
+    "doi": "10.3389/fmed.2026.1816102",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluation of GPT-5.2 for melanoma detection across skin tones",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2026.1816102",
+    "venue": "Frontiers in Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0366/crossref_doi__de31cf3015f6d5c7__20260713T082958949643Z.json",
+      "raw_sha256": "0442f1fc3975329b9c2d1bb9640eaa6f31535fd3378b93fd5cf3f85197cc6781",
+      "request_identity": "doi:10.3389/fmed.2026.1816102",
+      "retrieved_at_utc": "2026-07-13T08:29:58.949643Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0366/europe_pmc_pmid__68ee812d4574db0e__20260713T082959999771Z.json",
+      "raw_sha256": "570c9cd3678c4c246df4865ee5f517c3e567381c3bc839a2741bcbe8641bbc2f",
+      "request_identity": "pmid:42180732",
+      "retrieved_at_utc": "2026-07-13T08:29:59.999771Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

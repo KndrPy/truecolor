@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/tmi.2020.2992498",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "32406828",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/tmi.2020.2992498",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Stephen A. Lee",
+      "Hermes A. S. Kamimura",
+      "Mark T. Burgess",
+      "Elisa E. Konofagou"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Transactions on Medical Imaging",
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lee SA",
+      "Kamimura HAS",
+      "Burgess MT",
+      "Konofagou EE."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2020,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 472,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Stephen A. Lee",
+      "Hermes A. S. Kamimura",
+      "Mark T. Burgess",
+      "Elisa E. Konofagou"
+    ],
+    "doi": "10.1109/tmi.2020.2992498",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Displacement Imaging for Focused Ultrasound Peripheral Nerve Neuromodulation",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/tmi.2020.2992498",
+    "venue": "IEEE Transactions on Medical Imaging",
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0472/crossref_doi__a76b94dc5f430fdc__20260713T083210780999Z.json",
+      "raw_sha256": "da3abe7f92ab39b332e5e09be3ee200ca5b085d16395c6e19a7237643fe61a66",
+      "request_identity": "doi:10.1109/tmi.2020.2992498",
+      "retrieved_at_utc": "2026-07-13T08:32:10.780999Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0472/europe_pmc_pmid__1e92063a90f39d48__20260713T083211820740Z.json",
+      "raw_sha256": "82a8bed38e58b6ee8521460dd67511ea4063a5dab20d3c5a86884a205f93c58c",
+      "request_identity": "pmid:32406828",
+      "retrieved_at_utc": "2026-07-13T08:32:11.820740Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,143 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fcimb.2025.1561590",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40692685",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fcimb.2025.1561590",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Seyoung Mun",
+      "HyungWoo Jo",
+      "Young Mok Heo",
+      "Chaeyun Baek",
+      "Hye-Been Kim",
+      "Haeun Lee",
+      "Kyeongeui Yun",
+      "Jinuk Jeong",
+      "Wooseok Lee",
+      "Dasom Jeon",
+      "So Min Kang",
+      "Seunghyun Kang",
+      "Young-Bong Choi",
+      "Sangjin Han",
+      "Gabriel Kim",
+      "Kung Ahn",
+      "Dong Hun Lee",
+      "Yong Ju Ahn",
+      "Dong-Geol Lee",
+      "Kyudong Han"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Cellular and Infection Microbiology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mun S",
+      "Jo H",
+      "Heo YM",
+      "Baek C",
+      "Kim HB",
+      "Lee H",
+      "Yun K",
+      "Jeong J",
+      "Lee W",
+      "Jeon D",
+      "Kang SM",
+      "Kang S",
+      "Choi YB",
+      "Han S",
+      "Kim G",
+      "Ahn K",
+      "Lee DH",
+      "Ahn YJ",
+      "Lee DG",
+      "Han K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 646,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Seyoung Mun",
+      "HyungWoo Jo",
+      "Young Mok Heo",
+      "Chaeyun Baek",
+      "Hye-Been Kim",
+      "Haeun Lee",
+      "Kyeongeui Yun",
+      "Jinuk Jeong",
+      "Wooseok Lee",
+      "Dasom Jeon",
+      "So Min Kang",
+      "Seunghyun Kang",
+      "Young-Bong Choi",
+      "Sangjin Han",
+      "Gabriel Kim",
+      "Kung Ahn",
+      "Dong Hun Lee",
+      "Yong Ju Ahn",
+      "Dong-Geol Lee",
+      "Kyudong Han"
+    ],
+    "doi": "10.3389/fcimb.2025.1561590",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin microbiome-biophysical association: a first integrative approach to classifying Korean skin types and aging groups",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fcimb.2025.1561590",
+    "venue": "Frontiers in Cellular and Infection Microbiology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0646/crossref_doi__8c4198ce986c353b__20260713T083602201644Z.json",
+      "raw_sha256": "861aa6c1f9e72fd9b1a0b1715dd2d2081cf502bff329f623e6d1b048203018d5",
+      "request_identity": "doi:10.3389/fcimb.2025.1561590",
+      "retrieved_at_utc": "2026-07-13T08:36:02.201644Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0646/europe_pmc_pmid__a5ae78b83e0f8c47__20260713T083603172635Z.json",
+      "raw_sha256": "1bc526301026d85616e17add01b84f2a06f90dfa60c412b2d0f10fbca20ab811",
+      "request_identity": "pmid:40692685",
+      "retrieved_at_utc": "2026-07-13T08:36:03.172635Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

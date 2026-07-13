@@ -1,0 +1,185 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.34133/bmef.0225",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41768346",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.34133/bmef.0225",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Rongrui Zhang",
+          "Jingrui Zhao",
+          "Shasha Wang",
+          "Jing Lv",
+          "Junduo Liu",
+          "Jing Liu",
+          "Yawen Wang",
+          "Lei Fu",
+          "Weihui Zeng",
+          "Qiangzhou Rong",
+          "Cuiping Yao"
+        ],
+        "doi": "10.34133/bmef.0225",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Adaptive Optimization of Vascular-Targeted Photodynamic Therapy Efficiency Based on Hyperspectral-Photoacoustic Dual-Modality Imaging Feedback",
+        "update_to": [],
+        "url": "https://doi.org/10.34133/bmef.0225",
+        "venue": "BME Frontiers",
+        "year": 2025
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Rongrui Zhang",
+          "Jingrui Zhao",
+          "Shasha Wang",
+          "Jing Lv",
+          "Junduo Liu",
+          "Jing Liu",
+          "Yawen Wang",
+          "Lei Fu",
+          "Weihui Zeng",
+          "Qiangzhou Rong",
+          "Cuiping Yao"
+        ],
+        "doi": "10.34133/bmef.0225",
+        "is_retracted": false,
+        "pmcid": "PMC12946672",
+        "pmid": "41768346",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Adaptive Optimization of Vascular-Targeted Photodynamic Therapy Efficiency Based on Hyperspectral-Photoacoustic Dual-Modality Imaging Feedback.",
+        "url": "https://europepmc.org/article/MED/41768346",
+        "venue": null,
+        "year": 2026
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2025,
+      "field": "year",
+      "harvested": 2026
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Rongrui Zhang",
+      "Jingrui Zhao",
+      "Shasha Wang",
+      "Jing Lv",
+      "Junduo Liu",
+      "Jing Liu",
+      "Yawen Wang",
+      "Lei Fu",
+      "Weihui Zeng",
+      "Qiangzhou Rong",
+      "Cuiping Yao"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "BME Frontiers",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhang R",
+      "Zhao J",
+      "Wang S",
+      "Lv J",
+      "Liu J",
+      "Liu J",
+      "Wang Y",
+      "Fu L",
+      "Zeng W",
+      "Rong Q",
+      "Yao C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 777,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rongrui Zhang",
+      "Jingrui Zhao",
+      "Shasha Wang",
+      "Jing Lv",
+      "Junduo Liu",
+      "Jing Liu",
+      "Yawen Wang",
+      "Lei Fu",
+      "Weihui Zeng",
+      "Qiangzhou Rong",
+      "Cuiping Yao"
+    ],
+    "doi": "10.34133/bmef.0225",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Adaptive Optimization of Vascular-Targeted Photodynamic Therapy Efficiency Based on Hyperspectral-Photoacoustic Dual-Modality Imaging Feedback",
+    "update_to": [],
+    "url": "https://doi.org/10.34133/bmef.0225",
+    "venue": "BME Frontiers",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0777/crossref_doi__b6626a658dd35a96__20260713T083913719340Z.json",
+      "raw_sha256": "d92e1e41afecc1ea4700727b4a7fa48ed55769c7113c07c853721ed6678b7186",
+      "request_identity": "doi:10.34133/bmef.0225",
+      "retrieved_at_utc": "2026-07-13T08:39:13.719340Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0777/europe_pmc_pmid__447bf14c67fa77ad__20260713T083914739726Z.json",
+      "raw_sha256": "bdf3c29d7503716c0d807781ee78c4557c373451e64e0be764bbe7b5e86e4bd8",
+      "request_identity": "pmid:41768346",
+      "retrieved_at_utc": "2026-07-13T08:39:14.739726Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

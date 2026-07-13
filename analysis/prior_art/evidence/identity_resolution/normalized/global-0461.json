@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s43586-023-00286-z",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39391288",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s43586-023-00286-z",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Irina Kabakova",
+      "Jitao Zhang",
+      "Yuchen Xiang",
+      "Silvia Caponi",
+      "Alberto Bilenca",
+      "Jochen Guck",
+      "Giuliano Scarcelli"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nature Reviews Methods Primers",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kabakova I",
+      "Zhang J",
+      "Xiang Y",
+      "Caponi S",
+      "Bilenca A",
+      "Guck J",
+      "Scarcelli G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 461,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Irina Kabakova",
+      "Jitao Zhang",
+      "Yuchen Xiang",
+      "Silvia Caponi",
+      "Alberto Bilenca",
+      "Jochen Guck",
+      "Giuliano Scarcelli"
+    ],
+    "doi": "10.1038/s43586-023-00286-z",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Brillouin microscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s43586-023-00286-z",
+    "venue": "Nature Reviews Methods Primers",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0461/crossref_doi__376dae4f921ba862__20260713T083155428547Z.json",
+      "raw_sha256": "54bd7b19323374b243ee143653459b211d33d52a48ea7fcf3ec09e74deea3e73",
+      "request_identity": "doi:10.1038/s43586-023-00286-z",
+      "retrieved_at_utc": "2026-07-13T08:31:55.428547Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0461/europe_pmc_pmid__8dca2f580cff7590__20260713T083156857297Z.json",
+      "raw_sha256": "70ee0b843ccab16f8dfcf5bf2a7018bdad46a3a38ae8a2aadc997db07381d467",
+      "request_identity": "pmid:39391288",
+      "retrieved_at_utc": "2026-07-13T08:31:56.857297Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

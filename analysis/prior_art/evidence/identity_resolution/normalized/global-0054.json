@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/oe.22.001852",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/oe.22.001852",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Xiewei Zhong",
+      "Xiang Wen",
+      "Dan Zhu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Optics Express",
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [
+      "Xiewei Zhong",
+      "Xiang Wen",
+      "Dan Zhu"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Optics Express",
+    "harvested_year": 2014,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 54,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xiewei Zhong",
+      "Xiang Wen",
+      "Dan Zhu"
+    ],
+    "doi": "10.1364/oe.22.001852",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Lookup-table-based inverse model for human skin reflectance spectroscopy: two-layered Monte Carlo simulations and experiments",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/oe.22.001852",
+    "venue": "Optics Express",
+    "year": 2014
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0054/crossref_doi__3f6a8f1575537a25__20260713T081537527962Z.json",
+      "raw_sha256": "4c1cbb5580011ea5b966f38b41faf0e9ca8de76db8799b6bc3fb59207f47ef88",
+      "request_identity": "doi:10.1364/oe.22.001852",
+      "retrieved_at_utc": "2026-07-13T08:15:37.527962Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

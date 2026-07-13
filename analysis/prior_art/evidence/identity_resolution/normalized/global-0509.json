@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1049/el.2011.2501",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1049/el.2011.2501",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "M. Kang",
+      "U. Yang",
+      "K. Sohn"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Electronics Letters",
+    "canonical_year": 2011,
+    "doi_match": true,
+    "harvested_authors": [
+      "M. Kang",
+      "U. Yang",
+      "K. Sohn"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Electronics Letters",
+    "harvested_year": 2011,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 509,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "M. Kang",
+      "U. Yang",
+      "K. Sohn"
+    ],
+    "doi": "10.1049/el.2011.2501",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectral sensitivity estimation for EMCCD camera",
+    "update_to": [],
+    "url": "https://doi.org/10.1049/el.2011.2501",
+    "venue": "Electronics Letters",
+    "year": 2011
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0509/crossref_doi__4924abed97830569__20260713T083254415647Z.json",
+      "raw_sha256": "b8d218343d20c3a71908efbed4b1d443a9f05328edee37fbe42fe1077feca86d",
+      "request_identity": "doi:10.1049/el.2011.2501",
+      "retrieved_at_utc": "2026-07-13T08:32:54.415647Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

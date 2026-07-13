@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.34133/cbsystems.0536",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41877703",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.34133/cbsystems.0536",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sunguk Hong",
+      "Junyoung Yoo",
+      "Sung-Min Park"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cyborg and Bionic Systems",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hong S",
+      "Yoo J",
+      "Park SM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 922,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sunguk Hong",
+      "Junyoung Yoo",
+      "Sung-Min Park"
+    ],
+    "doi": "10.34133/cbsystems.0536",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Soft Multiaxial Strain Mapping Interface with AI-Driven Decoding for Silent Speech in Noise",
+    "update_to": [],
+    "url": "https://doi.org/10.34133/cbsystems.0536",
+    "venue": "Cyborg and Bionic Systems",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0922/crossref_doi__93cfe985d48cbdcb__20260713T084353361363Z.json",
+      "raw_sha256": "d98c081c8775956493f3a5c4934dca1a57820120ff3dc491bc97beeb5ddf3332",
+      "request_identity": "doi:10.34133/cbsystems.0536",
+      "retrieved_at_utc": "2026-07-13T08:43:53.361363Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0922/europe_pmc_pmid__84910387f3477614__20260713T084354379155Z.json",
+      "raw_sha256": "dcd72ad2e933749b44de70e8cd69dfc06d46dd10db620c70d0cb9bb77e6b56b5",
+      "request_identity": "pmid:41877703",
+      "retrieved_at_utc": "2026-07-13T08:43:54.379155Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

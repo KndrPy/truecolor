@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s24227397",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39599172",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s24227397",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Xun Yu",
+      "Keat Ghee Ong",
+      "Michael Aaron McGeehan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yu X",
+      "Ong KG",
+      "McGeehan MA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 760,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xun Yu",
+      "Keat Ghee Ong",
+      "Michael Aaron McGeehan"
+    ],
+    "doi": "10.3390/s24227397",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin Phototype Classification with Machine Learning Based on Broadband Optical Measurements",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s24227397",
+    "venue": "Sensors",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0760/crossref_doi__079b3cbabb18da3b__20260713T083844460362Z.json",
+      "raw_sha256": "633d4367d611680784a8219b960db4e8e644da794924e361ce81d59eef13fa2d",
+      "request_identity": "doi:10.3390/s24227397",
+      "retrieved_at_utc": "2026-07-13T08:38:44.460362Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0760/europe_pmc_pmid__d67db8231358ebc8__20260713T083845470512Z.json",
+      "raw_sha256": "8204f653e6f6e877677aaceb592603886734a4b8fa31b56a3b7d5db43f082fe6",
+      "request_identity": "pmid:39599172",
+      "retrieved_at_utc": "2026-07-13T08:38:45.470512Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

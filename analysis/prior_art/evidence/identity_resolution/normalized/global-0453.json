@@ -1,0 +1,116 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1039/d0nr05053a",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "33237080",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1039/d0nr05053a",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Giulia Brachi",
+      "Javier Ruiz-Ramírez",
+      "Prashant Dogra",
+      "Zhihui Wang",
+      "Vittorio Cristini",
+      "Gianluca Ciardelli",
+      "Robert C. Rostomily",
+      "Mauro Ferrari",
+      "Andrei M. Mikheev",
+      "Elvin Blanco",
+      "Clara Mattu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nanoscale",
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [
+      "Brachi G",
+      "Ruiz-Ramírez J",
+      "Dogra P",
+      "Wang Z",
+      "Cristini V",
+      "Ciardelli G",
+      "Rostomily RC",
+      "Ferrari M",
+      "Mikheev AM",
+      "Blanco E",
+      "Mattu C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2020,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 453,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Giulia Brachi",
+      "Javier Ruiz-Ramírez",
+      "Prashant Dogra",
+      "Zhihui Wang",
+      "Vittorio Cristini",
+      "Gianluca Ciardelli",
+      "Robert C. Rostomily",
+      "Mauro Ferrari",
+      "Andrei M. Mikheev",
+      "Elvin Blanco",
+      "Clara Mattu"
+    ],
+    "doi": "10.1039/d0nr05053a",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Intratumoral injection of hydrogel-embedded nanoparticles enhances retention in glioblastoma",
+    "update_to": [],
+    "url": "https://doi.org/10.1039/d0nr05053a",
+    "venue": "Nanoscale",
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0453/crossref_doi__fe9427fafc4f2000__20260713T083147179208Z.json",
+      "raw_sha256": "998cf2ac8e476d50785729eafee586cb8d0004db0eb3a5ede16515d1b4a1958d",
+      "request_identity": "doi:10.1039/d0nr05053a",
+      "retrieved_at_utc": "2026-07-13T08:31:47.179208Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0453/europe_pmc_pmid__1b6a762d61617e62__20260713T083148356950Z.json",
+      "raw_sha256": "cd497a3c9dce65b5d86ec90cff3306e1a6b373c2acc75e4d446b5699427c258b",
+      "request_identity": "pmid:33237080",
+      "retrieved_at_utc": "2026-07-13T08:31:48.356950Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

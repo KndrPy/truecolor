@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s10043-008-0049-1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s10043-008-0049-1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Tina Harifi",
+      "Seyed Hossein Amirshahi",
+      "Farnaz Agahian"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Optical Review",
+    "canonical_year": 2008,
+    "doi_match": true,
+    "harvested_authors": [
+      "Tina Harifi",
+      "Seyed Hossein Amirshahi",
+      "Farnaz Agahian"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Optical Review",
+    "harvested_year": 2008,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 169,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tina Harifi",
+      "Seyed Hossein Amirshahi",
+      "Farnaz Agahian"
+    ],
+    "doi": "10.1007/s10043-008-0049-1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Recovery of reflectance spectra from colorimetric data using principal component analysis embedded regression technique",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s10043-008-0049-1",
+    "venue": "Optical Review",
+    "year": 2008
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0169/crossref_doi__24b1a7af6630d5c4__20260713T082602510202Z.json",
+      "raw_sha256": "2d9a0f72fd55fcaf1f0b479d56986c99e90b1a258727700b22806bef998e6f0a",
+      "request_identity": "doi:10.1007/s10043-008-0049-1",
+      "retrieved_at_utc": "2026-07-13T08:26:02.510202Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/1361-6420/ad910a",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39574468",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/1361-6420/ad910a",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Evan Scope Crafts",
+      "Mark A Anastasio",
+      "Umberto Villa"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Inverse Problems",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Scope Crafts E",
+      "Anastasio MA",
+      "Villa U."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 394,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Evan Scope Crafts",
+      "Mark A Anastasio",
+      "Umberto Villa"
+    ],
+    "doi": "10.1088/1361-6420/ad910a",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Optimizing quantitative photoacoustic imaging systems: the Bayesian Cramér–Rao bound approach",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/1361-6420/ad910a",
+    "venue": "Inverse Problems",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0394/crossref_doi__db662a7d2af6b942__20260713T083049210849Z.json",
+      "raw_sha256": "6549f10c8f941a6b01f8a7e9c7dee90598948c196f83edaa7616828391713b80",
+      "request_identity": "doi:10.1088/1361-6420/ad910a",
+      "retrieved_at_utc": "2026-07-13T08:30:49.210849Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0394/europe_pmc_pmid__478c939cf24d79ab__20260713T083050322930Z.json",
+      "raw_sha256": "86cc97980223269edf33e3f00fc1d1beda2f03fda7a2ce1914fe5b09f2ca395f",
+      "request_identity": "pmid:39574468",
+      "retrieved_at_utc": "2026-07-13T08:30:50.322930Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

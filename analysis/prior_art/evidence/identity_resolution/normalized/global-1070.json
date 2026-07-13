@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s11307-021-01691-0",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "34982363",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s11307-021-01691-0",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "authoritative_source_agreement": {
+      "author_overlap": null,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Molecular Imaging and Biology",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1070,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1007/s11307-021-01691-0",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Proceedings of the World Molecular Imaging Congress 2020, October 7-9, 2020: General Abstracts",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s11307-021-01691-0",
+    "venue": "Molecular Imaging and Biology",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1070/crossref_doi__2cf7d3bd1670b4b1__20260713T084717670033Z.json",
+      "raw_sha256": "4b5e59765f9a313692eef8a248c9077ed7e4dda72385215733d837be38fdf1f0",
+      "request_identity": "doi:10.1007/s11307-021-01691-0",
+      "retrieved_at_utc": "2026-07-13T08:47:17.670033Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1070/europe_pmc_pmid__c5c16cf4f20d0994__20260713T084718799370Z.json",
+      "raw_sha256": "59049dd3d15e21699306e1d1ba0a5bff4a2f7e195498e3a0f0ae8d390877dd68",
+      "request_identity": "pmid:34982363",
+      "retrieved_at_utc": "2026-07-13T08:47:18.799370Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41746-025-02329-z",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41688745",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41746-025-02329-z",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "José Miguel Diniz",
+      "Henrique Vasconcelos",
+      "Rita Rb-Silva",
+      "Carolina Ameijeiras-Rodriguez",
+      "Daniel Rodrigues",
+      "Pedro Ramos",
+      "António Tomás",
+      "Yu Gao",
+      "Júlio Souza",
+      "Alberto Freitas"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Digital Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Diniz JM",
+      "Vasconcelos H",
+      "Rb-Silva R",
+      "Ameijeiras-Rodriguez C",
+      "Rodrigues D",
+      "Ramos P",
+      "Tomás A",
+      "Gao Y",
+      "Souza J",
+      "Freitas A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 736,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "José Miguel Diniz",
+      "Henrique Vasconcelos",
+      "Rita Rb-Silva",
+      "Carolina Ameijeiras-Rodriguez",
+      "Daniel Rodrigues",
+      "Pedro Ramos",
+      "António Tomás",
+      "Yu Gao",
+      "Júlio Souza",
+      "Alberto Freitas"
+    ],
+    "doi": "10.1038/s41746-025-02329-z",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Comparing decentralized machine learning and AI clinical models to local and centralized alternatives: a systematic review",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41746-025-02329-z",
+    "venue": "npj Digital Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0736/crossref_doi__1c2205e6d277c915__20260713T083755676261Z.json",
+      "raw_sha256": "67403a0d8d984923ab0d98991fee19d619334173e95f40c140b43f775fbf7ead",
+      "request_identity": "doi:10.1038/s41746-025-02329-z",
+      "retrieved_at_utc": "2026-07-13T08:37:55.676261Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0736/europe_pmc_pmid__d90679c427ac2229__20260713T083756657402Z.json",
+      "raw_sha256": "797765e14ab3fe17bd17f14542fc9ceec7373c11d331a731d08ee9d58380d9c5",
+      "request_identity": "pmid:41688745",
+      "retrieved_at_utc": "2026-07-13T08:37:56.657402Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

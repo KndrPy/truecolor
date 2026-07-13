@@ -1,0 +1,70 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2352/j.lmagingsci.technol.2018.62.5.050402",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2352/j.lmagingsci.technol.2018.62.5.050402",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "David R. Wyble",
+      "Roy S. Berns"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Color and Imaging Conference",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [
+      "David R. Wyble",
+      "Roy S. Berns"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Color and Imaging Conference",
+    "harvested_year": 2018,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 689,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "David R. Wyble",
+      "Roy S. Berns"
+    ],
+    "doi": "10.2352/j.lmagingsci.technol.2018.62.5.050402",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Quantifying Spectral Sensitivity Mismatch Using a Metameric Color Rule",
+    "update_to": [],
+    "url": "https://doi.org/10.2352/j.lmagingsci.technol.2018.62.5.050402",
+    "venue": "Color and Imaging Conference",
+    "year": 2018
+  },
+  "related_candidate_keys": [
+    "doi:10.2352/j.imagingsci.technol.2018.62.5.050402"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0689/crossref_doi__48b1ddb4cc785650__20260713T083649538308Z.json",
+      "raw_sha256": "c9334c9b0bc254cc6eba5df2d50435a29cb608af261cb357f7f7c2c0d3f05085",
+      "request_identity": "doi:10.2352/j.lmagingsci.technol.2018.62.5.050402",
+      "retrieved_at_utc": "2026-07-13T08:36:49.538308Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

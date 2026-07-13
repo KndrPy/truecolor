@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/polym17243279",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41470953",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/polym17243279",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Rocío Ayelén Fuentes",
+      "Giacomo Foli",
+      "Roberta Di Carlo",
+      "Yanela Natalyn Alonso",
+      "Luciana Andrea Castillo",
+      "Matteo Minelli"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Polymers",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fuentes RA",
+      "Foli G",
+      "Di Carlo R",
+      "Alonso YN",
+      "Castillo LA",
+      "Minelli M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 979,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rocío Ayelén Fuentes",
+      "Giacomo Foli",
+      "Roberta Di Carlo",
+      "Yanela Natalyn Alonso",
+      "Luciana Andrea Castillo",
+      "Matteo Minelli"
+    ],
+    "doi": "10.3390/polym17243279",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Development of Mono-Material Multilayer Light Barrier Films",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/polym17243279",
+    "venue": "Polymers",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0979/crossref_doi__310780ffd84b886e__20260713T084539790128Z.json",
+      "raw_sha256": "6022f896a26508d60706c199c75400c70480e5a1a99dc6f974d2fae722922b1e",
+      "request_identity": "doi:10.3390/polym17243279",
+      "retrieved_at_utc": "2026-07-13T08:45:39.790128Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0979/europe_pmc_pmid__575fbb7ca2ff43e0__20260713T084540766031Z.json",
+      "raw_sha256": "7b4b7938a5a4828f07db584804537c8117406e36feb6b70c62c725ea733f46a8",
+      "request_identity": "pmid:41470953",
+      "retrieved_at_utc": "2026-07-13T08:45:40.766031Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

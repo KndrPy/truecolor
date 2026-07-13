@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jmi.3.2.023502",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "27175376",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jmi.3.2.023502",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Harrison H. Barrett",
+      "David S. Alberts",
+      "James M. Woolfenden",
+      "Luca Caucci",
+      "John W. Hoppin"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Medical Imaging",
+    "canonical_year": 2016,
+    "doi_match": true,
+    "harvested_authors": [
+      "Barrett HH",
+      "Alberts DS",
+      "Woolfenden JM",
+      "Caucci L",
+      "Hoppin JW."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2016,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1007,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Harrison H. Barrett",
+      "David S. Alberts",
+      "James M. Woolfenden",
+      "Luca Caucci",
+      "John W. Hoppin"
+    ],
+    "doi": "10.1117/1.jmi.3.2.023502",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Therapy operating characteristic curves: tools for precision chemotherapy",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jmi.3.2.023502",
+    "venue": "Journal of Medical Imaging",
+    "year": 2016
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1007/crossref_doi__6b947e47ac5e330b__20260713T084617622445Z.json",
+      "raw_sha256": "e77dd47680c3fce68bf78d5cb5a789ab5a59facdc49bd55601740a3b881dd0f9",
+      "request_identity": "doi:10.1117/1.jmi.3.2.023502",
+      "retrieved_at_utc": "2026-07-13T08:46:17.622445Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1007/europe_pmc_pmid__06c2cb0177fee26a__20260713T084618721320Z.json",
+      "raw_sha256": "61520b2e0dd2612cb240fcb29a558749072145143c93d798899592ae632fb8ed",
+      "request_identity": "pmid:27175376",
+      "retrieved_at_utc": "2026-07-13T08:46:18.721320Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

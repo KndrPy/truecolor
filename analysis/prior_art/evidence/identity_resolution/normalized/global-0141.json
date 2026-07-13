@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41746-025-01770-4",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40537526",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41746-025-01770-4",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Paul Ulrich",
+      "Alexander Zink",
+      "Tilo Biedermann",
+      "Sebastian Sitaru"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Digital Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ulrich P",
+      "Zink A",
+      "Biedermann T",
+      "Sitaru S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 141,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Paul Ulrich",
+      "Alexander Zink",
+      "Tilo Biedermann",
+      "Sebastian Sitaru"
+    ],
+    "doi": "10.1038/s41746-025-01770-4",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Beyond Fitzpatrick: automated artificial intelligence-based skin tone analysis in dermatological patients",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41746-025-01770-4",
+    "venue": "npj Digital Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0141/crossref_doi__3502a57c558ef6b4__20260713T082538077776Z.json",
+      "raw_sha256": "593ffdce743034b977021df47ecd99148f693660f049a94d02685b2162bf94ea",
+      "request_identity": "doi:10.1038/s41746-025-01770-4",
+      "retrieved_at_utc": "2026-07-13T08:25:38.077776Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0141/europe_pmc_pmid__5063b73352c42d27__20260713T082539027157Z.json",
+      "raw_sha256": "8188a14e699db3a9563fbb4eac69ff76d98556d7eb03dcee1c69dccb987f5794",
+      "request_identity": "pmid:40537526",
+      "retrieved_at_utc": "2026-07-13T08:25:39.027157Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

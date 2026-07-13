@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/ma19050931",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41828198",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/ma19050931",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Erick Reyes-Vera",
+      "Carlos Furnieles",
+      "Camilo Zapata Hernandez",
+      "Jorge Montoya-Cardona",
+      "Paula Ortiz-Santana",
+      "Juan Botero-Valencia",
+      "Javier Araque"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Materials",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Reyes-Vera E",
+      "Furnieles C",
+      "Zapata Hernandez C",
+      "Montoya-Cardona J",
+      "Ortiz-Santana P",
+      "Botero-Valencia J",
+      "Araque J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 912,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Erick Reyes-Vera",
+      "Carlos Furnieles",
+      "Camilo Zapata Hernandez",
+      "Jorge Montoya-Cardona",
+      "Paula Ortiz-Santana",
+      "Juan Botero-Valencia",
+      "Javier Araque"
+    ],
+    "doi": "10.3390/ma19050931",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multiphysical Characterization of a Tissue-Mimicking Phantom: Composition, Thermal Behavior, and Broadband Electromagnetic Properties from Visible to Terahertz and Microwave Frequencies",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/ma19050931",
+    "venue": "Materials",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0912/crossref_doi__2a46c273cee2acc2__20260713T084333147990Z.json",
+      "raw_sha256": "11e27f27333a6f5ce78034d65ac698399410cd847404573fce0d5a3d889a4bbc",
+      "request_identity": "doi:10.3390/ma19050931",
+      "retrieved_at_utc": "2026-07-13T08:43:33.147990Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0912/europe_pmc_pmid__6ee8fdad0b3e69db__20260713T084334110017Z.json",
+      "raw_sha256": "e56c03009b595b28b4ade1e2f22153fdb7fb2d96ce581c3559ba721d6a7156d7",
+      "request_identity": "pmid:41828198",
+      "retrieved_at_utc": "2026-07-13T08:43:34.110017Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

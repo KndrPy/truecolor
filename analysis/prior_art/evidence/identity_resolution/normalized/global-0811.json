@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1021/acsomega.5c11499",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41552493",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1021/acsomega.5c11499",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Chanchai Hongsa",
+      "Molin Wongwattanakul",
+      "Patutong Chatchawal",
+      "Pattaraporn Srisai",
+      "Ploenchan Chetchotisakd",
+      "Siriluck Anunnatsiri",
+      "Varis Manbenmad",
+      "Ganjana Lertmemongkolchai",
+      "Sonwit Phanabamrung",
+      "Arnone Nithichanon"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "ACS Omega",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hongsa C",
+      "Wongwattanakul M",
+      "Chatchawal P",
+      "Srisai P",
+      "Chetchotisakd P",
+      "Anunnatsiri S",
+      "Manbenmad V",
+      "Lertmemongkolchai G",
+      "Phanabamrung S",
+      "Nithichanon A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 811,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Chanchai Hongsa",
+      "Molin Wongwattanakul",
+      "Patutong Chatchawal",
+      "Pattaraporn Srisai",
+      "Ploenchan Chetchotisakd",
+      "Siriluck Anunnatsiri",
+      "Varis Manbenmad",
+      "Ganjana Lertmemongkolchai",
+      "Sonwit Phanabamrung",
+      "Arnone Nithichanon"
+    ],
+    "doi": "10.1021/acsomega.5c11499",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "ATR-FTIR Spectroscopy for Detection of Anti-interferon-Gamma Autoantibodies",
+    "update_to": [],
+    "url": "https://doi.org/10.1021/acsomega.5c11499",
+    "venue": "ACS Omega",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0811/crossref_doi__e38af9b0186d87fe__20260713T084014275263Z.json",
+      "raw_sha256": "33224330f456d6ce77afb4bf5afd7e2896cbeabea10f9d8145dd002d02d45133",
+      "request_identity": "doi:10.1021/acsomega.5c11499",
+      "retrieved_at_utc": "2026-07-13T08:40:14.275263Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0811/europe_pmc_pmid__457ef78ee4c43e6f__20260713T084015454019Z.json",
+      "raw_sha256": "5c10f101941957c461b292c83d7af70d998b3b11914467babd1c126ee59923a8",
+      "request_identity": "pmid:41552493",
+      "retrieved_at_utc": "2026-07-13T08:40:15.454019Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

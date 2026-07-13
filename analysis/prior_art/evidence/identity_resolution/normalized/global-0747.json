@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.30.7.076008",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40726594",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.30.7.076008",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Meriem Ayadh",
+      "Léna Waszczuk",
+      "Jonas Ogien",
+      "Grégoire Dauce",
+      "Luc Augis",
+      "Sana Tfaili",
+      "Ali Tfayli",
+      "Jean-Luc Perrot",
+      "Arnaud Dubois"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ayadh M",
+      "Waszczuk L",
+      "Ogien J",
+      "Dauce G",
+      "Augis L",
+      "Tfaili S",
+      "Tfayli A",
+      "Perrot JL",
+      "Dubois A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 747,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Meriem Ayadh",
+      "Léna Waszczuk",
+      "Jonas Ogien",
+      "Grégoire Dauce",
+      "Luc Augis",
+      "Sana Tfaili",
+      "Ali Tfayli",
+      "Jean-Luc Perrot",
+      "Arnaud Dubois"
+    ],
+    "doi": "10.1117/1.jbo.30.7.076008",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "AI-assisted identification of nonmelanoma skin cancer structures based on combined line-field confocal optical coherence tomography and confocal Raman microspectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.30.7.076008",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0747/crossref_doi__7ac3e9eddcbf6af4__20260713T083817224499Z.json",
+      "raw_sha256": "81bfbb7ecf6931714b87f55b73f3a3138a252f029794f56ebcce70e229412fde",
+      "request_identity": "doi:10.1117/1.jbo.30.7.076008",
+      "retrieved_at_utc": "2026-07-13T08:38:17.224499Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0747/europe_pmc_pmid__48c48f31fa85cbd0__20260713T083818193475Z.json",
+      "raw_sha256": "0aaa3fb453d451559aa75b845127f73dc839454141c4c044ecafd629fadc2304",
+      "request_identity": "pmid:40726594",
+      "retrieved_at_utc": "2026-07-13T08:38:18.193475Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.isci.2026.116243",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42325557",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.isci.2026.116243",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Shuaikang Hao",
+      "Xinpeng Zhang",
+      "Yuehui Xu",
+      "Songlin Han",
+      "Xiwan Zhang",
+      "Haixia Qiu",
+      "Ying Gu",
+      "Defu Chen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "iScience",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hao S",
+      "Zhang X",
+      "Xu Y",
+      "Han S",
+      "Zhang X",
+      "Qiu H",
+      "Gu Y",
+      "Chen D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 0.9375,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 802,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shuaikang Hao",
+      "Xinpeng Zhang",
+      "Yuehui Xu",
+      "Songlin Han",
+      "Xiwan Zhang",
+      "Haixia Qiu",
+      "Ying Gu",
+      "Defu Chen"
+    ],
+    "doi": "10.1016/j.isci.2026.116243",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "HS-QFNet: Deep learning-enhanced hyperspectral fluorescence correction for accurate in vivo photosensitizer concentration quantification",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.isci.2026.116243",
+    "venue": "iScience",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0802/crossref_doi__05f55474cbb1ed1f__20260713T083956827002Z.json",
+      "raw_sha256": "c707bc0b4e98e590580ed26731004a733a6692229f54d3fafbec829d5d81995e",
+      "request_identity": "doi:10.1016/j.isci.2026.116243",
+      "retrieved_at_utc": "2026-07-13T08:39:56.827002Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0802/europe_pmc_pmid__e2f351cda0d611ce__20260713T083957917816Z.json",
+      "raw_sha256": "7b691dd751f4280a8608100cbad68f9bc93a94fc5f37abb4c8fd94cd3433c471",
+      "request_identity": "pmid:42325557",
+      "retrieved_at_utc": "2026-07-13T08:39:57.917816Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

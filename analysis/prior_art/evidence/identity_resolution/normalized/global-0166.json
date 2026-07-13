@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.52202/075280-1320",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.52202/075280-1320",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Candice Schumann",
+      "Femi Olanubi",
+      "Auriel Wright",
+      "Ellis Monk",
+      "Courtney Heldreth",
+      "Susanna Ricco"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Advances in Neural Information Processing Systems 36",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Candice Schumann",
+      "Femi Olanubi",
+      "Auriel Wright",
+      "Ellis Monk",
+      "Courtney Heldreth",
+      "Susanna Ricco"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Advances in Neural Information Processing Systems 36",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 166,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Candice Schumann",
+      "Femi Olanubi",
+      "Auriel Wright",
+      "Ellis Monk",
+      "Courtney Heldreth",
+      "Susanna Ricco"
+    ],
+    "doi": "10.52202/075280-1320",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Consensus and Subjectivity of Skin Tone Annotation for ML Fairness",
+    "update_to": [],
+    "url": "https://doi.org/10.52202/075280-1320",
+    "venue": "Advances in Neural Information Processing Systems 36",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0166/crossref_doi__ca0c2aa9ffe31dca__20260713T082600645949Z.json",
+      "raw_sha256": "100c71cbebd40443de0dfdc3022ed3b3f500932066427027b149b4094ae3d178",
+      "request_identity": "doi:10.52202/075280-1320",
+      "retrieved_at_utc": "2026-07-13T08:26:00.645949Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

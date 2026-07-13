@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1073/pnas.2525419123",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41843665",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1073/pnas.2525419123",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Samuel Humphrey",
+      "Xianglian He",
+      "Tobias Priemel",
+      "Vera Marie Titze",
+      "Sinuhé Perea-Puente",
+      "Vivek Subramanian",
+      "Cedric Bouchet-Marquis",
+      "Bruno Jesus",
+      "Silvia Vignolini"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Proceedings of the National Academy of Sciences",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Humphrey S",
+      "He X",
+      "Priemel T",
+      "Titze VM",
+      "Perea-Puente S",
+      "Subramanian V",
+      "Bouchet-Marquis C",
+      "Jesus B",
+      "Vignolini S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 708,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Samuel Humphrey",
+      "Xianglian He",
+      "Tobias Priemel",
+      "Vera Marie Titze",
+      "Sinuhé Perea-Puente",
+      "Vivek Subramanian",
+      "Cedric Bouchet-Marquis",
+      "Bruno Jesus",
+      "Silvia Vignolini"
+    ],
+    "doi": "10.1073/pnas.2525419123",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Nudibranch color diversity shares a common physical basis in guanine photonic structure ‘pixels’",
+    "update_to": [],
+    "url": "https://doi.org/10.1073/pnas.2525419123",
+    "venue": "Proceedings of the National Academy of Sciences",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0708/crossref_doi__68a2a1910607f41b__20260713T083708446996Z.json",
+      "raw_sha256": "0bf097a761d2e8bce7163144f0ae274559eaf723ef81dccc38da8ef8e6c41bc9",
+      "request_identity": "doi:10.1073/pnas.2525419123",
+      "retrieved_at_utc": "2026-07-13T08:37:08.446996Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0708/europe_pmc_pmid__011c9c2faa890a7a__20260713T083709540270Z.json",
+      "raw_sha256": "7da2e6ed0ffb3dc747bb7256552fbd263b348b3f188af63e80703300e5e55a73",
+      "request_identity": "pmid:41843665",
+      "retrieved_at_utc": "2026-07-13T08:37:09.540270Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

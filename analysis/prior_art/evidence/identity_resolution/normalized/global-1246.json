@@ -1,0 +1,67 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7717/peerj.17002/fig-8",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7717/peerj.17002/fig-8",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "component",
+    "canonical_venue": null,
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "component",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1246,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.7717/peerj.17002/fig-8",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "component",
+    "relation": {
+      "is-component-of": [
+        {
+          "asserted-by": "object",
+          "id": "10.7717/peerj.17002",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Figure 8: Validation of external dataset GSE54236 and experimental validation.",
+    "update_to": [],
+    "url": "https://doi.org/10.7717/peerj.17002/fig-8",
+    "venue": null,
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1246/crossref_doi__3639b852687a5c7b__20260713T084932016974Z.json",
+      "raw_sha256": "5942443c2c354bd5c2815c2e6375f0fa84785c0e5e181fcfb90a535eed05336d",
+      "request_identity": "doi:10.7717/peerj.17002/fig-8",
+      "retrieved_at_utc": "2026-07-13T08:49:32.016974Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

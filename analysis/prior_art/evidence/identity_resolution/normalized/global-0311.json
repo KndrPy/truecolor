@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/1612-202x/ab2b36",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/1612-202x/ab2b36",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Guangyuan Wu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Laser Physics Letters",
+    "canonical_year": 2019,
+    "doi_match": true,
+    "harvested_authors": [
+      "Guangyuan Wu"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Laser Physics Letters",
+    "harvested_year": 2019,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 311,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Guangyuan Wu"
+    ],
+    "doi": "10.1088/1612-202x/ab2b36",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Reflectance spectra recovery from a single RGB image by adaptive compressive sensing",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/1612-202x/ab2b36",
+    "venue": "Laser Physics Letters",
+    "year": 2019
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0311/crossref_doi__6eb9aee1c13f9f07__20260713T082832391469Z.json",
+      "raw_sha256": "fe2c543e4aff2320681586c1c89de10acfdd53a8e9a10a170395aa9b3b6fed18",
+      "request_identity": "doi:10.1088/1612-202x/ab2b36",
+      "retrieved_at_utc": "2026-07-13T08:28:32.391469Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

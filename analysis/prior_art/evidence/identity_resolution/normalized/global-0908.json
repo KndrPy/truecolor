@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jcm15062448",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41899370",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jcm15062448",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Seung Yun Oh",
+      "Seokchan Eun"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Clinical Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Oh SY",
+      "Eun S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 908,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Seung Yun Oh",
+      "Seokchan Eun"
+    ],
+    "doi": "10.3390/jcm15062448",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Minimal One-Quarter Incision and Four-Step (MOQIF) Excision Method for Subcutaneous Lipoma",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jcm15062448",
+    "venue": "Journal of Clinical Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0908/crossref_doi__ba800e02a442e159__20260713T084326685658Z.json",
+      "raw_sha256": "d96596d3cb609fb2c3202ef8d100144354a71e9b6e908f89e8c75ce745d5b8a6",
+      "request_identity": "doi:10.3390/jcm15062448",
+      "retrieved_at_utc": "2026-07-13T08:43:26.685658Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0908/europe_pmc_pmid__c644ad6a684cfc95__20260713T084327639876Z.json",
+      "raw_sha256": "c11570a1cfb5ee4a706f65cfe1a59f866ceae2d187cdc36f49f229f9968de2c9",
+      "request_identity": "pmid:41899370",
+      "retrieved_at_utc": "2026-07-13T08:43:27.639876Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

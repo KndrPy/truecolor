@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/smsc.70273",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42027699",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/smsc.70273",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sewon Ahn",
+      "Jaewon Lee",
+      "Soyul Kwak",
+      "Eunji Im",
+      "YongDeok Cho",
+      "Hyeon Ho Kim",
+      "Heon Lee",
+      "Seungwoo Lee"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Small Science",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ahn S",
+      "Lee J",
+      "Kwak S",
+      "Im E",
+      "Cho Y",
+      "Kim HH",
+      "Lee H",
+      "Lee S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 794,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sewon Ahn",
+      "Jaewon Lee",
+      "Soyul Kwak",
+      "Eunji Im",
+      "YongDeok Cho",
+      "Hyeon Ho Kim",
+      "Heon Lee",
+      "Seungwoo Lee"
+    ],
+    "doi": "10.1002/smsc.70273",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Colloidal Photonic Fibers for Reflectively Colorful Radiative Cooling Fabrics",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/smsc.70273",
+    "venue": "Small Science",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0794/crossref_doi__dc07e56d2c1f1339__20260713T083940471638Z.json",
+      "raw_sha256": "a3f7ac33a5b17a088790d501d6ae025b9427e1721572ec28271b0db84ffbe02c",
+      "request_identity": "doi:10.1002/smsc.70273",
+      "retrieved_at_utc": "2026-07-13T08:39:40.471638Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0794/europe_pmc_pmid__3f4dc06a5e1fc19b__20260713T083941470436Z.json",
+      "raw_sha256": "f6adbd210cb286056af718401e2cd536f62ae1fb9e4202b08115ce4a87082223",
+      "request_identity": "pmid:42027699",
+      "retrieved_at_utc": "2026-07-13T08:39:41.470436Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

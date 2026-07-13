@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/vision6040059",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36278671",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/vision6040059",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Luis Nahmad-Rohen",
+      "Yusuf H. Qureshi",
+      "Misha Vorobyev"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Vision",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nahmad-Rohen L",
+      "Qureshi YH",
+      "Vorobyev M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 994,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Luis Nahmad-Rohen",
+      "Yusuf H. Qureshi",
+      "Misha Vorobyev"
+    ],
+    "doi": "10.3390/vision6040059",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The Colours of Octopus: Using Spectral Data to Measure Octopus Camouflage",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/vision6040059",
+    "venue": "Vision",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0994/crossref_doi__9886c1cb74df46ee__20260713T084608315790Z.json",
+      "raw_sha256": "b29e1561945652ddaf35666e80f9f0bee943888fd094b45225f9615cd20f2dae",
+      "request_identity": "doi:10.3390/vision6040059",
+      "retrieved_at_utc": "2026-07-13T08:46:08.315790Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0994/europe_pmc_pmid__e4d5ec601afd4f8b__20260713T084609429736Z.json",
+      "raw_sha256": "a98d7a9499bdd8904f993a9895c259115cbe6b0c1bc5a30c8e5f067333041971",
+      "request_identity": "pmid:36278671",
+      "retrieved_at_utc": "2026-07-13T08:46:09.429736Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

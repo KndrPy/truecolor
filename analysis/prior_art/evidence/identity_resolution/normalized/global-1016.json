@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.26226/m.6657251f918878861e1bd93a",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.26226/m.6657251f918878861e1bd93a",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Matilde Andrade",
+      "Pedro Morão",
+      "João Santinha",
+      "Pedro Gouveia"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Matilde Andrade",
+      "Pedro Morão",
+      "João Santinha",
+      "Pedro Gouveia"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1016,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Matilde Andrade",
+      "Pedro Morão",
+      "João Santinha",
+      "Pedro Gouveia"
+    ],
+    "doi": "10.26226/m.6657251f918878861e1bd93a",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "Exploring Domain Shift in Breast MRI: A Study on Pretrained Stable Diffusion XL Model's Conditional Image-to-Image Feature",
+    "update_to": [],
+    "url": "https://doi.org/10.26226/m.6657251f918878861e1bd93a",
+    "venue": null,
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1016/crossref_doi__e91110da9347a32a__20260713T084625480079Z.json",
+      "raw_sha256": "8b0bb55ead8c629049f2f22b7be26af00020a93b0091dd116728408bf87eeb3d",
+      "request_identity": "doi:10.26226/m.6657251f918878861e1bd93a",
+      "retrieved_at_utc": "2026-07-13T08:46:25.480079Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

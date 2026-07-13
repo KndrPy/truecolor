@@ -1,0 +1,134 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-026-53468-6",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42288533",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-026-53468-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Christoph J. Bender",
+      "Marcel Knopp",
+      "Niklas Holzwarth",
+      "Tom Rix",
+      "Jan-Hinrich Nölke",
+      "Kris K. Dreher",
+      "Yi Li",
+      "Julius Kempf",
+      "Milenko Caranovic",
+      "Fabian Schneider",
+      "Melanie Schellenberg",
+      "Leonie Boland",
+      "Briain Haney",
+      "Ferdinand Knieling",
+      "Ulrich Rother",
+      "Alexander Seitel",
+      "Lena Maier-Hein"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Bender CJ",
+      "Knopp M",
+      "Holzwarth N",
+      "Rix T",
+      "Nölke JH",
+      "Dreher KK",
+      "Li Y",
+      "Kempf J",
+      "Caranovic M",
+      "Schneider F",
+      "Schellenberg M",
+      "Boland L",
+      "Haney B",
+      "Knieling F",
+      "Rother U",
+      "Seitel A",
+      "Maier-Hein L."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 827,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Christoph J. Bender",
+      "Marcel Knopp",
+      "Niklas Holzwarth",
+      "Tom Rix",
+      "Jan-Hinrich Nölke",
+      "Kris K. Dreher",
+      "Yi Li",
+      "Julius Kempf",
+      "Milenko Caranovic",
+      "Fabian Schneider",
+      "Melanie Schellenberg",
+      "Leonie Boland",
+      "Briain Haney",
+      "Ferdinand Knieling",
+      "Ulrich Rother",
+      "Alexander Seitel",
+      "Lena Maier-Hein"
+    ],
+    "doi": "10.1038/s41598-026-53468-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Photoacoustic device fingerprints induce bias in deep learning models",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-026-53468-6",
+    "venue": "Scientific Reports",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0827/crossref_doi__cc6bf1f8b7f8ac7e__20260713T084044229716Z.json",
+      "raw_sha256": "17ee02ec39ebb755c0eeb116c403af45802f0d9616755eaafe802ae8433beb94",
+      "request_identity": "doi:10.1038/s41598-026-53468-6",
+      "retrieved_at_utc": "2026-07-13T08:40:44.229716Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0827/europe_pmc_pmid__79ea3dddb9f4a1e7__20260713T084045218724Z.json",
+      "raw_sha256": "2b48ef3de7e9091ac7723cde99ddca58dbb9aa1fcc5f8210f71af10fa31b6e0d",
+      "request_identity": "pmid:42288533",
+      "retrieved_at_utc": "2026-07-13T08:40:45.218724Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

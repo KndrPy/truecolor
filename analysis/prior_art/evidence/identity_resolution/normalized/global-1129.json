@@ -1,0 +1,73 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/access.2025.3584904/mm1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/access.2025.3584904/mm1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Ariel Soares Teles"
+    ],
+    "canonical_publication_type": "component",
+    "canonical_venue": null,
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ariel Soares Teles"
+    ],
+    "harvested_publication_type": "component",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1129,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ariel Soares Teles"
+    ],
+    "doi": "10.1109/access.2025.3584904/mm1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "component",
+    "relation": {
+      "is-component-of": [
+        {
+          "asserted-by": "object",
+          "id": "10.1109/ACCESS.2025.3584904",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "External Validation of AI Models for Skin Diseases: A Systematic Review_supp1-3584904.docx",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/access.2025.3584904/mm1",
+    "venue": null,
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1129/crossref_doi__5ca0f8f1b5e272dc__20260713T084801789933Z.json",
+      "raw_sha256": "c398b2497308ff213a063ee3a458b2eebbae621ec6487c10295db7dabea63f29",
+      "request_identity": "doi:10.1109/access.2025.3584904/mm1",
+      "retrieved_at_utc": "2026-07-13T08:48:01.789933Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

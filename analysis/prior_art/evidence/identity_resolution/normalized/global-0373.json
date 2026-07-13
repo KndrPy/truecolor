@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s26030815",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41682332",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s26030815",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "H. M. S. S. Herath",
+      "Nuwan Madusanka",
+      "Eun Seo Choi",
+      "Song Woosub",
+      "RyungKee Chang",
+      "GyuHyun Lee",
+      "Myunggi Yi",
+      "Jae Sung Ahn",
+      "Byeong-il Lee"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Herath HMSS",
+      "Madusanka N",
+      "Choi ES",
+      "Woosub S",
+      "Chang R",
+      "Lee G",
+      "Yi M",
+      "Ahn JS",
+      "Lee BI."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 373,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "H. M. S. S. Herath",
+      "Nuwan Madusanka",
+      "Eun Seo Choi",
+      "Song Woosub",
+      "RyungKee Chang",
+      "GyuHyun Lee",
+      "Myunggi Yi",
+      "Jae Sung Ahn",
+      "Byeong-il Lee"
+    ],
+    "doi": "10.3390/s26030815",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Scattering Coefficient Estimation Using Thin-Film Phantoms with a Spectral-Domain Dental OCT System",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26030815",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0373/crossref_doi__3e28c1a2dbf2c980__20260713T083011984138Z.json",
+      "raw_sha256": "7b684d17e41152c2606a1903fc2f9e5e7c2e149ee9ed2669e9ad8bc6a0eccd56",
+      "request_identity": "doi:10.3390/s26030815",
+      "retrieved_at_utc": "2026-07-13T08:30:11.984138Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0373/europe_pmc_pmid__91ef4f74a257dd63__20260713T083012965418Z.json",
+      "raw_sha256": "f88e6d9ed3bb34903c5f7483f9a94b8321ce9d484e488dd8fb106d8df4f1f298",
+      "request_identity": "pmid:41682332",
+      "retrieved_at_utc": "2026-07-13T08:30:12.965418Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

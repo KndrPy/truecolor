@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s00371-022-02643-7",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s00371-022-02643-7",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Gen Liu",
+      "Jin Han"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "The Visual Computer",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gen Liu",
+      "Jin Han"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "The Visual Computer",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1051,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Gen Liu",
+      "Jin Han"
+    ],
+    "doi": "10.1007/s00371-022-02643-7",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Cross-domain object detection using minimized instance shift image–image translation",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s00371-022-02643-7",
+    "venue": "The Visual Computer",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1051/crossref_doi__9ed975bf18609b1c__20260713T084655260131Z.json",
+      "raw_sha256": "429881f8d22dc925dfed29afe0d872740bc3564f90732f01a186e26bedf6c7f2",
+      "request_identity": "doi:10.1007/s00371-022-02643-7",
+      "retrieved_at_utc": "2026-07-13T08:46:55.260131Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

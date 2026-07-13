@@ -1,0 +1,90 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/opticaopen.22332649.v2",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/opticaopen.22332649.v2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Qing Lan",
+      "ryan McClarren",
+      "Karthik Vishwanath"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Qing Lan",
+      "ryan McClarren",
+      "Karthik Vishwanath"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 285,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Qing Lan",
+      "ryan McClarren",
+      "Karthik Vishwanath"
+    ],
+    "doi": "10.1364/opticaopen.22332649.v2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {
+      "is-preprint-of": [
+        {
+          "asserted-by": "subject",
+          "id": "10.1364/BOE.490164",
+          "id-type": "doi"
+        }
+      ],
+      "is-supplement-to": [
+        {
+          "asserted-by": "subject",
+          "id": "10.1364/BOE.490164",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Neural Network-based Inverse Model for Diffuse Reflectance Spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/opticaopen.22332649.v2",
+    "venue": null,
+    "year": 2023
+  },
+  "related_candidate_keys": [
+    "doi:10.1364/opticaopen.22332649",
+    "doi:10.1364/opticaopen.22332649.v1",
+    "doi:10.1364/opticaopen.22332649.v3"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0285/crossref_doi__0ce05fbc50f73bb7__20260713T082759646768Z.json",
+      "raw_sha256": "91d608153ebac6152acd8e6f65d277785d4c791a2557c43471f00799d8626b94",
+      "request_identity": "doi:10.1364/opticaopen.22332649.v2",
+      "retrieved_at_utc": "2026-07-13T08:27:59.646768Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

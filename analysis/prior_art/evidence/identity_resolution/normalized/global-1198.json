@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/s0079-8169(08)62367-3",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/s0079-8169(08)62367-3",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Pure and Applied Mathematics",
+    "canonical_year": 1987,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Pure and Applied Mathematics Inverse Spectral Theory",
+    "harvested_year": 1987,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.571429,
+    "year_match": true
+  },
+  "global_rank": 1198,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1016/s0079-8169(08)62367-3",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "3 The Inverse Dirichlet Problem",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/s0079-8169(08)62367-3",
+    "venue": "Pure and Applied Mathematics",
+    "year": 1987
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1198/crossref_doi__ffbf642107e9c0a2__20260713T084857758473Z.json",
+      "raw_sha256": "7a554e108ef581f7736e6c64696bfbba71ad5b9a785b81c91a849e199ac2d608",
+      "request_identity": "doi:10.1016/s0079-8169(08)62367-3",
+      "retrieved_at_utc": "2026-07-13T08:48:57.758473Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

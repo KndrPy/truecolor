@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/icip.2006.312630",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/icip.2006.312630",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Sangho Yoon",
+      "Michael Harville",
+      "Harlyn Baker",
+      "Nina Bhatii"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2006 International Conference on Image Processing",
+    "canonical_year": 2006,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sangho Yoon",
+      "Michael Harville",
+      "Harlyn Baker",
+      "Nina Bhatii"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2006 International Conference on Image Processing",
+    "harvested_year": 2006,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1081,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sangho Yoon",
+      "Michael Harville",
+      "Harlyn Baker",
+      "Nina Bhatii"
+    ],
+    "doi": "10.1109/icip.2006.312630",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Automatic Skin Pixel Selection and Skin Color Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/icip.2006.312630",
+    "venue": "2006 International Conference on Image Processing",
+    "year": 2006
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1081/crossref_doi__05e89d991d13f1bb__20260713T084727333052Z.json",
+      "raw_sha256": "536b093369fe0b3162940f4061ccaa31ce08f84c67b5e735550f1274295a0e00",
+      "request_identity": "doi:10.1109/icip.2006.312630",
+      "retrieved_at_utc": "2026-07-13T08:47:27.333052Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

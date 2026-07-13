@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.jdin.2026.04.010",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42256604",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.jdin.2026.04.010",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ross O'Hagan",
+      "Alessandra Acciardi",
+      "Marianne Tissot Rodríguez",
+      "Jaanvi Mehta",
+      "Silvana Ciardo",
+      "Antonio Alma",
+      "Kristina Navrazhina",
+      "Nicholas Gulati",
+      "Seher Banu Farabi Atak",
+      "Francesca Farnetani"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "JAAD International",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "O'Hagan R",
+      "Acciardi A",
+      "Rodríguez MT",
+      "Mehta J",
+      "Ciardo S",
+      "Alma A",
+      "Navrazhina K",
+      "Gulati N",
+      "Farabi Atak SB",
+      "Farnetani F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1064,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ross O'Hagan",
+      "Alessandra Acciardi",
+      "Marianne Tissot Rodríguez",
+      "Jaanvi Mehta",
+      "Silvana Ciardo",
+      "Antonio Alma",
+      "Kristina Navrazhina",
+      "Nicholas Gulati",
+      "Seher Banu Farabi Atak",
+      "Francesca Farnetani"
+    ],
+    "doi": "10.1016/j.jdin.2026.04.010",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Deep learning analysis of reflectance confocal microscopy for basal cell carcinoma diagnosis",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.jdin.2026.04.010",
+    "venue": "JAAD International",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1064/crossref_doi__cb098c558e1f7196__20260713T084709736517Z.json",
+      "raw_sha256": "dd7d6c46b24a92c32cacb9aa49fb5436b8e300f1d54024425b5624d4e3df9afb",
+      "request_identity": "doi:10.1016/j.jdin.2026.04.010",
+      "retrieved_at_utc": "2026-07-13T08:47:09.736517Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1064/europe_pmc_pmid__0eea648e35fed715__20260713T084710695147Z.json",
+      "raw_sha256": "fd352324b35ab4c4c9f4919194cad9a9724f6f93020a3db4d38e50520b5238fc",
+      "request_identity": "pmid:42256604",
+      "retrieved_at_utc": "2026-07-13T08:47:10.695147Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

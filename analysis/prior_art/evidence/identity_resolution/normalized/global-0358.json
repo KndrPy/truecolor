@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.31.2.027003",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41727265",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.31.2.027003",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Charly Caredda",
+      "Frédéric Lange",
+      "Niccole Ranaei-Zamani",
+      "Uzair Hakim",
+      "Olayinka Kowobari",
+      "Dimitrios Siassakos",
+      "Sara Hillman",
+      "Anna L. David",
+      "Subhabrata Mitra",
+      "Ilias Tachtsidis"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Caredda C",
+      "Lange F",
+      "Ranaei-Zamani N",
+      "Hakim U",
+      "Kowobari O",
+      "Siassakos D",
+      "Hillman S",
+      "David AL",
+      "Mitra S",
+      "Tachtsidis I."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 358,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Charly Caredda",
+      "Frédéric Lange",
+      "Niccole Ranaei-Zamani",
+      "Uzair Hakim",
+      "Olayinka Kowobari",
+      "Dimitrios Siassakos",
+      "Sara Hillman",
+      "Anna L. David",
+      "Subhabrata Mitra",
+      "Ilias Tachtsidis"
+    ],
+    "doi": "10.1117/1.jbo.31.2.027003",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Digital instrument simulator platform to support the development of noninvasive optical NIR device for placenta monitoring",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.31.2.027003",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0358/crossref_doi__4a0bb4de27656651__20260713T082944596630Z.json",
+      "raw_sha256": "a5ddc720820cef75207db3f31ef3b30ba092fcc2686cb838464093a01aa50101",
+      "request_identity": "doi:10.1117/1.jbo.31.2.027003",
+      "retrieved_at_utc": "2026-07-13T08:29:44.596630Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0358/europe_pmc_pmid__9f599689bcf36cbc__20260713T082945580192Z.json",
+      "raw_sha256": "731121f20f5472f602d1c2ca8fd1a872e2038b70539bb139eed2ac564629874f",
+      "request_identity": "pmid:41727265",
+      "retrieved_at_utc": "2026-07-13T08:29:45.580192Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

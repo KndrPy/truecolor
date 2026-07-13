@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/bio.2004.sf5",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/bio.2004.sf5",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Paulo R. Bargo",
+      "Scott A. Prahl",
+      "Steven L. Jacques"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Biomedical Topical Meeting",
+    "canonical_year": 2004,
+    "doi_match": true,
+    "harvested_authors": [
+      "Paulo R. Bargo",
+      "Scott A. Prahl",
+      "Steven L. Jacques"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Biomedical Topical Meeting",
+    "harvested_year": 2004,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 297,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Paulo R. Bargo",
+      "Scott A. Prahl",
+      "Steven L. Jacques"
+    ],
+    "doi": "10.1364/bio.2004.sf5",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Determination of tissue optical properties with white light reflectance and an empirical/spectral light transport model",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/bio.2004.sf5",
+    "venue": "Biomedical Topical Meeting",
+    "year": 2004
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0297/crossref_doi__4def8bbbbb353c0d__20260713T082810242469Z.json",
+      "raw_sha256": "d04698d1c1321482cac67c6567cdeb340d59c919e853b62c7e58bdf6808c5ad6",
+      "request_identity": "doi:10.1364/bio.2004.sf5",
+      "retrieved_at_utc": "2026-07-13T08:28:10.242469Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

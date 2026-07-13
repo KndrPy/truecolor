@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1021/acsphotonics.6c00774.s001",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,7,7]],\"date-time\":\"2026-07-07T09:27:00Z\",\"timestamp\":1783416420805,\"version\":\"3.54.6\"},\"description\":\"Supplemental Information for 10.1021\\/acsphotonics.6c00774\",\"reference-count\":0,\"publisher\":\"American Chemical Society (ACS)\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.1021\\/acsphotonics.6c00774.s001\",\"type\":\"component\",\"created\":{\"date-parts\":[[2026,7,7]],\"date-time\":\"2026-07-07T09:10:36Z\",\"timestamp\":1783415436000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Conversion of RGB Camera into Hyperspectral Imager Using a Liquid Crystal Spectral Modulator and Artificial Intelligence\"],\"prefix\":\"10.1021\",\"member\":\"316\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2026,7,7]],\"date-time\":\"2026-07-07T09:10:36Z\",\"timestamp\":1783415436000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/pubs.acs.org\\/doi\\/suppl\\/10.1021\\/acsphotonics.6c00774\\/suppl_file\\/ph6c00774_si_001.pdf\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1021\\/acsphotonics.6c00774.s001\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.1021\\/acsphotonics.6c00774\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:33:47.871907Z",
+  "source": "crossref_doi"
+}

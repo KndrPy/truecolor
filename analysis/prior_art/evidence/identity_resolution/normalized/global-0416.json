@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1155/2009/942185",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1155/2009/942185",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Mohammadreza Khanmohammadi",
+      "Hamid Mobedi",
+      "Elaheh Mobedi",
+      "Kazem Kargosha",
+      "Amir Bagheri Garmarudi",
+      "Keyvan Ghasemi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Spectroscopy",
+    "canonical_year": 2009,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mohammadreza Khanmohammadi",
+      "Hamid Mobedi",
+      "Elaheh Mobedi",
+      "Kazem Kargosha",
+      "Amir Bagheri Garmarudi",
+      "Keyvan Ghasemi"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Spectroscopy",
+    "harvested_year": 2009,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 416,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mohammadreza Khanmohammadi",
+      "Hamid Mobedi",
+      "Elaheh Mobedi",
+      "Kazem Kargosha",
+      "Amir Bagheri Garmarudi",
+      "Keyvan Ghasemi"
+    ],
+    "doi": "10.1155/2009/942185",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Quantitative determination of naltrexone by attenuated total reflectance – FTIR spectrometry using partial least squares (PLS) wavelength selection",
+    "update_to": [],
+    "url": "https://doi.org/10.1155/2009/942185",
+    "venue": "Spectroscopy",
+    "year": 2009
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0416/crossref_doi__888c6655c454266b__20260713T083116134926Z.json",
+      "raw_sha256": "de3e073fff5354ed66ac5a1458b4a521408b3676b6413f5d04206ac61061460a",
+      "request_identity": "doi:10.1155/2009/942185",
+      "retrieved_at_utc": "2026-07-13T08:31:16.134926Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

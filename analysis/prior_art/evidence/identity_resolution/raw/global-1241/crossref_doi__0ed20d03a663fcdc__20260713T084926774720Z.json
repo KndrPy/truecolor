@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.33915/etd.8617",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"institution\":[{\"name\":\"West Virginia University Libraries\",\"acronym\":[\"wvul\"]}],\"indexed\":{\"date-parts\":[[2024,9,20]],\"date-time\":\"2024-09-20T04:29:36Z\",\"timestamp\":1726806576653},\"reference-count\":0,\"publisher\":\"West Virginia University Libraries\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.33915\\/etd.8617\",\"type\":\"dissertation\",\"created\":{\"date-parts\":[[2024,9,19]],\"date-time\":\"2024-09-19T19:35:47Z\",\"timestamp\":1726774547000},\"approved\":{\"date-parts\":[[2007,1,1]]},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Coded continuous-phase FSK: Information theoretic limits and receiver design.\"],\"prefix\":\"10.33915\",\"author\":[{\"given\":\"Shi\",\"family\":\"Cheng\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"19638\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2024,9,19]],\"date-time\":\"2024-09-19T19:36:23Z\",\"timestamp\":1726774583000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/researchrepository.wvu.edu\\/etd\\/8617\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.33915\\/etd.8617\",\"relation\":{},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:49:26.774720Z",
+  "source": "crossref_doi"
+}

@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/oe.425401",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/oe.425401",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Lixia Wang",
+      "Aditya Sole",
+      "Jon Yngve Hardeberg",
+      "Xiaoxia Wan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Optics Express",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lixia Wang",
+      "Aditya Sole",
+      "Jon Yngve Hardeberg",
+      "Xiaoxia Wan"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Optics Express",
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 72,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Lixia Wang",
+      "Aditya Sole",
+      "Jon Yngve Hardeberg",
+      "Xiaoxia Wan"
+    ],
+    "doi": "10.1364/oe.425401",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Optimized light source spectral power distribution for RGB camera based spectral reflectance recovery",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/oe.425401",
+    "venue": "Optics Express",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0072/crossref_doi__ffd709282beeb434__20260713T081549799193Z.json",
+      "raw_sha256": "203a22f911822df77fb60942b9b5a2908e1a2cd6c889187c638fa29e8ee21b73",
+      "request_identity": "doi:10.1364/oe.425401",
+      "retrieved_at_utc": "2026-07-13T08:15:49.799193Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

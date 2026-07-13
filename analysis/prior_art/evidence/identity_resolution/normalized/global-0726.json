@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/optica.6.000479",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "33043100",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/optica.6.000479",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Zachary A. Steelman",
+      "Derek S. Ho",
+      "Kengyeh K. Chu",
+      "Adam Wax"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Optica",
+    "canonical_year": 2019,
+    "doi_match": true,
+    "harvested_authors": [
+      "Steelman ZA",
+      "Ho DS",
+      "Chu KK",
+      "Wax A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2019,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 726,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zachary A. Steelman",
+      "Derek S. Ho",
+      "Kengyeh K. Chu",
+      "Adam Wax"
+    ],
+    "doi": "10.1364/optica.6.000479",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Light-scattering methods for tissue diagnosis",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/optica.6.000479",
+    "venue": "Optica",
+    "year": 2019
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0726/crossref_doi__e9baf6d32eda862a__20260713T083739922742Z.json",
+      "raw_sha256": "fc38d5a60dd67159e7edb4659403dd99ed14307770c6359087e5f655b72330ce",
+      "request_identity": "doi:10.1364/optica.6.000479",
+      "retrieved_at_utc": "2026-07-13T08:37:39.922742Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0726/europe_pmc_pmid__cd14e5958d9aa06e__20260713T083740893117Z.json",
+      "raw_sha256": "a044be3d6449c1c9b47d19e6308c6218c78773d49defdb659110d7bbb87b692e",
+      "request_identity": "pmid:33043100",
+      "retrieved_at_utc": "2026-07-13T08:37:40.893117Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

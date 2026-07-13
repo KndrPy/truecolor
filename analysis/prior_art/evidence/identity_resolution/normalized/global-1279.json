@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "cars 2022 computer assisted radiology and surgery proceedings of the 36th international congress and exhibition tokyo japan june 7 11 2022",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:cars 2022—computer assisted radiology and surgery proceedings of the 36th international congress and exhibition tokyo, japan, june 7–11, 2022|year:2022",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "International Journal of Computer Assisted Radiology and Surgery",
+    "canonical_year": 2022,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1279,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1007/s11548-022-02635-x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "CARS 2022—Computer Assisted Radiology and Surgery Proceedings of the 36th International Congress and Exhibition Tokyo, Japan, June 7–11, 2022",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s11548-022-02635-x",
+    "venue": "International Journal of Computer Assisted Radiology and Surgery",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1279/crossref_title__0e0d14f2bdb84c98__20260713T084959568947Z.json",
+      "raw_sha256": "ada1a70d593e0f7001a0eed1b1d392e1d74bd43e40b3b5c1cc0f367c4c60709e",
+      "request_identity": "title:cars 2022 computer assisted radiology and surgery proceedings of the 36th international congress and exhibition tokyo japan june 7 11 2022|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:59.568947Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

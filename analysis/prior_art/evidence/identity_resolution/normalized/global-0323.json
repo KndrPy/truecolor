@@ -1,0 +1,70 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging10090222",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging10090222",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Shoji Tominaga",
+      "Hideaki Sakai"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shoji Tominaga",
+      "Hideaki Sakai"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Imaging",
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 323,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shoji Tominaga",
+      "Hideaki Sakai"
+    ],
+    "doi": "10.3390/jimaging10090222",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectral Reflectance Estimation from Camera Response Using Local Optimal Dataset and Neural Networks",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging10090222",
+    "venue": "Journal of Imaging",
+    "year": 2024
+  },
+  "related_candidate_keys": [
+    "doi:10.20944/preprints202408.0785.v1"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0323/crossref_doi__976283326f5b8650__20260713T082851747086Z.json",
+      "raw_sha256": "47c793e735ba01adca3c76d02a93e8156e4ce4e2194db4e28dafb11acc749e50",
+      "request_identity": "doi:10.3390/jimaging10090222",
+      "retrieved_at_utc": "2026-07-13T08:28:51.747086Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

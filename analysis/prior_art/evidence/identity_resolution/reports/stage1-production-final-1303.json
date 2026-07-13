@@ -1,0 +1,356 @@
+{
+  "completed_batches": [
+    {
+      "batch_index": 1,
+      "end_rank": 119,
+      "returncode": 0,
+      "start_rank": 117
+    },
+    {
+      "batch_index": 2,
+      "end_rank": 136,
+      "returncode": 0,
+      "start_rank": 121
+    },
+    {
+      "batch_index": 3,
+      "end_rank": 139,
+      "returncode": 0,
+      "start_rank": 138
+    },
+    {
+      "batch_index": 4,
+      "end_rank": 146,
+      "returncode": 0,
+      "start_rank": 141
+    },
+    {
+      "batch_index": 5,
+      "end_rank": 162,
+      "returncode": 0,
+      "start_rank": 148
+    },
+    {
+      "batch_index": 6,
+      "end_rank": 184,
+      "returncode": 0,
+      "start_rank": 164
+    },
+    {
+      "batch_index": 7,
+      "end_rank": 203,
+      "returncode": 0,
+      "start_rank": 186
+    },
+    {
+      "batch_index": 8,
+      "end_rank": 229,
+      "returncode": 0,
+      "start_rank": 205
+    },
+    {
+      "batch_index": 9,
+      "end_rank": 234,
+      "returncode": 0,
+      "start_rank": 230
+    },
+    {
+      "batch_index": 10,
+      "end_rank": 260,
+      "returncode": 0,
+      "start_rank": 236
+    },
+    {
+      "batch_index": 11,
+      "end_rank": 285,
+      "returncode": 0,
+      "start_rank": 261
+    },
+    {
+      "batch_index": 12,
+      "end_rank": 291,
+      "returncode": 0,
+      "start_rank": 286
+    },
+    {
+      "batch_index": 13,
+      "end_rank": 299,
+      "returncode": 0,
+      "start_rank": 293
+    },
+    {
+      "batch_index": 14,
+      "end_rank": 324,
+      "returncode": 0,
+      "start_rank": 301
+    },
+    {
+      "batch_index": 15,
+      "end_rank": 336,
+      "returncode": 0,
+      "start_rank": 326
+    },
+    {
+      "batch_index": 16,
+      "end_rank": 343,
+      "returncode": 0,
+      "start_rank": 338
+    },
+    {
+      "batch_index": 17,
+      "end_rank": 369,
+      "returncode": 0,
+      "start_rank": 345
+    },
+    {
+      "batch_index": 18,
+      "end_rank": 394,
+      "returncode": 0,
+      "start_rank": 370
+    },
+    {
+      "batch_index": 19,
+      "end_rank": 401,
+      "returncode": 0,
+      "start_rank": 395
+    },
+    {
+      "batch_index": 20,
+      "end_rank": 405,
+      "returncode": 0,
+      "start_rank": 403
+    },
+    {
+      "batch_index": 21,
+      "end_rank": 431,
+      "returncode": 0,
+      "start_rank": 407
+    },
+    {
+      "batch_index": 22,
+      "end_rank": 456,
+      "returncode": 0,
+      "start_rank": 432
+    },
+    {
+      "batch_index": 23,
+      "end_rank": 481,
+      "returncode": 0,
+      "start_rank": 457
+    },
+    {
+      "batch_index": 24,
+      "end_rank": 506,
+      "returncode": 0,
+      "start_rank": 482
+    },
+    {
+      "batch_index": 25,
+      "end_rank": 531,
+      "returncode": 0,
+      "start_rank": 507
+    },
+    {
+      "batch_index": 26,
+      "end_rank": 556,
+      "returncode": 0,
+      "start_rank": 532
+    },
+    {
+      "batch_index": 27,
+      "end_rank": 581,
+      "returncode": 0,
+      "start_rank": 557
+    },
+    {
+      "batch_index": 28,
+      "end_rank": 606,
+      "returncode": 0,
+      "start_rank": 582
+    },
+    {
+      "batch_index": 29,
+      "end_rank": 631,
+      "returncode": 0,
+      "start_rank": 607
+    },
+    {
+      "batch_index": 30,
+      "end_rank": 656,
+      "returncode": 0,
+      "start_rank": 632
+    },
+    {
+      "batch_index": 31,
+      "end_rank": 681,
+      "returncode": 0,
+      "start_rank": 657
+    },
+    {
+      "batch_index": 32,
+      "end_rank": 706,
+      "returncode": 0,
+      "start_rank": 682
+    },
+    {
+      "batch_index": 33,
+      "end_rank": 731,
+      "returncode": 0,
+      "start_rank": 707
+    },
+    {
+      "batch_index": 34,
+      "end_rank": 756,
+      "returncode": 0,
+      "start_rank": 732
+    },
+    {
+      "batch_index": 35,
+      "end_rank": 781,
+      "returncode": 0,
+      "start_rank": 757
+    },
+    {
+      "batch_index": 36,
+      "end_rank": 806,
+      "returncode": 0,
+      "start_rank": 782
+    },
+    {
+      "batch_index": 37,
+      "end_rank": 831,
+      "returncode": 0,
+      "start_rank": 807
+    },
+    {
+      "batch_index": 38,
+      "end_rank": 856,
+      "returncode": 0,
+      "start_rank": 832
+    },
+    {
+      "batch_index": 39,
+      "end_rank": 881,
+      "returncode": 0,
+      "start_rank": 857
+    },
+    {
+      "batch_index": 40,
+      "end_rank": 906,
+      "returncode": 0,
+      "start_rank": 882
+    },
+    {
+      "batch_index": 41,
+      "end_rank": 931,
+      "returncode": 0,
+      "start_rank": 907
+    },
+    {
+      "batch_index": 42,
+      "end_rank": 956,
+      "returncode": 0,
+      "start_rank": 932
+    },
+    {
+      "batch_index": 43,
+      "end_rank": 981,
+      "returncode": 0,
+      "start_rank": 957
+    },
+    {
+      "batch_index": 44,
+      "end_rank": 999,
+      "returncode": 0,
+      "start_rank": 982
+    },
+    {
+      "batch_index": 45,
+      "end_rank": 1029,
+      "returncode": 0,
+      "start_rank": 1005
+    },
+    {
+      "batch_index": 46,
+      "end_rank": 1054,
+      "returncode": 0,
+      "start_rank": 1030
+    },
+    {
+      "batch_index": 47,
+      "end_rank": 1079,
+      "returncode": 0,
+      "start_rank": 1055
+    },
+    {
+      "batch_index": 48,
+      "end_rank": 1104,
+      "returncode": 0,
+      "start_rank": 1080
+    },
+    {
+      "batch_index": 49,
+      "end_rank": 1129,
+      "returncode": 0,
+      "start_rank": 1105
+    },
+    {
+      "batch_index": 50,
+      "end_rank": 1154,
+      "returncode": 0,
+      "start_rank": 1130
+    },
+    {
+      "batch_index": 51,
+      "end_rank": 1179,
+      "returncode": 0,
+      "start_rank": 1155
+    },
+    {
+      "batch_index": 52,
+      "end_rank": 1199,
+      "returncode": 0,
+      "start_rank": 1180
+    },
+    {
+      "batch_index": 53,
+      "end_rank": 1226,
+      "returncode": 0,
+      "start_rank": 1202
+    },
+    {
+      "batch_index": 54,
+      "end_rank": 1251,
+      "returncode": 0,
+      "start_rank": 1227
+    },
+    {
+      "batch_index": 55,
+      "end_rank": 1257,
+      "returncode": 0,
+      "start_rank": 1252
+    },
+    {
+      "batch_index": 56,
+      "end_rank": 1287,
+      "returncode": 0,
+      "start_rank": 1263
+    },
+    {
+      "batch_index": 57,
+      "end_rank": 1299,
+      "returncode": 0,
+      "start_rank": 1288
+    }
+  ],
+  "expected_rank_count": 1303,
+  "failed_batches": [],
+  "missing_after": 0,
+  "missing_before": 1156,
+  "newly_present_count": 1156,
+  "present_after": 1303,
+  "present_before": 147,
+  "selected_batch_count": 57,
+  "selected_not_created": [],
+  "selected_rank_count": 1156
+}

@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5220/0005359705650571",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5220/0005359705650571",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Richard Connor",
+      "Stewart MacKenzie-Leigh",
+      "Franco Alberto Cardillo",
+      "Robert Moss"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Proceedings of the 10th International Conference on Computer Vision Theory and Applications",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "Richard Connor",
+      "Stewart MacKenzie-Leigh",
+      "Franco Alberto Cardillo",
+      "Robert Moss"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Proceedings of the 10th International Conference on Computer Vision Theory and Applications",
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 530,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Richard Connor",
+      "Stewart MacKenzie-Leigh",
+      "Franco Alberto Cardillo",
+      "Robert Moss"
+    ],
+    "doi": "10.5220/0005359705650571",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Identification of MIR-Flickr Near-duplicate Images - A Benchmark Collection for Near-duplicate Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.5220/0005359705650571",
+    "venue": "Proceedings of the 10th International Conference on Computer Vision Theory and Applications",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0530/crossref_doi__5a4e8a0885cc9a3a__20260713T083326034420Z.json",
+      "raw_sha256": "1dfbafb568a57a740737be85eeacc8b4e07d828293993bb98f20aa1af390b4b1",
+      "request_identity": "doi:10.5220/0005359705650571",
+      "retrieved_at_utc": "2026-07-13T08:33:26.034420Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,125 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41467-026-72181-6",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42010284",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41467-026-72181-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jie Zhao",
+      "Jingyu Zhang",
+      "Miaomiao Gao",
+      "Zukang Miao",
+      "Yang Zhang",
+      "Yue Guo",
+      "Zhengrui Fan",
+      "Jinglin Tian",
+      "Lu Yang",
+      "Ning Jiang",
+      "Jianxiong Ma",
+      "Jun Jiao",
+      "Jinbin Pan",
+      "Xinlong Ma"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nature Communications",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhao J",
+      "Zhang J",
+      "Gao M",
+      "Miao Z",
+      "Zhang Y",
+      "Guo Y",
+      "Fan Z",
+      "Tian J",
+      "Yang L",
+      "Jiang N",
+      "Ma J",
+      "Jiao J",
+      "Pan J",
+      "Ma X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 815,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jie Zhao",
+      "Jingyu Zhang",
+      "Miaomiao Gao",
+      "Zukang Miao",
+      "Yang Zhang",
+      "Yue Guo",
+      "Zhengrui Fan",
+      "Jinglin Tian",
+      "Lu Yang",
+      "Ning Jiang",
+      "Jianxiong Ma",
+      "Jun Jiao",
+      "Jinbin Pan",
+      "Xinlong Ma"
+    ],
+    "doi": "10.1038/s41467-026-72181-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Photoactivatable CRISPR/Cas13d via upconversion nanoparticles for deep tissue RNA engineering and orthopedic therapy",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41467-026-72181-6",
+    "venue": "Nature Communications",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0815/crossref_doi__9cd568425dbef5c7__20260713T084023774694Z.json",
+      "raw_sha256": "0dffb9604363151f148f5f2bcb22a6f65152d9ce46ee73d3a75be9f46d029807",
+      "request_identity": "doi:10.1038/s41467-026-72181-6",
+      "retrieved_at_utc": "2026-07-13T08:40:23.774694Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0815/europe_pmc_pmid__26a84c0ef4c3a6be__20260713T084024777094Z.json",
+      "raw_sha256": "e6418b0838829dd6534607b9ba01b532779b83fe1b699fb8187bdcaf1df15542",
+      "request_identity": "pmid:42010284",
+      "retrieved_at_utc": "2026-07-13T08:40:24.777094Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

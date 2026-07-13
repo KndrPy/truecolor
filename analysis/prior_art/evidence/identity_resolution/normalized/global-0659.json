@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.26.2.025002",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "33583152",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.26.2.025002",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yargo V. Tessaro",
+      "Sérgio S. Furuie",
+      "Denise M. Nakamura"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Tessaro YV",
+      "Furuie SS",
+      "Nakamura DM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 659,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yargo V. Tessaro",
+      "Sérgio S. Furuie",
+      "Denise M. Nakamura"
+    ],
+    "doi": "10.1117/1.jbo.26.2.025002",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Objective color calibration for manufacturing facial prostheses",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.26.2.025002",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0659/crossref_doi__e786e5185cca63db__20260713T083628411950Z.json",
+      "raw_sha256": "c19234bee32194744aa4841ad0c2a537cc6b2aca61be3d0a51d4bf1c22c4bd4f",
+      "request_identity": "doi:10.1117/1.jbo.26.2.025002",
+      "retrieved_at_utc": "2026-07-13T08:36:28.411950Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0659/europe_pmc_pmid__88c8663bde35b8df__20260713T083629500316Z.json",
+      "raw_sha256": "7f512cf730413604431892dfed9c8d46465e1ccce0aa9160e8d4392b63af06d2",
+      "request_identity": "pmid:33583152",
+      "retrieved_at_utc": "2026-07-13T08:36:29.500316Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging9020047",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36826966",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging9020047",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Shoji Tominaga",
+      "Hideaki Sakai"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shoji Tominaga",
+      "Hideaki Sakai"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Imaging",
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 121,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shoji Tominaga",
+      "Hideaki Sakai"
+    ],
+    "doi": "10.3390/jimaging9020047",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectral Reflectance Estimation from Camera Responses Using Local Optimal Dataset",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging9020047",
+    "venue": "Journal of Imaging",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0121/crossref_doi__c78ba86b99b9b24a__20260713T082512042367Z.json",
+      "raw_sha256": "0c548ec8374f2d6cc0bbc0f9ebbd3919a0d84d4a51d6444944a96ea7610e283b",
+      "request_identity": "doi:10.3390/jimaging9020047",
+      "retrieved_at_utc": "2026-07-13T08:25:12.042367Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0121/europe_pmc_pmid__70d7039ff6802297__20260713T082513122752Z.json",
+      "raw_sha256": "2dc32291226793df1a89cc69c7b1bd46db5a870012ba66941fc72e66ff3a0619",
+      "request_identity": "pmid:36826966",
+      "retrieved_at_utc": "2026-07-13T08:25:13.122752Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

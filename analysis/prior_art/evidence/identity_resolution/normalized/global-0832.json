@@ -1,0 +1,136 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1039/d6sc01417h",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42244841",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1039/d6sc01417h",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Erick L. Bastos",
+      "Waleska K. Martins",
+      "Rosangela Itri",
+      "Thiago T. Tasso",
+      "Maurício S. Baptista"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Chemical Science",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Bastos EL",
+      "Martins WK",
+      "Itri R",
+      "Tasso TT",
+      "Baptista MS."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 832,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Erick L. Bastos",
+      "Waleska K. Martins",
+      "Rosangela Itri",
+      "Thiago T. Tasso",
+      "Maurício S. Baptista"
+    ],
+    "doi": "10.1039/d6sc01417h",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-review": [
+        {
+          "asserted-by": "object",
+          "id": "10.1039/D6SC01417H/v1/decision1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1039/D6SC01417H/v1/review2",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1039/D6SC01417H/v1/review1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1039/D6SC01417H/v2/decision1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1039/D6SC01417H/v2/review1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1039/D6SC01417H/v2/response1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1039/D6SC01417H/v1/review3",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Rethinking photosensitization in therapy and sun protection",
+    "update_to": [],
+    "url": "https://doi.org/10.1039/d6sc01417h",
+    "venue": "Chemical Science",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0832/crossref_doi__07c17c09a2efa981__20260713T084057268027Z.json",
+      "raw_sha256": "c63bccf7a17fb6c4642b66823041bb5d1a0b8608307f1cdb5655bcf7815e194e",
+      "request_identity": "doi:10.1039/d6sc01417h",
+      "retrieved_at_utc": "2026-07-13T08:40:57.268027Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0832/europe_pmc_pmid__b8b3a317f03e508f__20260713T084058482970Z.json",
+      "raw_sha256": "da4a055f4e1ee668fdf37b23ea9f08f2c1f68c353d953b37469649c50e1ac6a8",
+      "request_identity": "pmid:42244841",
+      "retrieved_at_utc": "2026-07-13T08:40:58.482970Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,176 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.29.s1.s11506",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38125716",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.29.s1.s11506",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Thomas R. Else",
+          "Lina Hacker",
+          "Janek Gröhl",
+          "Ellie V. Bunce",
+          "Ran Tao",
+          "Sarah E. Bohndiek"
+        ],
+        "doi": "10.1117/1.jbo.29.s1.s11506",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {
+          "has-preprint": [
+            {
+              "asserted-by": "object",
+              "id": "10.1101/2023.08.17.553653",
+              "id-type": "doi"
+            }
+          ]
+        },
+        "title": "Effects of skin tone on photoacoustic imaging and oximetry",
+        "update_to": [],
+        "url": "https://doi.org/10.1117/1.jbo.29.s1.s11506",
+        "venue": "Journal of Biomedical Optics",
+        "year": 2023
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Thomas R Else",
+          "Lina Hacker",
+          "Janek Gröhl",
+          "Ellie V Bunce",
+          "Ran Tao",
+          "Sarah E Bohndiek"
+        ],
+        "doi": "10.1117/1.jbo.29.s1.s11506",
+        "is_retracted": false,
+        "pmcid": "PMC10732256",
+        "pmid": "38125716",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Effects of skin tone on photoacoustic imaging and oximetry.",
+        "url": "https://europepmc.org/article/MED/38125716",
+        "venue": null,
+        "year": 2024
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2023,
+      "field": "year",
+      "harvested": 2024
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Thomas R. Else",
+      "Lina Hacker",
+      "Janek Gröhl",
+      "Ellie V. Bunce",
+      "Ran Tao",
+      "Sarah E. Bohndiek"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Else TR",
+      "Hacker L",
+      "Gröhl J",
+      "Bunce EV",
+      "Tao R",
+      "Bohndiek SE."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 186,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Thomas R. Else",
+      "Lina Hacker",
+      "Janek Gröhl",
+      "Ellie V. Bunce",
+      "Ran Tao",
+      "Sarah E. Bohndiek"
+    ],
+    "doi": "10.1117/1.jbo.29.s1.s11506",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-preprint": [
+        {
+          "asserted-by": "object",
+          "id": "10.1101/2023.08.17.553653",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Effects of skin tone on photoacoustic imaging and oximetry",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.29.s1.s11506",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0186/crossref_doi__dd9d285249f7008f__20260713T082615510131Z.json",
+      "raw_sha256": "ca69235ffa1ac838e9f1dc62b8870701216fb7ff0508b310429548331596c4b3",
+      "request_identity": "doi:10.1117/1.jbo.29.s1.s11506",
+      "retrieved_at_utc": "2026-07-13T08:26:15.510131Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0186/europe_pmc_pmid__d94e80d83a26ed16__20260713T082616602463Z.json",
+      "raw_sha256": "f125272ab2327f3a67e64a52ffdccf4939ef34c9c44ae9d3bd425bb77810f5bf",
+      "request_identity": "pmid:38125716",
+      "retrieved_at_utc": "2026-07-13T08:26:16.602463Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

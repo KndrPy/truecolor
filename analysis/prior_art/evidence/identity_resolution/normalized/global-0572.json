@@ -1,0 +1,77 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5220/0005726305320541",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5220/0005726305320541",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Matis Hudon",
+      "Adrien Gruson",
+      "Paul Kerbiriou",
+      "Rémi Cozot",
+      "Kadi Bouatouch"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Proceedings of the 11th Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+    "canonical_year": 2016,
+    "doi_match": true,
+    "harvested_authors": [
+      "Matis Hudon",
+      "Adrien Gruson",
+      "Paul Kerbiriou",
+      "Rémi Cozot",
+      "Kadi Bouatouch"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Proceedings of the 11th Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+    "harvested_year": 2016,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 572,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Matis Hudon",
+      "Adrien Gruson",
+      "Paul Kerbiriou",
+      "Rémi Cozot",
+      "Kadi Bouatouch"
+    ],
+    "doi": "10.5220/0005726305320541",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Shape and Reflectance from RGB-D Images using Time Sequential Illumination",
+    "update_to": [],
+    "url": "https://doi.org/10.5220/0005726305320541",
+    "venue": "Proceedings of the 11th Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications",
+    "year": 2016
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0572/crossref_doi__cee334e7a5bfdca5__20260713T083406963066Z.json",
+      "raw_sha256": "c26214b1b470791353813da259fb82d5c7907dd8188253fe2e6f04a5deef4256",
+      "request_identity": "doi:10.5220/0005726305320541",
+      "retrieved_at_utc": "2026-07-13T08:34:06.963066Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

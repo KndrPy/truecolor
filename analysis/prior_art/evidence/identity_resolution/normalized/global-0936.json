@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.xjidi.2025.100404",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41078953",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.xjidi.2025.100404",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jesutofunmi A. Omiye",
+      "Babar K. Rao",
+      "Shazli Razi",
+      "Nadiya Chuchvara",
+      "Fred M. Baik",
+      "Roxana Daneshjou",
+      "Lisa C. Zaba"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "JID Innovations",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Omiye JA",
+      "Rao BK",
+      "Razi S",
+      "Chuchvara N",
+      "Baik FM",
+      "Daneshjou R",
+      "Zaba LC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 936,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jesutofunmi A. Omiye",
+      "Babar K. Rao",
+      "Shazli Razi",
+      "Nadiya Chuchvara",
+      "Fred M. Baik",
+      "Roxana Daneshjou",
+      "Lisa C. Zaba"
+    ],
+    "doi": "10.1016/j.xjidi.2025.100404",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Automated Detection of Benign and Malignant Skin Lesions from Reflectance Confocal Microscopy Images Using Deep Learning",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.xjidi.2025.100404",
+    "venue": "JID Innovations",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0936/crossref_doi__69ae34f55b562b7a__20260713T084419329070Z.json",
+      "raw_sha256": "09a0c803578037d3e671cff2fe319f5dc3ea45cfaa9a09edbcb698269bab8a87",
+      "request_identity": "doi:10.1016/j.xjidi.2025.100404",
+      "retrieved_at_utc": "2026-07-13T08:44:19.329070Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0936/europe_pmc_pmid__7cf7b3dd7fe2ee6d__20260713T084420464494Z.json",
+      "raw_sha256": "e9a41541e60e7ed956c9898a8df6c1090c9ad76df7dcc100ce9b2554b0bb7ecc",
+      "request_identity": "pmid:41078953",
+      "retrieved_at_utc": "2026-07-13T08:44:20.464494Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

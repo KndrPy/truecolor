@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.570066",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41394481",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.570066",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yu-Chia Chang",
+      "Bo-Yong Lin",
+      "Yu-Peng Hsieh",
+      "Tzu-Chia Kao",
+      "Wen-Yih Isaac Tseng",
+      "Li-Da Huang",
+      "Kung-Bin Sung"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Chang YC",
+      "Lin BY",
+      "Hsieh YP",
+      "Kao TC",
+      "Tseng WI",
+      "Huang LD",
+      "Sung KB."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 0.952381,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 952,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yu-Chia Chang",
+      "Bo-Yong Lin",
+      "Yu-Peng Hsieh",
+      "Tzu-Chia Kao",
+      "Wen-Yih Isaac Tseng",
+      "Li-Da Huang",
+      "Kung-Bin Sung"
+    ],
+    "doi": "10.1364/boe.570066",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Noninvasive prediction of photon fluence rate in targeted brain regions for personalized transcranial photobiomodulation dosage: model development and\n                     in silico \n                    evaluation",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.570066",
+    "venue": "Biomedical Optics Express",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0952/crossref_doi__92e09487e5df1715__20260713T084447796485Z.json",
+      "raw_sha256": "269fb92b1ab1b60091d4b96080bb1ac232e8e2fa034e49cd4c4acbd4d084d439",
+      "request_identity": "doi:10.1364/boe.570066",
+      "retrieved_at_utc": "2026-07-13T08:44:47.796485Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0952/europe_pmc_pmid__9e62e7227eefcd7d__20260713T084448963780Z.json",
+      "raw_sha256": "1def2dbd0315a3938b8577e6144345b5b56fbf09a1774bb4e70e614c835a6ddd",
+      "request_identity": "pmid:41394481",
+      "retrieved_at_utc": "2026-07-13T08:44:48.963780Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

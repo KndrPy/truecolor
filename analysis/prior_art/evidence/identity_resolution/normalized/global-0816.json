@@ -1,0 +1,134 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41467-026-74110-z",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42265109",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41467-026-74110-z",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sunmiao Fang",
+      "Saichao Dang",
+      "Kaijie Yang",
+      "Lyu Zhou",
+      "Shakeel Ahmad",
+      "Yan Zhang",
+      "Qiong Li",
+      "Qiang Li",
+      "Wenshuai Chen",
+      "Khalid Hazazi",
+      "Hussam Qasem",
+      "Jiechen Wang",
+      "Yue Cao",
+      "Pingfan Wu",
+      "Hamad Saiari",
+      "Issam Gereige",
+      "Qiaoqiang Gan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nature Communications",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fang S",
+      "Dang S",
+      "Yang K",
+      "Zhou L",
+      "Ahmad S",
+      "Zhang Y",
+      "Li Q",
+      "Li Q",
+      "Chen W",
+      "Hazazi K",
+      "Qasem H",
+      "Wang J",
+      "Cao Y",
+      "Wu P",
+      "Saiari H",
+      "Gereige I",
+      "Gan Q."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 816,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sunmiao Fang",
+      "Saichao Dang",
+      "Kaijie Yang",
+      "Lyu Zhou",
+      "Shakeel Ahmad",
+      "Yan Zhang",
+      "Qiong Li",
+      "Qiang Li",
+      "Wenshuai Chen",
+      "Khalid Hazazi",
+      "Hussam Qasem",
+      "Jiechen Wang",
+      "Yue Cao",
+      "Pingfan Wu",
+      "Hamad Saiari",
+      "Issam Gereige",
+      "Qiaoqiang Gan"
+    ],
+    "doi": "10.1038/s41467-026-74110-z",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Passive subambient cooling and atmospheric water nexus",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41467-026-74110-z",
+    "venue": "Nature Communications",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0816/crossref_doi__1c81a52d8bd6c5a8__20260713T084025538032Z.json",
+      "raw_sha256": "80e625e751dcc42ea2efd17a7e577ced49a8e1d46ec4ca88065d68f6db500200",
+      "request_identity": "doi:10.1038/s41467-026-74110-z",
+      "retrieved_at_utc": "2026-07-13T08:40:25.538032Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0816/europe_pmc_pmid__c0d37d3a60344ba3__20260713T084026561108Z.json",
+      "raw_sha256": "031d66654c6651c213857734654cbd2c2b93ba6f6693ffa9eb3ce2ee3e2857e8",
+      "request_identity": "pmid:42265109",
+      "retrieved_at_utc": "2026-07-13T08:40:26.561108Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

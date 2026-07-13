@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.70220/gms9bj0x",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.70220/gms9bj0x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Joel Dumke",
+      "Margaret Pinson"
+    ],
+    "canonical_publication_type": "report",
+    "canonical_venue": null,
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Joel Dumke",
+      "Margaret Pinson"
+    ],
+    "harvested_publication_type": "report",
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 441,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Joel Dumke",
+      "Margaret Pinson"
+    ],
+    "doi": "10.70220/gms9bj0x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "report",
+    "relation": {},
+    "title": "ITSnoise: An Image Quality Dataset With Sensor Noise",
+    "update_to": [],
+    "url": "https://doi.org/10.70220/gms9bj0x",
+    "venue": null,
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0441/crossref_doi__8047a4664ff4b2fc__20260713T083134638930Z.json",
+      "raw_sha256": "12e8256f89078578be369e0fb09e024c79a319037cd01dfe8298e2250fb90cb3",
+      "request_identity": "doi:10.70220/gms9bj0x",
+      "retrieved_at_utc": "2026-07-13T08:31:34.638930Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

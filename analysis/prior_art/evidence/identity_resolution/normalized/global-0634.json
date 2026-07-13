@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1186/s12245-025-00975-4",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41023774",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1186/s12245-025-00975-4",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Olivier Uwishema",
+      "Malak Ghezzawi",
+      "Nicole Charbel",
+      "Shireen Alawieh",
+      "Subham Roy",
+      "Magda Wojtara",
+      "Clyde Moono Hakayuwa",
+      "Ibrahim Khalil Ja’afar",
+      "Gerard Nkurunziza",
+      "Manya Prasad"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "International Journal of Emergency Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Uwishema O",
+      "Ghezzawi M",
+      "Charbel N",
+      "Alawieh S",
+      "Roy S",
+      "Wojtara M",
+      "Hakayuwa CM",
+      "Ja'afar IK",
+      "Nkurunziza G",
+      "Prasad M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 634,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Olivier Uwishema",
+      "Malak Ghezzawi",
+      "Nicole Charbel",
+      "Shireen Alawieh",
+      "Subham Roy",
+      "Magda Wojtara",
+      "Clyde Moono Hakayuwa",
+      "Ibrahim Khalil Ja’afar",
+      "Gerard Nkurunziza",
+      "Manya Prasad"
+    ],
+    "doi": "10.1186/s12245-025-00975-4",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Diagnostic performance of artificial intelligence for dermatological conditions: a systematic review focused on low- and middle-income countries to address resource constraints and improve access to specialist care",
+    "update_to": [],
+    "url": "https://doi.org/10.1186/s12245-025-00975-4",
+    "venue": "International Journal of Emergency Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0634/crossref_doi__980909736f06b7bf__20260713T083536754940Z.json",
+      "raw_sha256": "2d19d413e57ee7226243a296acfb0ab16abd6941d1b7e0da9d3cce570f84b310",
+      "request_identity": "doi:10.1186/s12245-025-00975-4",
+      "retrieved_at_utc": "2026-07-13T08:35:36.754940Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0634/europe_pmc_pmid__17ad1bdefa4cbef9__20260713T083537745725Z.json",
+      "raw_sha256": "d70934cbbfdbe6bb204f97992a1f5e4cd2e9c7f0c819423ae65416e9b670188a",
+      "request_identity": "pmid:41023774",
+      "retrieved_at_utc": "2026-07-13T08:35:37.745725Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

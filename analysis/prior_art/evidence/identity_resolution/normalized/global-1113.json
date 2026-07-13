@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3109/9781420005516-18",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3109/9781420005516-18",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Bioengineering of the Skin",
+    "canonical_year": 2006,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Bioengineering of the Skin",
+    "harvested_year": 2006,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1113,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.3109/9781420005516-18",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Stereoimaging for Skin Contour Measurement",
+    "update_to": [],
+    "url": "https://doi.org/10.3109/9781420005516-18",
+    "venue": "Bioengineering of the Skin",
+    "year": 2006
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1113/crossref_doi__522d953f80fe16d1__20260713T084751959988Z.json",
+      "raw_sha256": "0a07573ed63cd9a670c42f2f6f30f0bdddb9ca4130fb519c0fbd9d428665f016",
+      "request_identity": "doi:10.3109/9781420005516-18",
+      "retrieved_at_utc": "2026-07-13T08:47:51.959988Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

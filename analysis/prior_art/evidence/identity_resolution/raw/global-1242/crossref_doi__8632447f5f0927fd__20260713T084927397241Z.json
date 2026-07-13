@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.3403/02138331u",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2025,2,11]],\"date-time\":\"2025-02-11T05:22:16Z\",\"timestamp\":1739251336513,\"version\":\"3.37.0\"},\"publisher-location\":\"London\",\"standards-body\":{\"name\":\"BSI British Standards\",\"acronym\":\"BSI\"},\"reference-count\":0,\"publisher\":\"BSI British Standards\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.3403\\/02138331u\",\"type\":\"standard\",\"created\":{\"date-parts\":[[2015,6,10]],\"date-time\":\"2015-06-10T09:10:34Z\",\"timestamp\":1433927434000},\"approved\":{\"date-parts\":[[2006,9,29]]},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Optical amplifiers. Test methods\"],\"prefix\":\"10.3403\",\"member\":\"1988\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2025,2,10]],\"date-time\":\"2025-02-10T21:57:00Z\",\"timestamp\":1739224620000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/linkresolver.bsigroup.com\\/junction\\/resolve\\/000000000030134722?restype=undated\"}},\"subtitle\":[\"Reflectance parameters. Optical spectrum analyzer method\"],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.3403\\/02138331u\",\"relation\":{},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:49:27.397241Z",
+  "source": "crossref_doi"
+}

@@ -1,0 +1,120 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.ultrasmedbio.2019.11.013",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "31973952",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.ultrasmedbio.2019.11.013",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kirsten Christensen-Jeffries",
+      "Olivier Couture",
+      "Paul A. Dayton",
+      "Yonina C. Eldar",
+      "Kullervo Hynynen",
+      "Fabian Kiessling",
+      "Meaghan O'Reilly",
+      "Gianmarco F. Pinton",
+      "Georg Schmitz",
+      "Meng-Xing Tang",
+      "Mickael Tanter",
+      "Ruud J.G. van Sloun"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Ultrasound in Medicine & Biology",
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [
+      "Christensen-Jeffries K",
+      "Couture O",
+      "Dayton PA",
+      "Eldar YC",
+      "Hynynen K",
+      "Kiessling F",
+      "O'Reilly M",
+      "Pinton GF",
+      "Schmitz G",
+      "Tang MX",
+      "Tang MX",
+      "Tanter M",
+      "van Sloun RJG."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2020,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 408,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kirsten Christensen-Jeffries",
+      "Olivier Couture",
+      "Paul A. Dayton",
+      "Yonina C. Eldar",
+      "Kullervo Hynynen",
+      "Fabian Kiessling",
+      "Meaghan O'Reilly",
+      "Gianmarco F. Pinton",
+      "Georg Schmitz",
+      "Meng-Xing Tang",
+      "Mickael Tanter",
+      "Ruud J.G. van Sloun"
+    ],
+    "doi": "10.1016/j.ultrasmedbio.2019.11.013",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Super-resolution Ultrasound Imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.ultrasmedbio.2019.11.013",
+    "venue": "Ultrasound in Medicine & Biology",
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0408/crossref_doi__ff27075a34bbb82e__20260713T083109963331Z.json",
+      "raw_sha256": "02228f1aeaaf174cf0ab6c2535236ee3cc24e51a426f09cec4f17f8469c9a49c",
+      "request_identity": "doi:10.1016/j.ultrasmedbio.2019.11.013",
+      "retrieved_at_utc": "2026-07-13T08:31:09.963331Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0408/europe_pmc_pmid__20395ec93b706153__20260713T083111089193Z.json",
+      "raw_sha256": "9fdc604e8f226e72796e4828a7173aff510550c98e90a8e42f79d7915e056f00",
+      "request_identity": "pmid:31973952",
+      "retrieved_at_utc": "2026-07-13T08:31:11.089193Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

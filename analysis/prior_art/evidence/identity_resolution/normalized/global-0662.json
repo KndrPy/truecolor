@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.21203/rs.3.rs-9102583/v1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.21203/rs.3.rs-9102583/v1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Juexiao Zhou",
+      "Yuhao Shen",
+      "Zhangtianyi Chen",
+      "Yuanhao He",
+      "Yan Xu",
+      "Shuping Zhang",
+      "Liyuan Sun",
+      "Zijian Wang",
+      "Yinghao Zhu",
+      "Jiahe Qian",
+      "Yuyuan Yang",
+      "Ziwen Wang",
+      "Xinyuan Zhang",
+      "Wenbin Liu",
+      "Zongyuan Ge",
+      "Tao Lu",
+      "Siyuan Yan"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zhou J",
+      "Shen Y",
+      "Chen Z",
+      "He Y",
+      "Xu Y",
+      "Zhang S",
+      "Sun L",
+      "Wang Z",
+      "Zhu Y",
+      "Qian J",
+      "Yang Y",
+      "Wang Z",
+      "Zhang X",
+      "Liu W",
+      "Ge Z",
+      "Lu T",
+      "Yan S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 662,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Juexiao Zhou",
+      "Yuhao Shen",
+      "Zhangtianyi Chen",
+      "Yuanhao He",
+      "Yan Xu",
+      "Shuping Zhang",
+      "Liyuan Sun",
+      "Zijian Wang",
+      "Yinghao Zhu",
+      "Jiahe Qian",
+      "Yuyuan Yang",
+      "Ziwen Wang",
+      "Xinyuan Zhang",
+      "Wenbin Liu",
+      "Zongyuan Ge",
+      "Tao Lu",
+      "Siyuan Yan"
+    ],
+    "doi": "10.21203/rs.3.rs-9102583/v1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "A Multimodal Large Reasoning Model For Fair and Interpretable Dermatological Diagnosis Across Skin Tones",
+    "update_to": [],
+    "url": "https://doi.org/10.21203/rs.3.rs-9102583/v1",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0662/crossref_doi__2bdc4cf086570849__20260713T083631309365Z.json",
+      "raw_sha256": "b31d0a23c142a0c30f2e11310c9fa3b7b5e6588331b655d1b0e083ceefbf2df3",
+      "request_identity": "doi:10.21203/rs.3.rs-9102583/v1",
+      "retrieved_at_utc": "2026-07-13T08:36:31.309365Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

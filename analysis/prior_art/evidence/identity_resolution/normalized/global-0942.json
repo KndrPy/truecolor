@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/jamia/ocaf095",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40517328",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/jamia/ocaf095",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Xiaotan Sun",
+      "Makiya Nakashima",
+      "Christopher Nguyen",
+      "Po-Hao Chen",
+      "W H Wilson Tang",
+      "Deborah Kwon",
+      "David Chen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of the American Medical Informatics Association",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sun X",
+      "Nakashima M",
+      "Nguyen C",
+      "Chen PH",
+      "Tang WHW",
+      "Kwon D",
+      "Chen D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 942,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xiaotan Sun",
+      "Makiya Nakashima",
+      "Christopher Nguyen",
+      "Po-Hao Chen",
+      "W H Wilson Tang",
+      "Deborah Kwon",
+      "David Chen"
+    ],
+    "doi": "10.1093/jamia/ocaf095",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "FairICP: identifying biases and increasing transparency at the point of care in post-implementation clinical decision support using inductive conformal prediction",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/jamia/ocaf095",
+    "venue": "Journal of the American Medical Informatics Association",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0942/crossref_doi__5f4e4e57fffcac21__20260713T084431061237Z.json",
+      "raw_sha256": "776f5a080e5fc6f9aad2eab4a4a238013d957fdde60086b6b2359fe206ff4547",
+      "request_identity": "doi:10.1093/jamia/ocaf095",
+      "retrieved_at_utc": "2026-07-13T08:44:31.061237Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0942/europe_pmc_pmid__d31af0b68c653c9d__20260713T084432014182Z.json",
+      "raw_sha256": "888521021c1bfb1dc6d8fbaea0073f3fa9cce660e4d0ebb06920fa2f8a4b6794",
+      "request_identity": "pmid:40517328",
+      "retrieved_at_utc": "2026-07-13T08:44:32.014182Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

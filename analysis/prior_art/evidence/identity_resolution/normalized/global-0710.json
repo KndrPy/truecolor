@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/ece3.71944",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40791256",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/ece3.71944",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jonathan W. Salisbury",
+      "Richard A. Peters"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Ecology and Evolution",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Salisbury JW",
+      "Peters RA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 0.9375,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 710,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jonathan W. Salisbury",
+      "Richard A. Peters"
+    ],
+    "doi": "10.1002/ece3.71944",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Intraspecific Variation in Dorsal Colour Patterns of\n                     Amphibolurus muricatus \n                    Lizards From the Perspective of Relevant Observers",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/ece3.71944",
+    "venue": "Ecology and Evolution",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0710/crossref_doi__cc22076e6ae7d7ce__20260713T083712053635Z.json",
+      "raw_sha256": "14cb3b52e3523c995db57dce44edbf046c9ba2d85c56b3b5f398d21703d469c9",
+      "request_identity": "doi:10.1002/ece3.71944",
+      "retrieved_at_utc": "2026-07-13T08:37:12.053635Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0710/europe_pmc_pmid__9d7cf848142c6d9d__20260713T083713134925Z.json",
+      "raw_sha256": "0676156bcdca9ed4e8dc9e6adf31fb9a53e7b8fad5c592e339f6b8e1d7637c6e",
+      "request_identity": "pmid:40791256",
+      "retrieved_at_utc": "2026-07-13T08:37:13.134925Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

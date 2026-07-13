@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s00259-016-3484-4",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "27650181",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s00259-016-3484-4",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "authoritative_source_agreement": {
+      "author_overlap": null,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "European Journal of Nuclear Medicine and Molecular Imaging",
+    "canonical_year": 2016,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2016,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1249,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1007/s00259-016-3484-4",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "EANM’16",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s00259-016-3484-4",
+    "venue": "European Journal of Nuclear Medicine and Molecular Imaging",
+    "year": 2016
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1249/crossref_doi__e097bb1eaeab2213__20260713T084933837159Z.json",
+      "raw_sha256": "ed15edea2dbdd892d5fbbf4fc0963958b2e44e2cf99ed0a56914213689841679",
+      "request_identity": "doi:10.1007/s00259-016-3484-4",
+      "retrieved_at_utc": "2026-07-13T08:49:33.837159Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1249/europe_pmc_pmid__15bbecfe4283e029__20260713T084934945610Z.json",
+      "raw_sha256": "e6e7b3c252c0a5bc129523442db4fc96ab1457cb0c71a8e713ef69ac4eecb4d6",
+      "request_identity": "pmid:27650181",
+      "retrieved_at_utc": "2026-07-13T08:49:34.945610Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

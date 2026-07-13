@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.27.10.106007",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36316301",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.27.10.106007",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Eleni Aloupogianni",
+      "Takaya Ichimura",
+      "Mei Hamada",
+      "Masahiro Ishikawa",
+      "Takuo Murakami",
+      "Atsushi Sasaki",
+      "Koichiro Nakamura",
+      "Naoki Kobayashi",
+      "Takashi Obi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Aloupogianni E",
+      "Ichimura T",
+      "Hamada M",
+      "Ishikawa M",
+      "Murakami T",
+      "Sasaki A",
+      "Nakamura K",
+      "Kobayashi N",
+      "Obi T."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 229,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Eleni Aloupogianni",
+      "Takaya Ichimura",
+      "Mei Hamada",
+      "Masahiro Ishikawa",
+      "Takuo Murakami",
+      "Atsushi Sasaki",
+      "Koichiro Nakamura",
+      "Naoki Kobayashi",
+      "Takashi Obi"
+    ],
+    "doi": "10.1117/1.jbo.27.10.106007",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral imaging for tumor segmentation on pigmented skin lesions",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.27.10.106007",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0229/crossref_doi__1721c18b13ed73d5__20260713T082655914786Z.json",
+      "raw_sha256": "559b3d33e31904c2fa358b8050f677f79974f99a920c8a9449dcd48ad2d3a7bd",
+      "request_identity": "doi:10.1117/1.jbo.27.10.106007",
+      "retrieved_at_utc": "2026-07-13T08:26:55.914786Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0229/europe_pmc_pmid__879476eb28192b70__20260713T082657029473Z.json",
+      "raw_sha256": "a98fa07e2091707d3a2d2c94f005aa250acf28dc9b10fd4766df1afc73ded15e",
+      "request_identity": "pmid:36316301",
+      "retrieved_at_utc": "2026-07-13T08:26:57.029473Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

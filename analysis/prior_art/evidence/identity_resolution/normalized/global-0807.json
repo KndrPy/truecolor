@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.pacs.2026.100846",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42326603",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.pacs.2026.100846",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ying Fan",
+      "Yangkun Liu",
+      "Abdula Aji",
+      "Ting Feng",
+      "Dean Ta"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Photoacoustics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fan Y",
+      "Liu Y",
+      "Aji A",
+      "Feng T",
+      "Ta D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 807,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ying Fan",
+      "Yangkun Liu",
+      "Abdula Aji",
+      "Ting Feng",
+      "Dean Ta"
+    ],
+    "doi": "10.1016/j.pacs.2026.100846",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "PIT-Net: Physics-informed transformer with differentiable diffusion constraints for quantitative photoacoustic tomography of deep tissues",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.pacs.2026.100846",
+    "venue": "Photoacoustics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0807/crossref_doi__15f81cad6ede5114__20260713T084007325846Z.json",
+      "raw_sha256": "88d8bf967609180cb075c63b7999eeb8c990866e9822a1a02e28c12a756dafae",
+      "request_identity": "doi:10.1016/j.pacs.2026.100846",
+      "retrieved_at_utc": "2026-07-13T08:40:07.325846Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0807/europe_pmc_pmid__ba459b27f00dc503__20260713T084008381362Z.json",
+      "raw_sha256": "07acc3f0d3cda28a44308d86340a1653c27f1c0bc271cf41027ac721c68ea215",
+      "request_identity": "pmid:42326603",
+      "retrieved_at_utc": "2026-07-13T08:40:08.381362Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

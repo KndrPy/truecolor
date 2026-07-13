@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/rap/rkaf114",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41114294",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/rap/rkaf114",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Stacey Kihumba",
+      "Giles Dixon",
+      "Matthew Wells",
+      "Sarah Rudd",
+      "Jo Hardy",
+      "Harsha Gunawardena",
+      "John D Pauling",
+      "Huzaifa Adamali",
+      "Shaney L Barratt"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Rheumatology Advances in Practice",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kihumba S",
+      "Dixon G",
+      "Wells M",
+      "Rudd S",
+      "Hardy J",
+      "Gunawardena H",
+      "Pauling JD",
+      "Adamali H",
+      "Barratt SL."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 317,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Stacey Kihumba",
+      "Giles Dixon",
+      "Matthew Wells",
+      "Sarah Rudd",
+      "Jo Hardy",
+      "Harsha Gunawardena",
+      "John D Pauling",
+      "Huzaifa Adamali",
+      "Shaney L Barratt"
+    ],
+    "doi": "10.1093/rap/rkaf114",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Analysis of the representation of skin tone diversity amongst medical resources illustrating dermatological manifestations of dermatomyositis, systemic sclerosis and vasculitis",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/rap/rkaf114",
+    "venue": "Rheumatology Advances in Practice",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0317/crossref_doi__442e7fe805d92061__20260713T082839585623Z.json",
+      "raw_sha256": "16974f215286b099cbe203ba663d0b0d78bb1752383ffcf13d58bce4c95e7fbc",
+      "request_identity": "doi:10.1093/rap/rkaf114",
+      "retrieved_at_utc": "2026-07-13T08:28:39.585623Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0317/europe_pmc_pmid__feba34dda6c9892d__20260713T082840577318Z.json",
+      "raw_sha256": "2db98414fb89718cff05648c2c9c575141d68d8ff230c101b882e5ad0644e0b3",
+      "request_identity": "pmid:41114294",
+      "retrieved_at_utc": "2026-07-13T08:28:40.577318Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s23083888",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37112229",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s23083888",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mihaela-Andreea Ilișanu",
+      "Florica Moldoveanu",
+      "Alin Moldoveanu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ilișanu MA",
+      "Moldoveanu F",
+      "Moldoveanu A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 75,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mihaela-Andreea Ilișanu",
+      "Florica Moldoveanu",
+      "Alin Moldoveanu"
+    ],
+    "doi": "10.3390/s23083888",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multispectral Imaging for Skin Diseases Assessment—State of the Art and Perspectives",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s23083888",
+    "venue": "Sensors",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0075/crossref_doi__f3072983e3180c15__20260713T081551655966Z.json",
+      "raw_sha256": "4e558708ea6b1cc3f6c328c85b52623d17a3f936c2d6b4f6d3c7f27beab5e3b2",
+      "request_identity": "doi:10.3390/s23083888",
+      "retrieved_at_utc": "2026-07-13T08:15:51.655966Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0075/europe_pmc_pmid__ecff67672f5720b4__20260713T081552740520Z.json",
+      "raw_sha256": "b1bde3898a5d8e570be3ba669dbb3ec163776ab5f57abe1a103445a2a40781b3",
+      "request_identity": "pmid:37112229",
+      "retrieved_at_utc": "2026-07-13T08:15:52.740520Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s26072070",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41977854",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s26072070",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Zachary D. Jones",
+      "Florian Foschum",
+      "Alwin Kienle"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jones ZD",
+      "Foschum F",
+      "Kienle A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 0.888889,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 334,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zachary D. Jones",
+      "Florian Foschum",
+      "Alwin Kienle"
+    ],
+    "doi": "10.3390/s26072070",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Validation of a Spatially Resolved Reflectance Imaging System for Recovery of µa and µs′ in Absorbing Turbid Media",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26072070",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative metadata resolved, but identity similarity remained between verification and conflict thresholds.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0334/crossref_doi__edba302dee247b98__20260713T082906716661Z.json",
+      "raw_sha256": "bc7c7e5f148fdcc7705466376daf7a4adbc05881a1fe765b83106ba387482745",
+      "request_identity": "doi:10.3390/s26072070",
+      "retrieved_at_utc": "2026-07-13T08:29:06.716661Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0334/europe_pmc_pmid__d262b063456603d9__20260713T082907748590Z.json",
+      "raw_sha256": "aadeef645fcea76762f315ca1929950fe22adb83fc301fc2059a401b919c1f47",
+      "request_identity": "pmid:41977854",
+      "retrieved_at_utc": "2026-07-13T08:29:07.748590Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

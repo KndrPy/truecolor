@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.596760",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42311288",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.596760",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Rento Kubo",
+      "Takayuki Okamoto",
+      "Hideaki Haneishi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kubo R",
+      "Okamoto T",
+      "Haneishi H."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 136,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rento Kubo",
+      "Takayuki Okamoto",
+      "Hideaki Haneishi"
+    ],
+    "doi": "10.1364/boe.596760",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Melanin-corrected absolute tissue oxygen saturation estimation via hybrid transmittance–reflectance spectroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.596760",
+    "venue": "Biomedical Optics Express",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0136/crossref_doi__85b3e43dcef40fab__20260713T082530940257Z.json",
+      "raw_sha256": "9522933d00328953e17de34afd4b2bce33dc4cabffb7ab3b300ae0f1121e6c27",
+      "request_identity": "doi:10.1364/boe.596760",
+      "retrieved_at_utc": "2026-07-13T08:25:30.940257Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0136/europe_pmc_pmid__2aa2c4e69358ee13__20260713T082531912451Z.json",
+      "raw_sha256": "4368bdcdf5f7cd25064ceac58a91aa2bc20acd80f6580145f2cd95a08ff248d8",
+      "request_identity": "pmid:42311288",
+      "retrieved_at_utc": "2026-07-13T08:25:31.912451Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

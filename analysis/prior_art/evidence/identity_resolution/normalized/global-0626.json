@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/1742-6596/2405/1/012024",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/1742-6596/2405/1/012024",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Xikun Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Physics: Conference Series",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Xikun Wang"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Physics: Conference Series",
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 626,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xikun Wang"
+    ],
+    "doi": "10.1088/1742-6596/2405/1/012024",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Deep Learning-based and Machine Learning-based Application in Skin Cancer Image Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/1742-6596/2405/1/012024",
+    "venue": "Journal of Physics: Conference Series",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0626/crossref_doi__b93302a0d9384832__20260713T083524293881Z.json",
+      "raw_sha256": "6f73a3e25a5cd9006994dc00fc3f2269892200be6f16556afe1665b1913e43b8",
+      "request_identity": "doi:10.1088/1742-6596/2405/1/012024",
+      "retrieved_at_utc": "2026-07-13T08:35:24.293881Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

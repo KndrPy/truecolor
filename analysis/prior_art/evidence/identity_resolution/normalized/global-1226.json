@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1201/9781420059922-15",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1201/9781420059922-15",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Paul C. Beard",
+      "Jan G. Laufer",
+      "Ben Cox",
+      "Simon R. Arridge"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Photoacoustic Imaging and Spectroscopy",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "Paul C. Beard",
+      "Jan G. Laufer",
+      "Ben Cox",
+      "Simon R. Arridge"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Photoacoustic Imaging and Spectroscopy",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1226,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Paul C. Beard",
+      "Jan G. Laufer",
+      "Ben Cox",
+      "Simon R. Arridge"
+    ],
+    "doi": "10.1201/9781420059922-15",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Quantitative Photoacoustic Imaging: Measurement of Absolute Chromophore Concentrations for Physiological and Molecular Imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1201/9781420059922-15",
+    "venue": "Photoacoustic Imaging and Spectroscopy",
+    "year": 2017
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1226/crossref_doi__db7a74322ec25fa1__20260713T084915476679Z.json",
+      "raw_sha256": "3f43737cc9516215cc10f33823232b23b5b171cb85c361719a556c77ff4bfcb1",
+      "request_identity": "doi:10.1201/9781420059922-15",
+      "retrieved_at_utc": "2026-07-13T08:49:15.476679Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

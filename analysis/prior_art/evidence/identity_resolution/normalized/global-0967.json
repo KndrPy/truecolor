@@ -1,0 +1,165 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/froh.2025.1760778",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41608315",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/froh.2025.1760778",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Surendra Kumar Acharya",
+          "Nurul Izyan Zainuddin",
+          "Yee Fan Choon",
+          "Mamata Rai",
+          "Tania Saskianti",
+          "Wanninayake Mudiyanselage Tilakaratne",
+          "Vui King Vincent-Chong"
+        ],
+        "doi": "10.3389/froh.2025.1760778",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Role of optical imaging in oral cancer and oral potentially malignant disorders: implications for oral submucous fibrosis",
+        "update_to": [],
+        "url": "https://doi.org/10.3389/froh.2025.1760778",
+        "venue": "Frontiers in Oral Health",
+        "year": 2026
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Surendra Kumar Acharya",
+          "Nurul Izyan Zainuddin",
+          "Yee Fan Choon",
+          "Mamata Rai",
+          "Tania Saskianti",
+          "Wanninayake Mudiyanselage Tilakaratne",
+          "Vui King Vincent-Chong"
+        ],
+        "doi": "10.3389/froh.2025.1760778",
+        "is_retracted": false,
+        "pmcid": "PMC12835247",
+        "pmid": "41608315",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Role of optical imaging in oral cancer and oral potentially malignant disorders: implications for oral submucous fibrosis.",
+        "url": "https://europepmc.org/article/MED/41608315",
+        "venue": null,
+        "year": 2025
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2026,
+      "field": "year",
+      "harvested": 2025
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Surendra Kumar Acharya",
+      "Nurul Izyan Zainuddin",
+      "Yee Fan Choon",
+      "Mamata Rai",
+      "Tania Saskianti",
+      "Wanninayake Mudiyanselage Tilakaratne",
+      "Vui King Vincent-Chong"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Oral Health",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Acharya SK",
+      "Zainuddin NI",
+      "Choon YF",
+      "Rai M",
+      "Saskianti T",
+      "Tilakaratne WM",
+      "Vincent-Chong VK."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 967,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Surendra Kumar Acharya",
+      "Nurul Izyan Zainuddin",
+      "Yee Fan Choon",
+      "Mamata Rai",
+      "Tania Saskianti",
+      "Wanninayake Mudiyanselage Tilakaratne",
+      "Vui King Vincent-Chong"
+    ],
+    "doi": "10.3389/froh.2025.1760778",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Role of optical imaging in oral cancer and oral potentially malignant disorders: implications for oral submucous fibrosis",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/froh.2025.1760778",
+    "venue": "Frontiers in Oral Health",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0967/crossref_doi__bfb583b25e893859__20260713T084516566742Z.json",
+      "raw_sha256": "f7505886101c55fa0fd4221b40388b6c98a6fa612efa40fc951bcd693c79d3d7",
+      "request_identity": "doi:10.3389/froh.2025.1760778",
+      "retrieved_at_utc": "2026-07-13T08:45:16.566742Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0967/europe_pmc_pmid__7195a841d0df4860__20260713T084517651679Z.json",
+      "raw_sha256": "76cc3eb1e485abdb698a67851ebea00dbce02a748404a61511e20c3d0ab7a616",
+      "request_identity": "pmid:41608315",
+      "retrieved_at_utc": "2026-07-13T08:45:17.651679Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

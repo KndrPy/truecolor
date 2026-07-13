@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.27.6.060901",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "35676751",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.27.6.060901",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Eleni Aloupogianni",
+      "Masahiro Ishikawa",
+      "Naoki Kobayashi",
+      "Takashi Obi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Aloupogianni E",
+      "Ishikawa M",
+      "Kobayashi N",
+      "Obi T."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 208,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Eleni Aloupogianni",
+      "Masahiro Ishikawa",
+      "Naoki Kobayashi",
+      "Takashi Obi"
+    ],
+    "doi": "10.1117/1.jbo.27.6.060901",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral and multispectral image processing for gross-level tumor detection in skin lesions: a systematic review",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.27.6.060901",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0208/crossref_doi__78d56a89fb718206__20260713T082633966172Z.json",
+      "raw_sha256": "6e7e6e0a9208ac5e75317b27a4b9d316aa400e51b1c0c9b41b42ac462051aa6b",
+      "request_identity": "doi:10.1117/1.jbo.27.6.060901",
+      "retrieved_at_utc": "2026-07-13T08:26:33.966172Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0208/europe_pmc_pmid__b2c5fda4db8da547__20260713T082635115632Z.json",
+      "raw_sha256": "28104463e5e8e916ccc847d51d6c1b29da65424b64ae8bfa0d01253453535356",
+      "request_identity": "pmid:35676751",
+      "retrieved_at_utc": "2026-07-13T08:26:35.115632Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

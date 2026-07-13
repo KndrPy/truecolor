@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.429890",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.429890",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Gerald W. Lucassen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 1998,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gerald W. Lucassen"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Biomedical Optics",
+    "harvested_year": 1998,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 997,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Gerald W. Lucassen"
+    ],
+    "doi": "10.1117/1.429890",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Band Analysis of Hydrated Human Skin Stratum Corneum Attenuated Total Reflectance Fourier Transform Infrared Spectra In Vivo",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.429890",
+    "venue": "Journal of Biomedical Optics",
+    "year": 1998
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0997/crossref_doi__58d4c643954398ba__20260713T084611272934Z.json",
+      "raw_sha256": "e9012bff97ba970018c1492b23b0dfc302b0d8b1ece8eecec29e0ae755973671",
+      "request_identity": "doi:10.1117/1.429890",
+      "retrieved_at_utc": "2026-07-13T08:46:11.272934Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

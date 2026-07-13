@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/gels11070495",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40710660",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/gels11070495",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sarah Hsin",
+      "Kelly Lourenço",
+      "Alexandre Porcello",
+      "Michèle Chemali",
+      "Cíntia Marques",
+      "Wassim Raffoul",
+      "Marco Cerrano",
+      "Lee Ann Applegate",
+      "Alexis E. Laurent"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Gels",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hsin S",
+      "Lourenço K",
+      "Porcello A",
+      "Chemali M",
+      "Marques C",
+      "Raffoul W",
+      "Cerrano M",
+      "Applegate LA",
+      "Laurent AE."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 638,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sarah Hsin",
+      "Kelly Lourenço",
+      "Alexandre Porcello",
+      "Michèle Chemali",
+      "Cíntia Marques",
+      "Wassim Raffoul",
+      "Marco Cerrano",
+      "Lee Ann Applegate",
+      "Alexis E. Laurent"
+    ],
+    "doi": "10.3390/gels11070495",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Clinical Safety and Efficacy of Hyaluronic Acid–Niacinamide–Tranexamic Acid Injectable Hydrogel for Multifactorial Facial Skin Quality Enhancement with Dark Skin Lightening",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/gels11070495",
+    "venue": "Gels",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0638/crossref_doi__ecd78f3d5adcc303__20260713T083546347341Z.json",
+      "raw_sha256": "c68311e719e1f479333c625b2577605d9a7356c0a50d1d2cffae254ad977e31c",
+      "request_identity": "doi:10.3390/gels11070495",
+      "retrieved_at_utc": "2026-07-13T08:35:46.347341Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0638/europe_pmc_pmid__adfc06c6a2af1449__20260713T083547433071Z.json",
+      "raw_sha256": "46028f5212c29ce492b66b868acbb758bd523d9389313dbac7e33efcdae0e126",
+      "request_identity": "pmid:40710660",
+      "retrieved_at_utc": "2026-07-13T08:35:47.433071Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

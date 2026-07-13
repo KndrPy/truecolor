@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-026-51016-w",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42331876",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-026-51016-w",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Juan Miranda Bautista",
+      "Javier Llorente Peris",
+      "Fernando Ybáñez Carrillo",
+      "Lara Lloret Iglesias",
+      "José A. Vega",
+      "Pablo Menéndez Fernández-Miranda"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Bautista JM",
+      "Peris JL",
+      "Carrillo FY",
+      "Iglesias LL",
+      "Vega JA",
+      "Fernández-Miranda PM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 769,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Juan Miranda Bautista",
+      "Javier Llorente Peris",
+      "Fernando Ybáñez Carrillo",
+      "Lara Lloret Iglesias",
+      "José A. Vega",
+      "Pablo Menéndez Fernández-Miranda"
+    ],
+    "doi": "10.1038/s41598-026-51016-w",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Interpretable deep learning for rotator cuff calcific tendinopathy diagnosis: a multi-center study",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-026-51016-w",
+    "venue": "Scientific Reports",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0769/crossref_doi__035fc18544953b05__20260713T083857349666Z.json",
+      "raw_sha256": "377ef215c2bf71548d9b2252c1cedce05e2d4cf1e08daeaf4261787d423ac749",
+      "request_identity": "doi:10.1038/s41598-026-51016-w",
+      "retrieved_at_utc": "2026-07-13T08:38:57.349666Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0769/europe_pmc_pmid__addd29501bfd6267__20260713T083858318326Z.json",
+      "raw_sha256": "1855082edc15698914c32c16b24949542a744e7c380b9b4b8ef15513385f5dab",
+      "request_identity": "pmid:42331876",
+      "retrieved_at_utc": "2026-07-13T08:38:58.318326Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

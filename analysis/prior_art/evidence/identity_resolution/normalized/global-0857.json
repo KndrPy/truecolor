@@ -1,0 +1,128 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.590418",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42111017",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.590418",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Nikola Otic",
+      "Mitchell B. Robinson",
+      "Kuan-Cheng Wu",
+      "John Sunwoo",
+      "Julia Davis",
+      "Olivia Kierul",
+      "Emily Herzberg",
+      "Maria Angela Franceschini",
+      "Marco Renna"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Otic N",
+      "Robinson MB",
+      "Wu KC",
+      "Sunwoo J",
+      "Davis J",
+      "Kierul O",
+      "Herzberg E",
+      "Franceschini MA",
+      "Renna M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 857,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Nikola Otic",
+      "Mitchell B. Robinson",
+      "Kuan-Cheng Wu",
+      "John Sunwoo",
+      "Julia Davis",
+      "Olivia Kierul",
+      "Emily Herzberg",
+      "Maria Angela Franceschini",
+      "Marco Renna"
+    ],
+    "doi": "10.1364/boe.590418",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-preprint": [
+        {
+          "asserted-by": "subject",
+          "id": "10.1364/opticaopen.31061980",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1364/opticaopen.31061980",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1364/opticaopen.31061980.v1",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "MW-FlexNIRS: wearable, low-cost, LED-based, multi-wavelength NIRS oximeter for cytochrome c oxidase recovery in neonates",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.590418",
+    "venue": "Biomedical Optics Express",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0857/crossref_doi__8c292203fb784050__20260713T084147454293Z.json",
+      "raw_sha256": "65a69227afb9fedd191a761c714efa9914c801f685ea110fa462660c125d789f",
+      "request_identity": "doi:10.1364/boe.590418",
+      "retrieved_at_utc": "2026-07-13T08:41:47.454293Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0857/europe_pmc_pmid__bf237d93294fd07f__20260713T084148412247Z.json",
+      "raw_sha256": "33d882f39dfdeb65c8d1992ebb89a0221df149ce6a00da55eed0328f749c9446",
+      "request_identity": "pmid:42111017",
+      "retrieved_at_utc": "2026-07-13T08:41:48.412247Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

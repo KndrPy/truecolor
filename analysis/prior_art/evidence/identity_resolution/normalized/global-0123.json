@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.30.3.035001",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40041369",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.30.3.035001",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Valentin Kupriyanov",
+      "Walter Blondel",
+      "Christian Daul",
+      "Martin Hohmann",
+      "Grégoire Khairallah",
+      "Yury Kistenev",
+      "Marine Amouroux"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kupriyanov V",
+      "Blondel W",
+      "Daul C",
+      "Hohmann M",
+      "Khairallah G",
+      "Kistenev Y",
+      "Amouroux M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 123,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Valentin Kupriyanov",
+      "Walter Blondel",
+      "Christian Daul",
+      "Martin Hohmann",
+      "Grégoire Khairallah",
+      "Yury Kistenev",
+      "Marine Amouroux"
+    ],
+    "doi": "10.1117/1.jbo.30.3.035001",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Machine learning–based classification of spatially resolved diffuse reflectance and autofluorescence spectra acquired on human skin for actinic keratoses and skin carcinoma diagnostics aid",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.30.3.035001",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0123/crossref_doi__75e33054d2bcc834__20260713T082514327226Z.json",
+      "raw_sha256": "d27df78e10343a4e621aacad9334abf48f655ae872a1fbebc091ebc280577d0b",
+      "request_identity": "doi:10.1117/1.jbo.30.3.035001",
+      "retrieved_at_utc": "2026-07-13T08:25:14.327226Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0123/europe_pmc_pmid__69c0466862d90d5a__20260713T082515421940Z.json",
+      "raw_sha256": "03cba5874729828f4dea16d7f12c7bdd44d5437860ea5b19bc273a8e32814b3e",
+      "request_identity": "pmid:40041369",
+      "retrieved_at_utc": "2026-07-13T08:25:15.421940Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

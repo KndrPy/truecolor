@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/adhm.202400265",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39007274",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/adhm.202400265",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Rebecca Rothe",
+      "Yong Xu",
+      "Johanna Wodtke",
+      "Florian Brandt",
+      "Sebastian Meister",
+      "Markus Laube",
+      "Pier‐Luigi Lollini",
+      "Yixin Zhang",
+      "Jens Pietzsch",
+      "Sandra Hauser"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advanced Healthcare Materials",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rothe R",
+      "Xu Y",
+      "Wodtke J",
+      "Brandt F",
+      "Meister S",
+      "Laube M",
+      "Lollini PL",
+      "Zhang Y",
+      "Pietzsch J",
+      "Hauser S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 596,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rebecca Rothe",
+      "Yong Xu",
+      "Johanna Wodtke",
+      "Florian Brandt",
+      "Sebastian Meister",
+      "Markus Laube",
+      "Pier‐Luigi Lollini",
+      "Yixin Zhang",
+      "Jens Pietzsch",
+      "Sandra Hauser"
+    ],
+    "doi": "10.1002/adhm.202400265",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Programmable Release of Chemotherapeutics from Ferrocene‐Based Injectable Hydrogels Slows Melanoma Growth",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/adhm.202400265",
+    "venue": "Advanced Healthcare Materials",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0596/crossref_doi__49ef453cd284730c__20260713T083446825416Z.json",
+      "raw_sha256": "4483662f65ec37cda8d3d36180157403feda1f08dd6fa0f76f1f4cb1693ea3d9",
+      "request_identity": "doi:10.1002/adhm.202400265",
+      "retrieved_at_utc": "2026-07-13T08:34:46.825416Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0596/europe_pmc_pmid__20ef7e7a17229218__20260713T083447805776Z.json",
+      "raw_sha256": "fdf5e54ae6a3b906419e552369032ec15e92f6e1c56502aec38e00af53593ca8",
+      "request_identity": "pmid:39007274",
+      "retrieved_at_utc": "2026-07-13T08:34:47.805776Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

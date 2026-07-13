@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.64336/001c.163982",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.64336/001c.163982",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Dylan Ashraf"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of High School Science",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Dylan Ashraf"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of High School Science",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 375,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Dylan Ashraf"
+    ],
+    "doi": "10.64336/001c.163982",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Restoring grokking under structured label noise: audit efficiency and optimization-history dependence",
+    "update_to": [],
+    "url": "https://doi.org/10.64336/001c.163982",
+    "venue": "Journal of High School Science",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0375/crossref_doi__951993cd600d5595__20260713T083015391235Z.json",
+      "raw_sha256": "a11f57908a9fbd053a8de8827fd015b76a970292ed23a8a1609971d26d902368",
+      "request_identity": "doi:10.64336/001c.163982",
+      "retrieved_at_utc": "2026-07-13T08:30:15.391235Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

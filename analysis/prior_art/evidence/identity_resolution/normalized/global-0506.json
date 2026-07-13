@@ -1,0 +1,196 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pgen.1007872",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "30586358",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pgen.1007872",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Guy Nir",
+      "Irene Farabella",
+      "Cynthia Pérez Estrada",
+      "Carl G. Ebeling",
+      "Brian J. Beliveau",
+      "Hiroshi M. Sasaki",
+      "S. Dean Lee",
+      "Son C. Nguyen",
+      "Ruth B. McCole",
+      "Shyamtanu Chattoraj",
+      "Jelena Erceg",
+      "Jumana AlHaj Abed",
+      "Nuno M. C. Martins",
+      "Huy Q. Nguyen",
+      "Mohammed A. Hannan",
+      "Sheikh Russell",
+      "Neva C. Durand",
+      "Suhas S. P. Rao",
+      "Jocelyn Y. Kishi",
+      "Paula Soler-Vila",
+      "Michele Di Pierro",
+      "José N. Onuchic",
+      "Steven P. Callahan",
+      "John M. Schreiner",
+      "Jeff A. Stuckey",
+      "Peng Yin",
+      "Erez Lieberman Aiden",
+      "Marc A. Marti-Renom",
+      "C.-ting Wu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS Genetics",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nir G",
+      "Farabella I",
+      "Pérez Estrada C",
+      "Ebeling CG",
+      "Beliveau BJ",
+      "Sasaki HM",
+      "Lee SD",
+      "Nguyen SC",
+      "McCole RB",
+      "Chattoraj S",
+      "Erceg J",
+      "AlHaj Abed J",
+      "Martins NMC",
+      "Nguyen HQ",
+      "Hannan MA",
+      "Russell S",
+      "Durand NC",
+      "Rao SSP",
+      "Kishi JY",
+      "Soler-Vila P",
+      "Di Pierro M",
+      "Onuchic JN",
+      "Callahan SP",
+      "Schreiner JM",
+      "Stuckey JA",
+      "Yin P",
+      "Aiden EL",
+      "Marti-Renom MA",
+      "Wu CT."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2018,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 506,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Guy Nir",
+      "Irene Farabella",
+      "Cynthia Pérez Estrada",
+      "Carl G. Ebeling",
+      "Brian J. Beliveau",
+      "Hiroshi M. Sasaki",
+      "S. Dean Lee",
+      "Son C. Nguyen",
+      "Ruth B. McCole",
+      "Shyamtanu Chattoraj",
+      "Jelena Erceg",
+      "Jumana AlHaj Abed",
+      "Nuno M. C. Martins",
+      "Huy Q. Nguyen",
+      "Mohammed A. Hannan",
+      "Sheikh Russell",
+      "Neva C. Durand",
+      "Suhas S. P. Rao",
+      "Jocelyn Y. Kishi",
+      "Paula Soler-Vila",
+      "Michele Di Pierro",
+      "José N. Onuchic",
+      "Steven P. Callahan",
+      "John M. Schreiner",
+      "Jeff A. Stuckey",
+      "Peng Yin",
+      "Erez Lieberman Aiden",
+      "Marc A. Marti-Renom",
+      "C.-ting Wu"
+    ],
+    "doi": "10.1371/journal.pgen.1007872",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-preprint": [
+        {
+          "asserted-by": "object",
+          "id": "10.1101/374058",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Walking along chromosomes with super-resolution imaging, contact maps, and integrative modeling",
+    "update_to": [
+      {
+        "DOI": "10.1371/journal.pgen.1007872",
+        "label": "New version",
+        "source": "publisher",
+        "type": "new_version",
+        "updated": {
+          "date-parts": [
+            [
+              2019,
+              1,
+              8
+            ]
+          ],
+          "date-time": "2019-01-08T00:00:00Z",
+          "timestamp": 1546905600000
+        }
+      }
+    ],
+    "url": "https://doi.org/10.1371/journal.pgen.1007872",
+    "venue": "PLOS Genetics",
+    "year": 2018
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Resolved metadata identifies an actual correction, erratum, or corrigendum record.",
+  "resolution_state": "CORRECTION_ONLY",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0506/crossref_doi__53e78bc9908fe04b__20260713T083247358327Z.json",
+      "raw_sha256": "e6a30bc47c7c07718223b408379be886e7968287b5c85eabd2682b2030b2d7a0",
+      "request_identity": "doi:10.1371/journal.pgen.1007872",
+      "retrieved_at_utc": "2026-07-13T08:32:47.358327Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0506/europe_pmc_pmid__c87dea63fc50502b__20260713T083250670608Z.json",
+      "raw_sha256": "a4ba89713cc6a93b4d683b37477e267f660ef97066176c3a3b47195093c60924",
+      "request_identity": "pmid:30586358",
+      "retrieved_at_utc": "2026-07-13T08:32:50.670608Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CORRECTION_OF"
+}

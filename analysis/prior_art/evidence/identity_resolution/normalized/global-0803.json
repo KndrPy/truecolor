@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.jdin.2026.04.005",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42179892",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.jdin.2026.04.005",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jonathan Kantor",
+      "Michael Morrison",
+      "Justin Ko",
+      "Yevgeniy R. Semenov",
+      "Rebecca G. Fortgang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "JAAD International",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kantor J",
+      "Morrison M",
+      "Ko J",
+      "Semenov YR",
+      "Fortgang RG."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 803,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jonathan Kantor",
+      "Michael Morrison",
+      "Justin Ko",
+      "Yevgeniy R. Semenov",
+      "Rebecca G. Fortgang"
+    ],
+    "doi": "10.1016/j.jdin.2026.04.005",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Development and validation of the Oxford Attitudes to Artificial Intelligence in Medicine Scale",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.jdin.2026.04.005",
+    "venue": "JAAD International",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0803/crossref_doi__baf46c89356cb53e__20260713T083958592804Z.json",
+      "raw_sha256": "97328f5a27bfe4061c8fa4aa71d7d68491aa37a8e986c2fbe5795510a7e1678d",
+      "request_identity": "doi:10.1016/j.jdin.2026.04.005",
+      "retrieved_at_utc": "2026-07-13T08:39:58.592804Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0803/europe_pmc_pmid__28e5ff5741dbbbb9__20260713T083959614542Z.json",
+      "raw_sha256": "6df50aee18ddad57455695422bada68f34a7612b6964cf299d16e33c9e515e8f",
+      "request_identity": "pmid:42179892",
+      "retrieved_at_utc": "2026-07-13T08:39:59.614542Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

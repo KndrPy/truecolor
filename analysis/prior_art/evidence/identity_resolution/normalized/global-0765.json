@@ -1,0 +1,158 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.24.6.066002",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "31177645",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.24.6.066002",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 0.142857,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": true
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Lou Gevaux"
+        ],
+        "doi": "10.1117/1.jbo.24.6.066002",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Three-dimensional maps of human skin properties on full face with shadows using 3-D hyperspectral imaging",
+        "update_to": [],
+        "url": "https://doi.org/10.1117/1.jbo.24.6.066002",
+        "venue": "Journal of Biomedical Optics",
+        "year": 2019
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Lou Gevaux",
+          "Cyprien Adnet",
+          "Pierre Séroul",
+          "Raphael Clerc",
+          "Alain Trémeau",
+          "Jean Luc Perrot",
+          "Mathieu Hébert"
+        ],
+        "doi": "10.1117/1.jbo.24.6.066002",
+        "is_retracted": false,
+        "pmcid": "PMC6977068",
+        "pmid": "31177645",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Three-dimensional maps of human skin properties on full face with shadows using 3-D hyperspectral imaging.",
+        "url": "https://europepmc.org/article/MED/31177645",
+        "venue": null,
+        "year": 2019
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": [
+        "Lou Gevaux"
+      ],
+      "field": "authors",
+      "harvested": [
+        "Gevaux L",
+        "Adnet C",
+        "Séroul P",
+        "Clerc R",
+        "Trémeau A",
+        "Perrot JL",
+        "Hébert M."
+      ],
+      "overlap": 0.142857
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 0.142857,
+    "authoritative_source_agreement": {
+      "author_overlap": 0.142857,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Lou Gevaux"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2019,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gevaux L",
+      "Adnet C",
+      "Séroul P",
+      "Clerc R",
+      "Trémeau A",
+      "Perrot JL",
+      "Hébert M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2019,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 765,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Lou Gevaux"
+    ],
+    "doi": "10.1117/1.jbo.24.6.066002",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Three-dimensional maps of human skin properties on full face with shadows using 3-D hyperspectral imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.24.6.066002",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2019
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0765/crossref_doi__a951b409f0c3e081__20260713T083851694117Z.json",
+      "raw_sha256": "1e2cf08bbace3061e62f6b2e5c1f0c6151683693fa519165473a49eb5c7f7ba6",
+      "request_identity": "doi:10.1117/1.jbo.24.6.066002",
+      "retrieved_at_utc": "2026-07-13T08:38:51.694117Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0765/europe_pmc_pmid__2fe74f71641934b7__20260713T083852638756Z.json",
+      "raw_sha256": "67d778f1736c7cf62f450e5646e9db796a460255b53f34e981b2c9c0d67ccb50",
+      "request_identity": "pmid:31177645",
+      "retrieved_at_utc": "2026-07-13T08:38:52.638756Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

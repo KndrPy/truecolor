@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.ijpx.2025.100434",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41280507",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.ijpx.2025.100434",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sahar Marefat",
+      "Ali Shayanfar",
+      "Farnaz Monajjemzadeh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "International Journal of Pharmaceutics: X",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Marefat S",
+      "Shayanfar A",
+      "Monajjemzadeh F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 742,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sahar Marefat",
+      "Ali Shayanfar",
+      "Farnaz Monajjemzadeh"
+    ],
+    "doi": "10.1016/j.ijpx.2025.100434",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Developments in image-based colorimetric analysis methods and applications of CIElab color space in pharmaceutical sciences: A narrative review",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.ijpx.2025.100434",
+    "venue": "International Journal of Pharmaceutics: X",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0742/crossref_doi__1029d9b8763f8135__20260713T083808654803Z.json",
+      "raw_sha256": "a37f1e627173d397366bd6db49081937e712741017231def5741557cdf89b1fb",
+      "request_identity": "doi:10.1016/j.ijpx.2025.100434",
+      "retrieved_at_utc": "2026-07-13T08:38:08.654803Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0742/europe_pmc_pmid__1ccbd679038fd3e2__20260713T083809724186Z.json",
+      "raw_sha256": "cda593b73ab94484f8a1b454004e7d8676912f116a413c210e7716456774c89b",
+      "request_identity": "pmid:41280507",
+      "retrieved_at_utc": "2026-07-13T08:38:09.724186Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

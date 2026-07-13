@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pone.0345754",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41941458",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pone.0345754",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Virgilio Blandón",
+      "Alessandro Alvarado",
+      "Miguel Borge",
+      "Erick Correa",
+      "Taylys Leyton",
+      "Sofia Gonzalez"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS One",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Blandón V",
+      "Alvarado A",
+      "Borge M",
+      "Correa E",
+      "Leyton T",
+      "Gonzalez S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 862,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Virgilio Blandón",
+      "Alessandro Alvarado",
+      "Miguel Borge",
+      "Erick Correa",
+      "Taylys Leyton",
+      "Sofia Gonzalez"
+    ],
+    "doi": "10.1371/journal.pone.0345754",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Platelet-rich plasma for immature post-traumatic scars and early keloids: A scoping review",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pone.0345754",
+    "venue": "PLOS One",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0862/crossref_doi__f54b22a23639b370__20260713T084155814248Z.json",
+      "raw_sha256": "6a85ce737329491b1c781a15ca314736e79d60fe75d0a815d15fee29d85f3433",
+      "request_identity": "doi:10.1371/journal.pone.0345754",
+      "retrieved_at_utc": "2026-07-13T08:41:55.814248Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0862/europe_pmc_pmid__98929ddb2e34b0d2__20260713T084156794676Z.json",
+      "raw_sha256": "a8acf877a11f61850a39a60b5141a03eb2d9da32ff19c7eaffa2a5926a927f7b",
+      "request_identity": "pmid:41941458",
+      "retrieved_at_utc": "2026-07-13T08:41:56.794676Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

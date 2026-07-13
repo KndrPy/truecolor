@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41746-026-02608-3",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42000932",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41746-026-02608-3",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Lilach Alon",
+      "Dorit Hadar Shoval",
+      "Inbar Levkovich"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Digital Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Alon L",
+      "Shoval DH",
+      "Levkovich I."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 315,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Lilach Alon",
+      "Dorit Hadar Shoval",
+      "Inbar Levkovich"
+    ],
+    "doi": "10.1038/s41746-026-02608-3",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Bias, representation, and clinical fidelity in AI-generated images for medical education: a systematic literature review",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41746-026-02608-3",
+    "venue": "npj Digital Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0315/crossref_doi__6687aedfc6139498__20260713T082836070524Z.json",
+      "raw_sha256": "f0bc1bf8293fe90a24c1bc30ed63aea3cb62780f4fe4b6843d38d9801e3cac37",
+      "request_identity": "doi:10.1038/s41746-026-02608-3",
+      "retrieved_at_utc": "2026-07-13T08:28:36.070524Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0315/europe_pmc_pmid__fe063dac04319b4f__20260713T082837173472Z.json",
+      "raw_sha256": "bb891f2e3ae9e54ce2645f837ef13b1fc57e881dcddef10b12574b210cf28382",
+      "request_identity": "pmid:42000932",
+      "retrieved_at_utc": "2026-07-13T08:28:37.173472Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

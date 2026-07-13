@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/curroncol30030241",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36975454",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/curroncol30030241",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Michelle K. Martin",
+      "Tanzida Zaman",
+      "Amanda M. Okello",
+      "Leslie K. Dennis"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Current Oncology",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Martin MK",
+      "Zaman T",
+      "Okello AM",
+      "Dennis LK."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 95,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Michelle K. Martin",
+      "Tanzida Zaman",
+      "Amanda M. Okello",
+      "Leslie K. Dennis"
+    ],
+    "doi": "10.3390/curroncol30030241",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Validity of a Self-Assessment Skin Tone Palette Compared to a Colorimeter for Characterizing Skin Color for Skin Cancer Research",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/curroncol30030241",
+    "venue": "Current Oncology",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0095/crossref_doi__47e777db13e74bc5__20260713T081608975814Z.json",
+      "raw_sha256": "6eddf92baccad00ff9a9b663f9c06ba296dcfe70a4be7c4cd9f0c1ec3323b98c",
+      "request_identity": "doi:10.3390/curroncol30030241",
+      "retrieved_at_utc": "2026-07-13T08:16:08.975814Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0095/europe_pmc_pmid__d767f98ba242f0b7__20260713T081612718475Z.json",
+      "raw_sha256": "85970d48ac63038abc3ec6502cecc02aec5bc1612c49bc9c08c07bae2ea28dd6",
+      "request_identity": "pmid:36975454",
+      "retrieved_at_utc": "2026-07-13T08:16:12.718475Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/2515-7647/ae6ae4",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42221805",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/2515-7647/ae6ae4",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Shashikant Lahade",
+      "Nicholas Ross",
+      "Thomas D O’Sullivan"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Physics: Photonics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lahade S",
+      "Ross N",
+      "O'Sullivan TD."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 835,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shashikant Lahade",
+      "Nicholas Ross",
+      "Thomas D O’Sullivan"
+    ],
+    "doi": "10.1088/2515-7647/ae6ae4",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advances in fully integrated wearable near-infrared spectroscopy: hardware innovations and biomedical applications",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/2515-7647/ae6ae4",
+    "venue": "Journal of Physics: Photonics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0835/crossref_doi__6e01704d136ed106__20260713T084103990430Z.json",
+      "raw_sha256": "c8985e97f48b0cc6cfdea7d88471782bb3339298ca26cb716d6dcf4da4be09ca",
+      "request_identity": "doi:10.1088/2515-7647/ae6ae4",
+      "retrieved_at_utc": "2026-07-13T08:41:03.990430Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0835/europe_pmc_pmid__5174c3dbcedbda86__20260713T084104930586Z.json",
+      "raw_sha256": "70a14eb32987f1902f2ad41fe4baeb06cf6a6a6d66280a66c0c42e29ce6e4322",
+      "request_identity": "pmid:42221805",
+      "retrieved_at_utc": "2026-07-13T08:41:04.930586Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

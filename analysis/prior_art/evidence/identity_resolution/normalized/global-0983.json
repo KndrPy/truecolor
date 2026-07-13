@@ -1,0 +1,139 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7554/elife.101642",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40608052",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7554/elife.101642",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kyeongseon Min",
+      "Sungkwon Chung",
+      "Seung-Kyun Lee",
+      "Jongho Lee",
+      "Phan Tan Toi",
+      "Daehong Kim",
+      "Jung Seung Lee",
+      "Jang-Yeon Park"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "eLife",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Min K",
+      "Chung S",
+      "Lee SK",
+      "Lee J",
+      "Toi PT",
+      "Kim D",
+      "Lee JS",
+      "Park JY."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 983,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kyeongseon Min",
+      "Sungkwon Chung",
+      "Seung-Kyun Lee",
+      "Jongho Lee",
+      "Phan Tan Toi",
+      "Daehong Kim",
+      "Jung Seung Lee",
+      "Jang-Yeon Park"
+    ],
+    "doi": "10.7554/elife.101642",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-preprint": [
+        {
+          "asserted-by": "subject",
+          "id": "10.1101/2024.04.02.587661",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1101/2024.04.02.587661",
+          "id-type": "doi"
+        }
+      ],
+      "is-same-as": [
+        {
+          "asserted-by": "subject",
+          "id": "10.7554/eLife.101642.3",
+          "id-type": "doi"
+        }
+      ],
+      "is-version-of": [
+        {
+          "asserted-by": "subject",
+          "id": "10.7554/eLife.101642.1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "subject",
+          "id": "10.7554/eLife.101642.2",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Responses to membrane potential-modulating ionic solutions measured by magnetic resonance imaging of cultured cells and in vivo rat cortex",
+    "update_to": [],
+    "url": "https://doi.org/10.7554/elife.101642",
+    "venue": "eLife",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0983/crossref_doi__2d7bf15b80154395__20260713T084548629104Z.json",
+      "raw_sha256": "3648d2d06002a7139bbd81506872f91762822bef58a78cf617b082c7d77591f9",
+      "request_identity": "doi:10.7554/elife.101642",
+      "retrieved_at_utc": "2026-07-13T08:45:48.629104Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0983/europe_pmc_pmid__15713d4abf1bfd2d__20260713T084549634135Z.json",
+      "raw_sha256": "4cac50e5486b8d331bf1bed6c3439af4f8a0852beab8e83c0682b093d9ad929e",
+      "request_identity": "pmid:40608052",
+      "retrieved_at_utc": "2026-07-13T08:45:49.634135Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

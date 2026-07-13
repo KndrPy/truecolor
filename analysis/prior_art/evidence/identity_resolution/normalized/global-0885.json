@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fpls.2026.1771621",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41890284",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fpls.2026.1771621",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Tongtong Dong",
+      "Dongpo Wei",
+      "Longjie Li",
+      "Yujuan Fang",
+      "Yuzhen Liu",
+      "Fangyan Zhang",
+      "Guangyuan Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Plant Science",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Dong T",
+      "Wei D",
+      "Li L",
+      "Fang Y",
+      "Liu Y",
+      "Zhang F",
+      "Wang G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 885,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tongtong Dong",
+      "Dongpo Wei",
+      "Longjie Li",
+      "Yujuan Fang",
+      "Yuzhen Liu",
+      "Fangyan Zhang",
+      "Guangyuan Wang"
+    ],
+    "doi": "10.3389/fpls.2026.1771621",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "HyperVision-HSI: a classification-guided spectral-spatial decoupling framework for adaptive multi-category fruit SSC detection",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fpls.2026.1771621",
+    "venue": "Frontiers in Plant Science",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0885/crossref_doi__a4d95a9561181400__20260713T084242116343Z.json",
+      "raw_sha256": "8ebf1c9d1c5c492b159a52318ee44cfd09a6b837314b0d39b3360706676e35c1",
+      "request_identity": "doi:10.3389/fpls.2026.1771621",
+      "retrieved_at_utc": "2026-07-13T08:42:42.116343Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0885/europe_pmc_pmid__127cbee31bdba03d__20260713T084243286415Z.json",
+      "raw_sha256": "f65a5dde5a1369717fa513439346a66d558046b16cc05a17731f225cc33c72a6",
+      "request_identity": "pmid:41890284",
+      "retrieved_at_utc": "2026-07-13T08:42:43.286415Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

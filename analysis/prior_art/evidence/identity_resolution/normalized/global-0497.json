@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/srs.1986.fd2",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/srs.1986.fd2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "T. Poggio",
+      "A. Hurlbert"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Topical Meeting On Signal Recovery and Synthesis II",
+    "canonical_year": 1986,
+    "doi_match": true,
+    "harvested_authors": [
+      "T. Poggio",
+      "A. Hurlbert"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Topical Meeting On Signal Recovery and Synthesis II",
+    "harvested_year": 1986,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 497,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "T. Poggio",
+      "A. Hurlbert"
+    ],
+    "doi": "10.1364/srs.1986.fd2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Computational vision as inverse optics: reconstructing spectral reflectances and illuminant",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/srs.1986.fd2",
+    "venue": "Topical Meeting On Signal Recovery and Synthesis II",
+    "year": 1986
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0497/crossref_doi__e537c5cec0af8cca__20260713T083234603748Z.json",
+      "raw_sha256": "ceb7753e17a9238002cda7f61e736661e6cc4d0791e33d94e682727102f24328",
+      "request_identity": "doi:10.1364/srs.1986.fd2",
+      "retrieved_at_utc": "2026-07-13T08:32:34.603748Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

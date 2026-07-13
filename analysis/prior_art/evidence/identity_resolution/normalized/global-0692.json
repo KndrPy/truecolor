@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2352/issn.2169-2629.2017.32.306",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2352/issn.2169-2629.2017.32.306",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Michael J. Vrhel"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Color and Imaging Conference",
+    "canonical_year": 2016,
+    "doi_match": true,
+    "harvested_authors": [
+      "Michael J. Vrhel"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Color and Imaging Conference",
+    "harvested_year": 2016,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 692,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Michael J. Vrhel"
+    ],
+    "doi": "10.2352/issn.2169-2629.2017.32.306",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Use of Simulated Reflectance Spectra in Camera Transform Creation",
+    "update_to": [],
+    "url": "https://doi.org/10.2352/issn.2169-2629.2017.32.306",
+    "venue": "Color and Imaging Conference",
+    "year": 2016
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0692/crossref_doi__df5d31b640faf22f__20260713T083654136469Z.json",
+      "raw_sha256": "d8b7c2eb0bcb058613b8764ab78ac6eb1d8d3f9334359a70053049b1218f92c6",
+      "request_identity": "doi:10.2352/issn.2169-2629.2017.32.306",
+      "retrieved_at_utc": "2026-07-13T08:36:54.136469Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

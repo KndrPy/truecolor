@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/biomimetics10110730",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41294401",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/biomimetics10110730",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Evgenia Gkintoni",
+      "Constantinos Halkiopoulos"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomimetics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gkintoni E",
+      "Halkiopoulos C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 637,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Evgenia Gkintoni",
+      "Constantinos Halkiopoulos"
+    ],
+    "doi": "10.3390/biomimetics10110730",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Mapping EEG Metrics to Human Affective and Cognitive Models: An Interdisciplinary Scoping Review from a Cognitive Neuroscience Perspective",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/biomimetics10110730",
+    "venue": "Biomimetics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0637/crossref_doi__2de211ac52f2c44d__20260713T083544502715Z.json",
+      "raw_sha256": "8a507ef3c9636da6100b9563fd3bd3b7b9c2d79424cc5a0df8804c82db398c6e",
+      "request_identity": "doi:10.3390/biomimetics10110730",
+      "retrieved_at_utc": "2026-07-13T08:35:44.502715Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0637/europe_pmc_pmid__5c98bd677550485e__20260713T083545638627Z.json",
+      "raw_sha256": "b6444aa52b78a6c71dfd9142989173a317cc593ab35f132c972781890109fdc2",
+      "request_identity": "pmid:41294401",
+      "retrieved_at_utc": "2026-07-13T08:35:45.638627Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

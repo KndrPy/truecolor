@@ -1,0 +1,77 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1145/3768158",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1145/3768158",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Chayan Banerjee",
+      "Kien Nguyen",
+      "Olivier Salvado",
+      "Truyen Tran",
+      "Clinton Fookes"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "ACM Computing Surveys",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Chayan Banerjee",
+      "Kien Nguyen",
+      "Olivier Salvado",
+      "Truyen Tran",
+      "Clinton Fookes"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "ACM Computing Surveys",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 633,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Chayan Banerjee",
+      "Kien Nguyen",
+      "Olivier Salvado",
+      "Truyen Tran",
+      "Clinton Fookes"
+    ],
+    "doi": "10.1145/3768158",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Physics-informed Machine Learning for Medical Image Analysis",
+    "update_to": [],
+    "url": "https://doi.org/10.1145/3768158",
+    "venue": "ACM Computing Surveys",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0633/crossref_doi__f4c4db5f642c225d__20260713T083536067494Z.json",
+      "raw_sha256": "8e0338e6b2ef5a2f7193c801c68cba9ae3c17f556e1f6f18dc42b43d65f481ee",
+      "request_identity": "doi:10.1145/3768158",
+      "retrieved_at_utc": "2026-07-13T08:35:36.067494Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

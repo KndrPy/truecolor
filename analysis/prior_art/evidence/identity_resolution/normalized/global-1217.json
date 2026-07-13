@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.70675/8db7495fzd904z470czb807zc72f316756d1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.70675/8db7495fzd904z470czb807zc72f316756d1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Fabio Pizzati"
+    ],
+    "canonical_publication_type": "dissertation",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Fabio Pizzati"
+    ],
+    "harvested_publication_type": "dissertation",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1217,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Fabio Pizzati"
+    ],
+    "doi": "10.70675/8db7495fzd904z470czb807zc72f316756d1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dissertation",
+    "relation": {},
+    "title": "Exploring domain-informed and physics-guided learning in image-to-image translation",
+    "update_to": [],
+    "url": "https://doi.org/10.70675/8db7495fzd904z470czb807zc72f316756d1",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1217/crossref_doi__05eb8663ec1f7e9b__20260713T084909944436Z.json",
+      "raw_sha256": "f136291b9fd1e48cfc125565e3f81d09a2a70835133d422a4adc7eac3e865890",
+      "request_identity": "doi:10.70675/8db7495fzd904z470czb807zc72f316756d1",
+      "retrieved_at_utc": "2026-07-13T08:49:09.944436Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/jbio.202400413",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40012255",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/jbio.202400413",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Isra Sahli",
+      "Wesam Bachir",
+      "Moustafa Sayem El‐Daher"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biophotonics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sahli I",
+      "Bachir W",
+      "El-Daher MS."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 37,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Isra Sahli",
+      "Wesam Bachir",
+      "Moustafa Sayem El‐Daher"
+    ],
+    "doi": "10.1002/jbio.202400413",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Accurate Estimation of Methemoglobin and Oxygen Saturation in Skin Tissue Using Diffuse Reflectance Spectroscopy and Artificial Intelligence",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/jbio.202400413",
+    "venue": "Journal of Biophotonics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0037/crossref_doi__8e690392b2bcbf09__20260713T081520407671Z.json",
+      "raw_sha256": "8b7fea2c718f89bb7a17a4a5c90de30dcf1373308225fb93b507d308bc37f121",
+      "request_identity": "doi:10.1002/jbio.202400413",
+      "retrieved_at_utc": "2026-07-13T08:15:20.407671Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0037/europe_pmc_pmid__62daaa96e50150aa__20260713T081521502870Z.json",
+      "raw_sha256": "b197ac47cc06251a394df5ebec0e77d9dbf721d84b9ea3fa081947a932eb085f",
+      "request_identity": "pmid:40012255",
+      "retrieved_at_utc": "2026-07-13T08:15:21.502870Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

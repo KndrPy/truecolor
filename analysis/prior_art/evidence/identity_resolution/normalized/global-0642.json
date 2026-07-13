@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.pacs.2015.08.001",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "26640771",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.pacs.2015.08.001",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "P.J. van den Berg",
+      "K. Daoudi",
+      "W. Steenbergen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Photoacoustics",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "van den Berg PJ",
+      "Daoudi K",
+      "Steenbergen W."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 642,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "P.J. van den Berg",
+      "K. Daoudi",
+      "W. Steenbergen"
+    ],
+    "doi": "10.1016/j.pacs.2015.08.001",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Review of photoacoustic flow imaging: its current state and its promises",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.pacs.2015.08.001",
+    "venue": "Photoacoustics",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0642/crossref_doi__919acb710f639f63__20260713T083553295350Z.json",
+      "raw_sha256": "627fee35b300b707c27c60a67a2d4eb970e56f33b4847857b1e9749160705368",
+      "request_identity": "doi:10.1016/j.pacs.2015.08.001",
+      "retrieved_at_utc": "2026-07-13T08:35:53.295350Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0642/europe_pmc_pmid__85a73c1d8ac8842f__20260713T083554275880Z.json",
+      "raw_sha256": "fadf90229dc0b8d39e28b8d40d73ffffa1361cd5d6d26934ba3cb50d8a6e93b8",
+      "request_identity": "pmid:26640771",
+      "retrieved_at_utc": "2026-07-13T08:35:54.275880Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

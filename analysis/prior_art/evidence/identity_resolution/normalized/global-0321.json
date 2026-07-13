@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/foods14234061",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41375999",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/foods14234061",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Carlos Moraga-Lozano",
+      "Ana María Fernández-León",
+      "Margarita López-Corrales",
+      "Alicia Rodríguez",
+      "Manuel J. Serradilla",
+      "Mónica Palomino-Vasco"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Foods",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Moraga-Lozano C",
+      "Fernández-León AM",
+      "López-Corrales M",
+      "Rodríguez A",
+      "Serradilla MJ",
+      "Palomino-Vasco M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 321,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Carlos Moraga-Lozano",
+      "Ana María Fernández-León",
+      "Margarita López-Corrales",
+      "Alicia Rodríguez",
+      "Manuel J. Serradilla",
+      "Mónica Palomino-Vasco"
+    ],
+    "doi": "10.3390/foods14234061",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Preharvest Application of Oxalic Acid to ‘Calabacita’ Fresh Figs: Effects on Physicochemical and Antioxidant Profile During Cold Storage",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/foods14234061",
+    "venue": "Foods",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0321/crossref_doi__519f574f8a3cb2f2__20260713T082846303489Z.json",
+      "raw_sha256": "7cfb10d47e02a473a3897b9947651c4fe5ed5143abc87fba624e1afcc160a391",
+      "request_identity": "doi:10.3390/foods14234061",
+      "retrieved_at_utc": "2026-07-13T08:28:46.303489Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0321/europe_pmc_pmid__bebe4c59252cd3f1__20260713T082847303182Z.json",
+      "raw_sha256": "a61b882fb09862e9021660bc59660fb3b3684d924f4c79d25b4a288adcdafd56",
+      "request_identity": "pmid:41375999",
+      "retrieved_at_utc": "2026-07-13T08:28:47.303182Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

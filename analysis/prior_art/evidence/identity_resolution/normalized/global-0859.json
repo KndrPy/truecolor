@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.596797",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42311295",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.596797",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Khandakar Mohammad Ishtiak",
+      "Safayat-Al Imam",
+      "Quazi D. M. Khosru"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ishtiak KM",
+      "Imam SA",
+      "Khosru QDM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 859,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Khandakar Mohammad Ishtiak",
+      "Safayat-Al Imam",
+      "Quazi D. M. Khosru"
+    ],
+    "doi": "10.1364/boe.596797",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Machine learning-integrated multi-wavelength SPR sensor based on aluminum-doped zinc oxide and 2D amorphous silicon for high-precision salinity measurement",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.596797",
+    "venue": "Biomedical Optics Express",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0859/crossref_doi__4071a58dee1df73c__20260713T084150690674Z.json",
+      "raw_sha256": "becb85a914f45e5228d2b19a533038543234acd4e68b629376bf75b093876c1f",
+      "request_identity": "doi:10.1364/boe.596797",
+      "retrieved_at_utc": "2026-07-13T08:41:50.690674Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0859/europe_pmc_pmid__7579911c6a145a3a__20260713T084151667011Z.json",
+      "raw_sha256": "0fac029d127bb41232336893aa904aabd4d3d8470fe41782c88a70be50d55ec2",
+      "request_identity": "pmid:42311295",
+      "retrieved_at_utc": "2026-07-13T08:41:51.667011Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

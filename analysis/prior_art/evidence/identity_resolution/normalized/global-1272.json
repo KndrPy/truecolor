@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "abstracts from the 57th european society of human genetics eshg conference hybrid posters",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:abstracts from the 57th european society of human genetics (eshg) conference: hybrid posters|year:2024",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "European Journal of Human Genetics",
+    "canonical_year": 2024,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1272,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1038/s41431-024-01734-4",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Abstracts from the 57th European Society of Human Genetics (ESHG) Conference: Hybrid Posters",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41431-024-01734-4",
+    "venue": "European Journal of Human Genetics",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1272/crossref_title__4f1e7f159507f839__20260713T084953983969Z.json",
+      "raw_sha256": "59eab0a60c73cb524eeb2822b668998e65fa47ecd901c4d7731d6034fa366330",
+      "request_identity": "title:abstracts from the 57th european society of human genetics eshg conference hybrid posters|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:53.983969Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

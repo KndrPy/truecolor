@@ -1,0 +1,86 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/ced/llaf126",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/ced/llaf126",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Goranit Sakunchotpanit",
+      "Krithika Nayudu",
+      "Ryan Chen",
+      "Sofia Milosavljevic",
+      "Thomas Z Rohan",
+      "Laura Ortiz-López",
+      "Kaushik Venkatesh",
+      "Vinod E Nambudiri"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Clinical and Experimental Dermatology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Goranit Sakunchotpanit",
+      "Krithika Nayudu",
+      "Ryan Chen",
+      "Sofia Milosavljevic",
+      "Thomas Z Rohan",
+      "Laura Ortiz-López",
+      "Kaushik Venkatesh",
+      "Vinod E Nambudiri"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Clinical and Experimental Dermatology",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 28,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Goranit Sakunchotpanit",
+      "Krithika Nayudu",
+      "Ryan Chen",
+      "Sofia Milosavljevic",
+      "Thomas Z Rohan",
+      "Laura Ortiz-López",
+      "Kaushik Venkatesh",
+      "Vinod E Nambudiri"
+    ],
+    "doi": "10.1093/ced/llaf126",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/ced/llaf126",
+    "venue": "Clinical and Experimental Dermatology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0028/crossref_doi__bcdba8ab1377f7e6__20260713T081511344848Z.json",
+      "raw_sha256": "af6b08e6b8e4f382b22a6839eec76ed4966b31aa50f854b257337c1007ae334a",
+      "request_identity": "doi:10.1093/ced/llaf126",
+      "retrieved_at_utc": "2026-07-13T08:15:11.344848Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1016/s0079-8169(08)62367-3",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2022,3,29]],\"date-time\":\"2022-03-29T09:07:53Z\",\"timestamp\":1648544873526},\"reference-count\":0,\"publisher\":\"Elsevier\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"published-print\":{\"date-parts\":[[1987]]},\"DOI\":\"10.1016\\/s0079-8169(08)62367-3\",\"type\":\"book-chapter\",\"created\":{\"date-parts\":[[2008,5,1]],\"date-time\":\"2008-05-01T11:21:52Z\",\"timestamp\":1209640912000},\"page\":\"49-65\",\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"3 The Inverse Dirichlet Problem\"],\"prefix\":\"10.1016\",\"member\":\"78\",\"container-title\":[\"Pure and Applied Mathematics\",\"Inverse Spectral Theory\"],\"original-title\":[],\"deposited\":{\"date-parts\":[[2018,12,29]],\"date-time\":\"2018-12-29T09:54:06Z\",\"timestamp\":1546077246000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/linkinghub.elsevier.com\\/retrieve\\/pii\\/S0079816908623673\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[1987]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1016\\/s0079-8169(08)62367-3\",\"relation\":{},\"ISSN\":[\"0079-8169\"],\"issn-type\":[{\"value\":\"0079-8169\",\"type\":\"print\"}],\"subject\":[],\"published\":{\"date-parts\":[[1987]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:48:57.758473Z",
+  "source": "crossref_doi"
+}

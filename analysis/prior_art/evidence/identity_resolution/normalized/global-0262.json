@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/cancers17243896",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41463145",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/cancers17243896",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sebastian Górecki",
+      "Aleksandra Tatka",
+      "James Brusey"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cancers",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Górecki S",
+      "Tatka A",
+      "Brusey J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 262,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sebastian Górecki",
+      "Aleksandra Tatka",
+      "James Brusey"
+    ],
+    "doi": "10.3390/cancers17243896",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial Intelligence and New Technologies in Melanoma Diagnosis: A Narrative Review",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/cancers17243896",
+    "venue": "Cancers",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0262/crossref_doi__a40942143f70d3fd__20260713T082735160195Z.json",
+      "raw_sha256": "cae8e5f818bad677c64ede1f6b3e8702252dd208b22e9d29470a54b83bd56dbd",
+      "request_identity": "doi:10.3390/cancers17243896",
+      "retrieved_at_utc": "2026-07-13T08:27:35.160195Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0262/europe_pmc_pmid__f8a74fd2faad2929__20260713T082736147476Z.json",
+      "raw_sha256": "a43b889558347fc405ca93e38b515047f7ae10d5c63f4e8bd56cd1c0ee31889e",
+      "request_identity": "pmid:41463145",
+      "retrieved_at_utc": "2026-07-13T08:27:36.147476Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

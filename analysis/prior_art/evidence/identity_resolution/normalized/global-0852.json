@@ -1,0 +1,145 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1177/26331055261458642",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42327566",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1177/26331055261458642",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Seyed Kiarash Sadat Rafiei",
+      "Fatemeh Ghorbani",
+      "Janan Rezaei",
+      "Ana Saremi",
+      "Maryam Rafiei",
+      "Shadi Hajizamani",
+      "Mahsa Asadi Anar",
+      "Mehrab Samiei"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Neuroscience Insights",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sadat Rafiei SK",
+      "Ghorbani F",
+      "Rezaei J",
+      "Saremi A",
+      "Rafiei M",
+      "Hajizamani S",
+      "Asadi Anar M",
+      "Samiei M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 852,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Seyed Kiarash Sadat Rafiei",
+      "Fatemeh Ghorbani",
+      "Janan Rezaei",
+      "Ana Saremi",
+      "Maryam Rafiei",
+      "Shadi Hajizamani",
+      "Mahsa Asadi Anar",
+      "Mehrab Samiei"
+    ],
+    "doi": "10.1177/26331055261458642",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-review": [
+        {
+          "asserted-by": "object",
+          "id": "10.1177/26331055261458642/v2/decision1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1177/26331055261458642/v2/response1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1177/26331055261458642/v2/review2",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1177/26331055261458642/v1/decision1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1177/26331055261458642/v1/review2",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1177/26331055261458642/v1/review1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1177/26331055261458642/v2/review1",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "Neuromodulation of Working Memory: Mechanisms, Targets, and Behavioral Outcomes",
+    "update_to": [],
+    "url": "https://doi.org/10.1177/26331055261458642",
+    "venue": "Neuroscience Insights",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0852/crossref_doi__ad5595f03855333b__20260713T084136872528Z.json",
+      "raw_sha256": "9b3982cd30402ee375f2b6251ebda8772e5b7d1ff5984064edfc6fb4f93b4d84",
+      "request_identity": "doi:10.1177/26331055261458642",
+      "retrieved_at_utc": "2026-07-13T08:41:36.872528Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0852/europe_pmc_pmid__ffbd9f1c88e5e360__20260713T084137840247Z.json",
+      "raw_sha256": "b3f2cacf49fee671c2c00d82bc5cc0a6d08bb54825951cf83d48df129c02df20",
+      "request_identity": "pmid:42327566",
+      "retrieved_at_utc": "2026-07-13T08:41:37.840247Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

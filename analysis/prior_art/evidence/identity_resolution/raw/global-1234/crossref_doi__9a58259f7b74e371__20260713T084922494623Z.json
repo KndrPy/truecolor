@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.1021/acs.nanolett.3c04755.s002",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,2,26]],\"date-time\":\"2026-02-26T18:30:11Z\",\"timestamp\":1772130611963,\"version\":\"3.50.1\"},\"description\":\"Supplemental Information for 10.1021\\/acs.nanolett.3c04755\",\"reference-count\":0,\"publisher\":\"American Chemical Society (ACS)\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.1021\\/acs.nanolett.3c04755.s002\",\"type\":\"component\",\"created\":{\"date-parts\":[[2024,4,11]],\"date-time\":\"2024-04-11T10:00:45Z\",\"timestamp\":1712829645000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Color-Shifting Iontronic Skin for On-Site, Nonpixelated Pressure Mapping Visualization\"],\"prefix\":\"10.1021\",\"member\":\"316\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2024,4,24]],\"date-time\":\"2024-04-24T06:52:16Z\",\"timestamp\":1713941536000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/pubs.acs.org\\/doi\\/suppl\\/10.1021\\/acs.nanolett.3c04755\\/suppl_file\\/nl3c04755_si_002.avi\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.1021\\/acs.nanolett.3c04755.s002\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.1021\\/acs.nanolett.3c04755\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:49:22.494623Z",
+  "source": "crossref_doi"
+}

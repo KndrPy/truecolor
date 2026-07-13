@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/3dv66043.2025.00055",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/3dv66043.2025.00055",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Jingzhi Bao",
+      "Guanying Chen",
+      "Shuguang Cui"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "2025 International Conference on 3D Vision (3DV)",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jingzhi Bao",
+      "Guanying Chen",
+      "Shuguang Cui"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "2025 International Conference on 3D Vision (3DV)",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 60,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jingzhi Bao",
+      "Guanying Chen",
+      "Shuguang Cui"
+    ],
+    "doi": "10.1109/3dv66043.2025.00055",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "PIR: Photometric Inverse Rendering with Shading Cues Modeling and Surface Reflectance Regularization",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/3dv66043.2025.00055",
+    "venue": "2025 International Conference on 3D Vision (3DV)",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0060/crossref_doi__9789e739a31574d2__20260713T081541275169Z.json",
+      "raw_sha256": "27891b11d2e081740780788579c90f0bbf4d00ea4a17f60ddd0d45f8f1cfbd72",
+      "request_identity": "doi:10.1109/3dv66043.2025.00055",
+      "retrieved_at_utc": "2026-07-13T08:15:41.275169Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

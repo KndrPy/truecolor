@@ -1,0 +1,140 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.jpi.2026.100671",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42318450",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.jpi.2026.100671",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kaitlyn Gelfant",
+      "Ali Manzo",
+      "Samiha Alam",
+      "Md Mushfiqur Rahman",
+      "K. Hassan Bilal",
+      "Rushi Brahmabhatt",
+      "Suraj Nayak",
+      "Nitin Singhal",
+      "Dinesh Joshi",
+      "Evangelos Stamelos",
+      "Ishtiaque Ahmed",
+      "Jonathan Alarcon",
+      "Mohit Pasricha",
+      "Maria Pirgousis",
+      "Peter Ntiamoah",
+      "Ahmet Dogan",
+      "Victor E. Reuter",
+      "Meera Hameed",
+      "Orly Ardon"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Pathology Informatics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Gelfant K",
+      "Manzo A",
+      "Alam S",
+      "Rahman MM",
+      "Bilal KH",
+      "Brahmabhatt R",
+      "Nayak S",
+      "Singhal N",
+      "Joshi D",
+      "Stamelos E",
+      "Ahmed I",
+      "Alarcon J",
+      "Pasricha M",
+      "Pirgousis M",
+      "Ntiamoah P",
+      "Dogan A",
+      "Reuter VE",
+      "Hameed M",
+      "Ardon O."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 329,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kaitlyn Gelfant",
+      "Ali Manzo",
+      "Samiha Alam",
+      "Md Mushfiqur Rahman",
+      "K. Hassan Bilal",
+      "Rushi Brahmabhatt",
+      "Suraj Nayak",
+      "Nitin Singhal",
+      "Dinesh Joshi",
+      "Evangelos Stamelos",
+      "Ishtiaque Ahmed",
+      "Jonathan Alarcon",
+      "Mohit Pasricha",
+      "Maria Pirgousis",
+      "Peter Ntiamoah",
+      "Ahmet Dogan",
+      "Victor E. Reuter",
+      "Meera Hameed",
+      "Orly Ardon"
+    ],
+    "doi": "10.1016/j.jpi.2026.100671",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Deployment of AI-driven automated quality control of whole-slide images in a large tertiary cancer center",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.jpi.2026.100671",
+    "venue": "Journal of Pathology Informatics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0329/crossref_doi__839ac4ce9cff7159__20260713T082858098282Z.json",
+      "raw_sha256": "5b2d7233f2324ea220f1b9afc6a105bf1e6179119556dba5a4f07e0a53672095",
+      "request_identity": "doi:10.1016/j.jpi.2026.100671",
+      "retrieved_at_utc": "2026-07-13T08:28:58.098282Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0329/europe_pmc_pmid__68f9f4534ba81521__20260713T082859219639Z.json",
+      "raw_sha256": "f0f0c095e88d40c4218ee25a3c667215740ad8c4e71fddae8bbd181d59d73709",
+      "request_identity": "pmid:42318450",
+      "retrieved_at_utc": "2026-07-13T08:28:59.219639Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

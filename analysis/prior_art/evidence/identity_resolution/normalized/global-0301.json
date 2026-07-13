@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41746-025-02245-2",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41429926",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41746-025-02245-2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Vanessa R. Weir",
+      "Yingjoy Li",
+      "Maura C. Gillis",
+      "Nicholas R. Kurtansky",
+      "Trina Salvador",
+      "Allan C. Halpern",
+      "Kelly C. Nelson",
+      "Jenna C. Lester",
+      "Veronica Rotemberg"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Digital Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Weir VR",
+      "Li Y",
+      "Gillis MC",
+      "Kurtansky NR",
+      "Salvador T",
+      "Halpern AC",
+      "Nelson KC",
+      "Lester JC",
+      "Rotemberg V."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 301,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Vanessa R. Weir",
+      "Yingjoy Li",
+      "Maura C. Gillis",
+      "Nicholas R. Kurtansky",
+      "Trina Salvador",
+      "Allan C. Halpern",
+      "Kelly C. Nelson",
+      "Jenna C. Lester",
+      "Veronica Rotemberg"
+    ],
+    "doi": "10.1038/s41746-025-02245-2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluating skin tone scales for dermatologic dataset labeling: a prospective-comparative study",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41746-025-02245-2",
+    "venue": "npj Digital Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0301/crossref_doi__8dfd223fe3b4caff__20260713T082815999243Z.json",
+      "raw_sha256": "b4ba418f977c1f4b98fc59202ac3cae86d6633bf0a2e53350924678a96e1fbfd",
+      "request_identity": "doi:10.1038/s41746-025-02245-2",
+      "retrieved_at_utc": "2026-07-13T08:28:15.999243Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0301/europe_pmc_pmid__7c6a50116e844fb1__20260713T082817126261Z.json",
+      "raw_sha256": "6c92da1f9b334b072d3432234729da40ce100cd3f59622d1472e9007c330a5dd",
+      "request_identity": "pmid:41429926",
+      "retrieved_at_utc": "2026-07-13T08:28:17.126261Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/ma18194556",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41095380",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/ma18194556",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jiale Wang",
+      "Haiyang Chen",
+      "Xiaxiao Tian",
+      "Dongxiao Hu",
+      "Yufan Liu",
+      "Jiayue Li",
+      "Ke Zhang",
+      "Hongliang Huang",
+      "Jie Yan",
+      "Bin Li"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Materials",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Wang J",
+      "Chen H",
+      "Tian X",
+      "Hu D",
+      "Liu Y",
+      "Li J",
+      "Zhang K",
+      "Huang H",
+      "Yan J",
+      "Li B."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 782,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jiale Wang",
+      "Haiyang Chen",
+      "Xiaxiao Tian",
+      "Dongxiao Hu",
+      "Yufan Liu",
+      "Jiayue Li",
+      "Ke Zhang",
+      "Hongliang Huang",
+      "Jie Yan",
+      "Bin Li"
+    ],
+    "doi": "10.3390/ma18194556",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Biomimetic Daytime Radiative Cooling Technology: Prospects and Challenges for Practical Application",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/ma18194556",
+    "venue": "Materials",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0782/crossref_doi__358726d5b929d2f8__20260713T083924115644Z.json",
+      "raw_sha256": "794603a97e9cff2fec774a853513adf63c79d3939709386eac162bcf28f92f88",
+      "request_identity": "doi:10.3390/ma18194556",
+      "retrieved_at_utc": "2026-07-13T08:39:24.115644Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0782/europe_pmc_pmid__a3e6ebd64888c241__20260713T083925126853Z.json",
+      "raw_sha256": "4b48c2ef1ede9975e2e6df09ecdf1e16e69b3894f139db3448ce187df3309ad9",
+      "request_identity": "pmid:41095380",
+      "retrieved_at_utc": "2026-07-13T08:39:25.126853Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

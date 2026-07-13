@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2281612",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2281612",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "S. Chatterjee",
+      "J. P. Phillips",
+      "P. A. Kyriacou"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2017,
+    "doi_match": true,
+    "harvested_authors": [
+      "S. Chatterjee",
+      "J. P. Phillips",
+      "P. A. Kyriacou"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SPIE Proceedings Clinical and Preclinical Optical Diagnostics",
+    "harvested_year": 2017,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.285714,
+    "year_match": true
+  },
+  "global_rank": 20,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "S. Chatterjee",
+      "J. P. Phillips",
+      "P. A. Kyriacou"
+    ],
+    "doi": "10.1117/12.2281612",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Investigating optical path in reflectance pulse oximetry using a multilayer Monte Carlo model",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2281612",
+    "venue": "SPIE Proceedings",
+    "year": 2017
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0020/crossref_doi__592c37ea8f5e52e7__20260713T081503745907Z.json",
+      "raw_sha256": "44b904218e06266826f75f06f74b5489d53b7c0f0c1a5e6122cc09de3fc5c285",
+      "request_identity": "doi:10.1117/12.2281612",
+      "retrieved_at_utc": "2026-07-13T08:15:03.745907Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

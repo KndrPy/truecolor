@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fphys.2026.1778235",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41958528",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fphys.2026.1778235",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Liucheng Li",
+      "Fang Lv",
+      "Chen Du",
+      "Lianjun Yang",
+      "Chengzhou Pa",
+      "Yunrui Dai"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Physiology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Li L",
+      "Lv F",
+      "Du C",
+      "Yang L",
+      "Pa C",
+      "Dai Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 883,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Liucheng Li",
+      "Fang Lv",
+      "Chen Du",
+      "Lianjun Yang",
+      "Chengzhou Pa",
+      "Yunrui Dai"
+    ],
+    "doi": "10.3389/fphys.2026.1778235",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial intelligence-driven gastrointestinal functional assessment: multimodal imaging, digital biomarkers, and real-time monitoring",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fphys.2026.1778235",
+    "venue": "Frontiers in Physiology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0883/crossref_doi__45faa131666ac88b__20260713T084236181909Z.json",
+      "raw_sha256": "2926a9cd9d11959937c82b8fdce248692fd1c65e9b6c7412c866c8f1b84e2b41",
+      "request_identity": "doi:10.3389/fphys.2026.1778235",
+      "retrieved_at_utc": "2026-07-13T08:42:36.181909Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0883/europe_pmc_pmid__d7c06b0f72a82ebe__20260713T084237222170Z.json",
+      "raw_sha256": "8beb4d443a66d0f493ef2b14077edb8014e46119ea5b4b99fbbba39702541846",
+      "request_identity": "pmid:41958528",
+      "retrieved_at_utc": "2026-07-13T08:42:37.222170Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

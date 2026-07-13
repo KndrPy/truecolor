@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/srt.70299",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41408927",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/srt.70299",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jee‐Hye Oh",
+      "Go‐Woon Choi",
+      "Sung‐Ha Park",
+      "Byoung‐Jun Park"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Skin Research and Technology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Oh JH",
+      "Choi GW",
+      "Park SH",
+      "Park BJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 746,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jee‐Hye Oh",
+      "Go‐Woon Choi",
+      "Sung‐Ha Park",
+      "Byoung‐Jun Park"
+    ],
+    "doi": "10.1111/srt.70299",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Correlation Between Sun Protection Factor and Hair Color Difference Index in a New Method for Evaluating Sunscreens’ Ultraviolet Protection Efficacy in Hair: An Experimental Study",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/srt.70299",
+    "venue": "Skin Research and Technology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0746/crossref_doi__22ca5d997f94fcc5__20260713T083815535386Z.json",
+      "raw_sha256": "32ac81f9012026b6c426f1ff978febcceff716a7507c6aa6cfbae72573bbb9aa",
+      "request_identity": "doi:10.1111/srt.70299",
+      "retrieved_at_utc": "2026-07-13T08:38:15.535386Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0746/europe_pmc_pmid__3abc22ace9b6cf6d__20260713T083816621242Z.json",
+      "raw_sha256": "84e6f371eed486fa173c9f7c41e212c63729d35967ac93e65908db3c94afd797",
+      "request_identity": "pmid:41408927",
+      "retrieved_at_utc": "2026-07-13T08:38:16.621242Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

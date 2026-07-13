@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/j.1365-4362.1967.tb05265.x",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/j.1365-4362.1967.tb05265.x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Herbert J. Spoor"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "International Journal of Dermatology",
+    "canonical_year": 1967,
+    "doi_match": true,
+    "harvested_authors": [
+      "Herbert J. Spoor"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "International Journal of Dermatology",
+    "harvested_year": 1967,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 433,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Herbert J. Spoor"
+    ],
+    "doi": "10.1111/j.1365-4362.1967.tb05265.x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A CLINICAL AND MICROBIOLOGICAL STUDY OF EXTERNAL OTITIS",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/j.1365-4362.1967.tb05265.x",
+    "venue": "International Journal of Dermatology",
+    "year": 1967
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0433/crossref_doi__fa10415ed2696aef__20260713T083129578046Z.json",
+      "raw_sha256": "2133d1cbb07cbc02d73c9676e03b52c2c82de98e3c0314dd0f11f9fb28c9c3cc",
+      "request_identity": "doi:10.1111/j.1365-4362.1967.tb05265.x",
+      "retrieved_at_utc": "2026-07-13T08:31:29.578046Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

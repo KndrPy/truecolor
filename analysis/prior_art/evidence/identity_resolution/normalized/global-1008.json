@@ -1,0 +1,83 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.media.2026.103974",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.media.2026.103974",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Julian Suk",
+      "Dieuwertje Alblas",
+      "Barbara A. Hutten",
+      "Albert Wiegman",
+      "Christoph Brune",
+      "Pim van Ooij",
+      "Jelmer M. Wolterink"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Medical Image Analysis",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Julian Suk",
+      "Dieuwertje Alblas",
+      "Barbara A. Hutten",
+      "Albert Wiegman",
+      "Christoph Brune",
+      "Pim van Ooij",
+      "Jelmer M. Wolterink"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Medical Image Analysis",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1008,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Julian Suk",
+      "Dieuwertje Alblas",
+      "Barbara A. Hutten",
+      "Albert Wiegman",
+      "Christoph Brune",
+      "Pim van Ooij",
+      "Jelmer M. Wolterink"
+    ],
+    "doi": "10.1016/j.media.2026.103974",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Physics-informed graph neural networks for flow field estimation in carotid arteries",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.media.2026.103974",
+    "venue": "Medical Image Analysis",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1008/crossref_doi__f583a85a241adb1a__20260713T084619423111Z.json",
+      "raw_sha256": "3d254ed9be96eb8c365986b85355f1a84d1ab4dbead662b26eef41e40b9ace6b",
+      "request_identity": "doi:10.1016/j.media.2026.103974",
+      "retrieved_at_utc": "2026-07-13T08:46:19.423111Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

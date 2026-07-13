@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/acm2.70385",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41306077",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/acm2.70385",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Wei Jiao",
+      "Jianghui Xu",
+      "Yijiao Fang",
+      "Jiaojiao Huang",
+      "Yujie Zhu",
+      "Dandan Ling"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Applied Clinical Medical Physics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jiao W",
+      "Xu J",
+      "Fang Y",
+      "Huang J",
+      "Zhu Y",
+      "Ling D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 739,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Wei Jiao",
+      "Jianghui Xu",
+      "Yijiao Fang",
+      "Jiaojiao Huang",
+      "Yujie Zhu",
+      "Dandan Ling"
+    ],
+    "doi": "10.1002/acm2.70385",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "HCViT‐Net: Hybrid CNN and multi scale query transformer network for dermatological image segmentation",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/acm2.70385",
+    "venue": "Journal of Applied Clinical Medical Physics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0739/crossref_doi__92c0dbfc1688af49__20260713T083803430621Z.json",
+      "raw_sha256": "1e9c60a4fbb4ddcbe147a282e4a77e3c1323b18299a8ac63a64443abfbf23c7e",
+      "request_identity": "doi:10.1002/acm2.70385",
+      "retrieved_at_utc": "2026-07-13T08:38:03.430621Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0739/europe_pmc_pmid__9d7745f8a8665b2a__20260713T083804448498Z.json",
+      "raw_sha256": "ab021b39cbd7a88aab98a328ffe11619e3ba8b6be0b9125779133fb8fb958f47",
+      "request_identity": "pmid:41306077",
+      "retrieved_at_utc": "2026-07-13T08:38:04.448498Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

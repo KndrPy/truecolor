@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fmed.2025.1581601",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40370729",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fmed.2025.1581601",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Gökhan Kaya",
+      "Kübra Ataman",
+      "Sevgi Güleşçi",
+      "Ayşegül Yabaci Tak"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kaya G",
+      "Ataman K",
+      "Güleşçi S",
+      "Yabaci Tak A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 961,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Gökhan Kaya",
+      "Kübra Ataman",
+      "Sevgi Güleşçi",
+      "Ayşegül Yabaci Tak"
+    ],
+    "doi": "10.3389/fmed.2025.1581601",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Correlation of dermoscopic and histopathological features in basal cell carcinoma using computerized image analysis",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fmed.2025.1581601",
+    "venue": "Frontiers in Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0961/crossref_doi__aee8e84593166aa3__20260713T084506172659Z.json",
+      "raw_sha256": "3f0400986a76df7437550d543d6eec2466a664eda0db41c41c0b3b0255657a42",
+      "request_identity": "doi:10.3389/fmed.2025.1581601",
+      "retrieved_at_utc": "2026-07-13T08:45:06.172659Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0961/europe_pmc_pmid__6265a973f40c1043__20260713T084507156348Z.json",
+      "raw_sha256": "4ecef06811052141b64b0ac0192d1e284f6c921844e8eca468ffb8a29691b26e",
+      "request_identity": "pmid:40370729",
+      "retrieved_at_utc": "2026-07-13T08:45:07.156348Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

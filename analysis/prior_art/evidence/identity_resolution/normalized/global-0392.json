@@ -1,0 +1,122 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/pharmaceutics17111390",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41304728",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/pharmaceutics17111390",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Luigi Ciriolo",
+      "Nicola d’Avanzo",
+      "Antonia Mancuso",
+      "Maria Chiara Cristiano",
+      "Antonella Barone",
+      "Rosario Mare",
+      "Anna Maria Tolomeo",
+      "Alexandra I. Comaniciu",
+      "Georgiana Nitulescu",
+      "Octavian Tudorel Olaru",
+      "Felisa Cilurzo",
+      "Donatella Paolino",
+      "Massimo Fresta"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Pharmaceutics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Ciriolo L",
+      "d'Avanzo N",
+      "Mancuso A",
+      "Cristiano MC",
+      "Barone A",
+      "Mare R",
+      "Tolomeo AM",
+      "Comaniciu AI",
+      "Nitulescu G",
+      "Olaru OT",
+      "Cilurzo F",
+      "Paolino D",
+      "Fresta M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 0.923077,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 392,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Luigi Ciriolo",
+      "Nicola d’Avanzo",
+      "Antonia Mancuso",
+      "Maria Chiara Cristiano",
+      "Antonella Barone",
+      "Rosario Mare",
+      "Anna Maria Tolomeo",
+      "Alexandra I. Comaniciu",
+      "Georgiana Nitulescu",
+      "Octavian Tudorel Olaru",
+      "Felisa Cilurzo",
+      "Donatella Paolino",
+      "Massimo Fresta"
+    ],
+    "doi": "10.3390/pharmaceutics17111390",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Microfluidic Design of Ultradeformable Liposomes for Advanced Skin Delivery of Stellaria media Phytocomplex",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/pharmaceutics17111390",
+    "venue": "Pharmaceutics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0392/crossref_doi__c3737646c0ae684b__20260713T083045896964Z.json",
+      "raw_sha256": "9f4a47da550cf260f49dfa8deb4a0b942889a3af29567dbc2c1cb272dcba2923",
+      "request_identity": "doi:10.3390/pharmaceutics17111390",
+      "retrieved_at_utc": "2026-07-13T08:30:45.896964Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0392/europe_pmc_pmid__56bd75c5b3c067e5__20260713T083046878691Z.json",
+      "raw_sha256": "9be2adc02ae83ec251a5f7048ff44a3696abad01d48a501709e79d748ee89093",
+      "request_identity": "pmid:41304728",
+      "retrieved_at_utc": "2026-07-13T08:30:46.878691Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

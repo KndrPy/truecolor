@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.17816/dv611037-4185965",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2026,2,27]],\"date-time\":\"2026-02-27T23:10:34Z\",\"timestamp\":1772233834667,\"version\":\"3.50.1\"},\"reference-count\":0,\"publisher\":\"ECO-Vector LLC (Publications)\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.17816\\/dv611037-4185965\",\"type\":\"component\",\"created\":{\"date-parts\":[[2023,12,12]],\"date-time\":\"2023-12-12T09:11:56Z\",\"timestamp\":1702372316000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Fig. 2. Surface and deep analysis of the skin using 8-spectral imaging.\"],\"prefix\":\"10.17816\",\"member\":\"55386\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2023,12,12]],\"date-time\":\"2023-12-12T09:21:14Z\",\"timestamp\":1702372874000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/rjsvd.com\\/1560-9588\\/article\\/downloadSuppFile\\/611037\\/4185965\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.17816\\/dv611037-4185965\",\"relation\":{\"is-component-of\":[{\"id-type\":\"doi\",\"id\":\"10.17816\\/dv611037\",\"asserted-by\":\"object\"}]},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:48:15.141225Z",
+  "source": "crossref_doi"
+}

@@ -1,0 +1,165 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.31.1.010901",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41404334",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.31.1.010901",
+  "conflicts": [
+    {
+      "comparison": {
+        "author_overlap": 1.0,
+        "doi_match": true,
+        "pmid_match": null,
+        "title_similarity": 1.0,
+        "year_match": false
+      },
+      "crossref_doi": {
+        "arxiv": null,
+        "authors": [
+          "Robert H. Wilson",
+          "Gordon T. Kennedy",
+          "Christopher A. Campbell",
+          "Thinh Phan",
+          "Alex Hao Lin",
+          "Benjamin Levi",
+          "Anthony J. Durkin"
+        ],
+        "doi": "10.1117/1.jbo.31.1.010901",
+        "pmcid": null,
+        "pmid": null,
+        "publication_status": "PUBLISHED",
+        "publication_type": "journal-article",
+        "relation": {},
+        "title": "Short-wave infrared (SWIR) spectroscopy and imaging of biological tissues: a decade of advancements (2016-2025)",
+        "update_to": [],
+        "url": "https://doi.org/10.1117/1.jbo.31.1.010901",
+        "venue": "Journal of Biomedical Optics",
+        "year": 2025
+      },
+      "europe_pmc_pmid": {
+        "arxiv": null,
+        "authors": [
+          "Robert H Wilson",
+          "Gordon T Kennedy",
+          "Christopher A Campbell",
+          "Thinh Phan",
+          "Alex Hao Lin",
+          "Benjamin Levi",
+          "Anthony J Durkin"
+        ],
+        "doi": "10.1117/1.jbo.31.1.010901",
+        "is_retracted": false,
+        "pmcid": "PMC12703630",
+        "pmid": "41404334",
+        "publication_status": "PUBLISHED",
+        "publication_type": null,
+        "title": "Short-wave infrared (SWIR) spectroscopy and imaging of biological tissues: a decade of advancements (2016-2025).",
+        "url": "https://europepmc.org/article/MED/41404334",
+        "venue": null,
+        "year": 2026
+      },
+      "field": "authoritative_source_agreement"
+    },
+    {
+      "authoritative": 2025,
+      "field": "year",
+      "harvested": 2026
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": false
+    },
+    "canonical_authors": [
+      "Robert H. Wilson",
+      "Gordon T. Kennedy",
+      "Christopher A. Campbell",
+      "Thinh Phan",
+      "Alex Hao Lin",
+      "Benjamin Levi",
+      "Anthony J. Durkin"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Wilson RH",
+      "Kennedy GT",
+      "Campbell CA",
+      "Phan T",
+      "Lin AH",
+      "Levi B",
+      "Durkin AJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 771,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Robert H. Wilson",
+      "Gordon T. Kennedy",
+      "Christopher A. Campbell",
+      "Thinh Phan",
+      "Alex Hao Lin",
+      "Benjamin Levi",
+      "Anthony J. Durkin"
+    ],
+    "doi": "10.1117/1.jbo.31.1.010901",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Short-wave infrared (SWIR) spectroscopy and imaging of biological tissues: a decade of advancements (2016-2025)",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.31.1.010901",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "DOI and PMID authoritative records disagree on publication identity.",
+  "resolution_state": "CONFLICT",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0771/crossref_doi__caf58633ae647db2__20260713T083900575193Z.json",
+      "raw_sha256": "e498ab2c7b7e72c0813425df5c28ca078f1e4290d54183bebdadfaed973f6ba0",
+      "request_identity": "doi:10.1117/1.jbo.31.1.010901",
+      "retrieved_at_utc": "2026-07-13T08:39:00.575193Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0771/europe_pmc_pmid__a1ab8270508e81df__20260713T083901724915Z.json",
+      "raw_sha256": "db2cafd1792cee1a53a59dcb13e12d061df462144f498872f1dbe572a7f9a961",
+      "request_identity": "pmid:41404334",
+      "retrieved_at_utc": "2026-07-13T08:39:01.724915Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

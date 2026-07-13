@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/oic.2004.wb1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/oic.2004.wb1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Maria Nadal"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Optical Interference Coatings",
+    "canonical_year": 2004,
+    "doi_match": true,
+    "harvested_authors": [
+      "Maria Nadal"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Optical Interference Coatings",
+    "harvested_year": 2004,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 445,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Maria Nadal"
+    ],
+    "doi": "10.1364/oic.2004.wb1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Uncertainties in spectral reflectance caused by the measuring instrument",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/oic.2004.wb1",
+    "venue": "Optical Interference Coatings",
+    "year": 2004
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0445/crossref_doi__c3a8533cee0550c5__20260713T083137081560Z.json",
+      "raw_sha256": "f15c89faba5e9d715ef7fc856b451ce0fa55d66fbd9d084898ae3e1100367969",
+      "request_identity": "doi:10.1364/oic.2004.wb1",
+      "retrieved_at_utc": "2026-07-13T08:31:37.081560Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

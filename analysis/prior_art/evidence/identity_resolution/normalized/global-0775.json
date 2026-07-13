@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/molecules31101774",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42197327",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/molecules31101774",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Asma Kisalaei",
+      "Vali Rasooli Sharabiani",
+      "Ahmad Banakar",
+      "Ebrahim Taghinezhad",
+      "Mariusz Szymanek",
+      "Agata Dziwulska-Hunek"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Molecules",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Kisalaei A",
+      "Sharabiani VR",
+      "Banakar A",
+      "Taghinezhad E",
+      "Szymanek M",
+      "Dziwulska-Hunek A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 775,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Asma Kisalaei",
+      "Vali Rasooli Sharabiani",
+      "Ahmad Banakar",
+      "Ebrahim Taghinezhad",
+      "Mariusz Szymanek",
+      "Agata Dziwulska-Hunek"
+    ],
+    "doi": "10.3390/molecules31101774",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Machine Learning and the Use of Spectroscopy for Adulteration Detection in Turmeric Powder",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/molecules31101774",
+    "venue": "Molecules",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0775/crossref_doi__a6e0d5986febb0be__20260713T083907660250Z.json",
+      "raw_sha256": "e105751cf72cd6b8c53233345bc60dc674b98fdd853d3e9b757f745ca3332002",
+      "request_identity": "doi:10.3390/molecules31101774",
+      "retrieved_at_utc": "2026-07-13T08:39:07.660250Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0775/europe_pmc_pmid__973990ea2b23ae75__20260713T083908681317Z.json",
+      "raw_sha256": "2ce80805ef8ee9d54c194f38be838e193e10bbea4d8bfdb96c3f61af124b9392",
+      "request_identity": "pmid:42197327",
+      "retrieved_at_utc": "2026-07-13T08:39:08.681317Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/bioengineering12101036",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41155035",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/bioengineering12101036",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Abderrachid Hamrani",
+      "Anuradha Godavarty"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Bioengineering",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hamrani A",
+      "Godavarty A."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 968,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Abderrachid Hamrani",
+      "Anuradha Godavarty"
+    ],
+    "doi": "10.3390/bioengineering12101036",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Self-Attention Diffusion Models for Zero-Shot Biomedical Image Segmentation: Unlocking New Frontiers in Medical Imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bioengineering12101036",
+    "venue": "Bioengineering",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0968/crossref_doi__f349d604cb04df5d__20260713T084518346889Z.json",
+      "raw_sha256": "dd1accf89584e48977d35dc7ade666a6cfcdd3e207f38908524280bdb93ee68d",
+      "request_identity": "doi:10.3390/bioengineering12101036",
+      "retrieved_at_utc": "2026-07-13T08:45:18.346889Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0968/europe_pmc_pmid__bc2f89998da1ed5c__20260713T084519310820Z.json",
+      "raw_sha256": "7dbbb25aca04c874f30ea086f569f604511a35f05bee0c2c9102eed6cd490a22",
+      "request_identity": "pmid:41155035",
+      "retrieved_at_utc": "2026-07-13T08:45:19.310820Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

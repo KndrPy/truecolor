@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.31.1.016005",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41567367",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.31.1.016005",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Thinh Phan",
+      "Christopher A. Campbell",
+      "Gordon T. Kennedy",
+      "Nicole Wakida",
+      "Nataliya Makeeva",
+      "Gabriela Tabone",
+      "Theresa L. Chin",
+      "Victor C. Joe",
+      "Bernard Choi",
+      "Anthony J. Durkin"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Phan T",
+      "Campbell CA",
+      "Kennedy GT",
+      "Wakida N",
+      "Makeeva N",
+      "Tabone G",
+      "Chin TL",
+      "Joe VC",
+      "Choi B",
+      "Durkin AJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 845,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Thinh Phan",
+      "Christopher A. Campbell",
+      "Gordon T. Kennedy",
+      "Nicole Wakida",
+      "Nataliya Makeeva",
+      "Gabriela Tabone",
+      "Theresa L. Chin",
+      "Victor C. Joe",
+      "Bernard Choi",
+      "Anthony J. Durkin"
+    ],
+    "doi": "10.1117/1.jbo.31.1.016005",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Two-step regression analysis approach to assess burn wound severity using spatial frequency domain imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.31.1.016005",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0845/crossref_doi__a473a19eeee8a603__20260713T084122036351Z.json",
+      "raw_sha256": "9e1b375a77185d1a4fae568f866166cc0276a15967c5d175ed44f00c19b47dd4",
+      "request_identity": "doi:10.1117/1.jbo.31.1.016005",
+      "retrieved_at_utc": "2026-07-13T08:41:22.036351Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0845/europe_pmc_pmid__423216239eb28db7__20260713T084123153910Z.json",
+      "raw_sha256": "0200647b54ffcee7e5cbe6525b10644901cc58ad48b813a3988e685ae9585543",
+      "request_identity": "pmid:41567367",
+      "retrieved_at_utc": "2026-07-13T08:41:23.153910Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

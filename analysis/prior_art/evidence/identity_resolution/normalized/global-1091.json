@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3724/sp.j.1146.2010.00691",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3724/sp.j.1146.2010.00691",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Lei Li",
+      "Li-xiang Ren",
+      "Yun-xia Bao",
+      "Pei-kun He"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Electronics & Information Technology",
+    "canonical_year": 2011,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lei Li",
+      "Li-xiang Ren",
+      "Yun-xia Bao",
+      "Pei-kun He"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Electronics &amp; Information Technology",
+    "harvested_year": 2011,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1091,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Lei Li",
+      "Li-xiang Ren",
+      "Yun-xia Bao",
+      "Pei-kun He"
+    ],
+    "doi": "10.3724/sp.j.1146.2010.00691",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "On the Cramer-Rao Bound of Parameter Estimation for Wideband Stepped Frequency Signal",
+    "update_to": [],
+    "url": "https://doi.org/10.3724/sp.j.1146.2010.00691",
+    "venue": "Journal of Electronics & Information Technology",
+    "year": 2011
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1091/crossref_doi__edff69735758af39__20260713T084733563841Z.json",
+      "raw_sha256": "3d2e33a8d47c896ad730a4dd440029960c7c84a867a031efbde63239daa7a5ae",
+      "request_identity": "doi:10.3724/sp.j.1146.2010.00691",
+      "retrieved_at_utc": "2026-07-13T08:47:33.563841Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

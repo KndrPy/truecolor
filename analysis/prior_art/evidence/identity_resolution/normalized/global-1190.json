@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s13244-015-0386-0",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "25708993",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s13244-015-0386-0",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "authoritative_source_agreement": {
+      "author_overlap": null,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Insights into Imaging",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1190,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1007/s13244-015-0386-0",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "ECR 2015 Book of Abstracts - A - Postgraduate Educational Programme",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s13244-015-0386-0",
+    "venue": "Insights into Imaging",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1190/crossref_doi__17cb58be7872eedb__20260713T084848409847Z.json",
+      "raw_sha256": "2d363b5b7fc767b37d3af37d51c3a66f7c6668cf32d2ebcf104ac3c07a08a5ea",
+      "request_identity": "doi:10.1007/s13244-015-0386-0",
+      "retrieved_at_utc": "2026-07-13T08:48:48.409847Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1190/europe_pmc_pmid__e76ef9555c590c67__20260713T084849500627Z.json",
+      "raw_sha256": "d60cf543e9d0e942a7e64735d8cfe62609c49ddc04c88c06f0fb774a84427e2d",
+      "request_identity": "pmid:25708993",
+      "retrieved_at_utc": "2026-07-13T08:48:49.500627Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

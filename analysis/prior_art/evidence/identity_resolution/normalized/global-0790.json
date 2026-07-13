@@ -1,0 +1,119 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/advs.202524369",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41774065",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/advs.202524369",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Martina Corsi",
+      "Tiziano Di Giulio",
+      "Eleonora Vandini",
+      "Muhammad Ibrar Asif",
+      "Eleonora Daini",
+      "Antonietta Vilella",
+      "Giuseppina Leo",
+      "Alessandra Ottani",
+      "Cosimino Malitesta",
+      "Daniela Giuliani",
+      "Elisabetta Mazzotta",
+      "Giuseppe Barillaro"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advanced Science",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Corsi M",
+      "Giulio TD",
+      "Vandini E",
+      "Asif MI",
+      "Daini E",
+      "Vilella A",
+      "Leo G",
+      "Ottani A",
+      "Malitesta C",
+      "Giuliani D",
+      "Mazzotta E",
+      "Barillaro G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 790,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Martina Corsi",
+      "Tiziano Di Giulio",
+      "Eleonora Vandini",
+      "Muhammad Ibrar Asif",
+      "Eleonora Daini",
+      "Antonietta Vilella",
+      "Giuseppina Leo",
+      "Alessandra Ottani",
+      "Cosimino Malitesta",
+      "Daniela Giuliani",
+      "Elisabetta Mazzotta",
+      "Giuseppe Barillaro"
+    ],
+    "doi": "10.1002/advs.202524369",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multiparametric Bioresorbable Sensor for Doxorubicin Detection via Molecularly Imprinted Synthetic Receptors",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/advs.202524369",
+    "venue": "Advanced Science",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0790/crossref_doi__f54321922ee9fb32__20260713T083933314168Z.json",
+      "raw_sha256": "adc441f08e9247ae6ce3c5c21959bb5a760f6753c7bba7b851e9900b3cc98885",
+      "request_identity": "doi:10.1002/advs.202524369",
+      "retrieved_at_utc": "2026-07-13T08:39:33.314168Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0790/europe_pmc_pmid__fb7f4d36767aa4a9__20260713T083934712020Z.json",
+      "raw_sha256": "75cf53c39c36491c3d9180fa32d354d4a7c59548fc7dff4408de09e91052e6e7",
+      "request_identity": "pmid:41774065",
+      "retrieved_at_utc": "2026-07-13T08:39:34.712020Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

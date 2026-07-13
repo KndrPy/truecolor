@@ -1,0 +1,122 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/diagnostics16030438",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41681754",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/diagnostics16030438",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Lidiya V. Boldyreva",
+      "Denis S. Kharenko",
+      "Kirill V. Serebrennikov",
+      "Anna A. Evtushenko",
+      "Viktor V. Shloma",
+      "Daba A. Radnatarov",
+      "Alexandr V. Dostovalov",
+      "Zhibzema E. Munkueva",
+      "Oleg S. Sidelnikov",
+      "Igor S. Chekhovskoy",
+      "Kirill S. Raspopin",
+      "Mikhail D. Gervaziev",
+      "Stefan Wabnitz"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Boldyreva LV",
+      "Kharenko DS",
+      "Serebrennikov KV",
+      "Evtushenko AA",
+      "Shloma VV",
+      "Radnatarov DA",
+      "Dostovalov AV",
+      "Munkueva ZE",
+      "Sidelnikov OS",
+      "Chekhovskoy IS",
+      "Raspopin KS",
+      "Gervaziev MD",
+      "Wabnitz S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 896,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Lidiya V. Boldyreva",
+      "Denis S. Kharenko",
+      "Kirill V. Serebrennikov",
+      "Anna A. Evtushenko",
+      "Viktor V. Shloma",
+      "Daba A. Radnatarov",
+      "Alexandr V. Dostovalov",
+      "Zhibzema E. Munkueva",
+      "Oleg S. Sidelnikov",
+      "Igor S. Chekhovskoy",
+      "Kirill S. Raspopin",
+      "Mikhail D. Gervaziev",
+      "Stefan Wabnitz"
+    ],
+    "doi": "10.3390/diagnostics16030438",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Challenges and Prospects of Using Novel Nonlinear Effects in Multimode Optical Fibers for Multiphoton Endomicroscopy",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics16030438",
+    "venue": "Diagnostics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0896/crossref_doi__e843e1a1837f8f81__20260713T084301308130Z.json",
+      "raw_sha256": "88725648754df01d65975386605cbe97b631189e37b17e8efdee424c9782924a",
+      "request_identity": "doi:10.3390/diagnostics16030438",
+      "retrieved_at_utc": "2026-07-13T08:43:01.308130Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0896/europe_pmc_pmid__cb6d7eaeb05560a9__20260713T084302313229Z.json",
+      "raw_sha256": "2db3b30bf8608b9cc2af1052440618e888e091795f7df55727b5271e558f0196",
+      "request_identity": "pmid:41681754",
+      "retrieved_at_utc": "2026-07-13T08:43:02.313229Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s11307-022-01794-2",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "36648635",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s11307-022-01794-2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "authoritative_source_agreement": {
+      "author_overlap": null,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Molecular Imaging and Biology",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1041,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1007/s11307-022-01794-2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "World Molecular Imaging Congress 2022",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s11307-022-01794-2",
+    "venue": "Molecular Imaging and Biology",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1041/crossref_doi__68aa5c44c2033de9__20260713T084644999882Z.json",
+      "raw_sha256": "c9d8f8c7ae89af275052a936a4a95398fa6f5d53d9e07d311d5fc9aa6489cb6c",
+      "request_identity": "doi:10.1007/s11307-022-01794-2",
+      "retrieved_at_utc": "2026-07-13T08:46:44.999882Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1041/europe_pmc_pmid__2b40469905ddca0a__20260713T084646063194Z.json",
+      "raw_sha256": "93a70b42867eb9b345bea64246a28fbdf56ccd15b976c1b20127f7095e446a70",
+      "request_identity": "pmid:36648635",
+      "retrieved_at_utc": "2026-07-13T08:46:46.063194Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

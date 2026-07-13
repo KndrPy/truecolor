@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pone.0332849",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41086198",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pone.0332849",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Huanyu Yang",
+      "Junzhu Zhang",
+      "Yan Ma"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS One",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yang H",
+      "Zhang J",
+      "Ma Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 385,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Huanyu Yang",
+      "Junzhu Zhang",
+      "Yan Ma"
+    ],
+    "doi": "10.1371/journal.pone.0332849",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A novel skin pigment separation method based on sub-block selection and local clustering",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pone.0332849",
+    "venue": "PLOS One",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0385/crossref_doi__4fc8939b93900dfd__20260713T083033779272Z.json",
+      "raw_sha256": "b3d722cb0eb725eb63dce5cd6f7ff72886caf77daebf25bd068ee50021e3b299",
+      "request_identity": "doi:10.1371/journal.pone.0332849",
+      "retrieved_at_utc": "2026-07-13T08:30:33.779272Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0385/europe_pmc_pmid__524418bb86aa3a01__20260713T083034759720Z.json",
+      "raw_sha256": "ff6f6cfa9424ce590da39390f3a43cb3260603583be490d9ccc8cfa9f3db51f5",
+      "request_identity": "pmid:41086198",
+      "retrieved_at_utc": "2026-07-13T08:30:34.759720Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

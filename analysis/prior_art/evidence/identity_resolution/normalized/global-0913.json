@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/molecules31081318",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42075995",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/molecules31081318",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kang Li",
+      "Chunqi Song",
+      "Xin Tan",
+      "Yang Zhang",
+      "Hao Zang",
+      "Xingzun Zhu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Molecules",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Li K",
+      "Song C",
+      "Tan X",
+      "Zhang Y",
+      "Zang H",
+      "Zhu X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 0.941176,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 913,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kang Li",
+      "Chunqi Song",
+      "Xin Tan",
+      "Yang Zhang",
+      "Hao Zang",
+      "Xingzun Zhu"
+    ],
+    "doi": "10.3390/molecules31081318",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "An Updated and Comprehensive Review of Phellodendri amurensis Cortex: Ethnobotany, Geographical Distribution, Phytochemistry, Quality Control, and Pharmacology",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/molecules31081318",
+    "venue": "Molecules",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0913/crossref_doi__3e47669d9dccede4__20260713T084334857192Z.json",
+      "raw_sha256": "e01d91cdfb40a417acdee3870680e44d69a277d0056695dfa9f088039ec6210e",
+      "request_identity": "doi:10.3390/molecules31081318",
+      "retrieved_at_utc": "2026-07-13T08:43:34.857192Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0913/europe_pmc_pmid__80e8e225fb02a86d__20260713T084335833195Z.json",
+      "raw_sha256": "7ba0e8713723c23ee02f287743b800d4cdeafdc293945f2efd0473a1cdb28cfc",
+      "request_identity": "pmid:42075995",
+      "retrieved_at_utc": "2026-07-13T08:43:35.833195Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

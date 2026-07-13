@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/pde.15902",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40051289",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/pde.15902",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Megha Sharma",
+      "Abigail Jo Pickhardt",
+      "Madison McClanahan",
+      "Lauren Tong",
+      "Megan S. Evans"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Pediatric Dermatology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sharma M",
+      "Pickhardt AJ",
+      "McClanahan M",
+      "Tong L",
+      "Evans MS."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 304,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Megha Sharma",
+      "Abigail Jo Pickhardt",
+      "Madison McClanahan",
+      "Lauren Tong",
+      "Megan S. Evans"
+    ],
+    "doi": "10.1111/pde.15902",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Objective Assessment and Quantification of Skin Color and Melanin in Neonates and Infants: A State‐Of‐The‐Art Review",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/pde.15902",
+    "venue": "Pediatric Dermatology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0304/crossref_doi__57f58ac0fe4167e3__20260713T082821510032Z.json",
+      "raw_sha256": "19414e5249e2b954158754d7c8f23cf5ead8fed9d0a9f188a32113c6600cb8fc",
+      "request_identity": "doi:10.1111/pde.15902",
+      "retrieved_at_utc": "2026-07-13T08:28:21.510032Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0304/europe_pmc_pmid__5758f7c1f67bf342__20260713T082822555928Z.json",
+      "raw_sha256": "4c6a482bc374aa6b5a44f0b7d3e743cf9adcf65914b73b4a5381448554137f69",
+      "request_identity": "pmid:40051289",
+      "retrieved_at_utc": "2026-07-13T08:28:22.555928Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

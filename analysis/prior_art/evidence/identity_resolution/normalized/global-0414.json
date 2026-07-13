@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/tip.2022.3169687",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/tip.2022.3169687",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Yeejin Lee",
+      "Keigo Hirakawa"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Transactions on Image Processing",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yeejin Lee",
+      "Keigo Hirakawa"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "IEEE Transactions on Image Processing",
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 414,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yeejin Lee",
+      "Keigo Hirakawa"
+    ],
+    "doi": "10.1109/tip.2022.3169687",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Lossless White Balance for Improved Lossless CFA Image and Video Compression",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/tip.2022.3169687",
+    "venue": "IEEE Transactions on Image Processing",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0414/crossref_doi__59180c2db18fcddc__20260713T083114913012Z.json",
+      "raw_sha256": "355b7b36111f74a6c9b0ac9e515ee49be8d628621d114e1243e12073d8a94bb7",
+      "request_identity": "doi:10.1109/tip.2022.3169687",
+      "retrieved_at_utc": "2026-07-13T08:31:14.913012Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

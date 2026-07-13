@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/1.jbo.30.3.036006",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40129968",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/1.jbo.30.3.036006",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Rokeya Khatun",
+      "Kaisei Okura",
+      "Md. Anowar Parvez",
+      "Kazuhiro Yashiro",
+      "Yuki Nagahama",
+      "Yasuyuki Tsunoi",
+      "Satoko Kawauchi",
+      "Daizoh Saitoh",
+      "Shunichi Sato",
+      "Izumi Nishidate"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Khatun R",
+      "Okura K",
+      "Parvez MA",
+      "Yashiro K",
+      "Nagahama Y",
+      "Tsunoi Y",
+      "Kawauchi S",
+      "Saitoh D",
+      "Sato S",
+      "Nishidate I."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 0.947368,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 947,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rokeya Khatun",
+      "Kaisei Okura",
+      "Md. Anowar Parvez",
+      "Kazuhiro Yashiro",
+      "Yuki Nagahama",
+      "Yasuyuki Tsunoi",
+      "Satoko Kawauchi",
+      "Daizoh Saitoh",
+      "Shunichi Sato",
+      "Izumi Nishidate"
+    ],
+    "doi": "10.1117/1.jbo.30.3.036006",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "In vivo evaluation of burn severity in skin tissue of rats using hemoglobin parameters estimated by red–green–blue imaging",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/1.jbo.30.3.036006",
+    "venue": "Journal of Biomedical Optics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0947/crossref_doi__21a069d1fb41f278__20260713T084439222984Z.json",
+      "raw_sha256": "398352f4609fbbd95483ae6ae4fc11c7be68cfbcec73c2a3fcbd8d697b17376f",
+      "request_identity": "doi:10.1117/1.jbo.30.3.036006",
+      "retrieved_at_utc": "2026-07-13T08:44:39.222984Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0947/europe_pmc_pmid__e603827416346bb9__20260713T084440230264Z.json",
+      "raw_sha256": "d6f3d3b9e81cf4fc2ea98aa0c45e905db27bd565514c67fd3c4f5266e1b4f209",
+      "request_identity": "pmid:40129968",
+      "retrieved_at_utc": "2026-07-13T08:44:40.230264Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

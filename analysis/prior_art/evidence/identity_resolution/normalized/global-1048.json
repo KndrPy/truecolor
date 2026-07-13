@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.3045394",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.3045394",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Tinghao Zhang",
+      "Yinglong Wang",
+      "Dezheng Wang",
+      "Shuhao Liao",
+      "Ming Yang",
+      "Xinxin Zhang"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "The International Conference Optoelectronic Information and Optical Engineering (OIOE2024)",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Tinghao Zhang",
+      "Yinglong Wang",
+      "Dezheng Wang",
+      "Shuhao Liao",
+      "Ming Yang",
+      "Xinxin Zhang"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "The International Conference Optoelectronic Information and Optical Engineering (OIOE2024)",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1048,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Tinghao Zhang",
+      "Yinglong Wang",
+      "Dezheng Wang",
+      "Shuhao Liao",
+      "Ming Yang",
+      "Xinxin Zhang"
+    ],
+    "doi": "10.1117/12.3045394",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Classification of skin cancer from dermatological image by multimodal method",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.3045394",
+    "venue": "The International Conference Optoelectronic Information and Optical Engineering (OIOE2024)",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1048/crossref_doi__65f7f853a6f3d52c__20260713T084651164799Z.json",
+      "raw_sha256": "a9ebec1c3aaa9c54c8611a40d68e1f8af903d0556dfeb5463bb87db0c2156c7c",
+      "request_identity": "doi:10.1117/12.3045394",
+      "retrieved_at_utc": "2026-07-13T08:46:51.164799Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

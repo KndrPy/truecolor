@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/polym18020274",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41599569",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/polym18020274",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ömer Faruk Uslu",
+      "David Krieg",
+      "Benedikt Theodor Hiller",
+      "Özge Taştan Ülkü",
+      "Nebahat Aral"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Polymers",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Uslu ÖF",
+      "Krieg D",
+      "Hiller BT",
+      "Ülkü ÖT",
+      "Aral N."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 914,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ömer Faruk Uslu",
+      "David Krieg",
+      "Benedikt Theodor Hiller",
+      "Özge Taştan Ülkü",
+      "Nebahat Aral"
+    ],
+    "doi": "10.3390/polym18020274",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Processing and Characterization of Poly(lactic acid) (PLA) Films Containing Pomegranate Peel Powder",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/polym18020274",
+    "venue": "Polymers",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0914/crossref_doi__38e8eb55f5f00006__20260713T084336518114Z.json",
+      "raw_sha256": "af72108e1d713fc4d35e98a79fc7478dc3e8f2de91ee50461a67106fe751e085",
+      "request_identity": "doi:10.3390/polym18020274",
+      "retrieved_at_utc": "2026-07-13T08:43:36.518114Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0914/europe_pmc_pmid__18a86e9deb715694__20260713T084337510148Z.json",
+      "raw_sha256": "93f8c8fe0c738c949c4c3d087e8401cf7a0a9e0c2772287ca776d4f32c0afc04",
+      "request_identity": "pmid:41599569",
+      "retrieved_at_utc": "2026-07-13T08:43:37.510148Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

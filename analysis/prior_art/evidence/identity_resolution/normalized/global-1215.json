@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.26686/wgtn.17151719",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.26686/wgtn.17151719",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "~ Qurrat Ul Ain"
+    ],
+    "canonical_publication_type": "dissertation",
+    "canonical_venue": null,
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "~ Qurrat Ul Ain"
+    ],
+    "harvested_publication_type": "dissertation",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1215,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "~ Qurrat Ul Ain"
+    ],
+    "doi": "10.26686/wgtn.17151719",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dissertation",
+    "relation": {},
+    "title": "Genetic Programming based Feature Manipulation for Skin Cancer Image Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.26686/wgtn.17151719",
+    "venue": null,
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1215/crossref_doi__e4d509214ca03a2c__20260713T084908743697Z.json",
+      "raw_sha256": "e6e0c223649d7f6ea6954eaf14a41fdc6547a226e69ca18cbf0ec9876f506959",
+      "request_identity": "doi:10.26686/wgtn.17151719",
+      "retrieved_at_utc": "2026-07-13T08:49:08.743697Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

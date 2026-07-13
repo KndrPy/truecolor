@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "43rd annual meeting 13 17 february 1999 baltimore maryland february 16 1999 tuesday posters part 2",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:43rd annual meeting 13-17 february 1999 baltimore, maryland : february 16, 1999 tuesday posters, part 2|year:1999",
+  "conflicts": [
+    {
+      "authoritative": 1996,
+      "field": "year",
+      "harvested": 1999
+    },
+    {
+      "authoritative": "Fortieth Annual Meeting February 17-21, 1996 Baltimore Convention Center Baltimore, Maryland. Tuesday Symposia and Posters, Part I",
+      "field": "title",
+      "harvested": "43rd Annual Meeting 13-17 February 1999 Baltimore, Maryland : February 16, 1999 Tuesday Posters, Part 2",
+      "similarity": 0.409091
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biophysical Journal",
+    "canonical_year": 1996,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 1999,
+    "pmid_match": null,
+    "title_similarity": 0.409091,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 1284,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1016/s0006-3495(96)79665-0",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Fortieth Annual Meeting February 17-21, 1996 Baltimore Convention Center Baltimore, Maryland. Tuesday Symposia and Posters, Part I",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/s0006-3495(96)79665-0",
+    "venue": "Biophysical Journal",
+    "year": 1996
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1284/crossref_title__0015708373e1808a__20260713T085007796527Z.json",
+      "raw_sha256": "fcd7f5f14b93d8a713ac353aca10a1b62e78e8caedc23cad9b6acd62aca0dcaf",
+      "request_identity": "title:43rd annual meeting 13 17 february 1999 baltimore maryland february 16 1999 tuesday posters part 2|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:50:07.796527Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

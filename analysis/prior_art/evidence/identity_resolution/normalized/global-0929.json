@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.104932",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41960016",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.104932",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Virgilio Blandon",
+      "Krimhild Serrano",
+      "Ruby Poveda",
+      "Miguel Borge",
+      "Erick Correa"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Blandon V",
+      "Serrano K",
+      "Poveda R",
+      "Borge M",
+      "Correa E."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 929,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Virgilio Blandon",
+      "Krimhild Serrano",
+      "Ruby Poveda",
+      "Miguel Borge",
+      "Erick Correa"
+    ],
+    "doi": "10.7759/cureus.104932",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Refractory Seborrheic Dermatitis Treated With a 532-nm Q-Switched Potassium Titanyl Phosphate (KTP) Laser: A Case Report",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.104932",
+    "venue": "Cureus",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0929/crossref_doi__65ee322078c77468__20260713T084405099578Z.json",
+      "raw_sha256": "44dfa8e6de48dabad229d5a1f0f7ae1f547bb69202dc5a214cbf6595d0a977d1",
+      "request_identity": "doi:10.7759/cureus.104932",
+      "retrieved_at_utc": "2026-07-13T08:44:05.099578Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0929/europe_pmc_pmid__75748d6d37db942f__20260713T084406227586Z.json",
+      "raw_sha256": "c713351bc39a13bef232380a2dc7e96ae1b109963b423d1b07f290574e10f416",
+      "request_identity": "pmid:41960016",
+      "retrieved_at_utc": "2026-07-13T08:44:06.227586Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

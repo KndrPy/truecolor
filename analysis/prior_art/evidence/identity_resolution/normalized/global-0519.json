@@ -1,0 +1,113 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-024-57167-y",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38499709",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-024-57167-y",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Leonhard Schreiner",
+      "Michael Jordan",
+      "Sebastian Sieghartsleitner",
+      "Christoph Kapeller",
+      "Harald Pretl",
+      "Kyousuke Kamada",
+      "Priscella Asman",
+      "Nuri F. Ince",
+      "Kai J. Miller",
+      "Christoph Guger"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Schreiner L",
+      "Jordan M",
+      "Sieghartsleitner S",
+      "Kapeller C",
+      "Pretl H",
+      "Kamada K",
+      "Asman P",
+      "Ince NF",
+      "Miller KJ",
+      "Guger C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 519,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Leonhard Schreiner",
+      "Michael Jordan",
+      "Sebastian Sieghartsleitner",
+      "Christoph Kapeller",
+      "Harald Pretl",
+      "Kyousuke Kamada",
+      "Priscella Asman",
+      "Nuri F. Ince",
+      "Kai J. Miller",
+      "Christoph Guger"
+    ],
+    "doi": "10.1038/s41598-024-57167-y",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Mapping of the central sulcus using non-invasive ultra-high-density brain recordings",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-024-57167-y",
+    "venue": "Scientific Reports",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0519/crossref_doi__a2326f2d08a054a6__20260713T083306705924Z.json",
+      "raw_sha256": "902d29cc346963adf58b63108a2d16297a7d5487d2b623255437115e18b98f5e",
+      "request_identity": "doi:10.1038/s41598-024-57167-y",
+      "retrieved_at_utc": "2026-07-13T08:33:06.705924Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0519/europe_pmc_pmid__bbed84da912c3f8a__20260713T083307699898Z.json",
+      "raw_sha256": "d45c14aef1e050de21ea70926939bc0bd27e6ebf3e53e5bf4c5d866ecf815d26",
+      "request_identity": "pmid:38499709",
+      "retrieved_at_utc": "2026-07-13T08:33:07.699898Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

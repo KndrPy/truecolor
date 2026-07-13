@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.clindermatol.2004.03.008",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.clindermatol.2004.03.008",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Joseph A. Witkowski",
+      "Lawrence Charles Parish"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Clinics in Dermatology",
+    "canonical_year": 2004,
+    "doi_match": true,
+    "harvested_authors": [
+      "Joseph A. Witkowski",
+      "Lawrence Charles Parish"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Clinics in Dermatology",
+    "harvested_year": 2004,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 470,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Joseph A. Witkowski",
+      "Lawrence Charles Parish"
+    ],
+    "doi": "10.1016/j.clindermatol.2004.03.008",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "The assessment of acne: An evaluation of grading and lesion counting in the measurement of acne",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.clindermatol.2004.03.008",
+    "venue": "Clinics in Dermatology",
+    "year": 2004
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0470/crossref_doi__4b7b6d7edc95151b__20260713T083208324117Z.json",
+      "raw_sha256": "5db2e63c8ef41563fda01158c96c76bf5b6cf2b5e7df6ba96f5e133dfdd24133",
+      "request_identity": "doi:10.1016/j.clindermatol.2004.03.008",
+      "retrieved_at_utc": "2026-07-13T08:32:08.324117Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.21236/ada246666",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.21236/ada246666",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "A. O. Hero"
+    ],
+    "canonical_publication_type": "report",
+    "canonical_venue": null,
+    "canonical_year": 1992,
+    "doi_match": true,
+    "harvested_authors": [
+      "A. O. Hero"
+    ],
+    "harvested_publication_type": "report",
+    "harvested_venue": null,
+    "harvested_year": 1992,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1211,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "A. O. Hero"
+    ],
+    "doi": "10.21236/ada246666",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "report",
+    "relation": {},
+    "title": "A Cramer-Rao Type Lower Bound for Essentially Unbiased Parameter Estimation",
+    "update_to": [],
+    "url": "https://doi.org/10.21236/ada246666",
+    "venue": null,
+    "year": 1992
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1211/crossref_doi__86d473d52645c417__20260713T084906274036Z.json",
+      "raw_sha256": "65eb0cd5dd6be75917818c3c7f19cf8bab3827f4005a0d07cc33a5c93ca5d13b",
+      "request_identity": "doi:10.21236/ada246666",
+      "retrieved_at_utc": "2026-07-13T08:49:06.274036Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

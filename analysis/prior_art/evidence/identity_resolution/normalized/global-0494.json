@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/978-3-319-22485-5_10",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/978-3-319-22485-5_10",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "David Zhang",
+      "Zhenhua Guo",
+      "Yazhuo Gong"
+    ],
+    "canonical_publication_type": "book-chapter",
+    "canonical_venue": "Multispectral Biometrics",
+    "canonical_year": 2016,
+    "doi_match": true,
+    "harvested_authors": [
+      "David Zhang",
+      "Zhenhua Guo",
+      "Yazhuo Gong"
+    ],
+    "harvested_publication_type": "book-chapter",
+    "harvested_venue": "Multispectral Biometrics",
+    "harvested_year": 2016,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 494,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "David Zhang",
+      "Zhenhua Guo",
+      "Yazhuo Gong"
+    ],
+    "doi": "10.1007/978-3-319-22485-5_10",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "book-chapter",
+    "relation": {},
+    "title": "Multiple Band Selection of Multispectral Dorsal Hand",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/978-3-319-22485-5_10",
+    "venue": "Multispectral Biometrics",
+    "year": 2016
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0494/crossref_doi__a3b739698cfa2fd6__20260713T083232777007Z.json",
+      "raw_sha256": "c630cb999f3691fc399ba11092e60fca1e7fd032ed91cfdfca87f38ac215003e",
+      "request_identity": "doi:10.1007/978-3-319-22485-5_10",
+      "retrieved_at_utc": "2026-07-13T08:32:32.777007Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

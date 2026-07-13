@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41598-025-32758-5",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41422283",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41598-025-32758-5",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Iva Dolečková",
+      "Pavel Kušnierik",
+      "Vratislav Berka",
+      "Matěj Šimek",
+      "Ilona Matějková",
+      "Filip Prokopec",
+      "Petra Ovesná"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Reports",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Dolečková I",
+      "Kušnierik P",
+      "Berka V",
+      "Šimek M",
+      "Matějková I",
+      "Prokopec F",
+      "Ovesná P."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 745,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Iva Dolečková",
+      "Pavel Kušnierik",
+      "Vratislav Berka",
+      "Matěj Šimek",
+      "Ilona Matějková",
+      "Filip Prokopec",
+      "Petra Ovesná"
+    ],
+    "doi": "10.1038/s41598-025-32758-5",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Oral sodium hyaluronate improves skin hydration, barrier function and signs of aging: a randomized, double-blind, placebo-controlled trial in 150 healthy adults",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41598-025-32758-5",
+    "venue": "Scientific Reports",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0745/crossref_doi__83d20d924300cbbc__20260713T083813816342Z.json",
+      "raw_sha256": "155404c84749e0d21d6a63f898809881cb2c809296ae50ab23f75de54667718c",
+      "request_identity": "doi:10.1038/s41598-025-32758-5",
+      "retrieved_at_utc": "2026-07-13T08:38:13.816342Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0745/europe_pmc_pmid__799a70140a48bc15__20260713T083814907783Z.json",
+      "raw_sha256": "f0709ce784e3be685530b921d5c6a920ff538a9a36cec77a2ff4720bfaee2c5e",
+      "request_identity": "pmid:41422283",
+      "retrieved_at_utc": "2026-07-13T08:38:14.907783Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

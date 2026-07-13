@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/foods14122104",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40565713",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/foods14122104",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Francesca Blasi",
+      "Maria Rachele Ceccarini",
+      "Stefano Bistarelli",
+      "Francesco Galli",
+      "Lina Cossignani",
+      "Desirée Bartolini",
+      "Federica Ianni"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Foods",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Blasi F",
+      "Ceccarini MR",
+      "Bistarelli S",
+      "Galli F",
+      "Cossignani L",
+      "Bartolini D",
+      "Ianni F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 971,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Francesca Blasi",
+      "Maria Rachele Ceccarini",
+      "Stefano Bistarelli",
+      "Francesco Galli",
+      "Lina Cossignani",
+      "Desirée Bartolini",
+      "Federica Ianni"
+    ],
+    "doi": "10.3390/foods14122104",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Impact of Extra-Virgin Olive Oil Storage Conditions on Phenolic Content and Wound-Healing Properties",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/foods14122104",
+    "venue": "Foods",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0971/crossref_doi__6858b0122559f673__20260713T084523521033Z.json",
+      "raw_sha256": "a915d390e414b09d8a0a9fccdf08fbe79f36f6894c539280920f87550fffbdb9",
+      "request_identity": "doi:10.3390/foods14122104",
+      "retrieved_at_utc": "2026-07-13T08:45:23.521033Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0971/europe_pmc_pmid__556e4a542821fdb7__20260713T084524504368Z.json",
+      "raw_sha256": "db24be84fb8a7773fc7402c62a49ea312ceab4ac645da88f74d49bd65678cc97",
+      "request_identity": "pmid:40565713",
+      "retrieved_at_utc": "2026-07-13T08:45:24.504368Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

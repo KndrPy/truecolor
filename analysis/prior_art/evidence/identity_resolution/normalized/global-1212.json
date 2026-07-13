@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.62891/f69bee1b",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.62891/f69bee1b",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Sina Iman"
+    ],
+    "canonical_publication_type": "posted-content",
+    "canonical_venue": null,
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sina Iman"
+    ],
+    "harvested_publication_type": "posted-content",
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1212,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sina Iman"
+    ],
+    "doi": "10.62891/f69bee1b",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "posted-content",
+    "relation": {},
+    "title": "The Complexity Horizon of Quantum Branch-Access: Information-Theoretic Limits on Cross-Branch Retrieval in Everettian Quantum Mechanics",
+    "update_to": [],
+    "url": "https://doi.org/10.62891/f69bee1b",
+    "venue": null,
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1212/crossref_doi__da731e29f2c3f7fa__20260713T084906884569Z.json",
+      "raw_sha256": "72b6f197160b2febfc96c5c6ff6f62e82202a8f40e228427ea1b8ddbb4de5168",
+      "request_identity": "doi:10.62891/f69bee1b",
+      "retrieved_at_utc": "2026-07-13T08:49:06.884569Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

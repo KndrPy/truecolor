@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1136/bmjhci-2024-101363",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40659387",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1136/bmjhci-2024-101363",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sahar Abdulrahman",
+      "Markus Trengove"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "BMJ Health & Care Informatics",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Abdulrahman S",
+      "Trengove M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 950,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sahar Abdulrahman",
+      "Markus Trengove"
+    ],
+    "doi": "10.1136/bmjhci-2024-101363",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Mitigated deployment strategy for ethical AI in clinical settings",
+    "update_to": [],
+    "url": "https://doi.org/10.1136/bmjhci-2024-101363",
+    "venue": "BMJ Health & Care Informatics",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0950/crossref_doi__187489da05c85acd__20260713T084444356178Z.json",
+      "raw_sha256": "b1b10aa9dddeff465d2b2371ac04364c9152e8227da8878cc8522786ace4eaea",
+      "request_identity": "doi:10.1136/bmjhci-2024-101363",
+      "retrieved_at_utc": "2026-07-13T08:44:44.356178Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0950/europe_pmc_pmid__efa4aae4fc05fb1a__20260713T084445329873Z.json",
+      "raw_sha256": "b75c19b37a39a967e2d8745704e86c20d25685a908e1c53557e5296bf241a9c9",
+      "request_identity": "pmid:40659387",
+      "retrieved_at_utc": "2026-07-13T08:44:45.329873Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

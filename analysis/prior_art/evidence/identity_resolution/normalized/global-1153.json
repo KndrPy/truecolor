@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7554/elife.01104.003",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7554/elife.01104.003",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "component",
+    "canonical_venue": null,
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "component",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 1153,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.7554/elife.01104.003",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "component",
+    "relation": {},
+    "title": "Table 1. Total number of samples collected for each site and abdominal, skin (head and body), soil (with and without corpses)",
+    "update_to": [],
+    "url": "https://doi.org/10.7554/elife.01104.003",
+    "venue": null,
+    "year": 2013
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1153/crossref_doi__dcf907ecb32b2575__20260713T084818195633Z.json",
+      "raw_sha256": "7e60bfeaf7b5ac5fa7ca97785494781e584369dd64ba7014a2054afd86b272de",
+      "request_identity": "doi:10.7554/elife.01104.003",
+      "retrieved_at_utc": "2026-07-13T08:48:18.195633Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.109589",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42359211",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.109589",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Alison C Jimenez Ordoñez",
+      "Jesús R García",
+      "Diana V Díaz Enríquez",
+      "José L Barrera Ariza",
+      "Kenia G Fagiani Castillo",
+      "Julio C Flores Rodríguez"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jimenez Ordoñez AC",
+      "García JR",
+      "Díaz Enríquez DV",
+      "Barrera Ariza JL",
+      "Fagiani Castillo KG",
+      "Flores Rodríguez JC."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 376,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alison C Jimenez Ordoñez",
+      "Jesús R García",
+      "Diana V Díaz Enríquez",
+      "José L Barrera Ariza",
+      "Kenia G Fagiani Castillo",
+      "Julio C Flores Rodríguez"
+    ],
+    "doi": "10.7759/cureus.109589",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin Bioelectrical Impedance as a Diagnostic Tool in Dermatology: A Literature Review of Current and Emerging Applications",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.109589",
+    "venue": "Cureus",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0376/crossref_doi__6a9a2958d863fabd__20260713T083016068554Z.json",
+      "raw_sha256": "700989beeffb4876ad08d4dfb1e658fa98b903e93a7137aaed6e210b1e47600d",
+      "request_identity": "doi:10.7759/cureus.109589",
+      "retrieved_at_utc": "2026-07-13T08:30:16.068554Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0376/europe_pmc_pmid__9ca12633e28fe66a__20260713T083017034353Z.json",
+      "raw_sha256": "24da615bdf7874d96c6fde0ef1c7296ed0146e20a1129cad7492d2dda99ffbc8",
+      "request_identity": "pmid:42359211",
+      "retrieved_at_utc": "2026-07-13T08:30:17.034353Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

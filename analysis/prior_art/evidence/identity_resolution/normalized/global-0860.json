@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1371/journal.pone.0340161",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41642943",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1371/journal.pone.0340161",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Zhiyi Wu",
+      "Tianshu Wang",
+      "Zhongyuan Mao",
+      "Lizhi Huang",
+      "Jiyuan Chen",
+      "Xichen Yang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "PLOS One",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Wu Z",
+      "Wang T",
+      "Mao Z",
+      "Huang L",
+      "Chen J",
+      "Yang X."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 860,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Zhiyi Wu",
+      "Tianshu Wang",
+      "Zhongyuan Mao",
+      "Lizhi Huang",
+      "Jiyuan Chen",
+      "Xichen Yang"
+    ],
+    "doi": "10.1371/journal.pone.0340161",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A convenient method for the accurate identification of Citri Reticulatae Pericarpium using image and multi-stream",
+    "update_to": [],
+    "url": "https://doi.org/10.1371/journal.pone.0340161",
+    "venue": "PLOS One",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0860/crossref_doi__eedff7c1caaea2ae__20260713T084152347681Z.json",
+      "raw_sha256": "c2c401cfeff177c2d5c8335ad7260293c146dca7102ff7e04415090efc3671ba",
+      "request_identity": "doi:10.1371/journal.pone.0340161",
+      "retrieved_at_utc": "2026-07-13T08:41:52.347681Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0860/europe_pmc_pmid__a75f0d62a7431557__20260713T084153377816Z.json",
+      "raw_sha256": "1cddabc1321ed2d6ba57094050afb04042754e2db95ddfcf0cc19f2fdb022dc8",
+      "request_identity": "pmid:41642943",
+      "retrieved_at_utc": "2026-07-13T08:41:53.377816Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

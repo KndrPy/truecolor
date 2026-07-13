@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/access.2021.3110428",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/access.2021.3110428",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Huan Liu",
+      "Jun Chen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Access",
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Huan Liu",
+      "Jun Chen"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "IEEE Access",
+    "harvested_year": 2021,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 426,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Huan Liu",
+      "Jun Chen"
+    ],
+    "doi": "10.1109/access.2021.3110428",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Indirect Domain Shift for Single Image Dehazing",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/access.2021.3110428",
+    "venue": "IEEE Access",
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0426/crossref_doi__1f48d0e2f0199d2a__20260713T083122392917Z.json",
+      "raw_sha256": "c099ed5c17b7b366d51f5e7d84c9ac7579892db1253768f358d95166a3ec73a9",
+      "request_identity": "doi:10.1109/access.2021.3110428",
+      "retrieved_at_utc": "2026-07-13T08:31:22.392917Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

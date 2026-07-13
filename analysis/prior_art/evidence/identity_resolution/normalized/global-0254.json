@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s22166288",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s22166288",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Yu-Che Wen",
+      "Senfar Wen",
+      "Long Hsu",
+      "Sien Chi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yu-Che Wen",
+      "Senfar Wen",
+      "Long Hsu",
+      "Sien Chi"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Sensors",
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 254,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yu-Che Wen",
+      "Senfar Wen",
+      "Long Hsu",
+      "Sien Chi"
+    ],
+    "doi": "10.3390/s22166288",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Spectral Reflectance Recovery from the Quadcolor Camera Signals Using the Interpolation and Weighted Principal Component Analysis Methods",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s22166288",
+    "venue": "Sensors",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0254/crossref_doi__2a7c2b87fb41480c__20260713T082726057428Z.json",
+      "raw_sha256": "92cc58bfc0f240b3c5dce29c8acee327e1ca9c3b3113ff3c90f9f0c94eacfc6f",
+      "request_identity": "doi:10.3390/s22166288",
+      "retrieved_at_utc": "2026-07-13T08:27:26.057428Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1097/asw.0000000000000043",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37729162",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1097/asw.0000000000000043",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sharon Eve Sonenblum",
+      "Rahee Patel",
+      "Sarah Phrasavath",
+      "Sharon Xu",
+      "Barbara M. Bates-Jensen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Advances in Skin & Wound Care",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sonenblum SE",
+      "Patel R",
+      "Phrasavath S",
+      "Xu S",
+      "Bates-Jensen BM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 520,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sharon Eve Sonenblum",
+      "Rahee Patel",
+      "Sarah Phrasavath",
+      "Sharon Xu",
+      "Barbara M. Bates-Jensen"
+    ],
+    "doi": "10.1097/asw.0000000000000043",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Using Technology to Detect Erythema Across Skin Tones",
+    "update_to": [],
+    "url": "https://doi.org/10.1097/asw.0000000000000043",
+    "venue": "Advances in Skin & Wound Care",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0520/crossref_doi__24ed3658c7ba093b__20260713T083308390229Z.json",
+      "raw_sha256": "662c6670ec3db7b4ce9f3a0acf323b74aecacd48e6f5f336bf6f5ba07c5526cd",
+      "request_identity": "doi:10.1097/asw.0000000000000043",
+      "retrieved_at_utc": "2026-07-13T08:33:08.390229Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0520/europe_pmc_pmid__9084587e2beb217e__20260713T083309359418Z.json",
+      "raw_sha256": "0d99de0369476fa9a88a004d9e77edfb233dab6504ae657355c23c55f026f20d",
+      "request_identity": "pmid:37729162",
+      "retrieved_at_utc": "2026-07-13T08:33:09.359418Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

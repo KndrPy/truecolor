@@ -1,0 +1,110 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41746-026-02939-1",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42373874",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41746-026-02939-1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sang-Hoon Lee",
+      "Yu-Sung Chu",
+      "Yosep Chong",
+      "Seong Min Hong",
+      "Eung Ho Choi",
+      "Seung-Phil Hong",
+      "Taeyeong Kim",
+      "Sejung Yang",
+      "Minseob Eom"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Digital Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lee SH",
+      "Chu YS",
+      "Chong Y",
+      "Hong SM",
+      "Choi EH",
+      "Hong SP",
+      "Kim T",
+      "Yang S",
+      "Eom M."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 828,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sang-Hoon Lee",
+      "Yu-Sung Chu",
+      "Yosep Chong",
+      "Seong Min Hong",
+      "Eung Ho Choi",
+      "Seung-Phil Hong",
+      "Taeyeong Kim",
+      "Sejung Yang",
+      "Minseob Eom"
+    ],
+    "doi": "10.1038/s41746-026-02939-1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Translation of frozen sections into FFPE images for skin cancer resection margins using generative AI",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41746-026-02939-1",
+    "venue": "npj Digital Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0828/crossref_doi__5f48e3ed82651ddc__20260713T084045833866Z.json",
+      "raw_sha256": "75f9d10958a0920812022cf1d3e6b8d69c5fde0525dc3d60d4d1ce30b3ddb555",
+      "request_identity": "doi:10.1038/s41746-026-02939-1",
+      "retrieved_at_utc": "2026-07-13T08:40:45.833866Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0828/europe_pmc_pmid__c74afab6468cad13__20260713T084046797189Z.json",
+      "raw_sha256": "b74031b823f153889248a823494b2e0a1601b0f9b335e6a9f01659c2f095fa11",
+      "request_identity": "pmid:42373874",
+      "retrieved_at_utc": "2026-07-13T08:40:46.797189Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

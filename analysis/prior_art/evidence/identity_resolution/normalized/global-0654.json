@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/biomedicines14010097",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41595633",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/biomedicines14010097",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Umberto Santaniello",
+      "Francois Rosset",
+      "Paolo Fava",
+      "Francesco Cavallo",
+      "Pietro Quaglino",
+      "Simone Ribero"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedicines",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Santaniello U",
+      "Rosset F",
+      "Fava P",
+      "Cavallo F",
+      "Quaglino P",
+      "Ribero S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 654,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Umberto Santaniello",
+      "Francois Rosset",
+      "Paolo Fava",
+      "Francesco Cavallo",
+      "Pietro Quaglino",
+      "Simone Ribero"
+    ],
+    "doi": "10.3390/biomedicines14010097",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Emerging Artificial Intelligence Models for Estimating Breslow Thickness from Dermoscopic Images",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/biomedicines14010097",
+    "venue": "Biomedicines",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0654/crossref_doi__d546fd3805653b7b__20260713T083617993249Z.json",
+      "raw_sha256": "c3d4b102d649790dd9dc65f9388f3123d8e97d62f66edc9c2d861a54d259a245",
+      "request_identity": "doi:10.3390/biomedicines14010097",
+      "retrieved_at_utc": "2026-07-13T08:36:17.993249Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0654/europe_pmc_pmid__6f6262ef51eb9044__20260713T083619000397Z.json",
+      "raw_sha256": "322ccdbfd686c835509f950dea8a73a1426834d634a78551861f87c331434215",
+      "request_identity": "pmid:41595633",
+      "retrieved_at_utc": "2026-07-13T08:36:19.000397Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

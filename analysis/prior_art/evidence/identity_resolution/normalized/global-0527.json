@@ -1,0 +1,122 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/vetsci10050341",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "37235424",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/vetsci10050341",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Xiannian Zi",
+      "Xuehai Ge",
+      "Yixuan Zhu",
+      "Yong Liu",
+      "Dawei Sun",
+      "Zijian Li",
+      "Mengqian Liu",
+      "Zhengrong You",
+      "Bo Wang",
+      "Jiajia Kang",
+      "Tengfei Dou",
+      "Changrong Ge",
+      "Kun Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Veterinary Sciences",
+    "canonical_year": 2023,
+    "doi_match": true,
+    "harvested_authors": [
+      "Zi X",
+      "Ge X",
+      "Zhu Y",
+      "Liu Y",
+      "Sun D",
+      "Li Z",
+      "Liu M",
+      "You Z",
+      "Wang B",
+      "Kang J",
+      "Dou T",
+      "Ge C",
+      "Wang K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2023,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 527,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Xiannian Zi",
+      "Xuehai Ge",
+      "Yixuan Zhu",
+      "Yong Liu",
+      "Dawei Sun",
+      "Zijian Li",
+      "Mengqian Liu",
+      "Zhengrong You",
+      "Bo Wang",
+      "Jiajia Kang",
+      "Tengfei Dou",
+      "Changrong Ge",
+      "Kun Wang"
+    ],
+    "doi": "10.3390/vetsci10050341",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Transcriptome Profile Analysis Identifies Candidate Genes for the Melanin Pigmentation of Skin in Tengchong Snow Chickens",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/vetsci10050341",
+    "venue": "Veterinary Sciences",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0527/crossref_doi__7d2796a57e56e1d8__20260713T083319664980Z.json",
+      "raw_sha256": "4e94db19a86a2917491913345c7790532050ed7326d307402b1e06b05cc7fa47",
+      "request_identity": "doi:10.3390/vetsci10050341",
+      "retrieved_at_utc": "2026-07-13T08:33:19.664980Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0527/europe_pmc_pmid__d33cddf75c013e4a__20260713T083320792728Z.json",
+      "raw_sha256": "f316be9de32cc6307230ba44cf801733bb3c20c22d02ed90ebff7086aaa5c3ed",
+      "request_identity": "pmid:37235424",
+      "retrieved_at_utc": "2026-07-13T08:33:20.792728Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

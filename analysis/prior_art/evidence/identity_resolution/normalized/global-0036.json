@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.35772/ghm.2026.01058",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42368306",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.35772/ghm.2026.01058",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yuhan Cheng",
+      "Chu Zhou",
+      "Ping Wang",
+      "Huanran Liu",
+      "Yue Han"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Global Health & Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Cheng Y",
+      "Zhou C",
+      "Wang P",
+      "Liu H",
+      "Han Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 36,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yuhan Cheng",
+      "Chu Zhou",
+      "Ping Wang",
+      "Huanran Liu",
+      "Yue Han"
+    ],
+    "doi": "10.35772/ghm.2026.01058",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial intelligence (AI)-assisted diagnosis of skin diseases: From image classification to dermatology-specific multimodal clinical reasoning",
+    "update_to": [],
+    "url": "https://doi.org/10.35772/ghm.2026.01058",
+    "venue": "Global Health & Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0036/crossref_doi__8dae60f6a8ada16b__20260713T081518704018Z.json",
+      "raw_sha256": "57b56effb2a0ef817b64b7c52128c9c62ac64dc9a3fe72cd9643836f4cd0ba0a",
+      "request_identity": "doi:10.35772/ghm.2026.01058",
+      "retrieved_at_utc": "2026-07-13T08:15:18.704018Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0036/europe_pmc_pmid__6c78866968704dbf__20260713T081519815029Z.json",
+      "raw_sha256": "b965bfc8e2b701aaae24abdc661d58bf4e690ea2f7f90dc7955923c4dc838d5f",
+      "request_identity": "pmid:42368306",
+      "retrieved_at_utc": "2026-07-13T08:15:19.815029Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

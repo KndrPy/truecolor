@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.32388/87unci",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2024,9,11]],\"date-time\":\"2024-09-11T10:55:08Z\",\"timestamp\":1726052108164},\"reference-count\":1,\"publisher\":\"Qeios\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.32388\\/87unci\",\"type\":\"reference-entry\",\"created\":{\"date-parts\":[[2020,2,8]],\"date-time\":\"2020-02-08T16:57:28Z\",\"timestamp\":1581181048000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Fitzpatrick Skin Type VI\"],\"prefix\":\"10.32388\",\"author\":[{\"name\":\"National Cancer Institute\",\"sequence\":\"first\",\"affiliation\":[],\"role\":[{\"role\":\"author\",\"vocabulary\":\"crossref\"}]}],\"member\":\"17262\",\"published-online\":{\"date-parts\":[[2020,2,8]]},\"reference\":[{\"key\":\"ref1\",\"unstructured\":\"National Cancer Institute. Fitzpatrick Skin Type VI. NCI Thesaurus. Code C74574.\"}],\"container-title\":[\"Definitions\"],\"original-title\":[],\"language\":\"en\",\"deposited\":{\"date-parts\":[[2020,2,8]],\"date-time\":\"2020-02-08T16:57:28Z\",\"timestamp\":1581181048000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/www.qeios.com\\/read\\/definition\\/94308\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[2020,2,8]]},\"references-count\":1,\"URL\":\"https:\\/\\/doi.org\\/10.32388\\/87unci\",\"relation\":{},\"subject\":[],\"published\":{\"date-parts\":[[2020,2,8]]}}}",
+  "retrieved_at_utc": "2026-07-13T08:46:30.394341Z",
+  "source": "crossref_doi"
+}

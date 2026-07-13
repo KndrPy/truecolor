@@ -1,0 +1,8 @@
+{
+  "error": null,
+  "http_status": 200,
+  "request_identity": "doi:10.7554/elife.01104.003",
+  "response_body_utf8": "{\"status\":\"ok\",\"message-type\":\"work\",\"message-version\":\"1.0.0\",\"message\":{\"indexed\":{\"date-parts\":[[2022,3,29]],\"date-time\":\"2022-03-29T06:02:18Z\",\"timestamp\":1648533738339},\"reference-count\":0,\"publisher\":\"eLife Sciences Publications, Ltd\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"short-container-title\":[],\"DOI\":\"10.7554\\/elife.01104.003\",\"type\":\"component\",\"created\":{\"date-parts\":[[2013,10,15]],\"date-time\":\"2013-10-15T15:18:05Z\",\"timestamp\":1381850285000},\"source\":\"Crossref\",\"is-referenced-by-count\":0,\"title\":[\"Table 1. Total number of samples collected for each site and abdominal, skin (head and body), soil (with and without corpses)\"],\"prefix\":\"10.7554\",\"member\":\"4374\",\"container-title\":[],\"original-title\":[],\"deposited\":{\"date-parts\":[[2018,8,23]],\"date-time\":\"2018-08-23T13:26:23Z\",\"timestamp\":1535030783000},\"score\":1,\"resource\":{\"primary\":{\"URL\":\"https:\\/\\/elifesciences.org\\/articles\\/01104#tbl1\"}},\"subtitle\":[],\"short-title\":[],\"issued\":{\"date-parts\":[[null]]},\"references-count\":0,\"URL\":\"https:\\/\\/doi.org\\/10.7554\\/elife.01104.003\",\"relation\":{},\"subject\":[]}}",
+  "retrieved_at_utc": "2026-07-13T08:48:18.195633Z",
+  "source": "crossref_doi"
+}

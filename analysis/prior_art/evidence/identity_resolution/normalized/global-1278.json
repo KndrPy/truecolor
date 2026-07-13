@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "award winners abstracts from the 36th annual symposium of the protein society july 7 10 2022",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:award winners/abstracts from the 36th annual symposium of the protein society, july 7 – 10, 2022|year:2022",
+  "conflicts": [
+    {
+      "authoritative": 2023,
+      "field": "year",
+      "harvested": 2022
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Protein Science",
+    "canonical_year": 2023,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 0.823529,
+    "venue_similarity": null,
+    "year_match": false
+  },
+  "global_rank": 1278,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1002/pro.4494",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Award Winners/Abstracts from the 36 th  Annual Symposium of The Protein Society, July 7 – 10, 2022",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/pro.4494",
+    "venue": "Protein Science",
+    "year": 2023
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1278/crossref_title__93f5c9f9aeb582cc__20260713T084958567497Z.json",
+      "raw_sha256": "97e5b6ad4c6889a239cc4dec060d6acc21b4edf1fe7b1ab7103c6a0b40a96a28",
+      "request_identity": "title:award winners abstracts from the 36th annual symposium of the protein society july 7 10 2022|year:unknown",
+      "retrieved_at_utc": "2026-07-13T08:49:58.567497Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

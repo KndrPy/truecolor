@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3758/s13428-026-02953-x",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42026314",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3758/s13428-026-02953-x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sascha P. Woelk",
+      "Sarah N. Garfinkel",
+      "Lewend Mayiwar",
+      "Klemens M. Knöferle"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Behavior Research Methods",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Woelk SP",
+      "Garfinkel SN",
+      "Mayiwar L",
+      "Knöferle KM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 924,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sascha P. Woelk",
+      "Sarah N. Garfinkel",
+      "Lewend Mayiwar",
+      "Klemens M. Knöferle"
+    ],
+    "doi": "10.3758/s13428-026-02953-x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Advancing remote photoplethysmography (rPPG) to facilitate cardiac monitoring in naturalistic settings using webcam technology",
+    "update_to": [],
+    "url": "https://doi.org/10.3758/s13428-026-02953-x",
+    "venue": "Behavior Research Methods",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0924/crossref_doi__f99b22bb825e0ac4__20260713T084356877433Z.json",
+      "raw_sha256": "49726515b0d45aea934d7922cec5ba39c055b28a11f0932ac4900210ee77612c",
+      "request_identity": "doi:10.3758/s13428-026-02953-x",
+      "retrieved_at_utc": "2026-07-13T08:43:56.877433Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0924/europe_pmc_pmid__491114ccf3a1d306__20260713T084357873267Z.json",
+      "raw_sha256": "12ac355a4690e0232ccf854698a6cee35ebd3975c11b5fabf88755f696e1d771",
+      "request_identity": "pmid:42026314",
+      "retrieved_at_utc": "2026-07-13T08:43:57.873267Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

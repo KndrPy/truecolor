@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1155/2010/791473",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1155/2010/791473",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Shanthi Prince",
+      "S. Malarvizhi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Spectroscopy",
+    "canonical_year": 2010,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shanthi Prince",
+      "S. Malarvizhi"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Spectroscopy",
+    "harvested_year": 2010,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 410,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Shanthi Prince",
+      "S. Malarvizhi"
+    ],
+    "doi": "10.1155/2010/791473",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Analysis of spectroscopic diffuse reflectance plots for different skin conditions",
+    "update_to": [],
+    "url": "https://doi.org/10.1155/2010/791473",
+    "venue": "Spectroscopy",
+    "year": 2010
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0410/crossref_doi__adaf1650a8959ae0__20260713T083112360641Z.json",
+      "raw_sha256": "db9ac270cb98532d697e39f08e1131b496bcb72333bf9ee055ebc289729cebda",
+      "request_identity": "doi:10.1155/2010/791473",
+      "retrieved_at_utc": "2026-07-13T08:31:12.360641Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.14711/thesis-991012785768403412",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.14711/thesis-991012785768403412",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Hanyu Deng"
+    ],
+    "canonical_publication_type": "dissertation",
+    "canonical_venue": null,
+    "canonical_year": 2020,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hanyu Deng"
+    ],
+    "harvested_publication_type": "dissertation",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 555,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hanyu Deng"
+    ],
+    "doi": "10.14711/thesis-991012785768403412",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dissertation",
+    "relation": {},
+    "title": "Real-time dense 3D reconstruction with RGB-D camera",
+    "update_to": [],
+    "url": "https://doi.org/10.14711/thesis-991012785768403412",
+    "venue": null,
+    "year": 2020
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0555/crossref_doi__85424bd4d75d3d15__20260713T083352245032Z.json",
+      "raw_sha256": "8d8d1feacd58b6418c188d440cf43963c408ad6efad3aa4093c18a38dde8de05",
+      "request_identity": "doi:10.14711/thesis-991012785768403412",
+      "retrieved_at_utc": "2026-07-13T08:33:52.245032Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

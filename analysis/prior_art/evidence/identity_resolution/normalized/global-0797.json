@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s10278-026-02057-0",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42315700",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s10278-026-02057-0",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Ayşe Türkmen Dedeoğlu",
+      "Hüseyin Yanık",
+      "Erdem Uysal",
+      "Gizem Fikir",
+      "Evren Değirmenci",
+      "Ümit Türsen",
+      "Yasemin Yuyucu Karabulut"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging Informatics in Medicine",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Türkmen Dedeoğlu A",
+      "Yanık H",
+      "Uysal E",
+      "Fikir G",
+      "Değirmenci E",
+      "Türsen Ü",
+      "Yuyucu Karabulut Y."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 797,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Ayşe Türkmen Dedeoğlu",
+      "Hüseyin Yanık",
+      "Erdem Uysal",
+      "Gizem Fikir",
+      "Evren Değirmenci",
+      "Ümit Türsen",
+      "Yasemin Yuyucu Karabulut"
+    ],
+    "doi": "10.1007/s10278-026-02057-0",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Deep Learning vs. Traditional Machine Learning in the Diagnosis of Cutaneous Drug Eruptions: A Comparative Study with Explainable AI on Whole-Slide Images",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s10278-026-02057-0",
+    "venue": "Journal of Imaging Informatics in Medicine",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0797/crossref_doi__3bdc18d47b3ffc6f__20260713T083948246306Z.json",
+      "raw_sha256": "ca07d4e09945d96fca781d7d5c64a64e7caf7e365e6745613dfa01a312438452",
+      "request_identity": "doi:10.1007/s10278-026-02057-0",
+      "retrieved_at_utc": "2026-07-13T08:39:48.246306Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0797/europe_pmc_pmid__ac063ce43354f725__20260713T083949289917Z.json",
+      "raw_sha256": "98d185608aac03e931d66c66152d79119b19a281c8cdbd536de045235fc16ed5",
+      "request_identity": "pmid:42315700",
+      "retrieved_at_utc": "2026-07-13T08:39:49.289917Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.fochx.2026.103607",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41674688",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.fochx.2026.103607",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Weihao Qiao",
+      "Mei Yang",
+      "Jingming Hu",
+      "Huili Yan",
+      "Yeming Guo",
+      "Faxu Guo"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Food Chemistry: X",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Qiao W",
+      "Yang M",
+      "Hu J",
+      "Yan H",
+      "Guo Y",
+      "Guo F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 351,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Weihao Qiao",
+      "Mei Yang",
+      "Jingming Hu",
+      "Huili Yan",
+      "Yeming Guo",
+      "Faxu Guo"
+    ],
+    "doi": "10.1016/j.fochx.2026.103607",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Hyperspectral imaging with machine learning for non-destructive prediction of quality attributes in Lanzhou frozen pears",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.fochx.2026.103607",
+    "venue": "Food Chemistry: X",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0351/crossref_doi__5c64ae98c671ad5d__20260713T082933602343Z.json",
+      "raw_sha256": "9e7c30f54fd270d7d32bb482eba6aebee1365852f2fead025009f4f968ad0bcd",
+      "request_identity": "doi:10.1016/j.fochx.2026.103607",
+      "retrieved_at_utc": "2026-07-13T08:29:33.602343Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0351/europe_pmc_pmid__19fb07b1c793b8ac__20260713T082934587168Z.json",
+      "raw_sha256": "aef1b3f6e702b6f8e704406d3653f92e8ec0e80ec73c3bda66f515e4bca63a11",
+      "request_identity": "pmid:41674688",
+      "retrieved_at_utc": "2026-07-13T08:29:34.587168Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

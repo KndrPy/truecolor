@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/0266-5611/27/7/075007",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/0266-5611/27/7/075007",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Guangsheng Wei",
+      "Zhaoying Wei"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Inverse Problems",
+    "canonical_year": 2011,
+    "doi_match": true,
+    "harvested_authors": [
+      "Guangsheng Wei",
+      "Zhaoying Wei"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Inverse Problems",
+    "harvested_year": 2011,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 475,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Guangsheng Wei",
+      "Zhaoying Wei"
+    ],
+    "doi": "10.1088/0266-5611/27/7/075007",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Inverse spectral problem for Jacobi matrices with partial spectral data",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/0266-5611/27/7/075007",
+    "venue": "Inverse Problems",
+    "year": 2011
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0475/crossref_doi__1e551fb18afbdcb7__20260713T083216959790Z.json",
+      "raw_sha256": "f1caa0d1d8353b1a62332a499d14a85f0b42a0c578359911d51040754008a525",
+      "request_identity": "doi:10.1088/0266-5611/27/7/075007",
+      "retrieved_at_utc": "2026-07-13T08:32:16.959790Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

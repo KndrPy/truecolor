@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/foods14132214",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40646966",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/foods14132214",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Miriam Sánchez-Ordóñez",
+      "Jorge A. Saraiva",
+      "Carlos A. Pinto",
+      "Jonathan Delgado-Adámez",
+      "M. Rosario Ramírez-Bernabé"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Foods",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Sánchez-Ordóñez M",
+      "Saraiva JA",
+      "Pinto CA",
+      "Delgado-Adámez J",
+      "Ramírez-Bernabé MR."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 753,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Miriam Sánchez-Ordóñez",
+      "Jorge A. Saraiva",
+      "Carlos A. Pinto",
+      "Jonathan Delgado-Adámez",
+      "M. Rosario Ramírez-Bernabé"
+    ],
+    "doi": "10.3390/foods14132214",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Integral Valorisation of Agri-Food By-Products Through the Production of Food Ingredients Using High-Pressure Thermal Treatments",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/foods14132214",
+    "venue": "Foods",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0753/crossref_doi__2d896e5ebd14fdac__20260713T083827746028Z.json",
+      "raw_sha256": "8b0e8d74b488921d81d37d6bf9f06d31df21d38e2aa147b7c1bc388eec09f0e7",
+      "request_identity": "doi:10.3390/foods14132214",
+      "retrieved_at_utc": "2026-07-13T08:38:27.746028Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0753/europe_pmc_pmid__0795fa69734dd70a__20260713T083828780601Z.json",
+      "raw_sha256": "f4eb4c34274b14b7bf60ddf34f0eb094c35b6b5f39d0de56482fd70f2c2a6a6e",
+      "request_identity": "pmid:40646966",
+      "retrieved_at_utc": "2026-07-13T08:38:28.780601Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

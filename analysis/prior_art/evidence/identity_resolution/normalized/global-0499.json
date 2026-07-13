@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1111/srt.13113",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "34751474",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1111/srt.13113",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mirte Langeveld",
+      "Lara S. van de Lande",
+      "Eimear O’ Sullivan",
+      "Berend van der Lei",
+      "Joris A. van Dongen"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Skin Research and Technology",
+    "canonical_year": 2022,
+    "doi_match": true,
+    "harvested_authors": [
+      "Langeveld M",
+      "van de Lande LS",
+      "O' Sullivan E",
+      "van der Lei B",
+      "van Dongen JA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2022,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 499,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mirte Langeveld",
+      "Lara S. van de Lande",
+      "Eimear O’ Sullivan",
+      "Berend van der Lei",
+      "Joris A. van Dongen"
+    ],
+    "doi": "10.1111/srt.13113",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Skin measurement devices to assess skin quality: A systematic review on reliability and validity",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/srt.13113",
+    "venue": "Skin Research and Technology",
+    "year": 2022
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0499/crossref_doi__ac420746edc32bf5__20260713T083236936760Z.json",
+      "raw_sha256": "37be2c35f08d6c7e46564626e7246cd2061650c5880996f9e57d127316573ea3",
+      "request_identity": "doi:10.1111/srt.13113",
+      "retrieved_at_utc": "2026-07-13T08:32:36.936760Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0499/europe_pmc_pmid__2876b64718de5f97__20260713T083237983604Z.json",
+      "raw_sha256": "69b8afc85bda5fb973b405a48e3faf3186a1aaa50292a25530ffd18e3f5817db",
+      "request_identity": "pmid:34751474",
+      "retrieved_at_utc": "2026-07-13T08:32:37.983604Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

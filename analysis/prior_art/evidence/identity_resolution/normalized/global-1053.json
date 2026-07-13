@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.2083133",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "28572697",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.2083133",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yu Wang",
+      "Chang Xu",
+      "Carol Boushey",
+      "Fengqing Zhu",
+      "Edward J. Delp"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "Wang Y",
+      "Xu C",
+      "Boushey C",
+      "Zhu F",
+      "Delp EJ."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1053,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yu Wang",
+      "Chang Xu",
+      "Carol Boushey",
+      "Fengqing Zhu",
+      "Edward J. Delp"
+    ],
+    "doi": "10.1117/12.2083133",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Mobile image based color correction using deblurring",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.2083133",
+    "venue": "SPIE Proceedings",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1053/crossref_doi__c24aa627b7c9c87e__20260713T084656480987Z.json",
+      "raw_sha256": "5d3f8c4e9c5deb1e1a4586a4cbab12a4aa0fe93e9119671ea79b1c37ca50b1cb",
+      "request_identity": "doi:10.1117/12.2083133",
+      "retrieved_at_utc": "2026-07-13T08:46:56.480987Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1053/europe_pmc_pmid__67885e67130d0fa4__20260713T084657588959Z.json",
+      "raw_sha256": "bf421b332c4985a06e9859bc13ef01623397c851280f0d3c9db1f6f28ed6669a",
+      "request_identity": "pmid:28572697",
+      "retrieved_at_utc": "2026-07-13T08:46:57.588959Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3389/fphys.2026.1792689",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42245836",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3389/fphys.2026.1792689",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sreya Deb Srestha",
+      "Uday Debnath",
+      "Sungho Kim"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Frontiers in Physiology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Srestha SD",
+      "Debnath U",
+      "Kim S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 884,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sreya Deb Srestha",
+      "Uday Debnath",
+      "Sungho Kim"
+    ],
+    "doi": "10.3389/fphys.2026.1792689",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "DeepRespNet: a hybrid attention-recurrent framework for non-contact respiratory rate estimation",
+    "update_to": [],
+    "url": "https://doi.org/10.3389/fphys.2026.1792689",
+    "venue": "Frontiers in Physiology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0884/crossref_doi__d0590ab45c8f0043__20260713T084240367263Z.json",
+      "raw_sha256": "a0fa5190cfa9b70dd2a0415e9a858312d1f7452c8ecb67362af67d0f20e05bff",
+      "request_identity": "doi:10.3389/fphys.2026.1792689",
+      "retrieved_at_utc": "2026-07-13T08:42:40.367263Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0884/europe_pmc_pmid__408666a8284ebfa9__20260713T084241390758Z.json",
+      "raw_sha256": "4faf6680e5b254e0b47cb0950294f31cb27f5b526ab6fa140e456ce9554bf668",
+      "request_identity": "pmid:42245836",
+      "retrieved_at_utc": "2026-07-13T08:42:41.390758Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

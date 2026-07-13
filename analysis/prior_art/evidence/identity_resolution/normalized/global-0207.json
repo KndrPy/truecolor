@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3171/jns.1968.29.2.0199",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3171/jns.1968.29.2.0199",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Alvin Szojchet"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Neurosurgery",
+    "canonical_year": 1968,
+    "doi_match": true,
+    "harvested_authors": [
+      "Alvin Szojchet"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Neurosurgery",
+    "harvested_year": 1968,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 207,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Alvin Szojchet"
+    ],
+    "doi": "10.3171/jns.1968.29.2.0199",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Metameric Spinal Cord and Skin Hemangiomas",
+    "update_to": [],
+    "url": "https://doi.org/10.3171/jns.1968.29.2.0199",
+    "venue": "Journal of Neurosurgery",
+    "year": 1968
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0207/crossref_doi__31e7531746eff657__20260713T082633349669Z.json",
+      "raw_sha256": "93d2a36b841e544993a825c58b5e3239fd6809944d495d99a712964f4a5d42bc",
+      "request_identity": "doi:10.3171/jns.1968.29.2.0199",
+      "retrieved_at_utc": "2026-07-13T08:26:33.349669Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

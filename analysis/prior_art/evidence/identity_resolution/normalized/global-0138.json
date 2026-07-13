@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/app16104877",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/app16104877",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Magdalena Hartman-Petrycka",
+      "Joanna Witkoś",
+      "Patrycja Zagórna",
+      "Sławomir Wilczyński"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Applied Sciences",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Magdalena Hartman-Petrycka",
+      "Joanna Witkoś",
+      "Patrycja Zagórna",
+      "Sławomir Wilczyński"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Applied Sciences",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 138,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Magdalena Hartman-Petrycka",
+      "Joanna Witkoś",
+      "Patrycja Zagórna",
+      "Sławomir Wilczyński"
+    ],
+    "doi": "10.3390/app16104877",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Reflectance of the Women Skin from the Ultraviolet to the Far-Infrared Spectrum Across Different Body Regions at Incidence Angles of 20° and 60°",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/app16104877",
+    "venue": "Applied Sciences",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0138/crossref_doi__45002211f16a7ee1__20260713T082534488311Z.json",
+      "raw_sha256": "39b93b46cacfbbbea4aa2df745d23c922e189a88e0d98c6b5c77639cab4d9919",
+      "request_identity": "doi:10.3390/app16104877",
+      "retrieved_at_utc": "2026-07-13T08:25:34.488311Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

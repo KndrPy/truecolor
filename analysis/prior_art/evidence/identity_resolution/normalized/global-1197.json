@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/78.275631",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/78.275631",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "M. Chakraborty",
+      "S. Prasad"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Transactions on Signal Processing",
+    "canonical_year": 1994,
+    "doi_match": true,
+    "harvested_authors": [
+      "M. Chakraborty",
+      "S. Prasad"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "IEEE Transactions on Signal Processing",
+    "harvested_year": 1994,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1197,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "M. Chakraborty",
+      "S. Prasad"
+    ],
+    "doi": "10.1109/78.275631",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Computation of a useful Cramer-Rao bound for multichannel ARMA parameter estimation",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/78.275631",
+    "venue": "IEEE Transactions on Signal Processing",
+    "year": 1994
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1197/crossref_doi__2531a6d3ef8c8a3c__20260713T084855047311Z.json",
+      "raw_sha256": "6fe436d9bbad1a45a9c70c18b1e2a1440da30797047585ae076db50577189b6a",
+      "request_identity": "doi:10.1109/78.275631",
+      "retrieved_at_utc": "2026-07-13T08:48:55.047311Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

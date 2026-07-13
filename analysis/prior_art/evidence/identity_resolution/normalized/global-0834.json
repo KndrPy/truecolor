@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/2515-7647/ae1a27",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41229883",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/2515-7647/ae1a27",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Jingyi Wu",
+      "Martin P Debreczeny",
+      "Nevan C Hanumara",
+      "Neil Ray",
+      "Baptiste Jayet",
+      "Stefan Andersson-Engels",
+      "Jana M Kainerstorfer"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Physics: Photonics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Wu J",
+      "Debreczeny MP",
+      "Hanumara NC",
+      "Ray N",
+      "Jayet B",
+      "Andersson-Engels S",
+      "Kainerstorfer JM."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 0.9375,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 834,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Jingyi Wu",
+      "Martin P Debreczeny",
+      "Nevan C Hanumara",
+      "Neil Ray",
+      "Baptiste Jayet",
+      "Stefan Andersson-Engels",
+      "Jana M Kainerstorfer"
+    ],
+    "doi": "10.1088/2515-7647/ae1a27",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multi-layer self-calibrated algorithm for transabdominal fetal pulse oximetry: simulation and\n                     in vivo \n                    validation",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/2515-7647/ae1a27",
+    "venue": "Journal of Physics: Photonics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0834/crossref_doi__c337f3539b6763e2__20260713T084102131587Z.json",
+      "raw_sha256": "e5a230ffe46b99b6dc7c2d8a59795e6c3343e7c39fc0e957f6763a6fc3d346e4",
+      "request_identity": "doi:10.1088/2515-7647/ae1a27",
+      "retrieved_at_utc": "2026-07-13T08:41:02.131587Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0834/europe_pmc_pmid__80f9358b044c5554__20260713T084103175233Z.json",
+      "raw_sha256": "6d9bd609755b572eb7adcae25b57250b0cb6bb74ef5c7f87c148525b62d6d8ba",
+      "request_identity": "pmid:41229883",
+      "retrieved_at_utc": "2026-07-13T08:41:03.175233Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

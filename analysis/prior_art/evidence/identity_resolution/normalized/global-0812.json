@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1021/acsomega.6c02594",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42326701",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1021/acsomega.6c02594",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kerim Emre Öksüz",
+      "Hülya Şereflişan",
+      "Erkan Uğurlu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "ACS Omega",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Öksüz KE",
+      "Şereflişan H",
+      "Uğurlu E."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 812,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kerim Emre Öksüz",
+      "Hülya Şereflişan",
+      "Erkan Uğurlu"
+    ],
+    "doi": "10.1021/acsomega.6c02594",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Multiscale Characterization and Bioactivity of Freshwater Unionid Mussel Shells as Sustainable Natural Biomaterials",
+    "update_to": [],
+    "url": "https://doi.org/10.1021/acsomega.6c02594",
+    "venue": "ACS Omega",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0812/crossref_doi__c3f2722eac64c9a6__20260713T084016070830Z.json",
+      "raw_sha256": "e7d7cb9875c366fea7b564a823dfd17e303c6afac3d6174bfe9d1345754bb873",
+      "request_identity": "doi:10.1021/acsomega.6c02594",
+      "retrieved_at_utc": "2026-07-13T08:40:16.070830Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0812/europe_pmc_pmid__7cabdb5df0abd56d__20260713T084017082833Z.json",
+      "raw_sha256": "af89f07f033785990d89bf733da138b806e918a4515904a1e7ff367611a5c731",
+      "request_identity": "pmid:42326701",
+      "retrieved_at_utc": "2026-07-13T08:40:17.082833Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

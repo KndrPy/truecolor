@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2307/2794703",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2307/2794703",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "J. S. Weiner"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Man",
+    "canonical_year": 1951,
+    "doi_match": true,
+    "harvested_authors": [
+      "J. S. Weiner"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Man",
+    "harvested_year": 1951,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 474,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "J. S. Weiner"
+    ],
+    "doi": "10.2307/2794703",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "253. A Spectrophotometer for Measurement of Skin Colour",
+    "update_to": [],
+    "url": "https://doi.org/10.2307/2794703",
+    "venue": "Man",
+    "year": 1951
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0474/crossref_doi__41a3e9f15146de55__20260713T083216344148Z.json",
+      "raw_sha256": "6857914a52ba92388675d92b2e05b53269607193965a50f08bc5ce56dba7ae33",
+      "request_identity": "doi:10.2307/2794703",
+      "retrieved_at_utc": "2026-07-13T08:32:16.344148Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

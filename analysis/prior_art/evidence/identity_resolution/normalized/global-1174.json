@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1109/9.544008",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1109/9.544008",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "E.-W. Bai"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "IEEE Transactions on Automatic Control",
+    "canonical_year": 1996,
+    "doi_match": true,
+    "harvested_authors": [
+      "E.-W. Bai"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "IEEE Transactions on Automatic Control",
+    "harvested_year": 1996,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1174,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "E.-W. Bai"
+    ],
+    "doi": "10.1109/9.544008",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Cramer-Rao-like error bound in deterministic parameter estimation",
+    "update_to": [],
+    "url": "https://doi.org/10.1109/9.544008",
+    "venue": "IEEE Transactions on Automatic Control",
+    "year": 1996
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1174/crossref_doi__6301ab1b2de03178__20260713T084836089387Z.json",
+      "raw_sha256": "1ffde367780f3429911fee8f0be7fa37f7aa58b2e7510d9ed4e8c9f91019e748",
+      "request_identity": "doi:10.1109/9.544008",
+      "retrieved_at_utc": "2026-07-13T08:48:36.089387Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

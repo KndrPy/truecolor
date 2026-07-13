@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/ecbo.2011.80872b",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/ecbo.2011.80872b",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Dainis Jakovels",
+      "Janis Spigulis",
+      "Laura Rogule"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Clinical and Biomedical Spectroscopy and Imaging II",
+    "canonical_year": 2011,
+    "doi_match": true,
+    "harvested_authors": [
+      "Dainis Jakovels",
+      "Janis Spigulis",
+      "Laura Rogule"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Clinical and Biomedical Spectroscopy and Imaging II",
+    "harvested_year": 2011,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 346,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Dainis Jakovels",
+      "Janis Spigulis",
+      "Laura Rogule"
+    ],
+    "doi": "10.1364/ecbo.2011.80872b",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "RGB Mapping of Hemoglobin Distribution in Skin",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/ecbo.2011.80872b",
+    "venue": "Clinical and Biomedical Spectroscopy and Imaging II",
+    "year": 2011
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0346/crossref_doi__702313349499e9c8__20260713T082928153725Z.json",
+      "raw_sha256": "5442d541bf5fc85693b429de326c13b96d5fa33e87fab3fcd0ca5b6d422f6930",
+      "request_identity": "doi:10.1364/ecbo.2011.80872b",
+      "retrieved_at_utc": "2026-07-13T08:29:28.153725Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

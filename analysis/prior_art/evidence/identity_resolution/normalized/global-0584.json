@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1088/0031-9155/60/2/r1",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "25564960",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1088/0031-9155/60/2/r1",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Harrison H Barrett",
+      "Kyle J Myers",
+      "Christoph Hoeschen",
+      "Matthew A Kupinski",
+      "Mark P Little"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Physics in Medicine and Biology",
+    "canonical_year": 2015,
+    "doi_match": true,
+    "harvested_authors": [
+      "Barrett HH",
+      "Myers KJ",
+      "Hoeschen C",
+      "Kupinski MA",
+      "Little MP."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2015,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 584,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Harrison H Barrett",
+      "Kyle J Myers",
+      "Christoph Hoeschen",
+      "Matthew A Kupinski",
+      "Mark P Little"
+    ],
+    "doi": "10.1088/0031-9155/60/2/r1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Task-based measures of image quality and their relation to radiation dose and patient risk",
+    "update_to": [],
+    "url": "https://doi.org/10.1088/0031-9155/60/2/r1",
+    "venue": "Physics in Medicine and Biology",
+    "year": 2015
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0584/crossref_doi__c3c10acbbb06ee0d__20260713T083425407743Z.json",
+      "raw_sha256": "cc9fe97e1a345c1e8f21e847b62b32d94c27ed6ac44d8b09190f13b4b2cd1b72",
+      "request_identity": "doi:10.1088/0031-9155/60/2/r1",
+      "retrieved_at_utc": "2026-07-13T08:34:25.407743Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0584/europe_pmc_pmid__5e2e681aa97ae89f__20260713T083426528354Z.json",
+      "raw_sha256": "31742f56e4ab9e149f80b684d481279c7a0e939f719e7d3cb7fb9c014d06b5c7",
+      "request_identity": "pmid:25564960",
+      "retrieved_at_utc": "2026-07-13T08:34:26.528354Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

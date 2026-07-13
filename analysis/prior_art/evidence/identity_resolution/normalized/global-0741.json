@@ -1,0 +1,125 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1002/brb3.70764",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40847464",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1002/brb3.70764",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Sholeh Nazari",
+      "Paul Fitzgerald",
+      "Reza Kazemi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Brain and Behavior",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Nazari S",
+      "Fitzgerald P",
+      "Kazemi R."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 741,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Sholeh Nazari",
+      "Paul Fitzgerald",
+      "Reza Kazemi"
+    ],
+    "doi": "10.1002/brb3.70764",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {
+      "has-review": [
+        {
+          "asserted-by": "object",
+          "id": "10.1002/BRB3.70764/v1/decision1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1002/BRB3.70764/v1/review2",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1002/BRB3.70764/v1/review1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1002/BRB3.70764/v2/decision1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1002/BRB3.70764/v2/response1",
+          "id-type": "doi"
+        },
+        {
+          "asserted-by": "object",
+          "id": "10.1002/BRB3.70764/v1/review3",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": "The Relative Accuracy of Different Methods for Measuring Mind Wandering Subtypes: A Systematic Review",
+    "update_to": [],
+    "url": "https://doi.org/10.1002/brb3.70764",
+    "venue": "Brain and Behavior",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0741/crossref_doi__2a4afdffdfc849e6__20260713T083806895861Z.json",
+      "raw_sha256": "e67c4f218ab8e17a104aace69a17958a507ac02d4fd9d808854027cdc8d19191",
+      "request_identity": "doi:10.1002/brb3.70764",
+      "retrieved_at_utc": "2026-07-13T08:38:06.895861Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0741/europe_pmc_pmid__493ea9e2eaf13cc6__20260713T083807973822Z.json",
+      "raw_sha256": "afa382f944b3b526908871138a0c9e72de5ab84ce530705cf0e8dba45bd27dd4",
+      "request_identity": "pmid:40847464",
+      "retrieved_at_utc": "2026-07-13T08:38:07.973822Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

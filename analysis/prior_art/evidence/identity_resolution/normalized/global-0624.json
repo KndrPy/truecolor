@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s13139-023-00821-6",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "38261899",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s13139-023-00821-6",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 0.842105,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Victor Manuel Alves",
+      "Jaime dos Santos Cardoso",
+      "João Gama"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Nuclear Medicine and Molecular Imaging",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Alves VM",
+      "Dos Santos Cardoso J",
+      "Gama J."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 0.842105,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 624,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Victor Manuel Alves",
+      "Jaime dos Santos Cardoso",
+      "João Gama"
+    ],
+    "doi": "10.1007/s13139-023-00821-6",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Classification of Pulmonary Nodules in 2-[18F]FDG PET/CT Images with a 3D Convolutional Neural Network",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s13139-023-00821-6",
+    "venue": "Nuclear Medicine and Molecular Imaging",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative metadata resolved, but identity similarity remained between verification and conflict thresholds.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0624/crossref_doi__e98a3f64a9533796__20260713T083520890214Z.json",
+      "raw_sha256": "44bf846bc489c20dbb540148e053c88b03792eaf9ace58a2861c23eea6e8810a",
+      "request_identity": "doi:10.1007/s13139-023-00821-6",
+      "retrieved_at_utc": "2026-07-13T08:35:20.890214Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0624/europe_pmc_pmid__07fa665cab23765c__20260713T083521974466Z.json",
+      "raw_sha256": "7259ff85458ac325476ecea4044ede54313d717c8334cd217b9a8711b5605bfa",
+      "request_identity": "pmid:38261899",
+      "retrieved_at_utc": "2026-07-13T08:35:21.974466Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

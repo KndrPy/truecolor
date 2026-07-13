@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1364/boe.586089",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41693882",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1364/boe.586089",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Yaping Shi",
+      "Jingjiang Xu",
+      "Zhaoyu Gong",
+      "Qingliang Zhao",
+      "Yi Zhang",
+      "Ruikang K. Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Optics Express",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Shi Y",
+      "Xu J",
+      "Gong Z",
+      "Zhao Q",
+      "Zhang Y",
+      "Wang RK."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 854,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yaping Shi",
+      "Jingjiang Xu",
+      "Zhaoyu Gong",
+      "Qingliang Zhao",
+      "Yi Zhang",
+      "Ruikang K. Wang"
+    ],
+    "doi": "10.1364/boe.586089",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "High-speed, wide-field, fiber-based PS-OCT system with real-time surface Stokes feedback for circular input polarization",
+    "update_to": [],
+    "url": "https://doi.org/10.1364/boe.586089",
+    "venue": "Biomedical Optics Express",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0854/crossref_doi__4a16dac96ab286dd__20260713T084140527366Z.json",
+      "raw_sha256": "efdf9809353b19752a8d9ef7c3dbae6c00d96b72643e27a3306dca52f6be6183",
+      "request_identity": "doi:10.1364/boe.586089",
+      "retrieved_at_utc": "2026-07-13T08:41:40.527366Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0854/europe_pmc_pmid__6f35b89d6d26caf7__20260713T084141563203Z.json",
+      "raw_sha256": "138b5cd4e78e044bd2670b30abcc94139951b43ccc0ba0b1337ddae1089ab730",
+      "request_identity": "pmid:41693882",
+      "retrieved_at_utc": "2026-07-13T08:41:41.563203Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

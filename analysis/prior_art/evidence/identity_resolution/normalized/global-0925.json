@@ -1,0 +1,101 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3791/70689",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42044116",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3791/70689",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Euitaek Yang",
+      "Shaunak P. Raikar",
+      "Avery Liddicoat",
+      "Alia S. Khaled",
+      "Mark D. Pagel",
+      "David A. Murphy"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Visualized Experiments",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yang E",
+      "Raikar SP",
+      "Liddicoat A",
+      "Khaled AS",
+      "Pagel MD",
+      "Murphy DA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 925,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Euitaek Yang",
+      "Shaunak P. Raikar",
+      "Avery Liddicoat",
+      "Alia S. Khaled",
+      "Mark D. Pagel",
+      "David A. Murphy"
+    ],
+    "doi": "10.3791/70689",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Evaluations of Oxygenation and Vascular Perfusion in Pre-Clinical Models of Cancer and Wound Healing Using OS-DCE OAI",
+    "update_to": [],
+    "url": "https://doi.org/10.3791/70689",
+    "venue": "Journal of Visualized Experiments",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0925/crossref_doi__124401ab62260f5b__20260713T084358485950Z.json",
+      "raw_sha256": "b431a40b636979039187b4eba6495959e5173cb191aa9afeec9d8ac857d57af6",
+      "request_identity": "doi:10.3791/70689",
+      "retrieved_at_utc": "2026-07-13T08:43:58.485950Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0925/europe_pmc_pmid__d0dff883baf2d3bf__20260713T084359459970Z.json",
+      "raw_sha256": "17cb4ac49c1a77a3836b8a4baaa3113a72de657e38d58d063516a762756e8fc1",
+      "request_identity": "pmid:42044116",
+      "retrieved_at_utc": "2026-07-13T08:43:59.459970Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

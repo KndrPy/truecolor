@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3724/sp.j.1001.2013.04424",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3724/sp.j.1001.2013.04424",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Feng TIAN",
+      "Xu-Kun SHEN"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Software",
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [
+      "Feng TIAN",
+      "Xu-Kun SHEN"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Software",
+    "harvested_year": 2014,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 249,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Feng TIAN",
+      "Xu-Kun SHEN"
+    ],
+    "doi": "10.3724/sp.j.1001.2013.04424",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Image Semantic Annotation Method for Weakly Labeled Dataset",
+    "update_to": [],
+    "url": "https://doi.org/10.3724/sp.j.1001.2013.04424",
+    "venue": "Journal of Software",
+    "year": 2014
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0249/crossref_doi__d2bfc67b88a2eb93__20260713T082718637144Z.json",
+      "raw_sha256": "a6c6128ae83e86dffd5d87676dea849c0b510aca9b537dd71459ee041439d3ba",
+      "request_identity": "doi:10.3724/sp.j.1001.2013.04424",
+      "retrieved_at_utc": "2026-07-13T08:27:18.637144Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,89 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/jimaging11100333",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41150009",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/jimaging11100333",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Bahman Rouhani",
+      "John K. Tsotsos"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Imaging",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Rouhani B",
+      "Tsotsos JK."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 975,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Bahman Rouhani",
+      "John K. Tsotsos"
+    ],
+    "doi": "10.3390/jimaging11100333",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Effects of Biases in Geometric and Physics-Based Imaging Attributes on Classification Performance",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/jimaging11100333",
+    "venue": "Journal of Imaging",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0975/crossref_doi__3fb567d3a954c04b__20260713T084532799385Z.json",
+      "raw_sha256": "9dc1161c2201eaa4fb10d67da7e70d572381ea0e841e022257a086dbd9c9bae1",
+      "request_identity": "doi:10.3390/jimaging11100333",
+      "retrieved_at_utc": "2026-07-13T08:45:32.799385Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0975/europe_pmc_pmid__f6d619b93529b769__20260713T084533955852Z.json",
+      "raw_sha256": "b4a35efec75f39662d2b25a1f7e3634f71c6dc7037c8876b5548e336333d60f4",
+      "request_identity": "pmid:41150009",
+      "retrieved_at_utc": "2026-07-13T08:45:33.955852Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,107 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.2147/ccid.s545832",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41059072",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.2147/ccid.s545832",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Aleksandra Lipka-Trawińska",
+      "Anna Deda",
+      "Barbara Błońska-Fajfrowska",
+      "Agata Lebiedowska",
+      "Magdalena Hartman-Petrycka",
+      "Robert Koprowski",
+      "Dominika Wcisło-Dziadecka",
+      "Sławomir Wilczyński"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Clinical, Cosmetic and Investigational Dermatology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lipka-Trawińska A",
+      "Deda A",
+      "Błońska-Fajfrowska B",
+      "Lebiedowska A",
+      "Hartman-Petrycka M",
+      "Koprowski R",
+      "Wcisło-Dziadecka D",
+      "Wilczyński S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 955,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Aleksandra Lipka-Trawińska",
+      "Anna Deda",
+      "Barbara Błońska-Fajfrowska",
+      "Agata Lebiedowska",
+      "Magdalena Hartman-Petrycka",
+      "Robert Koprowski",
+      "Dominika Wcisło-Dziadecka",
+      "Sławomir Wilczyński"
+    ],
+    "doi": "10.2147/ccid.s545832",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Quantitative Image Analysis of Vascular Skin Response to Intense Pulsed Light Therapy",
+    "update_to": [],
+    "url": "https://doi.org/10.2147/ccid.s545832",
+    "venue": "Clinical, Cosmetic and Investigational Dermatology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0955/crossref_doi__0e66cd27d89064de__20260713T084451895090Z.json",
+      "raw_sha256": "3056728b2c7e65eb3b50f917d2788871eb913d891eeb45431195fa8871f31c56",
+      "request_identity": "doi:10.2147/ccid.s545832",
+      "retrieved_at_utc": "2026-07-13T08:44:51.895090Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0955/europe_pmc_pmid__55b3acd0e554ecbb__20260713T084452914162Z.json",
+      "raw_sha256": "d5b0479c3720f7b66cdf4e3df1308e5802aa93973123c0e78e04deff40aa2701",
+      "request_identity": "pmid:41059072",
+      "retrieved_at_utc": "2026-07-13T08:44:52.914162Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

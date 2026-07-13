@@ -1,0 +1,95 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s00421-025-05977-x",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40968160",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s00421-025-05977-x",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Anne M. Mulholland",
+      "Hayley V. MacDonald",
+      "Elroy J. Aguiar",
+      "Jonathan E. Wingo"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "European Journal of Applied Physiology",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mulholland AM",
+      "MacDonald HV",
+      "Aguiar EJ",
+      "Wingo JE."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 707,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Anne M. Mulholland",
+      "Hayley V. MacDonald",
+      "Elroy J. Aguiar",
+      "Jonathan E. Wingo"
+    ],
+    "doi": "10.1007/s00421-025-05977-x",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Influence of skin pigmentation on the accuracy and data quality of photoplethysmographic heart rate measurement during exercise",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s00421-025-05977-x",
+    "venue": "European Journal of Applied Physiology",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0707/crossref_doi__9edd9d0ae7247803__20260713T083706666612Z.json",
+      "raw_sha256": "ea7dcab9542933c0d27e49532949ce7fbfb3097babc8f20845b7acc164f08f6d",
+      "request_identity": "doi:10.1007/s00421-025-05977-x",
+      "retrieved_at_utc": "2026-07-13T08:37:06.666612Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0707/europe_pmc_pmid__40b75d5d028b6e1b__20260713T083707771192Z.json",
+      "raw_sha256": "8859a6ab7d1fd5d55929dab314c298891c1ff4b85ce96257e16e9e93a487127f",
+      "request_identity": "pmid:40968160",
+      "retrieved_at_utc": "2026-07-13T08:37:07.771192Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

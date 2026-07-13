@@ -1,0 +1,104 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/foods15060983",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41897705",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/foods15060983",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Somwang Lekjing",
+      "Paramee Noonim",
+      "Narin Charoenphun",
+      "Jaraslak Pechwang",
+      "Jessada Rattanawut",
+      "Thanamat Paongoen",
+      "Karthikeyan Venkatachalam"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Foods",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Lekjing S",
+      "Noonim P",
+      "Charoenphun N",
+      "Pechwang J",
+      "Rattanawut J",
+      "Paongoen T",
+      "Venkatachalam K."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 904,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Somwang Lekjing",
+      "Paramee Noonim",
+      "Narin Charoenphun",
+      "Jaraslak Pechwang",
+      "Jessada Rattanawut",
+      "Thanamat Paongoen",
+      "Karthikeyan Venkatachalam"
+    ],
+    "doi": "10.3390/foods15060983",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Comparison of Deep-Fat Frying and Tray Drying on Ambient Storage Stability and Quality of Instant Noodles with and Without Catfish Powder",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/foods15060983",
+    "venue": "Foods",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0904/crossref_doi__91fcedeecb1dc00b__20260713T084317755068Z.json",
+      "raw_sha256": "d5de923acd6f88362abfee33b8dead0ba95173d791d8729f8ff3edeeaecaa6ef",
+      "request_identity": "doi:10.3390/foods15060983",
+      "retrieved_at_utc": "2026-07-13T08:43:17.755068Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0904/europe_pmc_pmid__13556246191dcab3__20260713T084318742969Z.json",
+      "raw_sha256": "5fd655d0d79c1d4d089f2179197799b1e22e7aa949643f022d64bbf7b361c40c",
+      "request_identity": "pmid:41897705",
+      "retrieved_at_utc": "2026-07-13T08:43:18.742969Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

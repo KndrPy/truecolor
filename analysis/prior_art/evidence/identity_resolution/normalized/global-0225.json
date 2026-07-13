@@ -1,0 +1,143 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41746-025-01667-2",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "40517148",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41746-025-01667-2",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Mingxuan Liu",
+      "Yilin Ning",
+      "Salinelat Teixayavong",
+      "Xiaoxuan Liu",
+      "Mayli Mertens",
+      "Yuqing Shang",
+      "Xin Li",
+      "Di Miao",
+      "Jingchi Liao",
+      "Jie Xu",
+      "Daniel Shu Wei Ting",
+      "Lionel Tim-Ee Cheng",
+      "Jasmine Chiat Ling Ong",
+      "Zhen Ling Teo",
+      "Ting Fang Tan",
+      "Narrendar RaviChandran",
+      "Fei Wang",
+      "Leo Anthony Celi",
+      "Marcus Eng Hock Ong",
+      "Nan Liu"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "npj Digital Medicine",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Liu M",
+      "Ning Y",
+      "Teixayavong S",
+      "Liu X",
+      "Mertens M",
+      "Shang Y",
+      "Li X",
+      "Miao D",
+      "Liao J",
+      "Xu J",
+      "Ting DSW",
+      "Cheng LT",
+      "Ong JCL",
+      "Teo ZL",
+      "Tan TF",
+      "RaviChandran N",
+      "Wang F",
+      "Celi LA",
+      "Ong MEH",
+      "Liu N."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 225,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mingxuan Liu",
+      "Yilin Ning",
+      "Salinelat Teixayavong",
+      "Xiaoxuan Liu",
+      "Mayli Mertens",
+      "Yuqing Shang",
+      "Xin Li",
+      "Di Miao",
+      "Jingchi Liao",
+      "Jie Xu",
+      "Daniel Shu Wei Ting",
+      "Lionel Tim-Ee Cheng",
+      "Jasmine Chiat Ling Ong",
+      "Zhen Ling Teo",
+      "Ting Fang Tan",
+      "Narrendar RaviChandran",
+      "Fei Wang",
+      "Leo Anthony Celi",
+      "Marcus Eng Hock Ong",
+      "Nan Liu"
+    ],
+    "doi": "10.1038/s41746-025-01667-2",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A scoping review and evidence gap analysis of clinical AI fairness",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41746-025-01667-2",
+    "venue": "npj Digital Medicine",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0225/crossref_doi__c81d9a96dfbb55dd__20260713T082650352007Z.json",
+      "raw_sha256": "1e9860bfc87efdfea0eb2cd95a7164fb558269b055fc352ad57361ba1895a6d5",
+      "request_identity": "doi:10.1038/s41746-025-01667-2",
+      "retrieved_at_utc": "2026-07-13T08:26:50.352007Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0225/europe_pmc_pmid__572f63fa6804e36a__20260713T082651345713Z.json",
+      "raw_sha256": "85b52c93e69efc4320cd1f5d1e152615a12648b251b617142759f816e5d69102",
+      "request_identity": "pmid:40517148",
+      "retrieved_at_utc": "2026-07-13T08:26:51.345713Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}
