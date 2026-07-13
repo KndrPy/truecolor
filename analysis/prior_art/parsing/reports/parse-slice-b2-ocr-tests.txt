@@ -1,0 +1,13 @@
+test_canonical_text_preserves_lines (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_canonical_text_preserves_lines) ... ok
+test_missing_tsv_fields_fail_explicitly (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_missing_tsv_fields_fail_explicitly) ... ok
+test_negative_confidence_rows_are_ignored (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_negative_confidence_rows_are_ignored) ... ok
+test_pdf_embedded_page_skips_ocr (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_pdf_embedded_page_skips_ocr) ... ok
+test_pdf_required_page_executes_ocr (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_pdf_required_page_executes_ocr) ... ok
+test_pixel_bbox_maps_to_pdf_coordinates (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_pixel_bbox_maps_to_pdf_coordinates) ... ok
+test_png_dimensions_read_ihdr (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_png_dimensions_read_ihdr) ... ok
+test_tesseract_tsv_words_are_parsed (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_tesseract_tsv_words_are_parsed) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.039s
+
+OK

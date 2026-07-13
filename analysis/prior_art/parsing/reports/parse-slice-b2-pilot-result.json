@@ -1,0 +1,8 @@
+{
+  "document_id": "document:sha256:6e16185ba1d28808d17484b66cf05737eb4478926aa053cd75c92f6cf50de8c6",
+  "output": "/tmp/truecolor-ocr-pilot/parsed/fa/faf1915b8935136b34b3f0107ae995a0ab84629e0d233c53b388d52b5378b938/6e16185ba1d28808d17484b66cf05737eb4478926aa053cd75c92f6cf50de8c6.canonical.json",
+  "page_count": 1,
+  "route": "PDF",
+  "segment_count": 17,
+  "status": "PARSED"
+}

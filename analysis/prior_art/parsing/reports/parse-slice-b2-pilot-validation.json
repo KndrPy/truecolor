@@ -1,0 +1,27 @@
+{
+  "canonical_document_count": 1,
+  "canonical_document_path": "/tmp/truecolor-ocr-pilot/parsed/fa/faf1915b8935136b34b3f0107ae995a0ab84629e0d233c53b388d52b5378b938/6e16185ba1d28808d17484b66cf05737eb4478926aa053cd75c92f6cf50de8c6.canonical.json",
+  "coordinate_errors": [],
+  "dpi": 300,
+  "matched_expected_tokens": [
+    "ART",
+    "DETERMINISTIC",
+    "OCR",
+    "PILOT",
+    "PRIOR",
+    "PROVENANCE",
+    "TESSERACT",
+    "TRUECOLOR"
+  ],
+  "mean_confidence": 87.80172270588236,
+  "ocr_classification": "OCR_REQUIRED",
+  "ocr_engine": "tesseract",
+  "ocr_execution_status": "SUCCEEDED",
+  "page_text_source": "OCR",
+  "provenance_errors": [],
+  "recognized_text": "TRUECOLOR PRIOR ART OCR PILOT\nDETERMINISTIC IMAGE ONLY DOCUN\nPAGE LEVEL PROVENANCE VALIDAIT\nTESSERACT CONFIDENCE AND BOU!",
+  "recognized_word_count": 17,
+  "render_engine": "pdftoppm",
+  "segment_count": 17,
+  "status": "PASS"
+}

@@ -31,6 +31,46 @@
               "UNDETERMINED"
             ]
           },
+          "dpi": {
+            "maximum": 1200,
+            "minimum": 72,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "engine": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "engine_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "execution_status": {
+            "enum": [
+              "NOT_RUN",
+              "SUCCEEDED"
+            ]
+          },
+          "language": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "mean_confidence": {
+            "maximum": 100,
+            "minimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
           "page_number": {
             "minimum": 1,
             "type": "integer"
@@ -40,6 +80,40 @@
               "type": "string"
             },
             "type": "array"
+          },
+          "recognized_character_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "recognized_word_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "render_engine": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "render_engine_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "render_height_px": {
+            "minimum": 1,
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "render_width_px": {
+            "minimum": 1,
+            "type": [
+              "integer",
+              "null"
+            ]
           },
           "word_count": {
             "minimum": 0,
@@ -51,7 +125,19 @@
           "classification",
           "reason_codes",
           "character_count",
-          "word_count"
+          "word_count",
+          "execution_status",
+          "engine",
+          "engine_version",
+          "render_engine",
+          "render_engine_version",
+          "language",
+          "dpi",
+          "render_width_px",
+          "render_height_px",
+          "recognized_word_count",
+          "recognized_character_count",
+          "mean_confidence"
         ],
         "type": "object"
       },
@@ -71,12 +157,26 @@
               "null"
             ]
           },
+          "ocr_mean_confidence": {
+            "maximum": 100,
+            "minimum": 0,
+            "type": [
+              "number",
+              "null"
+            ]
+          },
           "page_number": {
             "minimum": 1,
             "type": "integer"
           },
           "text": {
             "type": "string"
+          },
+          "text_source": {
+            "enum": [
+              "EMBEDDED",
+              "OCR"
+            ]
           },
           "width": {
             "type": [
@@ -95,7 +195,9 @@
           "height",
           "text",
           "word_count",
-          "character_count"
+          "character_count",
+          "text_source",
+          "ocr_mean_confidence"
         ],
         "type": "object"
       },
@@ -212,6 +314,37 @@
                   "null"
                 ]
               },
+              "extraction_method": {
+                "enum": [
+                  "EMBEDDED",
+                  "OCR",
+                  null
+                ],
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ocr_confidence": {
+                "maximum": 100,
+                "minimum": 0,
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "ocr_engine": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ocr_language": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
               "page_number": {
                 "minimum": 1,
                 "type": [
@@ -221,6 +354,14 @@
               },
               "paragraph_index": {
                 "minimum": 0,
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "render_dpi": {
+                "maximum": 1200,
+                "minimum": 72,
                 "type": [
                   "integer",
                   "null"

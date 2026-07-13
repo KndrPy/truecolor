@@ -1,0 +1,131 @@
+{
+  "artifacts": [
+    {
+      "bytes": 11601,
+      "path": "analysis/prior_art/parsing/ocr_engine.py",
+      "sha256": "f5993825cfb6ddcfa5005e8fe69b3baeee9c366bc36b4ddf7ff1b8374900a2da"
+    },
+    {
+      "bytes": 16977,
+      "path": "analysis/prior_art/parsing/pdf_parser.py",
+      "sha256": "47a1119007aad13ae98e9c34aa7cca2ec3dc208f2658c089fbe63a7ed9665965"
+    },
+    {
+      "bytes": 11335,
+      "path": "analysis/prior_art/parsing/test_ocr_engine.py",
+      "sha256": "1ff07622c41fe60bb287bcdeb518d3ee95d9d721ab7b07c07c34cb71b0183882"
+    },
+    {
+      "bytes": 13560,
+      "path": "analysis/prior_art/parsing/schemas/canonical_document.schema.json",
+      "sha256": "dd49a46c9040e648f05612cf52e0a1c5c3c559032be5aa9da6af80faee39273e"
+    },
+    {
+      "bytes": 3026,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B2.md",
+      "sha256": "0176d4298ebd4f35fec646003349e5ac56888314fb2f1bb9563f77aa9a6acd5d"
+    },
+    {
+      "bytes": 1220,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b2-ocr-tests.txt",
+      "sha256": "9226a5e36a478630114ba5b259f3bc7b231843f5de5dcea106c6d92d5f46daa8"
+    },
+    {
+      "bytes": 4813,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b2-regression-tests.txt",
+      "sha256": "f9bfd64aae5659626d0221d3bb6436b0c8b07ef3516bbb0009a61d8b8f081251"
+    },
+    {
+      "bytes": 629,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b2-pilot-intake.json",
+      "sha256": "7d9a390c6c850c2cb1927a4e4dcd116bc69ef92859f4755fd0cd794edccc2808"
+    },
+    {
+      "bytes": 381,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b2-pilot-result.json",
+      "sha256": "2b0b60a3b9c5572a060efe059ad88e1fc63ecfff5af785fe1908039ec99f6ae6"
+    },
+    {
+      "bytes": 0,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b2-pilot-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 903,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b2-pilot-validation.json",
+      "sha256": "2c55d59cadb170f10f3bac78784b413153a9b8499e2b2de766ec23ce8953066c"
+    }
+  ],
+  "capabilities": [
+    "CAP-PARSE-004"
+  ],
+  "gates": {
+    "coordinate_validation_passed": true,
+    "ocr_classification_required": true,
+    "ocr_execution_succeeded": true,
+    "ocr_tests_passed": true,
+    "pilot_parse_passed": true,
+    "pilot_stderr_empty": true,
+    "provenance_validation_passed": true,
+    "real_ocr_pilot_passed": true,
+    "regression_tests_passed": true,
+    "required_files_exist": true,
+    "schema_extended": true
+  },
+  "missing_files": [],
+  "pilot_evidence": {
+    "canonical_document_count": 1,
+    "canonical_document_path": "/tmp/truecolor-ocr-pilot/parsed/fa/faf1915b8935136b34b3f0107ae995a0ab84629e0d233c53b388d52b5378b938/6e16185ba1d28808d17484b66cf05737eb4478926aa053cd75c92f6cf50de8c6.canonical.json",
+    "coordinate_errors": [],
+    "dpi": 300,
+    "matched_expected_tokens": [
+      "ART",
+      "DETERMINISTIC",
+      "OCR",
+      "PILOT",
+      "PRIOR",
+      "PROVENANCE",
+      "TESSERACT",
+      "TRUECOLOR"
+    ],
+    "mean_confidence": 87.80172270588236,
+    "ocr_classification": "OCR_REQUIRED",
+    "ocr_engine": "tesseract",
+    "ocr_execution_status": "SUCCEEDED",
+    "page_text_source": "OCR",
+    "provenance_errors": [],
+    "recognized_text": "TRUECOLOR PRIOR ART OCR PILOT\nDETERMINISTIC IMAGE ONLY DOCUN\nPAGE LEVEL PROVENANCE VALIDAIT\nTESSERACT CONFIDENCE AND BOU!",
+    "recognized_word_count": 17,
+    "render_engine": "pdftoppm",
+    "segment_count": 17,
+    "status": "PASS"
+  },
+  "runtime": {
+    "dpi": 300,
+    "mean_confidence": 87.80172270588236,
+    "ocr_engine": "tesseract",
+    "recognized_word_count": 17,
+    "render_engine": "pdftoppm"
+  },
+  "schema_evidence": {
+    "assessment_fields_present": true,
+    "page_fields_present": true,
+    "source_fields_present": true
+  },
+  "schema_version": "1.0.0",
+  "slice": "B2",
+  "status": "PASS",
+  "test_evidence": {
+    "ocr_tests": {
+      "count": 8,
+      "expected": 8,
+      "passed": true
+    },
+    "regression_tests": {
+      "count": 33,
+      "expected": 33,
+      "passed": true
+    }
+  },
+  "work_package": "WP-PARSE-01"
+}

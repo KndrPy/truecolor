@@ -1,0 +1,10 @@
+{
+  "artifact_id": "artifact:sha256:faf1915b8935136b34b3f0107ae995a0ab84629e0d233c53b388d52b5378b938",
+  "byte_length": 58616,
+  "content_sha256": "faf1915b8935136b34b3f0107ae995a0ab84629e0d233c53b388d52b5378b938",
+  "deduplicated": false,
+  "detected_media_type": "application/pdf",
+  "manifest_path": "/tmp/truecolor-ocr-pilot/manifests/fa/faf1915b8935136b34b3f0107ae995a0ab84629e0d233c53b388d52b5378b938/intake_87c326ac0e80486494df6e34002f2bc1.json",
+  "object_path": "/tmp/truecolor-ocr-pilot/store/objects/sha256/fa/f1/faf1915b8935136b34b3f0107ae995a0ab84629e0d233c53b388d52b5378b938.blob",
+  "status": "STORED_IMMUTABLY"
+}
