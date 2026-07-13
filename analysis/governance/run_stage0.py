@@ -369,8 +369,25 @@ def main() -> int:
         "cpu": capture_optional(
             ["lscpu"]
         ),
-        "memory": capture_optional(
-            ["free", "-h"]
+        "memory_total": (
+            next(
+                (
+                    line.strip()
+                    for line in Path(
+                        "/proc/meminfo"
+                    ).read_text(
+                        encoding="utf-8"
+                    ).splitlines()
+                    if line.startswith(
+                        "MemTotal:"
+                    )
+                ),
+                "UNAVAILABLE",
+            )
+            if Path(
+                "/proc/meminfo"
+            ).is_file()
+            else "UNAVAILABLE"
         ),
         "gpu_nvidia": capture_optional(
             [

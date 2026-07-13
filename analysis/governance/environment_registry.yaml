@@ -15,3 +15,28 @@ environment_policy:
   package_lock_required: true
   hardware_capture_required: true
   runtime_capture_required_per_stage: true
+deterministic_capture_policy:
+  included:
+  - python_version
+  - python_executable
+  - operating_system
+  - kernel
+  - machine_architecture
+  - cpu_inventory
+  - installed_memory_total
+  - gpu_name
+  - gpu_driver
+  - gpu_memory_total
+  - git_version
+  - repository_commit
+  - repository_branch
+  - package_lock
+  excluded_as_volatile:
+  - memory_currently_used
+  - memory_currently_free
+  - gpu_utilization
+  - gpu_temperature
+  - process_inventory
+  - system_load
+  - wall_clock_time
+  rule: Volatile runtime telemetry must not be included in deterministic environment identity artifacts.
