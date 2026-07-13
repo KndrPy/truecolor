@@ -1,0 +1,2 @@
+canonical_path,sha256,rows,columns,subject_col,origin_col,instrument_col,body_site_col,specular_col,split_col,lab_L_col,lab_a_col,lab_b_col,wavelength_count
+/mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet,07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090,15256,47,subject_id,origin_code,,,,,L*,a*,b*,31

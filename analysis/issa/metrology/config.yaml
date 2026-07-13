@@ -1,0 +1,111 @@
+expected:
+  canonical_rows: 15256
+  subject_or_composite_ids: 2107
+  wavelength_start_nm: 400
+  wavelength_end_nm: 700
+  wavelength_step_nm: 10
+  wavelength_count: 31
+  prepared_split_rows:
+    train: 10662
+    validation: 2280
+    test: 2314
+discovery:
+  include_extensions:
+  - .csv
+  - .tsv
+  - .parquet
+  - .xlsx
+  - .xls
+  - .feather
+  filename_tokens:
+  - issa
+  - skin
+  - spectra
+  - spectral
+  - reflectance
+  - train
+  - validation
+  - val
+  - test
+  exclude_path_tokens:
+  - results
+  - output
+  - archive
+  - backup
+  - __pycache__
+  - .git
+columns:
+  subject_candidates:
+  - subject_id
+  - subject
+  - subject_number
+  - subject_no
+  - participant_id
+  - participant
+  - sample_id
+  - id
+  origin_candidates:
+  - origin
+  - origin_code
+  - cohort
+  - source
+  - study
+  instrument_candidates:
+  - instrument
+  - device
+  - spectrophotometer
+  - spectrometer
+  body_site_candidates:
+  - body_location
+  - body_site
+  - location
+  - site
+  specular_candidates:
+  - spin
+  - sci_sce
+  - specular
+  - geometry
+  - measurement_mode
+  split_candidates:
+  - split
+  - partition
+  - dataset_split
+  lab_candidates:
+    L:
+    - l_star
+    - l*
+    - lab_l
+    - cie_l
+    - l
+    a:
+    - a_star
+    - a*
+    - lab_a
+    - cie_a
+    - a
+    b:
+    - b_star
+    - b*
+    - lab_b
+    - cie_b
+    - b
+quality:
+  exact_duplicate_round_decimals: 10
+  near_duplicate_cosine_threshold: 0.9999
+  near_duplicate_rmse_threshold: 0.002
+  near_duplicate_max_neighbors: 5
+  random_state: 42
+  max_near_duplicate_rows: 25000
+  reflectance_scale: auto
+  reflectance_fraction_max_detection: 1.5
+  reflectance_percent_max_detection: 150.0
+  reflectance_percent_median_threshold: 1.0
+  reflectance_min_normalized: 0.0
+  reflectance_max_normalized: 1.5
+  minimum_admissible_fraction: 0.95
+closure:
+  allow_row_count_mismatch: false
+  allow_wavelength_mismatch: false
+  allow_split_leakage: false
+  allow_unhashed_sources: false
+  allow_missing_subject_key: false

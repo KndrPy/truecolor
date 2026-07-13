@@ -1,0 +1,46 @@
+stage: 3
+name: issa_metrology_and_provenance_closure
+status: closed
+commit_basis:
+  implementation_commit: e70f7b0a4fa6a22d9c9206cfdf1ee47e532fa7fb
+canonical_source:
+  path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+  sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+  rows: 15256
+  columns: 47
+identity:
+  unique_subject_or_composite_keys: 2107
+  split_leakage_keys: 0
+spectral_grid:
+  start_nm: 400
+  end_nm: 700
+  step_nm: 10
+  wavelength_count: 31
+reflectance:
+  source_scale: percent
+  normalization_factor: 0.01
+  raw_min: 0.03
+  raw_median: 25.07
+  raw_max: 73.27
+  normalized_min: 0.0003
+  normalized_median: 0.2507
+  normalized_max: 0.7327
+admissibility:
+  admissible_rows: 15256
+  inadmissible_rows: 0
+  admissible_fraction: 1.0
+duplicates:
+  exact_duplicate_rows: 138
+  near_duplicate_pairs: 594
+gates:
+  canonical_row_count_match: pass
+  wavelength_grid_exact: pass
+  subject_count_reconciled: pass
+  subject_key_present: pass
+  split_leakage_zero: pass
+  reflectance_scale_resolved: pass
+  nonzero_admissible_rows: pass
+  admissible_fraction_nontrivial: pass
+next_stage:
+  id: 4
+  name: measurand_stability_and_biological_nuisance_decomposition
