@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/archive_expansion.schema.json",
+  "title": "TrueColor Archive Expansion Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "expansion_id",
+    "parent_artifact_id",
+    "parent_intake_attempt_id",
+    "parent_content_sha256",
+    "container_media_type",
+    "limits",
+    "children",
+    "member_count",
+    "expanded_byte_count",
+    "status",
+    "implementation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "expansion_id": {
+      "type": "string",
+      "pattern": "^expansion:[a-f0-9]{32}$"
+    },
+    "parent_artifact_id": {
+      "type": "string",
+      "pattern": "^artifact:sha256:[a-f0-9]{64}$"
+    },
+    "parent_intake_attempt_id": {
+      "type": "string",
+      "pattern": "^intake:[a-f0-9]{32}$"
+    },
+    "parent_content_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "container_media_type": {
+      "enum": [
+        "application/zip",
+        "application/x-tar",
+        "application/gzip"
+      ]
+    },
+    "limits": {
+      "type": "object",
+      "required": [
+        "max_members",
+        "max_member_bytes",
+        "max_total_bytes",
+        "max_compression_ratio",
+        "archive_depth"
+      ],
+      "properties": {
+        "max_members": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_member_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_total_bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_compression_ratio": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "archive_depth": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "member_path",
+          "member_index",
+          "declared_uncompressed_bytes",
+          "compressed_bytes",
+          "child_artifact_id",
+          "child_intake_attempt_id",
+          "child_manifest_path",
+          "child_object_path",
+          "child_content_sha256",
+          "detected_media_type",
+          "deduplicated"
+        ],
+        "properties": {
+          "member_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "member_index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "declared_uncompressed_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "compressed_bytes": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "child_artifact_id": {
+            "type": "string",
+            "pattern": "^artifact:sha256:[a-f0-9]{64}$"
+          },
+          "child_intake_attempt_id": {
+            "type": "string",
+            "pattern": "^intake:[a-f0-9]{32}$"
+          },
+          "child_manifest_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "child_object_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "child_content_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "detected_media_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "deduplicated": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "member_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "expanded_byte_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "status": {
+      "const": "EXPANDED"
+    },
+    "implementation": {
+      "type": "object",
+      "required": [
+        "module",
+        "version"
+      ],
+      "properties": {
+        "module": {
+          "const": "analysis.prior_art.ingestion.archive_expansion"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,94 @@
+{
+  "artifact_count": 3,
+  "artifacts": [
+    {
+      "artifact_id": "artifact:sha256:9ec5bf7e13425fa575589bc195762c8efb7e132a81381593d78ce4834d3b466d",
+      "attempt_count": 1,
+      "byte_length": 54,
+      "content_sha256": "9ec5bf7e13425fa575589bc195762c8efb7e132a81381593d78ce4834d3b466d",
+      "detected_media_types": [
+        "application/xml"
+      ],
+      "intake_attempt_ids": [
+        "intake:4af7d1c907e04808b76e3c3145305168"
+      ],
+      "object_path": "/tmp/truecolor-intake-slice-b/store/objects/sha256/9e/c5/9ec5bf7e13425fa575589bc195762c8efb7e132a81381593d78ce4834d3b466d.blob",
+      "original_names": [
+        "article.xml"
+      ]
+    },
+    {
+      "artifact_id": "artifact:sha256:e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87",
+      "attempt_count": 1,
+      "byte_length": 310,
+      "content_sha256": "e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87",
+      "detected_media_types": [
+        "application/zip"
+      ],
+      "intake_attempt_ids": [
+        "intake:87e3489e904d44338682b656a5d9a204"
+      ],
+      "object_path": "/tmp/truecolor-intake-slice-b/store/objects/sha256/e8/d8/e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87.blob",
+      "original_names": [
+        "prior-work.zip"
+      ]
+    },
+    {
+      "artifact_id": "artifact:sha256:fc4aa6a631213de26c04c318797ecc5575fde99eb380b42e1f95ae55724923fa",
+      "attempt_count": 1,
+      "byte_length": 25,
+      "content_sha256": "fc4aa6a631213de26c04c318797ecc5575fde99eb380b42e1f95ae55724923fa",
+      "detected_media_types": [
+        "text/csv"
+      ],
+      "intake_attempt_ids": [
+        "intake:1b6363caa63f47f08fad097335487717"
+      ],
+      "object_path": "/tmp/truecolor-intake-slice-b/store/objects/sha256/fc/4a/fc4aa6a631213de26c04c318797ecc5575fde99eb380b42e1f95ae55724923fa.blob",
+      "original_names": [
+        "results.csv"
+      ]
+    }
+  ],
+  "attempt_count": 3,
+  "attempts": [
+    {
+      "artifact_id": "artifact:sha256:fc4aa6a631213de26c04c318797ecc5575fde99eb380b42e1f95ae55724923fa",
+      "byte_length": 25,
+      "content_sha256": "fc4aa6a631213de26c04c318797ecc5575fde99eb380b42e1f95ae55724923fa",
+      "detected_media_type": "text/csv",
+      "intake_attempt_id": "intake:1b6363caa63f47f08fad097335487717",
+      "manifest_path": "/tmp/truecolor-intake-slice-b/manifests/fc/fc4aa6a631213de26c04c318797ecc5575fde99eb380b42e1f95ae55724923fa/intake_1b6363caa63f47f08fad097335487717.json",
+      "metadata_id": "metadata:ae21f8c683a52e772add62721b0a050d01767d9fff5971cee89cfe615ccd609f",
+      "object_path": "/tmp/truecolor-intake-slice-b/store/objects/sha256/fc/4a/fc4aa6a631213de26c04c318797ecc5575fde99eb380b42e1f95ae55724923fa.blob",
+      "original_name": "results.csv",
+      "processing_allowed": true
+    },
+    {
+      "artifact_id": "artifact:sha256:9ec5bf7e13425fa575589bc195762c8efb7e132a81381593d78ce4834d3b466d",
+      "byte_length": 54,
+      "content_sha256": "9ec5bf7e13425fa575589bc195762c8efb7e132a81381593d78ce4834d3b466d",
+      "detected_media_type": "application/xml",
+      "intake_attempt_id": "intake:4af7d1c907e04808b76e3c3145305168",
+      "manifest_path": "/tmp/truecolor-intake-slice-b/manifests/9e/9ec5bf7e13425fa575589bc195762c8efb7e132a81381593d78ce4834d3b466d/intake_4af7d1c907e04808b76e3c3145305168.json",
+      "metadata_id": "metadata:68bbb61d298a31791302a32a481d56fa2fd9c4d0fc203df5474ccb95e1e53576",
+      "object_path": "/tmp/truecolor-intake-slice-b/store/objects/sha256/9e/c5/9ec5bf7e13425fa575589bc195762c8efb7e132a81381593d78ce4834d3b466d.blob",
+      "original_name": "article.xml",
+      "processing_allowed": true
+    },
+    {
+      "artifact_id": "artifact:sha256:e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87",
+      "byte_length": 310,
+      "content_sha256": "e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87",
+      "detected_media_type": "application/zip",
+      "intake_attempt_id": "intake:87e3489e904d44338682b656a5d9a204",
+      "manifest_path": "/tmp/truecolor-intake-slice-b/manifests/e8/e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87/intake_87e3489e904d44338682b656a5d9a204.json",
+      "metadata_id": null,
+      "object_path": "/tmp/truecolor-intake-slice-b/store/objects/sha256/e8/d8/e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87.blob",
+      "original_name": "prior-work.zip",
+      "processing_allowed": null
+    }
+  ],
+  "index_sha256": "0cff1356bd3e49cd0e08664f46a7ef8b5ff9d6a45ca26be83e82599e0f3582d3",
+  "schema_version": "1.0.0"
+}

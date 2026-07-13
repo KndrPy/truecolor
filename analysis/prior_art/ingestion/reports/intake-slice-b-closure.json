@@ -1,0 +1,79 @@
+{
+  "artifacts": [
+    {
+      "bytes": 33407,
+      "path": "analysis/prior_art/ingestion/archive_expansion.py",
+      "sha256": "a4b1df1737745f79a028c866d62decc0d7f7593b2104e297dd53246f2e4494d0"
+    },
+    {
+      "bytes": 9041,
+      "path": "analysis/prior_art/ingestion/intake_metadata.py",
+      "sha256": "dd8625db103802df3b0e7ed56d4cef1f3d05adfa3e80ff51457aaf7db0c21539"
+    },
+    {
+      "bytes": 9945,
+      "path": "analysis/prior_art/ingestion/build_intake_index.py",
+      "sha256": "3d9f515bf77b75bba143b0bb8ce362cfa25136f0eb3cbd5e996e5668763e2110"
+    },
+    {
+      "bytes": 10730,
+      "path": "analysis/prior_art/ingestion/test_archive_expansion.py",
+      "sha256": "bac6f46e5fb2818c8a5f7b4aa0a2e3ad58f4a5c4c6bd96b0966c379f8679e9b3"
+    },
+    {
+      "bytes": 4225,
+      "path": "analysis/prior_art/ingestion/schemas/archive_expansion.schema.json",
+      "sha256": "9b3a6762924733df8104286f254140dc7caff9e2a57d4c414321a00daae4ad4c"
+    },
+    {
+      "bytes": 3177,
+      "path": "analysis/prior_art/ingestion/schemas/intake_metadata.schema.json",
+      "sha256": "ea1d3c47dc18c5434f06f6ba0f13acd7e495e03786c2556b39f267aaa1fe2073"
+    },
+    {
+      "bytes": 1771,
+      "path": "analysis/prior_art/ingestion/WP_INGEST_01_SLICE_B.md",
+      "sha256": "2932850783b5e075cbf5a4589ff74dd0df65f23611ea6738ffc342b6cbd7a554"
+    },
+    {
+      "bytes": 2751,
+      "path": "analysis/prior_art/ingestion/reports/intake-slice-b-unit-tests.txt",
+      "sha256": "be2fbf7a6bd1bc88d5e53d959dac0ccc3286a050cff0bc8a463a6265181959fe"
+    },
+    {
+      "bytes": 637,
+      "path": "analysis/prior_art/ingestion/reports/intake-slice-b-parent.json",
+      "sha256": "4956b0f0d384d07266b934079ca8373c949c202e1273aed245177910de6b4da7"
+    },
+    {
+      "bytes": 330,
+      "path": "analysis/prior_art/ingestion/reports/intake-slice-b-expansion.json",
+      "sha256": "dca4e84e57fc79dccc923894ffc2b9e2cd19a9d9644aaf36b134f9aeb59fab0a"
+    },
+    {
+      "bytes": 4555,
+      "path": "analysis/prior_art/ingestion/reports/intake-slice-b-index.json",
+      "sha256": "64674bab61edbcad71c0eccb9211cd855c2ffae49d3be1689c46b10ce6b06fb6"
+    }
+  ],
+  "capabilities": [
+    "CAP-INTAKE-004",
+    "CAP-INTAKE-005",
+    "CAP-INTAKE-006"
+  ],
+  "gates": {
+    "archive_expanded": true,
+    "index_has_three_artifacts": true,
+    "index_has_three_attempts": true,
+    "index_hash_present": true,
+    "parent_is_zip": true,
+    "parent_stored": true,
+    "required_files_exist": true,
+    "two_children_created": true,
+    "unit_tests_passed": true
+  },
+  "schema_version": "1.0.0",
+  "slice": "B",
+  "status": "PASS",
+  "work_package": "WP-INGEST-01"
+}

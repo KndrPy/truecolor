@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/intake_metadata.schema.json",
+  "title": "TrueColor Artifact Intake Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "metadata_id",
+    "artifact_id",
+    "intake_attempt_id",
+    "access_status",
+    "license_status",
+    "processing_allowed",
+    "source",
+    "lineage",
+    "recorded_at",
+    "implementation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "metadata_id": {
+      "type": "string",
+      "pattern": "^metadata:[a-f0-9]{64}$"
+    },
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^artifact:sha256:[a-f0-9]{64}$"
+    },
+    "intake_attempt_id": {
+      "type": "string",
+      "pattern": "^intake:[a-f0-9]{32}$"
+    },
+    "access_status": {
+      "enum": [
+        "AVAILABLE",
+        "AUTH_REQUIRED",
+        "MISSING",
+        "BLOCKED",
+        "EXPIRED",
+        "UNKNOWN"
+      ]
+    },
+    "license_status": {
+      "enum": [
+        "PUBLIC_DOMAIN",
+        "OPEN_LICENSE",
+        "RESTRICTED",
+        "USER_PROVIDED",
+        "PROHIBITED",
+        "UNKNOWN"
+      ]
+    },
+    "processing_allowed": {
+      "type": "boolean"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "source_uri",
+        "provider",
+        "retrieved_at"
+      ],
+      "properties": {
+        "source_uri": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retrieved_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "lineage": {
+      "type": "object",
+      "required": [
+        "parent_artifact_id",
+        "root_artifact_id",
+        "archive_member_path",
+        "archive_depth",
+        "expansion_id"
+      ],
+      "properties": {
+        "parent_artifact_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "root_artifact_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "archive_member_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "archive_depth": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expansion_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "policy_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "implementation": {
+      "type": "object",
+      "required": [
+        "module",
+        "version"
+      ],
+      "properties": {
+        "module": {
+          "const": "analysis.prior_art.ingestion.intake_metadata"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

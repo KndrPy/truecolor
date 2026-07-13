@@ -1,0 +1,10 @@
+{
+  "artifact_id": "artifact:sha256:e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87",
+  "byte_length": 310,
+  "content_sha256": "e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87",
+  "deduplicated": false,
+  "detected_media_type": "application/zip",
+  "manifest_path": "/tmp/truecolor-intake-slice-b/manifests/e8/e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87/intake_87e3489e904d44338682b656a5d9a204.json",
+  "object_path": "/tmp/truecolor-intake-slice-b/store/objects/sha256/e8/d8/e8d882646939fc440ac2c1408edc1db1b7a93d1a4cc696a3795b705ece09bd87.blob",
+  "status": "STORED_IMMUTABLY"
+}
