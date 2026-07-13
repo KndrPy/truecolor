@@ -1,0 +1,95 @@
+policy_version: 1.0.0
+policy_name: stage1_candidate_identity_and_publication_verification
+
+purpose: >-
+  Establish the identity, publication status, canonical identifier, and authoritative
+  source lineage for every harvested Stage 1 candidate before title-abstract screening
+  or full-text claim extraction.
+
+candidate_universe:
+  expected_candidate_count: 1303
+  source_artifact: analysis/prior_art/evidence/ranking/stage1_complete_global_ranking.json
+  identity_key: canonical_key
+
+verification_states:
+  - UNVERIFIED
+  - VERIFIED
+  - CONFLICT
+  - UNRESOLVED
+  - DUPLICATE_VERSION
+  - RETRACTED
+  - CORRECTION_ONLY
+  - NON_SCHOLARLY
+
+authoritative_identity_sources:
+  - publisher_landing_page
+  - doi_registration_agency
+  - pubmed
+  - europe_pmc
+  - crossref
+  - official_standards_repository
+  - official_patent_repository
+  - institutional_repository
+  - arxiv
+
+identity_source_precedence:
+  - publisher_landing_page
+  - pubmed
+  - europe_pmc
+  - doi_registration_agency
+  - official_standards_repository
+  - official_patent_repository
+  - institutional_repository
+  - arxiv
+  - crossref
+
+required_identity_checks:
+  - canonical_identifier_resolves
+  - normalized_title_matches
+  - publication_year_matches
+  - authorship_matches
+  - publication_venue_matches
+  - publication_type_resolved
+  - publication_status_resolved
+  - duplicate_version_relationship_resolved
+  - correction_or_retraction_status_resolved
+
+publication_statuses:
+  - PUBLISHED
+  - PREPRINT
+  - CONFERENCE_PROCEEDING
+  - STANDARD
+  - PATENT
+  - RETRACTED
+  - CORRECTED
+  - WITHDRAWN
+  - UNKNOWN
+
+version_relationships:
+  - CANONICAL_VERSION
+  - PREPRINT_OF_PUBLISHED_ARTICLE
+  - PUBLISHED_VERSION_OF_PREPRINT
+  - CONFERENCE_VERSION
+  - EXTENDED_JOURNAL_VERSION
+  - CORRECTION_OF
+  - RETRACTION_OF
+  - DUPLICATE_METADATA_RECORD
+  - UNRESOLVED
+
+prohibited_inferences:
+  - verified_identity_is_not_source_admission
+  - verified_identity_is_not_methodological_quality
+  - verified_identity_is_not_claim_overlap
+  - verified_identity_is_not_novelty_adjudication
+  - citation_count_is_not_evidence_strength
+  - index_metadata_is_not_full_text_evidence
+
+closure_requirements:
+  - every_candidate_has_identity_record
+  - every_identity_record_references_global_ranking
+  - identifiers_are_unique_or_version_linked
+  - all_conflicts_are_explicit
+  - all_duplicate_versions_are_linked
+  - all_retractions_and_corrections_are_explicit
+  - verification_evidence_is_hashed
+  - deterministic_queue_generation_passes

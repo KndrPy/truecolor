@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/identity-verification.schema.json",
+  "title": "TrueColor Stage 1 Candidate Identity Verification",
+  "type": "object",
+  "required": [
+    "candidate_key",
+    "global_rank",
+    "harvested_title",
+    "verification_state",
+    "canonical_identifier",
+    "canonical_title",
+    "canonical_authors",
+    "canonical_year",
+    "canonical_venue",
+    "publication_type",
+    "publication_status",
+    "version_relationship",
+    "related_candidate_keys",
+    "identity_checks",
+    "authoritative_sources",
+    "conflicts",
+    "reviewer",
+    "review_notes"
+  ],
+  "properties": {
+    "candidate_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "global_rank": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "harvested_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verification_state": {
+      "enum": [
+        "UNVERIFIED",
+        "VERIFIED",
+        "CONFLICT",
+        "UNRESOLVED",
+        "DUPLICATE_VERSION",
+        "RETRACTED",
+        "CORRECTION_ONLY",
+        "NON_SCHOLARLY"
+      ]
+    },
+    "canonical_identifier": {
+      "type": "object",
+      "properties": {
+        "doi": {
+          "type": ["string", "null"]
+        },
+        "pmid": {
+          "type": ["string", "null"]
+        },
+        "pmcid": {
+          "type": ["string", "null"]
+        },
+        "arxiv": {
+          "type": ["string", "null"]
+        },
+        "isbn": {
+          "type": ["string", "null"]
+        },
+        "patent": {
+          "type": ["string", "null"]
+        },
+        "official_document_id": {
+          "type": ["string", "null"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "canonical_title": {
+      "type": ["string", "null"]
+    },
+    "canonical_authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "canonical_year": {
+      "type": ["integer", "null"],
+      "minimum": 1900,
+      "maximum": 2026
+    },
+    "canonical_venue": {
+      "type": ["string", "null"]
+    },
+    "publication_type": {
+      "type": ["string", "null"]
+    },
+    "publication_status": {
+      "enum": [
+        "PUBLISHED",
+        "PREPRINT",
+        "CONFERENCE_PROCEEDING",
+        "STANDARD",
+        "PATENT",
+        "RETRACTED",
+        "CORRECTED",
+        "WITHDRAWN",
+        "UNKNOWN"
+      ]
+    },
+    "version_relationship": {
+      "enum": [
+        "CANONICAL_VERSION",
+        "PREPRINT_OF_PUBLISHED_ARTICLE",
+        "PUBLISHED_VERSION_OF_PREPRINT",
+        "CONFERENCE_VERSION",
+        "EXTENDED_JOURNAL_VERSION",
+        "CORRECTION_OF",
+        "RETRACTION_OF",
+        "DUPLICATE_METADATA_RECORD",
+        "UNRESOLVED"
+      ]
+    },
+    "related_candidate_keys": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "identity_checks": {
+      "type": "object",
+      "required": [
+        "canonical_identifier_resolves",
+        "normalized_title_matches",
+        "publication_year_matches",
+        "authorship_matches",
+        "publication_venue_matches",
+        "publication_type_resolved",
+        "publication_status_resolved",
+        "duplicate_version_relationship_resolved",
+        "correction_or_retraction_status_resolved"
+      ],
+      "properties": {
+        "canonical_identifier_resolves": {
+          "type": ["boolean", "null"]
+        },
+        "normalized_title_matches": {
+          "type": ["boolean", "null"]
+        },
+        "publication_year_matches": {
+          "type": ["boolean", "null"]
+        },
+        "authorship_matches": {
+          "type": ["boolean", "null"]
+        },
+        "publication_venue_matches": {
+          "type": ["boolean", "null"]
+        },
+        "publication_type_resolved": {
+          "type": ["boolean", "null"]
+        },
+        "publication_status_resolved": {
+          "type": ["boolean", "null"]
+        },
+        "duplicate_version_relationship_resolved": {
+          "type": ["boolean", "null"]
+        },
+        "correction_or_retraction_status_resolved": {
+          "type": ["boolean", "null"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "authoritative_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_type",
+          "identifier_or_url",
+          "retrieved_date",
+          "evidence_sha256"
+        ],
+        "properties": {
+          "source_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "identifier_or_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrieved_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "evidence_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "field",
+          "observed_values",
+          "resolution"
+        ],
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "observed_values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "resolution": {
+            "type": ["string", "null"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
