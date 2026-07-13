@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "dimensions": [
+    {
+      "id": "identity_confidence",
+      "range": [0.0, 1.0],
+      "meaning": "Confidence that the artifact identity and version are correctly resolved."
+    },
+    {
+      "id": "claim_extraction_confidence",
+      "range": [0.0, 1.0],
+      "meaning": "Confidence that the represented claim accurately reflects the cited passage."
+    },
+    {
+      "id": "method_transparency",
+      "range": [0.0, 1.0],
+      "meaning": "Degree to which the method is specified sufficiently for technical evaluation."
+    },
+    {
+      "id": "dataset_adequacy",
+      "range": [0.0, 1.0],
+      "meaning": "Adequacy of sample size, coverage, representativeness, labels, and exclusions."
+    },
+    {
+      "id": "statistical_adequacy",
+      "range": [0.0, 1.0],
+      "meaning": "Adequacy of statistical design, uncertainty reporting, controls, and multiplicity treatment."
+    },
+    {
+      "id": "external_validation",
+      "range": [0.0, 1.0],
+      "meaning": "Strength of evaluation outside the development data, site, instrument, or cohort."
+    },
+    {
+      "id": "independent_replication",
+      "range": [0.0, 1.0],
+      "meaning": "Strength of independent confirmation by parties not responsible for the original work."
+    },
+    {
+      "id": "reproducibility",
+      "range": [0.0, 1.0],
+      "meaning": "Availability and sufficiency of code, data, parameters, protocols, and execution details."
+    },
+    {
+      "id": "conflict_of_interest_risk",
+      "range": [0.0, 1.0],
+      "direction": "HIGHER_IS_GREATER_RISK",
+      "meaning": "Risk that financial, organizational, or authorship interests affect interpretation."
+    },
+    {
+      "id": "correction_retraction_risk",
+      "range": [0.0, 1.0],
+      "direction": "HIGHER_IS_GREATER_RISK",
+      "meaning": "Risk arising from corrections, expressions of concern, retractions, or material updates."
+    },
+    {
+      "id": "applicability_to_truecolor",
+      "range": [0.0, 1.0],
+      "meaning": "Applicability of the evidence to the relevant TrueColor capability and operating conditions."
+    }
+  ],
+  "claim_statuses": [
+    "AUTHOR_CLAIMED",
+    "EMPIRICALLY_OBSERVED",
+    "STATISTICALLY_SUPPORTED",
+    "EXTERNALLY_VALIDATED",
+    "INDEPENDENTLY_REPLICATED",
+    "NOT_REPRODUCED",
+    "CONTRADICTED",
+    "INSUFFICIENTLY_DISCLOSED",
+    "NOT_ASSESSED"
+  ],
+  "aggregation_policy": {
+    "single_truth_score_permitted": false,
+    "missing_dimension_policy": "EXPLICIT_NULL",
+    "source_claim_default": "AUTHOR_CLAIMED"
+  }
+}

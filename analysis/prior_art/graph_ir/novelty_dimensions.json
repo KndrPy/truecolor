@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "dimensions": [
+    "SCIENTIFIC_MECHANISM",
+    "ALGORITHM",
+    "MEASUREMENT",
+    "SYSTEM_ARCHITECTURE",
+    "DATA_PIPELINE",
+    "CALIBRATION",
+    "ROBUSTNESS",
+    "DEPLOYMENT",
+    "HUMAN_INTERACTION",
+    "OPERATOR_WORKFLOW",
+    "REAL_TIME_EXECUTION",
+    "CROSS_DEVICE_GENERALIZATION",
+    "COMBINED_SYSTEM"
+  ],
+  "assessment_states": [
+    "KNOWN",
+    "WELL_GROUNDED",
+    "PARTIALLY_GROUNDED",
+    "DENSELY_OCCUPIED",
+    "SPARSELY_OCCUPIED",
+    "UNADDRESSED",
+    "NOVELTY_CANDIDATE",
+    "SUPPORTED_NOVELTY",
+    "UNSUPPORTED_NOVELTY_CLAIM",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "required_basis": [
+    "truecolor_capability_id",
+    "comparison_artifact_ids",
+    "comparison_claim_ids",
+    "overlap_description",
+    "difference_description",
+    "evidence_paths",
+    "uncertainties",
+    "review_status"
+  ],
+  "prohibited_inference": [
+    "ABSENCE_FROM_RETRIEVED_CORPUS_IMPLIES_NOVELTY",
+    "AUTHOR_NOVELTY_CLAIM_IMPLIES_NOVELTY",
+    "CITATION_COUNT_IMPLIES_TRUTH",
+    "PUBLICATION_STATUS_IMPLIES_VALIDITY"
+  ]
+}

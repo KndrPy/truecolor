@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/operator-query.schema.json",
+  "title": "TrueColor Evidence Graph Operator Query",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "query_id",
+    "seed",
+    "traversal",
+    "filters",
+    "projection"
+  ],
+  "properties": {
+    "query_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "values"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "NODE_IDS",
+            "TEXT",
+            "TRUECOLOR_CAPABILITY",
+            "CLAIM",
+            "ARTIFACT"
+          ]
+        },
+        "values": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "traversal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "max_depth",
+        "direction",
+        "edge_types",
+        "activation"
+      ],
+      "properties": {
+        "max_depth": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 12
+        },
+        "direction": {
+          "enum": [
+            "OUTBOUND",
+            "INBOUND",
+            "BOTH"
+          ]
+        },
+        "edge_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "activation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled",
+            "initial_energy",
+            "decay",
+            "minimum_energy"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "initial_energy": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0
+            },
+            "decay": {
+              "type": "number",
+              "exclusiveMinimum": 0.0,
+              "maximum": 1.0
+            },
+            "minimum_energy": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0
+            }
+          }
+        }
+      }
+    },
+    "filters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node_types",
+        "minimum_confidence",
+        "review_statuses",
+        "claim_statuses"
+      ],
+      "properties": {
+        "node_types": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "minimum_confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "review_statuses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_statuses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "publication_year_min": {
+          "type": ["integer", "null"]
+        },
+        "publication_year_max": {
+          "type": ["integer", "null"]
+        }
+      }
+    },
+    "projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "include_paths",
+        "include_provenance",
+        "include_reasoning_trace",
+        "maximum_nodes"
+      ],
+      "properties": {
+        "include_paths": {
+          "type": "boolean"
+        },
+        "include_provenance": {
+          "type": "boolean"
+        },
+        "include_reasoning_trace": {
+          "type": "boolean"
+        },
+        "maximum_nodes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        }
+      }
+    }
+  }
+}

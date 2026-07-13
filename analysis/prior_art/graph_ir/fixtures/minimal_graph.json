@@ -1,0 +1,135 @@
+{
+  "graph_id": "truecolor-prior-art-minimal-fixture",
+  "schema_version": "1.0.0",
+  "created_at": "2026-07-13T00:00:00Z",
+  "source_manifest_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "nodes": [
+    {
+      "node_id": "artifact:paper:example",
+      "node_type": "PAPER",
+      "label": "Example optical measurement paper",
+      "properties": {
+        "claim_status": "AUTHOR_CLAIMED"
+      },
+      "provenance": [
+        {
+          "artifact_id": "artifact:paper:example",
+          "locator_type": "METADATA",
+          "locator_value": "canonical bibliographic record",
+          "quoted_text": null,
+          "source_sha256": null
+        }
+      ],
+      "trust": [
+        {
+          "dimension": "identity_confidence",
+          "value": 1.0,
+          "basis": "Exact DOI resolution",
+          "assessed_by": "stage1_identity_resolver",
+          "assessed_at": "2026-07-13T00:00:00Z"
+        }
+      ],
+      "review_status": "MACHINE_REVIEWED"
+    },
+    {
+      "node_id": "claim:example:1",
+      "node_type": "CLAIM",
+      "label": "Diffuse reflectance can estimate skin chromophore properties under specified conditions",
+      "properties": {
+        "claim_status": "AUTHOR_CLAIMED",
+        "scope": "controlled optical acquisition"
+      },
+      "provenance": [
+        {
+          "artifact_id": "artifact:paper:example",
+          "locator_type": "ABSTRACT",
+          "locator_value": "claim sentence 1",
+          "quoted_text": "Example fixture claim.",
+          "source_sha256": null
+        }
+      ],
+      "trust": [
+        {
+          "dimension": "claim_extraction_confidence",
+          "value": 1.0,
+          "basis": "Fixture assertion",
+          "assessed_by": "fixture",
+          "assessed_at": "2026-07-13T00:00:00Z"
+        }
+      ],
+      "review_status": "MACHINE_REVIEWED"
+    },
+    {
+      "node_id": "truecolor:capability:chromophore-estimation",
+      "node_type": "CAPABILITY",
+      "label": "Cross-device chromophore estimation",
+      "properties": {
+        "novelty_dimensions": [
+          "CALIBRATION",
+          "CROSS_DEVICE_GENERALIZATION",
+          "COMBINED_SYSTEM"
+        ]
+      },
+      "provenance": [
+        {
+          "artifact_id": "truecolor:canonical-scope",
+          "locator_type": "SECTION",
+          "locator_value": "chromophore estimation capability",
+          "quoted_text": null,
+          "source_sha256": null
+        }
+      ],
+      "trust": [],
+      "review_status": "HUMAN_REVIEWED"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge:example:extracted",
+      "edge_type": "EXTRACTED_FROM",
+      "source_node_id": "claim:example:1",
+      "target_node_id": "artifact:paper:example",
+      "properties": {},
+      "provenance": [
+        {
+          "artifact_id": "artifact:paper:example",
+          "locator_type": "ABSTRACT",
+          "locator_value": "claim sentence 1",
+          "quoted_text": "Example fixture claim.",
+          "source_sha256": null
+        }
+      ],
+      "confidence": 1.0,
+      "review_status": "MACHINE_REVIEWED",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "edge_id": "edge:example:grounds",
+      "edge_type": "PARTIALLY_GROUNDS",
+      "source_node_id": "claim:example:1",
+      "target_node_id": "truecolor:capability:chromophore-estimation",
+      "properties": {
+        "grounded_scope": "optical relationship",
+        "unaddressed_scope": [
+          "cross-device normalization",
+          "uncontrolled illumination",
+          "real-time deployment"
+        ]
+      },
+      "provenance": [
+        {
+          "artifact_id": "artifact:paper:example",
+          "locator_type": "ABSTRACT",
+          "locator_value": "claim sentence 1",
+          "quoted_text": "Example fixture claim.",
+          "source_sha256": null
+        }
+      ],
+      "confidence": 0.7,
+      "review_status": "MACHINE_REVIEWED",
+      "valid_from": null,
+      "valid_to": null
+    }
+  ]
+}

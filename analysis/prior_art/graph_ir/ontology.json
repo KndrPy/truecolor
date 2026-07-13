@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "node_types": {
+    "ARTIFACT": [
+      "PAPER",
+      "PATENT",
+      "DATASET",
+      "BENCHMARK",
+      "SOFTWARE",
+      "STANDARD",
+      "GRANT",
+      "SUPPLEMENT",
+      "CORRECTION",
+      "COMMENTARY"
+    ],
+    "KNOWLEDGE": [
+      "CLAIM",
+      "HYPOTHESIS",
+      "METHOD",
+      "ALGORITHM",
+      "MEASUREMENT",
+      "METRIC",
+      "RESULT",
+      "LIMITATION",
+      "ASSUMPTION",
+      "FAILURE_MODE",
+      "MECHANISM"
+    ],
+    "EXECUTION": [
+      "EXPERIMENT",
+      "COHORT",
+      "INSTRUMENT",
+      "MODEL",
+      "TRAINING_REGIME",
+      "EVALUATION_REGIME",
+      "REPRODUCTION_ATTEMPT"
+    ],
+    "TRUECOLOR": [
+      "CAPABILITY",
+      "REQUIREMENT",
+      "INVARIANT",
+      "DESIGN_DECISION",
+      "IMPLEMENTATION",
+      "TRUECOLOR_EXPERIMENT",
+      "PRODUCT_BEHAVIOR",
+      "NOVELTY_CANDIDATE"
+    ],
+    "PROVENANCE": [
+      "SOURCE_SNAPSHOT",
+      "EXTRACTION_RUN",
+      "ADJUDICATION",
+      "REVIEW_ACTION",
+      "DERIVATION"
+    ]
+  },
+  "edge_types": {
+    "EVIDENCE": [
+      "SUPPORTS",
+      "PARTIALLY_SUPPORTS",
+      "CONTRADICTS",
+      "QUALIFIES",
+      "FAILS_TO_SUPPORT"
+    ],
+    "DEPENDENCY": [
+      "DEPENDS_ON",
+      "ASSUMES",
+      "DERIVES_FROM",
+      "REQUIRES",
+      "USES_METHOD",
+      "USES_DATASET",
+      "USES_INSTRUMENT",
+      "USES_METRIC"
+    ],
+    "SCIENTIFIC_RELATION": [
+      "CITES",
+      "REPRODUCES",
+      "PARTIALLY_REPRODUCES",
+      "FAILS_TO_REPRODUCE",
+      "EXTENDS",
+      "GENERALIZES",
+      "NARROWS",
+      "COMBINES",
+      "IMPLEMENTS",
+      "EVALUATES"
+    ],
+    "IDENTITY_VERSION": [
+      "SAME_WORK_AS",
+      "VERSION_OF",
+      "CORRECTS",
+      "UPDATES",
+      "SUPPLEMENTS",
+      "RETRACTS"
+    ],
+    "TRUECOLOR_GROUNDING": [
+      "PROVIDES_GROUNDING_FOR",
+      "PARTIALLY_GROUNDS",
+      "OPERATIONALIZED_BY",
+      "DIFFERS_FROM",
+      "OVERLAPS_WITH",
+      "LEAVES_UNADDRESSED",
+      "CLAIMS_NOVELTY_OVER"
+    ],
+    "PROVENANCE": [
+      "EXTRACTED_FROM",
+      "OBSERVED_IN",
+      "GENERATED_BY",
+      "REVIEWED_BY",
+      "SUPERSEDES",
+      "INVALIDATES"
+    ]
+  },
+  "graph_constraints": {
+    "provenance_graph": "ACYCLIC",
+    "derivation_graph": "ACYCLIC",
+    "semantic_graph": "MULTIGRAPH_CYCLES_ALLOWED"
+  }
+}
