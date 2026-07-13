@@ -1,0 +1,19 @@
+test_checksum_mismatch_leaves_no_object (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_checksum_mismatch_leaves_no_object) ... ok
+test_csv_detected_as_csv (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_csv_detected_as_csv) ... ok
+test_docx_detected_by_archive_structure (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_docx_detected_by_archive_structure) ... ok
+test_identical_bytes_deduplicate (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_identical_bytes_deduplicate) ... ok
+test_json_and_jsonl_detection (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_json_and_jsonl_detection) ... ok
+test_malformed_xml_is_still_classified_as_xml (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_malformed_xml_is_still_classified_as_xml) ... ok
+test_manifest_schema_and_object_integrity (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_manifest_schema_and_object_integrity) ... ok
+test_module_cli_executes_without_runpy_warning (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_module_cli_executes_without_runpy_warning) ... ok
+test_pdf_signature_overrides_extension (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_pdf_signature_overrides_extension) ... ok
+test_size_limit_fails_without_object (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_size_limit_fails_without_object) ... ok
+test_tsv_detected_as_tab_separated_values (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_tsv_detected_as_tab_separated_values) ... ok
+test_tsv_detection_does_not_require_suffix (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_tsv_detection_does_not_require_suffix) ... ok
+test_xlsx_detected_by_archive_structure (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_xlsx_detected_by_archive_structure) ... ok
+test_zero_byte_artifact_is_explicit (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_zero_byte_artifact_is_explicit) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.506s
+
+OK

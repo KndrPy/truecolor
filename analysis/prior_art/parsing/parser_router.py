@@ -56,6 +56,22 @@ ROUTES = {
         route="MARKDOWN",
         parser_name="canonical-markdown",
     ),
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": ParserRoute(
+        route="DOCX",
+        parser_name="stdlib-docx",
+    ),
+    "text/csv": ParserRoute(
+        route="CSV",
+        parser_name="stdlib-csv",
+    ),
+    "text/tab-separated-values": ParserRoute(
+        route="TSV",
+        parser_name="stdlib-tsv",
+    ),
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": ParserRoute(
+        route="XLSX",
+        parser_name="openpyxl-xlsx",
+    ),
 }
 
 

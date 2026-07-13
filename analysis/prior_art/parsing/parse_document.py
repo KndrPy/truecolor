@@ -33,6 +33,17 @@ from .xml_parser import (
     parse_xml,
 )
 
+from .docx_parser import (
+    DOCXParseError,
+    parse_docx,
+)
+
+from .tabular_parser import (
+    TabularParseError,
+    parse_delimited,
+    parse_xlsx,
+)
+
 
 VERSION = "1.0.0"
 
@@ -185,6 +196,10 @@ def parse_intake_manifest(
         dict[str, Any]
     ] = []
 
+    tables: list[
+        dict[str, Any]
+    ] = []
+
     ocr_assessment: list[
         dict[str, Any]
     ] = []
@@ -225,6 +240,50 @@ def parse_intake_manifest(
             ),
         )
 
+    elif route.route == "DOCX":
+        (
+            text,
+            segments,
+            tables,
+        ) = parse_docx(
+            object_path,
+            artifact_id=artifact_id,
+        )
+
+    elif route.route == "CSV":
+        (
+            text,
+            segments,
+            tables,
+        ) = parse_delimited(
+            object_path,
+            artifact_id=artifact_id,
+            delimiter=",",
+            source_kind="CSV",
+        )
+
+    elif route.route == "TSV":
+        (
+            text,
+            segments,
+            tables,
+        ) = parse_delimited(
+            object_path,
+            artifact_id=artifact_id,
+            delimiter="\t",
+            source_kind="TSV",
+        )
+
+    elif route.route == "XLSX":
+        (
+            text,
+            segments,
+            tables,
+        ) = parse_xlsx(
+            object_path,
+            artifact_id=artifact_id,
+        )
+
     else:
         raise DocumentParseError(
             "ROUTE_NOT_IMPLEMENTED",
@@ -245,6 +304,7 @@ def parse_intake_manifest(
         "text": text,
         "segments": segments,
         "pages": pages,
+        "tables": tables,
         "ocr_assessment": (
             ocr_assessment
         ),
@@ -279,6 +339,7 @@ def parse_intake_manifest(
         "text": text,
         "segments": segments,
         "pages": pages,
+        "tables": tables,
         "ocr_assessment": (
             ocr_assessment
         ),
@@ -363,6 +424,8 @@ def main() -> int:
         DocumentParseError,
         ParserRoutingError,
         PDFParseError,
+        DOCXParseError,
+        TabularParseError,
         ValueError,
         OSError,
     ) as exc:

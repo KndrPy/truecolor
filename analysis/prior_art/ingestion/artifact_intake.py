@@ -315,14 +315,43 @@ def _detect_structured_text(
                     for row in rows[:20]
                 )
             ):
-                return MediaDetection(
-                    media_type="text/csv",
-                    method="TEXT_HEURISTIC",
-                    confidence=0.82,
-                    evidence=(
-                        "Consistent delimited row "
+                delimiter = dialect.delimiter
+
+                if delimiter == "\t":
+                    media_type = (
+                        "text/tab-separated-values"
+                    )
+
+                    evidence = (
+                        "Consistent tab-delimited "
+                        "row structure detected",
+                    )
+
+                    confidence = (
+                        0.90
+                        if suffix == ".tsv"
+                        else 0.86
+                    )
+                else:
+                    media_type = "text/csv"
+
+                    evidence = (
+                        "Consistent comma-delimited "
+                        "or CSV-compatible row "
                         "structure detected",
-                    ),
+                    )
+
+                    confidence = (
+                        0.90
+                        if suffix == ".csv"
+                        else 0.82
+                    )
+
+                return MediaDetection(
+                    media_type=media_type,
+                    method="TEXT_HEURISTIC",
+                    confidence=confidence,
+                    evidence=evidence,
                 )
         except csv.Error:
             pass
@@ -420,9 +449,24 @@ def detect_media_type(
                 is_docx = (
                     "[Content_Types].xml"
                     in names
+                    and "word/document.xml"
+                    in names
                     and any(
                         name.startswith(
                             "word/"
+                        )
+                        for name in names
+                    )
+                )
+
+                is_xlsx = (
+                    "[Content_Types].xml"
+                    in names
+                    and "xl/workbook.xml"
+                    in names
+                    and any(
+                        name.startswith(
+                            "xl/worksheets/"
                         )
                         for name in names
                     )
@@ -444,9 +488,30 @@ def detect_media_type(
                         evidence=(
                             "ZIP container contains "
                             "DOCX content types and "
-                            "word/ members",
+                            "word/document.xml",
                         ),
                     )
+
+                if is_xlsx:
+                    return MediaDetection(
+                        media_type=(
+                            "application/"
+                            "vnd.openxmlformats-"
+                            "officedocument."
+                            "spreadsheetml."
+                            "sheet"
+                        ),
+                        method=(
+                            "ARCHIVE_STRUCTURE"
+                        ),
+                        confidence=1.0,
+                        evidence=(
+                            "ZIP container contains "
+                            "XLSX workbook and "
+                            "worksheet members",
+                        ),
+                    )
+
         except (
             OSError,
             zipfile.BadZipFile,

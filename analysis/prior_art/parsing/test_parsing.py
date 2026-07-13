@@ -709,5 +709,548 @@ startxref
         )
 
 
+    def test_csv_normalizes_table_and_cell_provenance(
+        self,
+    ) -> None:
+        source = (
+            self.sources
+            / "evidence.csv"
+        )
+
+        source.write_text(
+            (
+                "name,value\n"
+                "alpha,1\n"
+                "beta,2\n"
+            ),
+            encoding="utf-8",
+        )
+
+        result = self.ingest(
+            source
+        )
+
+        self.assertEqual(
+            result.manifest[
+                "detected_media_type"
+            ],
+            "text/csv",
+        )
+
+        document, _ = self.parse(
+            result.manifest_path
+        )
+
+        self.assertEqual(
+            document["parser"]["route"],
+            "CSV",
+        )
+
+        self.assertEqual(
+            len(document["tables"]),
+            1,
+        )
+
+        table = document["tables"][0]
+
+        self.assertEqual(
+            table["source_kind"],
+            "CSV",
+        )
+
+        self.assertEqual(
+            table["row_count"],
+            3,
+        )
+
+        self.assertEqual(
+            table["column_count"],
+            2,
+        )
+
+        self.assertEqual(
+            table["rows"][1][
+                "cells"
+            ][0]["value"],
+            "alpha",
+        )
+
+        self.assertEqual(
+            table["rows"][1][
+                "cells"
+            ][0]["cell_reference"],
+            "A2",
+        )
+
+        for segment in document[
+            "segments"
+        ]:
+            start = segment[
+                "canonical_start"
+            ]
+
+            end = segment[
+                "canonical_end"
+            ]
+
+            self.assertEqual(
+                document["text"][
+                    start:end
+                ],
+                segment["text"],
+            )
+
+            self.assertIsNotNone(
+                segment["source"][
+                    "source_start"
+                ]
+            )
+
+            self.assertIsNotNone(
+                segment["source"][
+                    "source_end"
+                ]
+            )
+
+    def test_tsv_normalizes_as_distinct_route(
+        self,
+    ) -> None:
+        source = (
+            self.sources
+            / "evidence.tsv"
+        )
+
+        source.write_text(
+            (
+                "name\tvalue\n"
+                "alpha\t1\n"
+                "beta\t2\n"
+            ),
+            encoding="utf-8",
+        )
+
+        result = self.ingest(
+            source
+        )
+
+        self.assertEqual(
+            result.manifest[
+                "detected_media_type"
+            ],
+            "text/tab-separated-values",
+        )
+
+        document, _ = self.parse(
+            result.manifest_path
+        )
+
+        self.assertEqual(
+            document["parser"]["route"],
+            "TSV",
+        )
+
+        self.assertEqual(
+            document["tables"][0][
+                "source_kind"
+            ],
+            "TSV",
+        )
+
+        self.assertEqual(
+            document["tables"][0][
+                "row_count"
+            ],
+            3,
+        )
+
+        self.assertEqual(
+            document["tables"][0][
+                "column_count"
+            ],
+            2,
+        )
+
+    def test_docx_paragraph_and_table_provenance(
+        self,
+    ) -> None:
+        import zipfile
+
+        source = (
+            self.sources
+            / "evidence.docx"
+        )
+
+        with zipfile.ZipFile(
+            source,
+            "w",
+            compression=(
+                zipfile.ZIP_DEFLATED
+            ),
+        ) as archive:
+            archive.writestr(
+                "[Content_Types].xml",
+                (
+                    '<?xml version="1.0"?>'
+                    '<Types xmlns="http://schemas.'
+                    'openxmlformats.org/package/'
+                    '2006/content-types">'
+                    '<Override '
+                    'PartName="/word/document.xml" '
+                    'ContentType="application/vnd.'
+                    'openxmlformats-officedocument.'
+                    'wordprocessingml.document.'
+                    'main+xml"/>'
+                    "</Types>"
+                ),
+            )
+
+            archive.writestr(
+                "word/document.xml",
+                (
+                    '<?xml version="1.0"?>'
+                    '<w:document '
+                    'xmlns:w="http://schemas.'
+                    'openxmlformats.org/'
+                    'wordprocessingml/2006/main">'
+                    "<w:body>"
+                    "<w:p><w:r><w:t>"
+                    "Evidence paragraph"
+                    "</w:t></w:r></w:p>"
+                    "<w:tbl>"
+                    "<w:tr>"
+                    "<w:tc><w:p><w:r><w:t>"
+                    "Metric"
+                    "</w:t></w:r></w:p></w:tc>"
+                    "<w:tc><w:p><w:r><w:t>"
+                    "Value"
+                    "</w:t></w:r></w:p></w:tc>"
+                    "</w:tr>"
+                    "<w:tr>"
+                    "<w:tc><w:p><w:r><w:t>"
+                    "Error"
+                    "</w:t></w:r></w:p></w:tc>"
+                    "<w:tc><w:p><w:r><w:t>"
+                    "0.041"
+                    "</w:t></w:r></w:p></w:tc>"
+                    "</w:tr>"
+                    "</w:tbl>"
+                    "</w:body>"
+                    "</w:document>"
+                ),
+            )
+
+        result = self.ingest(
+            source
+        )
+
+        self.assertEqual(
+            result.manifest[
+                "detected_media_type"
+            ],
+            (
+                "application/"
+                "vnd.openxmlformats-"
+                "officedocument."
+                "wordprocessingml.document"
+            ),
+        )
+
+        document, _ = self.parse(
+            result.manifest_path
+        )
+
+        self.assertEqual(
+            document["parser"]["route"],
+            "DOCX",
+        )
+
+        self.assertIn(
+            "Evidence paragraph",
+            document["text"],
+        )
+
+        self.assertEqual(
+            len(document["tables"]),
+            1,
+        )
+
+        table = document["tables"][0]
+
+        self.assertEqual(
+            table["source_kind"],
+            "DOCX",
+        )
+
+        self.assertEqual(
+            table["row_count"],
+            2,
+        )
+
+        self.assertEqual(
+            table["column_count"],
+            2,
+        )
+
+        paragraph_segments = [
+            segment
+            for segment in document[
+                "segments"
+            ]
+            if segment["kind"]
+            == "PARAGRAPH"
+        ]
+
+        self.assertEqual(
+            len(paragraph_segments),
+            1,
+        )
+
+        self.assertEqual(
+            paragraph_segments[0][
+                "source"
+            ][
+                "document_part"
+            ],
+            "word/document.xml",
+        )
+
+        cell_segments = [
+            segment
+            for segment in document[
+                "segments"
+            ]
+            if segment["kind"]
+            == "TABLE_CELL"
+        ]
+
+        self.assertEqual(
+            len(cell_segments),
+            4,
+        )
+
+        self.assertEqual(
+            cell_segments[0][
+                "source"
+            ][
+                "cell_reference"
+            ],
+            "R1C1",
+        )
+
+    def test_xlsx_normalizes_sheets_and_typed_cells(
+        self,
+    ) -> None:
+        from openpyxl import Workbook
+
+        source = (
+            self.sources
+            / "evidence.xlsx"
+        )
+
+        workbook = Workbook()
+
+        first = workbook.active
+        first.title = "Evidence"
+        first.append(
+            ["name", "value", "active"]
+        )
+        first.append(
+            ["alpha", 1, True]
+        )
+        first.append(
+            ["beta", 2.5, False]
+        )
+
+        second = workbook.create_sheet(
+            "Formulas"
+        )
+        second.append(
+            ["metric", "result"]
+        )
+        second.append(
+            ["sum", "=SUM(1,2)"]
+        )
+
+        workbook.save(source)
+        workbook.close()
+
+        result = self.ingest(
+            source
+        )
+
+        self.assertEqual(
+            result.manifest[
+                "detected_media_type"
+            ],
+            (
+                "application/"
+                "vnd.openxmlformats-"
+                "officedocument."
+                "spreadsheetml.sheet"
+            ),
+        )
+
+        document, _ = self.parse(
+            result.manifest_path
+        )
+
+        self.assertEqual(
+            document["parser"]["route"],
+            "XLSX",
+        )
+
+        self.assertEqual(
+            len(document["tables"]),
+            2,
+        )
+
+        evidence = document[
+            "tables"
+        ][0]
+
+        formulas = document[
+            "tables"
+        ][1]
+
+        self.assertEqual(
+            evidence["name"],
+            "Evidence",
+        )
+
+        self.assertEqual(
+            evidence["row_count"],
+            3,
+        )
+
+        self.assertEqual(
+            evidence["column_count"],
+            3,
+        )
+
+        self.assertEqual(
+            evidence["rows"][1][
+                "cells"
+            ][1]["value_type"],
+            "INTEGER",
+        )
+
+        self.assertEqual(
+            evidence["rows"][1][
+                "cells"
+            ][2]["value_type"],
+            "BOOLEAN",
+        )
+
+        self.assertEqual(
+            evidence["rows"][2][
+                "cells"
+            ][1]["value_type"],
+            "NUMBER",
+        )
+
+        self.assertEqual(
+            formulas["rows"][1][
+                "cells"
+            ][1]["value_type"],
+            "FORMULA",
+        )
+
+        xlsx_segments = [
+            segment
+            for segment in document[
+                "segments"
+            ]
+            if segment["source"][
+                "sheet_name"
+            ]
+            is not None
+        ]
+
+        self.assertTrue(
+            xlsx_segments
+        )
+
+        self.assertTrue(
+            all(
+                segment["source"][
+                    "cell_reference"
+                ]
+                for segment
+                in xlsx_segments
+            )
+        )
+
+    def test_slice_b1_documents_are_deterministic(
+        self,
+    ) -> None:
+        source = (
+            self.sources
+            / "stable.csv"
+        )
+
+        source.write_text(
+            (
+                "name,value\n"
+                "alpha,1\n"
+            ),
+            encoding="utf-8",
+        )
+
+        result = self.ingest(
+            source
+        )
+
+        first, first_path = self.parse(
+            result.manifest_path
+        )
+
+        second, second_path = self.parse(
+            result.manifest_path
+        )
+
+        self.assertEqual(
+            first,
+            second,
+        )
+
+        self.assertEqual(
+            first_path,
+            second_path,
+        )
+
+        self.assertEqual(
+            first["document_id"],
+            second["document_id"],
+        )
+
+    def test_slice_b1_routes_are_registered(
+        self,
+    ) -> None:
+        expected = {
+            (
+                "application/vnd.openxmlformats-"
+                "officedocument.wordprocessingml."
+                "document"
+            ): "DOCX",
+            "text/csv": "CSV",
+            "text/tab-separated-values": "TSV",
+            (
+                "application/vnd.openxmlformats-"
+                "officedocument.spreadsheetml."
+                "sheet"
+            ): "XLSX",
+        }
+
+        for media_type, route in (
+            expected.items()
+        ):
+            self.assertEqual(
+                route_parser(
+                    media_type
+                ).route,
+                route,
+            )
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -513,5 +513,126 @@ class ArtifactIntakeTests(
         )
 
 
+    def test_csv_detected_as_csv(
+        self,
+    ) -> None:
+        source = self.write_source(
+            "records.csv",
+            (
+                b"name,value\n"
+                b"alpha,1\n"
+                b"beta,2\n"
+            ),
+        )
+
+        detection = detect_media_type(
+            source
+        )
+
+        self.assertEqual(
+            detection.media_type,
+            "text/csv",
+        )
+
+        self.assertEqual(
+            detection.method,
+            "TEXT_HEURISTIC",
+        )
+
+    def test_tsv_detected_as_tab_separated_values(
+        self,
+    ) -> None:
+        source = self.write_source(
+            "records.tsv",
+            (
+                b"name\tvalue\n"
+                b"alpha\t1\n"
+                b"beta\t2\n"
+            ),
+        )
+
+        detection = detect_media_type(
+            source
+        )
+
+        self.assertEqual(
+            detection.media_type,
+            "text/tab-separated-values",
+        )
+
+        self.assertEqual(
+            detection.method,
+            "TEXT_HEURISTIC",
+        )
+
+    def test_tsv_detection_does_not_require_suffix(
+        self,
+    ) -> None:
+        source = self.write_source(
+            "records.data",
+            (
+                b"name\tvalue\n"
+                b"alpha\t1\n"
+                b"beta\t2\n"
+            ),
+        )
+
+        detection = detect_media_type(
+            source
+        )
+
+        self.assertEqual(
+            detection.media_type,
+            "text/tab-separated-values",
+        )
+
+    def test_xlsx_detected_by_archive_structure(
+        self,
+    ) -> None:
+        source = (
+            self.sources
+            / "workbook.bin"
+        )
+
+        with zipfile.ZipFile(
+            source,
+            "w",
+        ) as archive:
+            archive.writestr(
+                "[Content_Types].xml",
+                "<Types/>",
+            )
+
+            archive.writestr(
+                "xl/workbook.xml",
+                "<workbook/>",
+            )
+
+            archive.writestr(
+                "xl/worksheets/sheet1.xml",
+                "<worksheet/>",
+            )
+
+        detection = detect_media_type(
+            source
+        )
+
+        self.assertEqual(
+            detection.media_type,
+            (
+                "application/"
+                "vnd.openxmlformats-"
+                "officedocument."
+                "spreadsheetml."
+                "sheet"
+            ),
+        )
+
+        self.assertEqual(
+            detection.method,
+            "ARCHIVE_STRUCTURE",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,137 @@
+{
+  "artifacts": [
+    {
+      "bytes": 26053,
+      "path": "analysis/prior_art/ingestion/artifact_intake.py",
+      "sha256": "ecf23934e0c36968c7d2a388be8f4140fbda2d25aad112aa7cd67415fff95fb6"
+    },
+    {
+      "bytes": 13370,
+      "path": "analysis/prior_art/ingestion/test_artifact_intake.py",
+      "sha256": "7fec5c832775dfa04eae7c73e2cb47b55b87e956f507e73ae7f6f82792bb361e"
+    },
+    {
+      "bytes": 7969,
+      "path": "analysis/prior_art/parsing/docx_parser.py",
+      "sha256": "c4964f9cd0f54439b98d84045ca1f9df68ec1ec4afa79c0da91cf9252f8eaedc"
+    },
+    {
+      "bytes": 11517,
+      "path": "analysis/prior_art/parsing/tabular_parser.py",
+      "sha256": "083a1f08ef05badd8a06c2076e4b0fc898c91aecce51f3a90c21ae431884827f"
+    },
+    {
+      "bytes": 2125,
+      "path": "analysis/prior_art/parsing/parser_router.py",
+      "sha256": "a3e30d6e7495d2338111a114bb98476fe2228d9951630184e26bd111993ebef7"
+    },
+    {
+      "bytes": 9259,
+      "path": "analysis/prior_art/parsing/parse_document.py",
+      "sha256": "d8fc6ffb0e1cb33109956f45fce7b06c29666893f7c8329e4950a5122be72984"
+    },
+    {
+      "bytes": 26414,
+      "path": "analysis/prior_art/parsing/test_parsing.py",
+      "sha256": "972a49356404cb1970e18416fd22e0adda9ef9da94e94338ddcfd4f8d8de7787"
+    },
+    {
+      "bytes": 10257,
+      "path": "analysis/prior_art/parsing/schemas/canonical_document.schema.json",
+      "sha256": "ceadbbf4a2cfd293d785e40ee6f51a91f697c806a468afff3a4e7f561e7ba25d"
+    },
+    {
+      "bytes": 2024,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B1.md",
+      "sha256": "ee49208640a26ff004e6257eb89e69c9857dea63fc5177b13a2617cef449ddb1"
+    },
+    {
+      "bytes": 2285,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b1-media-tests.txt",
+      "sha256": "757cf46ec2188d20fc17959c27965bc30d63b727262050b826bc861111a90fe0"
+    },
+    {
+      "bytes": 4813,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b1-unit-tests.txt",
+      "sha256": "8fe846a0307a6164ea7e4a506f991f94970ea387e19a4e2ad5aa7ce7c8c5cbe3"
+    }
+  ],
+  "capabilities": [
+    "CAP-PARSE-008",
+    "CAP-PARSE-009"
+  ],
+  "excluded_capabilities": [
+    "CAP-PARSE-004",
+    "CAP-PARSE-006",
+    "CAP-PARSE-010",
+    "CAP-PARSE-012"
+  ],
+  "gates": {
+    "canonical_schema_extended": true,
+    "combined_regression_passed": true,
+    "media_detection_tests_passed": true,
+    "required_files_exist": true
+  },
+  "missing_files": [],
+  "schema_evidence": {
+    "passed": true,
+    "routes": [
+      "CSV",
+      "DOCX",
+      "HTML",
+      "MARKDOWN",
+      "PDF",
+      "TEXT",
+      "TSV",
+      "XLSX",
+      "XML"
+    ],
+    "segment_kinds": [
+      "DOCUMENT",
+      "HEADING",
+      "LIST_ITEM",
+      "PAGE",
+      "PARAGRAPH",
+      "TABLE_CELL",
+      "TABLE_ROW",
+      "TABLE_TEXT",
+      "XML_ELEMENT"
+    ],
+    "source_fields": [
+      "bbox",
+      "cell_reference",
+      "column_index",
+      "document_part",
+      "page_number",
+      "paragraph_index",
+      "row_index",
+      "sheet_name",
+      "source_end",
+      "source_start",
+      "table_index",
+      "xml_path"
+    ],
+    "tables_defined": true,
+    "tables_required": true
+  },
+  "schema_version": "1.0.0",
+  "slice": "B1",
+  "status": "PASS",
+  "test_evidence": {
+    "combined_regression": {
+      "contains_failure_summary": false,
+      "contains_ok": true,
+      "count": 33,
+      "expected_count": 33,
+      "passed": true
+    },
+    "media_detection": {
+      "contains_failure_summary": false,
+      "contains_ok": true,
+      "count": 14,
+      "expected_count": 14,
+      "passed": true
+    }
+  },
+  "work_package": "WP-PARSE-01"
+}

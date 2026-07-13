@@ -1,54 +1,111 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://truecolor.local/schemas/canonical_document.schema.json",
-  "title": "TrueColor Canonical Parsed Document",
-  "type": "object",
-  "required": [
-    "schema_version",
-    "document_id",
-    "artifact_id",
-    "content_sha256",
-    "source_media_type",
-    "parser",
-    "text",
-    "segments",
-    "pages",
-    "ocr_assessment",
-    "status"
-  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
   "properties": {
-    "schema_version": {
-      "const": "1.0.0"
-    },
-    "document_id": {
-      "type": "string",
-      "pattern": "^document:sha256:[a-f0-9]{64}$"
-    },
     "artifact_id": {
-      "type": "string",
-      "pattern": "^artifact:sha256:[a-f0-9]{64}$"
+      "pattern": "^artifact:sha256:[a-f0-9]{64}$",
+      "type": "string"
     },
     "content_sha256": {
-      "type": "string",
-      "pattern": "^[a-f0-9]{64}$"
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
     },
-    "source_media_type": {
-      "type": "string",
-      "minLength": 1
+    "document_id": {
+      "pattern": "^document:sha256:[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "ocr_assessment": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "character_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "classification": {
+            "enum": [
+              "OCR_NOT_REQUIRED",
+              "OCR_RECOMMENDED",
+              "OCR_REQUIRED",
+              "UNDETERMINED"
+            ]
+          },
+          "page_number": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "reason_codes": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "word_count": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "page_number",
+          "classification",
+          "reason_codes",
+          "character_count",
+          "word_count"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "pages": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "character_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "height": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "page_number": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "text": {
+            "type": "string"
+          },
+          "width": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "word_count": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "page_number",
+          "width",
+          "height",
+          "text",
+          "word_count",
+          "character_count"
+        ],
+        "type": "object"
+      },
+      "type": "array"
     },
     "parser": {
-      "type": "object",
-      "required": [
-        "name",
-        "version",
-        "route"
-      ],
+      "additionalProperties": false,
       "properties": {
         "name": {
           "type": "string"
-        },
-        "version": {
-          "const": "1.0.0"
         },
         "route": {
           "enum": [
@@ -56,31 +113,38 @@
             "XML",
             "HTML",
             "TEXT",
-            "MARKDOWN"
+            "MARKDOWN",
+            "DOCX",
+            "CSV",
+            "TSV",
+            "XLSX"
           ]
+        },
+        "version": {
+          "const": "1.0.0"
         }
       },
-      "additionalProperties": false
+      "required": [
+        "name",
+        "version",
+        "route"
+      ],
+      "type": "object"
     },
-    "text": {
-      "type": "string"
+    "schema_version": {
+      "const": "1.0.0"
     },
     "segments": {
-      "type": "array",
       "items": {
-        "type": "object",
-        "required": [
-          "segment_id",
-          "kind",
-          "text",
-          "canonical_start",
-          "canonical_end",
-          "source"
-        ],
+        "additionalProperties": false,
         "properties": {
-          "segment_id": {
-            "type": "string",
-            "pattern": "^segment:[a-f0-9]{64}$"
+          "canonical_end": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "canonical_start": {
+            "minimum": 0,
+            "type": "integer"
           },
           "kind": {
             "enum": [
@@ -90,63 +154,28 @@
               "HEADING",
               "LIST_ITEM",
               "TABLE_TEXT",
-              "XML_ELEMENT"
+              "XML_ELEMENT",
+              "TABLE_ROW",
+              "TABLE_CELL"
             ]
           },
-          "text": {
+          "segment_id": {
+            "pattern": "^segment:[a-f0-9]{64}$",
             "type": "string"
           },
-          "canonical_start": {
-            "type": "integer",
-            "minimum": 0
-          },
-          "canonical_end": {
-            "type": "integer",
-            "minimum": 0
-          },
           "source": {
-            "type": "object",
-            "required": [
-              "page_number",
-              "source_start",
-              "source_end",
-              "bbox"
-            ],
+            "additionalProperties": false,
             "properties": {
-              "page_number": {
-                "type": [
-                  "integer",
-                  "null"
-                ],
-                "minimum": 1
-              },
-              "source_start": {
-                "type": [
-                  "integer",
-                  "null"
-                ],
-                "minimum": 0
-              },
-              "source_end": {
-                "type": [
-                  "integer",
-                  "null"
-                ],
-                "minimum": 0
-              },
               "bbox": {
-                "type": [
-                  "object",
-                  "null"
-                ],
+                "additionalProperties": false,
                 "properties": {
                   "x0": {
                     "type": "number"
                   },
-                  "y0": {
+                  "x1": {
                     "type": "number"
                   },
-                  "x1": {
+                  "y0": {
                     "type": "number"
                   },
                   "y1": {
@@ -159,7 +188,77 @@
                   "x1",
                   "y1"
                 ],
-                "additionalProperties": false
+                "type": [
+                  "object",
+                  "null"
+                ]
+              },
+              "cell_reference": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "column_index": {
+                "minimum": 1,
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "document_part": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "page_number": {
+                "minimum": 1,
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "paragraph_index": {
+                "minimum": 0,
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "row_index": {
+                "minimum": 1,
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sheet_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_end": {
+                "minimum": 0,
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "source_start": {
+                "minimum": 0,
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "table_index": {
+                "minimum": 0,
+                "type": [
+                  "integer",
+                  "null"
+                ]
               },
               "xml_path": {
                 "type": [
@@ -168,101 +267,164 @@
                 ]
               }
             },
-            "additionalProperties": false
-          }
-        },
-        "additionalProperties": false
-      }
-    },
-    "pages": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": [
-          "page_number",
-          "width",
-          "height",
-          "text",
-          "word_count",
-          "character_count"
-        ],
-        "properties": {
-          "page_number": {
-            "type": "integer",
-            "minimum": 1
-          },
-          "width": {
-            "type": [
-              "number",
-              "null"
-            ]
-          },
-          "height": {
-            "type": [
-              "number",
-              "null"
-            ]
+            "required": [
+              "page_number",
+              "source_start",
+              "source_end",
+              "bbox"
+            ],
+            "type": "object"
           },
           "text": {
             "type": "string"
-          },
-          "word_count": {
-            "type": "integer",
-            "minimum": 0
-          },
-          "character_count": {
-            "type": "integer",
-            "minimum": 0
           }
         },
-        "additionalProperties": false
-      }
-    },
-    "ocr_assessment": {
-      "type": "array",
-      "items": {
-        "type": "object",
         "required": [
-          "page_number",
-          "classification",
-          "reason_codes",
-          "character_count",
-          "word_count"
+          "segment_id",
+          "kind",
+          "text",
+          "canonical_start",
+          "canonical_end",
+          "source"
         ],
-        "properties": {
-          "page_number": {
-            "type": "integer",
-            "minimum": 1
-          },
-          "classification": {
-            "enum": [
-              "OCR_NOT_REQUIRED",
-              "OCR_RECOMMENDED",
-              "OCR_REQUIRED",
-              "UNDETERMINED"
-            ]
-          },
-          "reason_codes": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "character_count": {
-            "type": "integer",
-            "minimum": 0
-          },
-          "word_count": {
-            "type": "integer",
-            "minimum": 0
-          }
-        },
-        "additionalProperties": false
-      }
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "source_media_type": {
+      "minLength": 1,
+      "type": "string"
     },
     "status": {
       "const": "PARSED"
+    },
+    "tables": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "column_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "row_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "rows": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "cells": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "cell_reference": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "column_index": {
+                        "minimum": 1,
+                        "type": "integer"
+                      },
+                      "value": {
+                        "type": [
+                          "string",
+                          "number",
+                          "integer",
+                          "boolean",
+                          "null"
+                        ]
+                      },
+                      "value_type": {
+                        "enum": [
+                          "STRING",
+                          "INTEGER",
+                          "NUMBER",
+                          "BOOLEAN",
+                          "DATE",
+                          "DATETIME",
+                          "FORMULA",
+                          "EMPTY"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "column_index",
+                      "cell_reference",
+                      "value",
+                      "value_type"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "row_index": {
+                  "minimum": 1,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "row_index",
+                "cells"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "source_kind": {
+            "enum": [
+              "DOCX",
+              "CSV",
+              "TSV",
+              "XLSX"
+            ]
+          },
+          "table_id": {
+            "pattern": "^table:[a-f0-9]{64}$",
+            "type": "string"
+          },
+          "table_index": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "table_id",
+          "source_kind",
+          "name",
+          "table_index",
+          "row_count",
+          "column_count",
+          "rows"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "text": {
+      "type": "string"
     }
   },
-  "additionalProperties": false
+  "required": [
+    "schema_version",
+    "document_id",
+    "artifact_id",
+    "content_sha256",
+    "source_media_type",
+    "parser",
+    "text",
+    "segments",
+    "pages",
+    "ocr_assessment",
+    "status",
+    "tables"
+  ],
+  "title": "TrueColor Canonical Parsed Document",
+  "type": "object"
 }
