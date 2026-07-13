@@ -1,0 +1,84 @@
+{
+  "artifacts": [
+    {
+      "bytes": 12361,
+      "path": "analysis/prior_art/parsing/parse_attempt.py",
+      "sha256": "018ad48888b3b4446571f07391d354ade1eb438a7ebc6389e85b6c4307e35f89"
+    },
+    {
+      "bytes": 11900,
+      "path": "analysis/prior_art/parsing/parse_document.py",
+      "sha256": "b64f8cd813d10b7827c8a901bc509f226b3f7a7093839faed14094d8b1010b16"
+    },
+    {
+      "bytes": 10259,
+      "path": "analysis/prior_art/parsing/test_parse_attempt.py",
+      "sha256": "3f42842c1c6a3aa82d202532b98156b8371a7d77383bb60590ba6713a3e01370"
+    },
+    {
+      "bytes": 3652,
+      "path": "analysis/prior_art/parsing/schemas/parse_attempt.schema.json",
+      "sha256": "b47b23f45b7d74608d00bc96faff0c0c5ba904a1129b778574331670aa893bf3"
+    },
+    {
+      "bytes": 5041,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B4.md",
+      "sha256": "5299c3d3c59038e3cca5c0fb0a27521cfc050a37d595f18a591aa4ba82b9dedc"
+    },
+    {
+      "bytes": 1389,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b4-attempt-tests.txt",
+      "sha256": "d2726a7e21a4a0886dbea91a47157b53aae357247d16f7b271aac401e8f9f02d"
+    },
+    {
+      "bytes": 7341,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b4-regression-tests.txt",
+      "sha256": "08218e1e1f19d0d33a0aa6ee2abef957fe9ee1729337f22e7edc95e8c419bc8a"
+    }
+  ],
+  "capabilities": [
+    "CAP-PARSE-010"
+  ],
+  "gates": {
+    "attempt_tests_passed": true,
+    "implementation_contract_present": true,
+    "regression_tests_passed": true,
+    "required_files_exist": true,
+    "schema_contract_present": true
+  },
+  "implementation_evidence": {
+    "atomic_record_write": true,
+    "bounded_diagnostics": true,
+    "default_attempt_root": true,
+    "deterministic_identity": true,
+    "direct_parser_api_preserved": true,
+    "explicit_retry_link": true,
+    "failure_replay": true,
+    "schema_validation": true,
+    "success_replay": true
+  },
+  "missing_files": [],
+  "schema_evidence": {
+    "attempt_id_pattern_present": true,
+    "required_fields_complete": true,
+    "state_history_two_entries": true,
+    "terminal_statuses_bounded": true
+  },
+  "schema_version": "1.0.0",
+  "slice": "B4",
+  "status": "PASS",
+  "test_evidence": {
+    "attempt_tests": {
+      "count": 9,
+      "expected": 9,
+      "passed": true
+    },
+    "final_expected_total": 60,
+    "regression_tests": {
+      "count": 51,
+      "expected": 51,
+      "passed": true
+    }
+  },
+  "work_package": "WP-PARSE-01"
+}

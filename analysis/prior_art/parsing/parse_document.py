@@ -44,6 +44,11 @@ from .tabular_parser import (
     parse_xlsx,
 )
 
+from .parse_attempt import (
+    ParseAttemptFailure,
+    execute_parse_attempt,
+)
+
 
 VERSION = "1.0.0"
 
@@ -405,29 +410,80 @@ def parse_args() -> argparse.Namespace:
         required=True,
     )
 
+    parser.add_argument(
+        "--attempt-root",
+        type=Path,
+        default=None,
+    )
+
+    parser.add_argument(
+        "--prior-parse-attempt-id",
+        default=None,
+    )
+
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
 
+    attempt_root = (
+        args.attempt_root
+        if args.attempt_root
+        is not None
+        else (
+            args.output_root
+            / "_parse_attempts"
+        )
+    )
+
     try:
-        document, output = (
-            parse_intake_manifest(
-                args.manifest,
-                output_root=(
-                    args.output_root
-                ),
+        result = execute_parse_attempt(
+            manifest_path=args.manifest,
+            output_root=args.output_root,
+            attempt_root=attempt_root,
+            parser_version=VERSION,
+            prior_parse_attempt_id=(
+                args.prior_parse_attempt_id
+            ),
+            parse_function=(
+                lambda manifest_path:
+                parse_intake_manifest(
+                    manifest_path,
+                    output_root=(
+                        args.output_root
+                    ),
+                )
+            ),
+        )
+    except ParseAttemptFailure as exc:
+        print(
+            json.dumps(
+                {
+                    "status": "FAILED",
+                    "parse_attempt_id": (
+                        exc.result.record[
+                            "parse_attempt_id"
+                        ]
+                    ),
+                    "attempt_record": str(
+                        exc.result.record_path
+                    ),
+                    "failure": (
+                        exc.result.record[
+                            "error"
+                        ]
+                    ),
+                },
+                indent=2,
+                sort_keys=True,
             )
         )
+
+        return 1
     except (
-        DocumentParseError,
-        ParserRoutingError,
-        PDFParseError,
-        DOCXParseError,
-        TabularParseError,
-        ValueError,
         OSError,
+        ValueError,
     ) as exc:
         print(
             json.dumps(
@@ -449,10 +505,51 @@ def main() -> int:
 
         return 1
 
+    document = result.document
+
+    if document is None:
+        print(
+            json.dumps(
+                {
+                    "status": "FAILED",
+                    "parse_attempt_id": (
+                        result.record[
+                            "parse_attempt_id"
+                        ]
+                    ),
+                    "attempt_record": str(
+                        result.record_path
+                    ),
+                    "failure": {
+                        "code": (
+                            "IDEMPOTENT_OUTPUT_MISSING"
+                        ),
+                        "message": (
+                            "Succeeded parse attempt "
+                            "references a missing or "
+                            "invalid canonical output"
+                        ),
+                    },
+                },
+                indent=2,
+                sort_keys=True,
+            )
+        )
+
+        return 1
+
     print(
         json.dumps(
             {
                 "status": "PARSED",
+                "parse_attempt_id": (
+                    result.record[
+                        "parse_attempt_id"
+                    ]
+                ),
+                "attempt_record": str(
+                    result.record_path
+                ),
                 "document_id": (
                     document[
                         "document_id"
@@ -476,7 +573,7 @@ def main() -> int:
                     ]
                 ),
                 "output": str(
-                    output
+                    result.output_path
                 ),
             },
             indent=2,

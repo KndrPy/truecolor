@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/parse_attempt.schema.json",
+  "title": "TrueColor Prior-Art Parse Attempt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "parse_attempt_id",
+    "prior_parse_attempt_id",
+    "manifest_path",
+    "manifest_sha256",
+    "intake_attempt_id",
+    "artifact_id",
+    "content_sha256",
+    "parser",
+    "status",
+    "state_history",
+    "output_path",
+    "document_id",
+    "error"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "parse_attempt_id": {
+      "type": "string",
+      "pattern": "^parse:[a-f0-9]{64}$"
+    },
+    "prior_parse_attempt_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^parse:[a-f0-9]{64}$"
+    },
+    "manifest_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "manifest_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "intake_attempt_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^intake:[a-f0-9]{32}$"
+    },
+    "artifact_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^artifact:sha256:[a-f0-9]{64}$"
+    },
+    "content_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "parser": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "route",
+        "name",
+        "version"
+      ],
+      "properties": {
+        "route": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "SUCCEEDED",
+        "FAILED"
+      ]
+    },
+    "state_history": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state"
+          ],
+          "properties": {
+            "state": {
+              "const": "STARTED"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "state"
+          ],
+          "properties": {
+            "state": {
+              "enum": [
+                "SUCCEEDED",
+                "FAILED"
+              ]
+            }
+          }
+        }
+      ],
+      "items": false
+    },
+    "output_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "document_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^document:sha256:[a-f0-9]{64}$"
+    },
+    "error": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "code",
+            "message",
+            "retryable",
+            "exception_type"
+          ],
+          "properties": {
+            "code": {
+              "type": "string",
+              "minLength": 1
+            },
+            "message": {
+              "type": "string",
+              "maxLength": 1024
+            },
+            "retryable": {
+              "type": "boolean"
+            },
+            "exception_type": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
+    }
+  }
+}

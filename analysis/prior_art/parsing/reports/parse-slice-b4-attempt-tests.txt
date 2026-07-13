@@ -1,0 +1,14 @@
+test_attempt_identity_is_deterministic (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_attempt_identity_is_deterministic) ... ok
+test_failed_attempt_is_not_reexecuted (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_failed_attempt_is_not_reexecuted) ... ok
+test_failure_leaves_no_canonical_output (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_failure_leaves_no_canonical_output) ... ok
+test_failure_message_is_bounded (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_failure_message_is_bounded) ... ok
+test_failure_record_is_persisted (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_failure_record_is_persisted) ... ok
+test_manifest_identity_is_captured (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_manifest_identity_is_captured) ... ok
+test_record_serialization_is_stable (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_record_serialization_is_stable) ... ok
+test_retry_links_prior_attempt (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_retry_links_prior_attempt) ... ok
+test_success_record_is_persisted (analysis.prior_art.parsing.test_parse_attempt.ParseAttemptTests.test_success_record_is_persisted) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.291s
+
+OK

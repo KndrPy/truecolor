@@ -1,0 +1,56 @@
+test_entities_and_inline_text_normalize (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_entities_and_inline_text_normalize) ... ok
+test_excluded_content_is_absent (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_excluded_content_is_absent) ... ok
+test_mismatched_closing_tag_recovers (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_mismatched_closing_tag_recovers) ... ok
+test_nested_semantic_tags_do_not_duplicate (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_nested_semantic_tags_do_not_duplicate) ... ok
+test_ranges_resolve_exactly (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_ranges_resolve_exactly) ... ok
+test_repeated_parse_is_deterministic (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_repeated_parse_is_deterministic) ... ok
+test_semantic_kinds_and_order (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_semantic_kinds_and_order) ... ok
+test_sibling_paths_are_indexed (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_sibling_paths_are_indexed) ... ok
+test_unmatched_closing_tag_does_not_pop (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_unmatched_closing_tag_does_not_pop) ... ok
+test_void_break_preserves_word_boundary (analysis.prior_art.parsing.test_html_parser.HTMLParserTests.test_void_break_preserves_word_boundary) ... ok
+test_canonical_text_preserves_lines (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_canonical_text_preserves_lines) ... ok
+test_missing_tsv_fields_fail_explicitly (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_missing_tsv_fields_fail_explicitly) ... ok
+test_negative_confidence_rows_are_ignored (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_negative_confidence_rows_are_ignored) ... ok
+test_pdf_embedded_page_skips_ocr (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_pdf_embedded_page_skips_ocr) ... ok
+test_pdf_required_page_executes_ocr (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_pdf_required_page_executes_ocr) ... ok
+test_pixel_bbox_maps_to_pdf_coordinates (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_pixel_bbox_maps_to_pdf_coordinates) ... ok
+test_png_dimensions_read_ihdr (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_png_dimensions_read_ihdr) ... ok
+test_tesseract_tsv_words_are_parsed (analysis.prior_art.parsing.test_ocr_engine.OCREngineTests.test_tesseract_tsv_words_are_parsed) ... ok
+test_checksum_mismatch_leaves_no_object (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_checksum_mismatch_leaves_no_object) ... ok
+test_csv_detected_as_csv (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_csv_detected_as_csv) ... ok
+test_docx_detected_by_archive_structure (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_docx_detected_by_archive_structure) ... ok
+test_identical_bytes_deduplicate (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_identical_bytes_deduplicate) ... ok
+test_json_and_jsonl_detection (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_json_and_jsonl_detection) ... ok
+test_malformed_xml_is_still_classified_as_xml (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_malformed_xml_is_still_classified_as_xml) ... ok
+test_manifest_schema_and_object_integrity (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_manifest_schema_and_object_integrity) ... ok
+test_module_cli_executes_without_runpy_warning (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_module_cli_executes_without_runpy_warning) ... ok
+test_pdf_signature_overrides_extension (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_pdf_signature_overrides_extension) ... ok
+test_size_limit_fails_without_object (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_size_limit_fails_without_object) ... ok
+test_tsv_detected_as_tab_separated_values (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_tsv_detected_as_tab_separated_values) ... ok
+test_tsv_detection_does_not_require_suffix (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_tsv_detection_does_not_require_suffix) ... ok
+test_xlsx_detected_by_archive_structure (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_xlsx_detected_by_archive_structure) ... ok
+test_zero_byte_artifact_is_explicit (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_zero_byte_artifact_is_explicit) ... ok
+test_all_segment_ranges_are_valid (analysis.prior_art.parsing.test_parsing.ParsingTests.test_all_segment_ranges_are_valid) ... ok
+test_blank_pdf_page_requires_ocr (analysis.prior_art.parsing.test_parsing.ParsingTests.test_blank_pdf_page_requires_ocr) ... ok
+test_cli_executes_without_warning (analysis.prior_art.parsing.test_parsing.ParsingTests.test_cli_executes_without_warning) ... ok
+test_csv_normalizes_table_and_cell_provenance (analysis.prior_art.parsing.test_parsing.ParsingTests.test_csv_normalizes_table_and_cell_provenance) ... ok
+test_document_is_deterministic (analysis.prior_art.parsing.test_parsing.ParsingTests.test_document_is_deterministic) ... ok
+test_docx_paragraph_and_table_provenance (analysis.prior_art.parsing.test_parsing.ParsingTests.test_docx_paragraph_and_table_provenance) ... ok
+test_html_route_and_canonical_text (analysis.prior_art.parsing.test_parsing.ParsingTests.test_html_route_and_canonical_text) ... ok
+test_malformed_xml_fails_explicitly (analysis.prior_art.parsing.test_parsing.ParsingTests.test_malformed_xml_fails_explicitly) ... ok
+test_markdown_heading_and_list (analysis.prior_art.parsing.test_parsing.ParsingTests.test_markdown_heading_and_list) ... ok
+test_pdf_geometry_and_ocr_assessment (analysis.prior_art.parsing.test_parsing.ParsingTests.test_pdf_geometry_and_ocr_assessment) ... ok
+test_router_is_deterministic (analysis.prior_art.parsing.test_parsing.ParsingTests.test_router_is_deterministic) ... ok
+test_router_rejects_unknown (analysis.prior_art.parsing.test_parsing.ParsingTests.test_router_rejects_unknown) ... ok
+test_slice_b1_documents_are_deterministic (analysis.prior_art.parsing.test_parsing.ParsingTests.test_slice_b1_documents_are_deterministic) ... ok
+test_slice_b1_routes_are_registered (analysis.prior_art.parsing.test_parsing.ParsingTests.test_slice_b1_routes_are_registered) ... ok
+test_text_offsets_are_exact (analysis.prior_art.parsing.test_parsing.ParsingTests.test_text_offsets_are_exact) ... ok
+test_tsv_normalizes_as_distinct_route (analysis.prior_art.parsing.test_parsing.ParsingTests.test_tsv_normalizes_as_distinct_route) ... ok
+test_unsupported_media_type_fails_explicitly (analysis.prior_art.parsing.test_parsing.ParsingTests.test_unsupported_media_type_fails_explicitly) ... ok
+test_xlsx_normalizes_sheets_and_typed_cells (analysis.prior_art.parsing.test_parsing.ParsingTests.test_xlsx_normalizes_sheets_and_typed_cells) ... ok
+test_xml_paths_are_present (analysis.prior_art.parsing.test_parsing.ParsingTests.test_xml_paths_are_present) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 1.538s
+
+OK
