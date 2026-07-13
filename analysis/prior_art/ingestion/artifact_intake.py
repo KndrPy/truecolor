@@ -159,6 +159,25 @@ def _detect_structured_text(
             ),
         )
 
+    suffix = Path(
+        original_name
+    ).suffix.lower()
+
+    xml_declaration_present = (
+        stripped.startswith(
+            "<?xml"
+        )
+    )
+
+    xml_filename_present = (
+        suffix in {
+            ".xml",
+            ".jats",
+            ".tei",
+            ".xhtml",
+        }
+    )
+
     if stripped.startswith("<"):
         try:
             import xml.etree.ElementTree as ET
@@ -174,7 +193,35 @@ def _detect_structured_text(
                 ),
             )
         except ET.ParseError:
-            pass
+            if (
+                xml_declaration_present
+                or xml_filename_present
+            ):
+                evidence = []
+
+                if xml_declaration_present:
+                    evidence.append(
+                        "XML declaration detected"
+                    )
+
+                if xml_filename_present:
+                    evidence.append(
+                        "XML-family filename suffix detected"
+                    )
+
+                evidence.append(
+                    "Document is not well-formed; "
+                    "validation deferred to XML parser"
+                )
+
+                return MediaDetection(
+                    media_type="application/xml",
+                    method="STRUCTURAL_TEXT_PROBE",
+                    confidence=0.75,
+                    evidence=tuple(
+                        evidence
+                    ),
+                )
 
     try:
         parsed = json.loads(text)
@@ -221,10 +268,6 @@ def _detect_structured_text(
                     "one per non-empty line",
                 ),
             )
-
-    suffix = Path(
-        original_name
-    ).suffix.lower()
 
     if suffix in {
         ".md",

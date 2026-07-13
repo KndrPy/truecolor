@@ -1,0 +1,28 @@
+test_checksum_mismatch_leaves_no_object (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_checksum_mismatch_leaves_no_object) ... ok
+test_docx_detected_by_archive_structure (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_docx_detected_by_archive_structure) ... ok
+test_identical_bytes_deduplicate (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_identical_bytes_deduplicate) ... ok
+test_json_and_jsonl_detection (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_json_and_jsonl_detection) ... ok
+test_malformed_xml_is_still_classified_as_xml (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_malformed_xml_is_still_classified_as_xml) ... ok
+test_manifest_schema_and_object_integrity (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_manifest_schema_and_object_integrity) ... ok
+test_module_cli_executes_without_runpy_warning (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_module_cli_executes_without_runpy_warning) ... ok
+test_pdf_signature_overrides_extension (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_pdf_signature_overrides_extension) ... ok
+test_size_limit_fails_without_object (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_size_limit_fails_without_object) ... ok
+test_zero_byte_artifact_is_explicit (analysis.prior_art.ingestion.test_artifact_intake.ArtifactIntakeTests.test_zero_byte_artifact_is_explicit) ... ok
+test_all_segment_ranges_are_valid (analysis.prior_art.parsing.test_parsing.ParsingTests.test_all_segment_ranges_are_valid) ... ok
+test_blank_pdf_page_requires_ocr (analysis.prior_art.parsing.test_parsing.ParsingTests.test_blank_pdf_page_requires_ocr) ... ok
+test_cli_executes_without_warning (analysis.prior_art.parsing.test_parsing.ParsingTests.test_cli_executes_without_warning) ... ok
+test_document_is_deterministic (analysis.prior_art.parsing.test_parsing.ParsingTests.test_document_is_deterministic) ... ok
+test_html_route_and_canonical_text (analysis.prior_art.parsing.test_parsing.ParsingTests.test_html_route_and_canonical_text) ... ok
+test_malformed_xml_fails_explicitly (analysis.prior_art.parsing.test_parsing.ParsingTests.test_malformed_xml_fails_explicitly) ... ok
+test_markdown_heading_and_list (analysis.prior_art.parsing.test_parsing.ParsingTests.test_markdown_heading_and_list) ... ok
+test_pdf_geometry_and_ocr_assessment (analysis.prior_art.parsing.test_parsing.ParsingTests.test_pdf_geometry_and_ocr_assessment) ... ok
+test_router_is_deterministic (analysis.prior_art.parsing.test_parsing.ParsingTests.test_router_is_deterministic) ... ok
+test_router_rejects_unknown (analysis.prior_art.parsing.test_parsing.ParsingTests.test_router_rejects_unknown) ... ok
+test_text_offsets_are_exact (analysis.prior_art.parsing.test_parsing.ParsingTests.test_text_offsets_are_exact) ... ok
+test_unsupported_media_type_fails_explicitly (analysis.prior_art.parsing.test_parsing.ParsingTests.test_unsupported_media_type_fails_explicitly) ... ok
+test_xml_paths_are_present (analysis.prior_art.parsing.test_parsing.ParsingTests.test_xml_paths_are_present) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.075s
+
+OK

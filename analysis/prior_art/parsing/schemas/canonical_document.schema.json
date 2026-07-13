@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/canonical_document.schema.json",
+  "title": "TrueColor Canonical Parsed Document",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "document_id",
+    "artifact_id",
+    "content_sha256",
+    "source_media_type",
+    "parser",
+    "text",
+    "segments",
+    "pages",
+    "ocr_assessment",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "document_id": {
+      "type": "string",
+      "pattern": "^document:sha256:[a-f0-9]{64}$"
+    },
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^artifact:sha256:[a-f0-9]{64}$"
+    },
+    "content_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_media_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parser": {
+      "type": "object",
+      "required": [
+        "name",
+        "version",
+        "route"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "const": "1.0.0"
+        },
+        "route": {
+          "enum": [
+            "PDF",
+            "XML",
+            "HTML",
+            "TEXT",
+            "MARKDOWN"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "text": {
+      "type": "string"
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "segment_id",
+          "kind",
+          "text",
+          "canonical_start",
+          "canonical_end",
+          "source"
+        ],
+        "properties": {
+          "segment_id": {
+            "type": "string",
+            "pattern": "^segment:[a-f0-9]{64}$"
+          },
+          "kind": {
+            "enum": [
+              "DOCUMENT",
+              "PAGE",
+              "PARAGRAPH",
+              "HEADING",
+              "LIST_ITEM",
+              "TABLE_TEXT",
+              "XML_ELEMENT"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "canonical_start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "canonical_end": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "page_number",
+              "source_start",
+              "source_end",
+              "bbox"
+            ],
+            "properties": {
+              "page_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "source_start": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "source_end": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "bbox": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "properties": {
+                  "x0": {
+                    "type": "number"
+                  },
+                  "y0": {
+                    "type": "number"
+                  },
+                  "x1": {
+                    "type": "number"
+                  },
+                  "y1": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "x0",
+                  "y0",
+                  "x1",
+                  "y1"
+                ],
+                "additionalProperties": false
+              },
+              "xml_path": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "page_number",
+          "width",
+          "height",
+          "text",
+          "word_count",
+          "character_count"
+        ],
+        "properties": {
+          "page_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "width": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "height": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "word_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "character_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "ocr_assessment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "page_number",
+          "classification",
+          "reason_codes",
+          "character_count",
+          "word_count"
+        ],
+        "properties": {
+          "page_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "classification": {
+            "enum": [
+              "OCR_NOT_REQUIRED",
+              "OCR_RECOMMENDED",
+              "OCR_REQUIRED",
+              "UNDETERMINED"
+            ]
+          },
+          "reason_codes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "character_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "word_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "status": {
+      "const": "PARSED"
+    }
+  },
+  "additionalProperties": false
+}

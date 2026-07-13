@@ -474,5 +474,44 @@ class ArtifactIntakeTests(
         )
 
 
+    def test_malformed_xml_is_still_classified_as_xml(
+        self,
+    ) -> None:
+        source = self.write_source(
+            "malformed.xml",
+            (
+                b'<?xml version="1.0"?>'
+                b"<article><p>broken</article>"
+            ),
+        )
+
+        detection = detect_media_type(
+            source
+        )
+
+        self.assertEqual(
+            detection.media_type,
+            "application/xml",
+        )
+
+        self.assertEqual(
+            detection.method,
+            "STRUCTURAL_TEXT_PROBE",
+        )
+
+        self.assertLess(
+            detection.confidence,
+            0.98,
+        )
+
+        self.assertIn(
+            (
+                "Document is not well-formed; "
+                "validation deferred to XML parser"
+            ),
+            detection.evidence,
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

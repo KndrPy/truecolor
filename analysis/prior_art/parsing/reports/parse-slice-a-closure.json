@@ -1,0 +1,96 @@
+{
+  "artifacts": [
+    {
+      "bytes": 69,
+      "path": "analysis/prior_art/parsing/__init__.py",
+      "sha256": "4cf99e3cbbc447c4a36cd8111b644472f7a94b09436aa8eb5abded8f166eb367"
+    },
+    {
+      "bytes": 1618,
+      "path": "analysis/prior_art/parsing/parser_router.py",
+      "sha256": "d904050e2a8d603460d65c0f665ee8dab8ef3560772f2a3ea9f19ddf31eaa97c"
+    },
+    {
+      "bytes": 2785,
+      "path": "analysis/prior_art/parsing/text_parser.py",
+      "sha256": "a775b273025deec58b27537d10f9148bfa55f7b683e90ad2fd9fe358984b2e0d"
+    },
+    {
+      "bytes": 7769,
+      "path": "analysis/prior_art/parsing/xml_parser.py",
+      "sha256": "d015a49a1d7a0982715fb26f5d49a9b923842f7a9c0bd907032e3977f98bbdf1"
+    },
+    {
+      "bytes": 9855,
+      "path": "analysis/prior_art/parsing/pdf_parser.py",
+      "sha256": "213937c59fc0de9878db9e26bb17196782d15a994d56fe9f69888e883ab40516"
+    },
+    {
+      "bytes": 8023,
+      "path": "analysis/prior_art/parsing/parse_document.py",
+      "sha256": "f2cd26bd118b9b85fab574ff10d0191132e3f64d8b150311a122a2f0af17679f"
+    },
+    {
+      "bytes": 14645,
+      "path": "analysis/prior_art/parsing/test_parsing.py",
+      "sha256": "95013c15dd56edf527ac0d7e3e96314b07ec4539a5167acf122618a3d7f8beec"
+    },
+    {
+      "bytes": 6015,
+      "path": "analysis/prior_art/parsing/schemas/canonical_document.schema.json",
+      "sha256": "76951fb1ecd77c3724add3fa38dc70ba40c0adc2a36fd7743e64e823fa3106db"
+    },
+    {
+      "bytes": 2556,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_A.md",
+      "sha256": "9933ae806532500ef677ea4b740fe9268386b1caa47e8f006a50594c94f7fab0"
+    },
+    {
+      "bytes": 3331,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-a-unit-tests.txt",
+      "sha256": "b2afe16cfe628004cd2eac5263e7419a190f19d9abcf68aa1af1ce40e9c0aa18"
+    },
+    {
+      "bytes": 629,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-a-intake.json",
+      "sha256": "97c45973e99efb7daa5dd75531a5aab941ba249e1996f1b9869e2a6feea0fd04"
+    },
+    {
+      "bytes": 385,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-a-pilot.json",
+      "sha256": "34603240f3e8de5ae6ae13656e583813ad9dbecaf459df271152acec781a0af6"
+    },
+    {
+      "bytes": 0,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-a-pilot-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 470,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-a-pilot-validation.json",
+      "sha256": "703ff1ad51e173333d433efe5037672e84cf7ad6f093a7c6bd7dc5e90a5f7385"
+    }
+  ],
+  "capabilities": [
+    "CAP-PARSE-001",
+    "CAP-PARSE-002",
+    "CAP-PARSE-003",
+    "CAP-PARSE-005",
+    "CAP-PARSE-007",
+    "CAP-PARSE-011"
+  ],
+  "gates": {
+    "intake_passed": true,
+    "pilot_parsed": true,
+    "pilot_route_is_xml": false,
+    "pilot_stderr_empty": true,
+    "pilot_validation_passed": false,
+    "required_files_exist": true,
+    "unit_tests_passed": true
+  },
+  "missing_files": [],
+  "schema_version": "1.0.0",
+  "slice": "A",
+  "status": "FAIL",
+  "work_package": "WP-PARSE-01"
+}
