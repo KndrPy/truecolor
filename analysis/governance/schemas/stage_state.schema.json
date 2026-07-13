@@ -1,0 +1,91 @@
+{
+  "$id": "https://truecolor.local/schemas/stage-state.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "artifact_hashes": {
+      "type": "array"
+    },
+    "code_commit": {
+      "type": "string"
+    },
+    "data_admissibility": {
+      "type": "object"
+    },
+    "downstream_inheritance": {
+      "type": "array"
+    },
+    "entry_conditions": {
+      "type": "array"
+    },
+    "estimands": {
+      "type": "array"
+    },
+    "falsification_tests": {
+      "type": "array"
+    },
+    "immutable_artifacts": {
+      "type": "array"
+    },
+    "independent_validation": {
+      "type": "array"
+    },
+    "kill_condition_adjudication": {
+      "type": "array"
+    },
+    "name": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "primary_method": {
+      "type": "object"
+    },
+    "reproduction_command": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scientific_question": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scope_restrictions": {
+      "type": "array"
+    },
+    "stage": {
+      "maximum": 28,
+      "minimum": 0,
+      "type": "integer"
+    },
+    "state": {
+      "enum": [
+        "OPEN",
+        "BLOCKED",
+        "CLOSED",
+        "CLOSED_WITH_SCOPE_RESTRICTION",
+        "FALSIFIED",
+        "NOT_TESTABLE_WITH_CURRENT_ASSETS"
+      ]
+    }
+  },
+  "required": [
+    "stage",
+    "name",
+    "state",
+    "entry_conditions",
+    "scientific_question",
+    "estimands",
+    "data_admissibility",
+    "primary_method",
+    "independent_validation",
+    "falsification_tests",
+    "kill_condition_adjudication",
+    "scope_restrictions",
+    "immutable_artifacts",
+    "artifact_hashes",
+    "code_commit",
+    "reproduction_command",
+    "downstream_inheritance"
+  ],
+  "title": "TrueColor Stage State",
+  "type": "object"
+}

@@ -1,0 +1,31 @@
+registry_version: 1.0.0
+claims:
+  camera_observability:
+    primary_assets:
+    - issa
+    - camera_sensitivities
+    - illuminant_spectra
+    external_validation_assets:
+    - mst_e
+    - scin
+  four_mechanism_attribution:
+    primary_assets:
+    - issa
+    - camera_sensitivities
+    - illuminant_spectra
+    requires_physics_model: true
+  capture_control_boundary:
+    primary_assets:
+    - mst_e
+    - scin
+    spectral_support_asset: issa
+  clinical_gap_decomposition:
+    primary_assets:
+    - ddi
+    - ddi2
+    - fitzpatrick17k
+    - cleanpatrick
+    supporting_assets:
+    - scin
+    - mst_e
+    - mra_midas

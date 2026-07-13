@@ -1,0 +1,39 @@
+program:
+  id: truecolor
+  name: TrueColor
+  canonical_program_version: 1.0.0
+  program_type: gated_scientific_analysis
+  repository: KndrPy/truecolor
+  canonical_branch: analysis/canonical-stage0-refactor
+  baseline_branch: main
+  baseline_commit: b7f921e4554c27d867b5c173a85dce939813f493
+scientific_center:
+  primary_question: Quantitatively attribute information loss in skin imaging to measurement physics,
+    spectral projection, biological collinearity, visual contrast, and data quality.
+  primary_novelty_classes:
+  - four_mechanism_fractional_attribution
+  - real_spectra_camera_observability
+  - physics_contrast_annotation_decomposition
+  - capture_control_boundary
+governance_principles:
+- no_stage_advances_without_closure
+- negative_results_are_complete_results
+- non_testability_is_explicitly_adjudicated
+- no_global_skin_tone_scalar_without_admissibility
+- no_biological_identity_from_optical_axes_without_external_truth
+- no_camera_universality_from_single_device
+- no_raw_governed_data_in_git
+- identity_disjoint_evaluation
+- immutable_hashed_artifacts
+- falsification_before_claim_support
+allowed_stage_states:
+- OPEN
+- BLOCKED
+- CLOSED
+- CLOSED_WITH_SCOPE_RESTRICTION
+- FALSIFIED
+- NOT_TESTABLE_WITH_CURRENT_ASSETS
+prohibited_stage_states:
+- PARTIAL
+- MOSTLY_COMPLETE
+- ASSUMED_COMPLETE

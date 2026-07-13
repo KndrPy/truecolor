@@ -1,0 +1,14 @@
+policy_version: 1.0.0
+raw_data_repository_policy: PROHIBITED
+derived_evidence_policy: ALLOWED_IF_DEIDENTIFIED_HASHED_AND_REPRODUCIBLE
+governed_data_roots:
+- data/
+- datasets/
+- artifacts/datasets/
+required_controls:
+- source_license_registry
+- source_hash_registry
+- access_restriction_registry
+- identity_field_registry
+- raw_data_git_exclusion
+- derived_artifact_review

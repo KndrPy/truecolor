@@ -1,0 +1,6 @@
+stage: 0
+name: program_governance_and_reproducibility_foundation
+state: OPEN
+implementation_ready: true
+closure_ready: false
+required_next_action: execute_stage_0_validation

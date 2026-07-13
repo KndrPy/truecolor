@@ -1,0 +1,4 @@
+registry_version: 1.0.0
+deviations: []
+rule: Every departure from a frozen method, threshold, dataset, or stage dependency must be registered
+  before execution.

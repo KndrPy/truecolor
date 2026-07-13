@@ -1,0 +1,17 @@
+registry_version: 1.0.0
+required_capture:
+- python_version
+- pip_freeze
+- operating_system
+- kernel
+- cpu
+- memory
+- gpu
+- git_version
+- repository_commit
+- repository_branch
+environment_policy:
+  clean_environment_validation_required: true
+  package_lock_required: true
+  hardware_capture_required: true
+  runtime_capture_required_per_stage: true

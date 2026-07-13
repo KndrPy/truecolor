@@ -98,3 +98,9 @@ raw/
 restricted/
 truecolor-data/
 uploads/
+# Python execution artifacts
+.ruff_cache/
+.coverage
+htmlcov/
+# Local analysis scratch space
+work/

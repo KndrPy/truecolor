@@ -1,0 +1,185 @@
+registry_version: 1.0.0
+assets:
+  issa:
+    asset_class: spectral_metrology
+    primary_roles:
+    - spectral_reflectance
+    - colorimetric_measurands
+    - spectral_geometry
+    - camera_observability_input
+    - physics_model_fit
+    prohibited_roles:
+    - direct_melanin_ground_truth
+    - consumer_rgb_pairing
+    - cross_instrument_claim_without_multiple_instruments
+    canonical_stages:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 17
+    - 18
+  scin:
+    asset_class: image_domain_external_validation
+    primary_roles:
+    - acquisition_heterogeneity
+    - representation_robustness
+    - domain_shift
+    - condition_diversity
+    prohibited_roles:
+    - spectral_ground_truth
+    - calibrated_colorimetric_truth
+    - melanin_ground_truth
+    - rgb_to_spectrum_validation
+    - pathology_confirmed_replication
+    canonical_stages:
+    - 20
+    - 25
+    - 27
+    - 28
+  mst_e:
+    asset_class: repeated_capture_validation
+    primary_roles:
+    - within_subject_capture_variability
+    - lighting_robustness
+    - pose_robustness
+    - video_temporal_stability
+    - capture_control_boundary
+    prohibited_roles:
+    - spectral_ground_truth
+    - pathology_confirmed_replication
+    canonical_stages:
+    - 19
+    - 25
+    - 27
+    - 28
+  fitzpatrick17k:
+    asset_class: clinical_image_data_quality
+    primary_roles:
+    - duplicate_analysis
+    - label_quality_analysis
+    - fairness_gap_decomposition
+    prohibited_roles:
+    - spectral_ground_truth
+    - calibrated_colorimetry
+    canonical_stages:
+    - 21
+    - 25
+    - 27
+    - 28
+  cleanpatrick:
+    asset_class: clinical_image_data_quality
+    primary_roles:
+    - label_correction
+    - deduplication_comparison
+    - selection_effect_analysis
+    prohibited_roles:
+    - spectral_ground_truth
+    - calibrated_colorimetry
+    canonical_stages:
+    - 21
+    - 25
+    - 27
+    - 28
+  ddi:
+    asset_class: pathology_confirmed_clinical_validation
+    primary_roles:
+    - clinical_translation
+    - physics_contrast_horse_race
+    - patient_disjoint_evaluation
+    prohibited_roles:
+    - spectral_ground_truth
+    - camera_calibration_truth
+    canonical_stages:
+    - 22
+    - 25
+    - 27
+    - 28
+  ddi2:
+    asset_class: pathology_confirmed_external_replication
+    primary_roles:
+    - external_replication
+    - heterogeneity_analysis
+    - calibration_replication
+    prohibited_roles:
+    - model_redefinition_after_result_inspection
+    - spectral_ground_truth
+    canonical_stages:
+    - 23
+    - 25
+    - 27
+    - 28
+  mra_midas:
+    asset_class: multimodal_distance_domain_shift
+    primary_roles:
+    - modality_difference
+    - distance_difference
+    - framing_difference
+    - domain_shift_inventory
+    prohibited_roles:
+    - inferential_pairing_without_identity_linkage
+    - spectral_ground_truth
+    canonical_stages:
+    - 24
+    - 25
+    - 27
+    - 28
+  camera_sensitivities:
+    asset_class: camera_observation_operator
+    primary_roles:
+    - camera_operator_construction
+    - camera_family_sensitivity
+    - principal_angle_analysis
+    - metamer_projection
+    prohibited_roles:
+    - universal_camera_claim_from_single_curve
+    canonical_stages:
+    - 11
+    - 12
+    - 15
+    - 17
+  illuminant_spectra:
+    asset_class: illumination_operator
+    primary_roles:
+    - camera_illuminant_operator
+    - illuminant_sensitivity
+    - photon_count_model
+    prohibited_roles:
+    - universal_illuminant_claim_from_single_spd
+    canonical_stages:
+    - 11
+    - 12
+    - 13
+    - 15
+    - 17
+  color_reference_data:
+    asset_class: colorimetric_validation
+    primary_roles:
+    - cie_validation
+    - camera_reprojection_validation
+    - delta_e_validation
+    prohibited_roles:
+    - skin_biological_ground_truth
+    canonical_stages:
+    - 11
+    - 13
+  prior_art_corpus:
+    asset_class: scientific_novelty_governance
+    primary_roles:
+    - claim_overlap
+    - method_overlap
+    - novelty_kill_testing
+    prohibited_roles: []
+    canonical_stages:
+    - 1
+    - 2
+    - 27

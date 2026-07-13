@@ -1,0 +1,17 @@
+stage: 0
+name: replace_me
+state: OPEN
+entry_conditions: []
+scientific_question: replace_me
+estimands: []
+data_admissibility: {}
+primary_method: {}
+independent_validation: []
+falsification_tests: []
+kill_condition_adjudication: []
+scope_restrictions: []
+immutable_artifacts: []
+artifact_hashes: []
+code_commit: UNCOMMITTED
+reproduction_command: replace_me
+downstream_inheritance: []

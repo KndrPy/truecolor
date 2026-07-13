@@ -1,0 +1,14 @@
+registry_version: 1.0.0
+default_seed: 20260713
+rules:
+- every_stochastic_stage_must_register_all_seeds
+- bootstrap_seed_must_be_separate_from_split_seed
+- simulation_seed_must_be_separate_from_model_seed
+- seed_changes_require_deviation_registration
+registered_seeds:
+  global: 20260713
+  split: 2026071301
+  bootstrap: 2026071302
+  simulation: 2026071303
+  model_initialization: 2026071304
+  permutation: 2026071305

@@ -1,0 +1,21 @@
+contract_version: 1.0.0
+required_sections:
+- entry_conditions
+- scientific_question
+- estimands
+- data_admissibility
+- primary_method
+- independent_validation
+- falsification_tests
+- kill_condition_adjudication
+- scope_restrictions
+- immutable_artifacts
+- artifact_hashes
+- code_commit
+- reproduction_command
+- downstream_inheritance
+closure_rule: A stage is closed only when every required section is present and every registered gate
+  has an adjudicated result.
+no_partial_closure: true
+negative_result_is_complete: true
+not_testable_result_is_complete_when_justified: true

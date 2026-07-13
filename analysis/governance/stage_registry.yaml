@@ -1,0 +1,267 @@
+registry_version: 1.0.0
+numbering:
+  first_stage: 0
+  last_stage: 28
+  stage_count: 29
+  renumbering_prohibited_after_stage_0_closure: true
+stages:
+- stage: 0
+  name: program_governance_and_reproducibility_foundation
+  state: OPEN
+  dependencies: []
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 1
+  name: prior_art_extraction_and_novelty_boundary
+  state: OPEN
+  dependencies:
+  - 0
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 2
+  name: scientific_charter_estimands_claims_and_lockbox
+  state: OPEN
+  dependencies:
+  - 1
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 3
+  name: data_asset_registry_and_canonicalization
+  state: OPEN
+  dependencies:
+  - 2
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 4
+  name: issa_provenance_identity_and_metrology_closure
+  state: OPEN
+  dependencies:
+  - 3
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 5
+  name: measurand_admissibility_and_nuisance_decomposition
+  state: OPEN
+  dependencies:
+  - 4
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 6
+  name: spectral_representation_admissibility
+  state: OPEN
+  dependencies:
+  - 5
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 7
+  name: linear_spectral_geometry_and_effective_rank
+  state: OPEN
+  dependencies:
+  - 6
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 8
+  name: functional_nonlinear_and_local_intrinsic_geometry
+  state: OPEN
+  dependencies:
+  - 7
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 9
+  name: subject_disjoint_compact_representation_validation
+  state: OPEN
+  dependencies:
+  - 8
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 10
+  name: wavelength_redundancy_innovation_and_axis_interpretation
+  state: OPEN
+  dependencies:
+  - 9
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 11
+  name: camera_and_illuminant_observation_operator
+  state: OPEN
+  dependencies:
+  - 10
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 12
+  name: direct_observability_and_real_spectrum_metamer_enumeration
+  state: OPEN
+  dependencies:
+  - 11
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 13
+  name: external_colorimetric_anchoring_and_measurement_agreement
+  state: OPEN
+  dependencies:
+  - 12
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 14
+  name: forward_skin_physics_and_solver_validation
+  state: OPEN
+  dependencies:
+  - 13
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 15
+  name: fisher_information_and_four_mechanism_attribution
+  state: OPEN
+  dependencies:
+  - 14
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 16
+  name: matched_simulation_and_method_falsification
+  state: OPEN
+  dependencies:
+  - 15
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 17
+  name: optimal_measurement_and_band_design
+  state: OPEN
+  dependencies:
+  - 16
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 18
+  name: predictive_recovery_benchmarks
+  state: OPEN
+  dependencies:
+  - 17
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 19
+  name: mst_e_capture_robustness
+  state: OPEN
+  dependencies:
+  - 18
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 20
+  name: scin_image_domain_representation_and_acquisition_audit
+  state: OPEN
+  dependencies:
+  - 19
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 21
+  name: fitzpatrick17k_cleanpatrick_data_quality_decomposition
+  state: OPEN
+  dependencies:
+  - 20
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 22
+  name: ddi_clinical_translation
+  state: OPEN
+  dependencies:
+  - 21
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 23
+  name: ddi2_external_replication
+  state: OPEN
+  dependencies:
+  - 22
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 24
+  name: mra_midas_identity_modality_and_distance_audit
+  state: OPEN
+  dependencies:
+  - 23
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 25
+  name: integrated_physics_contrast_and_data_quality_decomposition
+  state: OPEN
+  dependencies:
+  - 24
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 26
+  name: statistical_closure_and_lockbox
+  state: OPEN
+  dependencies:
+  - 25
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 27
+  name: final_claim_adjudication
+  state: OPEN
+  dependencies:
+  - 26
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true
+- stage: 28
+  name: reproducibility_clean_room_execution_and_release
+  state: OPEN
+  dependencies:
+  - 27
+  closure_required: true
+  falsification_required: true
+  independent_validation_required: true
+  immutable_artifacts_required: true

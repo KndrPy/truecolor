@@ -1,0 +1,25 @@
+contract_version: 1.0.0
+artifact_requirements:
+  machine_readable: true
+  human_readable_summary: true
+  sha256_required: true
+  source_data_hash_required: true
+  code_commit_required: true
+  reproduction_command_required: true
+  schema_required: true
+  overwrite_without_version_change_prohibited: true
+permitted_formats:
+- yaml
+- json
+- csv
+- parquet
+- npz
+- md
+- txt
+prohibited_repository_content:
+- raw_medical_images
+- raw_biometric_data
+- credentials
+- access_tokens
+- unlicensed_data
+- unhashed_final_evidence

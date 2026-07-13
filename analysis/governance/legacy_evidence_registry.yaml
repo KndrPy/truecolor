@@ -1,0 +1,37 @@
+registry_version: 1.0.0
+policy:
+  legacy_results_are_not_automatically_canonical: true
+  legacy_results_must_be_reexecuted_or_explicitly_admitted: true
+  git_history_must_not_be_rewritten: true
+legacy_branch: agent/local-analysis-recovery
+mappings:
+- legacy_stage: 1
+  legacy_commit: fed221c
+  canonical_stage: 1
+  status: REQUIRES_CANONICAL_AUDIT
+- legacy_stage: 2
+  legacy_commit: 3a95dc4abfad225e8747aba3c78a7e8061c58ec2
+  canonical_stage: 2
+  status: REQUIRES_CANONICAL_AUDIT
+- legacy_stage: 3
+  legacy_commit: 13af8530bff514449c78c1968b874e3340308386
+  canonical_stages:
+  - 3
+  - 4
+  status: REQUIRES_REEXECUTION_AND_RECONCILIATION
+- legacy_stage: 4
+  legacy_commit: b3fb22c5dc3b19e6003f8044836ec1a608483bf0
+  canonical_stage: 5
+  status: REQUIRES_REEXECUTION_AND_RECONCILIATION
+- legacy_stage: 5
+  legacy_commit: cd5b83607f2225051fe25b5289a9e949b550261d
+  canonical_stage: 7
+  status: RAW_REFLECTANCE_SUBSET_ONLY
+- legacy_stage: 6
+  legacy_commit: 2abd5f0473af9a7a4d97a2830ad1b713a40aa9cb
+  canonical_stage: 9
+  status: REQUIRES_CANONICAL_REEXECUTION
+- legacy_stage: 7
+  legacy_commit: 7d78bec121e70e22d7b4e171eb4c0195148fcc7e
+  canonical_stage: 10
+  status: AXIS_INTERPRETATION_SUBSET_ONLY

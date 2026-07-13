@@ -1,0 +1,9 @@
+policy_version: 1.0.0
+rules:
+- every_primary_claim_requires_a_kill_condition
+- every_stage_requires_at_least_one_negative_control
+- every_stage_requires_an_independent_validation_path
+- unsupported_claims_must_be_explicitly_prohibited
+- failed_kill_condition_cannot_be_reclassified_as_scope_limitation
+- thresholds_must_be_registered_before_final_evaluation
+- null_results_must_be_preserved
