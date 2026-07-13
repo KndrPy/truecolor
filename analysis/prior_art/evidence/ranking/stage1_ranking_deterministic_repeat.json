@@ -1,0 +1,51 @@
+{
+  "artifact": "complete_ranking_deterministic_repeat",
+  "comparisons": [
+    {
+      "identical": true,
+      "path": "stage1_candidate_ranking_lineage.json",
+      "run1_sha256": "69ceea6bed1cdb0b4d75b09dae74084b637c46ceae1fe16979968c55bfca21da",
+      "run2_sha256": "69ceea6bed1cdb0b4d75b09dae74084b637c46ceae1fe16979968c55bfca21da"
+    },
+    {
+      "identical": true,
+      "path": "stage1_complete_domain_ranking.csv",
+      "run1_sha256": "57d4d7511b577f3b3794994be960d74fba1d221174db398fba7bd2ab1d88bf3f",
+      "run2_sha256": "57d4d7511b577f3b3794994be960d74fba1d221174db398fba7bd2ab1d88bf3f"
+    },
+    {
+      "identical": true,
+      "path": "stage1_complete_domain_ranking.json",
+      "run1_sha256": "c4315660bc812919fc46d21f311600f05b89c41492e45751dc0d7318ba2e4d66",
+      "run2_sha256": "c4315660bc812919fc46d21f311600f05b89c41492e45751dc0d7318ba2e4d66"
+    },
+    {
+      "identical": true,
+      "path": "stage1_complete_global_ranking.csv",
+      "run1_sha256": "77f3a3110856e31a1a3768b10cc958846eb1ad4f1a11b37905a9b85e4a8986f9",
+      "run2_sha256": "77f3a3110856e31a1a3768b10cc958846eb1ad4f1a11b37905a9b85e4a8986f9"
+    },
+    {
+      "identical": true,
+      "path": "stage1_complete_global_ranking.json",
+      "run1_sha256": "14039a39535ed3adb7ab86e0e029fa80832af400171bcb5416654883e336583d",
+      "run2_sha256": "14039a39535ed3adb7ab86e0e029fa80832af400171bcb5416654883e336583d"
+    },
+    {
+      "identical": true,
+      "path": "stage1_top20_domain_review_view.csv",
+      "run1_sha256": "46b9fdd189f2e8eb12445dd96aa4f00195e4fa3daed1da38660ec1dba8e5644a",
+      "run2_sha256": "46b9fdd189f2e8eb12445dd96aa4f00195e4fa3daed1da38660ec1dba8e5644a"
+    },
+    {
+      "identical": true,
+      "path": "stage1_top20_domain_review_view.json",
+      "run1_sha256": "5c64b3e6ef69dd36533a13de7be7506b051cddd4dd1c973918185400a64a594b",
+      "run2_sha256": "5c64b3e6ef69dd36533a13de7be7506b051cddd4dd1c973918185400a64a594b"
+    }
+  ],
+  "failed_files": [],
+  "files_compared": 7,
+  "stage": 1,
+  "status": "PASS"
+}

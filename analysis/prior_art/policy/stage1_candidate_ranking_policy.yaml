@@ -1,0 +1,195 @@
+policy_version: 2.0.0
+policy_name: complete_prior_art_candidate_ranking
+purpose: Prioritize verification and screening of every harvested candidate without treating ranking as
+  source admission, scientific validity, novelty adjudication, or ground truth.
+admissibility_statement: No candidate becomes admissible prior art solely because of its score, rank,
+  identifier, citation count, recency, or metadata classification.
+score_weights:
+  domain_term_hit: 1.5
+  domain_term_hit_cap: 8
+  title_term_bonus: 1.0
+  title_term_bonus_cap: 6
+  doi_present: 2.0
+  pmid_present: 2.0
+  abstract_available: 1.0
+  primary_publication_type: 2.0
+  secondary_publication_type: -4.0
+  citation_log10_cap: 3.0
+  publication_year_2020_or_later: 1.0
+  publication_year_before_1990: -0.5
+  title_exclusion_term: -10.0
+  missing_title: -20.0
+  title_shorter_than_15_characters: -3.0
+global_priority:
+  formula: maximum_domain_score + domain_breadth_weight * (domain_count - 1)
+  domain_breadth_weight: 0.25
+  tie_break_order:
+  - global_priority_score_descending
+  - maximum_domain_score_descending
+  - domain_count_descending
+  - citation_count_descending
+  - publication_year_descending
+  - canonical_key_ascending
+domain_rank_tie_break_order:
+- domain_score_descending
+- citation_count_descending
+- publication_year_descending
+- canonical_key_ascending
+shortlist_policy:
+  top_per_domain: 20
+  role: derived_review_view_only
+  authoritative_ranking: false
+domain_terms:
+  camera_metamerism_and_spectral_reconstruction:
+  - metamer
+  - metamerism
+  - spectral reconstruction
+  - spectral recovery
+  - rgb
+  - camera
+  - skin
+  camera_spectral_sensitivity_and_observation_operators:
+  - camera
+  - spectral sensitivity
+  - sensor response
+  - illuminant
+  - observation model
+  - rgb
+  - skin reflectance
+  capture_variability_white_balance_and_illumination:
+  - white balance
+  - illumination
+  - lighting
+  - exposure
+  - color constancy
+  - capture variability
+  - camera
+  - dermatology
+  clinical_external_validation_and_domain_shift:
+  - external validation
+  - domain shift
+  - clinical
+  - dermatology
+  - pathology
+  - patient disjoint
+  - generalization
+  - dataset shift
+  dermatology_ai_fairness_and_skin_tone:
+  - dermatology
+  - artificial intelligence
+  - deep learning
+  - fairness
+  - skin tone
+  - skin type
+  - disparity
+  - classification
+  dermatology_dataset_duplicates_labels_and_quality:
+  - dermatology
+  - dataset
+  - duplicate
+  - deduplication
+  - label noise
+  - annotation
+  - quality
+  - fitzpatrick17k
+  fisher_information_and_cramer_rao_skin_imaging:
+  - fisher information
+  - cramer rao
+  - "cram\xE9r-rao"
+  - information bound
+  - identifiability
+  - skin
+  - spectroscopy
+  melanin_hemoglobin_and_scattering_identifiability:
+  - melanin
+  - hemoglobin
+  - scattering
+  - identifiability
+  - collinearity
+  - chromophore
+  - parameter estimation
+  multispectral_band_selection_and_measurement_design:
+  - multispectral
+  - hyperspectral
+  - band selection
+  - wavelength selection
+  - measurement design
+  - optimal wavelength
+  - skin
+  physics_informed_clinical_image_analysis:
+  - physics informed
+  - optical physics
+  - image formation
+  - measurement physics
+  - clinical imaging
+  - dermatology
+  - contrast
+  skin_colorimetry_ita_and_color_measurement:
+  - individual typology angle
+  - ita
+  - colorimeter
+  - spectrophotometer
+  - skin color
+  - color measurement
+  - body site
+  skin_reflectance_inverse_models:
+  - skin
+  - reflectance
+  - inverse
+  - chromophore
+  - parameter estimation
+  - melanin
+  - hemoglobin
+  - inverse rendering
+  skin_tissue_optical_forward_models:
+  - skin
+  - reflectance
+  - optical
+  - forward model
+  - monte carlo
+  - multilayer
+  - melanin
+  - hemoglobin
+  - scattering
+  spectral_reflectance_geometry_and_dimension:
+  - skin
+  - spectral
+  - reflectance
+  - principal component
+  - intrinsic dimension
+  - subspace
+  - body site
+primary_publication_type_terms:
+- journal-article
+- research article
+- clinical trial
+- validation study
+- comparative study
+- conference paper
+- proceedings-article
+secondary_publication_type_terms:
+- review
+- systematic review
+- meta-analysis
+- editorial
+- comment
+- letter
+- news
+- book review
+- correction
+- retraction
+title_exclusion_terms:
+- erratum
+- corrigendum
+- correction to
+- retraction
+- editorial
+- letter to the editor
+prohibited_interpretations:
+- rank_is_not_source_admission
+- rank_is_not_scientific_quality
+- rank_is_not_methodological_validity
+- rank_is_not_novelty
+- rank_is_not_ground_truth
+- citation_count_is_not_evidentiary_strength
+- metadata_type_is_not_primary_source_verification

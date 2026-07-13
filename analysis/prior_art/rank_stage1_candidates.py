@@ -2,199 +2,37 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import math
-import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
+import yaml
 
-DEFAULT_INPUT = Path(
-    "analysis/prior_art/results/"
-    "stage1_candidate_harvest.json"
+
+ROOT = Path("analysis/prior_art")
+
+DEFAULT_INPUT = (
+    ROOT
+    / "evidence/discovery/"
+    "stage1_candidate_harvest.snapshot.json"
 )
 
-DEFAULT_OUTPUT_JSON = Path(
-    "analysis/prior_art/results/"
-    "stage1_candidate_triage.json"
+DEFAULT_POLICY = (
+    ROOT
+    / "policy/"
+    "stage1_candidate_ranking_policy.yaml"
 )
 
-DEFAULT_OUTPUT_CSV = Path(
-    "analysis/prior_art/results/"
-    "stage1_domain_shortlist.csv"
+DEFAULT_QUERY_REGISTRY = (
+    ROOT
+    / "registry/search_query_registry.yaml"
 )
 
-
-DOMAIN_TERMS: dict[str, tuple[str, ...]] = {
-    "skin_tissue_optical_forward_models": (
-        "skin",
-        "reflectance",
-        "optical",
-        "forward model",
-        "monte carlo",
-        "multilayer",
-        "melanin",
-        "hemoglobin",
-        "scattering",
-    ),
-    "skin_reflectance_inverse_models": (
-        "skin",
-        "reflectance",
-        "inverse",
-        "chromophore",
-        "parameter estimation",
-        "melanin",
-        "hemoglobin",
-        "inverse rendering",
-    ),
-    "melanin_hemoglobin_and_scattering_identifiability": (
-        "melanin",
-        "hemoglobin",
-        "scattering",
-        "identifiability",
-        "collinearity",
-        "chromophore",
-        "parameter estimation",
-    ),
-    "spectral_reflectance_geometry_and_dimension": (
-        "skin",
-        "spectral",
-        "reflectance",
-        "principal component",
-        "intrinsic dimension",
-        "subspace",
-        "body site",
-    ),
-    "camera_spectral_sensitivity_and_observation_operators": (
-        "camera",
-        "spectral sensitivity",
-        "sensor response",
-        "illuminant",
-        "observation model",
-        "rgb",
-        "skin reflectance",
-    ),
-    "camera_metamerism_and_spectral_reconstruction": (
-        "metamer",
-        "metamerism",
-        "spectral reconstruction",
-        "spectral recovery",
-        "rgb",
-        "camera",
-        "skin",
-    ),
-    "multispectral_band_selection_and_measurement_design": (
-        "multispectral",
-        "hyperspectral",
-        "band selection",
-        "wavelength selection",
-        "measurement design",
-        "optimal wavelength",
-        "skin",
-    ),
-    "fisher_information_and_cramer_rao_skin_imaging": (
-        "fisher information",
-        "cramer rao",
-        "cramér-rao",
-        "information bound",
-        "identifiability",
-        "skin",
-        "spectroscopy",
-    ),
-    "skin_colorimetry_ita_and_color_measurement": (
-        "individual typology angle",
-        "ita",
-        "colorimeter",
-        "spectrophotometer",
-        "skin color",
-        "color measurement",
-        "body site",
-    ),
-    "capture_variability_white_balance_and_illumination": (
-        "white balance",
-        "illumination",
-        "lighting",
-        "exposure",
-        "color constancy",
-        "capture variability",
-        "camera",
-        "dermatology",
-    ),
-    "dermatology_ai_fairness_and_skin_tone": (
-        "dermatology",
-        "artificial intelligence",
-        "deep learning",
-        "fairness",
-        "skin tone",
-        "skin type",
-        "disparity",
-        "classification",
-    ),
-    "dermatology_dataset_duplicates_labels_and_quality": (
-        "dermatology",
-        "dataset",
-        "duplicate",
-        "deduplication",
-        "label noise",
-        "annotation",
-        "quality",
-        "fitzpatrick17k",
-    ),
-    "clinical_external_validation_and_domain_shift": (
-        "external validation",
-        "domain shift",
-        "clinical",
-        "dermatology",
-        "pathology",
-        "patient disjoint",
-        "generalization",
-        "dataset shift",
-    ),
-    "physics_informed_clinical_image_analysis": (
-        "physics informed",
-        "optical physics",
-        "image formation",
-        "measurement physics",
-        "clinical imaging",
-        "dermatology",
-        "contrast",
-    ),
-}
-
-
-PRIMARY_TYPE_TERMS = (
-    "journal-article",
-    "research article",
-    "clinical trial",
-    "validation study",
-    "comparative study",
-    "conference paper",
-    "proceedings-article",
-)
-
-
-SECONDARY_TYPE_TERMS = (
-    "review",
-    "systematic review",
-    "meta-analysis",
-    "editorial",
-    "comment",
-    "letter",
-    "news",
-    "book review",
-    "correction",
-    "retraction",
-)
-
-
-TITLE_EXCLUSION_TERMS = (
-    "erratum",
-    "corrigendum",
-    "correction to",
-    "retraction",
-    "editorial",
-    "letter to the editor",
+DEFAULT_OUTPUT_DIR = (
+    ROOT / "evidence/ranking"
 )
 
 
@@ -204,53 +42,92 @@ def normalized(value: Any) -> str:
     )
 
 
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+
+    with path.open("rb") as handle:
+        for block in iter(
+            lambda: handle.read(1024 * 1024),
+            b"",
+        ):
+            digest.update(block)
+
+    return digest.hexdigest()
+
+
+def canonical_json_sha256(value: Any) -> str:
+    payload = json.dumps(
+        value,
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+    ).encode("utf-8")
+
+    return hashlib.sha256(payload).hexdigest()
+
+
+def load_json(path: Path) -> dict[str, Any]:
+    value = json.loads(
+        path.read_text(encoding="utf-8")
+    )
+
+    if not isinstance(value, dict):
+        raise TypeError(
+            f"Expected JSON mapping: {path}"
+        )
+
+    return value
+
+
+def load_yaml(path: Path) -> dict[str, Any]:
+    value = yaml.safe_load(
+        path.read_text(encoding="utf-8")
+    )
+
+    if not isinstance(value, dict):
+        raise TypeError(
+            f"Expected YAML mapping: {path}"
+        )
+
+    return value
+
+
+def integer_or_zero(value: Any) -> int:
+    try:
+        return int(value or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def optional_year(value: Any) -> int | None:
+    try:
+        year = int(value)
+    except (TypeError, ValueError):
+        return None
+
+    return year
+
+
 def term_hits(
     text: str,
-    terms: tuple[str, ...],
+    terms: list[str],
 ) -> list[str]:
     return sorted({
         term
         for term in terms
-        if term in text
+        if normalized(term) in text
     })
 
 
-def publication_type_score(
-    value: Any,
-) -> tuple[float, list[str]]:
-    text = normalized(value)
-    score = 0.0
-    reasons: list[str] = []
-
-    for term in PRIMARY_TYPE_TERMS:
-        if term in text:
-            score += 2.0
-            reasons.append(
-                f"primary_type:{term}"
-            )
-            break
-
-    for term in SECONDARY_TYPE_TERMS:
-        if term in text:
-            score -= 4.0
-            reasons.append(
-                f"secondary_type:{term}"
-            )
-            break
-
-    return score, reasons
-
-
-def candidate_domain_score(
+def score_candidate_domain(
     candidate: dict[str, Any],
     domain: str,
-) -> tuple[float, list[str]]:
-    title = normalized(
-        candidate.get("title")
-    )
-    venue = normalized(
-        candidate.get("venue")
-    )
+    policy: dict[str, Any],
+) -> dict[str, Any]:
+    weights = policy["score_weights"]
+
+    title = normalized(candidate.get("title"))
+    venue = normalized(candidate.get("venue"))
     publication_type = normalized(
         candidate.get("publication_type")
     )
@@ -261,108 +138,330 @@ def candidate_domain_score(
         publication_type,
     ])
 
-    score = 0.0
-    reasons: list[str] = []
+    terms = [
+        normalized(term)
+        for term in policy["domain_terms"][domain]
+    ]
 
-    hits = term_hits(
+    domain_hits = term_hits(
         combined,
-        DOMAIN_TERMS[domain],
+        terms,
     )
-
-    score += min(len(hits), 8) * 1.5
-
-    if hits:
-        reasons.append(
-            "domain_terms:" + "|".join(hits)
-        )
 
     title_hits = term_hits(
         title,
-        DOMAIN_TERMS[domain],
+        terms,
     )
 
-    score += min(len(title_hits), 6) * 1.0
+    components: list[dict[str, Any]] = []
 
-    if candidate.get("doi"):
-        score += 2.0
-        reasons.append("doi_present")
+    def add_component(
+        name: str,
+        value: float,
+        evidence: Any,
+    ) -> None:
+        components.append({
+            "component": name,
+            "value": round(
+                float(value),
+                6,
+            ),
+            "evidence": evidence,
+        })
 
-    if candidate.get("pmid"):
-        score += 2.0
-        reasons.append("pmid_present")
-
-    if candidate.get("abstract_available"):
-        score += 1.0
-        reasons.append("abstract_available")
-
-    type_score, type_reasons = (
-        publication_type_score(
-            candidate.get("publication_type")
-        )
+    domain_hit_count = min(
+        len(domain_hits),
+        int(weights["domain_term_hit_cap"]),
     )
 
-    score += type_score
-    reasons.extend(type_reasons)
-
-    citation_count = int(
-        candidate.get("citation_count") or 0
+    add_component(
+        "domain_term_hits",
+        (
+            domain_hit_count
+            * float(weights["domain_term_hit"])
+        ),
+        domain_hits,
     )
 
-    if citation_count > 0:
-        score += min(
-            math.log10(citation_count + 1),
-            3.0,
-        )
-        reasons.append(
-            f"citation_count:{citation_count}"
-        )
+    title_hit_count = min(
+        len(title_hits),
+        int(weights["title_term_bonus_cap"]),
+    )
 
-    year_value = candidate.get("year")
+    add_component(
+        "title_term_hits",
+        (
+            title_hit_count
+            * float(weights["title_term_bonus"])
+        ),
+        title_hits,
+    )
 
-    try:
-        year = int(year_value)
-    except (TypeError, ValueError):
-        year = None
+    add_component(
+        "doi_present",
+        (
+            float(weights["doi_present"])
+            if candidate.get("doi")
+            else 0.0
+        ),
+        bool(candidate.get("doi")),
+    )
 
-    if year is not None:
-        if year >= 2020:
-            score += 1.0
-            reasons.append("recent_2020_plus")
-        elif year < 1990:
-            score -= 0.5
-            reasons.append("pre_1990")
+    add_component(
+        "pmid_present",
+        (
+            float(weights["pmid_present"])
+            if candidate.get("pmid")
+            else 0.0
+        ),
+        bool(candidate.get("pmid")),
+    )
 
-    excluded_title_terms = term_hits(
+    add_component(
+        "abstract_available",
+        (
+            float(weights["abstract_available"])
+            if candidate.get("abstract_available")
+            else 0.0
+        ),
+        bool(
+            candidate.get("abstract_available")
+        ),
+    )
+
+    primary_hits = term_hits(
+        publication_type,
+        [
+            normalized(term)
+            for term in policy[
+                "primary_publication_type_terms"
+            ]
+        ],
+    )
+
+    secondary_hits = term_hits(
+        publication_type,
+        [
+            normalized(term)
+            for term in policy[
+                "secondary_publication_type_terms"
+            ]
+        ],
+    )
+
+    add_component(
+        "primary_publication_type",
+        (
+            float(
+                weights[
+                    "primary_publication_type"
+                ]
+            )
+            if primary_hits
+            else 0.0
+        ),
+        primary_hits,
+    )
+
+    add_component(
+        "secondary_publication_type",
+        (
+            float(
+                weights[
+                    "secondary_publication_type"
+                ]
+            )
+            if secondary_hits
+            else 0.0
+        ),
+        secondary_hits,
+    )
+
+    citation_count = integer_or_zero(
+        candidate.get("citation_count")
+    )
+
+    citation_score = min(
+        math.log10(citation_count + 1),
+        float(weights["citation_log10_cap"]),
+    )
+
+    add_component(
+        "citation_log10",
+        citation_score,
+        citation_count,
+    )
+
+    year = optional_year(
+        candidate.get("year")
+    )
+
+    add_component(
+        "publication_year_2020_or_later",
+        (
+            float(
+                weights[
+                    "publication_year_2020_or_later"
+                ]
+            )
+            if year is not None and year >= 2020
+            else 0.0
+        ),
+        year,
+    )
+
+    add_component(
+        "publication_year_before_1990",
+        (
+            float(
+                weights[
+                    "publication_year_before_1990"
+                ]
+            )
+            if year is not None and year < 1990
+            else 0.0
+        ),
+        year,
+    )
+
+    exclusion_hits = term_hits(
         title,
-        TITLE_EXCLUSION_TERMS,
+        [
+            normalized(term)
+            for term in policy[
+                "title_exclusion_terms"
+            ]
+        ],
     )
 
-    if excluded_title_terms:
-        score -= 10.0
-        reasons.append(
-            "title_exclusion:"
-            + "|".join(excluded_title_terms)
+    add_component(
+        "title_exclusion_term",
+        (
+            float(weights["title_exclusion_term"])
+            if exclusion_hits
+            else 0.0
+        ),
+        exclusion_hits,
+    )
+
+    add_component(
+        "missing_title",
+        (
+            float(weights["missing_title"])
+            if not title
+            else 0.0
+        ),
+        not bool(title),
+    )
+
+    add_component(
+        "short_title",
+        (
+            float(
+                weights[
+                    "title_shorter_than_15_characters"
+                ]
+            )
+            if title and len(title) < 15
+            else 0.0
+        ),
+        len(title),
+    )
+
+    total = round(
+        sum(
+            component["value"]
+            for component in components
+        ),
+        6,
+    )
+
+    nonzero_components = [
+        component
+        for component in components
+        if component["value"] != 0
+    ]
+
+    return {
+        "domain_score": total,
+        "score_components": components,
+        "nonzero_score_components": (
+            nonzero_components
+        ),
+        "domain_term_hits": domain_hits,
+        "title_term_hits": title_hits,
+    }
+
+
+def domain_sort_key(
+    row: dict[str, Any],
+) -> tuple[Any, ...]:
+    year = optional_year(row.get("year"))
+
+    return (
+        -float(row["domain_score"]),
+        -integer_or_zero(
+            row.get("citation_count")
+        ),
+        -(year or 0),
+        row["canonical_key"],
+    )
+
+
+def global_sort_key(
+    row: dict[str, Any],
+) -> tuple[Any, ...]:
+    year = optional_year(row.get("year"))
+
+    return (
+        -float(row["global_priority_score"]),
+        -float(row["maximum_domain_score"]),
+        -int(row["domain_count"]),
+        -integer_or_zero(
+            row.get("citation_count")
+        ),
+        -(year or 0),
+        row["canonical_key"],
+    )
+
+
+def write_csv(
+    path: Path,
+    rows: list[dict[str, Any]],
+    fields: list[str],
+) -> None:
+    with path.open(
+        "w",
+        encoding="utf-8",
+        newline="",
+    ) as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=fields,
+            lineterminator="\n",
+            extrasaction="ignore",
         )
 
-    if not title:
-        score -= 20.0
-        reasons.append("missing_title")
+        writer.writeheader()
 
-    if len(title) < 15:
-        score -= 3.0
-        reasons.append("very_short_title")
+        for row in rows:
+            rendered = dict(row)
 
-    return round(score, 6), reasons
+            for key, value in list(
+                rendered.items()
+            ):
+                if isinstance(
+                    value,
+                    (list, dict),
+                ):
+                    rendered[key] = json.dumps(
+                        value,
+                        sort_keys=True,
+                        ensure_ascii=False,
+                        separators=(",", ":"),
+                    )
 
-
-def stable_candidate_key(
-    candidate: dict[str, Any],
-) -> tuple[Any, ...]:
-    return (
-        candidate.get("canonical_key", ""),
-        normalized(candidate.get("title")),
-        str(candidate.get("year") or ""),
-    )
+            writer.writerow(rendered)
 
 
 def main() -> int:
@@ -375,97 +474,125 @@ def main() -> int:
     )
 
     parser.add_argument(
-        "--output-json",
+        "--policy",
         type=Path,
-        default=DEFAULT_OUTPUT_JSON,
+        default=DEFAULT_POLICY,
     )
 
     parser.add_argument(
-        "--output-csv",
+        "--query-registry",
         type=Path,
-        default=DEFAULT_OUTPUT_CSV,
+        default=DEFAULT_QUERY_REGISTRY,
     )
 
     parser.add_argument(
-        "--per-domain",
-        type=int,
-        default=20,
+        "--output-dir",
+        type=Path,
+        default=DEFAULT_OUTPUT_DIR,
     )
 
     args = parser.parse_args()
 
-    if args.per_domain < 1:
-        raise ValueError(
-            "--per-domain must be positive"
-        )
+    harvest = load_json(args.input)
+    policy = load_yaml(args.policy)
+    queries = load_yaml(args.query_registry)
 
-    payload = json.loads(
-        args.input.read_text(encoding="utf-8")
+    args.output_dir.mkdir(
+        parents=True,
+        exist_ok=True,
     )
 
-    candidates = payload["candidates"]
+    required_domains = {
+        row["domain"]
+        for row in queries["query_families"]
+    }
 
-    ranked_by_domain: dict[
+    policy_domains = set(
+        policy["domain_terms"]
+    )
+
+    if policy_domains != required_domains:
+        raise ValueError({
+            "policy_only": sorted(
+                policy_domains - required_domains
+            ),
+            "query_registry_only": sorted(
+                required_domains - policy_domains
+            ),
+        })
+
+    candidates = harvest["candidates"]
+
+    canonical_keys = [
+        candidate["canonical_key"]
+        for candidate in candidates
+    ]
+
+    if len(canonical_keys) != len(
+        set(canonical_keys)
+    ):
+        raise ValueError(
+            "DUPLICATE_HARVEST_CANONICAL_KEYS"
+        )
+
+    pair_rows: list[dict[str, Any]] = []
+    rows_by_domain: dict[
         str,
         list[dict[str, Any]],
     ] = defaultdict(list)
 
+    candidate_lookup = {
+        candidate["canonical_key"]: candidate
+        for candidate in candidates
+    }
+
     for candidate in candidates:
-        for domain in candidate["domains"]:
-            if domain not in DOMAIN_TERMS:
-                raise ValueError(
-                    f"Unknown domain: {domain}"
-                )
-
-            score, reasons = (
-                candidate_domain_score(
-                    candidate,
-                    domain,
-                )
-            )
-
-            ranked_by_domain[domain].append({
-                "domain": domain,
-                "score": score,
-                "reasons": reasons,
-                "candidate": candidate,
-            })
-
-    selected_rows: list[
-        dict[str, Any]
-    ] = []
-
-    selected_keys: set[str] = set()
-    selected_domain_counts = Counter()
-
-    for domain in sorted(DOMAIN_TERMS):
-        rows = ranked_by_domain[domain]
-
-        rows.sort(
-            key=lambda row: (
-                -row["score"],
-                stable_candidate_key(
-                    row["candidate"]
-                ),
-            )
+        candidate_domains = sorted(
+            set(candidate["domains"])
         )
 
-        for domain_rank, row in enumerate(
-            rows[: args.per_domain],
-            start=1,
-        ):
-            candidate = row["candidate"]
-            key = candidate["canonical_key"]
+        unknown_domains = (
+            set(candidate_domains)
+            - required_domains
+        )
 
-            selected_domain_counts[domain] += 1
-            selected_keys.add(key)
+        if unknown_domains:
+            raise ValueError({
+                "candidate_key": candidate[
+                    "canonical_key"
+                ],
+                "unknown_domains": sorted(
+                    unknown_domains
+                ),
+            })
 
-            selected_rows.append({
+        for domain in candidate_domains:
+            scoring = score_candidate_domain(
+                candidate,
+                domain,
+                policy,
+            )
+
+            row = {
+                "canonical_key": candidate[
+                    "canonical_key"
+                ],
                 "domain": domain,
-                "domain_rank": domain_rank,
-                "triage_score": row["score"],
-                "triage_reasons": row["reasons"],
-                "canonical_key": key,
+                "domain_score": scoring[
+                    "domain_score"
+                ],
+                "score_components": scoring[
+                    "score_components"
+                ],
+                "nonzero_score_components": scoring[
+                    "nonzero_score_components"
+                ],
+                "domain_term_hits": scoring[
+                    "domain_term_hits"
+                ],
+                "title_term_hits": scoring[
+                    "title_term_hits"
+                ],
                 "title": candidate.get(
                     "title",
                     "",
@@ -474,42 +601,77 @@ def main() -> int:
                     "authors",
                     [],
                 ),
-                "year": candidate.get(
-                    "year",
-                ),
-                "doi": candidate.get(
-                    "doi",
-                ),
-                "pmid": candidate.get(
-                    "pmid",
+                "year": candidate.get("year"),
+                "doi": candidate.get("doi"),
+                "pmid": candidate.get("pmid"),
+                "arxiv": candidate.get(
+                    "arxiv"
                 ),
                 "venue": candidate.get(
-                    "venue",
+                    "venue"
                 ),
-                "publication_type": candidate.get(
-                    "publication_type",
+                "publication_type": (
+                    candidate.get(
+                        "publication_type"
+                    )
                 ),
-                "citation_count": candidate.get(
-                    "citation_count",
+                "citation_count": (
+                    candidate.get(
+                        "citation_count"
+                    )
                 ),
-                "url": candidate.get(
-                    "url",
+                "abstract_available": bool(
+                    candidate.get(
+                        "abstract_available"
+                    )
+                ),
+                "url": candidate.get("url"),
+                "query_family_ids": candidate.get(
+                    "query_family_ids",
+                    [],
+                ),
+                "discovery_queries": candidate.get(
+                    "discovery_queries",
+                    [],
                 ),
                 "all_candidate_domains": (
-                    candidate.get(
-                        "domains",
-                        [],
-                    )
+                    candidate_domains
                 ),
-                "query_family_ids": (
-                    candidate.get(
-                        "query_family_ids",
-                        [],
-                    )
+                "discovery_source": candidate.get(
+                    "discovery_source"
                 ),
-            })
+                "admission_state": (
+                    "UNSCREENED_NOT_ADMITTED"
+                ),
+            }
 
-    selected_rows.sort(
+            rows_by_domain[domain].append(
+                row
+            )
+
+    domain_counts: dict[str, int] = {}
+
+    for domain in sorted(required_domains):
+        domain_rows = rows_by_domain[domain]
+        domain_rows.sort(
+            key=domain_sort_key
+        )
+
+        domain_counts[domain] = len(
+            domain_rows
+        )
+
+        for rank, row in enumerate(
+            domain_rows,
+            start=1,
+        ):
+            row["domain_rank"] = rank
+            row["domain_candidate_count"] = (
+                len(domain_rows)
+            )
+            pair_rows.append(row)
+
+    pair_rows.sort(
         key=lambda row: (
             row["domain"],
             row["domain_rank"],
@@ -517,40 +679,265 @@ def main() -> int:
         )
     )
 
-    triage = {
-        "stage": 1,
-        "triage_version": "1.0.0",
-        "input_candidate_count": len(
-            candidates
-        ),
-        "per_domain_target": (
-            args.per_domain
-        ),
-        "domain_slot_count": len(
-            selected_rows
-        ),
-        "unique_shortlist_count": len(
-            selected_keys
-        ),
-        "domain_counts": dict(
-            sorted(
-                selected_domain_counts.items()
-            )
-        ),
-        "admission_status": (
-            "SCREENING_ONLY_NOT_ADMITTED"
-        ),
-        "rows": selected_rows,
-    }
+    pair_rows_by_candidate: dict[
+        str,
+        list[dict[str, Any]],
+    ] = defaultdict(list)
 
-    args.output_json.parent.mkdir(
-        parents=True,
-        exist_ok=True,
+    for row in pair_rows:
+        pair_rows_by_candidate[
+            row["canonical_key"]
+        ].append(row)
+
+    breadth_weight = float(
+        policy["global_priority"][
+            "domain_breadth_weight"
+        ]
     )
 
-    args.output_json.write_text(
+    global_rows: list[dict[str, Any]] = []
+
+    for canonical_key in sorted(
+        candidate_lookup
+    ):
+        candidate = candidate_lookup[
+            canonical_key
+        ]
+
+        assigned_rows = pair_rows_by_candidate[
+            canonical_key
+        ]
+
+        maximum_domain_score = max(
+            row["domain_score"]
+            for row in assigned_rows
+        )
+
+        domain_count = len(assigned_rows)
+
+        global_priority_score = round(
+            maximum_domain_score
+            + breadth_weight
+            * (domain_count - 1),
+            6,
+        )
+
+        strongest_domain_rows = sorted(
+            assigned_rows,
+            key=domain_sort_key,
+        )
+
+        global_rows.append({
+            "canonical_key": canonical_key,
+            "global_priority_score": (
+                global_priority_score
+            ),
+            "maximum_domain_score": (
+                maximum_domain_score
+            ),
+            "domain_breadth_bonus": round(
+                breadth_weight
+                * (domain_count - 1),
+                6,
+            ),
+            "domain_count": domain_count,
+            "assigned_domains": sorted(
+                row["domain"]
+                for row in assigned_rows
+            ),
+            "domain_rankings": [
+                {
+                    "domain": row["domain"],
+                    "domain_rank": row[
+                        "domain_rank"
+                    ],
+                    "domain_candidate_count": row[
+                        "domain_candidate_count"
+                    ],
+                    "domain_score": row[
+                        "domain_score"
+                    ],
+                }
+                for row in sorted(
+                    assigned_rows,
+                    key=lambda item: (
+                        item["domain"]
+                    ),
+                )
+            ],
+            "strongest_domain": (
+                strongest_domain_rows[0][
+                    "domain"
+                ]
+            ),
+            "title": candidate.get(
+                "title",
+                "",
+            ),
+            "authors": candidate.get(
+                "authors",
+                [],
+            ),
+            "year": candidate.get("year"),
+            "doi": candidate.get("doi"),
+            "pmid": candidate.get("pmid"),
+            "arxiv": candidate.get("arxiv"),
+            "venue": candidate.get(
+                "venue"
+            ),
+            "publication_type": (
+                candidate.get(
+                    "publication_type"
+                )
+            ),
+            "citation_count": candidate.get(
+                "citation_count"
+            ),
+            "abstract_available": bool(
+                candidate.get(
+                    "abstract_available"
+                )
+            ),
+            "url": candidate.get("url"),
+            "query_family_ids": candidate.get(
+                "query_family_ids",
+                [],
+            ),
+            "discovery_queries": candidate.get(
+                "discovery_queries",
+                [],
+            ),
+            "admission_state": (
+                "UNSCREENED_NOT_ADMITTED"
+            ),
+        })
+
+    global_rows.sort(
+        key=global_sort_key
+    )
+
+    for rank, row in enumerate(
+        global_rows,
+        start=1,
+    ):
+        row["global_rank"] = rank
+        row["global_candidate_count"] = (
+            len(global_rows)
+        )
+
+    top_per_domain = int(
+        policy["shortlist_policy"][
+            "top_per_domain"
+        ]
+    )
+
+    shortlist_rows = [
+        row
+        for row in pair_rows
+        if row["domain_rank"]
+        <= top_per_domain
+    ]
+
+    complete_pair_payload = {
+        "stage": 1,
+        "artifact": (
+            "complete_candidate_domain_ranking"
+        ),
+        "ranking_policy_version": (
+            policy["policy_version"]
+        ),
+        "candidate_count": len(candidates),
+        "candidate_domain_pair_count": len(
+            pair_rows
+        ),
+        "domain_count": len(
+            required_domains
+        ),
+        "domain_candidate_counts": dict(
+            sorted(domain_counts.items())
+        ),
+        "admission_status": (
+            "UNSCREENED_NOT_ADMITTED"
+        ),
+        "rows": pair_rows,
+    }
+
+    global_payload = {
+        "stage": 1,
+        "artifact": (
+            "complete_deduplicated_global_ranking"
+        ),
+        "ranking_policy_version": (
+            policy["policy_version"]
+        ),
+        "candidate_count": len(global_rows),
+        "global_priority_formula": (
+            policy["global_priority"][
+                "formula"
+            ]
+        ),
+        "admission_status": (
+            "UNSCREENED_NOT_ADMITTED"
+        ),
+        "rows": global_rows,
+    }
+
+    shortlist_payload = {
+        "stage": 1,
+        "artifact": (
+            "derived_top_per_domain_review_view"
+        ),
+        "ranking_policy_version": (
+            policy["policy_version"]
+        ),
+        "top_per_domain": top_per_domain,
+        "domain_slot_count": len(
+            shortlist_rows
+        ),
+        "unique_candidate_count": len({
+            row["canonical_key"]
+            for row in shortlist_rows
+        }),
+        "authoritative_ranking": False,
+        "admission_status": (
+            "UNSCREENED_NOT_ADMITTED"
+        ),
+        "rows": shortlist_rows,
+    }
+
+    pair_json = (
+        args.output_dir
+        / "stage1_complete_domain_ranking.json"
+    )
+
+    pair_csv = (
+        args.output_dir
+        / "stage1_complete_domain_ranking.csv"
+    )
+
+    global_json = (
+        args.output_dir
+        / "stage1_complete_global_ranking.json"
+    )
+
+    global_csv = (
+        args.output_dir
+        / "stage1_complete_global_ranking.csv"
+    )
+
+    shortlist_json = (
+        args.output_dir
+        / "stage1_top20_domain_review_view.json"
+    )
+
+    shortlist_csv = (
+        args.output_dir
+        / "stage1_top20_domain_review_view.csv"
+    )
+
+    pair_json.write_text(
         json.dumps(
-            triage,
+            complete_pair_payload,
             indent=2,
             sort_keys=True,
             ensure_ascii=False,
@@ -559,103 +946,257 @@ def main() -> int:
         encoding="utf-8",
     )
 
-    csv_fields = [
-        "domain",
-        "domain_rank",
-        "triage_score",
-        "canonical_key",
-        "title",
-        "year",
-        "authors",
-        "doi",
-        "pmid",
-        "venue",
-        "publication_type",
-        "citation_count",
-        "url",
-        "triage_reasons",
-        "primary_source_verified",
-        "publication_status_verified",
-        "include_exclude",
-        "exclusion_reason",
-        "claims_addressed",
-        "full_text_reviewed",
-        "screening_notes",
+    global_json.write_text(
+        json.dumps(
+            global_payload,
+            indent=2,
+            sort_keys=True,
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    shortlist_json.write_text(
+        json.dumps(
+            shortlist_payload,
+            indent=2,
+            sort_keys=True,
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+
+    write_csv(
+        pair_csv,
+        pair_rows,
+        [
+            "domain",
+            "domain_rank",
+            "domain_candidate_count",
+            "canonical_key",
+            "domain_score",
+            "title",
+            "year",
+            "authors",
+            "doi",
+            "pmid",
+            "arxiv",
+            "venue",
+            "publication_type",
+            "citation_count",
+            "abstract_available",
+            "url",
+            "query_family_ids",
+            "discovery_queries",
+            "all_candidate_domains",
+            "domain_term_hits",
+            "title_term_hits",
+            "score_components",
+            "nonzero_score_components",
+            "admission_state",
+        ],
+    )
+
+    write_csv(
+        global_csv,
+        global_rows,
+        [
+            "global_rank",
+            "global_candidate_count",
+            "canonical_key",
+            "global_priority_score",
+            "maximum_domain_score",
+            "domain_breadth_bonus",
+            "domain_count",
+            "assigned_domains",
+            "strongest_domain",
+            "domain_rankings",
+            "title",
+            "year",
+            "authors",
+            "doi",
+            "pmid",
+            "arxiv",
+            "venue",
+            "publication_type",
+            "citation_count",
+            "abstract_available",
+            "url",
+            "query_family_ids",
+            "discovery_queries",
+            "admission_state",
+        ],
+    )
+
+    write_csv(
+        shortlist_csv,
+        shortlist_rows,
+        [
+            "domain",
+            "domain_rank",
+            "domain_candidate_count",
+            "canonical_key",
+            "domain_score",
+            "title",
+            "year",
+            "authors",
+            "doi",
+            "pmid",
+            "arxiv",
+            "venue",
+            "publication_type",
+            "citation_count",
+            "abstract_available",
+            "url",
+            "query_family_ids",
+            "domain_term_hits",
+            "title_term_hits",
+            "nonzero_score_components",
+            "admission_state",
+        ],
+    )
+
+    implementation_path = Path(__file__)
+
+    lineage = {
+        "stage": 1,
+        "artifact": "candidate_ranking_lineage",
+        "ranking_policy_version": (
+            policy["policy_version"]
+        ),
+        "inputs": [
+            {
+                "role": "harvest_snapshot",
+                "path": str(args.input),
+                "bytes": args.input.stat().st_size,
+                "sha256": sha256(args.input),
+                "canonical_content_sha256": (
+                    harvest["content_sha256"]
+                ),
+            },
+            {
+                "role": "ranking_policy",
+                "path": str(args.policy),
+                "bytes": args.policy.stat().st_size,
+                "sha256": sha256(args.policy),
+            },
+            {
+                "role": "query_registry",
+                "path": str(
+                    args.query_registry
+                ),
+                "bytes": (
+                    args.query_registry.stat().st_size
+                ),
+                "sha256": sha256(
+                    args.query_registry
+                ),
+            },
+            {
+                "role": "ranking_implementation",
+                "path": str(
+                    implementation_path
+                ),
+                "bytes": (
+                    implementation_path.stat().st_size
+                ),
+                "sha256": sha256(
+                    implementation_path
+                ),
+            },
+        ],
+        "counts": {
+            "harvest_candidate_count": len(
+                candidates
+            ),
+            "global_candidate_count": len(
+                global_rows
+            ),
+            "candidate_domain_pair_count": len(
+                pair_rows
+            ),
+            "domain_count": len(
+                required_domains
+            ),
+            "shortlist_domain_slot_count": len(
+                shortlist_rows
+            ),
+            "shortlist_unique_candidate_count": len({
+                row["canonical_key"]
+                for row in shortlist_rows
+            }),
+        },
+        "outputs": [],
+        "interpretation_limits": (
+            policy["prohibited_interpretations"]
+        ),
+    }
+
+    output_paths = [
+        pair_json,
+        pair_csv,
+        global_json,
+        global_csv,
+        shortlist_json,
+        shortlist_csv,
     ]
 
-    with args.output_csv.open(
-        "w",
-        encoding="utf-8",
-        newline="",
-    ) as handle:
-        writer = csv.DictWriter(
-            handle,
-            fieldnames=csv_fields,
-            lineterminator="\n",
+    lineage["outputs"] = [
+        {
+            "path": str(path),
+            "bytes": path.stat().st_size,
+            "sha256": sha256(path),
+        }
+        for path in output_paths
+    ]
+
+    lineage["lineage_content_sha256"] = (
+        canonical_json_sha256(lineage)
+    )
+
+    lineage_path = (
+        args.output_dir
+        / "stage1_candidate_ranking_lineage.json"
+    )
+
+    lineage_path.write_text(
+        json.dumps(
+            lineage,
+            indent=2,
+            sort_keys=True,
         )
-
-        writer.writeheader()
-
-        for row in selected_rows:
-            writer.writerow({
-                "domain": row["domain"],
-                "domain_rank": (
-                    row["domain_rank"]
-                ),
-                "triage_score": (
-                    row["triage_score"]
-                ),
-                "canonical_key": (
-                    row["canonical_key"]
-                ),
-                "title": row["title"],
-                "year": row["year"] or "",
-                "authors": " | ".join(
-                    row["authors"]
-                ),
-                "doi": row["doi"] or "",
-                "pmid": row["pmid"] or "",
-                "venue": row["venue"] or "",
-                "publication_type": (
-                    row["publication_type"]
-                    or ""
-                ),
-                "citation_count": (
-                    row["citation_count"]
-                    or ""
-                ),
-                "url": row["url"] or "",
-                "triage_reasons": " | ".join(
-                    row["triage_reasons"]
-                ),
-                "primary_source_verified": "",
-                "publication_status_verified": "",
-                "include_exclude": "",
-                "exclusion_reason": "",
-                "claims_addressed": "",
-                "full_text_reviewed": "",
-                "screening_notes": "",
-            })
+        + "\n",
+        encoding="utf-8",
+    )
 
     print(
-        f"INPUT_CANDIDATES={len(candidates)}"
+        f"HARVEST_CANDIDATES="
+        f"{len(candidates)}"
     )
     print(
-        f"DOMAIN_SLOTS={len(selected_rows)}"
+        f"GLOBAL_RANKED_CANDIDATES="
+        f"{len(global_rows)}"
     )
     print(
-        f"UNIQUE_SHORTLIST="
-        f"{len(selected_keys)}"
+        f"CANDIDATE_DOMAIN_PAIRS="
+        f"{len(pair_rows)}"
     )
     print(
-        f"PER_DOMAIN_TARGET="
-        f"{args.per_domain}"
+        f"RANKED_DOMAINS="
+        f"{len(required_domains)}"
     )
     print(
-        f"TRIAGE_JSON={args.output_json}"
+        f"TOP20_DOMAIN_SLOTS="
+        f"{len(shortlist_rows)}"
     )
     print(
-        f"SHORTLIST_CSV={args.output_csv}"
+        "TOP20_UNIQUE_CANDIDATES="
+        f"{shortlist_payload['unique_candidate_count']}"
+    )
+    print(
+        f"LINEAGE={lineage_path}"
     )
 
     return 0

@@ -1,0 +1,82 @@
+{
+  "artifact": "candidate_ranking_lineage",
+  "counts": {
+    "candidate_domain_pair_count": 1494,
+    "domain_count": 14,
+    "global_candidate_count": 1303,
+    "harvest_candidate_count": 1303,
+    "shortlist_domain_slot_count": 280,
+    "shortlist_unique_candidate_count": 251
+  },
+  "inputs": [
+    {
+      "bytes": 1286785,
+      "canonical_content_sha256": "396bc662ae191a13c4cc92537e0f945d638956d928c80549a66eaea5644d10ef",
+      "path": "analysis/prior_art/evidence/discovery/stage1_candidate_harvest.snapshot.json",
+      "role": "harvest_snapshot",
+      "sha256": "e59801798a6089d65204cb6bdf193fceb6856004e927efbd243655157b45b449"
+    },
+    {
+      "bytes": 4605,
+      "path": "analysis/prior_art/policy/stage1_candidate_ranking_policy.yaml",
+      "role": "ranking_policy",
+      "sha256": "aab3307abb9146c63ca6f1f90b224532b4d5bc0bb331dad1edf0a285490e864c"
+    },
+    {
+      "bytes": 3695,
+      "path": "analysis/prior_art/registry/search_query_registry.yaml",
+      "role": "query_registry",
+      "sha256": "8799ce10e06c58a914820bc8f9874b45246168dec06e6abb378f1e4acacaf6e2"
+    },
+    {
+      "bytes": 27611,
+      "path": "/home/vsam/truecolor/analysis/prior_art/rank_stage1_candidates.py",
+      "role": "ranking_implementation",
+      "sha256": "5717f5758a87ed0f7c2119429a9c2f1f2bef4fb37614bd385a7f0c86b44dcc70"
+    }
+  ],
+  "interpretation_limits": [
+    "rank_is_not_source_admission",
+    "rank_is_not_scientific_quality",
+    "rank_is_not_methodological_validity",
+    "rank_is_not_novelty",
+    "rank_is_not_ground_truth",
+    "citation_count_is_not_evidentiary_strength",
+    "metadata_type_is_not_primary_source_verification"
+  ],
+  "lineage_content_sha256": "9e6c73dd9f8746ff7c8ecb39b49d86761149f74d34898efdbf6ac1922ecdccf5",
+  "outputs": [
+    {
+      "bytes": 5259156,
+      "path": "analysis/prior_art/evidence/ranking/stage1_complete_domain_ranking.json",
+      "sha256": "c4315660bc812919fc46d21f311600f05b89c41492e45751dc0d7318ba2e4d66"
+    },
+    {
+      "bytes": 2843516,
+      "path": "analysis/prior_art/evidence/ranking/stage1_complete_domain_ranking.csv",
+      "sha256": "57d4d7511b577f3b3794994be960d74fba1d221174db398fba7bd2ab1d88bf3f"
+    },
+    {
+      "bytes": 1897955,
+      "path": "analysis/prior_art/evidence/ranking/stage1_complete_global_ranking.json",
+      "sha256": "14039a39535ed3adb7ab86e0e029fa80832af400171bcb5416654883e336583d"
+    },
+    {
+      "bytes": 930303,
+      "path": "analysis/prior_art/evidence/ranking/stage1_complete_global_ranking.csv",
+      "sha256": "77f3a3110856e31a1a3768b10cc958846eb1ad4f1a11b37905a9b85e4a8986f9"
+    },
+    {
+      "bytes": 1098682,
+      "path": "analysis/prior_art/evidence/ranking/stage1_top20_domain_review_view.json",
+      "sha256": "5c64b3e6ef69dd36533a13de7be7506b051cddd4dd1c973918185400a64a594b"
+    },
+    {
+      "bytes": 272694,
+      "path": "analysis/prior_art/evidence/ranking/stage1_top20_domain_review_view.csv",
+      "sha256": "46b9fdd189f2e8eb12445dd96aa4f00195e4fa3daed1da38660ec1dba8e5644a"
+    }
+  ],
+  "ranking_policy_version": "2.0.0",
+  "stage": 1
+}
