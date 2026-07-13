@@ -570,6 +570,69 @@ def crossref_lookup_doi(
     return normalized, evidence
 
 
+def europe_pmc_authors(
+    item: dict[str, Any],
+) -> list[str]:
+    authors = []
+
+    author_list = (
+        item.get("authorList", {})
+        .get("author", [])
+    )
+
+    for author in author_list:
+        first_name = str(
+            author.get("firstName")
+            or ""
+        ).strip()
+
+        last_name = str(
+            author.get("lastName")
+            or ""
+        ).strip()
+
+        structured_name = " ".join(
+            value
+            for value in [
+                first_name,
+                last_name,
+            ]
+            if value
+        )
+
+        if structured_name:
+            authors.append(
+                structured_name
+            )
+            continue
+
+        full_name = str(
+            author.get("fullName")
+            or ""
+        ).strip()
+
+        if full_name:
+            authors.append(
+                full_name
+            )
+
+    if authors:
+        return authors
+
+    author_string = str(
+        item.get(
+            "authorString",
+            "",
+        )
+    )
+
+    return [
+        value.strip()
+        for value in author_string.split(",")
+        if value.strip()
+    ]
+
+
 def europe_pmc_lookup_pmid(
     *,
     rank: int,
@@ -630,38 +693,9 @@ def europe_pmc_lookup_pmid(
 
     item = results[0]
 
-    authors = []
-
-    author_list = (
-        item.get("authorList", {})
-        .get("author", [])
+    authors = europe_pmc_authors(
+        item
     )
-
-    for author in author_list:
-        name = author.get(
-            "fullName"
-        )
-
-        if name:
-            authors.append(
-                str(name)
-            )
-
-    if not authors:
-        author_string = str(
-            item.get(
-                "authorString",
-                "",
-            )
-        )
-
-        authors = [
-            value.strip()
-            for value in author_string.split(
-                ","
-            )
-            if value.strip()
-        ]
 
     try:
         year = int(
@@ -816,6 +850,90 @@ def crossref_title_search(
         })
 
     return normalized, evidence
+
+
+def compare_authoritative_records(
+    left: dict[str, Any],
+    right: dict[str, Any],
+) -> dict[str, Any]:
+    left_doi = normalize_doi(
+        left.get("doi")
+    )
+
+    right_doi = normalize_doi(
+        right.get("doi")
+    )
+
+    doi_match = None
+
+    if left_doi and right_doi:
+        doi_match = left_doi == right_doi
+
+    left_pmid = left.get("pmid")
+    right_pmid = right.get("pmid")
+
+    pmid_match = None
+
+    if left_pmid and right_pmid:
+        pmid_match = (
+            str(left_pmid)
+            == str(right_pmid)
+        )
+
+    left_year = optional_year(
+        left.get("year")
+    )
+
+    right_year = optional_year(
+        right.get("year")
+    )
+
+    year_match = None
+
+    if (
+        left_year is not None
+        and right_year is not None
+    ):
+        year_match = (
+            left_year == right_year
+        )
+
+    left_authors = [
+        str(author)
+        for author in left.get(
+            "authors",
+            [],
+        )
+        if str(author).strip()
+    ]
+
+    right_authors = [
+        str(author)
+        for author in right.get(
+            "authors",
+            [],
+        )
+        if str(author).strip()
+    ]
+
+    authors_score = None
+
+    if left_authors and right_authors:
+        authors_score = author_overlap(
+            left_authors,
+            right_authors,
+        )
+
+    return {
+        "title_similarity": title_similarity(
+            left.get("title"),
+            right.get("title"),
+        ),
+        "doi_match": doi_match,
+        "pmid_match": pmid_match,
+        "year_match": year_match,
+        "author_overlap": authors_score,
+    }
 
 
 def compare_metadata(
@@ -1023,18 +1141,71 @@ def classify(
         canonical.get("title")
     )
 
+    correction_type_terms = {
+        "correction",
+        "erratum",
+        "corrigendum",
+        "retraction",
+    }
+
+    correction_title_prefixes = (
+        "correction to ",
+        "correction ",
+        "erratum to ",
+        "erratum ",
+        "corrigendum to ",
+        "corrigendum ",
+    )
+
+    update_relations = canonical.get(
+        "update_to",
+        [],
+    )
+
+    relation_metadata = canonical.get(
+        "relation",
+        {},
+    )
+
+    correction_by_type = (
+        publication_type
+        in correction_type_terms
+    )
+
+    correction_by_title = any(
+        title_text.startswith(prefix)
+        for prefix in correction_title_prefixes
+    )
+
+    correction_by_relation = bool(
+        update_relations
+        or (
+            isinstance(
+                relation_metadata,
+                dict,
+            )
+            and any(
+                key in relation_metadata
+                for key in [
+                    "is-correction-of",
+                    "is-erratum-of",
+                    "is-retraction-of",
+                ]
+            )
+        )
+    )
+
     if (
-        "correction" in publication_type
-        or "correction" in title_text
-        or "erratum" in publication_type
-        or "erratum" in title_text
+        correction_by_type
+        or correction_by_title
+        or correction_by_relation
     ):
         return (
             "CORRECTION_ONLY",
             (
-                "Resolved record is a correction "
-                "or erratum rather than the "
-                "underlying publication."
+                "Resolved metadata identifies an "
+                "actual correction, erratum, or "
+                "corrigendum record."
             ),
             "CORRECTION_OF",
         )
@@ -1146,6 +1317,10 @@ def resolve_record(
         str,
         dict[str, Any],
     ],
+    candidate_keys_by_title: dict[
+        str,
+        list[str],
+    ],
     policy: dict[str, Any],
     timeout: int,
     retry_delays: list[float],
@@ -1187,6 +1362,8 @@ def resolve_record(
     attempted = []
     evidence = []
     canonical = None
+    doi_metadata = None
+    pmid_metadata = None
     source_used = None
 
     if doi:
@@ -1197,7 +1374,7 @@ def resolve_record(
             "result": None,
         })
 
-        canonical, raw = (
+        doi_metadata, raw = (
             crossref_lookup_doi(
                 rank=rank,
                 doi=doi,
@@ -1210,18 +1387,19 @@ def resolve_record(
 
         attempted[-1]["result"] = (
             "RESOLVED"
-            if canonical
+            if doi_metadata
             else "NOT_RESOLVED"
         )
 
-        if canonical:
+        if doi_metadata:
+            canonical = doi_metadata
             source_used = (
                 "crossref_doi"
             )
 
         time.sleep(delay)
 
-    if canonical is None and pmid:
+    if pmid:
         attempted.append({
             "identifier_type": "pmid",
             "identifier_value": str(pmid),
@@ -1229,7 +1407,7 @@ def resolve_record(
             "result": None,
         })
 
-        canonical, raw = (
+        pmid_metadata, raw = (
             europe_pmc_lookup_pmid(
                 rank=rank,
                 pmid=str(pmid),
@@ -1242,11 +1420,15 @@ def resolve_record(
 
         attempted[-1]["result"] = (
             "RESOLVED"
-            if canonical
+            if pmid_metadata
             else "NOT_RESOLVED"
         )
 
-        if canonical:
+        if (
+            canonical is None
+            and pmid_metadata
+        ):
+            canonical = pmid_metadata
             source_used = (
                 "europe_pmc_pmid"
             )
@@ -1310,6 +1492,20 @@ def resolve_record(
         canonical or {},
     )
 
+    authoritative_agreement = None
+
+    if doi_metadata and pmid_metadata:
+        authoritative_agreement = (
+            compare_authoritative_records(
+                doi_metadata,
+                pmid_metadata,
+            )
+        )
+
+        comparison[
+            "authoritative_source_agreement"
+        ] = authoritative_agreement
+
     state, reason, relationship = classify(
         record=record,
         canonical=canonical,
@@ -1318,6 +1514,60 @@ def resolve_record(
     )
 
     conflicts = []
+
+    if authoritative_agreement is not None:
+        authoritative_conflict = (
+            authoritative_agreement.get(
+                "doi_match"
+            ) is False
+            or authoritative_agreement.get(
+                "pmid_match"
+            ) is False
+            or authoritative_agreement.get(
+                "year_match"
+            ) is False
+            or authoritative_agreement[
+                "title_similarity"
+            ] < float(
+                policy["thresholds"][
+                    "normalized_title_conflict_below"
+                ]
+            )
+            or (
+                authoritative_agreement.get(
+                    "author_overlap"
+                ) is not None
+                and authoritative_agreement[
+                    "author_overlap"
+                ] < float(
+                    policy["thresholds"][
+                        "author_token_overlap"
+                    ]
+                )
+            )
+        )
+
+        if authoritative_conflict:
+            state = "CONFLICT"
+            relationship = "UNRESOLVED"
+            reason = (
+                "DOI and PMID authoritative "
+                "records disagree on publication "
+                "identity."
+            )
+
+            conflicts.append({
+                "field": (
+                    "authoritative_source_agreement"
+                ),
+                "crossref_doi": doi_metadata,
+                "europe_pmc_pmid": (
+                    pmid_metadata
+                ),
+                "comparison": (
+                    authoritative_agreement
+                ),
+            })
 
     if comparison.get(
         "doi_match"
@@ -1404,6 +1654,17 @@ def resolve_record(
             ],
         })
 
+    duplicate_title_keys = [
+        key
+        for key in candidate_keys_by_title.get(
+            normalize_text(
+                harvested.get("title")
+            ),
+            [],
+        )
+        if key != candidate_key
+    ]
+
     return {
         "candidate_key": record[
             "candidate_key"
@@ -1423,7 +1684,9 @@ def resolve_record(
         "version_relationship": (
             relationship
         ),
-        "related_candidate_keys": [],
+        "related_candidate_keys": (
+            sorted(duplicate_title_keys)
+        ),
         "conflicts": conflicts,
     }
 
@@ -1543,6 +1806,26 @@ def main() -> int:
         for row in global_ranking["rows"]
     }
 
+    candidate_keys_by_title: dict[
+        str,
+        list[str],
+    ] = {}
+
+    for row in global_ranking["rows"]:
+        normalized_title = normalize_text(
+            row.get("title")
+        )
+
+        if not normalized_title:
+            continue
+
+        candidate_keys_by_title.setdefault(
+            normalized_title,
+            [],
+        ).append(
+            row["canonical_key"]
+        )
+
     if len(harvested_by_key) != 1303:
         raise ValueError(
             "GLOBAL_RANKING_CANDIDATE_COUNT_"
@@ -1623,6 +1906,9 @@ def main() -> int:
                 path=source_path,
                 harvested_by_key=(
                     harvested_by_key
+                ),
+                candidate_keys_by_title=(
+                    candidate_keys_by_title
                 ),
                 policy=policy,
                 timeout=args.timeout,
