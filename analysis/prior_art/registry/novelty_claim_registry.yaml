@@ -1,0 +1,90 @@
+registry_version: 1.0.0
+claims:
+- claim_id: TC-NOV-001
+  name: four_mechanism_fractional_attribution
+  proposed_claim: Observed skin-imaging information loss can be quantitatively partitioned into measurement
+    noise, spectral projection, biological collinearity and model mismatch using one integrated adjudication
+    framework.
+  claim_type: estimand_and_method
+  canonical_stages:
+  - 15
+  - 16
+  - 25
+  - 27
+  kill_condition: A prior source already defines and empirically validates the same four-part fractional
+    attribution under materially equivalent estimands.
+  status: UNADJUDICATED
+- claim_id: TC-NOV-002
+  name: real_spectra_camera_observability
+  proposed_claim: Empirical human skin reflectance spectra can be projected through camera-illuminant
+    operators to quantify observable, weakly observable and metameric biological variation.
+  claim_type: method_and_validation
+  canonical_stages:
+  - 11
+  - 12
+  - 15
+  - 17
+  kill_condition: Prior work performs materially equivalent real-skin-spectrum camera-operator observability
+    and metamer enumeration.
+  status: UNADJUDICATED
+- claim_id: TC-NOV-003
+  name: capture_control_boundary
+  proposed_claim: A measurable boundary can be estimated between variation recoverable through capture
+    control and variation that remains unrecoverable because of observation-operator information loss.
+  claim_type: estimand_and_experimental_design
+  canonical_stages:
+  - 12
+  - 17
+  - 19
+  - 20
+  - 25
+  kill_condition: Prior work estimates the same recoverable-versus-unrecoverable boundary across calibrated
+    spectra and uncontrolled images.
+  status: UNADJUDICATED
+- claim_id: TC-NOV-004
+  name: physics_contrast_data_quality_decomposition
+  proposed_claim: Clinical performance disparities can be decomposed into measurement-physics, visible-contrast
+    and dataset-quality components under patient-disjoint external validation.
+  claim_type: estimand_and_clinical_validation
+  canonical_stages:
+  - 21
+  - 22
+  - 23
+  - 25
+  - 27
+  kill_condition: Prior work performs the same three-component quantitative decomposition with external
+    pathology-confirmed validation.
+  status: UNADJUDICATED
+- claim_id: TC-NOV-005
+  name: conditioned_skin_spectral_representation
+  proposed_claim: Skin spectral structure should be estimated conditionally on body site and subject identity
+    rather than represented by a single global skin-tone scalar.
+  claim_type: measurement_and_representation
+  canonical_stages:
+  - 5
+  - 7
+  - 8
+  - 9
+  - 10
+  kill_condition: Prior work already establishes the same subject-balanced, body-site-conditioned representation
+    and its downstream measurement consequences.
+  status: UNADJUDICATED
+- claim_id: TC-NOV-006
+  name: cross_domain_evidence_chain
+  proposed_claim: A governed evidence chain can connect calibrated spectral metrology, camera projection,
+    repeated capture, heterogeneous clinical images and pathology-confirmed external validation without
+    treating those assets as interchangeable ground truth.
+  claim_type: validation_architecture
+  canonical_stages:
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 27
+  kill_condition: Prior work implements a materially equivalent governed cross-domain evidence chain with
+    explicit asset-role limits.
+  status: UNADJUDICATED

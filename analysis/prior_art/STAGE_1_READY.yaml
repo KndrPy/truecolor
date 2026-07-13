@@ -1,0 +1,9 @@
+stage: 1
+name: prior_art_extraction_and_novelty_boundary
+state: OPEN
+stage0_closure_commit: c72d9dc0583be782d35078d14f64601cd26917fc
+protocol_ready: true
+corpus_complete: false
+overlap_adjudication_complete: false
+closure_ready: false
+required_next_action: validate_stage1_protocol_and_populate_source_corpus

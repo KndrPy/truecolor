@@ -1,0 +1,78 @@
+stage: 1
+name: prior_art_extraction_and_novelty_boundary
+protocol_version: 1.0.0
+state: OPEN
+entry_dependency:
+  stage: 0
+  closure_commit: c72d9dc0583be782d35078d14f64601cd26917fc
+  required_state: CLOSED
+objective: Determine whether each proposed TrueColor contribution is already disclosed, substantially
+  overlapping, incrementally different, genuinely novel, or not yet adjudicable.
+unit_of_evidence: individual_source_claim_pair
+source_priority:
+- peer_reviewed_primary_research
+- standards_and_official_technical_documents
+- peer_reviewed_systematic_review
+- dataset_primary_publication
+- conference_primary_publication
+- preprint_primary_research
+- patent
+- secondary_summary
+required_search_domains:
+- skin_tissue_optical_forward_models
+- skin_reflectance_inverse_models
+- melanin_hemoglobin_and_scattering_identifiability
+- spectral_reflectance_geometry_and_dimension
+- camera_spectral_sensitivity_and_observation_operators
+- camera_metamerism_and_spectral_reconstruction
+- multispectral_band_selection_and_measurement_design
+- fisher_information_and_cramer_rao_skin_imaging
+- skin_colorimetry_ita_and_color_measurement
+- capture_variability_white_balance_and_illumination
+- dermatology_ai_fairness_and_skin_tone
+- dermatology_dataset_duplicates_labels_and_quality
+- clinical_external_validation_and_domain_shift
+- physics_informed_clinical_image_analysis
+search_date_policy:
+  start_year: 1900
+  end_year: 2026
+  last_search_date_required: true
+  forward_citation_search_required: true
+  backward_reference_search_required: true
+  current_preprints_required: true
+inclusion_criteria:
+- source addresses at least one registered TrueColor claim
+- method or result is described with enough detail for overlap adjudication
+- source identity and publication status can be verified
+- primary sources are preferred over summaries
+exclusion_criteria:
+- source has no material relationship to a registered claim
+- source cannot be uniquely identified
+- source is purely promotional without technical disclosure
+- source duplicates another version without additional content
+adjudication_states:
+- NO_MATERIAL_OVERLAP
+- BACKGROUND_ONLY
+- COMPONENT_OVERLAP
+- SUBSTANTIAL_OVERLAP
+- ANTICIPATED_BY_PRIOR_ART
+- POTENTIALLY_NOVEL_COMBINATION
+- POTENTIALLY_NOVEL_ESTIMAND
+- POTENTIALLY_NOVEL_VALIDATION
+- UNRESOLVED
+terminal_stage_states:
+- CLOSED
+- CLOSED_WITH_SCOPE_RESTRICTION
+- FALSIFIED
+- NOT_TESTABLE_WITH_CURRENT_ASSETS
+closure_requirements:
+- all_registered_claims_searched
+- all_search_domains_executed
+- source_identity_deduplicated
+- primary_sources_extracted
+- claim_source_overlap_matrix_complete
+- strongest_competing_prior_art_identified
+- novelty_kill_conditions_adjudicated
+- independent_second_pass_completed
+- search_dates_recorded
+- artifacts_hashed

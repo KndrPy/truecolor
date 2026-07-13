@@ -1,0 +1,99 @@
+{
+  "$id": "https://truecolor.local/schemas/prior-art-source.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "authors": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "claims_addressed": {
+      "type": "array"
+    },
+    "datasets": {
+      "type": "array"
+    },
+    "domains": {
+      "minItems": 1,
+      "type": "array"
+    },
+    "estimands": {
+      "type": "array"
+    },
+    "extraction_status": {
+      "enum": [
+        "IDENTIFIED",
+        "SCREENED",
+        "EXTRACTED",
+        "SECOND_PASS_VALIDATED",
+        "EXCLUDED"
+      ]
+    },
+    "identifier": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array"
+    },
+    "methods": {
+      "type": "array"
+    },
+    "primary_source": {
+      "type": "boolean"
+    },
+    "publication_status": {
+      "type": "string"
+    },
+    "retrieved_date": {
+      "format": "date",
+      "type": "string"
+    },
+    "source_id": {
+      "pattern": "^PA-[0-9]{4}$",
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "technical_summary": {
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "year": {
+      "maximum": 2026,
+      "minimum": 1900,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "source_id",
+    "title",
+    "authors",
+    "year",
+    "source_type",
+    "publication_status",
+    "identifier",
+    "url",
+    "retrieved_date",
+    "primary_source",
+    "domains",
+    "claims_addressed",
+    "technical_summary",
+    "methods",
+    "datasets",
+    "estimands",
+    "limitations",
+    "extraction_status"
+  ],
+  "title": "TrueColor Prior-Art Source",
+  "type": "object"
+}

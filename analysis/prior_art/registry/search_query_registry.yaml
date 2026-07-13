@@ -1,0 +1,86 @@
+registry_version: 1.0.0
+query_families:
+- query_id: QF-001
+  domain: skin_tissue_optical_forward_models
+  queries:
+  - skin diffuse reflectance forward model melanin hemoglobin scattering
+  - multilayer skin optical model spectral reflectance
+  - Monte Carlo skin tissue optical forward model reflectance
+- query_id: QF-002
+  domain: skin_reflectance_inverse_models
+  queries:
+  - inverse model skin reflectance chromophore concentration
+  - skin spectral reflectance inverse problem melanin hemoglobin
+  - inverse rendering human skin spectral reflectance
+- query_id: QF-003
+  domain: melanin_hemoglobin_and_scattering_identifiability
+  queries:
+  - melanin hemoglobin scattering identifiability skin spectroscopy
+  - skin chromophore parameter identifiability diffuse reflectance
+  - collinearity melanin hemoglobin optical parameter estimation
+- query_id: QF-004
+  domain: spectral_reflectance_geometry_and_dimension
+  queries:
+  - human skin reflectance spectra principal component analysis
+  - intrinsic dimension human skin spectral reflectance
+  - body site conditioned skin reflectance spectrum dimension
+- query_id: QF-005
+  domain: camera_spectral_sensitivity_and_observation_operators
+  queries:
+  - camera spectral sensitivity human skin reflectance operator
+  - camera illuminant spectral observation model skin
+  - RGB camera response human skin reflectance spectra
+- query_id: QF-006
+  domain: camera_metamerism_and_spectral_reconstruction
+  queries:
+  - human skin camera metamerism spectral reconstruction RGB
+  - skin reflectance spectrum recovery from camera RGB
+  - metameric skin spectra camera spectral sensitivity
+- query_id: QF-007
+  domain: multispectral_band_selection_and_measurement_design
+  queries:
+  - optimal wavelength selection skin reflectance spectroscopy
+  - multispectral band selection melanin hemoglobin skin
+  - measurement design skin chromophore spectral imaging
+- query_id: QF-008
+  domain: fisher_information_and_cramer_rao_skin_imaging
+  queries:
+  - Fisher information skin spectroscopy melanin hemoglobin
+  - Cramer Rao bound skin optical parameter estimation
+  - information theoretic limits skin spectral imaging
+- query_id: QF-009
+  domain: skin_colorimetry_ita_and_color_measurement
+  queries:
+  - individual typology angle validity skin color measurement
+  - colorimeter spectrophotometer skin tone agreement
+  - skin color measurement body site variability ITA
+- query_id: QF-010
+  domain: capture_variability_white_balance_and_illumination
+  queries:
+  - dermatology image illumination white balance variability
+  - skin image color constancy camera lighting domain shift
+  - skin photography capture variability exposure white balance
+- query_id: QF-011
+  domain: dermatology_ai_fairness_and_skin_tone
+  queries:
+  - dermatology artificial intelligence skin tone performance disparity
+  - skin disease classification fairness skin tone
+  - dermatology AI subgroup performance Fitzpatrick skin type
+- query_id: QF-012
+  domain: dermatology_dataset_duplicates_labels_and_quality
+  queries:
+  - dermatology dataset duplicate images label quality
+  - Fitzpatrick17k duplicate label audit
+  - dermatology image dataset annotation noise deduplication
+- query_id: QF-013
+  domain: clinical_external_validation_and_domain_shift
+  queries:
+  - dermatology AI pathology confirmed external validation
+  - clinical dermatology image domain shift external cohort
+  - patient disjoint dermatology model validation
+- query_id: QF-014
+  domain: physics_informed_clinical_image_analysis
+  queries:
+  - physics informed dermatology image analysis
+  - skin optical physics clinical image classification
+  - measurement physics lesion contrast dermatology AI

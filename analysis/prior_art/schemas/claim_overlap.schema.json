@@ -1,0 +1,57 @@
+{
+  "$id": "https://truecolor.local/schemas/claim-overlap.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "adjudicator": {
+      "type": "string"
+    },
+    "claim_id": {
+      "pattern": "^TC-NOV-[0-9]{3}$",
+      "type": "string"
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "non_overlapping_elements": {
+      "type": "array"
+    },
+    "overlap_state": {
+      "enum": [
+        "NO_MATERIAL_OVERLAP",
+        "BACKGROUND_ONLY",
+        "COMPONENT_OVERLAP",
+        "SUBSTANTIAL_OVERLAP",
+        "ANTICIPATED_BY_PRIOR_ART",
+        "POTENTIALLY_NOVEL_COMBINATION",
+        "POTENTIALLY_NOVEL_ESTIMAND",
+        "POTENTIALLY_NOVEL_VALIDATION",
+        "UNRESOLVED"
+      ]
+    },
+    "overlapping_elements": {
+      "type": "array"
+    },
+    "source_id": {
+      "pattern": "^PA-[0-9]{4}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "claim_id",
+    "source_id",
+    "overlap_state",
+    "overlapping_elements",
+    "non_overlapping_elements",
+    "evidence",
+    "confidence",
+    "adjudicator"
+  ],
+  "title": "TrueColor Claim-to-Prior-Art Overlap",
+  "type": "object"
+}
