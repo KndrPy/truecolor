@@ -1,0 +1,2 @@
+rows,base_r2,full_r2,partial_r2_a_star,a_star_coefficient,covariates
+15256,0.5483559571084645,0.5636998334829336,0.033973383721024764,-1.2445303229807045,instrument;body_site;origin;specular

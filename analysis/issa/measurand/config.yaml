@@ -1,0 +1,96 @@
+expected:
+  canonical_rows: 15256
+  subject_ids: 2107
+columns:
+  subject:
+  - subject_key
+  - subject_id
+  - subject
+  - participant_id
+  - sample_id
+  - id
+  origin:
+  - origin
+  - origin_code
+  - cohort
+  - source
+  - study
+  instrument:
+  - instrument_code
+  - instrument
+  - device
+  - spectrophotometer
+  - spectrometer
+  body_site:
+  - body_location_code
+  - body_location
+  - body_site
+  - location
+  - site
+  specular:
+  - spin_spex_code
+  - spin
+  - sci_sce
+  - specular
+  - geometry
+  - measurement_mode
+  exposure:
+  - sun_exposure
+  - exposure_status
+  - protected_exposed
+  - constitutive_facultative
+  - exposure
+  L:
+  - l_star
+  - l*
+  - lab_l
+  - cie_l
+  - l
+  a:
+  - a_star
+  - a*
+  - lab_a
+  - cie_a
+  - a
+  b:
+  - b_star
+  - b*
+  - lab_b
+  - cie_b
+  - b
+  ita:
+  - ita
+  - individual_typology_angle
+  - typology_angle
+ita:
+  b_near_zero: 0.5
+  b_instability: 1.0
+  delta_L: 0.1
+  delta_b: 0.1
+statistics:
+  minimum_group_n: 20
+  site_material_degrees: 5.0
+  specular_material_degrees: 3.0
+  erythema_partial_r2_material: 0.05
+pairing:
+  protected:
+  - protected
+  - unexposed
+  - inner
+  - constitutive
+  exposed:
+  - exposed
+  - outer
+  - sun
+  - facultative
+  sci:
+  - sci
+  - included
+  - specular included
+  sce:
+  - sce
+  - excluded
+  - specular excluded
+closure:
+  require_protected_pairs: false
+  require_sci_sce_pairs: false
