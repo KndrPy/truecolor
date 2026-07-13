@@ -1,6 +1,8 @@
 candidate_key: doi:10.1111/exd.70287
 global_rank: 837
 harvested_title: Toward Objective Wound Edge Classification in Clinical Practice.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/exd.70287

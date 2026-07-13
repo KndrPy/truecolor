@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/diagnostics16030440
 global_rank: 897
 harvested_title: Transformer-Based Foundation Learning for Robust and Data-Efficient Skin Disease Imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics16030440

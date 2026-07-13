@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.29.9.093504
 global_rank: 307
 harvested_title: 'Hyperspectral imaging of 4T1 mammary carcinomas grown in dorsal skinfold window chambers:
   spectral renormalization and fluorescence modeling.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.29.9.093504

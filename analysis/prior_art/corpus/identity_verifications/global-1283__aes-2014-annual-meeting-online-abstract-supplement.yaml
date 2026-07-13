@@ -1,6 +1,10 @@
 candidate_key: title:aes 2014 annual meeting - online abstract supplement|year:2015
 global_rank: 1283
 harvested_title: AES 2014 Annual Meeting - Online Abstract Supplement
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

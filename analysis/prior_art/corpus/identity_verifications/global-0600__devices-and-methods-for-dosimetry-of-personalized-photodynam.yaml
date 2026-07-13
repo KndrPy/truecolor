@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/cancers16132484
 global_rank: 600
 harvested_title: 'Devices and Methods for Dosimetry of Personalized Photodynamic Therapy of Tumors: A
   Review on Recent Trends.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/cancers16132484

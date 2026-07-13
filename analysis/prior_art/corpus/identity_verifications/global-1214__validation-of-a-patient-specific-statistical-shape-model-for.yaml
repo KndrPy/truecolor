@@ -2,6 +2,8 @@ candidate_key: doi:10.1302/3114-220966
 global_rank: 1214
 harvested_title: Validation of a Patient Specific Statistical Shape Model for Predicting Pre-Morbid Glenoid
   Morphology
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1302/3114-220966

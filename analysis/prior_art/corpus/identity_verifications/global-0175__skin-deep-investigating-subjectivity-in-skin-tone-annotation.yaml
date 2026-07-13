@@ -2,6 +2,7 @@ candidate_key: doi:10.1145/3593013.3594114
 global_rank: 175
 harvested_title: 'Skin Deep: Investigating Subjectivity in Skin Tone Annotations for Computer Vision Benchmark
   Datasets'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1145/3593013.3594114

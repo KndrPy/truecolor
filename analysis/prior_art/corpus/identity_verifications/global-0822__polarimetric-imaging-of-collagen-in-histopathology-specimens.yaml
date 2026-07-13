@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-37711-8
 global_rank: 822
 harvested_title: 'Polarimetric imaging of collagen in histopathology specimens: an investigation of congo
   red and picrosirius red-stained placenta and skin.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-37711-8

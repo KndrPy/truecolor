@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.xjidi.2026.100463
 global_rank: 808
 harvested_title: 'ChatGPT, Gemini, and Claude in clinical and dermoscopic image analysis of basal cell
   carcinoma and its common mimickers: A comparative performance analysis.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.xjidi.2026.100463

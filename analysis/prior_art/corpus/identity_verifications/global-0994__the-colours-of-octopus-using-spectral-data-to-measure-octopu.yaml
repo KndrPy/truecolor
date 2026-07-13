@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/vision6040059
 global_rank: 994
 harvested_title: 'The Colours of Octopus: Using Spectral Data to Measure Octopus Camouflage.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/vision6040059

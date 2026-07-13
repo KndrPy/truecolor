@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/foods14234061
 global_rank: 321
 harvested_title: 'Preharvest Application of Oxalic Acid to ''Calabacita'' Fresh Figs: Effects on Physicochemical
   and Antioxidant Profile During Cold Storage.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/foods14234061

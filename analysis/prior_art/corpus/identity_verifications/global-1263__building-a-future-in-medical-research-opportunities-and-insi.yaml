@@ -1,6 +1,10 @@
 candidate_key: 'title:building a future in medical research: opportunities and insights|year:2026'
 global_rank: 1263
 harvested_title: 'Building a Future in Medical Research: Opportunities and Insights'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

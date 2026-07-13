@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.nph.11.1.010701
 global_rank: 721
 harvested_title: 'Machines, mathematics, and modules: the potential to provide real-time metrics for pain
   under anesthesia.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.nph.11.1.010701

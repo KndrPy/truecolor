@@ -2,6 +2,8 @@ candidate_key: doi:10.7759/cureus.94930
 global_rank: 393
 harvested_title: 'Diagnostic Disparities in Erythema Visibility: A Call to Redefine Inflammatory Assessment
   in Diverse Skin Tones.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.94930

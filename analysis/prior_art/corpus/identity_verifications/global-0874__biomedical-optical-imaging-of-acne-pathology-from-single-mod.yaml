@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmed.2026.1710354
 global_rank: 874
 harvested_title: 'Biomedical optical imaging of acne pathology: from single-modality methods to multimodal
   integration.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2026.1710354

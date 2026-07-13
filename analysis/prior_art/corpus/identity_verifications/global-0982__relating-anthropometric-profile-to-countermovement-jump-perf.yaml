@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/sports13070236
 global_rank: 982
 harvested_title: 'Relating Anthropometric Profile to Countermovement Jump Performance and External Match
   Load in Mexican National Team Soccer Players: An Exploratory Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/sports13070236

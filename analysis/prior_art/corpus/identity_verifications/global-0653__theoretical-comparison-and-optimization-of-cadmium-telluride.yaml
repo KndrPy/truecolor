@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jmi.10.s2.s22406
 global_rank: 653
 harvested_title: Theoretical comparison and optimization of cadmium telluride and gallium arsenide photon-counting
   detectors for contrast-enhanced spectral mammography.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jmi.10.s2.s22406

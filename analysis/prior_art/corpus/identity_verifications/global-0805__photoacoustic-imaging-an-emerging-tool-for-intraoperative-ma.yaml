@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.pacs.2025.100788
 global_rank: 805
 harvested_title: 'Photoacoustic imaging: An emerging tool for intraoperative margin assessment in breast-conserving
   surgery.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.pacs.2025.100788

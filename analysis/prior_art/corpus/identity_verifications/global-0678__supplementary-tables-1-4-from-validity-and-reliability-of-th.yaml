@@ -2,6 +2,8 @@ candidate_key: doi:10.1158/1055-9965.22435282
 global_rank: 678
 harvested_title: Supplementary Tables 1-4 from Validity and Reliability of the Munsell Soil Color Charts
   for Assessing Human Skin Color
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1158/1055-9965.22435282

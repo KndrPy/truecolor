@@ -2,6 +2,7 @@ candidate_key: doi:10.1016/j.media.2026.104014
 global_rank: 1065
 harvested_title: 'PHIVE: A physics-informed variational encoder enables rapid spectral fitting of brain
   metabolite mapping at 7T'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.media.2026.104014

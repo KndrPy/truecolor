@@ -3,6 +3,8 @@ global_rank: 977
 harvested_title: 'New Insights into the Synergistic Bioactivities of &lt;i&gt;Zingiber officinale&lt;/i&gt;
   (Rosc.) and &lt;i&gt;Humulus lupulus&lt;/i&gt; (L.) Essential Oils: Targeting Tyrosinase Inhibition
   and Antioxidant Mechanisms.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/molecules30153294

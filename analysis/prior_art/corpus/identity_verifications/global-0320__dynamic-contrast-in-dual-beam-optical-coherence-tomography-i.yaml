@@ -1,6 +1,8 @@
 candidate_key: doi:10.1364/boe.570414
 global_rank: 320
 harvested_title: Dynamic contrast in dual-beam optical coherence tomography imaging of human skin.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.570414

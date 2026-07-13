@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/medicina61122186
 global_rank: 390
 harvested_title: 'Equity and Generalizability of Artificial Intelligence for Skin-Lesion Diagnosis Using
   Clinical, Dermoscopic, and Smartphone Images: A Systematic Review and Meta-Analysis.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/medicina61122186

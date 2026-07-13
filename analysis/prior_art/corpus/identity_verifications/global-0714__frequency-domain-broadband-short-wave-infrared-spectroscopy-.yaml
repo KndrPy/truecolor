@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.30.4.045001
 global_rank: 714
 harvested_title: "Frequency domain broadband short-wave infrared spectroscopy for measurement of tissue\
   \ optical properties from 685 to 1300\_nm."
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.30.4.045001

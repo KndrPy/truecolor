@@ -108,6 +108,41 @@ def main() -> int:
 
         path = args.output_dir / filename
 
+        harvested_title = str(
+            row.get("title") or ""
+        )
+
+        harvest_metadata_issues = []
+
+        if not harvested_title.strip():
+            harvest_metadata_issues.append(
+                "MISSING_HARVESTED_TITLE"
+            )
+
+        if not row.get("authors"):
+            harvest_metadata_issues.append(
+                "MISSING_HARVESTED_AUTHORS"
+            )
+
+        if row.get("year") is None:
+            harvest_metadata_issues.append(
+                "MISSING_HARVESTED_YEAR"
+            )
+
+        if not row.get("venue"):
+            harvest_metadata_issues.append(
+                "MISSING_HARVESTED_VENUE"
+            )
+
+        if not any([
+            row.get("doi"),
+            row.get("pmid"),
+            row.get("arxiv"),
+        ]):
+            harvest_metadata_issues.append(
+                "MISSING_CANONICAL_IDENTIFIER"
+            )
+
         record = {
             "candidate_key": row[
                 "canonical_key"
@@ -115,9 +150,10 @@ def main() -> int:
             "global_rank": row[
                 "global_rank"
             ],
-            "harvested_title": row[
-                "title"
-            ],
+            "harvested_title": harvested_title,
+            "harvest_metadata_issues": (
+                harvest_metadata_issues
+            ),
             "verification_state": (
                 "UNVERIFIED"
             ),

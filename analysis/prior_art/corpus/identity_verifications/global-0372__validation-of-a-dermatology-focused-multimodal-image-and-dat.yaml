@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/medicina62040715
 global_rank: 372
 harvested_title: Validation of a Dermatology-Focused Multimodal Image-and-Data Assistant in Diagnosis
   and Management of Common Dermatologic Conditions.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/medicina62040715

@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.jaad.2018.05.058
 global_rank: 1003
 harvested_title: "An \u03B1\u03BD\u03B23 integrin\u2013linked \u201Cstromal response\u201D expression\
   \ signature to identify high-risk melanoma: Report on a 330-patient multicenter validation cohort"
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.jaad.2018.05.058

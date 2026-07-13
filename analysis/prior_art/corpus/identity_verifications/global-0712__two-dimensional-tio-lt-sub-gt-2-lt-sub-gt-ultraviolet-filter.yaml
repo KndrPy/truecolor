@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/s40820-025-01805-1
 global_rank: 712
 harvested_title: Two-Dimensional TiO&lt;sub&gt;2&lt;/sub&gt; Ultraviolet Filters for Sunscreens.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s40820-025-01805-1

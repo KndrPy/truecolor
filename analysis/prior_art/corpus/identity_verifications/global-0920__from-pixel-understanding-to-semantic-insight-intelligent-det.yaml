@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s26103075
 global_rank: 920
 harvested_title: 'From Pixel Understanding to Semantic Insight: Intelligent Detection in Sensor-Driven
   Perception Systems.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26103075

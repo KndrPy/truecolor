@@ -3,6 +3,10 @@ candidate_key: 'title:abstracts from the 57th european society of human genetics
 global_rank: 1272
 harvested_title: 'Abstracts from the 57th European Society of Human Genetics (ESHG) Conference: Hybrid
   Posters'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

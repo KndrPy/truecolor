@@ -1,6 +1,11 @@
 candidate_key: title:isev2020 abstract book|year:unknown
 global_rank: 1289
 harvested_title: ISEV2020 Abstract Book
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

@@ -2,6 +2,7 @@ candidate_key: doi:10.3390/bioengineering13050506
 global_rank: 369
 harvested_title: 'XAI-MedNet: A Next-Generation Explainable AI Framework for Contrast-Enhanced Skin Lesion
   Classification via Entropy-Controlled Optimization'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/bioengineering13050506

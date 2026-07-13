@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/s13555-026-01805-y
 global_rank: 801
 harvested_title: 'Biological Photoprotection: A Review of its Mechanisms, Evidence, and Clinical Implications.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s13555-026-01805-y

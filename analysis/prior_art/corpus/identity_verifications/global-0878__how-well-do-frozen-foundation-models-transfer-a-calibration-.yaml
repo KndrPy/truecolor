@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmed.2026.1815982
 global_rank: 878
 harvested_title: How well do frozen foundation models transfer? A calibration-focused benchmark for diabetic
   retinopathy grading.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2026.1815982

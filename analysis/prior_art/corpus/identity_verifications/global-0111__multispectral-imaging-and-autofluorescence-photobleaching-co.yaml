@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmed.2026.1763105
 global_rank: 111
 harvested_title: Multispectral imaging and autofluorescence photobleaching combined in a multi-head neural
   network for skin cancer classification.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2026.1763105

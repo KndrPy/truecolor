@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s44303-026-00161-y
 global_rank: 770
 harvested_title: Multi-contrast laser endoscopy for in vivo gastrointestinal imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s44303-026-00161-y

@@ -1,6 +1,9 @@
 candidate_key: doi:10.1007/springerreference_13101
 global_rank: 1255
 harvested_title: duplicate
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/springerreference_13101

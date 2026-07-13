@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/bioengineering12070714
 global_rank: 636
 harvested_title: Novel Snapshot-Based Hyperspectral Conversion for Dermatological Lesion Detection via
   YOLO Object Detection Models.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/bioengineering12070714

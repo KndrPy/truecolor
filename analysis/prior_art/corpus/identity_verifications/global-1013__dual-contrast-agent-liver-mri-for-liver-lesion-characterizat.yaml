@@ -1,6 +1,8 @@
 candidate_key: doi:10.1148/rg.250113.q2
 global_rank: 1013
 harvested_title: "Dual\u2013Contrast Agent Liver MRI for Liver Lesion Characterization"
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1148/rg.250113.q2

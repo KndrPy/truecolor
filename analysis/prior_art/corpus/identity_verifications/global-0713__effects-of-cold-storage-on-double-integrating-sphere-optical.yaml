@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.30.1.015001
 global_rank: 713
 harvested_title: "Effects of cold storage on double integrating sphere optical property measurements of\
   \ porcine dermis and subcutaneous fat from 400 to 1100\_nm."
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.30.1.015001

@@ -2,6 +2,9 @@ candidate_key: doi:10.33915/etd.3700
 global_rank: 235
 harvested_title: Automated Cleaning of Identity Label Noise in A Large-scale Face Dataset Using A Face
   Image Quality Control
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.33915/etd.3700

@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s13346-025-01817-9
 global_rank: 934
 harvested_title: Micropore visualization and lifetime following microneedle application to skin of differing
   pigments.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s13346-025-01817-9

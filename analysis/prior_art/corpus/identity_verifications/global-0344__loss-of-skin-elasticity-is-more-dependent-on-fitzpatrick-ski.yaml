@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/j.jaad.2015.02.110
 global_rank: 344
 harvested_title: Loss of skin elasticity is more dependent on Fitzpatrick skin type than chronologic age
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.jaad.2015.02.110

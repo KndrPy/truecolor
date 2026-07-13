@@ -1,6 +1,9 @@
 candidate_key: doi:10.70675/8db7495fzd904z470czb807zc72f316756d1
 global_rank: 1217
 harvested_title: Exploring domain-informed and physics-guided learning in image-to-image translation
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.70675/8db7495fzd904z470czb807zc72f316756d1

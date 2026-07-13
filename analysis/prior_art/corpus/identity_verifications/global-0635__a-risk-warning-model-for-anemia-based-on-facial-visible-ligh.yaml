@@ -2,6 +2,8 @@ candidate_key: doi:10.2196/64204
 global_rank: 635
 harvested_title: 'A Risk Warning Model for Anemia Based on Facial Visible Light Reflectance Spectroscopy:
   Cross-Sectional Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2196/64204

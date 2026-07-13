@@ -1,6 +1,8 @@
 candidate_key: doi:10.25039/cie.ds.mjdd2enu
 global_rank: 1057
 harvested_title: Relative spectral power distributions of CIE illuminant C
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.25039/cie.ds.mjdd2enu

@@ -2,6 +2,7 @@ candidate_key: doi:10.1016/j.media.2021.102066
 global_rank: 585
 harvested_title: Personalising left-ventricular biophysical models of the heart using parametric physics-informed
   neural networks
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.media.2021.102066

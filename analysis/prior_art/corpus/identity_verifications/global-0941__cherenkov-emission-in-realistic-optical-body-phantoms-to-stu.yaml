@@ -2,6 +2,8 @@ candidate_key: doi:10.1088/1361-6560/ae237d
 global_rank: 941
 harvested_title: Cherenkov emission in realistic optical body phantoms to study effects of skin tone on
   imaging delivery technique.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1088/1361-6560/ae237d

@@ -2,6 +2,8 @@ candidate_key: doi:10.64898/2026.01.25.26344809
 global_rank: 664
 harvested_title: 'Foundation Model Robustness to Technical Acquisition Parameters in Chest X-Ray AI: A
   Multi-Architecture Comparative Study with External Validation'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.64898/2026.01.25.26344809

@@ -2,6 +2,8 @@ candidate_key: doi:10.2139/ssrn.6737115
 global_rank: 1180
 harvested_title: Physics-Informed Nighttime Image Synthesis From Daytime Scenes Using Differentiable Degradation
   Modeling
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2139/ssrn.6737115

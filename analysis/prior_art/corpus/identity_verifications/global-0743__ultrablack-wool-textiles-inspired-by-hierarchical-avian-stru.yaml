@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s41467-025-65649-4
 global_rank: 743
 harvested_title: Ultrablack wool textiles inspired by hierarchical avian structure.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41467-025-65649-4

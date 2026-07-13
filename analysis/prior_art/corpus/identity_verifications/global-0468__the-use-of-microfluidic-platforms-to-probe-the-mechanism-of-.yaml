@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/adhm.201901410
 global_rank: 468
 harvested_title: The Use of Microfluidic Platforms to Probe the Mechanism of Cancer Cell Extravasation.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/adhm.201901410

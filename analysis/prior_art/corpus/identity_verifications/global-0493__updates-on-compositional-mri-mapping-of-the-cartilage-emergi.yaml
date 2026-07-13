@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/jmri.28689
 global_rank: 493
 harvested_title: 'Updates on Compositional MRI Mapping of the Cartilage: Emerging Techniques and Applications.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/jmri.28689

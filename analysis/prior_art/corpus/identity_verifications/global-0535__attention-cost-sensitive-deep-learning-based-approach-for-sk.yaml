@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/cancers14235872
 global_rank: 535
 harvested_title: Attention Cost-Sensitive Deep Learning-Based Approach for Skin Cancer Detection and Classification.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/cancers14235872

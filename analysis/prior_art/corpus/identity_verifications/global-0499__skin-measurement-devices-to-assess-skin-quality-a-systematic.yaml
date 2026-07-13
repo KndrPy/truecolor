@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/srt.13113
 global_rank: 499
 harvested_title: 'Skin measurement devices to assess skin quality: A systematic review on reliability
   and validity.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/srt.13113

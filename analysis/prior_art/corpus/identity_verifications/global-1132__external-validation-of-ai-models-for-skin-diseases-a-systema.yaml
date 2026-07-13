@@ -1,6 +1,9 @@
 candidate_key: doi:10.1109/access.2025.3584904/mm4
 global_rank: 1132
 harvested_title: 'External Validation of AI Models for Skin Diseases: A Systematic Review_supp2-3584904.xlsx'
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/access.2025.3584904/mm4

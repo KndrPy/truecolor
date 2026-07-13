@@ -3,6 +3,9 @@ candidate_key: 'title:a systematic review of contrastive learning in medical ai:
 global_rank: 1258
 harvested_title: 'A Systematic Review of Contrastive Learning in Medical AI: Foundations, Biomedical Modalities,
   and Future Directions'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

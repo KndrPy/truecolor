@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.596797
 global_rank: 859
 harvested_title: Machine learning-integrated multi-wavelength SPR sensor based on aluminum-doped zinc
   oxide and 2D amorphous silicon for high-precision salinity measurement.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.596797

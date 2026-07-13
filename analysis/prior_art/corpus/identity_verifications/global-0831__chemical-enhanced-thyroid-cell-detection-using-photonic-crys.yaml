@@ -2,6 +2,8 @@ candidate_key: doi:10.1039/d5ra09237j
 global_rank: 831
 harvested_title: Chemical-enhanced thyroid cell detection using photonic crystal biosensors with phase-change
   materials.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1039/d5ra09237j

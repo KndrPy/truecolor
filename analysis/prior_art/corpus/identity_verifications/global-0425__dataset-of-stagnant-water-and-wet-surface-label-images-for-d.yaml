@@ -1,6 +1,7 @@
 candidate_key: doi:10.1016/j.dib.2021.107752
 global_rank: 425
 harvested_title: Dataset of Stagnant Water and Wet Surface Label Images for Detection
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.dib.2021.107752

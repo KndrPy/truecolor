@@ -2,6 +2,8 @@ candidate_key: doi:10.1371/journal.pone.0340161
 global_rank: 860
 harvested_title: A convenient method for the accurate identification of Citri Reticulatae Pericarpium
   using image and multi-stream.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0340161

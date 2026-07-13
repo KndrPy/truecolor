@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s24113666
 global_rank: 88
 harvested_title: 'Spectral Reconstruction from RGB Imagery: A Potential Option for Infinite Spectral Data?'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s24113666

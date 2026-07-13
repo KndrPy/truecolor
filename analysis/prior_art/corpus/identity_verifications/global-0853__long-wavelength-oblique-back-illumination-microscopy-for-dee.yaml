@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.579269
 global_rank: 853
 harvested_title: Long-wavelength oblique back-illumination microscopy for deep &lt;i&gt;in vivo&lt;/i&gt;
   imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.579269

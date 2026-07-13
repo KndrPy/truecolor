@@ -1,6 +1,9 @@
 candidate_key: doi:10.26686/wgtn.17151719
 global_rank: 1215
 harvested_title: Genetic Programming based Feature Manipulation for Skin Cancer Image Classification
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.26686/wgtn.17151719

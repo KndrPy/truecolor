@@ -3,6 +3,8 @@ global_rank: 341
 harvested_title: "Spectrally-resolved errors in absorption and reduced scattering due to &lt;i&gt;\xB5\
   &lt;/i&gt; &lt;sub&gt;a&lt;/sub&gt;-&lt;i&gt;\xB5&lt;/i&gt; &lt;sub&gt;s&lt;/sub&gt;' cross-talk in\
   \ layered media."
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.573069

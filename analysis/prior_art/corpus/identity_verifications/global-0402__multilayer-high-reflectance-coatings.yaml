@@ -1,6 +1,8 @@
 candidate_key: doi:10.1201/9781420033236-10
 global_rank: 402
 harvested_title: Multilayer high-reflectance coatings
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1201/9781420033236-10

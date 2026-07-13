@@ -1,6 +1,10 @@
 candidate_key: doi:10.1021/acs.macromol.2c00506.s002
 global_rank: 1126
 harvested_title: Boosting the Optical Absorption of Melanin-like Polymers
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acs.macromol.2c00506.s002

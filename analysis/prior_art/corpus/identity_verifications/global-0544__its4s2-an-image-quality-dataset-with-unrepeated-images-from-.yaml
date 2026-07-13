@@ -1,6 +1,8 @@
 candidate_key: doi:10.70220/478jr91r
 global_rank: 544
 harvested_title: 'ITS4S2: An Image Quality Dataset With Unrepeated Images From Consumer Cameras'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.70220/478jr91r

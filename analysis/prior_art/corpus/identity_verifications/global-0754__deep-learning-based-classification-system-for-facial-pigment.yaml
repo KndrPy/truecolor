@@ -2,6 +2,8 @@ candidate_key: doi:10.7759/cureus.85428
 global_rank: 754
 harvested_title: Deep Learning-Based Classification System for Facial Pigmented Lesions to Aid Laser Treatment
   Decisions.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.85428

@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/risa.70237
 global_rank: 841
 harvested_title: 'Global Sensitivity Analysis for Robust XAI: Quantifying Clinical Risk and Prediction
   Instability in Dermoscopic Image Classification.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/risa.70237

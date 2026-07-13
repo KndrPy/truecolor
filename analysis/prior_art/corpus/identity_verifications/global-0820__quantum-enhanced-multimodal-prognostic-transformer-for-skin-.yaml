@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-35951-2
 global_rank: 820
 harvested_title: Quantum-enhanced multimodal prognostic transformer for skin disease progression prediction
   and visualization.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-35951-2

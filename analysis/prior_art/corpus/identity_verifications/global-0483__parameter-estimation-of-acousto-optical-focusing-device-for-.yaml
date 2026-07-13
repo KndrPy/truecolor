@@ -1,6 +1,8 @@
 candidate_key: doi:10.17586/1023-5086-2025-92-09-35-43
 global_rank: 483
 harvested_title: Parameter estimation of acousto-optical focusing device for visible radiation
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.17586/1023-5086-2025-92-09-35-43

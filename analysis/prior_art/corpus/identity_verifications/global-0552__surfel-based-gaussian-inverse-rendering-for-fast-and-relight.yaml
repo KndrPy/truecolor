@@ -2,6 +2,9 @@ candidate_key: doi:10.1109/tpami.2025.3599415/mm2
 global_rank: 552
 harvested_title: Surfel-based Gaussian Inverse Rendering for Fast and Relightable Dynamic Human Reconstruction
   from Monocular Videos_supp3-3599415.mp4
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/tpami.2025.3599415/mm2

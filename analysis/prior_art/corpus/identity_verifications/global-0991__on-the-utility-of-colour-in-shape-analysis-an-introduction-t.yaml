@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.heliyon.2023.e20698
 global_rank: 991
 harvested_title: 'On the utility of Colour in shape analysis: An introduction to Colour science via palaeographical
   case studies.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.heliyon.2023.e20698

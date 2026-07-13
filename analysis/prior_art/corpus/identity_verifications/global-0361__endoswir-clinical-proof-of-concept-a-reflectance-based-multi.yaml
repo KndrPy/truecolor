@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.585407
 global_rank: 361
 harvested_title: 'ENDOSWIR clinical proof of concept: a reflectance-based multispectral imaging device
   for head and neck cancer detection.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.585407

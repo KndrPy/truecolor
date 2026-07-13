@@ -1,6 +1,8 @@
 candidate_key: doi:10.17691/stm2025.17.1.12
 global_rank: 305
 harvested_title: Study of Minor Chromophores in Biological Tissues by Diffuse Optical Spectroscopy (Review).
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.17691/stm2025.17.1.12

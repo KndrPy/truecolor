@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.27.8.080902
 global_rank: 580
 harvested_title: 'Dermoscopy and skin imaging light sources: a comparison and review of spectral power
   distribution and color consistency.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.27.8.080902

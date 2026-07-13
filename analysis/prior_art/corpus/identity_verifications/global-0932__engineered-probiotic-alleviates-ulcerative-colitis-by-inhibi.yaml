@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/btm2.70067
 global_rank: 932
 harvested_title: Engineered probiotic alleviates ulcerative colitis by inhibiting M1 macrophage polarization
   via glycolytic reprogramming.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/btm2.70067

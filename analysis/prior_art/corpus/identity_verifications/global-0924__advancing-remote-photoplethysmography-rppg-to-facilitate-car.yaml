@@ -2,6 +2,8 @@ candidate_key: doi:10.3758/s13428-026-02953-x
 global_rank: 924
 harvested_title: Advancing remote photoplethysmography (rPPG) to facilitate cardiac monitoring in naturalistic
   settings using webcam technology.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3758/s13428-026-02953-x

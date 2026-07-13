@@ -2,6 +2,8 @@ candidate_key: doi:10.1371/journal.pone.0255109
 global_rank: 581
 harvested_title: 'Materials In Paintings (MIP): An interdisciplinary dataset for perception, art history,
   and computer vision.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0255109

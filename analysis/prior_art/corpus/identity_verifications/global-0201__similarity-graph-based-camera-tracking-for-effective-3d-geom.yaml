@@ -2,6 +2,7 @@ candidate_key: doi:10.3390/s19224897
 global_rank: 201
 harvested_title: Similarity Graph-Based Camera Tracking for Effective 3D Geometry Reconstruction with
   Mobile RGB-D Camera
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s19224897

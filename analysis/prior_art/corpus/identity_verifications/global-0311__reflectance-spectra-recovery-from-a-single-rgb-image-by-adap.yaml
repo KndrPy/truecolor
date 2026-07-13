@@ -1,6 +1,7 @@
 candidate_key: doi:10.1088/1612-202x/ab2b36
 global_rank: 311
 harvested_title: Reflectance spectra recovery from a single RGB image by adaptive compressive sensing
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1088/1612-202x/ab2b36

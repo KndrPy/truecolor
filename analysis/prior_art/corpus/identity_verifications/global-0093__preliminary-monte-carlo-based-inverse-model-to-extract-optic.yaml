@@ -3,6 +3,8 @@ global_rank: 93
 harvested_title: Preliminary Monte Carlo based Inverse Model to Extract Optical Tissue Properties from
   Experimental Diffuse Reflectance Measurements - Coefficients Extraction for Gastrointestinal Dysplasia
   Detection
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5220/0004790201140121

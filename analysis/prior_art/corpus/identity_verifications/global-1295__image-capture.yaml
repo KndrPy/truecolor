@@ -1,6 +1,8 @@
 candidate_key: doi:10.4324/9780080551340-19
 global_rank: 1295
 harvested_title: Image Capture
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.4324/9780080551340-19

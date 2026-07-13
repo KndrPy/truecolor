@@ -1,6 +1,8 @@
 candidate_key: doi:10.1201/9781482287431-16
 global_rank: 1117
 harvested_title: An inverse problem of elasticity theory
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1201/9781482287431-16

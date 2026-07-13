@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.arcontrol.2022.05.001
 global_rank: 625
 harvested_title: Developing control-theoretic objectives for large-scale brain dynamics and cognitive
   enhancement.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.arcontrol.2022.05.001

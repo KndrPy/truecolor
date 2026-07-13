@@ -1,6 +1,8 @@
 candidate_key: doi:10.4324/9781410613158-25
 global_rank: 1227
 harvested_title: Spectral Contrast Sensitivity of Lateralized /s/ Spectra Produced by High School Lateralizers
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.4324/9781410613158-25

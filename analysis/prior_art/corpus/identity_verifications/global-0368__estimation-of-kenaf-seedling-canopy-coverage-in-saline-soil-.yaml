@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fpls.2026.1747657
 global_rank: 368
 harvested_title: Estimation of Kenaf seedling canopy coverage in saline soil using semantic segmentation
   of UAV RGB images.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fpls.2026.1747657

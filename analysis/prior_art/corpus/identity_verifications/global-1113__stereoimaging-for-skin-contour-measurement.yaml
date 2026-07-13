@@ -1,6 +1,8 @@
 candidate_key: doi:10.3109/9781420005516-18
 global_rank: 1113
 harvested_title: Stereoimaging for Skin Contour Measurement
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3109/9781420005516-18

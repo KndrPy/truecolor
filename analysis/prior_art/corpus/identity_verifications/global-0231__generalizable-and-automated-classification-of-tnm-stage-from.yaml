@@ -2,6 +2,8 @@ candidate_key: doi:10.1101/2023.06.26.23291912
 global_rank: 231
 harvested_title: Generalizable and Automated Classification of TNM Stage from Pathology Reports with External
   Validation
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1101/2023.06.26.23291912

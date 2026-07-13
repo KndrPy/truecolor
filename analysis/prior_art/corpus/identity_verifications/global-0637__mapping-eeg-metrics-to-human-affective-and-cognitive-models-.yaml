@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/biomimetics10110730
 global_rank: 637
 harvested_title: 'Mapping EEG Metrics to Human Affective and Cognitive Models: An Interdisciplinary Scoping
   Review from a Cognitive Neuroscience Perspective.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/biomimetics10110730

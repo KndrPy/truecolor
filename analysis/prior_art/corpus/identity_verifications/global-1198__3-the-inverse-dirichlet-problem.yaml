@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/s0079-8169(08)62367-3
 global_rank: 1198
 harvested_title: 3 The Inverse Dirichlet Problem
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/s0079-8169(08)62367-3

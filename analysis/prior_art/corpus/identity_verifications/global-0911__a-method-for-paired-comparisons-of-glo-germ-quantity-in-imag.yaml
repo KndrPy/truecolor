@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/jimaging12040178
 global_rank: 911
 harvested_title: A Method for Paired Comparisons of Glo Germ Quantity in Images of Hands Before and After
   Washing.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jimaging12040178

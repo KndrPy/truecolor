@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.bios.2.3.032505
 global_rank: 338
 harvested_title: What do we know about the epidermis' optical properties and their influence on optical
   device functionality?
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.bios.2.3.032505

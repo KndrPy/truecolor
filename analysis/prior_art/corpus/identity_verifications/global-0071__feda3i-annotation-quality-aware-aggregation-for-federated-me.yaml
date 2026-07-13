@@ -2,6 +2,7 @@ candidate_key: doi:10.1609/aaai.v38i14.29525
 global_rank: 71
 harvested_title: 'FedA3I: Annotation Quality-Aware Aggregation for Federated Medical Image Segmentation
   against Heterogeneous Annotation Noise'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1609/aaai.v38i14.29525

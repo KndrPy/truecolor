@@ -2,6 +2,10 @@ candidate_key: doi:10.1520/e1345-98r08e01
 global_rank: 1145
 harvested_title: Practice for Reducing the Effect of Variability of Color Measurement by Use of Multiple
   Measurements
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1520/e1345-98r08e01

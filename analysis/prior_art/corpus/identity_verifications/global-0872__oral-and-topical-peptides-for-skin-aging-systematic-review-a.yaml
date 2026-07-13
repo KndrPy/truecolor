@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmed.2026.1618306
 global_rank: 872
 harvested_title: 'Oral and topical peptides for skin aging: systematic review and meta-analysis of randomized
   controlled trials.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2026.1618306

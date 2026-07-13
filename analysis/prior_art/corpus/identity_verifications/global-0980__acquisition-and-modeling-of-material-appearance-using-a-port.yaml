@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s25041143
 global_rank: 980
 harvested_title: Acquisition and Modeling of Material Appearance Using a Portable, Low Cost, Device.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s25041143

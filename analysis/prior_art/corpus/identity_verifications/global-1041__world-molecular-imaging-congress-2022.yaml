@@ -1,6 +1,9 @@
 candidate_key: doi:10.1007/s11307-022-01794-2
 global_rank: 1041
 harvested_title: World Molecular Imaging Congress 2022.
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s11307-022-01794-2

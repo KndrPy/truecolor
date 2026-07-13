@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41467-026-72181-6
 global_rank: 815
 harvested_title: Photoactivatable CRISPR/Cas13d via upconversion nanoparticles for deep tissue RNA engineering
   and orthopedic therapy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41467-026-72181-6

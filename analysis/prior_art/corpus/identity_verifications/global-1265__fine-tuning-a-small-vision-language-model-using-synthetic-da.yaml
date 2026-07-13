@@ -3,6 +3,9 @@ candidate_key: title:fine-tuning a small vision language model using synthetic d
 global_rank: 1265
 harvested_title: Fine-Tuning a Small Vision Language Model Using Synthetic Data for Explaining Bacterial
   Skin Disease Images
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

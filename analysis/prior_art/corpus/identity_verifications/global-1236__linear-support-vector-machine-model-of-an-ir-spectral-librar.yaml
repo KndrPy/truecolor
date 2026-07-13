@@ -1,6 +1,10 @@
 candidate_key: doi:10.1021/acsomega.5c10854.s001
 global_rank: 1236
 harvested_title: 'Linear Support Vector Machine Model of an IR Spectral Library: Application to Skin Cancer'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acsomega.5c10854.s001

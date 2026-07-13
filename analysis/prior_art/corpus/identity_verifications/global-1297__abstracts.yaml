@@ -1,6 +1,10 @@
 candidate_key: title:abstracts|year:2020
 global_rank: 1297
 harvested_title: Abstracts
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-44334-6
 global_rank: 824
 harvested_title: Species-level identification and differentiation of deer antlers using ATR-FTIR spectroscopy
   and chemometrics.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-44334-6

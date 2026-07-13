@@ -2,6 +2,8 @@ candidate_key: doi:10.35772/ghm.2026.01058
 global_rank: 36
 harvested_title: 'Artificial intelligence (AI)-assisted diagnosis of skin diseases: From image classification
   to dermatology-specific multimodal clinical reasoning.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.35772/ghm.2026.01058

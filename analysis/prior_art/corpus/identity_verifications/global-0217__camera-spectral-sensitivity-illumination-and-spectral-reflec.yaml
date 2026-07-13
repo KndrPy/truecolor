@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/icip.2017.8296340
 global_rank: 217
 harvested_title: Camera spectral sensitivity, illumination and spectral reflectance estimation for a hybrid
   hyperspectral image capture system
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/icip.2017.8296340

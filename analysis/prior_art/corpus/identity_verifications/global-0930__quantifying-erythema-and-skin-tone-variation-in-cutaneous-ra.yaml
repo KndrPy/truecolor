@@ -1,6 +1,8 @@
 candidate_key: doi:10.7759/cureus.107251
 global_rank: 930
 harvested_title: 'Quantifying Erythema and Skin Tone Variation in Cutaneous Rashes: A Colorimetric Approach.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.107251

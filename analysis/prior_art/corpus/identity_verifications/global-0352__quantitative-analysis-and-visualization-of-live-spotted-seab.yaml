@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.fochx.2026.103773
 global_rank: 352
 harvested_title: Quantitative analysis and visualization of live spotted seabass (&lt;i&gt;Lateolabrax
   maculatus&lt;/i&gt;) flesh texture using hyperspectral imaging and machine learning.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.fochx.2026.103773

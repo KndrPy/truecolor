@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41562-025-02274-7
 global_rank: 238
 harvested_title: Quantifying the impact of hair and skin characteristics on fNIRS signal quality for enhanced
   inclusivity.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41562-025-02274-7

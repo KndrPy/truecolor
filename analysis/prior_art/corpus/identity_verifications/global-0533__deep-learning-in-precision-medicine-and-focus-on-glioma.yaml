@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/btm2.10553
 global_rank: 533
 harvested_title: Deep learning in precision medicine and focus on glioma.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/btm2.10553

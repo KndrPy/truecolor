@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/gels11070495
 global_rank: 638
 harvested_title: Clinical Safety and Efficacy of Hyaluronic Acid-Niacinamide-Tranexamic Acid Injectable
   Hydrogel for Multifactorial Facial Skin Quality Enhancement with Dark Skin Lightening.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/gels11070495

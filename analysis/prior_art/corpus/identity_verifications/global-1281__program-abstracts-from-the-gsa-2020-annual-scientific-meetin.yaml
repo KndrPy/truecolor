@@ -3,6 +3,10 @@ candidate_key: "title:program abstracts from the gsa 2020 annual scientific meet
 global_rank: 1281
 harvested_title: "Program Abstracts from The GSA 2020 Annual Scientific Meeting \u201CTurning 75: Why\
   \ Age Matters\u201D"
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

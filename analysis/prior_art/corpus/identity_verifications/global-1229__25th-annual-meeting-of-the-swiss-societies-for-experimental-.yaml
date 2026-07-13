@@ -2,6 +2,9 @@ candidate_key: pmid:8432370
 global_rank: 1229
 harvested_title: 25th Annual Meeting of the Swiss Societies for Experimental Biology. Lausanne, March
   25-26, 1993. Abstracts.
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

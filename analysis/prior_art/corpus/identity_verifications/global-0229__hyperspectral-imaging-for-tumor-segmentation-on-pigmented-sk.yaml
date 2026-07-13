@@ -1,6 +1,8 @@
 candidate_key: doi:10.1117/1.jbo.27.10.106007
 global_rank: 229
 harvested_title: Hyperspectral imaging for tumor segmentation on pigmented skin lesions.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.27.10.106007

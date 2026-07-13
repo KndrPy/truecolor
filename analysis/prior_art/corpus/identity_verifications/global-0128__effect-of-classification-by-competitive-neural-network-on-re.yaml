@@ -2,6 +2,7 @@ candidate_key: doi:10.1002/col.22050
 global_rank: 128
 harvested_title: Effect of classification by competitive neural network on reconstruction of reflectance
   spectra using principal component analysis
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/col.22050

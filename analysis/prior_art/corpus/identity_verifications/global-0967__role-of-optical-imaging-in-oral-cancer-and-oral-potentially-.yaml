@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/froh.2025.1760778
 global_rank: 967
 harvested_title: 'Role of optical imaging in oral cancer and oral potentially malignant disorders: implications
   for oral submucous fibrosis.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/froh.2025.1760778

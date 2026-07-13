@@ -3,6 +3,10 @@ candidate_key: "title:cars 2022\u2014computer assisted radiology and surgery pro
 global_rank: 1279
 harvested_title: "CARS 2022\u2014Computer Assisted Radiology and Surgery Proceedings of the 36th International\
   \ Congress and Exhibition Tokyo, Japan, June 7\u201311, 2022"
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

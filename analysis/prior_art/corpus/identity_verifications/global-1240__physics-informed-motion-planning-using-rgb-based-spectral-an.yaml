@@ -1,6 +1,9 @@
 candidate_key: doi:10.17760/d20698941
 global_rank: 1240
 harvested_title: Physics-informed motion planning using RGB-based spectral analysis
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.17760/d20698941

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/ma19050931
 global_rank: 912
 harvested_title: 'Multiphysical Characterization of a Tissue-Mimicking Phantom: Composition, Thermal Behavior,
   and Broadband Electromagnetic Properties from Visible to Terahertz and Microwave Frequencies.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/ma19050931

@@ -1,6 +1,7 @@
 candidate_key: doi:10.5220/0014632400004084
 global_rank: 190
 harvested_title: 'SynShapes: A Synthetic Image-Annotation Dataset for Edge Detection'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5220/0014632400004084

@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/s10462-026-11494-w
 global_rank: 732
 harvested_title: 'Advances in artificial intelligence: a review for the creative industries.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10462-026-11494-w

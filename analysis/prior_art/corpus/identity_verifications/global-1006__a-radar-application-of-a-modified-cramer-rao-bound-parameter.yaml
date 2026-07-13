@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/78.700966
 global_rank: 1006
 harvested_title: 'A radar application of a modified Cramer-Rao bound: parameter estimation in non-Gaussian
   clutter'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/78.700966

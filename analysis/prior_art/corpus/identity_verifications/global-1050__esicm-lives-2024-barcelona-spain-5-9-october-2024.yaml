@@ -1,6 +1,9 @@
 candidate_key: doi:10.1186/s40635-024-00658-z
 global_rank: 1050
 harvested_title: "ESICM LIVES 2024. Barcelona, Spain. 5\u20139 October 2024."
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1186/s40635-024-00658-z

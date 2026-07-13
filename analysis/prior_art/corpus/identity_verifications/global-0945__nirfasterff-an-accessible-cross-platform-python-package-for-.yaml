@@ -1,6 +1,8 @@
 candidate_key: doi:10.1117/1.jbo.30.11.115001
 global_rank: 945
 harvested_title: 'NIRFASTerFF: an accessible, cross-platform Python package for fast photon modeling.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.30.11.115001

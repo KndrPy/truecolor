@@ -1,6 +1,8 @@
 candidate_key: doi:10.1364/boe.579246
 global_rank: 772
 harvested_title: 'Visual appearance of blood vessels: a phantom study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.579246

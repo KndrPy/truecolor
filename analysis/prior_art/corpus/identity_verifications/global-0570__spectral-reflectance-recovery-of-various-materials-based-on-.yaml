@@ -2,6 +2,7 @@ candidate_key: doi:10.1145/3309074.3309118
 global_rank: 570
 harvested_title: Spectral reflectance recovery of various materials based on linear interpolation with
   nonparametric metameric spectra of extreme points
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1145/3309074.3309118

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s26113358
 global_rank: 374
 harvested_title: 'Hyperspectral Imaging for the Colorimetric Characterization of Purple Manuscripts: Accuracy,
   Biases, and Diagnostic Potential.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26113358

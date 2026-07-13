@@ -2,6 +2,7 @@ candidate_key: doi:10.2352/ei.2023.35.15.color-199
 global_rank: 196
 harvested_title: Machine learning estimation of camera spectral sensitivity functions with non-RGB color
   filters
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2352/ei.2023.35.15.color-199

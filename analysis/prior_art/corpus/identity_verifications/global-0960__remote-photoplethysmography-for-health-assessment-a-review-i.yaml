@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fdgth.2025.1667423
 global_rank: 960
 harvested_title: 'Remote photoplethysmography for health assessment: a review informed by IntelliProve
   technology.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fdgth.2025.1667423

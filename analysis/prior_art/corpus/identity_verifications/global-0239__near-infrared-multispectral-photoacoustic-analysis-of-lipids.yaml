@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.pacs.2024.100636
 global_rank: 239
 harvested_title: Near-infrared multispectral photoacoustic analysis of lipids and intraplaque hemorrhage
   in human carotid artery atherosclerosis.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.pacs.2024.100636

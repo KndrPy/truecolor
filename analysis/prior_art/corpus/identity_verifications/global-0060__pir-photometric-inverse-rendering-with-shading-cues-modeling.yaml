@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/3dv66043.2025.00055
 global_rank: 60
 harvested_title: 'PIR: Photometric Inverse Rendering with Shading Cues Modeling and Surface Reflectance
   Regularization'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/3dv66043.2025.00055

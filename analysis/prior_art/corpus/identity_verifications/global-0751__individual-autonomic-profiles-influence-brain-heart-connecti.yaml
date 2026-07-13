@@ -1,6 +1,8 @@
 candidate_key: doi:10.2147/jpr.s526855
 global_rank: 751
 harvested_title: Individual Autonomic Profiles Influence Brain-Heart Connectivity in Tonic Pain.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2147/jpr.s526855

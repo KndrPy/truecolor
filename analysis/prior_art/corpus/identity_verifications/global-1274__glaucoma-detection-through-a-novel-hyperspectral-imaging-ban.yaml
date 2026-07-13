@@ -3,6 +3,9 @@ candidate_key: title:glaucoma detection through a novel hyperspectral imaging ba
 global_rank: 1274
 harvested_title: Glaucoma Detection through a Novel Hyperspectral Imaging Band Selection and Vision Transformer
   Integration
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

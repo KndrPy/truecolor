@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/s12024-025-01076-7
 global_rank: 711
 harvested_title: Age prediction of hematoma using hyperspectral imaging (HSI).
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s12024-025-01076-7

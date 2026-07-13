@@ -1,6 +1,7 @@
 candidate_key: doi:10.1016/j.media.2023.102925
 global_rank: 725
 harvested_title: 'WarpPINN: Cine-MR image registration with physics-informed neural networks'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.media.2023.102925

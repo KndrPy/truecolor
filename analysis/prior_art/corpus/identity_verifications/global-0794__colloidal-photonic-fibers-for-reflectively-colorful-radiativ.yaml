@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/smsc.70273
 global_rank: 794
 harvested_title: Colloidal Photonic Fibers for Reflectively Colorful Radiative Cooling Fabrics.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/smsc.70273

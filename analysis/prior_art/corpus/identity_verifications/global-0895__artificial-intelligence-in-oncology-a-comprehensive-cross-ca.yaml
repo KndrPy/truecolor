@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/cancers18101543
 global_rank: 895
 harvested_title: 'Artificial Intelligence in Oncology: A Comprehensive Cross-Cancer Translational Readiness
   Analysis Across 18 Malignancies.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/cancers18101543

@@ -2,6 +2,10 @@ candidate_key: doi:10.7554/elife.01104.003
 global_rank: 1153
 harvested_title: Table 1. Total number of samples collected for each site and abdominal, skin (head and
   body), soil (with and without corpses)
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7554/elife.01104.003

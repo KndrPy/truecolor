@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/foods15030475
 global_rank: 903
 harvested_title: Development of a Dynamic Multi-Parameter Prediction Model for the Maturation Process
   of '&lt;i&gt;Ugni Blanc&lt;/i&gt;' Grapes Using Visible and Near-Infrared Spectroscopy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/foods15030475

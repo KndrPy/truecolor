@@ -1,6 +1,8 @@
 candidate_key: doi:10.1201/9781315382685-24
 global_rank: 1202
 harvested_title: Skin findings from external or physical agents
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1201/9781315382685-24

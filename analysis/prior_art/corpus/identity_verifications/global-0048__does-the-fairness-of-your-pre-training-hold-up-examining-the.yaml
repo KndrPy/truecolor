@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/wacvw60836.2024.00067
 global_rank: 48
 harvested_title: Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training
   Techniques on Skin Tone Bias in Skin Lesion Classification
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/wacvw60836.2024.00067

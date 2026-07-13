@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s10278-024-01282-9
 global_rank: 644
 harvested_title: 'RIDGE: Reproducibility, Integrity, Dependability, Generalizability, and Efficiency Assessment
   of Medical Image Segmentation Models.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10278-024-01282-9

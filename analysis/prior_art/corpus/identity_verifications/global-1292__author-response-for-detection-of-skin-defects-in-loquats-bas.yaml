@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/cem.3449/v3/response1
 global_rank: 1292
 harvested_title: "Author response for \"Detection of skin defects in loquats based on grayscale features\
   \ combined with reflectance, absorbance, and Kubelka\u2010Munk spectra\""
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/cem.3449/v3/response1

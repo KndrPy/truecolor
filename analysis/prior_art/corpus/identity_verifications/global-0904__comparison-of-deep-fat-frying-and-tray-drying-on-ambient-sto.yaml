@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/foods15060983
 global_rank: 904
 harvested_title: Comparison of Deep-Fat Frying and Tray Drying on Ambient Storage Stability and Quality
   of Instant Noodles with and Without Catfish Powder.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/foods15060983

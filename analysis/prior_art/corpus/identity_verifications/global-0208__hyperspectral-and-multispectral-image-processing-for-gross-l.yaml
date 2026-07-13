@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.27.6.060901
 global_rank: 208
 harvested_title: 'Hyperspectral and multispectral image processing for gross-level tumor detection in
   skin lesions: a systematic review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.27.6.060901

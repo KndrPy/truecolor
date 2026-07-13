@@ -2,6 +2,8 @@ candidate_key: doi:10.1101/2023.06.28.546875
 global_rank: 1186
 harvested_title: "Dynamic control of gene expression by ISGF3 and IRF1 during IFN\u03B2 and IFN\u03B3\
   \ signaling"
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1101/2023.06.28.546875

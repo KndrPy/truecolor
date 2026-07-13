@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/jbio.70254
 global_rank: 131
 harvested_title: Skin Tone in Hyperspectral Imaging and Its Implications for Fairness in AI.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/jbio.70254

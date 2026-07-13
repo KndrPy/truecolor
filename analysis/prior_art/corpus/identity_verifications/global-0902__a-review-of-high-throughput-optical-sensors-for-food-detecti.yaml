@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/foods15010133
 global_rank: 902
 harvested_title: A Review of High-Throughput Optical Sensors for Food Detection Based on Machine Learning.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/foods15010133

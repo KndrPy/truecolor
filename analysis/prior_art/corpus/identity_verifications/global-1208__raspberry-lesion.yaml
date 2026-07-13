@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/3-540-29668-9_2298
 global_rank: 1208
 harvested_title: Raspberry lesion
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/3-540-29668-9_2298

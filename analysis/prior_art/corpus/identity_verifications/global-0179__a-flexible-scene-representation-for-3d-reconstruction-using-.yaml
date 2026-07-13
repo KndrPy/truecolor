@@ -1,6 +1,7 @@
 candidate_key: doi:10.1109/iccv.2013.348
 global_rank: 179
 harvested_title: A Flexible Scene Representation for 3D Reconstruction Using an RGB-D Camera
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/iccv.2013.348

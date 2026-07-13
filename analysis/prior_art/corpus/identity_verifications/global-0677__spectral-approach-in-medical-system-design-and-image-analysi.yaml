@@ -2,6 +2,9 @@ candidate_key: doi:10.52843/cassyni.7xh4dr
 global_rank: 677
 harvested_title: Spectral Approach in Medical System Design and Image Analysis -Surgical Illuminant Development
   and Rodent Skip Flap Analysis-
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.52843/cassyni.7xh4dr

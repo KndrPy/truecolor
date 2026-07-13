@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s25216634
 global_rank: 981
 harvested_title: 'Computer Vision for Glass Waste: Technologies and Sensors.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s25216634

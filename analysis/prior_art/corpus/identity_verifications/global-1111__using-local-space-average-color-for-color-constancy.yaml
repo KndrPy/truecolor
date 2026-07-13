@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/9780470510490.ch11
 global_rank: 1111
 harvested_title: Using Local Space Average Color for Color Constancy
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/9780470510490.ch11

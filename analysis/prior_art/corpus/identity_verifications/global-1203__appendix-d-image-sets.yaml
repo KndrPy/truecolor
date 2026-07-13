@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/9780470510490.app4
 global_rank: 1203
 harvested_title: 'Appendix D: Image Sets'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/9780470510490.app4

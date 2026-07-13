@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.jaad.2012.12.371
 global_rank: 1004
 harvested_title: 'Patient satisfaction with a novel, patient-centered model for psoriasis follow-up care:
   Results from a randomized controlled trial'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.jaad.2012.12.371

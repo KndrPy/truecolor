@@ -2,6 +2,8 @@ candidate_key: doi:10.2139/ssrn.6140526
 global_rank: 1177
 harvested_title: 'Information-Theoretic Limits of AI Alignment: Why Context-Based Attacks are Mathematically
   Inevitable'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2139/ssrn.6140526

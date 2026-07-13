@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.bios.3.1.012509
 global_rank: 843
 harvested_title: Evaluation of a polarization-sensitive, dual-wavelength wearable photoplethysmography
   sensor across a range of skin tones.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.bios.3.1.012509

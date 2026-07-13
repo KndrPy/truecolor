@@ -2,6 +2,8 @@ candidate_key: doi:10.1186/s12880-025-02118-w
 global_rank: 709
 harvested_title: 'Explainable artificial intelligence (XAI) in medical imaging: a systematic review of
   techniques, applications, and challenges.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1186/s12880-025-02118-w

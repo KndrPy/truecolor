@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/nano13091531
 global_rank: 473
 harvested_title: 'Metal Nanoparticle-Flavonoid Connections: Synthesis, Physicochemical and Biological
   Properties, as Well as Potential Applications in Medicine.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/nano13091531

@@ -2,6 +2,7 @@ candidate_key: doi:10.5753/sbcas.2026.21435
 global_rank: 139
 harvested_title: 'Enabling safe AI deployment: an automated Fitzpatrick skin type guardrail for out-of-distribution
   dermatology'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5753/sbcas.2026.21435

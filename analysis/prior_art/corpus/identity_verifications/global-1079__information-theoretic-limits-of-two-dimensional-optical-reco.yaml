@@ -1,6 +1,8 @@
 candidate_key: doi:10.1109/ods.2006.1632753
 global_rank: 1079
 harvested_title: Information-Theoretic Limits of Two-Dimensional Optical Recording Channels
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/ods.2006.1632753

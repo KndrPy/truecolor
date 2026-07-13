@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/diagnostics16101461
 global_rank: 899
 harvested_title: 'Artificial Intelligence-Based Risk Stratification in Obesity Care: From Diagnosis to
   Personalised Treatment Pathways.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics16101461

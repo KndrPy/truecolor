@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/2056-4538.70082
 global_rank: 349
 harvested_title: Weakly supervised deep learning for cutaneous squamous and basal cell carcinoma in whole-slide
   histopathology.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/2056-4538.70082

@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/jimaging11040107
 global_rank: 718
 harvested_title: Optimizing Digital Image Quality for Improved Skin Cancer Detection.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jimaging11040107

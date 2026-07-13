@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/jimaging11090296
 global_rank: 974
 harvested_title: Roughness Estimation and Image Rendering for Glossy Object Surface.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jimaging11090296

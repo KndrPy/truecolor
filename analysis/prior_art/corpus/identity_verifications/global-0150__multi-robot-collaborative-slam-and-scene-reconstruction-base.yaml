@@ -1,6 +1,7 @@
 candidate_key: doi:10.1109/cac51589.2020.9326318
 global_rank: 150
 harvested_title: Multi-robot collaborative SLAM and scene reconstruction based on RGB-D camera
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/cac51589.2020.9326318

@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.compbiomed.2020.104065
 global_rank: 429
 harvested_title: 'Artificial intelligence-based image classification methods for diagnosis of skin cancer:
   Challenges and opportunities.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.compbiomed.2020.104065

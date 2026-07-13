@@ -1,6 +1,10 @@
 candidate_key: doi:10.1021/acsapm.4c01588.s001
 global_rank: 1094
 harvested_title: Electroactive Melanin Tattoo Inks for Effectively Reducing Skin Impedances
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acsapm.4c01588.s001

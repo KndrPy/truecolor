@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/wio.2011.5981462
 global_rank: 1170
 harvested_title: Band selection in spectral imaging for classification and regression tasks using information
   theoretic measures
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/wio.2011.5981462

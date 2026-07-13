@@ -1,6 +1,8 @@
 candidate_key: doi:10.1117/1.jbo.26.2.025002
 global_rank: 659
 harvested_title: Objective color calibration for manufacturing facial prostheses.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.26.2.025002

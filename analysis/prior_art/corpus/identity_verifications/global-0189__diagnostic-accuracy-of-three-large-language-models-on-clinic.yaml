@@ -2,6 +2,7 @@ candidate_key: doi:10.1111/ijd.70452
 global_rank: 189
 harvested_title: 'Diagnostic Accuracy of Three Large Language Models on Clinical Images Varies by Skin
   Tone: Findings From the Stanford Diverse Dermatology Images Dataset'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/ijd.70452

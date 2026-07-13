@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/3-540-29668-9_206
 global_rank: 1207
 harvested_title: Angiocentric lymphoproliferative lesion
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/3-540-29668-9_206

@@ -1,6 +1,7 @@
 candidate_key: doi:10.1016/j.imavis.2025.105541
 global_rank: 151
 harvested_title: Dynamic feature extraction and histopathology domain shift alignment for mitosis detection
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.imavis.2025.105541

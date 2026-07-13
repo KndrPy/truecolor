@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/igarss39084.2020.9323553
 global_rank: 427
 harvested_title: Spectral Super-Resolution Using Hybrid 2D-3D Structure Tensor Attention Networks with
   Camera Spectral Sensitivity Prior
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/igarss39084.2020.9323553

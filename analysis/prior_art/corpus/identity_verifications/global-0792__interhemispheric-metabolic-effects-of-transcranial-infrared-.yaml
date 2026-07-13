@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/hbm.70578
 global_rank: 792
 harvested_title: Interhemispheric Metabolic Effects of Transcranial Infrared Laser Stimulation of the
   Prefrontal Cortex.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/hbm.70578

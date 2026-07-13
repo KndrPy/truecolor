@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/jimaging9100202
 global_rank: 992
 harvested_title: Noise-Robust Pulse Wave Estimation from Near-Infrared Face Video Images Using the Wiener
   Estimation Method.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jimaging9100202

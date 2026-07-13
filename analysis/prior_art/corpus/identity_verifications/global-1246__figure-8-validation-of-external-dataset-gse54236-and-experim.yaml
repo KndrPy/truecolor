@@ -1,6 +1,10 @@
 candidate_key: doi:10.7717/peerj.17002/fig-8
 global_rank: 1246
 harvested_title: 'Figure 8: Validation of external dataset GSE54236 and experimental validation.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj.17002/fig-8

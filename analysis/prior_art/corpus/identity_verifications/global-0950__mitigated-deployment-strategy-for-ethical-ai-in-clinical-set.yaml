@@ -1,6 +1,8 @@
 candidate_key: doi:10.1136/bmjhci-2024-101363
 global_rank: 950
 harvested_title: Mitigated deployment strategy for ethical AI in clinical settings.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1136/bmjhci-2024-101363

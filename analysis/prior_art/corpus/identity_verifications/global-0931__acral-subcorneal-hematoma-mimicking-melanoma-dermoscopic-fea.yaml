@@ -2,6 +2,8 @@ candidate_key: doi:10.7759/cureus.109272
 global_rank: 931
 harvested_title: 'Acral Subcorneal Hematoma Mimicking Melanoma: Dermoscopic Features and Exploratory Digital
   Color Analysis.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.109272

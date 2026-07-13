@@ -2,6 +2,9 @@ candidate_key: doi:10.1109/tgrs.2026.3655806/mm1
 global_rank: 550
 harvested_title: Improving full-spectrum reconstruction of solar-induced chlorophyll fluorescence using
   principal component analysis based on an SIF-free leaf reflectance dataset_supp1-3655806.docx
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/tgrs.2026.3655806/mm1

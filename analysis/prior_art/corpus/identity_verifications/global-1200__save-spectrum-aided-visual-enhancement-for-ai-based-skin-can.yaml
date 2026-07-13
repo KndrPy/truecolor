@@ -1,6 +1,9 @@
 candidate_key: 'title:save: spectrum-aided visual enhancement for ai-based skin cancer detection|year:2026'
 global_rank: 1200
 harvested_title: 'SAVE: Spectrum-Aided Visual Enhancement for AI-Based Skin Cancer Detection'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

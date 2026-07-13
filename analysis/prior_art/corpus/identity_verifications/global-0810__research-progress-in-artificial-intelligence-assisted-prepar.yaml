@@ -1,6 +1,8 @@
 candidate_key: doi:10.1021/acsomega.5c09392
 global_rank: 810
 harvested_title: Research Progress in Artificial Intelligence-Assisted Preparation of High-Quality Biomaterials.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acsomega.5c09392

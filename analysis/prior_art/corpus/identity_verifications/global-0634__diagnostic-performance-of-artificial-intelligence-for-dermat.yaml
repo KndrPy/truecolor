@@ -3,6 +3,8 @@ global_rank: 634
 harvested_title: 'Diagnostic performance of artificial intelligence for dermatological conditions: a systematic
   review focused on low- and middle-income countries to address resource constraints and improve access
   to specialist care.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1186/s12245-025-00975-4

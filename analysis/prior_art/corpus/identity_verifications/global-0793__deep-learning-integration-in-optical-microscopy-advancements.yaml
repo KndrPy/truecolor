@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/jemt.70112
 global_rank: 793
 harvested_title: 'Deep Learning Integration in Optical Microscopy: Advancements and Applications.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/jemt.70112

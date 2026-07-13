@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/diagnostics16030438
 global_rank: 896
 harvested_title: Challenges and Prospects of Using Novel Nonlinear Effects in Multimode Optical Fibers
   for Multiphoton Endomicroscopy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics16030438

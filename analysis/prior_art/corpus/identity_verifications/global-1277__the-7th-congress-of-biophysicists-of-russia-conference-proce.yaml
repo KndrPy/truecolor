@@ -1,6 +1,10 @@
 candidate_key: 'title:the 7th congress of biophysicists of russia - conference proceedings : abstracts|year:2023'
 global_rank: 1277
 harvested_title: 'The 7th Congress of Biophysicists of Russia - conference proceedings : Abstracts'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

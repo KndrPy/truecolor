@@ -2,6 +2,10 @@ candidate_key: doi:10.1021/acs.jpclett.1c03535.s001
 global_rank: 1232
 harvested_title: 'Optimal Excitation Wavelength for Surface-Enhanced Raman Spectroscopy: The Role of Chemical
   Interface Damping'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acs.jpclett.1c03535.s001

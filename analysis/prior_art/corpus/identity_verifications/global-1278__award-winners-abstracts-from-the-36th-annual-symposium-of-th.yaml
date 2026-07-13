@@ -3,6 +3,10 @@ candidate_key: "title:award winners/abstracts from the 36th annual symposium of 
 global_rank: 1278
 harvested_title: "Award Winners/Abstracts from the 36th Annual Symposium of The Protein Society, July\
   \ 7 \u2013 10, 2022"
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

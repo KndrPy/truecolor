@@ -1,6 +1,8 @@
 candidate_key: doi:10.1109/isce.2005.1502356
 global_rank: 409
 harvested_title: Combining gray world and retinex theory for automatic white balance in digital photography
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/isce.2005.1502356

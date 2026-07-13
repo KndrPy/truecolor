@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/0172-2190(81)90164-2
 global_rank: 403
 harvested_title: Production of good quality diazo duplicate from 35-mm silver gelatin film images
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/0172-2190(81)90164-2

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s24227348
 global_rank: 395
 harvested_title: 'Triple Spectral Line Imaging of Whole-Body Human Skin: Equipment, Image Processing,
   and Clinical Data.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s24227348

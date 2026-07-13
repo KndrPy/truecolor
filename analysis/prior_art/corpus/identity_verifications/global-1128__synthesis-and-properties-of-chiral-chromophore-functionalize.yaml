@@ -2,6 +2,10 @@ candidate_key: doi:10.1021/ma0351118.s001
 global_rank: 1128
 harvested_title: 'Synthesis and Properties of Chiral Chromophore-functionalized Polybinaphthalenes for
   Nonlinear Optics: Influence of Chromophore Concentration'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/ma0351118.s001

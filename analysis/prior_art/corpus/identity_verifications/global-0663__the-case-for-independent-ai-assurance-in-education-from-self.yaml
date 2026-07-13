@@ -2,6 +2,8 @@ candidate_key: doi:10.2139/ssrn.6193319
 global_rank: 663
 harvested_title: 'The Case for Independent AI Assurance in Education: From Self-Attestation to External
   Validation AI Governance in Education Series Memorandum No. 5'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2139/ssrn.6193319

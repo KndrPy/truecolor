@@ -1,6 +1,8 @@
 candidate_key: doi:10.1117/1.jmi.12.3.034506
 global_rank: 949
 harvested_title: Mpox lesion counting with semantic and instance segmentation methods.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jmi.12.3.034506

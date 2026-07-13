@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/ma19010011
 global_rank: 976
 harvested_title: Research Progress in Thermal Functional Fibers.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/ma19010011

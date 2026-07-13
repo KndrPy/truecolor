@@ -2,6 +2,8 @@ candidate_key: doi:10.7759/cureus.104932
 global_rank: 929
 harvested_title: 'Refractory Seborrheic Dermatitis Treated With a 532-nm Q-Switched Potassium Titanyl
   Phosphate (KTP) Laser: A Case Report.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.104932

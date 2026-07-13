@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s43856-024-00550-7
 global_rank: 170
 harvested_title: Melanometry for objective evaluation of skin pigmentation in pulse oximetry studies.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s43856-024-00550-7

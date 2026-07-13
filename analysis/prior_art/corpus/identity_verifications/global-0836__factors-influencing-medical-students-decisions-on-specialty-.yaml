@@ -2,6 +2,8 @@ candidate_key: doi:10.1097/md.0000000000049096
 global_rank: 836
 harvested_title: 'Factors influencing medical students'' decisions on specialty training in radiology
   at King Khalid University, Abha, Saudi Arabia: A cross-sectional study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1097/md.0000000000049096

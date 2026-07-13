@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/foods14132214
 global_rank: 753
 harvested_title: Integral Valorisation of Agri-Food By-Products Through the Production of Food Ingredients
   Using High-Pressure Thermal Treatments.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/foods14132214

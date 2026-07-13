@@ -1,6 +1,8 @@
 candidate_key: doi:10.26226/m.66421cb5470990338e2c6fa1
 global_rank: 437
 harvested_title: Skin Tone Bias In Generative Artificial Intelligence For Use In Medical Education
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.26226/m.66421cb5470990338e2c6fa1

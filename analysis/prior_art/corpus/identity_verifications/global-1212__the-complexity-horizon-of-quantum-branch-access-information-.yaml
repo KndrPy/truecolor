@@ -2,6 +2,8 @@ candidate_key: doi:10.62891/f69bee1b
 global_rank: 1212
 harvested_title: 'The Complexity Horizon of Quantum Branch-Access: Information-Theoretic Limits on Cross-Branch
   Retrieval in Everettian Quantum Mechanics'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.62891/f69bee1b

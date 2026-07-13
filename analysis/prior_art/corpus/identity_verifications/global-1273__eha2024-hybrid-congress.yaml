@@ -1,6 +1,10 @@
 candidate_key: title:eha2024 hybrid congress|year:2024
 global_rank: 1273
 harvested_title: EHA2024 Hybrid Congress
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

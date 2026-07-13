@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-48640-x
 global_rank: 826
 harvested_title: Spectrometer-free time-division multiplexed NIR time-of-flight vision system for visually
   similar material recognition.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-48640-x

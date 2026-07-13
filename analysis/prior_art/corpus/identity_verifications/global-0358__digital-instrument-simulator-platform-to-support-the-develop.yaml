@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.31.2.027003
 global_rank: 358
 harvested_title: Digital instrument simulator platform to support the development of noninvasive optical
   NIR device for placenta monitoring.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.31.2.027003

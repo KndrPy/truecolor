@@ -2,6 +2,8 @@ candidate_key: doi:10.1371/journal.pdig.0000296
 global_rank: 513
 harvested_title: Investigating the accuracy of blood oxygen saturation measurements in common consumer
   smartwatches.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pdig.0000296

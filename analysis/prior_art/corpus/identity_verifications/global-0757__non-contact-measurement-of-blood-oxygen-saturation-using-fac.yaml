@@ -2,6 +2,8 @@ candidate_key: doi:10.1109/jtehm.2023.3318643
 global_rank: 757
 harvested_title: Non-Contact Measurement of Blood Oxygen Saturation Using Facial Video Without Reference
   Values.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/jtehm.2023.3318643

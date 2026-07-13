@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41467-026-70514-z
 global_rank: 814
 harvested_title: Label-free mass and size characterization of few-kDa biomolecules by hierarchical vision
   transformer augmented nanofluidic scattering microscopy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41467-026-70514-z

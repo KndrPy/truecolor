@@ -2,6 +2,9 @@ candidate_key: doi:10.1109/tcsvt.2024.3520621/mm1
 global_rank: 549
 harvested_title: 'RT3DHVC: A Real-time Human Holographic Video Conferencing System with a Consumer RGB-D
   Camera Array_supp1-3520621.mp4'
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/tcsvt.2024.3520621/mm1

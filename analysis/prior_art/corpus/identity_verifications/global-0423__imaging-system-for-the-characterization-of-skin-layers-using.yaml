@@ -1,6 +1,9 @@
 candidate_key: doi:10.70675/a5c1f133z1901z4de8z93caz0f6e583ba071
 global_rank: 423
 harvested_title: Imaging system for the characterization of skin layers using diffuse reflectance
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.70675/a5c1f133z1901z4de8z93caz0f6e583ba071

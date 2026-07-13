@@ -2,6 +2,8 @@ candidate_key: doi:10.37506/ijphrd.v11i7.10091
 global_rank: 1072
 harvested_title: Validity and Reliability of Electronic Head Posture Instrument for Measurement of Cranio-Horizontal
   Angle, Craniovertebral Angle and Sagittal Shoulder Angle
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.37506/ijphrd.v11i7.10091

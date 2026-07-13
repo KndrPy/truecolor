@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.31.1.016005
 global_rank: 845
 harvested_title: Two-step regression analysis approach to assess burn wound severity using spatial frequency
   domain imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.31.1.016005

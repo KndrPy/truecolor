@@ -3,6 +3,9 @@ candidate_key: 'title:a dual-mode near-infrared optical probe and monte carlo fr
 global_rank: 337
 harvested_title: 'A Dual-Mode Near-Infrared Optical Probe and Monte Carlo Framework for Functional Monitoring
   of Rheumatoid Arthritis: Addressing Diagnostic Ambiguity and Skin Tone Robustness'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

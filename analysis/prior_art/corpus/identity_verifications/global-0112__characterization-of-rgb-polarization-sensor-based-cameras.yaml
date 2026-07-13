@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/jimaging12050203
 global_rank: 112
 harvested_title: Characterization of RGB-Polarization Sensor-Based Cameras.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jimaging12050203

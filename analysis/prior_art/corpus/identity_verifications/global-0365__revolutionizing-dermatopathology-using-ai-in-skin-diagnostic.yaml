@@ -1,6 +1,8 @@
 candidate_key: doi:10.3389/fmed.2026.1614681
 global_rank: 365
 harvested_title: 'Revolutionizing dermatopathology using AI in skin diagnostics: scoping review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2026.1614681

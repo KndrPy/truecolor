@@ -1,6 +1,7 @@
 candidate_key: doi:10.1016/j.jvcir.2025.104658
 global_rank: 476
 harvested_title: Deep color constancy via a color shift aware conditional diffusion model
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.jvcir.2025.104658

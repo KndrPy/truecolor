@@ -1,6 +1,7 @@
 candidate_key: doi:10.1364/ofc.2026.m4k.3
 global_rank: 362
 harvested_title: 'PIDT: Physics-Informed Digital Twin for Optical Fiber Parameter Estimation'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/ofc.2026.m4k.3

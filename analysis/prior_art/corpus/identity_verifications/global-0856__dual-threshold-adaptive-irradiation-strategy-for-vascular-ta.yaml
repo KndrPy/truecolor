@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.588946
 global_rank: 856
 harvested_title: Dual-threshold adaptive irradiation strategy for vascular-targeted photodynamic therapy
   based on hyperspectral-photoacoustic dual-modality imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.588946

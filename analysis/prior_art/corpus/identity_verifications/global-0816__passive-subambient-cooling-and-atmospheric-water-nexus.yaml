@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s41467-026-74110-z
 global_rank: 816
 harvested_title: Passive subambient cooling and atmospheric water nexus.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41467-026-74110-z

@@ -1,6 +1,8 @@
 candidate_key: doi:10.21037/atm.2020.04.39
 global_rank: 464
 harvested_title: A deep learning, image based approach for automated diagnosis for inflammatory skin diseases.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21037/atm.2020.04.39

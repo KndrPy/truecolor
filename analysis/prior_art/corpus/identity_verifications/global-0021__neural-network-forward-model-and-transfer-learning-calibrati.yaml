@@ -2,6 +2,7 @@ candidate_key: doi:10.1117/12.2581556
 global_rank: 21
 harvested_title: Neural network forward model and transfer learning calibration from Monte Carlo to diffuse
   reflectance spectroscopy
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/12.2581556

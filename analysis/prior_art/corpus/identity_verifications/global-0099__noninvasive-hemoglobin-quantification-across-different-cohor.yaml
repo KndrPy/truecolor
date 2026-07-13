@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.517645
 global_rank: 99
 harvested_title: Noninvasive hemoglobin quantification across different cohorts using a wearable diffuse
   reflectance spectroscopy system.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.517645

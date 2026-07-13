@@ -2,6 +2,8 @@ candidate_key: doi:10.1073/pnas.2525419123
 global_rank: 708
 harvested_title: Nudibranch color diversity shares a common physical basis in guanine photonic structure
   'pixels'.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1073/pnas.2525419123

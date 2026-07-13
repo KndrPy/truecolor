@@ -2,6 +2,8 @@ candidate_key: doi:10.64898/2026.05.21.26353816
 global_rank: 665
 harvested_title: 'Case-level artificial intelligence for multi-photo teledermatology submissions: development
   and internal validation using patient-submitted dermatology images'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.64898/2026.05.21.26353816

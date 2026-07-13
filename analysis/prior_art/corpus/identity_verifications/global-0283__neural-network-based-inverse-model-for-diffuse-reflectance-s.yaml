@@ -1,6 +1,8 @@
 candidate_key: doi:10.1364/opticaopen.22332649
 global_rank: 283
 harvested_title: Neural Network-based Inverse Model for Diffuse Reflectance Spectroscopy
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/opticaopen.22332649

@@ -2,6 +2,8 @@ candidate_key: doi:10.2196/85253
 global_rank: 866
 harvested_title: 'Performance of Wearable Pulse Oximetry During Controlled Hypoxia Induction: Instrument
   Validation Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2196/85253

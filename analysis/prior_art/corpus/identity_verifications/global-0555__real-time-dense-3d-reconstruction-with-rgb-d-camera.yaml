@@ -1,6 +1,9 @@
 candidate_key: doi:10.14711/thesis-991012785768403412
 global_rank: 555
 harvested_title: Real-time dense 3D reconstruction with RGB-D camera
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.14711/thesis-991012785768403412

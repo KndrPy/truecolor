@@ -2,6 +2,7 @@ candidate_key: doi:10.3390/app15158321
 global_rank: 29
 harvested_title: Evaluating Skin Tone Fairness in Convolutional Neural Networks for the Classification
   of Diabetic Foot Ulcers
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/app15158321

@@ -2,6 +2,7 @@ candidate_key: doi:10.1145/1201775.882344
 global_rank: 116
 harvested_title: Image-based skin color and texture analysis/synthesis by extracting hemoglobin and melanin
   information in the skin
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1145/1201775.882344

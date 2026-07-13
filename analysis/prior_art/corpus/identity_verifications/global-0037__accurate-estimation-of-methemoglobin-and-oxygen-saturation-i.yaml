@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/jbio.202400413
 global_rank: 37
 harvested_title: Accurate Estimation of Methemoglobin and Oxygen Saturation in Skin Tissue Using Diffuse
   Reflectance Spectroscopy and Artificial Intelligence.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/jbio.202400413

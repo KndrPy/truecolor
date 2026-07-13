@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/polym17030402
 global_rank: 719
 harvested_title: Implantable Polymer Scaffolds Loaded with Paclitaxel-Cyclodextrin Complexes for Post-Breast
   Cancer Tissue Reconstruction.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/polym17030402

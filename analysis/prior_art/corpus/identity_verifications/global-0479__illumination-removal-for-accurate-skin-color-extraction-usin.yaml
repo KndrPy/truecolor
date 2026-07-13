@@ -2,6 +2,8 @@ candidate_key: doi:10.5021/ad.25.180
 global_rank: 479
 harvested_title: Illumination Removal for Accurate Skin Color Extraction Using Dermoscopy and Transformer-Based
   Modeling.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5021/ad.25.180

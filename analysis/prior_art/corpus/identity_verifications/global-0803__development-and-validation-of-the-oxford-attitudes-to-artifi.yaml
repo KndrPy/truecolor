@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.jdin.2026.04.005
 global_rank: 803
 harvested_title: Development and validation of the Oxford Attitudes to Artificial Intelligence in Medicine
   Scale.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.jdin.2026.04.005

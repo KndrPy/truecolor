@@ -2,6 +2,7 @@ candidate_key: doi:10.1016/j.sigpro.2003.11.002
 global_rank: 1101
 harvested_title: "Cramer\u2013Rao bound of spatio-temporal linear pre-processing in parameter estimation\
   \ from sensor array"
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.sigpro.2003.11.002

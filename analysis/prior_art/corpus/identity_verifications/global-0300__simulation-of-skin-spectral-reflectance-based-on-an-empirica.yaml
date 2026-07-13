@@ -1,6 +1,8 @@
 candidate_key: doi:10.1109/cleopr.2005.1569539
 global_rank: 300
 harvested_title: Simulation of skin spectral reflectance based on an empirical model
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/cleopr.2005.1569539

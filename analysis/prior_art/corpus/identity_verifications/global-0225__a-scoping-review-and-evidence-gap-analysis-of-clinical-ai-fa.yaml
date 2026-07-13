@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s41746-025-01667-2
 global_rank: 225
 harvested_title: A scoping review and evidence gap analysis of clinical AI fairness.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41746-025-01667-2

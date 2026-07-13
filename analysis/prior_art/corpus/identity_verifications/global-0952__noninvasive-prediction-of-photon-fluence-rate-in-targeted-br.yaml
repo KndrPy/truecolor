@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.570066
 global_rank: 952
 harvested_title: 'Noninvasive prediction of photon fluence rate in targeted brain regions for personalized
   transcranial photobiomodulation dosage: model development and &lt;i&gt;in silico&lt;/i&gt; evaluation.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.570066

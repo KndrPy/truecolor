@@ -1,6 +1,9 @@
 candidate_key: doi:10.1002/1878-0261.13683
 global_rank: 1049
 harvested_title: 'EACR 2024: Innovative Cancer Science, 10-13 June 2024, Rotterdam, Netherlands.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/1878-0261.13683

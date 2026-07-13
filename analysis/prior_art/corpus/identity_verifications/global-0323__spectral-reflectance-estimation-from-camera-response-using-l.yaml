@@ -2,6 +2,7 @@ candidate_key: doi:10.3390/jimaging10090222
 global_rank: 323
 harvested_title: Spectral Reflectance Estimation from Camera Response Using Local Optimal Dataset and
   Neural Networks
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jimaging10090222

@@ -2,6 +2,8 @@ candidate_key: doi:10.1093/jamia/ocaf095
 global_rank: 942
 harvested_title: 'FairICP: identifying biases and increasing transparency at the point of care in post-implementation
   clinical decision support using inductive conformal prediction.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1093/jamia/ocaf095

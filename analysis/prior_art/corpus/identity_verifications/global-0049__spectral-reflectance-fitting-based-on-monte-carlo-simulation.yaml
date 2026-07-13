@@ -2,6 +2,7 @@ candidate_key: doi:10.1364/ecbo.2011.80880p
 global_rank: 49
 harvested_title: Spectral reflectance fitting based on Monte Carlo simulation using a multi-layered skin
   tissue model
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/ecbo.2011.80880p

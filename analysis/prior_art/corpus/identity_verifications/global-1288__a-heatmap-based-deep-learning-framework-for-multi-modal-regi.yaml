@@ -3,6 +3,10 @@ candidate_key: title:a heatmap-based deep learning framework for multi-modal reg
 global_rank: 1288
 harvested_title: A heatmap-based deep learning framework for multi-modal registration of VIS, NIR, and
   thermal images in dermatological imaging
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

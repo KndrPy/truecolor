@@ -1,6 +1,8 @@
 candidate_key: doi:10.1142/9789811266171_0001
 global_rank: 1018
 harvested_title: Urban Spatio-Temporal-Spectral-Angular Observation Model
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1142/9789811266171_0001

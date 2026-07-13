@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/fsn3.71611
 global_rank: 630
 harvested_title: Advanced Spectroscopic, Imaging, and Nanotechnology Tools for Diagnosing Fungal Diseases
   in Fruits.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/fsn3.71611

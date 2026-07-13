@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/diagnostics15030355
 global_rank: 119
 harvested_title: Training State-of-the-Art Deep Learning Algorithms with Visible and Extended Near-Infrared
   Multispectral Images of Skin Lesions for the Improvement of Skin Cancer Diagnosis.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics15030355

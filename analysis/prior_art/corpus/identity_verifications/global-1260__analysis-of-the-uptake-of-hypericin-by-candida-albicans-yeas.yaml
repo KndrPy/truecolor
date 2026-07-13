@@ -3,6 +3,10 @@ candidate_key: title:analysis of the uptake of hypericin by candida albicans yea
 global_rank: 1260
 harvested_title: Analysis of the Uptake of Hypericin by Candida albicans Yeast Cells Using Fluorescence
   Methods and Comparison of the Dynamics of This Process over Time
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

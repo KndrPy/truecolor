@@ -1,6 +1,8 @@
 candidate_key: doi:10.21275/v5i1.nov152632
 global_rank: 571
 harvested_title: A Methodological Survey on MapReduce for Identification of Duplicate Images
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21275/v5i1.nov152632

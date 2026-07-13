@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s19051090
 global_rank: 592
 harvested_title: Recent Applications of Multispectral Imaging in Seed Phenotyping and Quality Monitoring-An
   Overview.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s19051090

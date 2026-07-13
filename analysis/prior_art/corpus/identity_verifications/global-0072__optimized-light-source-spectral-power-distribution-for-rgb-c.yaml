@@ -2,6 +2,7 @@ candidate_key: doi:10.1364/oe.425401
 global_rank: 72
 harvested_title: Optimized light source spectral power distribution for RGB camera based spectral reflectance
   recovery
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/oe.425401

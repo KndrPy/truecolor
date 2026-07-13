@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.538141
 global_rank: 758
 harvested_title: Near-infrared diffuse optical characterization of human thyroid using ultrasound-guided
   hybrid time-domain and diffuse correlation spectroscopies.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.538141

@@ -1,6 +1,10 @@
 candidate_key: title:the 13th annual asia pacific conference on vision, 2017|year:2017
 global_rank: 1286
 harvested_title: The 13th Annual Asia Pacific Conference on Vision, 2017
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

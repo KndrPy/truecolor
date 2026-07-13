@@ -2,6 +2,7 @@ candidate_key: doi:10.1117/1.jbo.18.3.037003
 global_rank: 41
 harvested_title: Monte Carlo lookup table-based inverse model for extracting optical properties from tissue-simulating
   phantoms using diffuse reflectance spectroscopy
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.18.3.037003

@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmedt.2025.1648973
 global_rank: 963
 harvested_title: 'Non-invasive imaging techniques for predicting healing status of diabetic foot ulcers:
   a ten-year systematic review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmedt.2025.1648973

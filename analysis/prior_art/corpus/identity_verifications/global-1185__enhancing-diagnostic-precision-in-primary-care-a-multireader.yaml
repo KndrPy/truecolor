@@ -3,6 +3,8 @@ global_rank: 1185
 harvested_title: 'Enhancing Diagnostic Precision in Primary Care: A Multireader Multicase (MRMC) Study
   of an AI-Powered Handheld Elastic Scattering Spectroscopy Device for Informed Referral Decisions in
   Melanoma Evaluation.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

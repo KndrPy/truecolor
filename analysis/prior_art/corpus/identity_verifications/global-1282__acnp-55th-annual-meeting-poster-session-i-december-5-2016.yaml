@@ -1,6 +1,10 @@
 candidate_key: 'title:acnp 55th annual meeting: poster session i december 5, 2016|year:2016'
 global_rank: 1282
 harvested_title: 'ACNP 55th Annual Meeting: Poster Session I December 5, 2016'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/foods15111919
 global_rank: 905
 harvested_title: Linking Soil-Orchard Fruit Quality and Circular Food Innovation Through the Valorization
   of Dried Cherry Pomace in Dairy-Based Spreadable Products.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/foods15111919

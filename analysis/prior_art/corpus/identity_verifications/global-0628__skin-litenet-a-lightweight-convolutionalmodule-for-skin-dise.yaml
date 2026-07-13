@@ -1,6 +1,8 @@
 candidate_key: doi:10.21203/rs.3.rs-7600341/v1
 global_rank: 628
 harvested_title: 'Skin-LiteNet: A Lightweight ConvolutionalModule for Skin Disease Image Classification'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21203/rs.3.rs-7600341/v1

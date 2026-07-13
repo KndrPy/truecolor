@@ -2,6 +2,7 @@ candidate_key: doi:10.5220/0005359705650571
 global_rank: 530
 harvested_title: Identification of MIR-Flickr Near-duplicate Images - A Benchmark Collection for Near-duplicate
   Detection
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5220/0005359705650571

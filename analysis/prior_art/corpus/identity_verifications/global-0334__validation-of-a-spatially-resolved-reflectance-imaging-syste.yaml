@@ -3,6 +3,8 @@ global_rank: 334
 harvested_title: "Validation of a Spatially Resolved Reflectance Imaging System for Recovery of &lt;i&gt;\xB5\
   &lt;sub&gt;a&lt;/sub&gt;&lt;/i&gt; and &lt;i&gt;\xB5&lt;sub&gt;s&lt;/sub&gt;&lt;/i&gt;' in Absorbing\
   \ Turbid Media."
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26072070

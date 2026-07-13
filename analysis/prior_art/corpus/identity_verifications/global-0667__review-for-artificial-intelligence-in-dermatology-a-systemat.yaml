@@ -2,6 +2,9 @@ candidate_key: doi:10.1088/2631-8695/ae1933/v1/review2
 global_rank: 667
 harvested_title: 'Review for "Artificial intelligence in dermatology: A systematic review of skin cancer
   detection and classification"'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1088/2631-8695/ae1933/v1/review2

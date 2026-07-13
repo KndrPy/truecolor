@@ -1,6 +1,10 @@
 candidate_key: doi:10.7717/peerj.14734/fig-6
 global_rank: 1160
 harvested_title: 'Figure 6: Validation of hub genes in the external validation set.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj.14734/fig-6

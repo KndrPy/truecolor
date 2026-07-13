@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s10522-026-10461-w
 global_rank: 133
 harvested_title: 'Hyperspectral imaging and healthy aging: an observational study using hand skin as surface
   for monitoring healthy aging processes.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10522-026-10461-w

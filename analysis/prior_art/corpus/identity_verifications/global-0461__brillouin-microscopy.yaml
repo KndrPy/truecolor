@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s43586-023-00286-z
 global_rank: 461
 harvested_title: Brillouin microscopy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s43586-023-00286-z

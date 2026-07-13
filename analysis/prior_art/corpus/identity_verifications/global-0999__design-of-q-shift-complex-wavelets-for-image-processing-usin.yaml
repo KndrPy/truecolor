@@ -2,6 +2,8 @@ candidate_key: doi:10.1109/icip.2003.1247137
 global_rank: 999
 harvested_title: Design of Q-shift complex wavelets for image processing using frequency domain energy
   minimization
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/icip.2003.1247137

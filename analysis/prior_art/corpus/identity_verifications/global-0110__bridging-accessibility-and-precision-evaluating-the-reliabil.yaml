@@ -2,6 +2,8 @@ candidate_key: doi:10.2147/ccid.s589014
 global_rank: 110
 harvested_title: 'Bridging Accessibility and Precision: Evaluating the Reliability and Validity of a Smartphone-Based
   Skin Colorimeter.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2147/ccid.s589014

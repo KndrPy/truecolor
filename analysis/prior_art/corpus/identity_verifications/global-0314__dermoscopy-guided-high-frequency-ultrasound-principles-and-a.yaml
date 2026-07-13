@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/j.xjidi.2025.100446
 global_rank: 314
 harvested_title: 'Dermoscopy-guided high-frequency ultrasound: Principles and applications in dermatology.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.xjidi.2025.100446

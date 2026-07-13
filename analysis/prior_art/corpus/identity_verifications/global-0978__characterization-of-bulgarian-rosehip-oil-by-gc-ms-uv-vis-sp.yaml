@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/molecules30193964
 global_rank: 978
 harvested_title: Characterization of Bulgarian Rosehip Oil by GC-MS, UV-VIS Spectroscopy, Colorimetry,
   FTIR Spectroscopy, and 3D Excitation-Emission Fluorescence Spectra.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/molecules30193964

@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/0016-0032(54)90934-5
 global_rank: 405
 harvested_title: Combination colorimeter-spectrophotometer
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/0016-0032(54)90934-5

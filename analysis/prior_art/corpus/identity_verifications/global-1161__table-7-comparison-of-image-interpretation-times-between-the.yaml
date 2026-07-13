@@ -2,6 +2,10 @@ candidate_key: doi:10.7717/peerj.21340/table-7
 global_rank: 1161
 harvested_title: 'Table 7: Comparison of image interpretation times between the deep learning model and
   radiologists on a per-axial CT slice basis in the external validation cohort.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj.21340/table-7

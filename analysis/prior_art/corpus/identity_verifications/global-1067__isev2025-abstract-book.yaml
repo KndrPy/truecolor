@@ -1,6 +1,9 @@
 candidate_key: doi:10.1002/jev2.70157
 global_rank: 1067
 harvested_title: ISEV2025 Abstract Book.
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/jev2.70157

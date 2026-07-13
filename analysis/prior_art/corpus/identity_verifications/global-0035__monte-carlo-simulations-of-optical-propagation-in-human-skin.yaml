@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s10103-026-04911-7
 global_rank: 35
 harvested_title: Monte Carlo simulations of optical propagation in human skin using experimentally measured
   laser parameters.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10103-026-04911-7

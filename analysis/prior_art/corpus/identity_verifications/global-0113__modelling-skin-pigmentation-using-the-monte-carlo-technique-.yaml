@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s26082337
 global_rank: 113
 harvested_title: 'Modelling Skin Pigmentation Using the Monte Carlo Technique: A Review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26082337

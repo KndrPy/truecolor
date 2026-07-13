@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/clockssleep6040047
 global_rank: 759
 harvested_title: Thirty-Fifth Annual Meeting of the Society for Light Treatment and Biological Rhythms
   (SLTBR), 20 June-22 June, Prague, Czech Republic.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/clockssleep6040047

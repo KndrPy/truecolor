@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.30.s3.s34103
 global_rank: 748
 harvested_title: Development and characterization of a combined fluorescence and spatial frequency domain
   imaging system for real-time dosimetry of photodynamic therapy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.30.s3.s34103

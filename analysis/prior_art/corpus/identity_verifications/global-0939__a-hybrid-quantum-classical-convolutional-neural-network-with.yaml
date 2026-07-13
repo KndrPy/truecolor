@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-025-31122-x
 global_rank: 939
 harvested_title: A hybrid quantum-classical convolutional neural network with a quantum attention mechanism
   for skin cancer.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-025-31122-x

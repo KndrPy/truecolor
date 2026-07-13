@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/j.ultrasmedbio.2019.11.013
 global_rank: 408
 harvested_title: Super-resolution Ultrasound Imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.ultrasmedbio.2019.11.013

@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s10278-026-02057-0
 global_rank: 797
 harvested_title: 'Deep Learning vs. Traditional Machine Learning in the Diagnosis of Cutaneous Drug Eruptions:
   A Comparative Study with Explainable AI on Whole-Slide Images.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10278-026-02057-0

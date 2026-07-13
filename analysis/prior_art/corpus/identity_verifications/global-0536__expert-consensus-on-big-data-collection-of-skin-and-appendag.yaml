@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/s43657-023-00142-w
 global_rank: 536
 harvested_title: Expert Consensus on Big Data Collection of Skin and Appendage Disease Phenotypes in Chinese.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s43657-023-00142-w

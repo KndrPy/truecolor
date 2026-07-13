@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmed.2025.1581601
 global_rank: 961
 harvested_title: Correlation of dermoscopic and histopathological features in basal cell carcinoma using
   computerized image analysis.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2025.1581601

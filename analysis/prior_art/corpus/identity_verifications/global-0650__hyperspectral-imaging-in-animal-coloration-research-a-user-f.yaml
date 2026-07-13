@@ -2,6 +2,8 @@ candidate_key: doi:10.1371/journal.pbio.3002867
 global_rank: 650
 harvested_title: 'Hyperspectral imaging in animal coloration research: A user-friendly pipeline for image
   generation, analysis, and integration with 3D modeling.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pbio.3002867

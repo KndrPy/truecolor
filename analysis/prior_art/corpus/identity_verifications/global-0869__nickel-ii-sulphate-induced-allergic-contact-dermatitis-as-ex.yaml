@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/falgy.2026.1786200
 global_rank: 869
 harvested_title: Nickel(II) sulphate-induced allergic contact dermatitis as experimental tool to investigate
   inflammatory pruritus in humans.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/falgy.2026.1786200

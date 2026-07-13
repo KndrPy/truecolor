@@ -1,6 +1,8 @@
 candidate_key: doi:10.1039/d6sc01417h
 global_rank: 832
 harvested_title: Rethinking photosensitization in therapy and sun protection.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1039/d6sc01417h

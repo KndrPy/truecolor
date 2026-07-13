@@ -3,6 +3,10 @@ global_rank: 1090
 harvested_title: "Figure 7: Denoising results of different models on an image of the IXI dataset with\
   \ the noise level\n                      <i>\u03C3</i>\n                      \_=\_15 and the associated\
   \ residual images Image source credit: IXI dataset, CC BY-SA 3.0 (https://brain-development.org/ixi-dataset/)."
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerjcs.1579/fig-7

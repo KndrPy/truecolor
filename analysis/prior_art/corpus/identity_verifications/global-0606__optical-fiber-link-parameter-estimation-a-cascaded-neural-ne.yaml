@@ -1,6 +1,8 @@
 candidate_key: doi:10.21203/rs.3.rs-2000152/v1
 global_rank: 606
 harvested_title: 'Optical Fiber Link Parameter Estimation: A Cascaded Neural Network Approach'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21203/rs.3.rs-2000152/v1

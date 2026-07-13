@@ -1,6 +1,9 @@
 candidate_key: 'title:towards accurate breslow measurements: mitigating issues in histopathological imaging|year:2026'
 global_rank: 1270
 harvested_title: 'Towards Accurate Breslow Measurements: Mitigating Issues in Histopathological Imaging'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

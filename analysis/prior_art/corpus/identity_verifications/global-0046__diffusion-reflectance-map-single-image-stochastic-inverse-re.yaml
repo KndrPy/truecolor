@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/cvpr52733.2024.01128
 global_rank: 46
 harvested_title: 'Diffusion Reflectance Map: Single-Image Stochastic Inverse Rendering of Illumination
   and Reflectance'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/cvpr52733.2024.01128

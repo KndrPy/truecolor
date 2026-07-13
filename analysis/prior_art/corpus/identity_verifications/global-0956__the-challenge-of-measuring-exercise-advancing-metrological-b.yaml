@@ -1,6 +1,8 @@
 candidate_key: doi:10.2196/79347
 global_rank: 956
 harvested_title: 'The Challenge of Measuring Exercise: Advancing Metrological Barriers in Wearable Sensing.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2196/79347

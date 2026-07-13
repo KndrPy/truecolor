@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/vetsci10050341
 global_rank: 527
 harvested_title: Transcriptome Profile Analysis Identifies Candidate Genes for the Melanin Pigmentation
   of Skin in Tengchong Snow Chickens.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/vetsci10050341

@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/srt.70299
 global_rank: 746
 harvested_title: 'Correlation Between Sun Protection Factor and Hair Color Difference Index in a New Method
   for Evaluating Sunscreens'' Ultraviolet Protection Efficacy in Hair: An Experimental Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/srt.70299

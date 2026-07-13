@@ -2,6 +2,8 @@ candidate_key: doi:10.1088/1361-6420/ad910a
 global_rank: 394
 harvested_title: "Optimizing quantitative photoacoustic imaging systems: the Bayesian Cram\xE9r-Rao bound\
   \ approach."
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1088/1361-6420/ad910a

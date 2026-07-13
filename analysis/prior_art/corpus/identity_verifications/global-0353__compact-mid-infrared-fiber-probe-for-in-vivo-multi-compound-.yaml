@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41467-026-70300-x
 global_rank: 353
 harvested_title: Compact mid-infrared fiber probe for in vivo multi-compound monitoring demonstrated using
   ex vivo human skin.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41467-026-70300-x

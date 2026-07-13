@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s26072020
 global_rank: 776
 harvested_title: Development and Phantom Validation of a Small-Form-Factor SWIR Emitter Probe for Hydration-Sensitive
   Spatial-Ratio Measurements in Gelatin-Intralipid Phantoms.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26072020

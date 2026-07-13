@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/ijms262411771
 global_rank: 972
 harvested_title: 'Tuning Photothermal Properties of Graphene Oxide by Heteroatom Doping for Cancer Elimination:
   Experimental and DFT Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/ijms262411771

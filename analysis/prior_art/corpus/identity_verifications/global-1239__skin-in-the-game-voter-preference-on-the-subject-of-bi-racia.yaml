@@ -1,6 +1,9 @@
 candidate_key: doi:10.15760/honors.386
 global_rank: 1239
 harvested_title: 'Skin in the Game: Voter Preference on the Subject of Bi-Racial Candidate Skin-Tone'
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.15760/honors.386

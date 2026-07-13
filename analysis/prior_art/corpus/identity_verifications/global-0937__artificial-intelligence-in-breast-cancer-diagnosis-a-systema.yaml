@@ -1,6 +1,8 @@
 candidate_key: doi:10.1017/pcm.2025.10006
 global_rank: 937
 harvested_title: 'Artificial intelligence in breast cancer diagnosis: A systematic literature review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1017/pcm.2025.10006

@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/j.jaad.2011.11.865
 global_rank: 1035
 harvested_title: Validation of the psoriasis symptom inventory (PSI), a patient-reported outcome measure
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.jaad.2011.11.865

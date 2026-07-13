@@ -1,6 +1,8 @@
 candidate_key: doi:10.5040/9781501374616.ch-7
 global_rank: 438
 harvested_title: Multi-camera Lighting and Camera Operation Basics
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5040/9781501374616.ch-7

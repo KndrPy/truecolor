@@ -1,6 +1,8 @@
 candidate_key: doi:10.32388/objj3u
 global_rank: 1027
 harvested_title: Fitzpatrick Skin Type V
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.32388/objj3u

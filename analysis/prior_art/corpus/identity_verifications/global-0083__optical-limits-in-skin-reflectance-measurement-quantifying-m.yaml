@@ -2,6 +2,8 @@ candidate_key: doi:10.64898/2025.12.22.696093
 global_rank: 83
 harvested_title: 'Optical Limits in Skin Reflectance Measurement: Quantifying Melanin-Dependent Constraints
   on Erythema Detection'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.64898/2025.12.22.696093

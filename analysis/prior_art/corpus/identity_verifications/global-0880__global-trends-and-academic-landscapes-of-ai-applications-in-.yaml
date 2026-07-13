@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fonc.2026.1779358
 global_rank: 880
 harvested_title: 'Global trends and academic landscapes of AI applications in basal cell carcinoma research:
   a bibliometric analysis.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fonc.2026.1779358

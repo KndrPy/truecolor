@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s10916-026-02412-2
 global_rank: 799
 harvested_title: Motion-Based Confidence Score to Support the Practical Application of rPPG Methods in
   Health Monitoring.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10916-026-02412-2

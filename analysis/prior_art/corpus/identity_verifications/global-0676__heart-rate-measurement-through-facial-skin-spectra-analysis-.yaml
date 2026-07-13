@@ -1,6 +1,8 @@
 candidate_key: doi:10.31237/osf.io/sk9t6
 global_rank: 676
 harvested_title: Heart Rate Measurement through Facial Skin-Spectra Analysis in Facial RGB Video
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.31237/osf.io/sk9t6

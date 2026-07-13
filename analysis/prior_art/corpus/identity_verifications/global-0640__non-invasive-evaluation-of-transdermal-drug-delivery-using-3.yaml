@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.pacs.2023.100530
 global_rank: 640
 harvested_title: Non-invasive evaluation of transdermal drug delivery using 3-D transient triplet differential
   (TTD) photoacoustic imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.pacs.2023.100530

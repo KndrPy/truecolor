@@ -2,6 +2,8 @@ candidate_key: doi:10.1093/bjd/ljaf250
 global_rank: 316
 harvested_title: "Assessing the performance of artificial intelligence models in evaluating inflammatory\
   \ skin disease severity: a\_systematic review and meta-analysis."
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1093/bjd/ljaf250

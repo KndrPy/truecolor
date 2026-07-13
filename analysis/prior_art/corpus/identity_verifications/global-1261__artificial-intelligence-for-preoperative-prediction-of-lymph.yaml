@@ -3,6 +3,9 @@ candidate_key: 'title:artificial intelligence for preoperative prediction of lym
 global_rank: 1261
 harvested_title: 'Artificial Intelligence for Preoperative Prediction of Lymph Node Metastasis and Depth
   of Invasion in Oral Tongue Squamous Cell Carcinoma: A Systematic Review and Meta-Analysis'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

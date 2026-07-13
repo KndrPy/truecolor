@@ -2,6 +2,8 @@ candidate_key: doi:10.1177/15330338261417262
 global_rank: 850
 harvested_title: 'Whole-Field Continuous Wave Diffuse Reflectance Imaging for Breast Lesion Characterization:
   Clinical Results.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1177/15330338261417262

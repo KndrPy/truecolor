@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s10606-025-09514-4
 global_rank: 377
 harvested_title: 'Dimensions of Human-Machine Combination: Prompting the Development of Deployable Intelligent
   Decision Systems for Situated Clinical Contexts.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10606-025-09514-4

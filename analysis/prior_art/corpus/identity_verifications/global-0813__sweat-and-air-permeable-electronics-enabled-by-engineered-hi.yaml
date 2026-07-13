@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41378-026-01362-6
 global_rank: 813
 harvested_title: Sweat and air permeable electronics enabled by engineered hierarchical fabric system
   for exercise management.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41378-026-01362-6

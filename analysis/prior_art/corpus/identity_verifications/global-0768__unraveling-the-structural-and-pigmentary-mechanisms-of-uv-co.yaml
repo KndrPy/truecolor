@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.isci.2026.116106
 global_rank: 768
 harvested_title: Unraveling the structural and pigmentary mechanisms of UV color signal production in
   &lt;i&gt;Podarcis&lt;/i&gt; wall lizards.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.isci.2026.116106

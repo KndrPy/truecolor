@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-024-73084-6
 global_rank: 756
 harvested_title: 'Diffuse reflectance spectroscopy and RGB-imaging: a comparative study of non-invasive
   haemoglobin assessment.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-024-73084-6

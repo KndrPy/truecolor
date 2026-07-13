@@ -2,6 +2,8 @@ candidate_key: doi:10.20944/preprints202201.0260.v1
 global_rank: 605
 harvested_title: A Bayesian Model for Annual Crop Phenological Parameter Estimation Using Optical High
   Resolution Image Time Series
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.20944/preprints202201.0260.v1

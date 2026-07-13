@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s26030989
 global_rank: 916
 harvested_title: 'Trends in Vibrational Spectroscopy: NIRS and Raman Techniques for Health and Food Safety
   Control.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26030989

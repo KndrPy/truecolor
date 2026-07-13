@@ -2,6 +2,7 @@ candidate_key: doi:10.1088/1742-6596/1151/1/012005
 global_rank: 105
 harvested_title: Monte Carlo model for reflectance Pulse Oximetry using pulsatile monolayer perfused skin
   tissue
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1088/1742-6596/1151/1/012005

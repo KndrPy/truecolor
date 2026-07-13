@@ -1,6 +1,8 @@
 candidate_key: doi:10.4324/9780080926933-11
 global_rank: 1294
 harvested_title: Image capture
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.4324/9780080926933-11

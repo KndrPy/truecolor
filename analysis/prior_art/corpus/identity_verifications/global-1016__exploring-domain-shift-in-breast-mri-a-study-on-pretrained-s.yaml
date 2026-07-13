@@ -2,6 +2,8 @@ candidate_key: doi:10.26226/m.6657251f918878861e1bd93a
 global_rank: 1016
 harvested_title: 'Exploring Domain Shift in Breast MRI: A Study on Pretrained Stable Diffusion XL Model''s
   Conditional Image-to-Image Feature'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.26226/m.6657251f918878861e1bd93a

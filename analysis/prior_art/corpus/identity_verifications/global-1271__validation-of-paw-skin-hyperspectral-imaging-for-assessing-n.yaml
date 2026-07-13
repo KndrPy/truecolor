@@ -3,6 +3,9 @@ candidate_key: title:validation of paw skin hyperspectral imaging for assessing 
 global_rank: 1271
 harvested_title: Validation of Paw Skin Hyperspectral Imaging for Assessing Neuropathic Pain Severity
   in a Chronic Constriction Injury Model
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

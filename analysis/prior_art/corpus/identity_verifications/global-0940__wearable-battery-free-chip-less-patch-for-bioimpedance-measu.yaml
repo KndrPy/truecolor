@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s44385-025-00037-7
 global_rank: 940
 harvested_title: Wearable battery-free chip-less patch for bioimpedance measurement of cutaneous lesions.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s44385-025-00037-7

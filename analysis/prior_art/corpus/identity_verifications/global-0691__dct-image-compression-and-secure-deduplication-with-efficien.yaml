@@ -1,6 +1,8 @@
 candidate_key: doi:10.21275/v5i6.nov164473
 global_rank: 691
 harvested_title: DCT Image Compression and Secure Deduplication with Efficient Convergent Key Management
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21275/v5i6.nov164473

@@ -1,6 +1,8 @@
 candidate_key: doi:10.1097/asw.0000000000000358
 global_rank: 778
 harvested_title: State-of-the-Art Review of Current Technology in Pressure Injury Early Detection.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1097/asw.0000000000000358

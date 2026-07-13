@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/cvprw50498.2020.00239
 global_rank: 14
 harvested_title: Adaptive Weighted Attention Network with Camera Spectral Sensitivity Prior for Spectral
   Reconstruction from RGB Images
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/cvprw50498.2020.00239

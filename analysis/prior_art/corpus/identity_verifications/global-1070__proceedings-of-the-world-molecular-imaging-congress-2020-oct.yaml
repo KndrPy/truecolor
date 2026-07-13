@@ -2,6 +2,9 @@ candidate_key: doi:10.1007/s11307-021-01691-0
 global_rank: 1070
 harvested_title: 'Proceedings of the World Molecular Imaging Congress 2020, October 7-9, 2020: General
   Abstracts.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s11307-021-01691-0

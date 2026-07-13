@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-36618-8
 global_rank: 821
 harvested_title: Visual classification of allergenic pollen in iteratively reconstructed lens-less DIHM
   images.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-36618-8

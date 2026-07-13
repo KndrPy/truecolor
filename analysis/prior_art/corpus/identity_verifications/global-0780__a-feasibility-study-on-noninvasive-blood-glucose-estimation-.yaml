@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/bios15110711
 global_rank: 780
 harvested_title: A Feasibility Study on Noninvasive Blood Glucose Estimation Using Machine Learning Analysis
   of Near-Infrared Spectroscopy Data.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/bios15110711

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/ma18194556
 global_rank: 782
 harvested_title: 'Biomimetic Daytime Radiative Cooling Technology: Prospects and Challenges for Practical
   Application.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/ma18194556

@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/ietacs68750.2025.11385763
 global_rank: 192
 harvested_title: Multi-Skin Tone Aware Skin Disease Classification Using Dual-Stream CNN-Transformer Fusion
   with Explainable Attention
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/ietacs68750.2025.11385763

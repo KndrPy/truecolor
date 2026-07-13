@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.30.2.023512
 global_rank: 233
 harvested_title: 'Hyperspectral imaging in neurosurgery: a review of systems, computational methods, and
   clinical applications.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.30.2.023512

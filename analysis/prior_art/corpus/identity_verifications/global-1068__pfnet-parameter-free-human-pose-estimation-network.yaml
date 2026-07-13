@@ -1,6 +1,7 @@
 candidate_key: doi:10.1117/1.oe.64.12.128103
 global_rank: 1068
 harvested_title: 'PFNet: parameter-free human pose estimation network'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.oe.64.12.128103

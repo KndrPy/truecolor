@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fendo.2024.1379130
 global_rank: 599
 harvested_title: The circadian syndrome is a better predictor for psoriasis than the metabolic syndrome
   via an explainable machine learning method - the NHANES survey during 2005-2006 and 2009-2014.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fendo.2024.1379130

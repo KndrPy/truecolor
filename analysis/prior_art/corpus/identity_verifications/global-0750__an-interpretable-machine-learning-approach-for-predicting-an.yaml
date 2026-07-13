@@ -2,6 +2,8 @@ candidate_key: doi:10.1186/s12891-025-08911-6
 global_rank: 750
 harvested_title: An interpretable machine learning approach for predicting and grading hip osteoarthritis
   using gait analysis.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1186/s12891-025-08911-6

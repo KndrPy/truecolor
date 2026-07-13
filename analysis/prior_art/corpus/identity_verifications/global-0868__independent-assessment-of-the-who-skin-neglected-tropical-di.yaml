@@ -2,6 +2,8 @@ candidate_key: doi:10.26633/rpsp.2026.40
 global_rank: 868
 harvested_title: Independent assessment of the WHO Skin Neglected Tropical Diseases application for leprosy
   detection.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.26633/rpsp.2026.40

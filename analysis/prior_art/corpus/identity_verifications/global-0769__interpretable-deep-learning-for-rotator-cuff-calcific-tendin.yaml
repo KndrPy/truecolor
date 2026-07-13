@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-51016-w
 global_rank: 769
 harvested_title: 'Interpretable deep learning for rotator cuff calcific tendinopathy diagnosis: a multi-center
   study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-51016-w

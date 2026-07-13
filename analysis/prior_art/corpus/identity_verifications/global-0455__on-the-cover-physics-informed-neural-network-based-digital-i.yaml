@@ -1,6 +1,8 @@
 candidate_key: doi:10.1007/s11340-025-01152-7
 global_rank: 455
 harvested_title: 'On the Cover: Physics Informed Neural Network Based Digital Image Correlation Method'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s11340-025-01152-7

@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-44959-7
 global_rank: 825
 harvested_title: Macroscopic polarimetric discrimination and quantification of antiangiogenic effect of
   AGRO aptamer and GK1 peptide in a preclinical melanoma model.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-44959-7

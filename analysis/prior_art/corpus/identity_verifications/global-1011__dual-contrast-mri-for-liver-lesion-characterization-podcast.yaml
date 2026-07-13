@@ -1,6 +1,8 @@
 candidate_key: doi:10.1148/rg.250113.podcast
 global_rank: 1011
 harvested_title: Dual-Contrast MRI for Liver Lesion Characterization | Podcast
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1148/rg.250113.podcast

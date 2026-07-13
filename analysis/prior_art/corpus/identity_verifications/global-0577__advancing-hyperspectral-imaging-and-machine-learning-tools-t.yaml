@@ -2,6 +2,8 @@ candidate_key: doi:10.1063/5.0240444
 global_rank: 577
 harvested_title: 'Advancing hyperspectral imaging and machine learning tools toward clinical adoption
   in tissue diagnostics: A comprehensive review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1063/5.0240444

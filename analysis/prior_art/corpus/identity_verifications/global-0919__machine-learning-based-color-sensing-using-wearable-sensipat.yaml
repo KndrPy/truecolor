@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s26092576
 global_rank: 919
 harvested_title: 'Machine-Learning-Based Color Sensing Using Wearable SENSIPATCH Spectrometer Module:
   An Experimental Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26092576

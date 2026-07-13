@@ -2,6 +2,7 @@ candidate_key: doi:10.5220/0010347305440551
 global_rank: 160
 harvested_title: '3D Reconstruction of Deformable Objects from RGB-D Cameras: An Omnidirectional Inward-facing
   Multi-camera System'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5220/0010347305440551

@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/j.pacs.2015.08.001
 global_rank: 642
 harvested_title: 'Review of photoacoustic flow imaging: its current state and its promises.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.pacs.2015.08.001

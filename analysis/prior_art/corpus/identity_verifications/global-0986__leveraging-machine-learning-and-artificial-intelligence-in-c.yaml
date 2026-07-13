@@ -2,6 +2,8 @@ candidate_key: doi:10.7759/cureus.98540
 global_rank: 986
 harvested_title: 'Leveraging Machine Learning and Artificial Intelligence in Cancer Diagnostics Imaging:
   A Systematic Review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.98540

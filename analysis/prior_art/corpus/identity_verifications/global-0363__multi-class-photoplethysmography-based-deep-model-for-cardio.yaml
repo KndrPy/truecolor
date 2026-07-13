@@ -1,6 +1,8 @@
 candidate_key: doi:10.1371/journal.pone.0347840
 global_rank: 363
 harvested_title: Multi class photoplethysmography-based deep model for cardiovascular disease classification.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0347840

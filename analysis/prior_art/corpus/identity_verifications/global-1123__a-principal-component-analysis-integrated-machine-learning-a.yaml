@@ -2,6 +2,10 @@ candidate_key: doi:10.1021/acs.jcim.5c02354.s001
 global_rank: 1123
 harvested_title: A Principal Component Analysis-Integrated Machine Learning Approach for Predicting Gas-Phase
   VUV/UV Absorption Spectra of Molecular Compounds
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acs.jcim.5c02354.s001

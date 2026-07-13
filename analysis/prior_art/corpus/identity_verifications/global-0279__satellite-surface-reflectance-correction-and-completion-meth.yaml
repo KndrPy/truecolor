@@ -2,6 +2,8 @@ candidate_key: doi:10.5194/egusphere-egu25-20830
 global_rank: 279
 harvested_title: Satellite Surface Reflectance correction and completion methodology by using Principal
   Component Analysis
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5194/egusphere-egu25-20830

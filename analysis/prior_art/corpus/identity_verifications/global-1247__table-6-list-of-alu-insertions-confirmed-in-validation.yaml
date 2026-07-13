@@ -1,6 +1,10 @@
 candidate_key: doi:10.7717/peerj.3046/table-6
 global_rank: 1247
 harvested_title: 'Table 6: List of Alu insertions confirmed in validation.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj.3046/table-6

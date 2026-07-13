@@ -1,6 +1,8 @@
 candidate_key: doi:10.3389/frai.2026.1825132
 global_rank: 891
 harvested_title: Adaptive Gating and Focal Debiasing for robust few-shot retinal disease classification.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/frai.2026.1825132

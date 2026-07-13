@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fimmu.2026.1853327
 global_rank: 364
 harvested_title: 'A two-stage workflow for vitiligo diagnosis: clinical characteristic classification
   and large language model (LLM)-based report generation.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fimmu.2026.1853327

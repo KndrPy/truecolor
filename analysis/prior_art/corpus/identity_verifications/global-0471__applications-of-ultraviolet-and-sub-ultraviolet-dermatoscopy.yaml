@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s13555-024-01104-4
 global_rank: 471
 harvested_title: 'Applications of Ultraviolet and Sub-ultraviolet Dermatoscopy in Neoplastic and Non-neoplastic
   Dermatoses: A Systematic Review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s13555-024-01104-4

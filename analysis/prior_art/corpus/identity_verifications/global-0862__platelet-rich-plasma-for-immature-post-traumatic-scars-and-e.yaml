@@ -2,6 +2,8 @@ candidate_key: doi:10.1371/journal.pone.0345754
 global_rank: 862
 harvested_title: 'Platelet-rich plasma for immature post-traumatic scars and early keloids: A scoping
   review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0345754

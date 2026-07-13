@@ -1,6 +1,10 @@
 candidate_key: title:isev2023 abstract book|year:2023
 global_rank: 1276
 harvested_title: ISEV2023 Abstract Book
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/cancers17223696
 global_rank: 969
 harvested_title: 'From Slide to Insight: The Emerging Alliance of Digital Pathology and AI in Melanoma
   Diagnostics.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/cancers17223696

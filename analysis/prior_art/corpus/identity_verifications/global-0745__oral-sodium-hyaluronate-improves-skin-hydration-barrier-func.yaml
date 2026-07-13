@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-025-32758-5
 global_rank: 745
 harvested_title: 'Oral sodium hyaluronate improves skin hydration, barrier function and signs of aging:
   a randomized, double-blind, placebo-controlled trial in 150 healthy adults.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-025-32758-5

@@ -1,6 +1,9 @@
 candidate_key: "title:pulse oximetry\u2014a perioperative perspective|year:2026"
 global_rank: 1268
 harvested_title: "Pulse Oximetry\u2014A Perioperative Perspective"
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

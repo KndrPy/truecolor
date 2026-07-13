@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.fochx.2026.103607
 global_rank: 351
 harvested_title: Hyperspectral imaging with machine learning for non-destructive prediction of quality
   attributes in Lanzhou frozen pears.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.fochx.2026.103607

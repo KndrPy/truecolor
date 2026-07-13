@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s41598-026-48855-y
 global_rank: 260
 harvested_title: Quantitative model for imaging single fiber reflectance spectroscopy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-48855-y

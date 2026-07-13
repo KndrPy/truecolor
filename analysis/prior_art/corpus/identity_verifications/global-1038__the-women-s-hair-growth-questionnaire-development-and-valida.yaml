@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.jaad.2008.11.445
 global_rank: 1038
 harvested_title: 'The women''s hair growth questionnaire: Development and validation of a patient-reported
   measure for treatment efficacy in androgenetic alopecia'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.jaad.2008.11.445

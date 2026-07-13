@@ -1,6 +1,8 @@
 candidate_key: doi:10.3389/frai.2026.1808770
 global_rank: 890
 harvested_title: Improved CNN with BiLSTM model for early melanoma and skin lesion classification.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/frai.2026.1808770

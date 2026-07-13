@@ -3,6 +3,8 @@ global_rank: 391
 harvested_title: 'A Spectrochemically Driven Study: Identifying Phenolic-Rich Extracts from &lt;i&gt;Helichrysum
   stoechas&lt;/i&gt;, &lt;i&gt;Lavandula pedunculata&lt;/i&gt;, and &lt;i&gt;Thymus mastichina&lt;/i&gt;
   with Potential to Revert Skin Aging Effects.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/ph18121889

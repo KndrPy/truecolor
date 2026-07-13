@@ -3,6 +3,10 @@ candidate_key: 'title:abstract book: 25th congress of the european hematology as
 global_rank: 1280
 harvested_title: 'Abstract Book: 25th Congress of the European Hematology Association Virtual Edition,
   2020'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

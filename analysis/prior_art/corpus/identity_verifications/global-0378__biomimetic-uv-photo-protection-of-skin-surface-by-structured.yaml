@@ -1,6 +1,8 @@
 candidate_key: doi:10.1016/j.mtbio.2025.101991
 global_rank: 378
 harvested_title: Biomimetic UV photo-protection of skin surface by structured epicuticular wax films.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.mtbio.2025.101991

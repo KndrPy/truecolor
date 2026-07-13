@@ -1,6 +1,8 @@
 candidate_key: doi:10.1109/acssc.2004.1399469
 global_rank: 1199
 harvested_title: Cramer-Rao bound for angular propagation parameter estimation in MIMO systems
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/acssc.2004.1399469

@@ -3,6 +3,10 @@ candidate_key: "title:deciphering \u201Cfalse maturity\u201D in mountain coffee:
 global_rank: 1264
 harvested_title: "Deciphering \u201CFalse Maturity\u201D in Mountain Coffee: A Multimodal Hyperspectral\
   \ Framework for Non-Destructive Sugar Content Assessment"
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

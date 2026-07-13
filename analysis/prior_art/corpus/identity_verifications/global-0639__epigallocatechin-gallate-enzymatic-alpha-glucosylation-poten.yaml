@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/molecules29225391
 global_rank: 639
 harvested_title: Epigallocatechin Gallate Enzymatic Alpha Glucosylation Potentiates Its Skin-Lightening
   Activity-Involvement of Skin Microbiota.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/molecules29225391

@@ -2,6 +2,7 @@ candidate_key: doi:10.18653/v1/2023.vardial-1.15
 global_rank: 490
 harvested_title: 'Dialect and Variant Identification as a Multi-Label Classification Task: A Proposal
   Based on Near-Duplicate Analysis'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.18653/v1/2023.vardial-1.15

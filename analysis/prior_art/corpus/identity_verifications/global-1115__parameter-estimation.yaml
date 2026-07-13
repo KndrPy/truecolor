@@ -1,6 +1,8 @@
 candidate_key: doi:10.1002/0470090154.ch3
 global_rank: 1115
 harvested_title: Parameter Estimation
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/0470090154.ch3

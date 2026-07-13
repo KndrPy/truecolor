@@ -2,6 +2,8 @@ candidate_key: doi:10.7717/peerj.21222
 global_rank: 927
 harvested_title: 'Skin-cancer screening preferences and trust in clinicians among outdoor enthusiasts:
   preference for specialist-led checks.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj.21222

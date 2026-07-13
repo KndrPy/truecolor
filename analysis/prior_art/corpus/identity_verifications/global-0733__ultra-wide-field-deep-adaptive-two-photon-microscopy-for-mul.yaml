@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s41377-026-02252-2
 global_rank: 733
 harvested_title: Ultra-wide-field, deep, adaptive two-photon microscopy for multi-scale neuronal imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41377-026-02252-2

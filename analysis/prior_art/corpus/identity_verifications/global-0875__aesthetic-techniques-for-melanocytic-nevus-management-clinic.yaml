@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmed.2026.1761270
 global_rank: 875
 harvested_title: 'Aesthetic techniques for melanocytic nevus management: clinical outcomes, cosmetic satisfaction,
   and safety-a systematic review and meta-analysis.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2026.1761270

@@ -1,6 +1,8 @@
 candidate_key: doi:10.1371/journal.pone.0340777
 global_rank: 861
 harvested_title: Multi-resolution tone mapping for high dynamic range medical ultrasound images.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0340777

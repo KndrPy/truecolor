@@ -1,6 +1,8 @@
 candidate_key: doi:10.25039/cie.ds.iifyhz7h
 global_rank: 1088
 harvested_title: Relative spectral power distributions of CIE illuminant D50
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.25039/cie.ds.iifyhz7h

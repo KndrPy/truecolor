@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.bios.3.1.015002
 global_rank: 844
 harvested_title: Label-free differentiation of classical and hypermobile Ehlers-Danlos syndromes using
   Mueller matrix polarimetry.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.bios.3.1.015002

@@ -1,6 +1,8 @@
 candidate_key: doi:10.32388/87unci
 global_rank: 1024
 harvested_title: Fitzpatrick Skin Type VI
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.32388/87unci

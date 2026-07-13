@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/bioengineering12080892
 global_rank: 386
 harvested_title: Evaluating SnapshotNIR for Tissue Oxygenation Measurement Across Skin Types After Mastectomy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/bioengineering12080892

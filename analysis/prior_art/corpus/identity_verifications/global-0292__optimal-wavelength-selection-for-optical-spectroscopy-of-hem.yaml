@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.23.7.071202
 global_rank: 292
 harvested_title: Optimal wavelength selection for optical spectroscopy of hemoglobin and water within
   a simulated light-scattering tissue
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.23.7.071202

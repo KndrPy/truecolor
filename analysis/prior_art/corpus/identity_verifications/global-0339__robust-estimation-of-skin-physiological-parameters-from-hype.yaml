@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.30.1.016004
 global_rank: 339
 harvested_title: Robust estimation of skin physiological parameters from hyperspectral images using Bayesian
   neural networks.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.30.1.016004

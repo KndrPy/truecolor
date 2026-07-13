@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s26030815
 global_rank: 373
 harvested_title: Scattering Coefficient Estimation Using Thin-Film Phantoms with a Spectral-Domain Dental
   OCT System.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26030815

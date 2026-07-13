@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fnins.2022.1024599
 global_rank: 993
 harvested_title: An integrated method for color correction based on color constancy for early mural images
   in Mogao Grottoes.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fnins.2022.1024599

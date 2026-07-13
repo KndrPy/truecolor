@@ -1,6 +1,8 @@
 candidate_key: doi:10.36227/techrxiv.175616666.63799213/v1
 global_rank: 278
 harvested_title: 'Labels4Rails: A Railway Image Annotation Tool and Associated Reference Dataset'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.36227/techrxiv.175616666.63799213/v1

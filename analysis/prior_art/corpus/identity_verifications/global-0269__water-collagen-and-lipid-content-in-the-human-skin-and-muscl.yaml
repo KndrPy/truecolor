@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/advs.202505619
 global_rank: 269
 harvested_title: Water, Collagen, and Lipid Content in the Human Skin and Muscles Assessed with Near-Infrared
   Diffuse Reflectance Spectroscopy and Multi-Spectral Optoacoustic Tomography.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/advs.202505619

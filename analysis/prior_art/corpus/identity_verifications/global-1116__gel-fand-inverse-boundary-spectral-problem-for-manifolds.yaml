@@ -1,6 +1,8 @@
 candidate_key: doi:10.1201/9781420036220-6
 global_rank: 1116
 harvested_title: Gel'fand inverse boundary spectral problem for manifolds
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1201/9781420036220-6

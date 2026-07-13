@@ -2,6 +2,8 @@ candidate_key: doi:10.1177/20552076261462641
 global_rank: 851
 harvested_title: 'A clinically aligned multimodal workflow framework for chronic wound assessment: An
   evidence-informed conceptual modeling study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1177/20552076261462641

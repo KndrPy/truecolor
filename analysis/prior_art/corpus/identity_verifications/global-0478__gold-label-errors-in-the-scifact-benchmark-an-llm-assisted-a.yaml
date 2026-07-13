@@ -1,6 +1,7 @@
 candidate_key: doi:10.18653/v1/2026.bionlp-1.9
 global_rank: 478
 harvested_title: 'Gold Label Errors in the SciFact Benchmark: An LLM-Assisted Annotation Audit'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.18653/v1/2026.bionlp-1.9

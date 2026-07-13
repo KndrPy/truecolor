@@ -3,6 +3,9 @@ candidate_key: "title:hair number per follicular unit as a marker of treatment r
 global_rank: 1266
 harvested_title: "Hair Number per Follicular Unit as a Marker of Treatment Response to Combined Autologous\
   \ Scalp\u2010Derived Micrografts and Allogeneic SHED\u2010CM in Male Androgenetic Alopecia"
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

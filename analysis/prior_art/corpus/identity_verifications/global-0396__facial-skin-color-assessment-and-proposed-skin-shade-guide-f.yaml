@@ -2,6 +2,8 @@ candidate_key: doi:10.4103/jips.jips_194_24
 global_rank: 396
 harvested_title: Facial skin color assessment and proposed skin shade guide for maxillofacial prosthesis
   using cluster analysis in a cohort of Indian adults.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.4103/jips.jips_194_24

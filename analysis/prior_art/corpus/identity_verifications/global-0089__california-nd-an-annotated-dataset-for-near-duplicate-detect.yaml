@@ -1,6 +1,7 @@
 candidate_key: doi:10.1109/qomex.2013.6603227
 global_rank: 89
 harvested_title: 'California-ND: An annotated dataset for near-duplicate detection in personal photo collections'
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/qomex.2013.6603227

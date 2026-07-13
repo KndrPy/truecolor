@@ -3,6 +3,10 @@ candidate_key: 'title:43rd annual meeting 13-17 february 1999 baltimore, marylan
 global_rank: 1284
 harvested_title: '43rd Annual Meeting 13-17 February 1999 Baltimore, Maryland : February 16, 1999 Tuesday
   Posters, Part 2'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

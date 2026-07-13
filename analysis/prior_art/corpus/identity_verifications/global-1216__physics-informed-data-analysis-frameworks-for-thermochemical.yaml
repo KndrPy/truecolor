@@ -1,6 +1,9 @@
 candidate_key: doi:10.63959/chalmers.dt/5842
 global_rank: 1216
 harvested_title: Physics-Informed Data-Analysis Frameworks for Thermochemical Conversion Processes
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.63959/chalmers.dt/5842

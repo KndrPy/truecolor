@@ -2,6 +2,10 @@ candidate_key: doi:10.7717/peerj-cs.1480/table-2
 global_rank: 563
 harvested_title: 'Table 2: Test set accuracy of active learning methods with the simple label quality
   control method on the MNIST dataset.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj-cs.1480/table-2

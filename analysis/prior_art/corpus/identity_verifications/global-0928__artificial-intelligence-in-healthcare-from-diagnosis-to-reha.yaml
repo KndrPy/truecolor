@@ -1,6 +1,8 @@
 candidate_key: doi:10.7759/cureus.102286
 global_rank: 928
 harvested_title: 'Artificial Intelligence in Healthcare: From Diagnosis to Rehabilitation.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.102286

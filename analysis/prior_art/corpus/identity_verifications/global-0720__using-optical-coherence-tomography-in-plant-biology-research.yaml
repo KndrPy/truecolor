@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s25082467
 global_rank: 720
 harvested_title: 'Using Optical Coherence Tomography in Plant Biology Research: Review and Prospects.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s25082467

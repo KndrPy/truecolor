@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.593027
 global_rank: 858
 harvested_title: Depth-resolved phase velocity estimation in layered tissue based on an efficient additive
   attention network with surface acoustic wave - optical coherence elastography.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.593027

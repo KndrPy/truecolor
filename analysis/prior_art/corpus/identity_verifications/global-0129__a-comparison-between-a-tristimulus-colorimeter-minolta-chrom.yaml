@@ -3,6 +3,7 @@ global_rank: 129
 harvested_title: "A comparison between a tristimulus colorimeter (Minolta ChromaMeter CR\u2010200) and\
   \ two spectrophotometers (Minolta Spectrophotometer CM\u2010508i and CM\u20102002). Quantification of\
   \ UV\u2010B induced erythema in a hairless guinea pig model"
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/j.1600-0846.1997.tb00191.x

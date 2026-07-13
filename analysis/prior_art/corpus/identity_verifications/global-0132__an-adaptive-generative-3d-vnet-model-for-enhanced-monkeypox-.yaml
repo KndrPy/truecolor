@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s10278-025-01594-4
 global_rank: 132
 harvested_title: An Adaptive Generative 3D VNet Model for Enhanced Monkeypox Lesion Classification Using
   Deep Learning and Augmented Image Fusion.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s10278-025-01594-4

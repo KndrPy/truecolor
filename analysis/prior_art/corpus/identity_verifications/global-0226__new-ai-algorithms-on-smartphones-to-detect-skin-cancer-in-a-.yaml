@@ -2,6 +2,8 @@ candidate_key: doi:10.1371/journal.pone.0280670
 global_rank: 226
 harvested_title: New AI-algorithms on smartphones to detect skin cancer in a clinical setting-A validation
   study.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0280670

@@ -2,6 +2,8 @@ candidate_key: doi:10.2139/ssrn.7102071
 global_rank: 1181
 harvested_title: 'Protecting Customs Revenue with Scarce Audit Capacity: Selection-Robust Targeting of
   Post-Clearance Undervaluation under Label Bias'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2139/ssrn.7102071

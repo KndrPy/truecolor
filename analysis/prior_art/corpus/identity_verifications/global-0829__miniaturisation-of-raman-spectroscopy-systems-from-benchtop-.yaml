@@ -1,6 +1,8 @@
 candidate_key: doi:10.1039/d5lc00836k
 global_rank: 829
 harvested_title: 'Miniaturisation of Raman spectroscopy systems: from benchtop to backpocket.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1039/d5lc00836k

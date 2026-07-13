@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s41566-026-01891-6
 global_rank: 818
 harvested_title: Optical convolutional spectrometer.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41566-026-01891-6

@@ -3,6 +3,10 @@ candidate_key: 'title:the cutaneous mirror: leveraging drug-induced skin phenoty
 global_rank: 1290
 harvested_title: 'The cutaneous mirror: leveraging drug-induced skin phenotypes as early visual risk signals
   for systemic toxicity, a comprehensive review'
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

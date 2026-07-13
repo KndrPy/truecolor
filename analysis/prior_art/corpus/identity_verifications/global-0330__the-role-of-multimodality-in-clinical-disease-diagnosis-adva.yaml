@@ -1,6 +1,8 @@
 candidate_key: doi:10.3389/fpubh.2026.1788454
 global_rank: 330
 harvested_title: 'The role of multimodality in clinical disease diagnosis: advances, challenges, and opportunities.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fpubh.2026.1788454

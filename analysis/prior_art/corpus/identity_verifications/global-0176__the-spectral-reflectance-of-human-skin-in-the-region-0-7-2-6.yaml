@@ -1,6 +1,8 @@
 candidate_key: doi:10.21236/ad0059875
 global_rank: 176
 harvested_title: THE SPECTRAL REFLECTANCE OF HUMAN SKIN IN THE REGION 0.7-2.6 MU
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21236/ad0059875

@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.ohx.2026.e00787
 global_rank: 804
 harvested_title: A low-cost three-wavelength illumination system for camera-based photoplethysmography
   imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.ohx.2026.e00787

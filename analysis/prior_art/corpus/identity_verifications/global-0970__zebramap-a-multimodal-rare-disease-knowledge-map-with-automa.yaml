@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/diagnostics16010107
 global_rank: 970
 harvested_title: 'ZebraMap: A Multimodal Rare Disease Knowledge Map with Automated Data Aggregation &amp;
   LLM-Enriched Information Extraction Pipeline.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics16010107

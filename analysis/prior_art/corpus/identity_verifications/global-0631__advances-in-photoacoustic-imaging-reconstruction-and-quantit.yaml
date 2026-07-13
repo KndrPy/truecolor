@@ -2,6 +2,8 @@ candidate_key: doi:10.1186/s42492-025-00213-x
 global_rank: 631
 harvested_title: Advances in photoacoustic imaging reconstruction and quantitative analysis for biomedical
   applications.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1186/s42492-025-00213-x

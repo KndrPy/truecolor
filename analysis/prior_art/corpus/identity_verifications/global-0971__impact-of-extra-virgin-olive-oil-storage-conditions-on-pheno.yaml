@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/foods14122104
 global_rank: 971
 harvested_title: Impact of Extra-Virgin Olive Oil Storage Conditions on Phenolic Content and Wound-Healing
   Properties.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/foods14122104

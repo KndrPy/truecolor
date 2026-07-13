@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41746-025-01770-4
 global_rank: 141
 harvested_title: 'Beyond Fitzpatrick: automated artificial intelligence-based skin tone analysis in dermatological
   patients.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41746-025-01770-4

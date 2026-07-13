@@ -2,6 +2,8 @@ candidate_key: doi:10.2139/ssrn.5626139
 global_rank: 1015
 harvested_title: Low-light underwater image enhancement algorithm based on improved white balance and
   RRDNet
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2139/ssrn.5626139

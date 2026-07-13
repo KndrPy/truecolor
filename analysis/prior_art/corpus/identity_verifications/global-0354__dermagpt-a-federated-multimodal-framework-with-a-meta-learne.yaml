@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41598-026-38715-0
 global_rank: 354
 harvested_title: DermaGPT a federated multimodal framework with a meta learned trust function for interpretable
   dermatology diagnostics.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41598-026-38715-0

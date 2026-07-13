@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s25030675
 global_rank: 657
 harvested_title: 'Trends in Snapshot Spectral Imaging: Systems, Processing, and Quality.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s25030675

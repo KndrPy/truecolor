@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/nicc.70433
 global_rank: 840
 harvested_title: 'Accuracy and Bias of Pulse Oximetry in the Intensive Care Unit: A Prospective Observational
   Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/nicc.70433

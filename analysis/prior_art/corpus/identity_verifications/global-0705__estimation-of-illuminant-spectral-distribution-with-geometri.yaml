@@ -2,6 +2,8 @@ candidate_key: doi:10.1109/icpr.1998.711981
 global_rank: 705
 harvested_title: Estimation of illuminant spectral distribution with geometrical information from spectral
   image
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/icpr.1998.711981

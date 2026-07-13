@@ -3,6 +3,9 @@ candidate_key: 'title:artificial intelligence, deep learning, and computer visio
 global_rank: 1262
 harvested_title: 'Artificial Intelligence, Deep Learning, and Computer Vision in Hysteroscopy: A Systematic
   Review'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

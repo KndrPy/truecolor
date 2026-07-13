@@ -1,6 +1,8 @@
 candidate_key: doi:10.1111/j.1440-0960.2005.ajd_metvix_p5.pdf.x
 global_rank: 1076
 harvested_title: Illumination
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/j.1440-0960.2005.ajd_metvix_p5.pdf.x

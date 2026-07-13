@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s00216-025-05932-x
 global_rank: 933
 harvested_title: Green and simple microextraction method based on deep eutectic solvent-assisted smartphone
   digital imaging colorimetry (SDIC) for Rhodamine B analysis in food products.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s00216-025-05932-x

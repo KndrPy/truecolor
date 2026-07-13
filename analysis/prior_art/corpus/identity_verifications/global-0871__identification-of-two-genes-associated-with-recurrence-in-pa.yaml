@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fgene.2026.1784429
 global_rank: 871
 harvested_title: Identification of two genes associated with recurrence in Paget's disease and construction
   of a predictive model.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fgene.2026.1784429

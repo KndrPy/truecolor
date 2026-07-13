@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s13139-023-00821-6
 global_rank: 624
 harvested_title: Classification of Pulmonary Nodules in 2-[<sup>18</sup>F]FDG PET/CT Images with a 3D
   Convolutional Neural Network.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s13139-023-00821-6

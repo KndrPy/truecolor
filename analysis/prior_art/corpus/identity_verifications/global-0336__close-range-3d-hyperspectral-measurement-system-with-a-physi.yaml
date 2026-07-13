@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s26113396
 global_rank: 336
 harvested_title: Close-Range 3D Hyperspectral Measurement System with a Physics-Guided Spectral Correction
   Model.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26113396

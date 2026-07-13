@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.31.4.045001
 global_rank: 360
 harvested_title: Quantitative assessment of rheumatoid arthritis treatment response using short-wave infrared
   hyperspectral imaging soft abundance scoring.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.31.4.045001

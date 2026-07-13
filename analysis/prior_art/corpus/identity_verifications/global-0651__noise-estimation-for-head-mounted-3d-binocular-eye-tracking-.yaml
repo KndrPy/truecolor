@@ -2,6 +2,8 @@ candidate_key: doi:10.3758/s13428-023-02150-0
 global_rank: 651
 harvested_title: Noise estimation for head-mounted 3D binocular eye tracking using Pupil Core eye-tracking
   goggles.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3758/s13428-023-02150-0

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/jcm15031306
 global_rank: 907
 harvested_title: 'Mapping Executive Function Performance Based on Resting-State EEG in Healthy Individuals:
   A Systematic and Mechanistic Review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jcm15031306

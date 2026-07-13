@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fbioe.2025.1732519
 global_rank: 959
 harvested_title: Precision measurement of stratum corneum thickness in OCT images using variational autoencoders
   and advanced DSP techniques.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fbioe.2025.1732519

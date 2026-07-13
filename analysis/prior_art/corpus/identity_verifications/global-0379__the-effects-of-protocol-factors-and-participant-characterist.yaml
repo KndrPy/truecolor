@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.ynirp.2025.100276
 global_rank: 379
 harvested_title: The effects of protocol factors and participant characteristics on functional near-infrared
   spectroscopy data quality after stroke.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.ynirp.2025.100276

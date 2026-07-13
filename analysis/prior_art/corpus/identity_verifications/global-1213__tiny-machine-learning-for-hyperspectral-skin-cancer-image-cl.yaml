@@ -1,6 +1,8 @@
 candidate_key: doi:10.2139/ssrn.5537978
 global_rank: 1213
 harvested_title: Tiny Machine Learning for Hyperspectral Skin Cancer Image Classification
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2139/ssrn.5537978

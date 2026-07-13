@@ -2,6 +2,10 @@ candidate_key: doi:10.7717/peerj-cs.970/fig-7
 global_rank: 1158
 harvested_title: "Figure 7: (A\u2013F) Color image denoising results of one image \u201C163085\u201D from\
   \ the CBSD68 dataset with noise level 50 for different methods."
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj-cs.970/fig-7

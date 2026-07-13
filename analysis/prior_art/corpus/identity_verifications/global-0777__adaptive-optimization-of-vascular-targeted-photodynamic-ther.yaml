@@ -2,6 +2,8 @@ candidate_key: doi:10.34133/bmef.0225
 global_rank: 777
 harvested_title: Adaptive Optimization of Vascular-Targeted Photodynamic Therapy Efficiency Based on Hyperspectral-Photoacoustic
   Dual-Modality Imaging Feedback.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.34133/bmef.0225

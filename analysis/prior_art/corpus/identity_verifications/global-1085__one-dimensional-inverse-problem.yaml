@@ -1,6 +1,8 @@
 candidate_key: doi:10.1201/9781420036220-4
 global_rank: 1085
 harvested_title: One-dimensional inverse problem
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1201/9781420036220-4

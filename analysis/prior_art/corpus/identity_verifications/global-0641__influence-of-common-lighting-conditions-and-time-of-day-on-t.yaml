@@ -2,6 +2,8 @@ candidate_key: doi:10.1371/journal.pone.0239553
 global_rank: 641
 harvested_title: Influence of common lighting conditions and time-of-day on the effort-related cardiac
   response.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0239553

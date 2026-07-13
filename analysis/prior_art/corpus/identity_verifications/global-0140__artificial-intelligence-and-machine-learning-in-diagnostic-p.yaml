@@ -2,6 +2,8 @@ candidate_key: doi:10.7759/cureus.105167
 global_rank: 140
 harvested_title: 'Artificial Intelligence and Machine Learning in Diagnostic Pathology: A Systematic Review
   of Applications, Challenges, and Clinical Implications.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7759/cureus.105167

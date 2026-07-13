@@ -1,6 +1,8 @@
 candidate_key: doi:10.3389/fonc.2025.1468753
 global_rank: 964
 harvested_title: 'Advancements in real-time oncology diagnosis: harnessing AI and image fusion techniques.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fonc.2025.1468753

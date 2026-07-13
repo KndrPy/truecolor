@@ -1,6 +1,9 @@
 candidate_key: doi:10.70675/e541d247z613az47dcz960az564bda672628
 global_rank: 1218
 harvested_title: Information-theoretic limits of covert communication over additive-noise channels
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.70675/e541d247z613az47dcz960az564bda672628

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/diagnostics16101546
 global_rank: 900
 harvested_title: 'SULBA: A Task-Agnostic Data Augmentation Framework for Deep Learning in Medical Image
   Analysis.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics16101546

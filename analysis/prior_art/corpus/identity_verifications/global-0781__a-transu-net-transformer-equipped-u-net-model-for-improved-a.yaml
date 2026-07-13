@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/diagnostics15141752
 global_rank: 781
 harvested_title: "A\u039AtransU-Net: Transformer-Equipped U-Net Model for Improved Actinic Keratosis Detection\
   \ in Clinical Photography."
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics15141752

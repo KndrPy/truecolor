@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/diagnostics15212718
 global_rank: 594
 harvested_title: 'From Innovation to Application: Can Emerging Imaging Techniques Transform Breast Cancer
   Diagnosis?'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/diagnostics15212718

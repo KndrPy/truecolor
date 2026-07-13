@@ -1,6 +1,10 @@
 candidate_key: doi:10.17816/dv640815-4229100
 global_rank: 1095
 harvested_title: Fig. 3. Superficial and deep skin analysis using 8-spectral imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.17816/dv640815-4229100

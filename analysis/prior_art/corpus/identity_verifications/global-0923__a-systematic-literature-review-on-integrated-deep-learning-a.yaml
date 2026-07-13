@@ -2,6 +2,8 @@ candidate_key: doi:10.34133/csbj.0023
 global_rank: 923
 harvested_title: A Systematic Literature Review on Integrated Deep Learning and Multiagent Vision-Language
   Frameworks for Pathology Image Analysis and Report Generation.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.34133/csbj.0023

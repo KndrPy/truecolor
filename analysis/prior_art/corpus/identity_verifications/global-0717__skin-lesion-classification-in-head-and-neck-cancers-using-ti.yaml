@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/cancers17101622
 global_rank: 717
 harvested_title: Skin Lesion Classification in Head and Neck Cancers Using Tissue Index Images Derived
   from Hyperspectral Imaging.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/cancers17101622

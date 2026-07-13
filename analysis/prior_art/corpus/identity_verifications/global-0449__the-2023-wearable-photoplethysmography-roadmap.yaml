@@ -1,6 +1,8 @@
 candidate_key: doi:10.1088/1361-6579/acead2
 global_rank: 449
 harvested_title: The 2023 wearable photoplethysmography roadmap.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1088/1361-6579/acead2

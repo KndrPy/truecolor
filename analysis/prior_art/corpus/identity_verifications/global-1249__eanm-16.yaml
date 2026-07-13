@@ -1,6 +1,9 @@
 candidate_key: doi:10.1007/s00259-016-3484-4
 global_rank: 1249
 harvested_title: EANM'16.
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s00259-016-3484-4

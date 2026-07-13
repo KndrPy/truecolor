@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/pde.15902
 global_rank: 304
 harvested_title: 'Objective Assessment and Quantification of Skin Color and Melanin in Neonates and Infants:
   A State-Of-The-Art Review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/pde.15902

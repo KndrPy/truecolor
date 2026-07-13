@@ -2,6 +2,8 @@ candidate_key: doi:10.2172/15002102
 global_rank: 212
 harvested_title: Reflectance, Optical Properties, and Stability of Molybdenum/Strontium and Molybdenum/Yttrium
   Multilayer Mirrors
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2172/15002102

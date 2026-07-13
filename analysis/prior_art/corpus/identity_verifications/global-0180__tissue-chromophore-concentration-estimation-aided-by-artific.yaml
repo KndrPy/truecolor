@@ -2,6 +2,7 @@ candidate_key: doi:10.1117/12.2615428
 global_rank: 180
 harvested_title: Tissue chromophore concentration estimation aided by artificial neural network trained
   with finite element modelled diffuse reflectance spectrum
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/12.2615428

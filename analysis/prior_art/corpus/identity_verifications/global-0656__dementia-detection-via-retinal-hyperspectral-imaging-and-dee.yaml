@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/bioengineering12121362
 global_rank: 656
 harvested_title: 'Dementia Detection via Retinal Hyperspectral Imaging and Deep Learning: Clinical Dataset
   Analysis and Comparative Evaluation of Multiple Architectures.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/bioengineering12121362

@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s40820-023-01099-1
 global_rank: 209
 harvested_title: Tailoring Food Biopolymers into Biogels for Regenerative Wound Healing and Versatile
   Skin Bioelectronics.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s40820-023-01099-1

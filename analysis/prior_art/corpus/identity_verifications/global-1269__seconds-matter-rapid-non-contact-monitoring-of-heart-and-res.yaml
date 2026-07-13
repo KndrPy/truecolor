@@ -3,6 +3,9 @@ candidate_key: 'title:seconds matter: rapid non-contact monitoring of heart and 
 global_rank: 1269
 harvested_title: 'Seconds Matter: Rapid Non-Contact Monitoring of Heart and Respiratory Rate from Face
   Videos'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

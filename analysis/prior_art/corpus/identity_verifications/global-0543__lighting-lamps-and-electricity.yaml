@@ -1,6 +1,8 @@
 candidate_key: doi:10.5040/9781501374616.ch-6
 global_rank: 543
 harvested_title: Lighting, Lamps, and Electricity
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.5040/9781501374616.ch-6

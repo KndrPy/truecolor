@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/jcm15062448
 global_rank: 908
 harvested_title: Minimal One-Quarter Incision and Four-Step (MOQIF) Excision Method for Subcutaneous Lipoma.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jcm15062448

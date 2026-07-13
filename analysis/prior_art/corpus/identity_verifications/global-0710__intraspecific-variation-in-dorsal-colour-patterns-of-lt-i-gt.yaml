@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/ece3.71944
 global_rank: 710
 harvested_title: Intraspecific Variation in Dorsal Colour Patterns of &lt;i&gt;Amphibolurus muricatus&lt;/i&gt;
   Lizards From the Perspective of Relevant Observers.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/ece3.71944

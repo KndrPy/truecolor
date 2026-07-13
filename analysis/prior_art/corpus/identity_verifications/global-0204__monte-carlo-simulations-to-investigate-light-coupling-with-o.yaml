@@ -1,6 +1,9 @@
 candidate_key: doi:10.11606/t.76.2021.tde-02092021-160416
 global_rank: 204
 harvested_title: Monte Carlo simulations to investigate light coupling with optical skin phantom
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.11606/t.76.2021.tde-02092021-160416

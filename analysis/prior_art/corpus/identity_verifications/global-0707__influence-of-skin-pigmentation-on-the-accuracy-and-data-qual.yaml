@@ -2,6 +2,8 @@ candidate_key: doi:10.1007/s00421-025-05977-x
 global_rank: 707
 harvested_title: Influence of skin pigmentation on the accuracy and data quality of photoplethysmographic
   heart rate measurement during exercise.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/s00421-025-05977-x

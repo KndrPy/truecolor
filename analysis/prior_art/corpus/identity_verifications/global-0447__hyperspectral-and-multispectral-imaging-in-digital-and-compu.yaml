@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.386338
 global_rank: 447
 harvested_title: 'Hyperspectral and multispectral imaging in digital and computational pathology: a systematic
   review [Invited].'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.386338

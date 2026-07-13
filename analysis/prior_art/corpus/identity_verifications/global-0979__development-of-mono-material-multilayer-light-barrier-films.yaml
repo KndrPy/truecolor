@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/polym17243279
 global_rank: 979
 harvested_title: Development of Mono-Material Multilayer Light Barrier Films.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/polym17243279

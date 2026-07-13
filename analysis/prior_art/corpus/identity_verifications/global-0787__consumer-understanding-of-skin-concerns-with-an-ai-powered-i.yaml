@@ -1,6 +1,8 @@
 candidate_key: doi:10.1001/jamadermatol.2026.0597
 global_rank: 787
 harvested_title: Consumer Understanding of Skin Concerns With an AI-Powered Informational Tool.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1001/jamadermatol.2026.0597

@@ -2,6 +2,8 @@ candidate_key: doi:10.21037/tcr-2025-aw-2438
 global_rank: 863
 harvested_title: 'Diagnostic performances of skin cancers using intensity- and gradient-based features
   with optical coherence tomography: a pilot study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21037/tcr-2025-aw-2438

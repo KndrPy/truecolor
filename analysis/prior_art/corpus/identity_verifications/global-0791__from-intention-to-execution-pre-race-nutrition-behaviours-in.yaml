@@ -2,6 +2,8 @@ candidate_key: doi:10.1002/ejsc.70193
 global_rank: 791
 harvested_title: 'From Intention to Execution: Pre-Race Nutrition Behaviours, Influences, and Performance
   Outcomes in Female Endurance Athletes at the IRONMAN World Championships.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1002/ejsc.70193

@@ -1,6 +1,8 @@
 candidate_key: doi:10.1167/jov.21.8.4
 global_rank: 514
 harvested_title: 'Translucency perception: A review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1167/jov.21.8.4

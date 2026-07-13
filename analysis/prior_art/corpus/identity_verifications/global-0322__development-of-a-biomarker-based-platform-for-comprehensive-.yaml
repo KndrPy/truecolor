@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/srt.13908
 global_rank: 322
 harvested_title: Development of a biomarker-based platform for comprehensive skin characterization using
   minimally invasive skin sampling and quantitative real-time PCR.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/srt.13908

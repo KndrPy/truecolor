@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/jocd.70900
 global_rank: 839
 harvested_title: 'Artificial Intelligence-Augmented Morphometric Reporting for Standardized Facial Aesthetic
   Treatment Planning: A Multi-Rater Reliability Study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/jocd.70900

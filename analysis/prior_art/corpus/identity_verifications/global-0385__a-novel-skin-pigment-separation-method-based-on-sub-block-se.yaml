@@ -1,6 +1,8 @@
 candidate_key: doi:10.1371/journal.pone.0332849
 global_rank: 385
 harvested_title: A novel skin pigment separation method based on sub-block selection and local clustering.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1371/journal.pone.0332849

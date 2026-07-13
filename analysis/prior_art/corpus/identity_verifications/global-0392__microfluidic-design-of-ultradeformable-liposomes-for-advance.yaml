@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/pharmaceutics17111390
 global_rank: 392
 harvested_title: Microfluidic Design of Ultradeformable Liposomes for Advanced Skin Delivery of &lt;i&gt;Stellaria
   media&lt;/i&gt; Phytocomplex.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/pharmaceutics17111390

@@ -2,6 +2,10 @@ candidate_key: doi:10.7717/peerj-cs.3171/fig-1
 global_rank: 564
 harvested_title: 'Figure 1: Sample dermatological images Fitzpatrick17k dataset representation of benign
   (A, B), malignant (C, D), and non-neoplastic (E, F) skin lesions (Groh, 2021).'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj-cs.3171/fig-1

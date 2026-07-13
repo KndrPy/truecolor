@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41746-025-02329-z
 global_rank: 736
 harvested_title: 'Comparing decentralized machine learning and AI clinical models to local and centralized
   alternatives: a systematic review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41746-025-02329-z

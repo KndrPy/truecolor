@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fnmol.2023.1163447
 global_rank: 308
 harvested_title: Fiberoptic hemodynamic spectroscopy reveals abnormal cerebrovascular reactivity in a
   freely moving mouse model of Alzheimer's disease.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fnmol.2023.1163447

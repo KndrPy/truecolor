@@ -1,6 +1,8 @@
 candidate_key: doi:10.3389/fnins.2022.1031546
 global_rank: 309
 harvested_title: Research on the deep learning-based exposure invariant spectral reconstruction method.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fnins.2022.1031546

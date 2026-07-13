@@ -2,6 +2,8 @@ candidate_key: doi:10.21203/rs.2.10431/v1
 global_rank: 1031
 harvested_title: Benefit of contrast-enhanced PET/CT versus non-contrast-enhanced PET/CT relative to lesion
   detection, lesion characterization, and diagnostic accuracy in patients with cancer
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.21203/rs.2.10431/v1

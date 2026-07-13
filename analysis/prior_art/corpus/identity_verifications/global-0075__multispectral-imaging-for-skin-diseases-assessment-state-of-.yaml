@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s23083888
 global_rank: 75
 harvested_title: Multispectral Imaging for Skin Diseases Assessment-State of the Art and Perspectives.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s23083888

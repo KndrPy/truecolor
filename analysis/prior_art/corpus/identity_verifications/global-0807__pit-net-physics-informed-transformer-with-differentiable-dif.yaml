@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.pacs.2026.100846
 global_rank: 807
 harvested_title: 'PIT-Net: Physics-informed transformer with differentiable diffusion constraints for
   quantitative photoacoustic tomography of deep tissues.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.pacs.2026.100846

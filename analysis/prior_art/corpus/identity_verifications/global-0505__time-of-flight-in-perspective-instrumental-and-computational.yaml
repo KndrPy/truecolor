@@ -2,6 +2,8 @@ candidate_key: doi:10.1109/trpms.2021.3084539
 global_rank: 505
 harvested_title: 'Time of Flight in Perspective: Instrumental and Computational Aspects of Time Resolution
   in Positron Emission Tomography.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/trpms.2021.3084539

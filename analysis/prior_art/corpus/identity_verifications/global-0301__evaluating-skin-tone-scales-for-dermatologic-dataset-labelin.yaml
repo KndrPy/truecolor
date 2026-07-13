@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41746-025-02245-2
 global_rank: 301
 harvested_title: 'Evaluating skin tone scales for dermatologic dataset labeling: a prospective-comparative
   study.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41746-025-02245-2

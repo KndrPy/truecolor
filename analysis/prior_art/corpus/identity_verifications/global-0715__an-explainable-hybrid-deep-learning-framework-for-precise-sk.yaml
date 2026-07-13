@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fmed.2025.1681542
 global_rank: 715
 harvested_title: An explainable hybrid deep learning framework for precise skin lesion segmentation and
   multi-class classification.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2025.1681542

@@ -1,6 +1,9 @@
 candidate_key: doi:10.70675/1a824e38zb1e5z43f9z9c78z57bdbd6cf48e
 global_rank: 1040
 harvested_title: Image annotation
+harvest_metadata_issues:
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.70675/1a824e38zb1e5z43f9z9c78z57bdbd6cf48e

@@ -2,6 +2,8 @@ candidate_key: doi:10.26226/m.6437c11f7d8705001200b962
 global_rank: 439
 harvested_title: ISIDLB1671 - Large-scale skin scRNA-seq profiling highlights distinct Body Site-specific
   ligand-receptor interactions and pathways in keratinocytes
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.26226/m.6437c11f7d8705001200b962

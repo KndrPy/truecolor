@@ -1,6 +1,8 @@
 candidate_key: doi:10.1038/s41597-025-04382-5
 global_rank: 17
 harvested_title: Investigating the Quality of DermaMNIST and Fitzpatrick17k Dermatological Image Datasets.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41597-025-04382-5

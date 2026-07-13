@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fcimb.2025.1561590
 global_rank: 646
 harvested_title: 'Skin microbiome-biophysical association: a first integrative approach to classifying
   Korean skin types and aging groups.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fcimb.2025.1561590

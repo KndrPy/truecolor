@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/molecules31081318
 global_rank: 913
 harvested_title: 'An Updated and Comprehensive Review of &lt;i&gt;Phellodendri amurensis&lt;/i&gt; Cortex:
   Ethnobotany, Geographical Distribution, Phytochemistry, Quality Control, and Pharmacology.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/molecules31081318

@@ -1,6 +1,8 @@
 candidate_key: doi:10.31235/osf.io/pdf4c
 global_rank: 1002
 harvested_title: The Monk Skin Tone Scale
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.31235/osf.io/pdf4c

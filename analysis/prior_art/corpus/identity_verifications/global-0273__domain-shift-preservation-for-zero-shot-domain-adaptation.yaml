@@ -1,6 +1,7 @@
 candidate_key: doi:10.1109/tip.2021.3084354
 global_rank: 273
 harvested_title: Domain Shift Preservation for Zero-Shot Domain Adaptation
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/tip.2021.3084354

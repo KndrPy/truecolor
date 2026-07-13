@@ -2,6 +2,8 @@ candidate_key: doi:10.1038/s41567-025-03111-4
 global_rank: 734
 harvested_title: '&lt;i&gt;E. coli&lt;/i&gt; chemosensing accuracy is not limited by stochastic molecule
   arrivals.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1038/s41567-025-03111-4

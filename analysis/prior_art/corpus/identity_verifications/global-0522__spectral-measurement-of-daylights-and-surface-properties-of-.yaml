@@ -1,6 +1,8 @@
 candidate_key: doi:10.1364/oe.441063
 global_rank: 522
 harvested_title: Spectral measurement of daylights and surface properties of natural objects in Japan.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/oe.441063

@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/s24217010
 global_rank: 114
 harvested_title: Evaluation of Diffuse Reflectance Spectroscopy Vegetal Phantoms for Human Pigmented Skin
   Lesions.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s24217010

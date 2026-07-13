@@ -1,6 +1,8 @@
 candidate_key: doi:10.1364/optica.6.000479
 global_rank: 726
 harvested_title: Light scattering methods for tissue diagnosis.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/optica.6.000479

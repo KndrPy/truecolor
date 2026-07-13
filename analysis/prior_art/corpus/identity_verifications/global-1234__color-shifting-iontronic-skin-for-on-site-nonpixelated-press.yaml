@@ -1,6 +1,10 @@
 candidate_key: doi:10.1021/acs.nanolett.3c04755.s002
 global_rank: 1234
 harvested_title: Color-Shifting Iontronic Skin for On-Site, Nonpixelated Pressure Mapping Visualization
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acs.nanolett.3c04755.s002

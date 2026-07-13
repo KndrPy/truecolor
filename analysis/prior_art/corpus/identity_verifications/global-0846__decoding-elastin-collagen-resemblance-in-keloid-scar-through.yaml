@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.31.3.036005
 global_rank: 846
 harvested_title: Decoding elastin-collagen resemblance in keloid scar through label-free imaging and machine
   learning.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.31.3.036005

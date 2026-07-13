@@ -2,6 +2,10 @@ candidate_key: doi:10.7717/peerjcs.1395/table-1
 global_rank: 1164
 harvested_title: 'Table 1: Each age group with the corresponding class (label) and number of images in
   each dataset.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerjcs.1395/table-1

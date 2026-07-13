@@ -1,6 +1,8 @@
 candidate_key: doi:10.4324/9780080886183-9
 global_rank: 1110
 harvested_title: White balance techniques
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.4324/9780080886183-9

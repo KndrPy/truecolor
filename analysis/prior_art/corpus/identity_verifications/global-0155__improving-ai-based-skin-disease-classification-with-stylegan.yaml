@@ -2,6 +2,7 @@ candidate_key: doi:10.1109/bmeicon64021.2024.10896290
 global_rank: 155
 harvested_title: Improving AI-Based Skin Disease Classification with StyleGAN3 for Minority Skin Tone
   Generation
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1109/bmeicon64021.2024.10896290

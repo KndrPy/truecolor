@@ -2,6 +2,8 @@ candidate_key: doi:10.1088/2515-7647/ae1a27
 global_rank: 834
 harvested_title: 'Multi-layer self-calibrated algorithm for transabdominal fetal pulse oximetry: simulation
   and &lt;i&gt;in vivo&lt;/i&gt; validation.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1088/2515-7647/ae1a27

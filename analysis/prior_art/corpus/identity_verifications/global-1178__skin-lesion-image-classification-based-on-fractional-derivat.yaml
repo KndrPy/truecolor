@@ -2,6 +2,8 @@ candidate_key: doi:10.2139/ssrn.6146189
 global_rank: 1178
 harvested_title: Skin Lesion Image Classification Based on Fractional Derivatives with Convolutional Neural
   Network
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2139/ssrn.6146189

@@ -2,6 +2,8 @@ candidate_key: doi:10.2340/actadv.v106.adv-2026-0512
 global_rank: 867
 harvested_title: European Expert Consensus on Essential Variables for Teledermatological Assessment of
   Skin Tumours.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2340/actadv.v106.adv-2026-0512

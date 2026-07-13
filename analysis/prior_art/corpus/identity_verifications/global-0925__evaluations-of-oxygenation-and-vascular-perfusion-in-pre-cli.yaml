@@ -2,6 +2,8 @@ candidate_key: doi:10.3791/70689
 global_rank: 925
 harvested_title: Evaluations of Oxygenation and Vascular Perfusion in Pre-Clinical Models of Cancer and
   Wound Healing Using OS-DCE OAI.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3791/70689

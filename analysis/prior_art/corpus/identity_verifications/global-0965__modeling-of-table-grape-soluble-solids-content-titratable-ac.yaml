@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fpls.2025.1723949
 global_rank: 965
 harvested_title: Modeling of table grape soluble solids content, titratable acidity and pH prediction
   during storage based on Vis-NIR spectroscopy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fpls.2025.1723949

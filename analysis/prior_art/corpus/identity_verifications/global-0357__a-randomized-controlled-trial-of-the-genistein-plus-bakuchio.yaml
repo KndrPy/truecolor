@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/srt.70310
 global_rank: 357
 harvested_title: 'A Randomized Controlled Trial of the Genistein Plus Bakuchiol and Vitamins (GEN<sup>+</sup>)
   Product for Male Facial Skin: Effects on Skin Appearance and Properties.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/srt.70310

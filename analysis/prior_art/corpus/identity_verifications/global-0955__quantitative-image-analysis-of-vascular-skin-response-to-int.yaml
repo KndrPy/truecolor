@@ -1,6 +1,8 @@
 candidate_key: doi:10.2147/ccid.s545832
 global_rank: 955
 harvested_title: Quantitative Image Analysis of Vascular Skin Response to Intense Pulsed Light Therapy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2147/ccid.s545832

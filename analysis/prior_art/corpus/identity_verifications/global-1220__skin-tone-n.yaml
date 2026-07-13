@@ -1,6 +1,8 @@
 candidate_key: doi:10.1093/oed/1074625539
 global_rank: 1220
 harvested_title: skin tone, n.
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1093/oed/1074625539

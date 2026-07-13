@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/dj14040234
 global_rank: 901
 harvested_title: A Multidimensional Analysis of Shade Selection Difficulty for Indirect Restorations Among
   Dental Students and Professionals.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/dj14040234

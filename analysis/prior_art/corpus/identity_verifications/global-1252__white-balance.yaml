@@ -1,6 +1,8 @@
 candidate_key: doi:10.1201/b16488-13
 global_rank: 1252
 harvested_title: White balance
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1201/b16488-13

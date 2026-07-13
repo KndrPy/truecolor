@@ -2,6 +2,8 @@ candidate_key: doi:10.1167/tvst.9.8.25
 global_rank: 462
 harvested_title: 'Harmonization of Outcomes and Vision Endpoints in Vision Restoration Trials: Recommendations
   from the International HOVER Taskforce.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1167/tvst.9.8.25

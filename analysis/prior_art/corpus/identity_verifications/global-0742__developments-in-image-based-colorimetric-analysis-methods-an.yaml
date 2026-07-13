@@ -2,6 +2,8 @@ candidate_key: doi:10.1016/j.ijpx.2025.100434
 global_rank: 742
 harvested_title: 'Developments in image-based colorimetric analysis methods and applications of CIElab
   color space in pharmaceutical sciences: A narrative review.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1016/j.ijpx.2025.100434

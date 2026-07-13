@@ -2,6 +2,8 @@ candidate_key: doi:10.1101/2024.12.04.626749
 global_rank: 674
 harvested_title: Deep Ensemble Model for Quantitative Optical Property and Chromophore Concentration Images
   of Biological Tissues
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1101/2024.12.04.626749

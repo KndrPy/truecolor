@@ -3,6 +3,9 @@ candidate_key: "title:recent advances in automated mitosis detection in digital 
 global_rank: 1201
 harvested_title: "Recent Advances in Automated Mitosis Detection in Digital Pathology: A PRISMA-Guided\
   \ Systematic Review with Evaluation-Regime Stratification (2018\u20132025)"
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
+- MISSING_CANONICAL_IDENTIFIER
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: null

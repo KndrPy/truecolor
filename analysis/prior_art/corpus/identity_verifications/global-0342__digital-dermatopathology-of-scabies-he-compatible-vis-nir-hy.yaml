@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/bioengineering13010016
 global_rank: 342
 harvested_title: 'Digital Dermatopathology of Scabies: HE-Compatible VIS-NIR Hyperspectral Imaging as
   a Label-Free Proof-of-Concept Approach.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/bioengineering13010016

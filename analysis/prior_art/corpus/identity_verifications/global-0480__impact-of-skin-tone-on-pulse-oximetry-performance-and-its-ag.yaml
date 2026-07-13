@@ -2,6 +2,8 @@ candidate_key: doi:10.52783/jchr.v16.i3.13798
 global_rank: 480
 harvested_title: Impact of Skin Tone on Pulse Oximetry Performance and Its Agreement with Arterial Oxygen
   Saturation in Hospitalized Indian Children
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.52783/jchr.v16.i3.13798

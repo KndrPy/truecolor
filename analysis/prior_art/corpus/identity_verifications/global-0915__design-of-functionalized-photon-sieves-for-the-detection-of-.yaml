@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s26020409
 global_rank: 915
 harvested_title: Design of Functionalized Photon Sieves for the Detection of Biomarkers in Running Fluids.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s26020409

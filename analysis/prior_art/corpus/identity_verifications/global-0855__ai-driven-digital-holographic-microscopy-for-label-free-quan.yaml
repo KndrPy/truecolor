@@ -2,6 +2,8 @@ candidate_key: doi:10.1364/boe.586407
 global_rank: 855
 harvested_title: 'AI-driven digital holographic microscopy for label-free quantitative cellular analysis:
   toward low-cost and field-deployable platforms.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/boe.586407

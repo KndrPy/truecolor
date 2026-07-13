@@ -2,6 +2,8 @@ candidate_key: doi:10.3390/insects13020212
 global_rank: 601
 harvested_title: 'A Route to Translate a Silk-Based Medical Device from Lab to Clinic: The Silk Biomaterials
   Srl Experience.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/insects13020212

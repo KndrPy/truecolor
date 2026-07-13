@@ -2,6 +2,8 @@ candidate_key: doi:10.3109/9781420005516-19
 global_rank: 1205
 harvested_title: Development of a Digital Imaging System for Objective Measurement of Hyperpigmented Spots
   on the Face
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3109/9781420005516-19

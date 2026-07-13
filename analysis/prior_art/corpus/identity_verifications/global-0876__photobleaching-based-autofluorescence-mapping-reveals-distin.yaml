@@ -3,6 +3,8 @@ global_rank: 876
 harvested_title: Photobleaching-based autofluorescence mapping reveals distinct patterns in sporadic basal
   cell carcinoma, nevoid basal cell carcinoma syndrome-associated basal cell carcinoma and squamous cell
   carcinoma.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fmed.2026.1773895

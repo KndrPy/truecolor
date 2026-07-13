@@ -2,6 +2,10 @@ candidate_key: doi:10.7717/peerj.16342/fig-4
 global_rank: 1245
 harvested_title: 'Figure 4: Experimental validation of model in breast cancer cell and patient-derived
   PDAC cell lines.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.7717/peerj.16342/fig-4

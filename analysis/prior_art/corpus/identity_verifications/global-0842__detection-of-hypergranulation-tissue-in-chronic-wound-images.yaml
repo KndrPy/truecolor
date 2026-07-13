@@ -2,6 +2,8 @@ candidate_key: doi:10.1111/wrr.70125
 global_rank: 842
 harvested_title: Detection of Hypergranulation Tissue in Chronic Wound Images Using Artificial Intelligence
   Algorithms.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1111/wrr.70125

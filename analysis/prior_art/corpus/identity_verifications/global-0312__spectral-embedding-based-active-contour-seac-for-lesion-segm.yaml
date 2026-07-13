@@ -2,6 +2,7 @@ candidate_key: doi:10.1118/1.4790466
 global_rank: 312
 harvested_title: Spectral embedding based active contour (SEAC) for lesion segmentation on breast dynamic
   contrast enhanced magnetic resonance imaging
+harvest_metadata_issues: []
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1118/1.4790466

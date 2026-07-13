@@ -2,6 +2,10 @@ candidate_key: doi:10.1021/acs.jpcc.6b05242.s001
 global_rank: 1124
 harvested_title: 'FRET on Surface of Silica Nanoparticle: Effect of Chromophore Concentration on Dynamics
   and Efficiency'
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1021/acs.jpcc.6b05242.s001

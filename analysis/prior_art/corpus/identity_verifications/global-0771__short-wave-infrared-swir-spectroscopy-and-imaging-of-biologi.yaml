@@ -2,6 +2,8 @@ candidate_key: doi:10.1117/1.jbo.31.1.010901
 global_rank: 771
 harvested_title: 'Short-wave infrared (SWIR) spectroscopy and imaging of biological tissues: a decade
   of advancements (2016-2025).'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.jbo.31.1.010901

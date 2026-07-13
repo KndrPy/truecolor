@@ -2,6 +2,8 @@ candidate_key: doi:10.1093/rap/rkaf114
 global_rank: 317
 harvested_title: Analysis of the representation of skin tone diversity amongst medical resources illustrating
   dermatological manifestations of dermatomyositis, systemic sclerosis and vasculitis.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1093/rap/rkaf114

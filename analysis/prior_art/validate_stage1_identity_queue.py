@@ -119,6 +119,28 @@ def main() -> int:
             "verification_state"
         ] == "UNVERIFIED"
 
+        title_missing = not record[
+            "harvested_title"
+        ].strip()
+
+        title_issue_present = (
+            "MISSING_HARVESTED_TITLE"
+            in record[
+                "harvest_metadata_issues"
+            ]
+        )
+
+        assert (
+            title_missing
+            == title_issue_present
+        ), {
+            "path": str(path),
+            "title_missing": title_missing,
+            "title_issue_present": (
+                title_issue_present
+            ),
+        }
+
         candidate_keys.add(
             record["candidate_key"]
         )

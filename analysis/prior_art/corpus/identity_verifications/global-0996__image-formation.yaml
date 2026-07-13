@@ -1,6 +1,8 @@
 candidate_key: doi:10.1017/cbo9781139170413.015
 global_rank: 996
 harvested_title: Image formation
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1017/cbo9781139170413.015

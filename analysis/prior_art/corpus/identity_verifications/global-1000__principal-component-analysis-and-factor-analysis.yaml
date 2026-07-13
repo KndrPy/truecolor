@@ -1,6 +1,9 @@
 candidate_key: doi:10.1007/0-387-22440-8_7
 global_rank: 1000
 harvested_title: Principal Component Analysis and Factor Analysis
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
+- MISSING_HARVESTED_YEAR
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1007/0-387-22440-8_7

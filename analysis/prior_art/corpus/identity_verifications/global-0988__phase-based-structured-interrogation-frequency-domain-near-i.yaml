@@ -1,6 +1,8 @@
 candidate_key: doi:10.1364/josaa.523194
 global_rank: 988
 harvested_title: Phase-based structured interrogation frequency-domain near-infrared spectroscopy.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1364/josaa.523194

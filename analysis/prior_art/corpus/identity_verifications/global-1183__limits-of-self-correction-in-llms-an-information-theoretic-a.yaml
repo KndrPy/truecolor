@@ -1,6 +1,8 @@
 candidate_key: doi:10.36227/techrxiv.176834656.66652387/v2
 global_rank: 1183
 harvested_title: 'Limits of Self-Correction in LLMs: An Information-Theoretic Analysis of Correlated Errors'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.36227/techrxiv.176834656.66652387/v2

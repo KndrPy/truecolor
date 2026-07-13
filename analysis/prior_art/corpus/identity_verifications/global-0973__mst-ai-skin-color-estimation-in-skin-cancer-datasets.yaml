@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/jimaging11070235
 global_rank: 973
 harvested_title: 'MST-AI: Skin Color Estimation in Skin Cancer Datasets.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/jimaging11070235

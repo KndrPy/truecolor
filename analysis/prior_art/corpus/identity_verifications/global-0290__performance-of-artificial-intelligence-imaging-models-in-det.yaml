@@ -2,6 +2,8 @@ candidate_key: doi:10.2196/preprints.31697
 global_rank: 290
 harvested_title: Performance of Artificial Intelligence Imaging Models in Detecting Dermatological Manifestations
   in Higher Fitzpatrick Skin Color Classifications (Preprint)
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.2196/preprints.31697

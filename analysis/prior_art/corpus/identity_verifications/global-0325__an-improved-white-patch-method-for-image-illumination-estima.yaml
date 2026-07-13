@@ -1,6 +1,8 @@
 candidate_key: doi:10.46300/9106.2020.14.76
 global_rank: 325
 harvested_title: An Improved White Patch Method for Image Illumination Estimation
+harvest_metadata_issues:
+- MISSING_HARVESTED_AUTHORS
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.46300/9106.2020.14.76

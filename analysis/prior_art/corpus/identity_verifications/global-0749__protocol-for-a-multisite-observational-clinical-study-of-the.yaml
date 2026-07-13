@@ -2,6 +2,8 @@ candidate_key: doi:10.1136/bmjopen-2025-100391
 global_rank: 749
 harvested_title: Protocol for a multisite, observational clinical study of the association between skin
   colour and pulse oximeter accuracy in children undergoing cardiac catheterisation (PACH study).
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1136/bmjopen-2025-100391

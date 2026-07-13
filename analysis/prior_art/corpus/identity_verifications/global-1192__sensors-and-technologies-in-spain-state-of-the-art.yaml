@@ -1,6 +1,8 @@
 candidate_key: doi:10.3390/s140815282
 global_rank: 1192
 harvested_title: 'Sensors and technologies in Spain: state-of-the-art.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3390/s140815282

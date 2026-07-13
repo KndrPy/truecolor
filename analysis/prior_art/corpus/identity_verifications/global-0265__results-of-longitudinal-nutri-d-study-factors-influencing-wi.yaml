@@ -2,6 +2,8 @@ candidate_key: doi:10.3389/fnut.2023.1253341
 global_rank: 265
 harvested_title: 'Results of longitudinal Nutri-D study: factors influencing winter and summer vitamin
   D status in a Caucasian population.'
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.3389/fnut.2023.1253341

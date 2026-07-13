@@ -1,6 +1,8 @@
 candidate_key: doi:10.1117/1.bios.2.3.032506
 global_rank: 383
 harvested_title: Characterizing the influence of skin pigmentation on pulse oximetry.
+harvest_metadata_issues:
+- MISSING_HARVESTED_VENUE
 verification_state: UNVERIFIED
 canonical_identifier:
   doi: 10.1117/1.bios.2.3.032506
