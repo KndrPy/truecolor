@@ -1,0 +1,77 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.20965/jaciii.2026.p0156",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.20965/jaciii.2026.p0156",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Mingming Zuo",
+      "Daxin Zheng",
+      "Siyuan Wu",
+      "Ning Jiang",
+      "Mengchao Zhang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Advanced Computational Intelligence and Intelligent Informatics",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mingming Zuo",
+      "Daxin Zheng",
+      "Siyuan Wu",
+      "Ning Jiang",
+      "Mengchao Zhang"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Advanced Computational Intelligence and Intelligent Informatics",
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 137,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mingming Zuo",
+      "Daxin Zheng",
+      "Siyuan Wu",
+      "Ning Jiang",
+      "Mengchao Zhang"
+    ],
+    "doi": "10.20965/jaciii.2026.p0156",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Low Illumination Image Enhancement Method Based on White Balance Correction for Conveying Foreign Objects Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.20965/jaciii.2026.p0156",
+    "venue": "Journal of Advanced Computational Intelligence and Intelligent Informatics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0137/crossref_doi__17921279237507f7__20260713T071444548363Z.json",
+      "raw_sha256": "66dc00f4bd7300dbd7adb691275a6950b3543bfc0fbac71547277fb679146bba",
+      "request_identity": "doi:10.20965/jaciii.2026.p0156",
+      "retrieved_at_utc": "2026-07-13T07:14:44.548363Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

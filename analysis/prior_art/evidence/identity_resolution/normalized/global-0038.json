@@ -1,0 +1,68 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1093/ced/llaf145",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1093/ced/llaf145",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Hinpetch Daungsupawong",
+      "Viroj Wiwanitkit"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Clinical and Experimental Dermatology",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Hinpetch Daungsupawong",
+      "Viroj Wiwanitkit"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Clinical and Experimental Dermatology",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 38,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hinpetch Daungsupawong",
+      "Viroj Wiwanitkit"
+    ],
+    "doi": "10.1093/ced/llaf145",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Comment on ‘Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study’",
+    "update_to": [],
+    "url": "https://doi.org/10.1093/ced/llaf145",
+    "venue": "Clinical and Experimental Dermatology",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0038/crossref_doi__b865cc8780095eb9__20260713T071416490542Z.json",
+      "raw_sha256": "bb2b228cbafee2ea7706f944a456d2220e3192982b8782c3a2facaaafc09036d",
+      "request_identity": "doi:10.1093/ced/llaf145",
+      "retrieved_at_utc": "2026-07-13T07:14:16.490542Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

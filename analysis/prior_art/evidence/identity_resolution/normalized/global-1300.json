@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7287/peerj.preprints.27447/supp-1",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7287/peerj.preprints.27447/supp-1",
+  "conflicts": [
+    {
+      "authoritative": null,
+      "field": "title",
+      "harvested": "",
+      "similarity": 0.0
+    }
+  ],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "dataset",
+    "canonical_venue": "Supplemental Information 1: Spectral datas of reflectance and SNV reflectance",
+    "canonical_year": 2018,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "dataset",
+    "harvested_venue": "Supplemental Information 1: Spectral datas of reflectance and SNV reflectance",
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 0.0,
+    "venue_similarity": 1.0,
+    "year_match": null
+  },
+  "global_rank": 1300,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.7287/peerj.preprints.27447/supp-1",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dataset",
+    "relation": {
+      "is-referenced-by": [
+        {
+          "asserted-by": "subject",
+          "id": "10.7287/peerj.preprints.27447",
+          "id-type": "doi"
+        }
+      ]
+    },
+    "title": null,
+    "update_to": [],
+    "url": "https://doi.org/10.7287/peerj.preprints.27447/supp-1",
+    "venue": "Supplemental Information 1: Spectral datas of reflectance and SNV reflectance",
+    "year": 2018
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "The DOI resolves to a dataset record rather than a scholarly publication.",
+  "resolution_state": "NON_SCHOLARLY",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1300/crossref_doi__d67c8cbb80cf83e6__20260713T071557412137Z.json",
+      "raw_sha256": "57f929c993cef4339945fe2ccdae26f470d88b327492f439fffe55f45eadab9d",
+      "request_identity": "doi:10.7287/peerj.preprints.27447/supp-1",
+      "retrieved_at_utc": "2026-07-13T07:15:57.412137Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

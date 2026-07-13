@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "recent advances in automated mitosis detection in digital pathology a prisma guided systematic review with evaluation regime stratification 2018 2025",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:recent advances in automated mitosis detection in digital pathology: a prisma-guided systematic review with evaluation-regime stratification (2018–2025)|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Mohamed Albahri",
+      "Markus Kukuk",
+      "Felix Nensa",
+      "Georg Christian Lodde",
+      "Elisabeth Livingstone",
+      "Dirk Schadendorf"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedicines",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Albahri M",
+      "Kukuk M",
+      "Nensa F",
+      "Lodde G",
+      "Livingstone E",
+      "Schadendorf D."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1201,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Mohamed Albahri",
+      "Markus Kukuk",
+      "Felix Nensa",
+      "Georg Christian Lodde",
+      "Elisabeth Livingstone",
+      "Dirk Schadendorf"
+    ],
+    "doi": "10.3390/biomedicines14061369",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Recent Advances in Automated Mitosis Detection in Digital Pathology: A PRISMA-Guided Systematic Review with Evaluation-Regime Stratification (2018–2025)",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/biomedicines14061369",
+    "venue": "Biomedicines",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1201/crossref_title__165a4df7606adab7__20260713T071540835669Z.json",
+      "raw_sha256": "304b664ead802193eef73a85363ae70da5280c03ebd7acd3d7ab114833922972",
+      "request_identity": "title:recent advances in automated mitosis detection in digital pathology a prisma guided systematic review with evaluation regime stratification 2018 2025|year:unknown",
+      "retrieved_at_utc": "2026-07-13T07:15:40.835669Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

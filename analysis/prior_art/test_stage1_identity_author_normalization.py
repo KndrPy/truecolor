@@ -61,3 +61,33 @@ def test_crossref_europe_pmc_author_overlap() -> None:
         crossref,
         europe_pmc,
     ) == 1.0
+
+
+def test_abbreviated_surname_first_authors() -> None:
+    assert author_overlap(
+        [
+            "Jung G",
+            "Kim S",
+            "Lee J",
+            "Yoo S.",
+        ],
+        [
+            "Geunho Jung",
+            "Semin Kim",
+            "Jongha Lee",
+            "Sangwook Yoo",
+        ],
+    ) == 1.0
+
+
+def test_compound_abbreviated_surname() -> None:
+    assert author_overlap(
+        [
+            "Di Spiezio Sardo A",
+            "Watrowski R",
+        ],
+        [
+            "Attilio Di Spiezio Sardo",
+            "Rafał Watrowski",
+        ],
+    ) == 1.0

@@ -1,0 +1,76 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.889626",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.889626",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Yoshihisa Aizu",
+      "Takaaki Maeda",
+      "Tomohiro Kuwahara",
+      "Tetsuji Hirao"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "SPIE Proceedings",
+    "canonical_year": 2011,
+    "doi_match": true,
+    "harvested_authors": [
+      "Yoshihisa Aizu",
+      "Takaaki Maeda",
+      "Tomohiro Kuwahara",
+      "Tetsuji Hirao"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "SPIE Proceedings Diffuse Optical Imaging III",
+    "harvested_year": 2011,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 0.333333,
+    "year_match": true
+  },
+  "global_rank": 42,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Yoshihisa Aizu",
+      "Takaaki Maeda",
+      "Tomohiro Kuwahara",
+      "Tetsuji Hirao"
+    ],
+    "doi": "10.1117/12.889626",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Spectral reflectance fitting based on Monte Carlo simulation using a multi-layered skin tissue model",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.889626",
+    "venue": "SPIE Proceedings",
+    "year": 2011
+  },
+  "related_candidate_keys": [
+    "doi:10.1364/ecbo.2011.80880p"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0042/crossref_doi__fd2be286f5d97b28__20260713T071422149409Z.json",
+      "raw_sha256": "910cd44f3fe8e9a758914e7665a14c142c58a71135e64921d8ee35654790707c",
+      "request_identity": "doi:10.1117/12.889626",
+      "retrieved_at_utc": "2026-07-13T07:14:22.149409Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

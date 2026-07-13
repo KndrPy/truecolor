@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.5220/0004790201140121",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.5220/0004790201140121",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Proceedings of 2nd International Conference on Photonics, Optics and Laser Technology",
+    "canonical_year": 2014,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Proceedings of 2nd International Conference on Photonics, Optics and Laser Technology",
+    "harvested_year": 2014,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 93,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.5220/0004790201140121",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Preliminary Monte Carlo based Inverse Model to Extract Optical Tissue Properties from Experimental Diffuse Reflectance Measurements - Coefficients Extraction for Gastrointestinal Dysplasia Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.5220/0004790201140121",
+    "venue": "Proceedings of 2nd International Conference on Photonics, Optics and Laser Technology",
+    "year": 2014
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0093/crossref_doi__c7b1a91d097e468a__20260713T071434155148Z.json",
+      "raw_sha256": "1b8505adde360a2e4a11e1c04cbe14f610a5d8e342d012b9ce459950f04878ef",
+      "request_identity": "doi:10.5220/0004790201140121",
+      "retrieved_at_utc": "2026-07-13T07:14:34.155148Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

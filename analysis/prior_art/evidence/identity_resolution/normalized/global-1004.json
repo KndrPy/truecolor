@@ -1,0 +1,59 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1016/j.jaad.2012.12.371",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1016/j.jaad.2012.12.371",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of the American Academy of Dermatology",
+    "canonical_year": 2013,
+    "doi_match": true,
+    "harvested_authors": [],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of the American Academy of Dermatology",
+    "harvested_year": 2013,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 1004,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [],
+    "doi": "10.1016/j.jaad.2012.12.371",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Patient satisfaction with a novel, patient-centered model for psoriasis follow-up care: Results from a randomized controlled trial",
+    "update_to": [],
+    "url": "https://doi.org/10.1016/j.jaad.2012.12.371",
+    "venue": "Journal of the American Academy of Dermatology",
+    "year": 2013
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1004/crossref_doi__9b81b1a64ad9a017__20260713T071535280087Z.json",
+      "raw_sha256": "258b5cba7e66e36b07693effcf2bb3bc78b09d3f5d9e0932ea366cdad24c4ec4",
+      "request_identity": "doi:10.1016/j.jaad.2012.12.371",
+      "retrieved_at_utc": "2026-07-13T07:15:35.280087Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

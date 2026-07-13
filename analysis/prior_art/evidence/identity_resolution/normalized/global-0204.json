@@ -1,0 +1,65 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.11606/t.76.2021.tde-02092021-160416",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.11606/t.76.2021.tde-02092021-160416",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Thereza Cury Fortunato"
+    ],
+    "canonical_publication_type": "dissertation",
+    "canonical_venue": null,
+    "canonical_year": 2021,
+    "doi_match": true,
+    "harvested_authors": [
+      "Thereza Cury Fortunato"
+    ],
+    "harvested_publication_type": "dissertation",
+    "harvested_venue": null,
+    "harvested_year": null,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": null
+  },
+  "global_rank": 204,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Thereza Cury Fortunato"
+    ],
+    "doi": "10.11606/t.76.2021.tde-02092021-160416",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "dissertation",
+    "relation": {},
+    "title": "Monte Carlo simulations to investigate light coupling with optical skin phantom",
+    "update_to": [],
+    "url": "https://doi.org/10.11606/t.76.2021.tde-02092021-160416",
+    "venue": null,
+    "year": 2021
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0204/crossref_doi__057a4e8dc31725de__20260713T071500420846Z.json",
+      "raw_sha256": "3ed753f8acaeb30ec874a00da763ebee41d2c7eeabee1bbcbd4ca5f48193e950",
+      "request_identity": "doi:10.11606/t.76.2021.tde-02092021-160416",
+      "retrieved_at_utc": "2026-07-13T07:15:00.420846Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -182,13 +182,54 @@ def title_similarity(
     left: Any,
     right: Any,
 ) -> float:
+    left_tokens = token_set(left)
+    right_tokens = token_set(right)
+
+    if not left_tokens or not right_tokens:
+        return 0.0
+
     return round(
         jaccard(
-            token_set(left),
-            token_set(right),
+            left_tokens,
+            right_tokens,
         ),
         6,
     )
+
+
+def author_family_key(
+    author: str,
+) -> str | None:
+    raw_tokens = re.findall(
+        r"[A-Za-zÀ-ÖØ-öø-ÿ]+",
+        unicodedata.normalize(
+            "NFKC",
+            str(author),
+        ),
+    )
+
+    if not raw_tokens:
+        return None
+
+    last_raw = raw_tokens[-1]
+
+    last_is_initials = (
+        last_raw.isupper()
+        and len(last_raw) <= 4
+    )
+
+    candidate_tokens = (
+        raw_tokens[:-1]
+        if last_is_initials
+        else raw_tokens
+    )
+
+    if not candidate_tokens:
+        return None
+
+    return normalize_text(
+        candidate_tokens[-1]
+    ) or None
 
 
 def author_family_tokens(
@@ -197,14 +238,12 @@ def author_family_tokens(
     tokens = set()
 
     for author in authors:
-        normalized = normalize_text(
+        family = author_family_key(
             author
         )
 
-        parts = normalized.split()
-
-        if parts:
-            tokens.add(parts[-1])
+        if family:
+            tokens.add(family)
 
     return tokens
 
@@ -1208,6 +1247,59 @@ def classify(
                 "corrigendum record."
             ),
             "CORRECTION_OF",
+        )
+
+    non_scholarly_types = {
+        "dataset",
+        "grant",
+    }
+
+    if (
+        canonical is not None
+        and publication_type
+        in non_scholarly_types
+    ):
+        return (
+            "NON_SCHOLARLY",
+            (
+                "The DOI resolves to a "
+                f"{publication_type} record rather "
+                "than a scholarly publication."
+            ),
+            "UNRESOLVED",
+        )
+
+    harvested_identifiers = record.get(
+        "canonical_identifier",
+        {},
+    )
+
+    has_structured_identifier = any(
+        str(
+            harvested_identifiers.get(key)
+            or ""
+        ).strip()
+        for key in [
+            "doi",
+            "pmid",
+            "arxiv",
+        ]
+    )
+
+    if (
+        canonical is not None
+        and not has_structured_identifier
+    ):
+        return (
+            "UNRESOLVED",
+            (
+                "Title-search metadata produced a "
+                "candidate match, but no harvested "
+                "DOI, PMID, or arXiv identifier "
+                "independently corroborates the "
+                "publication identity."
+            ),
+            "UNRESOLVED",
         )
 
     threshold = float(

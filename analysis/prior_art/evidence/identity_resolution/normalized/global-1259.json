@@ -1,0 +1,73 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "global sensitivity analysis for robust xai quantifying clinical risk and prediction instability in dermoscopic image classification",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:global sensitivity analysis for robust xai: quantifying clinical risk and prediction instability in dermoscopic image classification|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Giulia Vannucci",
+      "Renato Patrik Williame Coppolecchia",
+      "Roberta Siciliano"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Risk Analysis",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Vannucci G",
+      "Coppolecchia R",
+      "Siciliano R."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1259,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Giulia Vannucci",
+      "Renato Patrik Williame Coppolecchia",
+      "Roberta Siciliano"
+    ],
+    "doi": "10.1111/risa.70237",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Global Sensitivity Analysis for Robust XAI: Quantifying Clinical Risk and Prediction Instability in Dermoscopic Image Classification",
+    "update_to": [],
+    "url": "https://doi.org/10.1111/risa.70237",
+    "venue": "Risk Analysis",
+    "year": 2026
+  },
+  "related_candidate_keys": [
+    "doi:10.1111/risa.70237"
+  ],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1259/crossref_title__96a388b808a584ec__20260713T071546581674Z.json",
+      "raw_sha256": "ddeed8f1a5c81ad2e9454378207df5f0677cbbaa55012865a9b2c7b8e6f7e480",
+      "request_identity": "title:global sensitivity analysis for robust xai quantifying clinical risk and prediction instability in dermoscopic image classification|year:unknown",
+      "retrieved_at_utc": "2026-07-13T07:15:46.581674Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

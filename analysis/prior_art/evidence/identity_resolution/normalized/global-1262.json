@@ -1,0 +1,83 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "artificial intelligence deep learning and computer vision in hysteroscopy a systematic review",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:artificial intelligence, deep learning, and computer vision in hysteroscopy: a systematic review|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Rafał Watrowski",
+      "Attilio Di Spiezio Sardo",
+      "Peter Török",
+      "Andrea Rosati",
+      "Stoyan Kostov",
+      "Ibrahim Alkatout",
+      "Salvatore Giovanni Vitale"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Watrowski R",
+      "Di Spiezio Sardo A",
+      "Török P",
+      "Rosati A",
+      "Kostov S",
+      "Alkatout I",
+      "Vitale S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1262,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Rafał Watrowski",
+      "Attilio Di Spiezio Sardo",
+      "Peter Török",
+      "Andrea Rosati",
+      "Stoyan Kostov",
+      "Ibrahim Alkatout",
+      "Salvatore Giovanni Vitale"
+    ],
+    "doi": "10.3390/diagnostics16121899",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial Intelligence, Deep Learning, and Computer Vision in Hysteroscopy: A Systematic Review",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics16121899",
+    "venue": "Diagnostics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1262/crossref_title__6c3b550ed1163db1__20260713T071554991511Z.json",
+      "raw_sha256": "02bcc2404723eb7ef6f4ec425f72bd48d47fe80c7d3ddd0170833ffe3450366e",
+      "request_identity": "title:artificial intelligence deep learning and computer vision in hysteroscopy a systematic review|year:unknown",
+      "retrieved_at_utc": "2026-07-13T07:15:54.991511Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

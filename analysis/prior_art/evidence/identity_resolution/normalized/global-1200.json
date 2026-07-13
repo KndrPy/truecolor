@@ -1,0 +1,83 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "save spectrum aided visual enhancement for ai based skin cancer detection",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:save: spectrum-aided visual enhancement for ai-based skin cancer detection|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Hung-Yi Huang",
+      "Yaswanth Nagisetti",
+      "Arvind Mukundan",
+      "Riya Karmarkar",
+      "Sahaya Ashik Libu",
+      "Tao-Yuan Liu",
+      "Hsiang-Chen Wang"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Diagnostics",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Huang H",
+      "Nagisetti Y",
+      "Mukundan A",
+      "Karmarkar R",
+      "Libu S",
+      "Liu T",
+      "Wang H."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1200,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Hung-Yi Huang",
+      "Yaswanth Nagisetti",
+      "Arvind Mukundan",
+      "Riya Karmarkar",
+      "Sahaya Ashik Libu",
+      "Tao-Yuan Liu",
+      "Hsiang-Chen Wang"
+    ],
+    "doi": "10.3390/diagnostics16121864",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "SAVE: Spectrum-Aided Visual Enhancement for AI-Based Skin Cancer Detection",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/diagnostics16121864",
+    "venue": "Diagnostics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1200/crossref_title__373cb4698d0f8b13__20260713T071538060455Z.json",
+      "raw_sha256": "4f05ba54d74cf71dd813b671249a7e0d442b0a9ad5771745149e861c03ae7d60",
+      "request_identity": "title:save spectrum aided visual enhancement for ai based skin cancer detection|year:unknown",
+      "retrieved_at_utc": "2026-07-13T07:15:38.060455Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

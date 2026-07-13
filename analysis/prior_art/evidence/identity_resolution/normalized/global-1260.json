@@ -1,0 +1,71 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "analysis of the uptake of hypericin by candida albicans yeast cells using fluorescence methods and comparison of the dynamics of this process over time",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:analysis of the uptake of hypericin by candida albicans yeast cells using fluorescence methods and comparison of the dynamics of this process over time|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": null,
+    "canonical_authors": [
+      "Radosław Turski",
+      "Jakub Fiegler-Rudol",
+      "Hanna Hüpsch-Marzec",
+      "Dariusz Skaba",
+      "Rafał Wiench"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Pharmaceutics",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1260,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Radosław Turski",
+      "Jakub Fiegler-Rudol",
+      "Hanna Hüpsch-Marzec",
+      "Dariusz Skaba",
+      "Rafał Wiench"
+    ],
+    "doi": "10.3390/pharmaceutics18020189",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Analysis of the Uptake of Hypericin by Candida albicans Yeast Cells Using Fluorescence Methods and Comparison of the Dynamics of This Process over Time",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/pharmaceutics18020189",
+    "venue": "Pharmaceutics",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1260/crossref_title__3ffe5bf9b58a336d__20260713T071549209066Z.json",
+      "raw_sha256": "256449b3cb1c10284874dbe08d4917b666e83dfcb7038506d6cf7ca17a61457f",
+      "request_identity": "title:analysis of the uptake of hypericin by candida albicans yeast cells using fluorescence methods and comparison of the dynamics of this process over time|year:unknown",
+      "retrieved_at_utc": "2026-07-13T07:15:49.209066Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

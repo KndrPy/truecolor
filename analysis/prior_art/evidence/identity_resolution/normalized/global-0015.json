@@ -1,0 +1,73 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1117/12.3098404",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1117/12.3098404",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Uldis Rubins",
+      "Ilze Irbe",
+      "Janis Spigulis"
+    ],
+    "canonical_publication_type": "proceedings-article",
+    "canonical_venue": "Diffuse Optical Spectroscopy and Imaging X",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Uldis Rubins",
+      "Ilze Irbe",
+      "Janis Spigulis"
+    ],
+    "harvested_publication_type": "proceedings-article",
+    "harvested_venue": "Diffuse Optical Spectroscopy and Imaging X",
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 15,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Uldis Rubins",
+      "Ilze Irbe",
+      "Janis Spigulis"
+    ],
+    "doi": "10.1117/12.3098404",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "proceedings-article",
+    "relation": {},
+    "title": "Monte Carlo simulation of spectral reflectance images of human skin with embedded lesions",
+    "update_to": [],
+    "url": "https://doi.org/10.1117/12.3098404",
+    "venue": "Diffuse Optical Spectroscopy and Imaging X",
+    "year": 2025
+  },
+  "related_candidate_keys": [
+    "doi:10.1364/ecbo.2025.tu2a.20"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0015/crossref_doi__1f4f0478ed0babcf__20260713T071401532114Z.json",
+      "raw_sha256": "54e9d6673b96831e12e641f210518bbefa7b5084a9048c9e2f106525733df89d",
+      "request_identity": "doi:10.1117/12.3098404",
+      "retrieved_at_utc": "2026-07-13T07:14:01.532114Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,98 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.105167",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41994757",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.105167",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Vartika Mishra",
+      "Santosh Jayant",
+      "Ankita Dash",
+      "Chintan Chaudhary",
+      "Sneha Samir Babaria"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Mishra V",
+      "Jayant S",
+      "Dash A",
+      "Chaudhary C",
+      "Babaria SS."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 140,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Vartika Mishra",
+      "Santosh Jayant",
+      "Ankita Dash",
+      "Chintan Chaudhary",
+      "Sneha Samir Babaria"
+    ],
+    "doi": "10.7759/cureus.105167",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Artificial Intelligence and Machine Learning in Diagnostic Pathology: A Systematic Review of Applications, Challenges, and Clinical Implications",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.105167",
+    "venue": "Cureus",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0140/crossref_doi__2e5ebb8fb61c7801__20260713T071447005659Z.json",
+      "raw_sha256": "d2c140dc99c5ff59c951f650b938aed1ee3107bc6500613621d91b1e515dc2e3",
+      "request_identity": "doi:10.7759/cureus.105167",
+      "retrieved_at_utc": "2026-07-13T07:14:47.005659Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0140/europe_pmc_pmid__b4f7aca6ddcc5026__20260713T071447866766Z.json",
+      "raw_sha256": "7d37d8c9ccaafa8cea0f87d327758fcde6089869ae26dabfd7991129c205ec11",
+      "request_identity": "pmid:41994757",
+      "retrieved_at_utc": "2026-07-13T07:14:47.866766Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

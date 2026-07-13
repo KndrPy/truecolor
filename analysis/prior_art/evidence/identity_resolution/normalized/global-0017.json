@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1038/s41597-025-04382-5",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39893183",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1038/s41597-025-04382-5",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Kumar Abhishek",
+      "Aditi Jain",
+      "Ghassan Hamarneh"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Scientific Data",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Abhishek K",
+      "Jain A",
+      "Hamarneh G."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 17,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Kumar Abhishek",
+      "Aditi Jain",
+      "Ghassan Hamarneh"
+    ],
+    "doi": "10.1038/s41597-025-04382-5",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Investigating the Quality of DermaMNIST and Fitzpatrick17k Dermatological Image Datasets",
+    "update_to": [],
+    "url": "https://doi.org/10.1038/s41597-025-04382-5",
+    "venue": "Scientific Data",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0017/crossref_doi__b8115b4c4888dcaf__20260713T071404112095Z.json",
+      "raw_sha256": "f4dfb0dd69cd610e0d9b8cda9606d7131e4a948acb80ba31805e6201caa2f80f",
+      "request_identity": "doi:10.1038/s41597-025-04382-5",
+      "retrieved_at_utc": "2026-07-13T07:14:04.112095Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0017/europe_pmc_pmid__15b442f4512795f3__20260713T071405126476Z.json",
+      "raw_sha256": "a7bca5c49107e00ab72419c476247d44555675a898627546b735df60e31d6e08",
+      "request_identity": "pmid:39893183",
+      "retrieved_at_utc": "2026-07-13T07:14:05.126476Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

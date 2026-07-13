@@ -1,0 +1,86 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.7759/cureus.94909",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "41262830",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.7759/cureus.94909",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Teniola Dowie"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Cureus",
+    "canonical_year": 2025,
+    "doi_match": true,
+    "harvested_authors": [
+      "Dowie T."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2025,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 39,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Teniola Dowie"
+    ],
+    "doi": "10.7759/cureus.94909",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Exploring the Diagnostic Capability of Artificial Intelligence in Dermatology for Darker Skin Tones: A Narrative Review",
+    "update_to": [],
+    "url": "https://doi.org/10.7759/cureus.94909",
+    "venue": "Cureus",
+    "year": 2025
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0039/crossref_doi__cea3a0861fd3571a__20260713T071418892439Z.json",
+      "raw_sha256": "4b349cae640f6884d1ea21a5f34a3145a798e29377dab217cab0ffbde8e236c9",
+      "request_identity": "doi:10.7759/cureus.94909",
+      "retrieved_at_utc": "2026-07-13T07:14:18.892439Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0039/europe_pmc_pmid__53cc53f3906bca14__20260713T071419769819Z.json",
+      "raw_sha256": "e3fae874d2bf4a0b3e4a0657bd75f6948379617a012b0ebb402e5a12438cec57",
+      "request_identity": "pmid:41262830",
+      "retrieved_at_utc": "2026-07-13T07:14:19.769819Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

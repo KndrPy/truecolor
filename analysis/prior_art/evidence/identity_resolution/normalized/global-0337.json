@@ -1,0 +1,74 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "a dual mode near infrared optical probe and monte carlo framework for functional monitoring of rheumatoid arthritis addressing diagnostic ambiguity and skin tone robustness",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:a dual-mode near-infrared optical probe and monte carlo framework for functional monitoring of rheumatoid arthritis: addressing diagnostic ambiguity and skin tone robustness|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Parmveer Atwal",
+      "Ryley McWilliams",
+      "Ramani Ramaseshen",
+      "Farid Golnaraghi"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Atwal P",
+      "McWilliams R",
+      "Ramaseshen R",
+      "Golnaraghi F."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 337,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Parmveer Atwal",
+      "Ryley McWilliams",
+      "Ramani Ramaseshen",
+      "Farid Golnaraghi"
+    ],
+    "doi": "10.3390/s26041179",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Dual-Mode Near-Infrared Optical Probe and Monte Carlo Framework for Functional Monitoring of Rheumatoid Arthritis: Addressing Diagnostic Ambiguity and Skin Tone Robustness",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26041179",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0337/crossref_title__6779fc436a1e7bc4__20260713T071513580160Z.json",
+      "raw_sha256": "c2b1973d6437035b6fde921c65bfcf867dfb6745b1b994de796460ce5e190a3d",
+      "request_identity": "title:a dual mode near infrared optical probe and monte carlo framework for functional monitoring of rheumatoid arthritis addressing diagnostic ambiguity and skin tone robustness|year:unknown",
+      "retrieved_at_utc": "2026-07-13T07:15:13.580160Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

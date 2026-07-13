@@ -1,0 +1,79 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1145/1409060.1409093",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1145/1409060.1409093",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Craig Donner",
+      "Tim Weyrich",
+      "Eugene d'Eon",
+      "Ravi Ramamoorthi",
+      "Szymon Rusinkiewicz"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "ACM Transactions on Graphics",
+    "canonical_year": 2008,
+    "doi_match": true,
+    "harvested_authors": [
+      "Craig Donner",
+      "Tim Weyrich",
+      "Eugene d'Eon",
+      "Ravi Ramamoorthi",
+      "Szymon Rusinkiewicz"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "ACM Transactions on Graphics",
+    "harvested_year": 2008,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
+  },
+  "global_rank": 82,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Craig Donner",
+      "Tim Weyrich",
+      "Eugene d'Eon",
+      "Ravi Ramamoorthi",
+      "Szymon Rusinkiewicz"
+    ],
+    "doi": "10.1145/1409060.1409093",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A layered, heterogeneous reflectance model for acquiring and rendering human skin",
+    "update_to": [],
+    "url": "https://doi.org/10.1145/1409060.1409093",
+    "venue": "ACM Transactions on Graphics",
+    "year": 2008
+  },
+  "related_candidate_keys": [
+    "doi:10.1145/1457515.1409093"
+  ],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0082/crossref_doi__74aea2f27c691d0b__20260713T071431809771Z.json",
+      "raw_sha256": "d022632aa5bfd675f76cd31d8667d98dc307c7b3ffd684df0c57505f64331e8a",
+      "request_identity": "doi:10.1145/1409060.1409093",
+      "retrieved_at_utc": "2026-07-13T07:14:31.809771Z",
+      "source": "crossref_doi"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

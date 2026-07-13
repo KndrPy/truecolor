@@ -1,0 +1,80 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "title_author_year",
+      "identifier_value": "a systematic review of contrastive learning in medical ai foundations biomedical modalities and future directions",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_title",
+  "candidate_key": "title:a systematic review of contrastive learning in medical ai: foundations, biomedical modalities, and future directions|year:2026",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "George Obaido",
+      "Ibomoiye Domor Mienye",
+      "Kehinde Aruleba",
+      "Chidozie Williams Chukwu",
+      "Ebenezer Esenogho",
+      "Cameron Modisane"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Bioengineering",
+    "canonical_year": 2026,
+    "doi_match": null,
+    "harvested_authors": [
+      "Obaido G",
+      "Mienye I",
+      "Aruleba K",
+      "Chukwu C",
+      "Esenogho E",
+      "Modisane C."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 1258,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "George Obaido",
+      "Ibomoiye Domor Mienye",
+      "Kehinde Aruleba",
+      "Chidozie Williams Chukwu",
+      "Ebenezer Esenogho",
+      "Cameron Modisane"
+    ],
+    "doi": "10.3390/bioengineering13020176",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "A Systematic Review of Contrastive Learning in Medical AI: Foundations, Biomedical Modalities, and Future Directions",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/bioengineering13020176",
+    "venue": "Bioengineering",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Title-search metadata produced a candidate match, but no harvested DOI, PMID, or arXiv identifier independently corroborates the publication identity.",
+  "resolution_state": "UNRESOLVED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-1258/crossref_title__19aa95113dc50ff7__20260713T071543841799Z.json",
+      "raw_sha256": "b2a5746bfd1a14839db7cb401b97e364e6079dca9c64ce460c7c3a28c39da755",
+      "request_identity": "title:a systematic review of contrastive learning in medical ai foundations biomedical modalities and future directions|year:unknown",
+      "retrieved_at_utc": "2026-07-13T07:15:43.841799Z",
+      "source": "crossref_title"
+    }
+  ],
+  "version_relationship": "UNRESOLVED"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.3390/s26082337",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "42076446",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.3390/s26082337",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Raghda Al-Halawani",
+      "Meha Qassem",
+      "Panicos A. Kyriacou"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Sensors",
+    "canonical_year": 2026,
+    "doi_match": true,
+    "harvested_authors": [
+      "Al-Halawani R",
+      "Qassem M",
+      "Kyriacou PA."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2026,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 113,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Raghda Al-Halawani",
+      "Meha Qassem",
+      "Panicos A. Kyriacou"
+    ],
+    "doi": "10.3390/s26082337",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Modelling Skin Pigmentation Using the Monte Carlo Technique: A Review",
+    "update_to": [],
+    "url": "https://doi.org/10.3390/s26082337",
+    "venue": "Sensors",
+    "year": 2026
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0113/crossref_doi__834278083f50562f__20260713T071436534983Z.json",
+      "raw_sha256": "e6a39c56b1157f39fb23190ccf5a0de642625a99b1e12875d20f38d3cc4da72e",
+      "request_identity": "doi:10.3390/s26082337",
+      "retrieved_at_utc": "2026-07-13T07:14:36.534983Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0113/europe_pmc_pmid__6fdb00999ae209b4__20260713T071437520729Z.json",
+      "raw_sha256": "52985dac23d09ee6e21505384a9d62bc0d82781a05eb8d81d6ed013a0c103989",
+      "request_identity": "pmid:42076446",
+      "retrieved_at_utc": "2026-07-13T07:14:37.520729Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}

@@ -1,0 +1,92 @@
+{
+  "attempted_identifiers": [
+    {
+      "attempted": true,
+      "identifier_type": "doi",
+      "identifier_value": "10.1007/s13534-024-00409-9",
+      "result": "RESOLVED"
+    },
+    {
+      "attempted": true,
+      "identifier_type": "pmid",
+      "identifier_value": "39465115",
+      "result": "RESOLVED"
+    }
+  ],
+  "authoritative_source": "crossref_doi",
+  "candidate_key": "doi:10.1007/s13534-024-00409-9",
+  "conflicts": [],
+  "field_comparison": {
+    "author_overlap": 1.0,
+    "authoritative_source_agreement": {
+      "author_overlap": 1.0,
+      "doi_match": true,
+      "pmid_match": null,
+      "title_similarity": 1.0,
+      "year_match": true
+    },
+    "canonical_authors": [
+      "Geunho Jung",
+      "Jongha Lee",
+      "Semin Kim"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Biomedical Engineering Letters",
+    "canonical_year": 2024,
+    "doi_match": true,
+    "harvested_authors": [
+      "Jung G",
+      "Lee J",
+      "Kim S."
+    ],
+    "harvested_publication_type": null,
+    "harvested_venue": null,
+    "harvested_year": 2024,
+    "pmid_match": null,
+    "title_similarity": 1.0,
+    "venue_similarity": null,
+    "year_match": true
+  },
+  "global_rank": 23,
+  "normalized_metadata": {
+    "arxiv": null,
+    "authors": [
+      "Geunho Jung",
+      "Jongha Lee",
+      "Semin Kim"
+    ],
+    "doi": "10.1007/s13534-024-00409-9",
+    "pmcid": null,
+    "pmid": null,
+    "publication_status": "PUBLISHED",
+    "publication_type": "journal-article",
+    "relation": {},
+    "title": "Integrated deep learning approach for generating cross-polarized images and analyzing skin melanin and hemoglobin distributions",
+    "update_to": [],
+    "url": "https://doi.org/10.1007/s13534-024-00409-9",
+    "venue": "Biomedical Engineering Letters",
+    "year": 2024
+  },
+  "related_candidate_keys": [],
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
+  "resolution_state": "VERIFIED",
+  "retrieval_evidence": [
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0023/crossref_doi__3f68b0671db7d6ce__20260713T071407511807Z.json",
+      "raw_sha256": "701e9a43347a6a26619f46a789198cd5323f4369840f4e211cb21c4bf3fab4d6",
+      "request_identity": "doi:10.1007/s13534-024-00409-9",
+      "retrieved_at_utc": "2026-07-13T07:14:07.511807Z",
+      "source": "crossref_doi"
+    },
+    {
+      "http_status": 200,
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0023/europe_pmc_pmid__429e8c774155bb9e__20260713T071408499987Z.json",
+      "raw_sha256": "d7f04c0d0cdfb2df6df9ac17aca6ac770a6992784c68b4c16d9c63ffca4a4e38",
+      "request_identity": "pmid:39465115",
+      "retrieved_at_utc": "2026-07-13T07:14:08.499987Z",
+      "source": "europe_pmc_pmid"
+    }
+  ],
+  "version_relationship": "CANONICAL_VERSION"
+}
