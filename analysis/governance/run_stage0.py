@@ -52,6 +52,7 @@ REQUIRED_GOVERNANCE_FILES = [
     "templates/stage_closure_template.yaml",
     "run_stage0.py",
     "run_stage0.sh",
+    "run_stage0_falsification.py",
     "STAGE_0_READY.yaml",
 ]
 
