@@ -108,9 +108,115 @@ def main() -> int:
                 "message": error.message,
             })
 
-        states[
-            result["resolution_state"]
-        ] += 1
+        state = result[
+            "resolution_state"
+        ]
+
+        states[state] += 1
+
+        if state == "VERIFIED":
+            comparison = result[
+                "field_comparison"
+            ]
+
+            if (
+                comparison.get(
+                    "title_similarity"
+                ) is None
+                or comparison[
+                    "title_similarity"
+                ] < 0.92
+            ):
+                errors.append({
+                    "path": str(path),
+                    "field_path": [
+                        "field_comparison",
+                        "title_similarity",
+                    ],
+                    "message": (
+                        "VERIFIED result has "
+                        "insufficient title similarity"
+                    ),
+                })
+
+            if comparison.get(
+                "doi_match"
+            ) is False:
+                errors.append({
+                    "path": str(path),
+                    "field_path": [
+                        "field_comparison",
+                        "doi_match",
+                    ],
+                    "message": (
+                        "VERIFIED result has "
+                        "DOI conflict"
+                    ),
+                })
+
+            if comparison.get(
+                "pmid_match"
+            ) is False:
+                errors.append({
+                    "path": str(path),
+                    "field_path": [
+                        "field_comparison",
+                        "pmid_match",
+                    ],
+                    "message": (
+                        "VERIFIED result has "
+                        "PMID conflict"
+                    ),
+                })
+
+            if comparison.get(
+                "year_match"
+            ) is False:
+                errors.append({
+                    "path": str(path),
+                    "field_path": [
+                        "field_comparison",
+                        "year_match",
+                    ],
+                    "message": (
+                        "VERIFIED result has "
+                        "publication-year conflict"
+                    ),
+                })
+
+            author_score = comparison.get(
+                "author_overlap"
+            )
+
+            if (
+                author_score is not None
+                and author_score < 0.50
+            ):
+                errors.append({
+                    "path": str(path),
+                    "field_path": [
+                        "field_comparison",
+                        "author_overlap",
+                    ],
+                    "message": (
+                        "VERIFIED result has "
+                        "insufficient author overlap"
+                    ),
+                })
+
+            if not result[
+                "retrieval_evidence"
+            ]:
+                errors.append({
+                    "path": str(path),
+                    "field_path": [
+                        "retrieval_evidence"
+                    ],
+                    "message": (
+                        "VERIFIED result lacks "
+                        "retrieval evidence"
+                    ),
+                })
 
         evidence = result[
             "retrieval_evidence"

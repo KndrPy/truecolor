@@ -11,12 +11,40 @@
   "candidate_key": "doi:10.1117/1.jbo.28.10.107001",
   "conflicts": [],
   "field_comparison": {
-    "author_overlap": null,
+    "author_overlap": 1.0,
+    "canonical_authors": [
+      "Masafumi Minakawa",
+      "Md. Abdul Wares",
+      "Kazuya Nakano",
+      "Hideaki Haneishi",
+      "Yoshihisa Aizu",
+      "Yoshio Hayasaki",
+      "Tetsuo Ikeda",
+      "Hajime Nagahara",
+      "Izumi Nishidate"
+    ],
+    "canonical_publication_type": "journal-article",
+    "canonical_venue": "Journal of Biomedical Optics",
     "canonical_year": 2023,
     "doi_match": true,
-    "harvested_year": null,
+    "harvested_authors": [
+      "Masafumi Minakawa",
+      "Md. Abdul Wares",
+      "Kazuya Nakano",
+      "Hideaki Haneishi",
+      "Yoshihisa Aizu",
+      "Yoshio Hayasaki",
+      "Tetsuo Ikeda",
+      "Hajime Nagahara",
+      "Izumi Nishidate"
+    ],
+    "harvested_publication_type": "journal-article",
+    "harvested_venue": "Journal of Biomedical Optics",
+    "harvested_year": 2023,
     "pmid_match": null,
-    "title_similarity": 1.0
+    "title_similarity": 1.0,
+    "venue_similarity": 1.0,
+    "year_match": true
   },
   "global_rank": 9,
   "normalized_metadata": {
@@ -45,15 +73,15 @@
     "year": 2023
   },
   "related_candidate_keys": [],
-  "resolution_reason": "Authoritative identifier resolved and normalized title met the verification threshold.",
+  "resolution_reason": "Authoritative identifier resolved; title, available authorship, and available publication year satisfied the verification policy.",
   "resolution_state": "VERIFIED",
   "retrieval_evidence": [
     {
       "http_status": 200,
-      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0009/crossref_doi__4b1e6a689b9d4328.json",
-      "raw_sha256": "e0e2c723a59329aa8abe081e8fc70c6e9a672dcab4b38a97486a8d36eac586a0",
+      "raw_path": "analysis/prior_art/evidence/identity_resolution/raw/global-0009/crossref_doi__4b1e6a689b9d4328__20260713T053027147000Z.json",
+      "raw_sha256": "ce18fa4171748f6d293259320ed4fb34d0d052104085e1067148534df9538884",
       "request_identity": "doi:10.1117/1.jbo.28.10.107001",
-      "retrieved_at_utc": "2026-07-13T04:42:25Z",
+      "retrieved_at_utc": "2026-07-13T05:30:27.147000Z",
       "source": "crossref_doi"
     }
   ],

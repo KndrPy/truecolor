@@ -27,6 +27,12 @@ POLICY_PATH = (
     ROOT / "policy/stage1_identity_resolution_policy.yaml"
 )
 
+GLOBAL_RANKING_PATH = (
+    ROOT
+    / "evidence/ranking/"
+    "stage1_complete_global_ranking.json"
+)
+
 RAW_DIR = (
     ROOT / "evidence/identity_resolution/raw"
 )
@@ -80,12 +86,19 @@ def sha256_path(path: Path) -> str:
 def utc_now() -> str:
     return datetime.now(
         timezone.utc
+    ).isoformat(
+        timespec="microseconds"
     ).replace(
-        microsecond=0
-    ).isoformat().replace(
         "+00:00",
         "Z",
     )
+
+
+def optional_year(value: Any) -> int | None:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None
 
 
 def normalize_doi(value: str | None) -> str | None:
@@ -401,9 +414,20 @@ def persist_raw(
         )
     )[:16]
 
+    retrieved_at = utc_now()
+
+    timestamp_token = re.sub(
+        r"[^0-9TZ]+",
+        "",
+        retrieved_at,
+    )
+
     payload_path = (
         candidate_dir
-        / f"{source}__{identity_hash}.json"
+        / (
+            f"{source}__{identity_hash}__"
+            f"{timestamp_token}.json"
+        )
     )
 
     envelope = {
@@ -411,7 +435,7 @@ def persist_raw(
         "request_identity": (
             request_identity
         ),
-        "retrieved_at_utc": utc_now(),
+        "retrieved_at_utc": retrieved_at,
         "http_status": http_status,
         "error": error,
         "response_body_utf8": (
@@ -432,10 +456,14 @@ def persist_raw(
         + "\n"
     ).encode("utf-8")
 
-    if not payload_path.exists():
-        payload_path.write_bytes(
-            rendered
+    if payload_path.exists():
+        raise FileExistsError(
+            f"RAW_EVIDENCE_COLLISION={payload_path}"
         )
+
+    payload_path.write_bytes(
+        rendered
+    )
 
     return {
         "source": source,
@@ -792,22 +820,45 @@ def crossref_title_search(
 
 def compare_metadata(
     record: dict[str, Any],
+    harvested: dict[str, Any],
     canonical: dict[str, Any],
 ) -> dict[str, Any]:
-    harvested_title = record.get(
-        "harvested_title",
-        "",
+    harvested_title = str(
+        harvested.get("title")
+        or record.get("harvested_title")
+        or ""
     )
 
-    harvested_authors = []
+    harvested_authors = [
+        str(author)
+        for author in harvested.get(
+            "authors",
+            [],
+        )
+        if str(author).strip()
+    ]
 
-    for note in record.get(
-        "review_notes",
-        [],
-    ):
-        _ = note
+    harvested_year = optional_year(
+        harvested.get("year")
+    )
 
-    harvested_year = None
+    harvested_venue = (
+        str(
+            harvested.get("venue")
+            or ""
+        ).strip()
+        or None
+    )
+
+    harvested_publication_type = (
+        str(
+            harvested.get(
+                "publication_type"
+            )
+            or ""
+        ).strip()
+        or None
+    )
 
     identifier = record[
         "canonical_identifier"
@@ -818,8 +869,6 @@ def compare_metadata(
         canonical.get("title"),
     )
 
-    doi_match = None
-
     harvested_doi = normalize_doi(
         identifier.get("doi")
     )
@@ -828,13 +877,13 @@ def compare_metadata(
         canonical.get("doi")
     )
 
+    doi_match = None
+
     if harvested_doi and canonical_doi:
         doi_match = (
             harvested_doi
             == canonical_doi
         )
-
-    pmid_match = None
 
     harvested_pmid = identifier.get(
         "pmid"
@@ -844,29 +893,98 @@ def compare_metadata(
         "pmid"
     )
 
+    pmid_match = None
+
     if harvested_pmid and canonical_pmid:
         pmid_match = (
             str(harvested_pmid)
             == str(canonical_pmid)
         )
 
+    canonical_authors = [
+        str(author)
+        for author in canonical.get(
+            "authors",
+            [],
+        )
+        if str(author).strip()
+    ]
+
+    authors_score = None
+
+    if harvested_authors and canonical_authors:
+        authors_score = author_overlap(
+            harvested_authors,
+            canonical_authors,
+        )
+
+    canonical_year = optional_year(
+        canonical.get("year")
+    )
+
+    year_match = None
+
+    if (
+        harvested_year is not None
+        and canonical_year is not None
+    ):
+        year_match = (
+            harvested_year
+            == canonical_year
+        )
+
+    canonical_venue = (
+        str(
+            canonical.get("venue")
+            or ""
+        ).strip()
+        or None
+    )
+
+    venue_similarity = None
+
+    if harvested_venue and canonical_venue:
+        venue_similarity = title_similarity(
+            harvested_venue,
+            canonical_venue,
+        )
+
+    canonical_publication_type = (
+        str(
+            canonical.get(
+                "publication_type"
+            )
+            or ""
+        ).strip()
+        or None
+    )
+
     return {
         "title_similarity": title_score,
         "doi_match": doi_match,
         "pmid_match": pmid_match,
-        "harvested_year": harvested_year,
-        "canonical_year": canonical.get(
-            "year"
+        "harvested_authors": (
+            harvested_authors
         ),
-        "author_overlap": author_overlap(
-            harvested_authors,
-            canonical.get(
-                "authors",
-                [],
-            ),
-        ) if harvested_authors else None,
+        "canonical_authors": (
+            canonical_authors
+        ),
+        "author_overlap": authors_score,
+        "harvested_year": harvested_year,
+        "canonical_year": canonical_year,
+        "year_match": year_match,
+        "harvested_venue": harvested_venue,
+        "canonical_venue": canonical_venue,
+        "venue_similarity": (
+            venue_similarity
+        ),
+        "harvested_publication_type": (
+            harvested_publication_type
+        ),
+        "canonical_publication_type": (
+            canonical_publication_type
+        ),
     }
-
 
 def classify(
     *,
@@ -942,16 +1060,43 @@ def classify(
         and comparison["pmid_match"] is not False
     )
 
+    author_threshold = float(
+        policy["thresholds"][
+            "author_token_overlap"
+        ]
+    )
+
+    author_score = comparison.get(
+        "author_overlap"
+    )
+
+    author_match = (
+        author_score is None
+        or author_score >= author_threshold
+    )
+
+    year_match = comparison.get(
+        "year_match"
+    )
+
+    year_consistent = (
+        year_match is None
+        or year_match is True
+    )
+
     if (
         title_score >= threshold
         and identifier_match
+        and author_match
+        and year_consistent
     ):
         return (
             "VERIFIED",
             (
-                "Authoritative identifier resolved "
-                "and normalized title met the "
-                "verification threshold."
+                "Authoritative identifier resolved; "
+                "title, available authorship, and "
+                "available publication year satisfied "
+                "the verification policy."
             ),
             "CANONICAL_VERSION",
         )
@@ -959,6 +1104,12 @@ def classify(
     if (
         title_score < conflict_threshold
         or not identifier_match
+        or (
+            author_score is not None
+            and author_score
+            < author_threshold
+        )
+        or year_match is False
     ):
         return (
             "CONFLICT",
@@ -991,6 +1142,10 @@ def result_path(rank: int) -> Path:
 def resolve_record(
     *,
     path: Path,
+    harvested_by_key: dict[
+        str,
+        dict[str, Any],
+    ],
     policy: dict[str, Any],
     timeout: int,
     retry_delays: list[float],
@@ -999,6 +1154,20 @@ def resolve_record(
     record = load_yaml(path)
 
     rank = int(record["global_rank"])
+
+    candidate_key = record[
+        "candidate_key"
+    ]
+
+    harvested = harvested_by_key.get(
+        candidate_key
+    )
+
+    if harvested is None:
+        raise KeyError(
+            "GLOBAL_RANKING_CANDIDATE_MISSING="
+            f"{candidate_key}"
+        )
 
     identifiers = record[
         "canonical_identifier"
@@ -1137,6 +1306,7 @@ def resolve_record(
 
     comparison = compare_metadata(
         record,
+        harvested,
         canonical or {},
     )
 
@@ -1169,6 +1339,46 @@ def resolve_record(
             "authoritative": (
                 canonical or {}
             ).get("pmid"),
+        })
+
+    author_threshold = float(
+        policy["thresholds"][
+            "author_token_overlap"
+        ]
+    )
+
+    if (
+        comparison.get(
+            "author_overlap"
+        ) is not None
+        and comparison[
+            "author_overlap"
+        ] < author_threshold
+    ):
+        conflicts.append({
+            "field": "authors",
+            "harvested": comparison.get(
+                "harvested_authors"
+            ),
+            "authoritative": comparison.get(
+                "canonical_authors"
+            ),
+            "overlap": comparison.get(
+                "author_overlap"
+            ),
+        })
+
+    if comparison.get(
+        "year_match"
+    ) is False:
+        conflicts.append({
+            "field": "year",
+            "harvested": comparison.get(
+                "harvested_year"
+            ),
+            "authoritative": comparison.get(
+                "canonical_year"
+            ),
         })
 
     conflict_threshold = float(
@@ -1322,6 +1532,23 @@ def main() -> int:
         POLICY_PATH
     )
 
+    global_ranking = json.loads(
+        GLOBAL_RANKING_PATH.read_text(
+            encoding="utf-8"
+        )
+    )
+
+    harvested_by_key = {
+        row["canonical_key"]: row
+        for row in global_ranking["rows"]
+    }
+
+    if len(harvested_by_key) != 1303:
+        raise ValueError(
+            "GLOBAL_RANKING_CANDIDATE_COUNT_"
+            f"INVALID={len(harvested_by_key)}"
+        )
+
     retry_delays = [
         float(value)
         for value in policy[
@@ -1394,6 +1621,9 @@ def main() -> int:
         try:
             result = resolve_record(
                 path=source_path,
+                harvested_by_key=(
+                    harvested_by_key
+                ),
                 policy=policy,
                 timeout=args.timeout,
                 retry_delays=retry_delays,

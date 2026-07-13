@@ -104,3 +104,11 @@ uploads/
 htmlcov/
 # Local analysis scratch space
 work/
+
+# Preserve authoritative prior-art identity-resolution evidence
+!analysis/prior_art/evidence/identity_resolution/raw/
+!analysis/prior_art/evidence/identity_resolution/raw/**
+
+# Preserve authoritative prior-art identity-resolution evidence
+!analysis/prior_art/evidence/identity_resolution/raw/
+!analysis/prior_art/evidence/identity_resolution/raw/**
