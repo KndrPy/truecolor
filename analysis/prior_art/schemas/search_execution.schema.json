@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://truecolor.local/schemas/search-execution.schema.json",
+  "title": "TrueColor Prior-Art Search Execution",
+  "type": "object",
+  "required": [
+    "execution_id",
+    "query_family_id",
+    "domain",
+    "search_date",
+    "databases",
+    "queries_executed",
+    "candidate_count",
+    "included_source_ids",
+    "excluded_candidate_count",
+    "backward_reference_search",
+    "forward_citation_search",
+    "current_preprint_search",
+    "status",
+    "executor"
+  ],
+  "properties": {
+    "execution_id": {
+      "type": "string",
+      "pattern": "^SE-[0-9]{4}$"
+    },
+    "query_family_id": {
+      "type": "string",
+      "pattern": "^QF-[0-9]{3}$"
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "search_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "databases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "queries_executed": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "candidate_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "included_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^PA-[0-9]{4}$"
+      },
+      "uniqueItems": true
+    },
+    "excluded_candidate_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "backward_reference_search": {
+      "type": "boolean"
+    },
+    "forward_citation_search": {
+      "type": "boolean"
+    },
+    "current_preprint_search": {
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "OPEN",
+        "COMPLETE",
+        "BLOCKED"
+      ]
+    },
+    "executor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
