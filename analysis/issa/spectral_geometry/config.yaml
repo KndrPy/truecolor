@@ -1,0 +1,39 @@
+expected:
+  canonical_rows: 15256
+  wavelength_start_nm: 400
+  wavelength_end_nm: 700
+  wavelength_step_nm: 10
+  wavelength_count: 31
+  body_site_levels: 12
+
+columns:
+  subject: [subject_id, subject_key, subject_number, subject]
+  body_site: [body_location_code, body_location, body_site, site]
+  origin: [origin_code, origin, cohort, source]
+  instrument: [instrument_code, instrument, device]
+  specular: [spin_spex_code, spin, sci_sce, specular]
+
+reflectance:
+  prefix: reflectance_
+  scale: auto
+  percent_detection_threshold: 1.5
+  physical_min: 0.0
+  physical_max: 1.0
+
+geometry:
+  minimum_site_rows: 100
+  minimum_site_subjects: 25
+  minimum_eligible_row_fraction: 0.90
+  variance_targets: [0.90, 0.95, 0.99]
+  maximum_components: 31
+  subspace_components: 5
+  reconstruction_components: [3, 5, 10]
+  random_state: 42
+
+closure:
+  require_all_expected_wavelengths: true
+  require_stage4_scope_status:
+    - CLOSED
+    - CLOSED_WITH_SCOPE_LIMITATION
+  require_body_site_restriction: true
+  allow_scope_limited_closure: true

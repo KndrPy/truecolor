@@ -1,0 +1,68 @@
+stage: 5
+name: spectral_geometry_and_effective_information_dimension
+status: closed_with_scope_limitation
+
+canonical_source:
+  path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+  sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+  rows: 15256
+  admissible_rows: 15256
+  inadmissible_rows: 0
+
+analysis_unit:
+  primary: body_location_code_conditioned_spectrum
+  body_site_levels: 12
+  eligible_row_fraction: 1.0
+  global_subject_tone_scalar_admissible: false
+
+spectral_geometry:
+  pooled_diagnostic:
+    participation_ratio: 1.1457492781082543
+    shannon_effective_rank: 1.3530707100662236
+    components_90_percent: 1
+    components_95_percent: 2
+    components_99_percent: 3
+
+  within_site_primary:
+    participation_ratio: 1.1173358763919996
+    shannon_effective_rank: 1.2951490677238324
+    components_90_percent: 1
+    components_95_percent: 2
+    components_99_percent: 3
+
+  subject_balanced_falsification:
+    subject_site_rows: 14543
+    unique_subjects: 2107
+    participation_ratio: 1.1220300268213095
+    shannon_effective_rank: 1.3048059324459262
+    components_90_percent: 1
+    components_95_percent: 2
+    components_99_percent: 3
+    result: pass
+
+variance_decomposition:
+  between_site_spectral_variance_fraction: 0.07096879168625443
+
+cross_site_subspace:
+  compared_site_pairs: 66
+  median_mean_angle_degrees: 6.874728
+  maximum_mean_angle_degrees: 12.839137
+  maximum_component_angle_degrees: 42.010483
+  interpretation: common_dominant_subspace_with_site_specific_higher_component_divergence
+
+adjudication:
+  dominant_axis_biological_identity: unresolved
+  melanin_interpretation_permitted: false
+  pigmentation_interpretation_permitted: false
+  site_conditioning_required: true
+  shared_basis_permitted_for_validation: true
+  site_specific_offsets_required_for_validation: true
+
+inherited_scope_limitations:
+  - instrument_effect_not_estimable_single_level
+  - sci_sce_effect_not_estimable_single_level
+  - protected_exposed_effect_not_testable
+
+next_stage:
+  id: 6
+  name: site_conditioned_spectral_representation_and_validation
