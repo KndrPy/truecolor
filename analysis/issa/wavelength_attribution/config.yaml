@@ -1,0 +1,31 @@
+expected:
+  canonical_rows: 15256
+  subject_ids: 2107
+  body_site_levels: 12
+  wavelength_start_nm: 400
+  wavelength_end_nm: 700
+  wavelength_step_nm: 10
+  wavelength_count: 31
+columns:
+  subject: [subject_id, subject_key, subject_number, subject]
+  body_site: [body_location_code, body_location, body_site, site]
+reflectance:
+  prefix: reflectance_
+  scale: auto
+  percent_detection_threshold: 1.5
+  physical_min: 0.0
+  physical_max: 1.0
+  log_floor: 0.000001
+analysis:
+  components: 3
+  bootstrap_iterations: 200
+  bootstrap_seed: 42
+  minimum_subjects_per_site: 100
+  minimum_pc1_bootstrap_cosine_p2_5: 0.90
+  minimum_pc1_cross_site_absolute_cosine: 0.90
+  minimum_pc1_descriptor_absolute_correlation: 0.70
+  loading_mass_fraction: 0.50
+closure:
+  admissible_stage6_status: [CLOSED, CLOSED_WITH_SCOPE_LIMITATION]
+  require_site_specific_basis: true
+  require_compact_components: 3

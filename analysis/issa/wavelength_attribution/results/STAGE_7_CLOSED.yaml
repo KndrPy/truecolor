@@ -1,0 +1,78 @@
+stage: 7
+name: dominant_axis_interpretation_and_wavelength_attribution
+status: CLOSED_WITH_SCOPE_LIMITATION
+canonical_path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+canonical_sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+canonical_rows: 15256
+admissible_rows: 15256
+subjects: 2107
+body_site_levels: 12
+wavelength_count: 31
+components_interpreted: 3
+bootstrap_iterations_per_site: 200
+pc1_dominant_descriptor: broadband_mean_reflectance
+pc1_median_absolute_descriptor_correlation: 0.9989197744903342
+pc1_cross_site_absolute_cosine_min: 0.9001674474980476
+pc1_cross_site_absolute_cosine_median: 0.9955559210856383
+pc1_cross_site_absolute_cosine_p97_5: 0.9997011149269786
+pc1_cross_site_absolute_cosine_p99: 0.9997216783223947
+pc1_bootstrap_cosine_p2_5_min: 0.9991940823208301
+component_descriptor_adjudication:
+- component: 1
+  dominant_descriptor: broadband_mean_reflectance
+  median_absolute_correlation: 0.9989197744903342
+  p2_5_absolute_correlation: 0.9923170686416485
+  p97_5_absolute_correlation: 0.9997602647699566
+  p99_absolute_correlation: 0.999814110775696
+  same_direction_site_fraction: 1.0
+- component: 2
+  dominant_descriptor: log_red_green_ratio_650_560
+  median_absolute_correlation: 0.7993486872051465
+  p2_5_absolute_correlation: 0.5421031328091562
+  p97_5_absolute_correlation: 0.8898640526700298
+  p99_absolute_correlation: 0.8920055710507466
+  same_direction_site_fraction: 0.8333333333333334
+- component: 3
+  dominant_descriptor: green_band_depth_560_vs_500_650
+  median_absolute_correlation: 0.4606284868015983
+  p2_5_absolute_correlation: 0.26898029993371303
+  p97_5_absolute_correlation: 0.7163146370798184
+  p99_absolute_correlation: 0.7344958027802436
+  same_direction_site_fraction: 0.9166666666666666
+biological_identity_resolved: false
+global_subject_tone_scalar_admissible: false
+analysis_unit: body_location_code_conditioned_spectrum
+inherited_scope_limitations:
+- instrument_effect_not_estimable_single_level
+- sci_sce_effect_not_estimable_single_level
+- protected_exposed_effect_not_testable
+gates:
+  stage6_status_admissible: true
+  stage6_site_specific_basis_inherited: true
+  stage6_compact_dimension_inherited: true
+  canonical_row_count_match: true
+  subject_count_match: true
+  body_site_level_count_match: true
+  wavelength_grid_exact: true
+  all_sites_analyzed: true
+  bootstrap_complete: true
+  pc1_bootstrap_loading_stable: true
+  pc1_cross_site_loading_consistent: true
+  pc1_descriptor_association_strong: true
+  tail_statistics_computed: true
+hard_failed_gates: []
+next_stage:
+  id: 8
+  name: wavelength_reduction_and_external_colorimetric_validation
+  inherited_restrictions:
+  - condition_or_stratify_by_body_location_code
+  - do_not_claim_cross_instrument_stability
+  - do_not_claim_SCI_SCE_equivalence
+  - do_not_claim_protected_exposed_equivalence
+  - do_not_use_global_subject_skin_tone_scalar
+pc1_limiting_pair:
+  body_site_a: '12'
+  body_site_b: '7'
+  absolute_cosine_similarity: 0.9001674474980476
+  sign_flipped_for_comparison: false
+  wavelengths_compared: 31
