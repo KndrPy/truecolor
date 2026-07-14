@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "manifest_schema": "qudipi.compiled-config",
+  "manifest_version": 1,
+  "product_version": "2.0.0",
+  "config_sha256": "b7181bf552dad94407165529f91b150b56f535f3e19966c498c034f1c64e494e",
+  "phase": 1,
+  "stage_count": 34,
+  "asset_count": 22,
+  "schema_count": 41,
+  "operator_count": 25,
+  "checks": [
+    {
+      "check": "single_config_authority",
+      "status": "PASS"
+    },
+    {
+      "check": "stage_registry_0_through_33",
+      "status": "PASS"
+    },
+    {
+      "check": "stage_dependency_dag",
+      "status": "PASS"
+    },
+    {
+      "check": "asset_stage_symmetry",
+      "status": "PASS"
+    },
+    {
+      "check": "generic_corpus_characterization",
+      "status": "PASS"
+    },
+    {
+      "check": "operator_schema_resolution",
+      "status": "PASS"
+    },
+    {
+      "check": "proprietary_product_policy",
+      "status": "PASS"
+    },
+    {
+      "check": "phase_1_human_authority",
+      "status": "PASS"
+    }
+  ]
+}

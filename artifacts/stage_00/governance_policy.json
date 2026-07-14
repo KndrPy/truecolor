@@ -1,0 +1,5 @@
+{
+  "default_access_class": "project_private",
+  "autonomous_agents": false,
+  "autonomous_claim_adjudication": false
+}

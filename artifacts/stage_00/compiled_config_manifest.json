@@ -1,0 +1,3491 @@
+{
+  "manifest_schema": "qudipi.compiled-config",
+  "manifest_version": 1,
+  "product_version": "2.0.0",
+  "config_sha256": "b7181bf552dad94407165529f91b150b56f535f3e19966c498c034f1c64e494e",
+  "phase": 1,
+  "stage_count": 34,
+  "stage_id_min": 0,
+  "stage_id_max": 33,
+  "single_config_authority": true,
+  "config": {
+    "application": {
+      "id": "qudipi",
+      "phase": 1,
+      "study": "truecolor",
+      "research_pack": "skin_photon",
+      "single_config_authority": true
+    },
+    "runtime": {
+      "max_cpu_percent": 30,
+      "max_gpu_percent": 30,
+      "max_memory_gib": 24,
+      "max_concurrent_workers": 2
+    },
+    "governance": {
+      "default_access_class": "project_private",
+      "autonomous_agents": false,
+      "autonomous_claim_adjudication": false
+    },
+    "licenses": {
+      "product_license": "proprietary_commercial",
+      "product_version": "2.0.0",
+      "source_distribution": "restricted",
+      "redistribution_requires_written_agreement": true,
+      "default_approved": [
+        "MIT",
+        "Apache-2.0",
+        "BSD-2-Clause",
+        "BSD-3-Clause",
+        "ISC",
+        "Zlib"
+      ],
+      "reject_unknown": true,
+      "reject_paid_runtime": true,
+      "reject_mandatory_cloud": true
+    },
+    "corpus_characterization": {
+      "required_details": [
+        "modality",
+        "measurement_type",
+        "measurement_provenance",
+        "consent_scope",
+        "license_scope",
+        "identity_structure",
+        "repeat_measure_structure",
+        "wavelength_axis",
+        "capture_device",
+        "illumination",
+        "site",
+        "label_provenance"
+      ],
+      "controlled_characteristics": false,
+      "reject_unknown_roles": true,
+      "preserve_unknown_details": true
+    },
+    "roles": {
+      "annotation_contrast_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "autonomous_diagnosis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "benchmark_scoring": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "biometric_identification": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "camera_response_reference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "capture_robustness_benchmark": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "capture_variation_audit": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "chromophore_reference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "claim_context": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "clinical_diagnosis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "clinical_inference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "clinical_translation": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "colorimeter_anchor": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "colorimetric_anchor": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "colorimetric_conversion": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "colorimetric_reference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "cross_dataset_identity_linkage": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "data_quality_decomposition": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "demographic_inference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "domain_shift_audit": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "external_benchmark": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "external_replication": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "external_spectral_reconstruction_benchmark": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "heterogeneity_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "identity_linkage_audit": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "illuminant_reference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "image_quality_audit": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "individual_identity_linkage": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "individual_skin_tone_scoring": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "information_bound_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "integrated_decomposition": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "label_quality_audit": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "measurand_validation": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "measurement_design": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "metrology": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "modality_distance_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "model_training": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "multispectral_demosaicing_benchmark": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "novelty_boundary": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "observability_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "observation_operator_construction": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "pair_admissibility": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "physics_contrast_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "prior_art_grounding": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "recovery_benchmark": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "reflectance_reference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "representation_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "reproducibility_context": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "segmentation_boundary_benchmark": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "site_effect_validation": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "skin_physics_modeling": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "skin_physics_validation": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "skin_specific_clinical_inference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "skin_tone_ground_truth": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "spectral_geometry": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "spectral_ground_truth": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "spectral_validation": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "statistical_closure": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      },
+      "subject_identification": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "subject_level_inference": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "unconsented_identity_linkage": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "prohibited_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "high"
+      },
+      "within_subject_variation_analysis": {
+        "description": "Canonical role migrated from the existing asset-governance declaration.",
+        "role_class": "scientific_use",
+        "derivation_mode": "declared_only",
+        "requires_all": [],
+        "requires_any": [],
+        "forbids_any": [],
+        "risk_class": "standard"
+      }
+    },
+    "stages": [
+      {
+        "id": 0,
+        "key": "governance",
+        "name": "Program governance, configuration, environment, and reproducibility foundation",
+        "purpose": "Program governance, configuration, environment, and reproducibility foundation",
+        "dependencies": [],
+        "required_assets": [
+          "prior_art_corpus"
+        ],
+        "required_operators": [
+          "governance"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "governance_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "claim_context",
+              "novelty_boundary",
+              "prior_art_grounding",
+              "reproducibility_context"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "key": "prior_art",
+        "name": "Prior-art extraction, framing analysis, lineage, and novelty boundary",
+        "purpose": "Prior-art extraction, framing analysis, lineage, and novelty boundary",
+        "dependencies": [
+          0
+        ],
+        "required_assets": [
+          "prior_art_corpus"
+        ],
+        "required_operators": [
+          "prior_art_grounding"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "prior_art_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "claim_context",
+              "novelty_boundary",
+              "prior_art_grounding",
+              "reproducibility_context"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "key": "scientific_charter",
+        "name": "Scientific charter, estimands, claims, falsification, and lockbox",
+        "purpose": "Scientific charter, estimands, claims, falsification, and lockbox",
+        "dependencies": [
+          1
+        ],
+        "required_assets": [
+          "prior_art_corpus"
+        ],
+        "required_operators": [
+          "governance"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "scientific_charter_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "claim_context",
+              "novelty_boundary",
+              "prior_art_grounding",
+              "reproducibility_context"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "key": "asset_registry",
+        "name": "Asset registry, acquisition provenance, canonicalization, schema, and lineage",
+        "purpose": "Asset registry, acquisition provenance, canonicalization, schema, and lineage",
+        "dependencies": [
+          0,
+          2
+        ],
+        "required_assets": [
+          "issa",
+          "nist_skin_reflectance",
+          "hyper_skin",
+          "chroma_fit",
+          "camera_sensitivities",
+          "illuminant_spectra",
+          "cie_standards",
+          "chromophore_spectra",
+          "arad_1k_31",
+          "ntire_16",
+          "uci_skin_segmentation",
+          "mskcc_skin_tone",
+          "mst_e",
+          "skin_tone_wild",
+          "scin",
+          "fitzpatrick17k",
+          "cleanpatrick",
+          "ddi",
+          "ddi2",
+          "mra_midas",
+          "skincon"
+        ],
+        "required_operators": [
+          "canonical_build"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "asset_registry_corpus",
+            "minimum_assets": 21,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "annotation_contrast_analysis",
+              "camera_response_reference",
+              "capture_robustness_benchmark",
+              "capture_variation_audit",
+              "chromophore_reference",
+              "clinical_translation",
+              "colorimeter_anchor",
+              "colorimetric_anchor",
+              "colorimetric_conversion",
+              "colorimetric_reference",
+              "data_quality_decomposition",
+              "domain_shift_audit",
+              "external_benchmark",
+              "external_replication",
+              "external_spectral_reconstruction_benchmark",
+              "heterogeneity_analysis",
+              "identity_linkage_audit",
+              "illuminant_reference",
+              "image_quality_audit",
+              "information_bound_analysis",
+              "integrated_decomposition",
+              "label_quality_audit",
+              "measurand_validation",
+              "measurement_design",
+              "metrology",
+              "modality_distance_analysis",
+              "multispectral_demosaicing_benchmark",
+              "observability_analysis",
+              "observation_operator_construction",
+              "pair_admissibility",
+              "physics_contrast_analysis",
+              "recovery_benchmark",
+              "reflectance_reference",
+              "representation_analysis",
+              "segmentation_boundary_benchmark",
+              "site_effect_validation",
+              "skin_physics_modeling",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "spectral_validation",
+              "statistical_closure",
+              "within_subject_variation_analysis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "key": "issa_metrology",
+        "name": "ISSA identity, metrology, repeated-measure structure, and effective N",
+        "purpose": "ISSA identity, metrology, repeated-measure structure, and effective N",
+        "dependencies": [
+          3
+        ],
+        "required_assets": [
+          "issa"
+        ],
+        "required_operators": [
+          "metrology"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "issa_metrology_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "key": "measurand_admissibility",
+        "name": "Measurand admissibility, proxy validity, nuisance decomposition, and site conditioning",
+        "purpose": "Measurand admissibility, proxy validity, nuisance decomposition, and site conditioning",
+        "dependencies": [
+          4
+        ],
+        "required_assets": [
+          "issa",
+          "chroma_fit",
+          "mskcc_skin_tone"
+        ],
+        "required_operators": [
+          "measurand_admissibility"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "measurand_admissibility_corpus",
+            "minimum_assets": 3,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "colorimeter_anchor",
+              "colorimetric_anchor",
+              "external_benchmark",
+              "integrated_decomposition",
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "representation_analysis",
+              "site_effect_validation",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "key": "representation_admissibility",
+        "name": "Spectral representation admissibility and transformation stability",
+        "purpose": "Spectral representation admissibility and transformation stability",
+        "dependencies": [
+          4,
+          5
+        ],
+        "required_assets": [
+          "issa",
+          "nist_skin_reflectance",
+          "hyper_skin"
+        ],
+        "required_operators": [
+          "representation_admissibility"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "representation_admissibility_corpus",
+            "minimum_assets": 3,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "colorimetric_anchor",
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "reflectance_reference",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "spectral_validation",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "key": "linear_geometry",
+        "name": "Linear spectral geometry, covariance, conditioning, and effective rank",
+        "purpose": "Linear spectral geometry, covariance, conditioning, and effective rank",
+        "dependencies": [
+          6
+        ],
+        "required_assets": [
+          "issa",
+          "nist_skin_reflectance",
+          "hyper_skin"
+        ],
+        "required_operators": [
+          "linear_geometry"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "linear_geometry_corpus",
+            "minimum_assets": 3,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "colorimetric_anchor",
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "reflectance_reference",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "spectral_validation",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "key": "functional_geometry",
+        "name": "Functional, nonlinear, local, and manifold geometry",
+        "purpose": "Functional, nonlinear, local, and manifold geometry",
+        "dependencies": [
+          6,
+          7
+        ],
+        "required_assets": [
+          "issa",
+          "hyper_skin"
+        ],
+        "required_operators": [
+          "functional_geometry"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "functional_geometry_corpus",
+            "minimum_assets": 2,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "key": "compact_representation",
+        "name": "Subject-disjoint compact-representation validation",
+        "purpose": "Subject-disjoint compact-representation validation",
+        "dependencies": [
+          6,
+          7
+        ],
+        "required_assets": [
+          "issa"
+        ],
+        "required_operators": [
+          "compact_representation"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "compact_representation_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "key": "wavelength_information",
+        "name": "Wavelength redundancy, conditional innovation, axis stability, and interpretation",
+        "purpose": "Wavelength redundancy, conditional innovation, axis stability, and interpretation",
+        "dependencies": [
+          7,
+          8,
+          9
+        ],
+        "required_assets": [
+          "issa",
+          "nist_skin_reflectance",
+          "hyper_skin"
+        ],
+        "required_operators": [
+          "wavelength_information"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "wavelength_information_corpus",
+            "minimum_assets": 3,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "colorimetric_anchor",
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "reflectance_reference",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "spectral_validation",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "key": "observation_operator",
+        "name": "Camera and illuminant observation-operator construction and validation",
+        "purpose": "Camera and illuminant observation-operator construction and validation",
+        "dependencies": [
+          6,
+          10
+        ],
+        "required_assets": [
+          "issa",
+          "camera_sensitivities",
+          "illuminant_spectra"
+        ],
+        "required_operators": [
+          "observation_operator"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "observation_operator_corpus",
+            "minimum_assets": 3,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "camera_response_reference",
+              "illuminant_reference",
+              "information_bound_analysis",
+              "measurand_validation",
+              "measurement_design",
+              "metrology",
+              "observability_analysis",
+              "observation_operator_construction",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "key": "observability",
+        "name": "Direct observability, null-space structure, and real-spectrum metamerism",
+        "purpose": "Direct observability, null-space structure, and real-spectrum metamerism",
+        "dependencies": [
+          11
+        ],
+        "required_assets": [
+          "issa",
+          "camera_sensitivities",
+          "illuminant_spectra"
+        ],
+        "required_operators": [
+          "observability"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "observability_corpus",
+            "minimum_assets": 3,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "camera_response_reference",
+              "illuminant_reference",
+              "information_bound_analysis",
+              "measurand_validation",
+              "measurement_design",
+              "metrology",
+              "observability_analysis",
+              "observation_operator_construction",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "key": "colorimetric_anchoring",
+        "name": "External colorimetric anchoring and uncertainty propagation",
+        "purpose": "External colorimetric anchoring and uncertainty propagation",
+        "dependencies": [
+          3,
+          11
+        ],
+        "required_assets": [
+          "issa",
+          "nist_skin_reflectance",
+          "chroma_fit",
+          "mskcc_skin_tone",
+          "cie_standards"
+        ],
+        "required_operators": [
+          "colorimetry"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "colorimetric_anchoring_corpus",
+            "minimum_assets": 5,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "colorimeter_anchor",
+              "colorimetric_anchor",
+              "colorimetric_conversion",
+              "colorimetric_reference",
+              "external_benchmark",
+              "integrated_decomposition",
+              "measurand_validation",
+              "metrology",
+              "recovery_benchmark",
+              "reflectance_reference",
+              "representation_analysis",
+              "site_effect_validation",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "spectral_validation",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "key": "skin_physics",
+        "name": "Forward skin physics, inverse fitting, identifiability, and solver agreement",
+        "purpose": "Forward skin physics, inverse fitting, identifiability, and solver agreement",
+        "dependencies": [
+          6,
+          12,
+          13
+        ],
+        "required_assets": [
+          "issa",
+          "chromophore_spectra"
+        ],
+        "required_operators": [
+          "skin_physics"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "skin_physics_corpus",
+            "minimum_assets": 2,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "chromophore_reference",
+              "information_bound_analysis",
+              "measurand_validation",
+              "measurement_design",
+              "metrology",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_modeling",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "key": "information_bounds",
+        "name": "Fisher information, CRB, and four-mechanism factorial attribution",
+        "purpose": "Fisher information, CRB, and four-mechanism factorial attribution",
+        "dependencies": [
+          11,
+          12,
+          14
+        ],
+        "required_assets": [
+          "issa",
+          "camera_sensitivities",
+          "illuminant_spectra",
+          "chromophore_spectra"
+        ],
+        "required_operators": [
+          "information_bounds"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "information_bounds_corpus",
+            "minimum_assets": 4,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "camera_response_reference",
+              "chromophore_reference",
+              "illuminant_reference",
+              "information_bound_analysis",
+              "measurand_validation",
+              "measurement_design",
+              "metrology",
+              "observability_analysis",
+              "observation_operator_construction",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_modeling",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "key": "matched_simulation",
+        "name": "Matched simulation, method recovery, controls, and falsification",
+        "purpose": "Matched simulation, method recovery, controls, and falsification",
+        "dependencies": [
+          6,
+          11,
+          14,
+          15
+        ],
+        "required_assets": [
+          "issa",
+          "camera_sensitivities",
+          "illuminant_spectra",
+          "chromophore_spectra"
+        ],
+        "required_operators": [
+          "simulation"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "matched_simulation_corpus",
+            "minimum_assets": 4,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "camera_response_reference",
+              "chromophore_reference",
+              "illuminant_reference",
+              "information_bound_analysis",
+              "measurand_validation",
+              "measurement_design",
+              "metrology",
+              "observability_analysis",
+              "observation_operator_construction",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_modeling",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "key": "measurement_design",
+        "name": "Optimal measurement-system and band design",
+        "purpose": "Optimal measurement-system and band design",
+        "dependencies": [
+          15,
+          16
+        ],
+        "required_assets": [
+          "camera_sensitivities",
+          "illuminant_spectra",
+          "chromophore_spectra"
+        ],
+        "required_operators": [
+          "measurement_design"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "measurement_design_corpus",
+            "minimum_assets": 3,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "camera_response_reference",
+              "chromophore_reference",
+              "illuminant_reference",
+              "information_bound_analysis",
+              "measurement_design",
+              "observability_analysis",
+              "observation_operator_construction",
+              "recovery_benchmark",
+              "skin_physics_modeling"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "key": "predictive_recovery",
+        "name": "Predictive, statistical, tensor, neural, and hybrid recovery benchmarks",
+        "purpose": "Predictive, statistical, tensor, neural, and hybrid recovery benchmarks",
+        "dependencies": [
+          9,
+          12,
+          14,
+          15,
+          16
+        ],
+        "required_assets": [
+          "issa",
+          "hyper_skin",
+          "chroma_fit",
+          "camera_sensitivities",
+          "illuminant_spectra",
+          "cie_standards",
+          "chromophore_spectra"
+        ],
+        "required_operators": [
+          "predictive_recovery"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "predictive_recovery_corpus",
+            "minimum_assets": 7,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "camera_response_reference",
+              "chromophore_reference",
+              "colorimetric_anchor",
+              "colorimetric_conversion",
+              "colorimetric_reference",
+              "illuminant_reference",
+              "information_bound_analysis",
+              "measurand_validation",
+              "measurement_design",
+              "metrology",
+              "observability_analysis",
+              "observation_operator_construction",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_modeling",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "key": "arad_1k_reconstruction",
+        "name": "ARAD 1K 31-channel external spectral-reconstruction benchmark",
+        "purpose": "ARAD 1K 31-channel external spectral-reconstruction benchmark",
+        "dependencies": [
+          18
+        ],
+        "required_assets": [
+          "arad_1k_31"
+        ],
+        "required_operators": [
+          "external_benchmark"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "arad_1k_reconstruction_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "external_spectral_reconstruction_benchmark",
+              "integrated_decomposition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "key": "ntire_16_demosaicing",
+        "name": "NTIRE 16-channel multispectral demosaicing benchmark",
+        "purpose": "NTIRE 16-channel multispectral demosaicing benchmark",
+        "dependencies": [
+          18
+        ],
+        "required_assets": [
+          "ntire_16"
+        ],
+        "required_operators": [
+          "external_benchmark"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "ntire_16_demosaicing_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "integrated_decomposition",
+              "multispectral_demosaicing_benchmark"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "key": "uci_skin_segmentation",
+        "name": "UCI RGB skin-segmentation boundary benchmark",
+        "purpose": "UCI RGB skin-segmentation boundary benchmark",
+        "dependencies": [
+          18
+        ],
+        "required_assets": [
+          "uci_skin_segmentation"
+        ],
+        "required_operators": [
+          "external_benchmark"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "uci_skin_segmentation_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "integrated_decomposition",
+              "segmentation_boundary_benchmark"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "key": "mskcc_colorimeter",
+        "name": "MSKCC colorimeter-grounded skin-tone and site validation",
+        "purpose": "MSKCC colorimeter-grounded skin-tone and site validation",
+        "dependencies": [
+          5,
+          13,
+          18
+        ],
+        "required_assets": [
+          "mskcc_skin_tone"
+        ],
+        "required_operators": [
+          "external_benchmark"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "mskcc_colorimeter_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "colorimeter_anchor",
+              "external_benchmark",
+              "integrated_decomposition",
+              "measurand_validation",
+              "site_effect_validation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "key": "mst_e_capture",
+        "name": "MST-E within-subject still/video capture robustness",
+        "purpose": "MST-E within-subject still/video capture robustness",
+        "dependencies": [
+          18,
+          22
+        ],
+        "required_assets": [
+          "mst_e"
+        ],
+        "required_operators": [
+          "external_benchmark"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "mst_e_capture_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "capture_robustness_benchmark",
+              "integrated_decomposition",
+              "statistical_closure",
+              "within_subject_variation_analysis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "key": "scin_audit",
+        "name": "SCIN acquisition, labels, image quality, representation, and domain-shift audit",
+        "purpose": "SCIN acquisition, labels, image quality, representation, and domain-shift audit",
+        "dependencies": [
+          18,
+          23
+        ],
+        "required_assets": [
+          "scin",
+          "skin_tone_wild"
+        ],
+        "required_operators": [
+          "external_benchmark"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "scin_audit_corpus",
+            "minimum_assets": 2,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "capture_variation_audit",
+              "domain_shift_audit",
+              "image_quality_audit",
+              "integrated_decomposition",
+              "label_quality_audit"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "key": "fitzpatrick_cleanpatrick",
+        "name": "Fitzpatrick17k and CleanPatrick data-quality decomposition",
+        "purpose": "Fitzpatrick17k and CleanPatrick data-quality decomposition",
+        "dependencies": [
+          18
+        ],
+        "required_assets": [
+          "fitzpatrick17k",
+          "cleanpatrick"
+        ],
+        "required_operators": [
+          "external_benchmark"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "fitzpatrick_cleanpatrick_corpus",
+            "minimum_assets": 2,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "data_quality_decomposition",
+              "integrated_decomposition",
+              "label_quality_audit"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "key": "ddi_translation",
+        "name": "DDI clinical translation and physics-versus-contrast analysis",
+        "purpose": "DDI clinical translation and physics-versus-contrast analysis",
+        "dependencies": [
+          15,
+          18,
+          25
+        ],
+        "required_assets": [
+          "ddi",
+          "skincon"
+        ],
+        "required_operators": [
+          "clinical_translation"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "ddi_translation_corpus",
+            "minimum_assets": 2,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "annotation_contrast_analysis",
+              "clinical_translation",
+              "integrated_decomposition",
+              "physics_contrast_analysis",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "key": "ddi2_replication",
+        "name": "DDI-2 unchanged external replication and heterogeneity analysis",
+        "purpose": "DDI-2 unchanged external replication and heterogeneity analysis",
+        "dependencies": [
+          26
+        ],
+        "required_assets": [
+          "ddi2"
+        ],
+        "required_operators": [
+          "clinical_translation"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "ddi2_replication_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "external_replication",
+              "heterogeneity_analysis",
+              "integrated_decomposition",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "key": "mra_midas",
+        "name": "MRA-MIDAS identity, modality, distance, linkage, and pair-admissibility audit",
+        "purpose": "MRA-MIDAS identity, modality, distance, linkage, and pair-admissibility audit",
+        "dependencies": [
+          4,
+          18
+        ],
+        "required_assets": [
+          "mra_midas"
+        ],
+        "required_operators": [
+          "metrology"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "mra_midas_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "identity_linkage_audit",
+              "integrated_decomposition",
+              "modality_distance_analysis",
+              "pair_admissibility",
+              "statistical_closure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "key": "integrated_decomposition",
+        "name": "Integrated physics–contrast–data-quality–capture–disease decomposition",
+        "purpose": "Integrated physics–contrast–data-quality–capture–disease decomposition",
+        "dependencies": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "required_assets": [
+          "arad_1k_31",
+          "ntire_16",
+          "uci_skin_segmentation",
+          "mskcc_skin_tone",
+          "mst_e",
+          "scin",
+          "skin_tone_wild",
+          "fitzpatrick17k",
+          "cleanpatrick",
+          "ddi",
+          "ddi2",
+          "mra_midas",
+          "skincon"
+        ],
+        "required_operators": [
+          "integrated_decomposition"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "integrated_decomposition_corpus",
+            "minimum_assets": 13,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "annotation_contrast_analysis",
+              "capture_robustness_benchmark",
+              "capture_variation_audit",
+              "clinical_translation",
+              "colorimeter_anchor",
+              "data_quality_decomposition",
+              "domain_shift_audit",
+              "external_benchmark",
+              "external_replication",
+              "external_spectral_reconstruction_benchmark",
+              "heterogeneity_analysis",
+              "identity_linkage_audit",
+              "image_quality_audit",
+              "integrated_decomposition",
+              "label_quality_audit",
+              "measurand_validation",
+              "modality_distance_analysis",
+              "multispectral_demosaicing_benchmark",
+              "pair_admissibility",
+              "physics_contrast_analysis",
+              "segmentation_boundary_benchmark",
+              "site_effect_validation",
+              "statistical_closure",
+              "within_subject_variation_analysis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "key": "statistical_closure",
+        "name": "Statistical closure, multiplicity, clustered inference, specification curve, and lockbox",
+        "purpose": "Statistical closure, multiplicity, clustered inference, specification curve, and lockbox",
+        "dependencies": [
+          16,
+          29
+        ],
+        "required_assets": [
+          "issa",
+          "mst_e",
+          "ddi",
+          "ddi2",
+          "mra_midas"
+        ],
+        "required_operators": [
+          "statistical_closure"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "statistical_closure_corpus",
+            "minimum_assets": 5,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "capture_robustness_benchmark",
+              "clinical_translation",
+              "external_replication",
+              "heterogeneity_analysis",
+              "identity_linkage_audit",
+              "integrated_decomposition",
+              "measurand_validation",
+              "metrology",
+              "modality_distance_analysis",
+              "pair_admissibility",
+              "physics_contrast_analysis",
+              "recovery_benchmark",
+              "representation_analysis",
+              "skin_physics_validation",
+              "spectral_geometry",
+              "spectral_ground_truth",
+              "statistical_closure",
+              "within_subject_variation_analysis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "key": "claim_adjudication",
+        "name": "Final claim adjudication, scope restriction, and evidence-state assignment",
+        "purpose": "Final claim adjudication, scope restriction, and evidence-state assignment",
+        "dependencies": [
+          30
+        ],
+        "required_assets": [
+          "prior_art_corpus"
+        ],
+        "required_operators": [
+          "claim_adjudication"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "claim_adjudication_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "claim_context",
+              "novelty_boundary",
+              "prior_art_grounding",
+              "reproducibility_context"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "key": "clean_room_reproducibility",
+        "name": "Clean-room scientific, computational, artifact, and release reproducibility",
+        "purpose": "Clean-room scientific, computational, artifact, and release reproducibility",
+        "dependencies": [
+          31
+        ],
+        "required_assets": [
+          "prior_art_corpus"
+        ],
+        "required_operators": [
+          "reproducibility"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": [
+          {
+            "requirement_id": "clean_room_reproducibility_corpus",
+            "minimum_assets": 1,
+            "required_characteristics": [],
+            "accepted_roles": [
+              "claim_context",
+              "novelty_boundary",
+              "prior_art_grounding",
+              "reproducibility_context"
+            ]
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "key": "consumer_productization",
+        "name": "Consumer UI/UX, cross-surface interaction, immersive visualization, and product release",
+        "purpose": "Consumer UI/UX, cross-surface interaction, immersive visualization, and product release",
+        "dependencies": [
+          32
+        ],
+        "required_assets": [],
+        "required_operators": [
+          "productization"
+        ],
+        "current_disposition": "open",
+        "asset_requirements": []
+      }
+    ],
+    "assets": [
+      {
+        "id": "prior_art_corpus",
+        "display_name": "Governed prior-art corpus",
+        "asset_class": "literature",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "project_private",
+        "identity_unit": "source",
+        "measurement_unit": "document",
+        "characteristics": [
+          "asset_class:literature",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:project_private",
+          "identity_unit:source",
+          "measurement_unit:document"
+        ],
+        "known_details": {
+          "identity_structure": "source",
+          "license_scope": "review_required",
+          "measurement_type": "document"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "prior_art_grounding",
+          "novelty_boundary",
+          "claim_context",
+          "reproducibility_context"
+        ],
+        "declared_prohibited_roles": [
+          "model_training",
+          "benchmark_scoring",
+          "clinical_inference",
+          "biometric_identification"
+        ],
+        "applicable_stages": [
+          0,
+          1,
+          2,
+          31,
+          32
+        ]
+      },
+      {
+        "id": "issa",
+        "display_name": "ISSA skin reflectance corpus",
+        "asset_class": "spectral_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "subject",
+        "measurement_unit": "spectrum",
+        "characteristics": [
+          "asset_class:spectral_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:subject",
+          "measurement_unit:spectrum"
+        ],
+        "known_details": {
+          "identity_structure": "subject",
+          "license_scope": "review_required",
+          "measurement_type": "spectrum"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "spectral_ground_truth",
+          "metrology",
+          "measurand_validation",
+          "representation_analysis",
+          "spectral_geometry",
+          "skin_physics_validation",
+          "recovery_benchmark",
+          "statistical_closure"
+        ],
+        "declared_prohibited_roles": [
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          30
+        ]
+      },
+      {
+        "id": "nist_skin_reflectance",
+        "display_name": "NIST human skin reflectance",
+        "asset_class": "spectral_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "public",
+        "identity_unit": "sample",
+        "measurement_unit": "spectrum",
+        "characteristics": [
+          "asset_class:spectral_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:public",
+          "identity_unit:sample",
+          "measurement_unit:spectrum"
+        ],
+        "known_details": {
+          "identity_structure": "sample",
+          "license_scope": "review_required",
+          "measurement_type": "spectrum"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "reflectance_reference",
+          "spectral_validation",
+          "representation_analysis",
+          "spectral_geometry",
+          "colorimetric_anchor"
+        ],
+        "declared_prohibited_roles": [
+          "subject_level_inference",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "model_training"
+        ],
+        "applicable_stages": [
+          3,
+          6,
+          7,
+          10,
+          13
+        ]
+      },
+      {
+        "id": "hyper_skin",
+        "display_name": "Hyper-Skin",
+        "asset_class": "spectral_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "subject",
+        "measurement_unit": "hyperspectral_image",
+        "characteristics": [
+          "asset_class:spectral_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:subject",
+          "measurement_unit:hyperspectral_image"
+        ],
+        "known_details": {
+          "identity_structure": "subject",
+          "license_scope": "review_required",
+          "measurement_type": "hyperspectral_image"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "spectral_ground_truth",
+          "representation_analysis",
+          "spectral_geometry",
+          "recovery_benchmark"
+        ],
+        "declared_prohibited_roles": [
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          6,
+          7,
+          8,
+          10,
+          18
+        ]
+      },
+      {
+        "id": "chroma_fit",
+        "display_name": "CHROMA-FIT",
+        "asset_class": "multimodal_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "subject",
+        "measurement_unit": "image_and_color_measurement",
+        "characteristics": [
+          "asset_class:multimodal_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:subject",
+          "measurement_unit:image_and_color_measurement"
+        ],
+        "known_details": {
+          "identity_structure": "subject",
+          "license_scope": "review_required",
+          "measurement_type": "image_and_color_measurement"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "colorimetric_anchor",
+          "measurand_validation",
+          "recovery_benchmark"
+        ],
+        "declared_prohibited_roles": [
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          5,
+          13,
+          18
+        ]
+      },
+      {
+        "id": "camera_sensitivities",
+        "display_name": "Camera spectral sensitivities",
+        "asset_class": "reference_data",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "project_private",
+        "identity_unit": "camera",
+        "measurement_unit": "sensitivity_curve",
+        "characteristics": [
+          "asset_class:reference_data",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:project_private",
+          "identity_unit:camera",
+          "measurement_unit:sensitivity_curve"
+        ],
+        "known_details": {
+          "identity_structure": "camera",
+          "license_scope": "review_required",
+          "measurement_type": "sensitivity_curve"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "camera_response_reference",
+          "observation_operator_construction",
+          "observability_analysis",
+          "information_bound_analysis",
+          "measurement_design",
+          "recovery_benchmark"
+        ],
+        "declared_prohibited_roles": [
+          "subject_level_inference",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference"
+        ],
+        "applicable_stages": [
+          3,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "id": "illuminant_spectra",
+        "display_name": "Illuminant spectra",
+        "asset_class": "reference_data",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "project_private",
+        "identity_unit": "illuminant",
+        "measurement_unit": "spectral_power_distribution",
+        "characteristics": [
+          "asset_class:reference_data",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:project_private",
+          "identity_unit:illuminant",
+          "measurement_unit:spectral_power_distribution"
+        ],
+        "known_details": {
+          "identity_structure": "illuminant",
+          "license_scope": "review_required",
+          "measurement_type": "spectral_power_distribution"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "illuminant_reference",
+          "observation_operator_construction",
+          "observability_analysis",
+          "information_bound_analysis",
+          "measurement_design",
+          "recovery_benchmark"
+        ],
+        "declared_prohibited_roles": [
+          "subject_level_inference",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference"
+        ],
+        "applicable_stages": [
+          3,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "id": "cie_standards",
+        "display_name": "CIE standards",
+        "asset_class": "reference_data",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "public",
+        "identity_unit": "standard",
+        "measurement_unit": "color_matching_function",
+        "characteristics": [
+          "asset_class:reference_data",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:public",
+          "identity_unit:standard",
+          "measurement_unit:color_matching_function"
+        ],
+        "known_details": {
+          "identity_structure": "standard",
+          "license_scope": "review_required",
+          "measurement_type": "color_matching_function"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "colorimetric_reference",
+          "colorimetric_conversion",
+          "recovery_benchmark"
+        ],
+        "declared_prohibited_roles": [
+          "subject_level_inference",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference"
+        ],
+        "applicable_stages": [
+          3,
+          13,
+          18
+        ]
+      },
+      {
+        "id": "chromophore_spectra",
+        "display_name": "Chromophore spectra",
+        "asset_class": "reference_data",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "project_private",
+        "identity_unit": "chromophore",
+        "measurement_unit": "extinction_curve",
+        "characteristics": [
+          "asset_class:reference_data",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:project_private",
+          "identity_unit:chromophore",
+          "measurement_unit:extinction_curve"
+        ],
+        "known_details": {
+          "identity_structure": "chromophore",
+          "license_scope": "review_required",
+          "measurement_type": "extinction_curve"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "chromophore_reference",
+          "skin_physics_modeling",
+          "information_bound_analysis",
+          "measurement_design",
+          "recovery_benchmark"
+        ],
+        "declared_prohibited_roles": [
+          "clinical_diagnosis",
+          "subject_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      {
+        "id": "arad_1k_31",
+        "display_name": "ARAD 1K 31-channel",
+        "asset_class": "spectral_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "scene",
+        "measurement_unit": "hyperspectral_image",
+        "characteristics": [
+          "asset_class:spectral_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:scene",
+          "measurement_unit:hyperspectral_image"
+        ],
+        "known_details": {
+          "identity_structure": "scene",
+          "license_scope": "review_required",
+          "measurement_type": "hyperspectral_image"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "external_spectral_reconstruction_benchmark",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "skin_specific_clinical_inference",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          19,
+          29
+        ]
+      },
+      {
+        "id": "ntire_16",
+        "display_name": "NTIRE 16-channel multispectral",
+        "asset_class": "spectral_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "scene",
+        "measurement_unit": "multispectral_image",
+        "characteristics": [
+          "asset_class:spectral_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:scene",
+          "measurement_unit:multispectral_image"
+        ],
+        "known_details": {
+          "identity_structure": "scene",
+          "license_scope": "review_required",
+          "measurement_type": "multispectral_image"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "multispectral_demosaicing_benchmark",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "skin_specific_clinical_inference",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          20,
+          29
+        ]
+      },
+      {
+        "id": "uci_skin_segmentation",
+        "display_name": "UCI Skin Segmentation",
+        "asset_class": "tabular_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "public",
+        "identity_unit": "pixel_sample",
+        "measurement_unit": "bgr_and_label",
+        "characteristics": [
+          "asset_class:tabular_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:public",
+          "identity_unit:pixel_sample",
+          "measurement_unit:bgr_and_label"
+        ],
+        "known_details": {
+          "identity_structure": "pixel_sample",
+          "license_scope": "review_required",
+          "measurement_type": "bgr_and_label"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "segmentation_boundary_benchmark",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "skin_tone_ground_truth",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference"
+        ],
+        "applicable_stages": [
+          3,
+          21,
+          29
+        ]
+      },
+      {
+        "id": "mskcc_skin_tone",
+        "display_name": "MSKCC skin-tone labeling",
+        "asset_class": "multimodal_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "restricted",
+        "identity_unit": "patient",
+        "measurement_unit": "image_and_colorimeter",
+        "characteristics": [
+          "asset_class:multimodal_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:restricted",
+          "identity_unit:patient",
+          "measurement_unit:image_and_colorimeter"
+        ],
+        "known_details": {
+          "identity_structure": "patient",
+          "license_scope": "review_required",
+          "measurement_type": "image_and_colorimeter"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "colorimeter_anchor",
+          "site_effect_validation",
+          "measurand_validation",
+          "external_benchmark",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_identity_linkage"
+        ],
+        "applicable_stages": [
+          3,
+          5,
+          13,
+          22,
+          29
+        ]
+      },
+      {
+        "id": "mst_e",
+        "display_name": "MST-E",
+        "asset_class": "multimodal_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "subject",
+        "measurement_unit": "image_or_video",
+        "characteristics": [
+          "asset_class:multimodal_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:subject",
+          "measurement_unit:image_or_video"
+        ],
+        "known_details": {
+          "identity_structure": "subject",
+          "license_scope": "review_required",
+          "measurement_type": "image_or_video"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "capture_robustness_benchmark",
+          "within_subject_variation_analysis",
+          "integrated_decomposition",
+          "statistical_closure"
+        ],
+        "declared_prohibited_roles": [
+          "clinical_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "cross_dataset_identity_linkage"
+        ],
+        "applicable_stages": [
+          3,
+          23,
+          29,
+          30
+        ]
+      },
+      {
+        "id": "skin_tone_wild",
+        "display_name": "Skin Tone in the Wild",
+        "asset_class": "image_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "identity",
+        "measurement_unit": "image_and_label",
+        "characteristics": [
+          "asset_class:image_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:identity",
+          "measurement_unit:image_and_label"
+        ],
+        "known_details": {
+          "identity_structure": "identity",
+          "license_scope": "review_required",
+          "measurement_type": "image_and_label"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "domain_shift_audit",
+          "capture_variation_audit",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "spectral_ground_truth",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          24,
+          29
+        ]
+      },
+      {
+        "id": "scin",
+        "display_name": "SCIN",
+        "asset_class": "image_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "case",
+        "measurement_unit": "image",
+        "characteristics": [
+          "asset_class:image_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:case",
+          "measurement_unit:image"
+        ],
+        "known_details": {
+          "identity_structure": "case",
+          "license_scope": "review_required",
+          "measurement_type": "image"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "domain_shift_audit",
+          "label_quality_audit",
+          "image_quality_audit",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "spectral_ground_truth",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          24,
+          29
+        ]
+      },
+      {
+        "id": "fitzpatrick17k",
+        "display_name": "Fitzpatrick17k",
+        "asset_class": "image_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "locally_governed",
+        "identity_unit": "image",
+        "measurement_unit": "image_and_label",
+        "characteristics": [
+          "asset_class:image_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:locally_governed",
+          "identity_unit:image",
+          "measurement_unit:image_and_label"
+        ],
+        "known_details": {
+          "identity_structure": "image",
+          "license_scope": "review_required",
+          "measurement_type": "image_and_label"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "label_quality_audit",
+          "data_quality_decomposition",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "spectral_ground_truth",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          25,
+          29
+        ]
+      },
+      {
+        "id": "cleanpatrick",
+        "display_name": "CleanPatrick",
+        "asset_class": "derived_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "project_private",
+        "identity_unit": "image",
+        "measurement_unit": "correction_record",
+        "characteristics": [
+          "asset_class:derived_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:project_private",
+          "identity_unit:image",
+          "measurement_unit:correction_record"
+        ],
+        "known_details": {
+          "identity_structure": "image",
+          "license_scope": "review_required",
+          "measurement_type": "correction_record"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "label_quality_audit",
+          "data_quality_decomposition",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "spectral_ground_truth",
+          "clinical_diagnosis",
+          "biometric_identification",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          25,
+          29
+        ]
+      },
+      {
+        "id": "ddi",
+        "display_name": "DDI",
+        "asset_class": "image_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "restricted",
+        "identity_unit": "patient",
+        "measurement_unit": "image_and_diagnosis",
+        "characteristics": [
+          "asset_class:image_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:restricted",
+          "identity_unit:patient",
+          "measurement_unit:image_and_diagnosis"
+        ],
+        "known_details": {
+          "identity_structure": "patient",
+          "license_scope": "review_required",
+          "measurement_type": "image_and_diagnosis"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "clinical_translation",
+          "physics_contrast_analysis",
+          "integrated_decomposition",
+          "statistical_closure"
+        ],
+        "declared_prohibited_roles": [
+          "autonomous_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          26,
+          29,
+          30
+        ]
+      },
+      {
+        "id": "ddi2",
+        "display_name": "DDI-2",
+        "asset_class": "image_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "restricted",
+        "identity_unit": "patient",
+        "measurement_unit": "image_and_diagnosis",
+        "characteristics": [
+          "asset_class:image_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:restricted",
+          "identity_unit:patient",
+          "measurement_unit:image_and_diagnosis"
+        ],
+        "known_details": {
+          "identity_structure": "patient",
+          "license_scope": "review_required",
+          "measurement_type": "image_and_diagnosis"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "external_replication",
+          "heterogeneity_analysis",
+          "integrated_decomposition",
+          "statistical_closure"
+        ],
+        "declared_prohibited_roles": [
+          "autonomous_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          27,
+          29,
+          30
+        ]
+      },
+      {
+        "id": "mra_midas",
+        "display_name": "MRA-MIDAS",
+        "asset_class": "multimodal_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "restricted",
+        "identity_unit": "case",
+        "measurement_unit": "image_sequence",
+        "characteristics": [
+          "asset_class:multimodal_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:restricted",
+          "identity_unit:case",
+          "measurement_unit:image_sequence"
+        ],
+        "known_details": {
+          "identity_structure": "case",
+          "license_scope": "review_required",
+          "measurement_type": "image_sequence"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "identity_linkage_audit",
+          "modality_distance_analysis",
+          "pair_admissibility",
+          "integrated_decomposition",
+          "statistical_closure"
+        ],
+        "declared_prohibited_roles": [
+          "biometric_identification",
+          "unconsented_identity_linkage",
+          "clinical_diagnosis",
+          "demographic_inference"
+        ],
+        "applicable_stages": [
+          3,
+          28,
+          29,
+          30
+        ]
+      },
+      {
+        "id": "skincon",
+        "display_name": "SkinCon annotations",
+        "asset_class": "annotation_dataset",
+        "acquisition_status": "registered",
+        "license_status": "review_required",
+        "governance_class": "project_private",
+        "identity_unit": "image",
+        "measurement_unit": "annotation",
+        "characteristics": [
+          "asset_class:annotation_dataset",
+          "acquisition_status:registered",
+          "license_status:review_required",
+          "governance_class:project_private",
+          "identity_unit:image",
+          "measurement_unit:annotation"
+        ],
+        "known_details": {
+          "identity_structure": "image",
+          "license_scope": "review_required",
+          "measurement_type": "annotation"
+        },
+        "unknown_details": [
+          "modality",
+          "measurement_provenance",
+          "consent_scope",
+          "repeat_measure_structure",
+          "wavelength_axis",
+          "capture_device",
+          "illumination",
+          "site",
+          "label_provenance"
+        ],
+        "declared_allowed_roles": [
+          "clinical_translation",
+          "annotation_contrast_analysis",
+          "integrated_decomposition"
+        ],
+        "declared_prohibited_roles": [
+          "autonomous_diagnosis",
+          "biometric_identification",
+          "demographic_inference",
+          "individual_skin_tone_scoring"
+        ],
+        "applicable_stages": [
+          3,
+          26,
+          29
+        ]
+      }
+    ],
+    "schemas": {
+      "admissibility_report_v1": {
+        "description": "Measurand, proxy, nuisance, and site admissibility result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "asset_registry_v1": {
+        "description": "Canonical governed input-asset registry.",
+        "schema_class": "registry",
+        "serialization": "json",
+        "version": 1
+      },
+      "benchmark_inputs_v1": {
+        "description": "External benchmark-specific registered inputs.",
+        "schema_class": "artifact",
+        "serialization": "directory_manifest",
+        "version": 1
+      },
+      "benchmark_report_v1": {
+        "description": "External benchmark execution and comparison result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "canonical_asset_manifest_v1": {
+        "description": "Canonicalized asset identity, lineage, and disposition manifest.",
+        "schema_class": "artifact",
+        "serialization": "json",
+        "version": 1
+      },
+      "claim_adjudication_report_v1": {
+        "description": "Terminal claim evidence-state assignment.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "claim_evidence_v1": {
+        "description": "Registered claims and their governed evidence graph.",
+        "schema_class": "graph",
+        "serialization": "json",
+        "version": 1
+      },
+      "clinical_inputs_v1": {
+        "description": "Governed clinical-image and diagnosis-linked inputs.",
+        "schema_class": "clinical",
+        "serialization": "directory_manifest",
+        "version": 1
+      },
+      "clinical_report_v1": {
+        "description": "Clinical translation and heterogeneity result.",
+        "schema_class": "clinical",
+        "serialization": "json",
+        "version": 1
+      },
+      "colorimetry_inputs_v1": {
+        "description": "Spectral measurements and governed colorimetric standards.",
+        "schema_class": "measurement",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "colorimetry_report_v1": {
+        "description": "Colorimetric anchoring and uncertainty propagation result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "config_source_v1": {
+        "description": "Human-authored QuDiPi configuration source.",
+        "schema_class": "control",
+        "serialization": "json",
+        "version": 1
+      },
+      "geometry_report_v1": {
+        "description": "Linear, functional, local, or manifold geometry result.",
+        "schema_class": "statistical",
+        "serialization": "parquet",
+        "version": 1
+      },
+      "information_bounds_report_v1": {
+        "description": "Fisher information, CRB, and mechanism attribution result.",
+        "schema_class": "statistical",
+        "serialization": "parquet",
+        "version": 1
+      },
+      "information_inputs_v1": {
+        "description": "Observation and physics inputs for information-bound analysis.",
+        "schema_class": "tensor",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "integration_inputs_v1": {
+        "description": "Validated cross-stage scientific result collection.",
+        "schema_class": "artifact",
+        "serialization": "directory_manifest",
+        "version": 1
+      },
+      "integration_report_v1": {
+        "description": "Integrated mechanism decomposition result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "literature_corpus_v1": {
+        "description": "Governed prior-art and literature corpus.",
+        "schema_class": "literature",
+        "serialization": "directory_manifest",
+        "version": 1
+      },
+      "measurement_dataset_v1": {
+        "description": "Identity-aware scientific measurement dataset.",
+        "schema_class": "measurement",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "measurement_design_report_v1": {
+        "description": "Optimal measurement-system and band-design result.",
+        "schema_class": "statistical",
+        "serialization": "parquet",
+        "version": 1
+      },
+      "metrology_report_v1": {
+        "description": "Measurement integrity and effective-sample-size report.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "observability_report_v1": {
+        "description": "Observability, null-space, conditioning, and metamerism result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "observation_inputs_v1": {
+        "description": "Reflectance, camera sensitivity, and illuminant inputs.",
+        "schema_class": "spectral",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "observation_operator_v1": {
+        "description": "Camera and illuminant observation operator.",
+        "schema_class": "tensor",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "prior_art_evidence_v1": {
+        "description": "Prior-art lineage, framing, and novelty evidence.",
+        "schema_class": "graph",
+        "serialization": "json",
+        "version": 1
+      },
+      "product_release_manifest_v1": {
+        "description": "Consumer product release and cross-surface artifact manifest.",
+        "schema_class": "release",
+        "serialization": "json",
+        "version": 1
+      },
+      "recovery_inputs_v1": {
+        "description": "Registered inputs for predictive spectral recovery.",
+        "schema_class": "tensor",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "recovery_report_v1": {
+        "description": "Predictive and hybrid recovery benchmark result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "release_inputs_v1": {
+        "description": "Governed productization inputs and publishable artifacts.",
+        "schema_class": "release",
+        "serialization": "directory_manifest",
+        "version": 1
+      },
+      "representation_report_v1": {
+        "description": "Spectral representation admissibility and compactness report.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "reproducibility_inputs_v1": {
+        "description": "Complete clean-room reproduction input manifest.",
+        "schema_class": "artifact",
+        "serialization": "directory_manifest",
+        "version": 1
+      },
+      "reproducibility_report_v1": {
+        "description": "Clean-room reproduction and release verification result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "simulation_report_v1": {
+        "description": "Simulation recovery, controls, and falsification result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "simulation_spec_v1": {
+        "description": "Matched simulation and falsification experiment specification.",
+        "schema_class": "control",
+        "serialization": "json",
+        "version": 1
+      },
+      "skin_physics_inputs_v1": {
+        "description": "Spectral observations and chromophore physics inputs.",
+        "schema_class": "spectral",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "skin_physics_report_v1": {
+        "description": "Skin forward-model fit, identifiability, and solver result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "spectral_dataset_v1": {
+        "description": "Canonical wavelength-indexed spectral measurement matrix.",
+        "schema_class": "spectral",
+        "serialization": "arrow_ipc",
+        "version": 1
+      },
+      "statistical_closure_report_v1": {
+        "description": "Multiplicity, clustered inference, and specification-curve result.",
+        "schema_class": "statistical",
+        "serialization": "json",
+        "version": 1
+      },
+      "statistical_inputs_v1": {
+        "description": "Registered inferential inputs and frozen specifications.",
+        "schema_class": "statistical",
+        "serialization": "directory_manifest",
+        "version": 1
+      },
+      "validation_report_v1": {
+        "description": "Configuration and governance validation result.",
+        "schema_class": "report",
+        "serialization": "json",
+        "version": 1
+      },
+      "wavelength_information_report_v1": {
+        "description": "Wavelength redundancy, innovation, and stability result.",
+        "schema_class": "statistical",
+        "serialization": "parquet",
+        "version": 1
+      }
+    },
+    "operators": {
+      "canonical_build": {
+        "engine": "rust",
+        "entrypoint": "qudipi_assets::canonicalize",
+        "input_schema": "asset_registry_v1",
+        "output_schema": "canonical_asset_manifest_v1",
+        "resource_profile": "default"
+      },
+      "claim_adjudication": {
+        "engine": "rust",
+        "entrypoint": "qudipi_claims::adjudicate",
+        "input_schema": "claim_evidence_v1",
+        "output_schema": "claim_adjudication_report_v1",
+        "resource_profile": "default"
+      },
+      "clinical_translation": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.clinical:execute",
+        "input_schema": "clinical_inputs_v1",
+        "output_schema": "clinical_report_v1",
+        "resource_profile": "default"
+      },
+      "colorimetry": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.colorimetry:execute",
+        "input_schema": "colorimetry_inputs_v1",
+        "output_schema": "colorimetry_report_v1",
+        "resource_profile": "default"
+      },
+      "compact_representation": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.representation:compact",
+        "input_schema": "spectral_dataset_v1",
+        "output_schema": "representation_report_v1",
+        "resource_profile": "default"
+      },
+      "external_benchmark": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.benchmarks:execute",
+        "input_schema": "benchmark_inputs_v1",
+        "output_schema": "benchmark_report_v1",
+        "resource_profile": "default"
+      },
+      "functional_geometry": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.geometry:functional",
+        "input_schema": "spectral_dataset_v1",
+        "output_schema": "geometry_report_v1",
+        "resource_profile": "default"
+      },
+      "governance": {
+        "engine": "rust",
+        "entrypoint": "qudipi_config::validate",
+        "input_schema": "config_source_v1",
+        "output_schema": "validation_report_v1",
+        "resource_profile": "default"
+      },
+      "information_bounds": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.information:execute",
+        "input_schema": "information_inputs_v1",
+        "output_schema": "information_bounds_report_v1",
+        "resource_profile": "default"
+      },
+      "integrated_decomposition": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.integration:execute",
+        "input_schema": "integration_inputs_v1",
+        "output_schema": "integration_report_v1",
+        "resource_profile": "default"
+      },
+      "linear_geometry": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.geometry:linear",
+        "input_schema": "spectral_dataset_v1",
+        "output_schema": "geometry_report_v1",
+        "resource_profile": "default"
+      },
+      "measurand_admissibility": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.measurand:execute",
+        "input_schema": "measurement_dataset_v1",
+        "output_schema": "admissibility_report_v1",
+        "resource_profile": "default"
+      },
+      "measurement_design": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.design:execute",
+        "input_schema": "information_bounds_report_v1",
+        "output_schema": "measurement_design_report_v1",
+        "resource_profile": "default"
+      },
+      "metrology": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.metrology:execute",
+        "input_schema": "measurement_dataset_v1",
+        "output_schema": "metrology_report_v1",
+        "resource_profile": "default"
+      },
+      "observability": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.observation:observability",
+        "input_schema": "observation_operator_v1",
+        "output_schema": "observability_report_v1",
+        "resource_profile": "default"
+      },
+      "observation_operator": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.observation:operator",
+        "input_schema": "observation_inputs_v1",
+        "output_schema": "observation_operator_v1",
+        "resource_profile": "default"
+      },
+      "predictive_recovery": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.recovery:execute",
+        "input_schema": "recovery_inputs_v1",
+        "output_schema": "recovery_report_v1",
+        "resource_profile": "default"
+      },
+      "prior_art_grounding": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.grounding:execute",
+        "input_schema": "literature_corpus_v1",
+        "output_schema": "prior_art_evidence_v1",
+        "resource_profile": "default"
+      },
+      "productization": {
+        "engine": "rust",
+        "entrypoint": "qudipi_api::serve",
+        "input_schema": "release_inputs_v1",
+        "output_schema": "product_release_manifest_v1",
+        "resource_profile": "default"
+      },
+      "representation_admissibility": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.spectral:admit",
+        "input_schema": "spectral_dataset_v1",
+        "output_schema": "representation_report_v1",
+        "resource_profile": "default"
+      },
+      "reproducibility": {
+        "engine": "go",
+        "entrypoint": "qudipi-orchestrator reproduce",
+        "input_schema": "reproducibility_inputs_v1",
+        "output_schema": "reproducibility_report_v1",
+        "resource_profile": "default"
+      },
+      "simulation": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.simulation:execute",
+        "input_schema": "simulation_spec_v1",
+        "output_schema": "simulation_report_v1",
+        "resource_profile": "default"
+      },
+      "skin_physics": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.physics:execute",
+        "input_schema": "skin_physics_inputs_v1",
+        "output_schema": "skin_physics_report_v1",
+        "resource_profile": "default"
+      },
+      "statistical_closure": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.statistics:close",
+        "input_schema": "statistical_inputs_v1",
+        "output_schema": "statistical_closure_report_v1",
+        "resource_profile": "default"
+      },
+      "wavelength_information": {
+        "engine": "python",
+        "entrypoint": "qudipi_analysis.spectral:information",
+        "input_schema": "spectral_dataset_v1",
+        "output_schema": "wavelength_information_report_v1",
+        "resource_profile": "default"
+      }
+    }
+  }
+}

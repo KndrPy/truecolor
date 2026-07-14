@@ -1,0 +1,177 @@
+{
+  "canonical_build": {
+    "engine": "rust",
+    "entrypoint": "qudipi_assets::canonicalize",
+    "input_schema": "asset_registry_v1",
+    "output_schema": "canonical_asset_manifest_v1",
+    "resource_profile": "default"
+  },
+  "claim_adjudication": {
+    "engine": "rust",
+    "entrypoint": "qudipi_claims::adjudicate",
+    "input_schema": "claim_evidence_v1",
+    "output_schema": "claim_adjudication_report_v1",
+    "resource_profile": "default"
+  },
+  "clinical_translation": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.clinical:execute",
+    "input_schema": "clinical_inputs_v1",
+    "output_schema": "clinical_report_v1",
+    "resource_profile": "default"
+  },
+  "colorimetry": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.colorimetry:execute",
+    "input_schema": "colorimetry_inputs_v1",
+    "output_schema": "colorimetry_report_v1",
+    "resource_profile": "default"
+  },
+  "compact_representation": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.representation:compact",
+    "input_schema": "spectral_dataset_v1",
+    "output_schema": "representation_report_v1",
+    "resource_profile": "default"
+  },
+  "external_benchmark": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.benchmarks:execute",
+    "input_schema": "benchmark_inputs_v1",
+    "output_schema": "benchmark_report_v1",
+    "resource_profile": "default"
+  },
+  "functional_geometry": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.geometry:functional",
+    "input_schema": "spectral_dataset_v1",
+    "output_schema": "geometry_report_v1",
+    "resource_profile": "default"
+  },
+  "governance": {
+    "engine": "rust",
+    "entrypoint": "qudipi_config::validate",
+    "input_schema": "config_source_v1",
+    "output_schema": "validation_report_v1",
+    "resource_profile": "default"
+  },
+  "information_bounds": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.information:execute",
+    "input_schema": "information_inputs_v1",
+    "output_schema": "information_bounds_report_v1",
+    "resource_profile": "default"
+  },
+  "integrated_decomposition": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.integration:execute",
+    "input_schema": "integration_inputs_v1",
+    "output_schema": "integration_report_v1",
+    "resource_profile": "default"
+  },
+  "linear_geometry": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.geometry:linear",
+    "input_schema": "spectral_dataset_v1",
+    "output_schema": "geometry_report_v1",
+    "resource_profile": "default"
+  },
+  "measurand_admissibility": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.measurand:execute",
+    "input_schema": "measurement_dataset_v1",
+    "output_schema": "admissibility_report_v1",
+    "resource_profile": "default"
+  },
+  "measurement_design": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.design:execute",
+    "input_schema": "information_bounds_report_v1",
+    "output_schema": "measurement_design_report_v1",
+    "resource_profile": "default"
+  },
+  "metrology": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.metrology:execute",
+    "input_schema": "measurement_dataset_v1",
+    "output_schema": "metrology_report_v1",
+    "resource_profile": "default"
+  },
+  "observability": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.observation:observability",
+    "input_schema": "observation_operator_v1",
+    "output_schema": "observability_report_v1",
+    "resource_profile": "default"
+  },
+  "observation_operator": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.observation:operator",
+    "input_schema": "observation_inputs_v1",
+    "output_schema": "observation_operator_v1",
+    "resource_profile": "default"
+  },
+  "predictive_recovery": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.recovery:execute",
+    "input_schema": "recovery_inputs_v1",
+    "output_schema": "recovery_report_v1",
+    "resource_profile": "default"
+  },
+  "prior_art_grounding": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.grounding:execute",
+    "input_schema": "literature_corpus_v1",
+    "output_schema": "prior_art_evidence_v1",
+    "resource_profile": "default"
+  },
+  "productization": {
+    "engine": "rust",
+    "entrypoint": "qudipi_api::serve",
+    "input_schema": "release_inputs_v1",
+    "output_schema": "product_release_manifest_v1",
+    "resource_profile": "default"
+  },
+  "representation_admissibility": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.spectral:admit",
+    "input_schema": "spectral_dataset_v1",
+    "output_schema": "representation_report_v1",
+    "resource_profile": "default"
+  },
+  "reproducibility": {
+    "engine": "go",
+    "entrypoint": "qudipi-orchestrator reproduce",
+    "input_schema": "reproducibility_inputs_v1",
+    "output_schema": "reproducibility_report_v1",
+    "resource_profile": "default"
+  },
+  "simulation": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.simulation:execute",
+    "input_schema": "simulation_spec_v1",
+    "output_schema": "simulation_report_v1",
+    "resource_profile": "default"
+  },
+  "skin_physics": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.physics:execute",
+    "input_schema": "skin_physics_inputs_v1",
+    "output_schema": "skin_physics_report_v1",
+    "resource_profile": "default"
+  },
+  "statistical_closure": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.statistics:close",
+    "input_schema": "statistical_inputs_v1",
+    "output_schema": "statistical_closure_report_v1",
+    "resource_profile": "default"
+  },
+  "wavelength_information": {
+    "engine": "python",
+    "entrypoint": "qudipi_analysis.spectral:information",
+    "input_schema": "spectral_dataset_v1",
+    "output_schema": "wavelength_information_report_v1",
+    "resource_profile": "default"
+  }
+}

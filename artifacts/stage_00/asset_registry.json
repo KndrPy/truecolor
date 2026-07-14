@@ -1,0 +1,1162 @@
+[
+  {
+    "id": "prior_art_corpus",
+    "display_name": "Governed prior-art corpus",
+    "asset_class": "literature",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "project_private",
+    "identity_unit": "source",
+    "measurement_unit": "document",
+    "characteristics": [
+      "asset_class:literature",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:project_private",
+      "identity_unit:source",
+      "measurement_unit:document"
+    ],
+    "known_details": {
+      "identity_structure": "source",
+      "license_scope": "review_required",
+      "measurement_type": "document"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "prior_art_grounding",
+      "novelty_boundary",
+      "claim_context",
+      "reproducibility_context"
+    ],
+    "declared_prohibited_roles": [
+      "model_training",
+      "benchmark_scoring",
+      "clinical_inference",
+      "biometric_identification"
+    ],
+    "applicable_stages": [
+      0,
+      1,
+      2,
+      31,
+      32
+    ]
+  },
+  {
+    "id": "issa",
+    "display_name": "ISSA skin reflectance corpus",
+    "asset_class": "spectral_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "subject",
+    "measurement_unit": "spectrum",
+    "characteristics": [
+      "asset_class:spectral_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:subject",
+      "measurement_unit:spectrum"
+    ],
+    "known_details": {
+      "identity_structure": "subject",
+      "license_scope": "review_required",
+      "measurement_type": "spectrum"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "spectral_ground_truth",
+      "metrology",
+      "measurand_validation",
+      "representation_analysis",
+      "spectral_geometry",
+      "skin_physics_validation",
+      "recovery_benchmark",
+      "statistical_closure"
+    ],
+    "declared_prohibited_roles": [
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      30
+    ]
+  },
+  {
+    "id": "nist_skin_reflectance",
+    "display_name": "NIST human skin reflectance",
+    "asset_class": "spectral_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "public",
+    "identity_unit": "sample",
+    "measurement_unit": "spectrum",
+    "characteristics": [
+      "asset_class:spectral_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:public",
+      "identity_unit:sample",
+      "measurement_unit:spectrum"
+    ],
+    "known_details": {
+      "identity_structure": "sample",
+      "license_scope": "review_required",
+      "measurement_type": "spectrum"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "reflectance_reference",
+      "spectral_validation",
+      "representation_analysis",
+      "spectral_geometry",
+      "colorimetric_anchor"
+    ],
+    "declared_prohibited_roles": [
+      "subject_level_inference",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "model_training"
+    ],
+    "applicable_stages": [
+      3,
+      6,
+      7,
+      10,
+      13
+    ]
+  },
+  {
+    "id": "hyper_skin",
+    "display_name": "Hyper-Skin",
+    "asset_class": "spectral_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "subject",
+    "measurement_unit": "hyperspectral_image",
+    "characteristics": [
+      "asset_class:spectral_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:subject",
+      "measurement_unit:hyperspectral_image"
+    ],
+    "known_details": {
+      "identity_structure": "subject",
+      "license_scope": "review_required",
+      "measurement_type": "hyperspectral_image"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "spectral_ground_truth",
+      "representation_analysis",
+      "spectral_geometry",
+      "recovery_benchmark"
+    ],
+    "declared_prohibited_roles": [
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      6,
+      7,
+      8,
+      10,
+      18
+    ]
+  },
+  {
+    "id": "chroma_fit",
+    "display_name": "CHROMA-FIT",
+    "asset_class": "multimodal_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "subject",
+    "measurement_unit": "image_and_color_measurement",
+    "characteristics": [
+      "asset_class:multimodal_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:subject",
+      "measurement_unit:image_and_color_measurement"
+    ],
+    "known_details": {
+      "identity_structure": "subject",
+      "license_scope": "review_required",
+      "measurement_type": "image_and_color_measurement"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "colorimetric_anchor",
+      "measurand_validation",
+      "recovery_benchmark"
+    ],
+    "declared_prohibited_roles": [
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      5,
+      13,
+      18
+    ]
+  },
+  {
+    "id": "camera_sensitivities",
+    "display_name": "Camera spectral sensitivities",
+    "asset_class": "reference_data",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "project_private",
+    "identity_unit": "camera",
+    "measurement_unit": "sensitivity_curve",
+    "characteristics": [
+      "asset_class:reference_data",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:project_private",
+      "identity_unit:camera",
+      "measurement_unit:sensitivity_curve"
+    ],
+    "known_details": {
+      "identity_structure": "camera",
+      "license_scope": "review_required",
+      "measurement_type": "sensitivity_curve"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "camera_response_reference",
+      "observation_operator_construction",
+      "observability_analysis",
+      "information_bound_analysis",
+      "measurement_design",
+      "recovery_benchmark"
+    ],
+    "declared_prohibited_roles": [
+      "subject_level_inference",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference"
+    ],
+    "applicable_stages": [
+      3,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  {
+    "id": "illuminant_spectra",
+    "display_name": "Illuminant spectra",
+    "asset_class": "reference_data",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "project_private",
+    "identity_unit": "illuminant",
+    "measurement_unit": "spectral_power_distribution",
+    "characteristics": [
+      "asset_class:reference_data",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:project_private",
+      "identity_unit:illuminant",
+      "measurement_unit:spectral_power_distribution"
+    ],
+    "known_details": {
+      "identity_structure": "illuminant",
+      "license_scope": "review_required",
+      "measurement_type": "spectral_power_distribution"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "illuminant_reference",
+      "observation_operator_construction",
+      "observability_analysis",
+      "information_bound_analysis",
+      "measurement_design",
+      "recovery_benchmark"
+    ],
+    "declared_prohibited_roles": [
+      "subject_level_inference",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference"
+    ],
+    "applicable_stages": [
+      3,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  {
+    "id": "cie_standards",
+    "display_name": "CIE standards",
+    "asset_class": "reference_data",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "public",
+    "identity_unit": "standard",
+    "measurement_unit": "color_matching_function",
+    "characteristics": [
+      "asset_class:reference_data",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:public",
+      "identity_unit:standard",
+      "measurement_unit:color_matching_function"
+    ],
+    "known_details": {
+      "identity_structure": "standard",
+      "license_scope": "review_required",
+      "measurement_type": "color_matching_function"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "colorimetric_reference",
+      "colorimetric_conversion",
+      "recovery_benchmark"
+    ],
+    "declared_prohibited_roles": [
+      "subject_level_inference",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference"
+    ],
+    "applicable_stages": [
+      3,
+      13,
+      18
+    ]
+  },
+  {
+    "id": "chromophore_spectra",
+    "display_name": "Chromophore spectra",
+    "asset_class": "reference_data",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "project_private",
+    "identity_unit": "chromophore",
+    "measurement_unit": "extinction_curve",
+    "characteristics": [
+      "asset_class:reference_data",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:project_private",
+      "identity_unit:chromophore",
+      "measurement_unit:extinction_curve"
+    ],
+    "known_details": {
+      "identity_structure": "chromophore",
+      "license_scope": "review_required",
+      "measurement_type": "extinction_curve"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "chromophore_reference",
+      "skin_physics_modeling",
+      "information_bound_analysis",
+      "measurement_design",
+      "recovery_benchmark"
+    ],
+    "declared_prohibited_roles": [
+      "clinical_diagnosis",
+      "subject_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      14,
+      15,
+      16,
+      17,
+      18
+    ]
+  },
+  {
+    "id": "arad_1k_31",
+    "display_name": "ARAD 1K 31-channel",
+    "asset_class": "spectral_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "scene",
+    "measurement_unit": "hyperspectral_image",
+    "characteristics": [
+      "asset_class:spectral_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:scene",
+      "measurement_unit:hyperspectral_image"
+    ],
+    "known_details": {
+      "identity_structure": "scene",
+      "license_scope": "review_required",
+      "measurement_type": "hyperspectral_image"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "external_spectral_reconstruction_benchmark",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "skin_specific_clinical_inference",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      19,
+      29
+    ]
+  },
+  {
+    "id": "ntire_16",
+    "display_name": "NTIRE 16-channel multispectral",
+    "asset_class": "spectral_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "scene",
+    "measurement_unit": "multispectral_image",
+    "characteristics": [
+      "asset_class:spectral_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:scene",
+      "measurement_unit:multispectral_image"
+    ],
+    "known_details": {
+      "identity_structure": "scene",
+      "license_scope": "review_required",
+      "measurement_type": "multispectral_image"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "multispectral_demosaicing_benchmark",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "skin_specific_clinical_inference",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      20,
+      29
+    ]
+  },
+  {
+    "id": "uci_skin_segmentation",
+    "display_name": "UCI Skin Segmentation",
+    "asset_class": "tabular_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "public",
+    "identity_unit": "pixel_sample",
+    "measurement_unit": "bgr_and_label",
+    "characteristics": [
+      "asset_class:tabular_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:public",
+      "identity_unit:pixel_sample",
+      "measurement_unit:bgr_and_label"
+    ],
+    "known_details": {
+      "identity_structure": "pixel_sample",
+      "license_scope": "review_required",
+      "measurement_type": "bgr_and_label"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "segmentation_boundary_benchmark",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "skin_tone_ground_truth",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference"
+    ],
+    "applicable_stages": [
+      3,
+      21,
+      29
+    ]
+  },
+  {
+    "id": "mskcc_skin_tone",
+    "display_name": "MSKCC skin-tone labeling",
+    "asset_class": "multimodal_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "restricted",
+    "identity_unit": "patient",
+    "measurement_unit": "image_and_colorimeter",
+    "characteristics": [
+      "asset_class:multimodal_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:restricted",
+      "identity_unit:patient",
+      "measurement_unit:image_and_colorimeter"
+    ],
+    "known_details": {
+      "identity_structure": "patient",
+      "license_scope": "review_required",
+      "measurement_type": "image_and_colorimeter"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "colorimeter_anchor",
+      "site_effect_validation",
+      "measurand_validation",
+      "external_benchmark",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_identity_linkage"
+    ],
+    "applicable_stages": [
+      3,
+      5,
+      13,
+      22,
+      29
+    ]
+  },
+  {
+    "id": "mst_e",
+    "display_name": "MST-E",
+    "asset_class": "multimodal_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "subject",
+    "measurement_unit": "image_or_video",
+    "characteristics": [
+      "asset_class:multimodal_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:subject",
+      "measurement_unit:image_or_video"
+    ],
+    "known_details": {
+      "identity_structure": "subject",
+      "license_scope": "review_required",
+      "measurement_type": "image_or_video"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "capture_robustness_benchmark",
+      "within_subject_variation_analysis",
+      "integrated_decomposition",
+      "statistical_closure"
+    ],
+    "declared_prohibited_roles": [
+      "clinical_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "cross_dataset_identity_linkage"
+    ],
+    "applicable_stages": [
+      3,
+      23,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "skin_tone_wild",
+    "display_name": "Skin Tone in the Wild",
+    "asset_class": "image_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "identity",
+    "measurement_unit": "image_and_label",
+    "characteristics": [
+      "asset_class:image_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:identity",
+      "measurement_unit:image_and_label"
+    ],
+    "known_details": {
+      "identity_structure": "identity",
+      "license_scope": "review_required",
+      "measurement_type": "image_and_label"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "domain_shift_audit",
+      "capture_variation_audit",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "spectral_ground_truth",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      24,
+      29
+    ]
+  },
+  {
+    "id": "scin",
+    "display_name": "SCIN",
+    "asset_class": "image_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "case",
+    "measurement_unit": "image",
+    "characteristics": [
+      "asset_class:image_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:case",
+      "measurement_unit:image"
+    ],
+    "known_details": {
+      "identity_structure": "case",
+      "license_scope": "review_required",
+      "measurement_type": "image"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "domain_shift_audit",
+      "label_quality_audit",
+      "image_quality_audit",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "spectral_ground_truth",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      24,
+      29
+    ]
+  },
+  {
+    "id": "fitzpatrick17k",
+    "display_name": "Fitzpatrick17k",
+    "asset_class": "image_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "locally_governed",
+    "identity_unit": "image",
+    "measurement_unit": "image_and_label",
+    "characteristics": [
+      "asset_class:image_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:locally_governed",
+      "identity_unit:image",
+      "measurement_unit:image_and_label"
+    ],
+    "known_details": {
+      "identity_structure": "image",
+      "license_scope": "review_required",
+      "measurement_type": "image_and_label"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "label_quality_audit",
+      "data_quality_decomposition",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "spectral_ground_truth",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      25,
+      29
+    ]
+  },
+  {
+    "id": "cleanpatrick",
+    "display_name": "CleanPatrick",
+    "asset_class": "derived_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "project_private",
+    "identity_unit": "image",
+    "measurement_unit": "correction_record",
+    "characteristics": [
+      "asset_class:derived_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:project_private",
+      "identity_unit:image",
+      "measurement_unit:correction_record"
+    ],
+    "known_details": {
+      "identity_structure": "image",
+      "license_scope": "review_required",
+      "measurement_type": "correction_record"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "label_quality_audit",
+      "data_quality_decomposition",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "spectral_ground_truth",
+      "clinical_diagnosis",
+      "biometric_identification",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      25,
+      29
+    ]
+  },
+  {
+    "id": "ddi",
+    "display_name": "DDI",
+    "asset_class": "image_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "restricted",
+    "identity_unit": "patient",
+    "measurement_unit": "image_and_diagnosis",
+    "characteristics": [
+      "asset_class:image_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:restricted",
+      "identity_unit:patient",
+      "measurement_unit:image_and_diagnosis"
+    ],
+    "known_details": {
+      "identity_structure": "patient",
+      "license_scope": "review_required",
+      "measurement_type": "image_and_diagnosis"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "clinical_translation",
+      "physics_contrast_analysis",
+      "integrated_decomposition",
+      "statistical_closure"
+    ],
+    "declared_prohibited_roles": [
+      "autonomous_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      26,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "ddi2",
+    "display_name": "DDI-2",
+    "asset_class": "image_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "restricted",
+    "identity_unit": "patient",
+    "measurement_unit": "image_and_diagnosis",
+    "characteristics": [
+      "asset_class:image_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:restricted",
+      "identity_unit:patient",
+      "measurement_unit:image_and_diagnosis"
+    ],
+    "known_details": {
+      "identity_structure": "patient",
+      "license_scope": "review_required",
+      "measurement_type": "image_and_diagnosis"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "external_replication",
+      "heterogeneity_analysis",
+      "integrated_decomposition",
+      "statistical_closure"
+    ],
+    "declared_prohibited_roles": [
+      "autonomous_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      27,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "mra_midas",
+    "display_name": "MRA-MIDAS",
+    "asset_class": "multimodal_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "restricted",
+    "identity_unit": "case",
+    "measurement_unit": "image_sequence",
+    "characteristics": [
+      "asset_class:multimodal_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:restricted",
+      "identity_unit:case",
+      "measurement_unit:image_sequence"
+    ],
+    "known_details": {
+      "identity_structure": "case",
+      "license_scope": "review_required",
+      "measurement_type": "image_sequence"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "identity_linkage_audit",
+      "modality_distance_analysis",
+      "pair_admissibility",
+      "integrated_decomposition",
+      "statistical_closure"
+    ],
+    "declared_prohibited_roles": [
+      "biometric_identification",
+      "unconsented_identity_linkage",
+      "clinical_diagnosis",
+      "demographic_inference"
+    ],
+    "applicable_stages": [
+      3,
+      28,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "skincon",
+    "display_name": "SkinCon annotations",
+    "asset_class": "annotation_dataset",
+    "acquisition_status": "registered",
+    "license_status": "review_required",
+    "governance_class": "project_private",
+    "identity_unit": "image",
+    "measurement_unit": "annotation",
+    "characteristics": [
+      "asset_class:annotation_dataset",
+      "acquisition_status:registered",
+      "license_status:review_required",
+      "governance_class:project_private",
+      "identity_unit:image",
+      "measurement_unit:annotation"
+    ],
+    "known_details": {
+      "identity_structure": "image",
+      "license_scope": "review_required",
+      "measurement_type": "annotation"
+    },
+    "unknown_details": [
+      "modality",
+      "measurement_provenance",
+      "consent_scope",
+      "repeat_measure_structure",
+      "wavelength_axis",
+      "capture_device",
+      "illumination",
+      "site",
+      "label_provenance"
+    ],
+    "declared_allowed_roles": [
+      "clinical_translation",
+      "annotation_contrast_analysis",
+      "integrated_decomposition"
+    ],
+    "declared_prohibited_roles": [
+      "autonomous_diagnosis",
+      "biometric_identification",
+      "demographic_inference",
+      "individual_skin_tone_scoring"
+    ],
+    "applicable_stages": [
+      3,
+      26,
+      29
+    ]
+  }
+]

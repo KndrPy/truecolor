@@ -1,0 +1,17 @@
+{
+  "product_license": "proprietary_commercial",
+  "product_version": "2.0.0",
+  "source_distribution": "restricted",
+  "redistribution_requires_written_agreement": true,
+  "default_approved": [
+    "MIT",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Zlib"
+  ],
+  "reject_unknown": true,
+  "reject_paid_runtime": true,
+  "reject_mandatory_cloud": true
+}

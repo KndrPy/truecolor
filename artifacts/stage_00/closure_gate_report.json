@@ -1,0 +1,18 @@
+{
+  "status": "OPEN",
+  "stage": 0,
+  "closure_marker_emitted": false,
+  "satisfied_gates": [
+    "configuration_compilation",
+    "environment_inspection",
+    "asset_stage_semantics",
+    "schema_registry",
+    "operator_schema_resolution",
+    "python_manifest_authority_alignment",
+    "configuration_falsification",
+    "stage0_evidence_generation"
+  ],
+  "remaining_blockers": [
+    "final_clean_worktree_reproducibility_capture"
+  ]
+}

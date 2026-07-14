@@ -1,0 +1,1277 @@
+[
+  {
+    "id": 0,
+    "key": "governance",
+    "name": "Program governance, configuration, environment, and reproducibility foundation",
+    "purpose": "Program governance, configuration, environment, and reproducibility foundation",
+    "dependencies": [],
+    "required_assets": [
+      "prior_art_corpus"
+    ],
+    "required_operators": [
+      "governance"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "governance_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "claim_context",
+          "novelty_boundary",
+          "prior_art_grounding",
+          "reproducibility_context"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "key": "prior_art",
+    "name": "Prior-art extraction, framing analysis, lineage, and novelty boundary",
+    "purpose": "Prior-art extraction, framing analysis, lineage, and novelty boundary",
+    "dependencies": [
+      0
+    ],
+    "required_assets": [
+      "prior_art_corpus"
+    ],
+    "required_operators": [
+      "prior_art_grounding"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "prior_art_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "claim_context",
+          "novelty_boundary",
+          "prior_art_grounding",
+          "reproducibility_context"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "key": "scientific_charter",
+    "name": "Scientific charter, estimands, claims, falsification, and lockbox",
+    "purpose": "Scientific charter, estimands, claims, falsification, and lockbox",
+    "dependencies": [
+      1
+    ],
+    "required_assets": [
+      "prior_art_corpus"
+    ],
+    "required_operators": [
+      "governance"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "scientific_charter_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "claim_context",
+          "novelty_boundary",
+          "prior_art_grounding",
+          "reproducibility_context"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "key": "asset_registry",
+    "name": "Asset registry, acquisition provenance, canonicalization, schema, and lineage",
+    "purpose": "Asset registry, acquisition provenance, canonicalization, schema, and lineage",
+    "dependencies": [
+      0,
+      2
+    ],
+    "required_assets": [
+      "issa",
+      "nist_skin_reflectance",
+      "hyper_skin",
+      "chroma_fit",
+      "camera_sensitivities",
+      "illuminant_spectra",
+      "cie_standards",
+      "chromophore_spectra",
+      "arad_1k_31",
+      "ntire_16",
+      "uci_skin_segmentation",
+      "mskcc_skin_tone",
+      "mst_e",
+      "skin_tone_wild",
+      "scin",
+      "fitzpatrick17k",
+      "cleanpatrick",
+      "ddi",
+      "ddi2",
+      "mra_midas",
+      "skincon"
+    ],
+    "required_operators": [
+      "canonical_build"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "asset_registry_corpus",
+        "minimum_assets": 21,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "annotation_contrast_analysis",
+          "camera_response_reference",
+          "capture_robustness_benchmark",
+          "capture_variation_audit",
+          "chromophore_reference",
+          "clinical_translation",
+          "colorimeter_anchor",
+          "colorimetric_anchor",
+          "colorimetric_conversion",
+          "colorimetric_reference",
+          "data_quality_decomposition",
+          "domain_shift_audit",
+          "external_benchmark",
+          "external_replication",
+          "external_spectral_reconstruction_benchmark",
+          "heterogeneity_analysis",
+          "identity_linkage_audit",
+          "illuminant_reference",
+          "image_quality_audit",
+          "information_bound_analysis",
+          "integrated_decomposition",
+          "label_quality_audit",
+          "measurand_validation",
+          "measurement_design",
+          "metrology",
+          "modality_distance_analysis",
+          "multispectral_demosaicing_benchmark",
+          "observability_analysis",
+          "observation_operator_construction",
+          "pair_admissibility",
+          "physics_contrast_analysis",
+          "recovery_benchmark",
+          "reflectance_reference",
+          "representation_analysis",
+          "segmentation_boundary_benchmark",
+          "site_effect_validation",
+          "skin_physics_modeling",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "spectral_validation",
+          "statistical_closure",
+          "within_subject_variation_analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "key": "issa_metrology",
+    "name": "ISSA identity, metrology, repeated-measure structure, and effective N",
+    "purpose": "ISSA identity, metrology, repeated-measure structure, and effective N",
+    "dependencies": [
+      3
+    ],
+    "required_assets": [
+      "issa"
+    ],
+    "required_operators": [
+      "metrology"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "issa_metrology_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "key": "measurand_admissibility",
+    "name": "Measurand admissibility, proxy validity, nuisance decomposition, and site conditioning",
+    "purpose": "Measurand admissibility, proxy validity, nuisance decomposition, and site conditioning",
+    "dependencies": [
+      4
+    ],
+    "required_assets": [
+      "issa",
+      "chroma_fit",
+      "mskcc_skin_tone"
+    ],
+    "required_operators": [
+      "measurand_admissibility"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "measurand_admissibility_corpus",
+        "minimum_assets": 3,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "colorimeter_anchor",
+          "colorimetric_anchor",
+          "external_benchmark",
+          "integrated_decomposition",
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "representation_analysis",
+          "site_effect_validation",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "key": "representation_admissibility",
+    "name": "Spectral representation admissibility and transformation stability",
+    "purpose": "Spectral representation admissibility and transformation stability",
+    "dependencies": [
+      4,
+      5
+    ],
+    "required_assets": [
+      "issa",
+      "nist_skin_reflectance",
+      "hyper_skin"
+    ],
+    "required_operators": [
+      "representation_admissibility"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "representation_admissibility_corpus",
+        "minimum_assets": 3,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "colorimetric_anchor",
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "reflectance_reference",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "spectral_validation",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "key": "linear_geometry",
+    "name": "Linear spectral geometry, covariance, conditioning, and effective rank",
+    "purpose": "Linear spectral geometry, covariance, conditioning, and effective rank",
+    "dependencies": [
+      6
+    ],
+    "required_assets": [
+      "issa",
+      "nist_skin_reflectance",
+      "hyper_skin"
+    ],
+    "required_operators": [
+      "linear_geometry"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "linear_geometry_corpus",
+        "minimum_assets": 3,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "colorimetric_anchor",
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "reflectance_reference",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "spectral_validation",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "key": "functional_geometry",
+    "name": "Functional, nonlinear, local, and manifold geometry",
+    "purpose": "Functional, nonlinear, local, and manifold geometry",
+    "dependencies": [
+      6,
+      7
+    ],
+    "required_assets": [
+      "issa",
+      "hyper_skin"
+    ],
+    "required_operators": [
+      "functional_geometry"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "functional_geometry_corpus",
+        "minimum_assets": 2,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "key": "compact_representation",
+    "name": "Subject-disjoint compact-representation validation",
+    "purpose": "Subject-disjoint compact-representation validation",
+    "dependencies": [
+      6,
+      7
+    ],
+    "required_assets": [
+      "issa"
+    ],
+    "required_operators": [
+      "compact_representation"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "compact_representation_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "key": "wavelength_information",
+    "name": "Wavelength redundancy, conditional innovation, axis stability, and interpretation",
+    "purpose": "Wavelength redundancy, conditional innovation, axis stability, and interpretation",
+    "dependencies": [
+      7,
+      8,
+      9
+    ],
+    "required_assets": [
+      "issa",
+      "nist_skin_reflectance",
+      "hyper_skin"
+    ],
+    "required_operators": [
+      "wavelength_information"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "wavelength_information_corpus",
+        "minimum_assets": 3,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "colorimetric_anchor",
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "reflectance_reference",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "spectral_validation",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "key": "observation_operator",
+    "name": "Camera and illuminant observation-operator construction and validation",
+    "purpose": "Camera and illuminant observation-operator construction and validation",
+    "dependencies": [
+      6,
+      10
+    ],
+    "required_assets": [
+      "issa",
+      "camera_sensitivities",
+      "illuminant_spectra"
+    ],
+    "required_operators": [
+      "observation_operator"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "observation_operator_corpus",
+        "minimum_assets": 3,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "camera_response_reference",
+          "illuminant_reference",
+          "information_bound_analysis",
+          "measurand_validation",
+          "measurement_design",
+          "metrology",
+          "observability_analysis",
+          "observation_operator_construction",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "key": "observability",
+    "name": "Direct observability, null-space structure, and real-spectrum metamerism",
+    "purpose": "Direct observability, null-space structure, and real-spectrum metamerism",
+    "dependencies": [
+      11
+    ],
+    "required_assets": [
+      "issa",
+      "camera_sensitivities",
+      "illuminant_spectra"
+    ],
+    "required_operators": [
+      "observability"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "observability_corpus",
+        "minimum_assets": 3,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "camera_response_reference",
+          "illuminant_reference",
+          "information_bound_analysis",
+          "measurand_validation",
+          "measurement_design",
+          "metrology",
+          "observability_analysis",
+          "observation_operator_construction",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "key": "colorimetric_anchoring",
+    "name": "External colorimetric anchoring and uncertainty propagation",
+    "purpose": "External colorimetric anchoring and uncertainty propagation",
+    "dependencies": [
+      3,
+      11
+    ],
+    "required_assets": [
+      "issa",
+      "nist_skin_reflectance",
+      "chroma_fit",
+      "mskcc_skin_tone",
+      "cie_standards"
+    ],
+    "required_operators": [
+      "colorimetry"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "colorimetric_anchoring_corpus",
+        "minimum_assets": 5,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "colorimeter_anchor",
+          "colorimetric_anchor",
+          "colorimetric_conversion",
+          "colorimetric_reference",
+          "external_benchmark",
+          "integrated_decomposition",
+          "measurand_validation",
+          "metrology",
+          "recovery_benchmark",
+          "reflectance_reference",
+          "representation_analysis",
+          "site_effect_validation",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "spectral_validation",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "key": "skin_physics",
+    "name": "Forward skin physics, inverse fitting, identifiability, and solver agreement",
+    "purpose": "Forward skin physics, inverse fitting, identifiability, and solver agreement",
+    "dependencies": [
+      6,
+      12,
+      13
+    ],
+    "required_assets": [
+      "issa",
+      "chromophore_spectra"
+    ],
+    "required_operators": [
+      "skin_physics"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "skin_physics_corpus",
+        "minimum_assets": 2,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "chromophore_reference",
+          "information_bound_analysis",
+          "measurand_validation",
+          "measurement_design",
+          "metrology",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_modeling",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "key": "information_bounds",
+    "name": "Fisher information, CRB, and four-mechanism factorial attribution",
+    "purpose": "Fisher information, CRB, and four-mechanism factorial attribution",
+    "dependencies": [
+      11,
+      12,
+      14
+    ],
+    "required_assets": [
+      "issa",
+      "camera_sensitivities",
+      "illuminant_spectra",
+      "chromophore_spectra"
+    ],
+    "required_operators": [
+      "information_bounds"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "information_bounds_corpus",
+        "minimum_assets": 4,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "camera_response_reference",
+          "chromophore_reference",
+          "illuminant_reference",
+          "information_bound_analysis",
+          "measurand_validation",
+          "measurement_design",
+          "metrology",
+          "observability_analysis",
+          "observation_operator_construction",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_modeling",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "key": "matched_simulation",
+    "name": "Matched simulation, method recovery, controls, and falsification",
+    "purpose": "Matched simulation, method recovery, controls, and falsification",
+    "dependencies": [
+      6,
+      11,
+      14,
+      15
+    ],
+    "required_assets": [
+      "issa",
+      "camera_sensitivities",
+      "illuminant_spectra",
+      "chromophore_spectra"
+    ],
+    "required_operators": [
+      "simulation"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "matched_simulation_corpus",
+        "minimum_assets": 4,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "camera_response_reference",
+          "chromophore_reference",
+          "illuminant_reference",
+          "information_bound_analysis",
+          "measurand_validation",
+          "measurement_design",
+          "metrology",
+          "observability_analysis",
+          "observation_operator_construction",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_modeling",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "key": "measurement_design",
+    "name": "Optimal measurement-system and band design",
+    "purpose": "Optimal measurement-system and band design",
+    "dependencies": [
+      15,
+      16
+    ],
+    "required_assets": [
+      "camera_sensitivities",
+      "illuminant_spectra",
+      "chromophore_spectra"
+    ],
+    "required_operators": [
+      "measurement_design"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "measurement_design_corpus",
+        "minimum_assets": 3,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "camera_response_reference",
+          "chromophore_reference",
+          "illuminant_reference",
+          "information_bound_analysis",
+          "measurement_design",
+          "observability_analysis",
+          "observation_operator_construction",
+          "recovery_benchmark",
+          "skin_physics_modeling"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "key": "predictive_recovery",
+    "name": "Predictive, statistical, tensor, neural, and hybrid recovery benchmarks",
+    "purpose": "Predictive, statistical, tensor, neural, and hybrid recovery benchmarks",
+    "dependencies": [
+      9,
+      12,
+      14,
+      15,
+      16
+    ],
+    "required_assets": [
+      "issa",
+      "hyper_skin",
+      "chroma_fit",
+      "camera_sensitivities",
+      "illuminant_spectra",
+      "cie_standards",
+      "chromophore_spectra"
+    ],
+    "required_operators": [
+      "predictive_recovery"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "predictive_recovery_corpus",
+        "minimum_assets": 7,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "camera_response_reference",
+          "chromophore_reference",
+          "colorimetric_anchor",
+          "colorimetric_conversion",
+          "colorimetric_reference",
+          "illuminant_reference",
+          "information_bound_analysis",
+          "measurand_validation",
+          "measurement_design",
+          "metrology",
+          "observability_analysis",
+          "observation_operator_construction",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_modeling",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "key": "arad_1k_reconstruction",
+    "name": "ARAD 1K 31-channel external spectral-reconstruction benchmark",
+    "purpose": "ARAD 1K 31-channel external spectral-reconstruction benchmark",
+    "dependencies": [
+      18
+    ],
+    "required_assets": [
+      "arad_1k_31"
+    ],
+    "required_operators": [
+      "external_benchmark"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "arad_1k_reconstruction_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "external_spectral_reconstruction_benchmark",
+          "integrated_decomposition"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "key": "ntire_16_demosaicing",
+    "name": "NTIRE 16-channel multispectral demosaicing benchmark",
+    "purpose": "NTIRE 16-channel multispectral demosaicing benchmark",
+    "dependencies": [
+      18
+    ],
+    "required_assets": [
+      "ntire_16"
+    ],
+    "required_operators": [
+      "external_benchmark"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "ntire_16_demosaicing_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "integrated_decomposition",
+          "multispectral_demosaicing_benchmark"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "key": "uci_skin_segmentation",
+    "name": "UCI RGB skin-segmentation boundary benchmark",
+    "purpose": "UCI RGB skin-segmentation boundary benchmark",
+    "dependencies": [
+      18
+    ],
+    "required_assets": [
+      "uci_skin_segmentation"
+    ],
+    "required_operators": [
+      "external_benchmark"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "uci_skin_segmentation_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "integrated_decomposition",
+          "segmentation_boundary_benchmark"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "key": "mskcc_colorimeter",
+    "name": "MSKCC colorimeter-grounded skin-tone and site validation",
+    "purpose": "MSKCC colorimeter-grounded skin-tone and site validation",
+    "dependencies": [
+      5,
+      13,
+      18
+    ],
+    "required_assets": [
+      "mskcc_skin_tone"
+    ],
+    "required_operators": [
+      "external_benchmark"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "mskcc_colorimeter_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "colorimeter_anchor",
+          "external_benchmark",
+          "integrated_decomposition",
+          "measurand_validation",
+          "site_effect_validation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "key": "mst_e_capture",
+    "name": "MST-E within-subject still/video capture robustness",
+    "purpose": "MST-E within-subject still/video capture robustness",
+    "dependencies": [
+      18,
+      22
+    ],
+    "required_assets": [
+      "mst_e"
+    ],
+    "required_operators": [
+      "external_benchmark"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "mst_e_capture_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "capture_robustness_benchmark",
+          "integrated_decomposition",
+          "statistical_closure",
+          "within_subject_variation_analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "key": "scin_audit",
+    "name": "SCIN acquisition, labels, image quality, representation, and domain-shift audit",
+    "purpose": "SCIN acquisition, labels, image quality, representation, and domain-shift audit",
+    "dependencies": [
+      18,
+      23
+    ],
+    "required_assets": [
+      "scin",
+      "skin_tone_wild"
+    ],
+    "required_operators": [
+      "external_benchmark"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "scin_audit_corpus",
+        "minimum_assets": 2,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "capture_variation_audit",
+          "domain_shift_audit",
+          "image_quality_audit",
+          "integrated_decomposition",
+          "label_quality_audit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "key": "fitzpatrick_cleanpatrick",
+    "name": "Fitzpatrick17k and CleanPatrick data-quality decomposition",
+    "purpose": "Fitzpatrick17k and CleanPatrick data-quality decomposition",
+    "dependencies": [
+      18
+    ],
+    "required_assets": [
+      "fitzpatrick17k",
+      "cleanpatrick"
+    ],
+    "required_operators": [
+      "external_benchmark"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "fitzpatrick_cleanpatrick_corpus",
+        "minimum_assets": 2,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "data_quality_decomposition",
+          "integrated_decomposition",
+          "label_quality_audit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "key": "ddi_translation",
+    "name": "DDI clinical translation and physics-versus-contrast analysis",
+    "purpose": "DDI clinical translation and physics-versus-contrast analysis",
+    "dependencies": [
+      15,
+      18,
+      25
+    ],
+    "required_assets": [
+      "ddi",
+      "skincon"
+    ],
+    "required_operators": [
+      "clinical_translation"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "ddi_translation_corpus",
+        "minimum_assets": 2,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "annotation_contrast_analysis",
+          "clinical_translation",
+          "integrated_decomposition",
+          "physics_contrast_analysis",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "key": "ddi2_replication",
+    "name": "DDI-2 unchanged external replication and heterogeneity analysis",
+    "purpose": "DDI-2 unchanged external replication and heterogeneity analysis",
+    "dependencies": [
+      26
+    ],
+    "required_assets": [
+      "ddi2"
+    ],
+    "required_operators": [
+      "clinical_translation"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "ddi2_replication_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "external_replication",
+          "heterogeneity_analysis",
+          "integrated_decomposition",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "key": "mra_midas",
+    "name": "MRA-MIDAS identity, modality, distance, linkage, and pair-admissibility audit",
+    "purpose": "MRA-MIDAS identity, modality, distance, linkage, and pair-admissibility audit",
+    "dependencies": [
+      4,
+      18
+    ],
+    "required_assets": [
+      "mra_midas"
+    ],
+    "required_operators": [
+      "metrology"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "mra_midas_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "identity_linkage_audit",
+          "integrated_decomposition",
+          "modality_distance_analysis",
+          "pair_admissibility",
+          "statistical_closure"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "key": "integrated_decomposition",
+    "name": "Integrated physics–contrast–data-quality–capture–disease decomposition",
+    "purpose": "Integrated physics–contrast–data-quality–capture–disease decomposition",
+    "dependencies": [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "required_assets": [
+      "arad_1k_31",
+      "ntire_16",
+      "uci_skin_segmentation",
+      "mskcc_skin_tone",
+      "mst_e",
+      "scin",
+      "skin_tone_wild",
+      "fitzpatrick17k",
+      "cleanpatrick",
+      "ddi",
+      "ddi2",
+      "mra_midas",
+      "skincon"
+    ],
+    "required_operators": [
+      "integrated_decomposition"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "integrated_decomposition_corpus",
+        "minimum_assets": 13,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "annotation_contrast_analysis",
+          "capture_robustness_benchmark",
+          "capture_variation_audit",
+          "clinical_translation",
+          "colorimeter_anchor",
+          "data_quality_decomposition",
+          "domain_shift_audit",
+          "external_benchmark",
+          "external_replication",
+          "external_spectral_reconstruction_benchmark",
+          "heterogeneity_analysis",
+          "identity_linkage_audit",
+          "image_quality_audit",
+          "integrated_decomposition",
+          "label_quality_audit",
+          "measurand_validation",
+          "modality_distance_analysis",
+          "multispectral_demosaicing_benchmark",
+          "pair_admissibility",
+          "physics_contrast_analysis",
+          "segmentation_boundary_benchmark",
+          "site_effect_validation",
+          "statistical_closure",
+          "within_subject_variation_analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "key": "statistical_closure",
+    "name": "Statistical closure, multiplicity, clustered inference, specification curve, and lockbox",
+    "purpose": "Statistical closure, multiplicity, clustered inference, specification curve, and lockbox",
+    "dependencies": [
+      16,
+      29
+    ],
+    "required_assets": [
+      "issa",
+      "mst_e",
+      "ddi",
+      "ddi2",
+      "mra_midas"
+    ],
+    "required_operators": [
+      "statistical_closure"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "statistical_closure_corpus",
+        "minimum_assets": 5,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "capture_robustness_benchmark",
+          "clinical_translation",
+          "external_replication",
+          "heterogeneity_analysis",
+          "identity_linkage_audit",
+          "integrated_decomposition",
+          "measurand_validation",
+          "metrology",
+          "modality_distance_analysis",
+          "pair_admissibility",
+          "physics_contrast_analysis",
+          "recovery_benchmark",
+          "representation_analysis",
+          "skin_physics_validation",
+          "spectral_geometry",
+          "spectral_ground_truth",
+          "statistical_closure",
+          "within_subject_variation_analysis"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "key": "claim_adjudication",
+    "name": "Final claim adjudication, scope restriction, and evidence-state assignment",
+    "purpose": "Final claim adjudication, scope restriction, and evidence-state assignment",
+    "dependencies": [
+      30
+    ],
+    "required_assets": [
+      "prior_art_corpus"
+    ],
+    "required_operators": [
+      "claim_adjudication"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "claim_adjudication_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "claim_context",
+          "novelty_boundary",
+          "prior_art_grounding",
+          "reproducibility_context"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "key": "clean_room_reproducibility",
+    "name": "Clean-room scientific, computational, artifact, and release reproducibility",
+    "purpose": "Clean-room scientific, computational, artifact, and release reproducibility",
+    "dependencies": [
+      31
+    ],
+    "required_assets": [
+      "prior_art_corpus"
+    ],
+    "required_operators": [
+      "reproducibility"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": [
+      {
+        "requirement_id": "clean_room_reproducibility_corpus",
+        "minimum_assets": 1,
+        "required_characteristics": [],
+        "accepted_roles": [
+          "claim_context",
+          "novelty_boundary",
+          "prior_art_grounding",
+          "reproducibility_context"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "key": "consumer_productization",
+    "name": "Consumer UI/UX, cross-surface interaction, immersive visualization, and product release",
+    "purpose": "Consumer UI/UX, cross-surface interaction, immersive visualization, and product release",
+    "dependencies": [
+      32
+    ],
+    "required_assets": [],
+    "required_operators": [
+      "productization"
+    ],
+    "current_disposition": "open",
+    "asset_requirements": []
+  }
+]

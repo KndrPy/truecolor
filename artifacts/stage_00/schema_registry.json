@@ -1,0 +1,248 @@
+{
+  "admissibility_report_v1": {
+    "description": "Measurand, proxy, nuisance, and site admissibility result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "asset_registry_v1": {
+    "description": "Canonical governed input-asset registry.",
+    "schema_class": "registry",
+    "serialization": "json",
+    "version": 1
+  },
+  "benchmark_inputs_v1": {
+    "description": "External benchmark-specific registered inputs.",
+    "schema_class": "artifact",
+    "serialization": "directory_manifest",
+    "version": 1
+  },
+  "benchmark_report_v1": {
+    "description": "External benchmark execution and comparison result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "canonical_asset_manifest_v1": {
+    "description": "Canonicalized asset identity, lineage, and disposition manifest.",
+    "schema_class": "artifact",
+    "serialization": "json",
+    "version": 1
+  },
+  "claim_adjudication_report_v1": {
+    "description": "Terminal claim evidence-state assignment.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "claim_evidence_v1": {
+    "description": "Registered claims and their governed evidence graph.",
+    "schema_class": "graph",
+    "serialization": "json",
+    "version": 1
+  },
+  "clinical_inputs_v1": {
+    "description": "Governed clinical-image and diagnosis-linked inputs.",
+    "schema_class": "clinical",
+    "serialization": "directory_manifest",
+    "version": 1
+  },
+  "clinical_report_v1": {
+    "description": "Clinical translation and heterogeneity result.",
+    "schema_class": "clinical",
+    "serialization": "json",
+    "version": 1
+  },
+  "colorimetry_inputs_v1": {
+    "description": "Spectral measurements and governed colorimetric standards.",
+    "schema_class": "measurement",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "colorimetry_report_v1": {
+    "description": "Colorimetric anchoring and uncertainty propagation result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "config_source_v1": {
+    "description": "Human-authored QuDiPi configuration source.",
+    "schema_class": "control",
+    "serialization": "json",
+    "version": 1
+  },
+  "geometry_report_v1": {
+    "description": "Linear, functional, local, or manifold geometry result.",
+    "schema_class": "statistical",
+    "serialization": "parquet",
+    "version": 1
+  },
+  "information_bounds_report_v1": {
+    "description": "Fisher information, CRB, and mechanism attribution result.",
+    "schema_class": "statistical",
+    "serialization": "parquet",
+    "version": 1
+  },
+  "information_inputs_v1": {
+    "description": "Observation and physics inputs for information-bound analysis.",
+    "schema_class": "tensor",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "integration_inputs_v1": {
+    "description": "Validated cross-stage scientific result collection.",
+    "schema_class": "artifact",
+    "serialization": "directory_manifest",
+    "version": 1
+  },
+  "integration_report_v1": {
+    "description": "Integrated mechanism decomposition result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "literature_corpus_v1": {
+    "description": "Governed prior-art and literature corpus.",
+    "schema_class": "literature",
+    "serialization": "directory_manifest",
+    "version": 1
+  },
+  "measurement_dataset_v1": {
+    "description": "Identity-aware scientific measurement dataset.",
+    "schema_class": "measurement",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "measurement_design_report_v1": {
+    "description": "Optimal measurement-system and band-design result.",
+    "schema_class": "statistical",
+    "serialization": "parquet",
+    "version": 1
+  },
+  "metrology_report_v1": {
+    "description": "Measurement integrity and effective-sample-size report.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "observability_report_v1": {
+    "description": "Observability, null-space, conditioning, and metamerism result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "observation_inputs_v1": {
+    "description": "Reflectance, camera sensitivity, and illuminant inputs.",
+    "schema_class": "spectral",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "observation_operator_v1": {
+    "description": "Camera and illuminant observation operator.",
+    "schema_class": "tensor",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "prior_art_evidence_v1": {
+    "description": "Prior-art lineage, framing, and novelty evidence.",
+    "schema_class": "graph",
+    "serialization": "json",
+    "version": 1
+  },
+  "product_release_manifest_v1": {
+    "description": "Consumer product release and cross-surface artifact manifest.",
+    "schema_class": "release",
+    "serialization": "json",
+    "version": 1
+  },
+  "recovery_inputs_v1": {
+    "description": "Registered inputs for predictive spectral recovery.",
+    "schema_class": "tensor",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "recovery_report_v1": {
+    "description": "Predictive and hybrid recovery benchmark result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "release_inputs_v1": {
+    "description": "Governed productization inputs and publishable artifacts.",
+    "schema_class": "release",
+    "serialization": "directory_manifest",
+    "version": 1
+  },
+  "representation_report_v1": {
+    "description": "Spectral representation admissibility and compactness report.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "reproducibility_inputs_v1": {
+    "description": "Complete clean-room reproduction input manifest.",
+    "schema_class": "artifact",
+    "serialization": "directory_manifest",
+    "version": 1
+  },
+  "reproducibility_report_v1": {
+    "description": "Clean-room reproduction and release verification result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "simulation_report_v1": {
+    "description": "Simulation recovery, controls, and falsification result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "simulation_spec_v1": {
+    "description": "Matched simulation and falsification experiment specification.",
+    "schema_class": "control",
+    "serialization": "json",
+    "version": 1
+  },
+  "skin_physics_inputs_v1": {
+    "description": "Spectral observations and chromophore physics inputs.",
+    "schema_class": "spectral",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "skin_physics_report_v1": {
+    "description": "Skin forward-model fit, identifiability, and solver result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "spectral_dataset_v1": {
+    "description": "Canonical wavelength-indexed spectral measurement matrix.",
+    "schema_class": "spectral",
+    "serialization": "arrow_ipc",
+    "version": 1
+  },
+  "statistical_closure_report_v1": {
+    "description": "Multiplicity, clustered inference, and specification-curve result.",
+    "schema_class": "statistical",
+    "serialization": "json",
+    "version": 1
+  },
+  "statistical_inputs_v1": {
+    "description": "Registered inferential inputs and frozen specifications.",
+    "schema_class": "statistical",
+    "serialization": "directory_manifest",
+    "version": 1
+  },
+  "validation_report_v1": {
+    "description": "Configuration and governance validation result.",
+    "schema_class": "report",
+    "serialization": "json",
+    "version": 1
+  },
+  "wavelength_information_report_v1": {
+    "description": "Wavelength redundancy, innovation, and stability result.",
+    "schema_class": "statistical",
+    "serialization": "parquet",
+    "version": 1
+  }
+}

@@ -104,11 +104,18 @@ uploads/
 htmlcov/
 # Local analysis scratch space
 work/
-
 # Preserve authoritative prior-art identity-resolution evidence
 !analysis/prior_art/evidence/identity_resolution/raw/
 !analysis/prior_art/evidence/identity_resolution/raw/**
-
-# Preserve authoritative prior-art identity-resolution evidence
-!analysis/prior_art/evidence/identity_resolution/raw/
-!analysis/prior_art/evidence/identity_resolution/raw/**
+# Rust build output
+/target/
+# Additional Python environments
+venv/
+# Runtime and local outputs
+*.log
+.env
+!.env.example
+# QuDiPi local mutable artifacts
+artifacts/**/tmp/
+artifacts/**/cache/
+/artifacts/stage_00/*.tmp.json

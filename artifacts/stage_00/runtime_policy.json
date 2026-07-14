@@ -1,0 +1,6 @@
+{
+  "max_cpu_percent": 30,
+  "max_gpu_percent": 30,
+  "max_memory_gib": 24,
+  "max_concurrent_workers": 2
+}

@@ -1,0 +1,824 @@
+[application]
+id = "qudipi"
+phase = 1
+study = "truecolor"
+research_pack = "skin_photon"
+single_config_authority = true
+
+[runtime]
+max_cpu_percent = 30
+max_gpu_percent = 30
+max_memory_gib = 24
+max_concurrent_workers = 2
+
+[governance]
+default_access_class = "project_private"
+autonomous_agents = false
+autonomous_claim_adjudication = false
+
+[licenses]
+default_approved = ["MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Zlib"]
+reject_unknown = true
+reject_paid_runtime = true
+reject_mandatory_cloud = true
+
+[operators.governance]
+engine = "rust"
+entrypoint = "qudipi_config::validate"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.prior_art_grounding]
+engine = "python"
+entrypoint = "qudipi_analysis.grounding:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.canonical_build]
+engine = "rust"
+entrypoint = "qudipi_assets::canonicalize"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.metrology]
+engine = "python"
+entrypoint = "qudipi_analysis.metrology:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.measurand_admissibility]
+engine = "python"
+entrypoint = "qudipi_analysis.measurand:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.representation_admissibility]
+engine = "python"
+entrypoint = "qudipi_analysis.spectral:admit"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.linear_geometry]
+engine = "python"
+entrypoint = "qudipi_analysis.geometry:linear"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.functional_geometry]
+engine = "python"
+entrypoint = "qudipi_analysis.geometry:functional"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.compact_representation]
+engine = "python"
+entrypoint = "qudipi_analysis.representation:compact"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.wavelength_information]
+engine = "python"
+entrypoint = "qudipi_analysis.spectral:information"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.observation_operator]
+engine = "python"
+entrypoint = "qudipi_analysis.observation:operator"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.observability]
+engine = "python"
+entrypoint = "qudipi_analysis.observation:observability"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.colorimetry]
+engine = "python"
+entrypoint = "qudipi_analysis.colorimetry:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.skin_physics]
+engine = "python"
+entrypoint = "qudipi_analysis.physics:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.information_bounds]
+engine = "python"
+entrypoint = "qudipi_analysis.information:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.simulation]
+engine = "python"
+entrypoint = "qudipi_analysis.simulation:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.measurement_design]
+engine = "python"
+entrypoint = "qudipi_analysis.design:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.predictive_recovery]
+engine = "python"
+entrypoint = "qudipi_analysis.recovery:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.external_benchmark]
+engine = "python"
+entrypoint = "qudipi_analysis.benchmarks:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.clinical_translation]
+engine = "python"
+entrypoint = "qudipi_analysis.clinical:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.integrated_decomposition]
+engine = "python"
+entrypoint = "qudipi_analysis.integration:execute"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.statistical_closure]
+engine = "python"
+entrypoint = "qudipi_analysis.statistics:close"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.claim_adjudication]
+engine = "rust"
+entrypoint = "qudipi_claims::adjudicate"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.reproducibility]
+engine = "go"
+entrypoint = "qudipi-orchestrator reproduce"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[operators.productization]
+engine = "rust"
+entrypoint = "qudipi_api::serve"
+input_schema = "control.v1"
+output_schema = "control.v1"
+resource_profile = "default"
+
+[[assets]]
+id = "prior_art_corpus"
+display_name = "Governed prior-art corpus"
+asset_class = "literature"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "project_private"
+identity_unit = "source"
+measurement_unit = "document"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [0, 1, 2, 31, 32]
+
+[[assets]]
+id = "issa"
+display_name = "ISSA skin reflectance corpus"
+asset_class = "spectral_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "subject"
+measurement_unit = "spectrum"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 30]
+
+[[assets]]
+id = "nist_skin_reflectance"
+display_name = "NIST human skin reflectance"
+asset_class = "spectral_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "public"
+identity_unit = "sample"
+measurement_unit = "spectrum"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 6, 7, 10, 13]
+
+[[assets]]
+id = "hyper_skin"
+display_name = "Hyper-Skin"
+asset_class = "spectral_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "subject"
+measurement_unit = "hyperspectral_image"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 6, 7, 8, 10, 18]
+
+[[assets]]
+id = "chroma_fit"
+display_name = "CHROMA-FIT"
+asset_class = "multimodal_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "subject"
+measurement_unit = "image_and_color_measurement"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 5, 13, 18]
+
+[[assets]]
+id = "camera_sensitivities"
+display_name = "Camera spectral sensitivities"
+asset_class = "reference_data"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "project_private"
+identity_unit = "camera"
+measurement_unit = "sensitivity_curve"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 11, 12, 15, 16, 17, 18]
+
+[[assets]]
+id = "illuminant_spectra"
+display_name = "Illuminant spectra"
+asset_class = "reference_data"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "project_private"
+identity_unit = "illuminant"
+measurement_unit = "spectral_power_distribution"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 11, 12, 15, 16, 17, 18]
+
+[[assets]]
+id = "cie_standards"
+display_name = "CIE standards"
+asset_class = "reference_data"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "public"
+identity_unit = "standard"
+measurement_unit = "color_matching_function"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 13, 18]
+
+[[assets]]
+id = "chromophore_spectra"
+display_name = "Chromophore spectra"
+asset_class = "reference_data"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "project_private"
+identity_unit = "chromophore"
+measurement_unit = "extinction_curve"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 14, 15, 16, 17, 18]
+
+[[assets]]
+id = "arad_1k_31"
+display_name = "ARAD 1K 31-channel"
+asset_class = "spectral_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "scene"
+measurement_unit = "hyperspectral_image"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 19, 29]
+
+[[assets]]
+id = "ntire_16"
+display_name = "NTIRE 16-channel multispectral"
+asset_class = "spectral_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "scene"
+measurement_unit = "multispectral_image"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 20, 29]
+
+[[assets]]
+id = "uci_skin_segmentation"
+display_name = "UCI Skin Segmentation"
+asset_class = "tabular_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "public"
+identity_unit = "pixel_sample"
+measurement_unit = "bgr_and_label"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 21, 29]
+
+[[assets]]
+id = "mskcc_skin_tone"
+display_name = "MSKCC skin-tone labeling"
+asset_class = "multimodal_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "restricted"
+identity_unit = "patient"
+measurement_unit = "image_and_colorimeter"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 5, 13, 22, 29]
+
+[[assets]]
+id = "mst_e"
+display_name = "MST-E"
+asset_class = "multimodal_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "subject"
+measurement_unit = "image_or_video"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 23, 29, 30]
+
+[[assets]]
+id = "skin_tone_wild"
+display_name = "Skin Tone in the Wild"
+asset_class = "image_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "identity"
+measurement_unit = "image_and_label"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 24, 29]
+
+[[assets]]
+id = "scin"
+display_name = "SCIN"
+asset_class = "image_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "case"
+measurement_unit = "image"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 24, 29]
+
+[[assets]]
+id = "fitzpatrick17k"
+display_name = "Fitzpatrick17k"
+asset_class = "image_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "locally_governed"
+identity_unit = "image"
+measurement_unit = "image_and_label"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 25, 29]
+
+[[assets]]
+id = "cleanpatrick"
+display_name = "CleanPatrick"
+asset_class = "derived_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "project_private"
+identity_unit = "image"
+measurement_unit = "correction_record"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 25, 29]
+
+[[assets]]
+id = "ddi"
+display_name = "DDI"
+asset_class = "image_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "restricted"
+identity_unit = "patient"
+measurement_unit = "image_and_diagnosis"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 26, 29, 30]
+
+[[assets]]
+id = "ddi2"
+display_name = "DDI-2"
+asset_class = "image_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "restricted"
+identity_unit = "patient"
+measurement_unit = "image_and_diagnosis"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 27, 29, 30]
+
+[[assets]]
+id = "mra_midas"
+display_name = "MRA-MIDAS"
+asset_class = "multimodal_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "restricted"
+identity_unit = "case"
+measurement_unit = "image_sequence"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 28, 29, 30]
+
+[[assets]]
+id = "skincon"
+display_name = "SkinCon annotations"
+asset_class = "annotation_dataset"
+acquisition_status = "registered"
+license_status = "review_required"
+governance_class = "project_private"
+identity_unit = "image"
+measurement_unit = "annotation"
+allowed_roles = ["registered_input"]
+prohibited_roles = ["unregistered_ground_truth"]
+applicable_stages = [3, 26, 29]
+
+[[stages]]
+id = 0
+key = "governance"
+name = "Program governance, configuration, environment, and reproducibility foundation"
+purpose = "Program governance, configuration, environment, and reproducibility foundation"
+dependencies = []
+required_assets = ["prior_art_corpus"]
+required_operators = ["governance"]
+current_disposition = "open"
+
+[[stages]]
+id = 1
+key = "prior_art"
+name = "Prior-art extraction, framing analysis, lineage, and novelty boundary"
+purpose = "Prior-art extraction, framing analysis, lineage, and novelty boundary"
+dependencies = [0]
+required_assets = ["prior_art_corpus"]
+required_operators = ["prior_art_grounding"]
+current_disposition = "open"
+
+[[stages]]
+id = 2
+key = "scientific_charter"
+name = "Scientific charter, estimands, claims, falsification, and lockbox"
+purpose = "Scientific charter, estimands, claims, falsification, and lockbox"
+dependencies = [1]
+required_assets = ["prior_art_corpus"]
+required_operators = ["governance"]
+current_disposition = "open"
+
+[[stages]]
+id = 3
+key = "asset_registry"
+name = "Asset registry, acquisition provenance, canonicalization, schema, and lineage"
+purpose = "Asset registry, acquisition provenance, canonicalization, schema, and lineage"
+dependencies = [0, 2]
+required_assets = ["issa", "nist_skin_reflectance", "hyper_skin", "chroma_fit", "camera_sensitivities", "illuminant_spectra", "cie_standards", "chromophore_spectra", "arad_1k_31", "ntire_16", "uci_skin_segmentation", "mskcc_skin_tone", "mst_e", "skin_tone_wild", "scin", "fitzpatrick17k", "cleanpatrick", "ddi", "ddi2", "mra_midas", "skincon"]
+required_operators = ["canonical_build"]
+current_disposition = "open"
+
+[[stages]]
+id = 4
+key = "issa_metrology"
+name = "ISSA identity, metrology, repeated-measure structure, and effective N"
+purpose = "ISSA identity, metrology, repeated-measure structure, and effective N"
+dependencies = [3]
+required_assets = ["issa"]
+required_operators = ["metrology"]
+current_disposition = "open"
+
+[[stages]]
+id = 5
+key = "measurand_admissibility"
+name = "Measurand admissibility, proxy validity, nuisance decomposition, and site conditioning"
+purpose = "Measurand admissibility, proxy validity, nuisance decomposition, and site conditioning"
+dependencies = [4]
+required_assets = ["issa", "chroma_fit", "mskcc_skin_tone"]
+required_operators = ["measurand_admissibility"]
+current_disposition = "open"
+
+[[stages]]
+id = 6
+key = "representation_admissibility"
+name = "Spectral representation admissibility and transformation stability"
+purpose = "Spectral representation admissibility and transformation stability"
+dependencies = [4, 5]
+required_assets = ["issa", "nist_skin_reflectance", "hyper_skin"]
+required_operators = ["representation_admissibility"]
+current_disposition = "open"
+
+[[stages]]
+id = 7
+key = "linear_geometry"
+name = "Linear spectral geometry, covariance, conditioning, and effective rank"
+purpose = "Linear spectral geometry, covariance, conditioning, and effective rank"
+dependencies = [6]
+required_assets = ["issa", "nist_skin_reflectance", "hyper_skin"]
+required_operators = ["linear_geometry"]
+current_disposition = "open"
+
+[[stages]]
+id = 8
+key = "functional_geometry"
+name = "Functional, nonlinear, local, and manifold geometry"
+purpose = "Functional, nonlinear, local, and manifold geometry"
+dependencies = [6, 7]
+required_assets = ["issa", "hyper_skin"]
+required_operators = ["functional_geometry"]
+current_disposition = "open"
+
+[[stages]]
+id = 9
+key = "compact_representation"
+name = "Subject-disjoint compact-representation validation"
+purpose = "Subject-disjoint compact-representation validation"
+dependencies = [6, 7]
+required_assets = ["issa"]
+required_operators = ["compact_representation"]
+current_disposition = "open"
+
+[[stages]]
+id = 10
+key = "wavelength_information"
+name = "Wavelength redundancy, conditional innovation, axis stability, and interpretation"
+purpose = "Wavelength redundancy, conditional innovation, axis stability, and interpretation"
+dependencies = [7, 8, 9]
+required_assets = ["issa", "nist_skin_reflectance", "hyper_skin"]
+required_operators = ["wavelength_information"]
+current_disposition = "open"
+
+[[stages]]
+id = 11
+key = "observation_operator"
+name = "Camera and illuminant observation-operator construction and validation"
+purpose = "Camera and illuminant observation-operator construction and validation"
+dependencies = [6, 10]
+required_assets = ["issa", "camera_sensitivities", "illuminant_spectra"]
+required_operators = ["observation_operator"]
+current_disposition = "open"
+
+[[stages]]
+id = 12
+key = "observability"
+name = "Direct observability, null-space structure, and real-spectrum metamerism"
+purpose = "Direct observability, null-space structure, and real-spectrum metamerism"
+dependencies = [11]
+required_assets = ["issa", "camera_sensitivities", "illuminant_spectra"]
+required_operators = ["observability"]
+current_disposition = "open"
+
+[[stages]]
+id = 13
+key = "colorimetric_anchoring"
+name = "External colorimetric anchoring and uncertainty propagation"
+purpose = "External colorimetric anchoring and uncertainty propagation"
+dependencies = [3, 11]
+required_assets = ["issa", "nist_skin_reflectance", "chroma_fit", "mskcc_skin_tone", "cie_standards"]
+required_operators = ["colorimetry"]
+current_disposition = "open"
+
+[[stages]]
+id = 14
+key = "skin_physics"
+name = "Forward skin physics, inverse fitting, identifiability, and solver agreement"
+purpose = "Forward skin physics, inverse fitting, identifiability, and solver agreement"
+dependencies = [6, 12, 13]
+required_assets = ["issa", "chromophore_spectra"]
+required_operators = ["skin_physics"]
+current_disposition = "open"
+
+[[stages]]
+id = 15
+key = "information_bounds"
+name = "Fisher information, CRB, and four-mechanism factorial attribution"
+purpose = "Fisher information, CRB, and four-mechanism factorial attribution"
+dependencies = [11, 12, 14]
+required_assets = ["issa", "camera_sensitivities", "illuminant_spectra", "chromophore_spectra"]
+required_operators = ["information_bounds"]
+current_disposition = "open"
+
+[[stages]]
+id = 16
+key = "matched_simulation"
+name = "Matched simulation, method recovery, controls, and falsification"
+purpose = "Matched simulation, method recovery, controls, and falsification"
+dependencies = [6, 11, 14, 15]
+required_assets = ["issa", "camera_sensitivities", "illuminant_spectra", "chromophore_spectra"]
+required_operators = ["simulation"]
+current_disposition = "open"
+
+[[stages]]
+id = 17
+key = "measurement_design"
+name = "Optimal measurement-system and band design"
+purpose = "Optimal measurement-system and band design"
+dependencies = [15, 16]
+required_assets = ["camera_sensitivities", "illuminant_spectra", "chromophore_spectra"]
+required_operators = ["measurement_design"]
+current_disposition = "open"
+
+[[stages]]
+id = 18
+key = "predictive_recovery"
+name = "Predictive, statistical, tensor, neural, and hybrid recovery benchmarks"
+purpose = "Predictive, statistical, tensor, neural, and hybrid recovery benchmarks"
+dependencies = [9, 12, 14, 15, 16]
+required_assets = ["issa", "hyper_skin", "chroma_fit", "camera_sensitivities", "illuminant_spectra", "cie_standards", "chromophore_spectra"]
+required_operators = ["predictive_recovery"]
+current_disposition = "open"
+
+[[stages]]
+id = 19
+key = "arad_1k_reconstruction"
+name = "ARAD 1K 31-channel external spectral-reconstruction benchmark"
+purpose = "ARAD 1K 31-channel external spectral-reconstruction benchmark"
+dependencies = [18]
+required_assets = ["arad_1k_31"]
+required_operators = ["external_benchmark"]
+current_disposition = "open"
+
+[[stages]]
+id = 20
+key = "ntire_16_demosaicing"
+name = "NTIRE 16-channel multispectral demosaicing benchmark"
+purpose = "NTIRE 16-channel multispectral demosaicing benchmark"
+dependencies = [18]
+required_assets = ["ntire_16"]
+required_operators = ["external_benchmark"]
+current_disposition = "open"
+
+[[stages]]
+id = 21
+key = "uci_skin_segmentation"
+name = "UCI RGB skin-segmentation boundary benchmark"
+purpose = "UCI RGB skin-segmentation boundary benchmark"
+dependencies = [18]
+required_assets = ["uci_skin_segmentation"]
+required_operators = ["external_benchmark"]
+current_disposition = "open"
+
+[[stages]]
+id = 22
+key = "mskcc_colorimeter"
+name = "MSKCC colorimeter-grounded skin-tone and site validation"
+purpose = "MSKCC colorimeter-grounded skin-tone and site validation"
+dependencies = [5, 13, 18]
+required_assets = ["mskcc_skin_tone"]
+required_operators = ["external_benchmark"]
+current_disposition = "open"
+
+[[stages]]
+id = 23
+key = "mst_e_capture"
+name = "MST-E within-subject still/video capture robustness"
+purpose = "MST-E within-subject still/video capture robustness"
+dependencies = [18, 22]
+required_assets = ["mst_e"]
+required_operators = ["external_benchmark"]
+current_disposition = "open"
+
+[[stages]]
+id = 24
+key = "scin_audit"
+name = "SCIN acquisition, labels, image quality, representation, and domain-shift audit"
+purpose = "SCIN acquisition, labels, image quality, representation, and domain-shift audit"
+dependencies = [18, 23]
+required_assets = ["scin", "skin_tone_wild"]
+required_operators = ["external_benchmark"]
+current_disposition = "open"
+
+[[stages]]
+id = 25
+key = "fitzpatrick_cleanpatrick"
+name = "Fitzpatrick17k and CleanPatrick data-quality decomposition"
+purpose = "Fitzpatrick17k and CleanPatrick data-quality decomposition"
+dependencies = [18]
+required_assets = ["fitzpatrick17k", "cleanpatrick"]
+required_operators = ["external_benchmark"]
+current_disposition = "open"
+
+[[stages]]
+id = 26
+key = "ddi_translation"
+name = "DDI clinical translation and physics-versus-contrast analysis"
+purpose = "DDI clinical translation and physics-versus-contrast analysis"
+dependencies = [15, 18, 25]
+required_assets = ["ddi", "skincon"]
+required_operators = ["clinical_translation"]
+current_disposition = "open"
+
+[[stages]]
+id = 27
+key = "ddi2_replication"
+name = "DDI-2 unchanged external replication and heterogeneity analysis"
+purpose = "DDI-2 unchanged external replication and heterogeneity analysis"
+dependencies = [26]
+required_assets = ["ddi2"]
+required_operators = ["clinical_translation"]
+current_disposition = "open"
+
+[[stages]]
+id = 28
+key = "mra_midas"
+name = "MRA-MIDAS identity, modality, distance, linkage, and pair-admissibility audit"
+purpose = "MRA-MIDAS identity, modality, distance, linkage, and pair-admissibility audit"
+dependencies = [4, 18]
+required_assets = ["mra_midas"]
+required_operators = ["metrology"]
+current_disposition = "open"
+
+[[stages]]
+id = 29
+key = "integrated_decomposition"
+name = "Integrated physics–contrast–data-quality–capture–disease decomposition"
+purpose = "Integrated physics–contrast–data-quality–capture–disease decomposition"
+dependencies = [19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+required_assets = ["arad_1k_31", "ntire_16", "uci_skin_segmentation", "mskcc_skin_tone", "mst_e", "scin", "skin_tone_wild", "fitzpatrick17k", "cleanpatrick", "ddi", "ddi2", "mra_midas", "skincon"]
+required_operators = ["integrated_decomposition"]
+current_disposition = "open"
+
+[[stages]]
+id = 30
+key = "statistical_closure"
+name = "Statistical closure, multiplicity, clustered inference, specification curve, and lockbox"
+purpose = "Statistical closure, multiplicity, clustered inference, specification curve, and lockbox"
+dependencies = [16, 29]
+required_assets = ["issa", "mst_e", "ddi", "ddi2", "mra_midas"]
+required_operators = ["statistical_closure"]
+current_disposition = "open"
+
+[[stages]]
+id = 31
+key = "claim_adjudication"
+name = "Final claim adjudication, scope restriction, and evidence-state assignment"
+purpose = "Final claim adjudication, scope restriction, and evidence-state assignment"
+dependencies = [30]
+required_assets = ["prior_art_corpus"]
+required_operators = ["claim_adjudication"]
+current_disposition = "open"
+
+[[stages]]
+id = 32
+key = "clean_room_reproducibility"
+name = "Clean-room scientific, computational, artifact, and release reproducibility"
+purpose = "Clean-room scientific, computational, artifact, and release reproducibility"
+dependencies = [31]
+required_assets = ["prior_art_corpus"]
+required_operators = ["reproducibility"]
+current_disposition = "open"
+
+[[stages]]
+id = 33
+key = "consumer_productization"
+name = "Consumer UI/UX, cross-surface interaction, immersive visualization, and product release"
+purpose = "Consumer UI/UX, cross-surface interaction, immersive visualization, and product release"
+dependencies = [32]
+required_assets = []
+required_operators = ["productization"]
+current_disposition = "open"
