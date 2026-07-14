@@ -1,0 +1,75 @@
+{
+  "canonical_key": "doi:10.1117/1.jbo.28.3.035001",
+  "claim_ids": [
+    "TC-NOV-001",
+    "TC-NOV-002",
+    "TC-NOV-003",
+    "TC-NOV-005"
+  ],
+  "doi": "10.1117/1.jbo.28.3.035001",
+  "evidence_id": "PA-EVID-0004",
+  "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-04-scientific-evidence.json",
+  "evidence_record_sha256": "b070f1a39671b14b71354e0223e39cbe330f1ad535d4eb0348c45368a6cd5ea0",
+  "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
+  "pending_field_names": [],
+  "prior_primary_reviewer": "OPENAI_GPT_5_6_ASSISTED_REVIEW",
+  "prior_second_reviewer": null,
+  "required_independence": true,
+  "review_contract": {
+    "claim_overlap_requires_separate_adjudication": true,
+    "evidence_line_ranges_required_for_supported_fields": true,
+    "novelty_decision_prohibited_in_review_task": true,
+    "source_scope_must_not_be_exceeded": true,
+    "title_or_metadata_inference_prohibited": true,
+    "unsupported_fields_remain_explicit": true
+  },
+  "review_eligibility": "COMPLETE",
+  "review_order": 4,
+  "review_output": {
+    "claim_relevance_observations": [],
+    "discrepancies": [],
+    "field_dispositions": [],
+    "final_review_state": null,
+    "review_completed_at": null,
+    "review_method": null,
+    "review_started_at": null,
+    "reviewer": null,
+    "reviewer_attestation": null
+  },
+  "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
+  "source_bindings": {
+    "normalized_text": {
+      "exists": true,
+      "path": "analysis/prior_art/ingestion/scientific_sources/paper-001/source.txt",
+      "sha256": "35f7aadab4e72fe854a558381a0730314032cada126322724786f9f07cbd34ab"
+    },
+    "primary_evidence_selection": {
+      "exists": true,
+      "path": "analysis/prior_art/scientific_extraction/review_packets/paper-04-evidence-selection.txt",
+      "sha256": "851dfc60f3a130ae5455b6a90a4008789079e25bb2066a5a132826aa2ceba46a"
+    },
+    "review_packet": {
+      "exists": true,
+      "path": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+      "sha256": "40320319666e2f3a14befa4704c0d755c12f85793c71b848e9bd30f81a4d7846"
+    },
+    "scientific_evidence_record": {
+      "exists": true,
+      "path": "analysis/prior_art/scientific_extraction/p1/paper-04-scientific-evidence.json",
+      "sha256": "b070f1a39671b14b71354e0223e39cbe330f1ad535d4eb0348c45368a6cd5ea0"
+    },
+    "source": {
+      "exists": true,
+      "path": "analysis/prior_art/ingestion/scientific_sources/paper-001/source.xml",
+      "sha256": "7f1b5c422f5431b9d40a9ba7a497962b8fbc754a9a361ecf80510b7abeea1109"
+    }
+  },
+  "source_id": "PA-0004",
+  "task_id": "PA-TASK-SECOND-04",
+  "task_schema": "qudipi.stage1.scientific-review-task",
+  "task_state": "PENDING_REVIEW",
+  "task_type": "INDEPENDENT_SECOND_REVIEW",
+  "task_version": 1,
+  "terminal_source_state": "",
+  "title": "Deep learning-based optical approach for skin analysis of melanin and hemoglobin distribution."
+}

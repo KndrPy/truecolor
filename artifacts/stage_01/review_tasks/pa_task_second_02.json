@@ -1,0 +1,57 @@
+{
+  "canonical_key": "doi:10.1364/oe.425401",
+  "claim_ids": [
+    "TC-NOV-002",
+    "TC-NOV-003"
+  ],
+  "doi": "10.1364/oe.425401",
+  "evidence_id": "PA-EVID-0002",
+  "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+  "evidence_record_sha256": "06962e864664fd05be90a6b9f756a61b83e159b01d431f3018100d408843d1dc",
+  "extraction_scope": "SOURCE_UNAVAILABLE_RECORD",
+  "pending_field_names": [],
+  "prior_primary_reviewer": null,
+  "prior_second_reviewer": null,
+  "required_independence": true,
+  "review_contract": {
+    "claim_overlap_requires_separate_adjudication": true,
+    "evidence_line_ranges_required_for_supported_fields": true,
+    "novelty_decision_prohibited_in_review_task": true,
+    "source_scope_must_not_be_exceeded": true,
+    "title_or_metadata_inference_prohibited": true,
+    "unsupported_fields_remain_explicit": true
+  },
+  "review_eligibility": "UNAVAILABLE",
+  "review_order": 2,
+  "review_output": {
+    "claim_relevance_observations": [],
+    "discrepancies": [],
+    "field_dispositions": [],
+    "final_review_state": null,
+    "review_completed_at": null,
+    "review_method": null,
+    "review_started_at": null,
+    "reviewer": null,
+    "reviewer_attestation": null
+  },
+  "scientific_content_state": "UNRESOLVED_NO_VALIDATED_SOURCE",
+  "source_bindings": {
+    "normalized_text": null,
+    "primary_evidence_selection": null,
+    "review_packet": null,
+    "scientific_evidence_record": {
+      "exists": true,
+      "path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "sha256": "06962e864664fd05be90a6b9f756a61b83e159b01d431f3018100d408843d1dc"
+    },
+    "source": null
+  },
+  "source_id": "PA-0002",
+  "task_id": "PA-TASK-SECOND-02",
+  "task_schema": "qudipi.stage1.scientific-review-task",
+  "task_state": "PENDING_REVIEW",
+  "task_type": "INDEPENDENT_SECOND_REVIEW",
+  "task_version": 1,
+  "terminal_source_state": "PAYWALLED_OR_INACCESSIBLE",
+  "title": "Optimized light source spectral power distribution for RGB camera based spectral reflectance recovery"
+}

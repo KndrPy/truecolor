@@ -1,0 +1,104 @@
+{
+  "completed_task_count": 0,
+  "construction_errors": [],
+  "expected_primary_task_count": 1,
+  "expected_second_review_task_count": 5,
+  "expected_total_task_count": 6,
+  "primary_task_count": 1,
+  "queue_schema": "qudipi.stage1.review-work-queue",
+  "queue_state": "READY",
+  "queue_version": 1,
+  "repository_revision": "b52c8a7afd221bd935cc49490b72842ab92fee49",
+  "repository_tree": "c639f3b735bf8d01fc2e335d9d3cbee2f7a4e9f0",
+  "second_review_task_count": 5,
+  "task_count": 6,
+  "tasks": [
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "claim_ids": [
+        "TC-NOV-001",
+        "TC-NOV-002",
+        "TC-NOV-005"
+      ],
+      "review_order": 1,
+      "source_id": "PA-0001",
+      "task_id": "PA-TASK-SECOND-01",
+      "task_path": "artifacts/stage_01/review_tasks/pa_task_second_01.json",
+      "task_sha256": "b9a18d36e197ed6a87de72c0b26f891cb89843bfe5a8b00524c207db23975c49",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "claim_ids": [
+        "TC-NOV-002",
+        "TC-NOV-003"
+      ],
+      "review_order": 2,
+      "source_id": "PA-0002",
+      "task_id": "PA-TASK-SECOND-02",
+      "task_path": "artifacts/stage_01/review_tasks/pa_task_second_02.json",
+      "task_sha256": "8d0f7a8e58314b6cc878ce5de33ddd8192fc79e2ac41403596cf698afd77c1f5",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "claim_ids": [
+        "TC-NOV-004",
+        "TC-NOV-006"
+      ],
+      "review_order": 3,
+      "source_id": "PA-0003",
+      "task_id": "PA-TASK-SECOND-03",
+      "task_path": "artifacts/stage_01/review_tasks/pa_task_second_03.json",
+      "task_sha256": "678c7b675930762dfd6f6e8c7b6fdf2283b374e15e31bc1e8a95459130345a70",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "canonical_key": "doi:10.1117/1.jbo.28.3.035001",
+      "claim_ids": [
+        "TC-NOV-001",
+        "TC-NOV-002",
+        "TC-NOV-003",
+        "TC-NOV-005"
+      ],
+      "review_order": 4,
+      "source_id": "PA-0004",
+      "task_id": "PA-TASK-SECOND-04",
+      "task_path": "artifacts/stage_01/review_tasks/pa_task_second_04.json",
+      "task_sha256": "0126b37368a8efbac7a2d0b25cde48f59f878a49f53d686f366f45b8551c44be",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "canonical_key": "doi:10.1111/jdv.17076",
+      "claim_ids": [
+        "TC-NOV-002",
+        "TC-NOV-005"
+      ],
+      "review_order": 5,
+      "source_id": "PA-0005",
+      "task_id": "PA-TASK-SECOND-05",
+      "task_path": "artifacts/stage_01/review_tasks/pa_task_second_05.json",
+      "task_sha256": "c7f447ad601e2174d1a8753a121cf531f5fae517862236a48bda811277bdcfbe",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "canonical_key": "doi:10.1111/jdv.17076",
+      "claim_ids": [
+        "TC-NOV-002",
+        "TC-NOV-005"
+      ],
+      "review_order": 1,
+      "source_id": "PA-0005",
+      "task_id": "PA-TASK-PRIMARY-01",
+      "task_path": "artifacts/stage_01/review_tasks/pa_task_primary_01.json",
+      "task_sha256": "e5ec2929e8cc8702a6f4ec68a1e05870ea5fd3dd543354f26c6c7a3706b6f1d1",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "PRIMARY_SCIENTIFIC_REVIEW"
+    }
+  ]
+}
