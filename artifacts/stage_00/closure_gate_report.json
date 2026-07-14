@@ -1,7 +1,8 @@
 {
-  "status": "OPEN",
-  "stage": 0,
-  "closure_marker_emitted": false,
+  "closure_marker_emitted": true,
+  "configuration_sha256": "b7181bf552dad94407165529f91b150b56f535f3e19966c498c034f1c64e494e",
+  "remaining_blockers": [],
+  "reproducibility_capture": "reproducibility_capture.json",
   "satisfied_gates": [
     "configuration_compilation",
     "environment_inspection",
@@ -12,7 +13,8 @@
     "configuration_falsification",
     "stage0_evidence_generation"
   ],
-  "remaining_blockers": [
-    "final_clean_worktree_reproducibility_capture"
-  ]
+  "stage": 0,
+  "status": "CLOSED",
+  "verified_revision": "a991c14821690b5547b485ea123b09a8bf98ebfd",
+  "verified_source_tree": "8669d886dfe12fe880a38995abbe4ea818cedffd"
 }

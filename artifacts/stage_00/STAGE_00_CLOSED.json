@@ -1,0 +1,11 @@
+{
+  "closure_gate_report": "closure_gate_report.json",
+  "configuration_sha256": "b7181bf552dad94407165529f91b150b56f535f3e19966c498c034f1c64e494e",
+  "marker_schema": "qudipi.stage-closure",
+  "marker_version": 1,
+  "reproducibility_capture": "reproducibility_capture.json",
+  "stage_id": 0,
+  "status": "CLOSED",
+  "verified_revision": "a991c14821690b5547b485ea123b09a8bf98ebfd",
+  "verified_source_tree": "8669d886dfe12fe880a38995abbe4ea818cedffd"
+}
