@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.2352/issn.2470-1173.2016.13.iqsp-219%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":0,\"request\":{\"queryString\":\"DOI:\\\"10.2352/issn.2470-1173.2016.13.iqsp-219\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[]}}",
+  "source": "europe_pmc"
+}

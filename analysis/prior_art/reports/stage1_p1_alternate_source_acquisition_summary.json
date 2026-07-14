@@ -1,0 +1,20 @@
+{
+  "accepted_format_counts": {
+    "HTML": 6
+  },
+  "acquisition_state_counts": {
+    "ACQUIRED_AND_IDENTITY_VALIDATED": 6,
+    "UNRESOLVED_AFTER_ALTERNATE_ROUTES": 5
+  },
+  "alternate_acquired_count": 6,
+  "attempt_count": 40,
+  "outputs": {
+    "alternate_acquisition_csv": "analysis/prior_art/acquisition/stage1_p1_alternate_source_acquisition.csv",
+    "alternate_acquisition_json": "analysis/prior_art/acquisition/stage1_p1_alternate_source_acquisition.json",
+    "attempt_ledger_csv": "analysis/prior_art/acquisition/stage1_p1_alternate_source_attempt_ledger.csv"
+  },
+  "schema_version": "1.0.0",
+  "still_unresolved_count": 5,
+  "unresolved_input_count": 11,
+  "work_package": "S1-SOURCE-01C"
+}

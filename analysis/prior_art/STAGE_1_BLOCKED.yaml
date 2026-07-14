@@ -1,24 +1,37 @@
 schema_version: 1.0.0
 stage: 1
 state: BLOCKED
-blocker_code: SCIENTIFIC_SOURCE_CONTENT_NOT_ACQUIRED
-finding: All 48 fixed review-cohort papers resolve to identity and ranking metadata,
-  but none has an existing scientific-content source.
+blocker_code: P1_SCIENTIFIC_SOURCE_COVERAGE_INCOMPLETE
+finding: The fixed 16-paper P1 closest-paper tranche has four validated full scientific
+  texts, one substantive partial text, six abstract or preview-only sources, and five
+  papers without a validated scientific source.
 observed_assets:
   review_papers: 48
-  papers_with_existing_scientific_content: 0
-  canonical_documents: 0
-  pdf_files: 0
-  xml_files: 0
-  html_files: 0
-  intake_manifests: 8
+  p1_review_papers: 16
+  p1_validated_source_records: 11
+  p1_full_scientific_texts: 4
+  p1_substantive_partial_texts: 1
+  p1_abstract_or_preview_only: 6
+  p1_unresolved_sources: 5
+  pre_acquisition_papers_with_scientific_content: 0
+  pre_acquisition_canonical_documents: 0
+  pre_acquisition_pdf_files: 0
+  pre_acquisition_xml_files: 0
+  pre_acquisition_html_files: 0
+  pre_acquisition_intake_manifests: 8
+  current_local_pdf_sources: 1
+  current_local_xml_sources: 4
+  current_local_html_sources: 6
+  current_local_extracted_texts: 11
 prohibited_inferences:
 - Do not infer methods, equations, datasets, validation, results, or limitations from
   titles or bibliographic metadata.
 - Do not adjudicate novelty overlap before scientific source content is acquired.
 - Do not classify the papers themselves as scientifically insufficient.
-unblock_condition: Acquire and validate a scientific source document or sufficiently
-  complete authoritative scientific record for each paper being adjudicated.
+unblock_condition: Acquire and validate sufficient scientific content for every P1
+  closest paper required for complete novelty-overlap adjudication.
 acquisition_queue: analysis/prior_art/adjudication/stage1_source_acquisition_queue.csv
 availability_evidence: analysis/prior_art/adjudication/stage1_scientific_content_availability.csv
 availability_sha256: 0854b4e26108e902ed12182f23918f4a58fb52152f7e3e09f8ff0e55f44a574e
+p1_source_status: analysis/prior_art/acquisition/stage1_p1_source_status_final.csv
+p1_source_status_sha256: a8cd587d9618d6ad0f30efd72492155f7a221e0013f18bd1feeb55520baa1586

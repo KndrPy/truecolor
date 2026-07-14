@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1007/s10043-010-0040-5%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":0,\"request\":{\"queryString\":\"DOI:\\\"10.1007/s10043-010-0040-5\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[]}}",
+  "source": "europe_pmc"
+}

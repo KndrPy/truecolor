@@ -1,0 +1,16 @@
+{
+  "eligible_for_bounded_review": 5,
+  "eligible_for_full_scientific_review": 4,
+  "hash_failure_count": 0,
+  "output": "analysis/prior_art/acquisition/stage1_p1_source_sufficiency_audit_v2.csv",
+  "reclassification_count": 6,
+  "schema_version": "2.0.0",
+  "scientific_content_state_counts": {
+    "ABSTRACT_OR_PREVIEW_ONLY": 6,
+    "FULL_SCIENTIFIC_TEXT": 4,
+    "SUBSTANTIVE_PARTIAL_TEXT": 1
+  },
+  "source_count": 11,
+  "supersedes": "analysis/prior_art/acquisition/stage1_p1_source_sufficiency_audit.csv",
+  "work_package": "S1-SOURCE-01D2"
+}

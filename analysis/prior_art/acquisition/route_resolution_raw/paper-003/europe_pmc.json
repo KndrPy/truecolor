@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1002/jbio.202400118%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"DOI:\\\"10.1002/jbio.202400118\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"39315641\",\"source\":\"MED\",\"pmid\":\"39315641\",\"doi\":\"10.1002/jbio.202400118\",\"title\":\"Noninvasive Detection of the Skin Structure and Inversed Retrieval of Chromophore Information Based on Diffuse Reflectance Spectroscopy.\",\"authorString\":\"Wang J, Li D, Chen B.\",\"journalTitle\":\"J Biophotonics\",\"issue\":\"11\",\"journalVolume\":\"17\",\"pubYear\":\"2024\",\"journalIssn\":\"1864-063x; 1864-0648; \",\"pageInfo\":\"e202400118\",\"pubType\":\"research support, non-u.s. gov't; journal article\",\"isOpenAccess\":\"N\",\"inEPMC\":\"N\",\"inPMC\":\"N\",\"hasPDF\":\"N\",\"hasBook\":\"N\",\"hasSuppl\":\"N\",\"citedByCount\":0,\"hasReferences\":\"Y\",\"hasTextMinedTerms\":\"Y\",\"hasDbCrossReferences\":\"N\",\"hasLabsLinks\":\"Y\",\"hasTMAccessionNumbers\":\"N\",\"firstIndexDate\":\"2024-09-24\",\"firstPublicationDate\":\"2024-09-24\"}]}}",
+  "source": "europe_pmc"
+}

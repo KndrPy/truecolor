@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1046/j.0022-202x.2001.01577.x%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"DOI:\\\"10.1046/j.0022-202x.2001.01577.x\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"11886508\",\"source\":\"MED\",\"pmid\":\"11886508\",\"doi\":\"10.1046/j.0022-202x.2001.01577.x\",\"title\":\"Skin melanin, hemoglobin, and light scattering properties can be quantitatively assessed in vivo using diffuse reflectance spectroscopy.\",\"authorString\":\"Zonios G, Bykowski J, Kollias N.\",\"journalTitle\":\"J Invest Dermatol\",\"issue\":\"6\",\"journalVolume\":\"117\",\"pubYear\":\"2001\",\"journalIssn\":\"0022-202x; 1523-1747; \",\"pageInfo\":\"1452-1457\",\"pubType\":\"research support, non-u.s. gov't; journal article\",\"isOpenAccess\":\"N\",\"inEPMC\":\"N\",\"inPMC\":\"N\",\"hasPDF\":\"N\",\"hasBook\":\"N\",\"hasSuppl\":\"N\",\"citedByCount\":242,\"hasReferences\":\"Y\",\"hasTextMinedTerms\":\"Y\",\"hasDbCrossReferences\":\"N\",\"hasLabsLinks\":\"Y\",\"hasTMAccessionNumbers\":\"N\",\"firstIndexDate\":\"2008-12-24\",\"firstPublicationDate\":\"2001-12-01\"}]}}",
+  "source": "europe_pmc"
+}

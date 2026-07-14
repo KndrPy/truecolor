@@ -1,0 +1,23 @@
+{
+  "outputs": {
+    "raw_response_directory": "analysis/prior_art/acquisition/route_resolution_raw",
+    "route_resolution_csv": "analysis/prior_art/acquisition/stage1_p1_source_route_resolution.csv",
+    "route_resolution_json": "analysis/prior_art/acquisition/stage1_p1_source_route_resolution.json"
+  },
+  "p1_paper_count": 16,
+  "queue_source": "analysis/prior_art/adjudication/stage1_source_acquisition_queue.csv",
+  "queue_source_sha256": "abf46644d9d8609fe0aa8712c917f7af4f572ef5e934169fffaeee2fe96d64b9",
+  "route_resolution_state_counts": {
+    "LANDING_PAGE_ROUTE_ONLY": 4,
+    "SCIENTIFIC_DOCUMENT_ROUTE_CANDIDATE": 12
+  },
+  "schema_version": "1.0.0",
+  "selected_route_counts": {
+    "CROSSREF_PUBLISHER_LANDING_PAGE": 2,
+    "CROSSREF_PUBLISHER_PDF_LINK": 3,
+    "EUROPE_PMC_FULL_TEXT_XML": 5,
+    "OPENALEX_OA_LANDING_PAGE": 2,
+    "OPENALEX_OA_PDF": 4
+  },
+  "work_package": "S1-SOURCE-01A"
+}

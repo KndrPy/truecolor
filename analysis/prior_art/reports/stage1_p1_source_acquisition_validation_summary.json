@@ -1,0 +1,18 @@
+{
+  "accepted_pdf_count": 1,
+  "accepted_source_count": 5,
+  "accepted_xml_count": 4,
+  "acquisition_state_counts": {
+    "ACQUIRED_AND_IDENTITY_VALIDATED": 5,
+    "FETCH_FAILED": 1,
+    "REJECTED_HTML_OR_ACCESS_GATE": 6
+  },
+  "candidate_count": 12,
+  "outputs": {
+    "source_root": "analysis/prior_art/ingestion/scientific_sources",
+    "validation_csv": "analysis/prior_art/acquisition/stage1_p1_source_acquisition_validation.csv",
+    "validation_json": "analysis/prior_art/acquisition/stage1_p1_source_acquisition_validation.json"
+  },
+  "schema_version": "1.0.0",
+  "work_package": "S1-SOURCE-01B"
+}

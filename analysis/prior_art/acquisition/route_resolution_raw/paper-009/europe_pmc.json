@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1364/oe.425401%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"DOI:\\\"10.1364/oe.425401\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"34614820\",\"source\":\"MED\",\"pmid\":\"34614820\",\"doi\":\"10.1364/oe.425401\",\"title\":\"Optimized light source spectral power distribution for RGB camera based spectral reflectance recovery.\",\"authorString\":\"Wang L, Sole A, Hardeberg JY, Wan X.\",\"journalTitle\":\"Opt Express\",\"issue\":\"16\",\"journalVolume\":\"29\",\"pubYear\":\"2021\",\"journalIssn\":\"1094-4087\",\"pageInfo\":\"24695-24713\",\"pubType\":\"journal article\",\"isOpenAccess\":\"N\",\"inEPMC\":\"N\",\"inPMC\":\"N\",\"hasPDF\":\"N\",\"hasBook\":\"N\",\"hasSuppl\":\"N\",\"citedByCount\":2,\"hasReferences\":\"Y\",\"hasTextMinedTerms\":\"N\",\"hasDbCrossReferences\":\"N\",\"hasLabsLinks\":\"N\",\"hasTMAccessionNumbers\":\"N\",\"firstIndexDate\":\"2021-10-08\",\"firstPublicationDate\":\"2021-08-01\"}]}}",
+  "source": "europe_pmc"
+}

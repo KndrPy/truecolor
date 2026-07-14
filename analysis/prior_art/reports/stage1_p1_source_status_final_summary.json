@@ -1,0 +1,55 @@
+{
+  "blocker_code": "P1_SCIENTIFIC_SOURCE_COVERAGE_INCOMPLETE",
+  "bounded_review_ready_count": 5,
+  "claim_coverage": {
+    "TC-NOV-001": {
+      "bounded_review_ready_count": 1,
+      "full_review_ready_count": 1,
+      "not_full_review_ready_count": 4,
+      "p1_paper_count": 5
+    },
+    "TC-NOV-002": {
+      "bounded_review_ready_count": 1,
+      "full_review_ready_count": 1,
+      "not_full_review_ready_count": 8,
+      "p1_paper_count": 9
+    },
+    "TC-NOV-003": {
+      "bounded_review_ready_count": 2,
+      "full_review_ready_count": 2,
+      "not_full_review_ready_count": 4,
+      "p1_paper_count": 6
+    },
+    "TC-NOV-004": {
+      "bounded_review_ready_count": 3,
+      "full_review_ready_count": 2,
+      "not_full_review_ready_count": 3,
+      "p1_paper_count": 5
+    },
+    "TC-NOV-005": {
+      "bounded_review_ready_count": 2,
+      "full_review_ready_count": 2,
+      "not_full_review_ready_count": 5,
+      "p1_paper_count": 7
+    },
+    "TC-NOV-006": {
+      "bounded_review_ready_count": 3,
+      "full_review_ready_count": 2,
+      "not_full_review_ready_count": 4,
+      "p1_paper_count": 6
+    }
+  },
+  "complete_review_ready_count": 4,
+  "output_csv": "analysis/prior_art/acquisition/stage1_p1_source_status_final.csv",
+  "output_json": "analysis/prior_art/acquisition/stage1_p1_source_status_final.json",
+  "p1_paper_count": 16,
+  "schema_version": "1.0.0",
+  "scientific_content_state_counts": {
+    "ABSTRACT_OR_PREVIEW_ONLY": 6,
+    "FULL_SCIENTIFIC_TEXT": 4,
+    "SUBSTANTIVE_PARTIAL_TEXT": 1,
+    "UNRESOLVED_NO_VALIDATED_SOURCE": 5
+  },
+  "stage_1_state": "BLOCKED",
+  "work_package": "S1-SOURCE-01E"
+}

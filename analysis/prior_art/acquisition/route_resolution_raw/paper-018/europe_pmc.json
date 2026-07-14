@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.2196/31697%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"DOI:\\\"10.2196/31697\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"37632853\",\"source\":\"MED\",\"pmid\":\"37632853\",\"pmcid\":\"PMC10334948\",\"fullTextIdList\":{\"fullTextId\":[\"PMC10334948\"]},\"doi\":\"10.2196/31697\",\"title\":\"Performance of Artificial Intelligence Imaging Models in Detecting Dermatological Manifestations in Higher Fitzpatrick Skin Color Classifications.\",\"authorString\":\"Aggarwal P.\",\"journalTitle\":\"JMIR Dermatol\",\"issue\":\"2\",\"journalVolume\":\"4\",\"pubYear\":\"2021\",\"journalIssn\":\"2562-0959\",\"pageInfo\":\"e31697\",\"pubType\":\"letter; journal article\",\"isOpenAccess\":\"Y\",\"inEPMC\":\"Y\",\"inPMC\":\"Y\",\"hasPDF\":\"Y\",\"hasBook\":\"N\",\"hasSuppl\":\"N\",\"citedByCount\":9,\"hasReferences\":\"Y\",\"hasTextMinedTerms\":\"Y\",\"hasDbCrossReferences\":\"N\",\"hasLabsLinks\":\"N\",\"hasTMAccessionNumbers\":\"N\",\"firstIndexDate\":\"2023-08-27\",\"firstPublicationDate\":\"2021-10-12\"}]}}",
+  "source": "europe_pmc"
+}

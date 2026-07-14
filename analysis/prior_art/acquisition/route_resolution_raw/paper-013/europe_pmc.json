@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093/ced/llaf126%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"DOI:\\\"10.1093/ced/llaf126\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"40080693\",\"source\":\"MED\",\"pmid\":\"40080693\",\"doi\":\"10.1093/ced/llaf126\",\"title\":\"Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study.\",\"authorString\":\"Sakunchotpanit G, Nayudu K, Chen R, Milosavljevic S, Rohan TZ, Ortiz-L\u00f3pez L, Venkatesh K, Nambudiri VE.\",\"journalTitle\":\"Clin Exp Dermatol\",\"issue\":\"8\",\"journalVolume\":\"50\",\"pubYear\":\"2025\",\"journalIssn\":\"0307-6938; 1365-2230; \",\"pageInfo\":\"1620-1622\",\"pubType\":\"comparative study; journal article\",\"isOpenAccess\":\"N\",\"inEPMC\":\"N\",\"inPMC\":\"N\",\"hasPDF\":\"N\",\"hasBook\":\"N\",\"hasSuppl\":\"N\",\"citedByCount\":1,\"hasReferences\":\"Y\",\"hasTextMinedTerms\":\"Y\",\"hasDbCrossReferences\":\"N\",\"hasLabsLinks\":\"N\",\"hasTMAccessionNumbers\":\"N\",\"firstIndexDate\":\"2025-03-14\",\"firstPublicationDate\":\"2025-07-01\"}]}}",
+  "source": "europe_pmc"
+}

@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1117/1.jbo.28.3.035001%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"DOI:\\\"10.1117/1.jbo.28.3.035001\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"36992693\",\"source\":\"MED\",\"pmid\":\"36992693\",\"pmcid\":\"PMC10042298\",\"fullTextIdList\":{\"fullTextId\":[\"PMC10042298\"]},\"doi\":\"10.1117/1.jbo.28.3.035001\",\"title\":\"Deep learning-based optical approach for skin analysis of melanin and hemoglobin distribution.\",\"authorString\":\"Jung G, Kim S, Lee J, Yoo S.\",\"journalTitle\":\"J Biomed Opt\",\"issue\":\"3\",\"journalVolume\":\"28\",\"pubYear\":\"2023\",\"journalIssn\":\"1083-3668; 1560-2281; \",\"pageInfo\":\"035001\",\"pubType\":\"research support, non-u.s. gov't; research-article; journal article\",\"isOpenAccess\":\"Y\",\"inEPMC\":\"Y\",\"inPMC\":\"Y\",\"hasPDF\":\"Y\",\"hasBook\":\"N\",\"hasSuppl\":\"N\",\"citedByCount\":13,\"hasReferences\":\"Y\",\"hasTextMinedTerms\":\"Y\",\"hasDbCrossReferences\":\"N\",\"hasLabsLinks\":\"N\",\"hasTMAccessionNumbers\":\"N\",\"firstIndexDate\":\"2023-04-05\",\"firstPublicationDate\":\"2023-03-27\"}]}}",
+  "source": "europe_pmc"
+}

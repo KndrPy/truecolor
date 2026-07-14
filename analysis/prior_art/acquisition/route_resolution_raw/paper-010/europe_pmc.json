@@ -1,0 +1,6 @@
+{
+  "http_status": 200,
+  "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038/s41597-025-04382-5%22&format=json&pageSize=5",
+  "response_body": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"DOI:\\\"10.1038/s41597-025-04382-5\\\"\",\"resultType\":\"lite\",\"cursorMark\":\"*\",\"pageSize\":5,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"39893183\",\"source\":\"MED\",\"pmid\":\"39893183\",\"pmcid\":\"PMC11787307\",\"fullTextIdList\":{\"fullTextId\":[\"PMC11787307\"]},\"doi\":\"10.1038/s41597-025-04382-5\",\"title\":\"Investigating the Quality of DermaMNIST and Fitzpatrick17k Dermatological Image Datasets.\",\"authorString\":\"Abhishek K, Jain A, Hamarneh G.\",\"journalTitle\":\"Sci Data\",\"issue\":\"1\",\"journalVolume\":\"12\",\"pubYear\":\"2025\",\"journalIssn\":\"2052-4463\",\"pageInfo\":\"196\",\"pubType\":\"research-article; dataset; journal article\",\"isOpenAccess\":\"Y\",\"inEPMC\":\"Y\",\"inPMC\":\"Y\",\"hasPDF\":\"Y\",\"hasBook\":\"N\",\"hasSuppl\":\"N\",\"citedByCount\":6,\"hasReferences\":\"Y\",\"hasTextMinedTerms\":\"Y\",\"hasDbCrossReferences\":\"N\",\"hasLabsLinks\":\"Y\",\"hasTMAccessionNumbers\":\"N\",\"firstIndexDate\":\"2025-02-03\",\"firstPublicationDate\":\"2025-02-01\"}]}}",
+  "source": "europe_pmc"
+}
