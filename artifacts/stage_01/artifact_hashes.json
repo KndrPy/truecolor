@@ -1,0 +1,17 @@
+{
+  "artifacts/stage_01/claim_matrices/tc_nov_001_matrix.json": "910afb8e45bfec16a68a3ae7c00513ec306f61897ddba6a45dde85326d17fe2e",
+  "artifacts/stage_01/claim_matrices/tc_nov_002_matrix.json": "ffdfb1ee5e6d8dd66040cf4e4bc1f0917f0c537042b50dc149f8b03f6af5a9ac",
+  "artifacts/stage_01/claim_matrices/tc_nov_003_matrix.json": "1c7b0e982ffee3424c425dca78a31081fe29870aa0d125943ba13d7b12691656",
+  "artifacts/stage_01/claim_matrices/tc_nov_004_matrix.json": "126e67a6daa09ba552ceb75965d6b422e427bd3d4967e6583ed68623ffab0c98",
+  "artifacts/stage_01/claim_matrices/tc_nov_005_matrix.json": "56af0fe07600010d66ac98a5e2d4f89e55c54a57315a53da8868a0252df254c3",
+  "artifacts/stage_01/claim_matrices/tc_nov_006_matrix.json": "6818b1a86e8e448139b8e950b381f15c2fae78db9b9742c0e049a66100f8aa58",
+  "artifacts/stage_01/claim_matrix_register.json": "ea051320b66505eec76b681c350324e9bc0e3a79810cbf1101cbecf2cc83939e",
+  "artifacts/stage_01/claim_register.json": "98e6f78d8a45381b35366befd8face08cc2de006d451f951560bb602ead2fdb0",
+  "artifacts/stage_01/evidence_register.json": "6d8d21c7b3f7e244ce0d11a9becc6391bd98b7f67c1e70a319ad386f836850eb",
+  "artifacts/stage_01/novelty_kill_register.json": "0508ec5a93ad42504abfc8b274f807b5c7512acc0f18061dc5997f4ea50e8df4",
+  "artifacts/stage_01/second_review_register.json": "aa7f823bb841c8bbc0247c324ce98669c50711d64908830994af0a2087482b77",
+  "artifacts/stage_01/source_register.json": "5d57dd668e5c85abce0e50d5f788c91eb406070e7db20eac7a16bb66662a0f99",
+  "artifacts/stage_01/stage1_gap_report.json": "e62ead415b31587b0e05788f0b4361abfc4b5db7e3decd7ba743df68a191c67d",
+  "artifacts/stage_01/stage1_semantic_ledger_run.json": "49702ad415a27c0bade76c0b927a6be774928144273627421e7b239ef250d27b",
+  "artifacts/stage_01/unsupported_field_register.json": "3e3a5572c981b89e0b37cd86ba543f658d87ad1000614d5bb112f36ac0078b89"
+}

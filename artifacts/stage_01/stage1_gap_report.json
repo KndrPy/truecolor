@@ -1,0 +1,31 @@
+{
+  "claim_count": 6,
+  "closure_marker_emitted": false,
+  "evidence_record_count": 16,
+  "kill_condition_count": 6,
+  "matrix_count": 6,
+  "prohibited_actions": [
+    "repeat corpus discovery",
+    "repeat source acquisition",
+    "repeat OCR",
+    "repeat identity resolution",
+    "repeat global ranking",
+    "infer overlap from title or metadata",
+    "infer novelty from corpus absence",
+    "emit Stage 1 closure before all adjudications are complete"
+  ],
+  "remaining_blockers": [
+    "primary_scientific_reviews",
+    "independent_second_reviews",
+    "claim_overlap_adjudication",
+    "novelty_kill_decisions"
+  ],
+  "report_schema": "qudipi.stage1.semantic-gap-report",
+  "report_version": 1,
+  "second_review_record_count": 5,
+  "semantic_contract_errors": [],
+  "source_record_count": 16,
+  "stage_id": 1,
+  "stage_key": "prior_art",
+  "status": "OPEN"
+}

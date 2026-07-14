@@ -1,0 +1,88 @@
+{
+  "completed_decision_count": 0,
+  "decision_count": 6,
+  "decisions": [
+    {
+      "adjudicator": null,
+      "claim_id": "TC-NOV-001",
+      "confidence": null,
+      "decision": null,
+      "decision_basis": [],
+      "decision_state": "BLOCKED_BY_UNRESOLVED_MATRIX",
+      "kill_condition": "A prior source already defines and empirically validates the same four-part fractional attribution under materially equivalent estimands.",
+      "kill_condition_id": "PA-KILL-001",
+      "matrix_id": "PA-MATRIX-001",
+      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_001_matrix.json",
+      "strongest_competing_source_ids": []
+    },
+    {
+      "adjudicator": null,
+      "claim_id": "TC-NOV-002",
+      "confidence": null,
+      "decision": null,
+      "decision_basis": [],
+      "decision_state": "BLOCKED_BY_UNRESOLVED_MATRIX",
+      "kill_condition": "Prior work performs materially equivalent real-skin-spectrum camera-operator observability and metamer enumeration.",
+      "kill_condition_id": "PA-KILL-002",
+      "matrix_id": "PA-MATRIX-002",
+      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_002_matrix.json",
+      "strongest_competing_source_ids": []
+    },
+    {
+      "adjudicator": null,
+      "claim_id": "TC-NOV-003",
+      "confidence": null,
+      "decision": null,
+      "decision_basis": [],
+      "decision_state": "BLOCKED_BY_UNRESOLVED_MATRIX",
+      "kill_condition": "Prior work estimates the same recoverable-versus-unrecoverable boundary across calibrated spectra and uncontrolled images.",
+      "kill_condition_id": "PA-KILL-003",
+      "matrix_id": "PA-MATRIX-003",
+      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_003_matrix.json",
+      "strongest_competing_source_ids": []
+    },
+    {
+      "adjudicator": null,
+      "claim_id": "TC-NOV-004",
+      "confidence": null,
+      "decision": null,
+      "decision_basis": [],
+      "decision_state": "BLOCKED_BY_UNRESOLVED_MATRIX",
+      "kill_condition": "Prior work performs the same three-component quantitative decomposition with external pathology-confirmed validation.",
+      "kill_condition_id": "PA-KILL-004",
+      "matrix_id": "PA-MATRIX-004",
+      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_004_matrix.json",
+      "strongest_competing_source_ids": []
+    },
+    {
+      "adjudicator": null,
+      "claim_id": "TC-NOV-005",
+      "confidence": null,
+      "decision": null,
+      "decision_basis": [],
+      "decision_state": "BLOCKED_BY_UNRESOLVED_MATRIX",
+      "kill_condition": "Prior work already establishes the same subject-balanced, body-site-conditioned representation and its downstream measurement consequences.",
+      "kill_condition_id": "PA-KILL-005",
+      "matrix_id": "PA-MATRIX-005",
+      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_005_matrix.json",
+      "strongest_competing_source_ids": []
+    },
+    {
+      "adjudicator": null,
+      "claim_id": "TC-NOV-006",
+      "confidence": null,
+      "decision": null,
+      "decision_basis": [],
+      "decision_state": "BLOCKED_BY_UNRESOLVED_MATRIX",
+      "kill_condition": "Prior work implements a materially equivalent governed cross-domain evidence chain with explicit asset-role limits.",
+      "kill_condition_id": "PA-KILL-006",
+      "matrix_id": "PA-MATRIX-006",
+      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_006_matrix.json",
+      "strongest_competing_source_ids": []
+    }
+  ],
+  "expected_decision_count": 6,
+  "register_schema": "qudipi.stage1.novelty-kill-register",
+  "register_version": 1,
+  "status": "OPEN"
+}

@@ -1,0 +1,2204 @@
+{
+  "record_count": 244,
+  "records": [
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-datasets"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-equations"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-observables"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0001",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0001-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-datasets"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-equations"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-observables"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.1364/oe.425401",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0002",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0002-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": "No optical, camera, colorimetric, or spectral calibration procedure is defined.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": "No camera spectral-sensitivity, radiometric-response, exposure, or device-calibration model is provided.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": "The source audits previously acquired images and does not prescribe a new capture protocol.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": "Melanin, hemoglobin, and other chromophores are not modeled or estimated.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": "Illumination variation appears as a possible source of visual duplication or segmentation difficulty, but no illuminant model or controlled-light assumption is defined.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": "The study analyzes existing image datasets and does not specify a canonical acquisition instrument or camera system.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": "The study is a dataset-quality and benchmark audit. The source does not define a light-tissue physical model.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1038/s41597-025-04382-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": "Optical scattering is not modeled or estimated.",
+      "source_id": "PA-0003",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0003-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1109/cvprw50498.2020.00239",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-06-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": "Melanin, hemoglobin, and other skin chromophores are not represented.",
+      "source_id": "PA-0006",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0006-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1109/cvprw50498.2020.00239",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-06-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": "The source does not define, estimate, or recover scene illumination or illuminant spectral power distribution.",
+      "source_id": "PA-0006",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0006-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1109/cvprw50498.2020.00239",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-06-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": "Tissue or surface scattering is not modeled.",
+      "source_id": "PA-0006",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0006-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1109/cvprw50498.2020.00239",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-06-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": "The study uses general natural-scene hyperspectral datasets and does not define a skin-specific representation.",
+      "source_id": "PA-0006",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0006-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-datasets"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-equations"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-observables"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.1093/ced/llaf126",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-07-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0007",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0007-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-datasets"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-equations"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-observables"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.1002/jbio.202400118",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-08-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0008",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0008-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-datasets"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-equations"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-observables"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.1117/12.3098393",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-09-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0009",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0009-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-datasets"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-equations"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-observables"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-10-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0010",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0010-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.3390/curroncol30030241",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-11-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": "No consumer camera, camera spectral sensitivity, camera-response curve, or camera-calibration assumption is involved.",
+      "source_id": "PA-0011",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0011-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.3390/curroncol30030241",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-11-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": "The study does not define a physical light\u2013tissue, reflectance, absorption, or scattering model.",
+      "source_id": "PA-0011",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0011-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.3390/curroncol30030241",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-11-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": "The study does not model or estimate optical scattering.",
+      "source_id": "PA-0011",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0011-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-datasets"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-equations"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-observables"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.3390/app15158321",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-12-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0012",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0012-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-datasets"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-equations"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-observables"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-015-0177-3",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-13-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0013",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0013-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": "No color, camera, illuminant, spectral, geometric, or cross-repository calibration procedure is reported.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": "Camera spectral sensitivity, image signal processing, white balance, exposure, and device response are not reported or modeled.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": "The paper does not provide a standardized image capture protocol. It reuses images from multiple open dermatology repositories.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": "Melanin, hemoglobin, and other chromophores are not measured or modeled.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": "Illumination source, intensity, spectrum, uniformity, and control are not reported.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": "The source identifies public image repositories but does not establish the cameras, dermatoscopes, imaging devices, or acquisition hardware used to create the images.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": "The paper does not define a light\u2013tissue, reflectance, absorption, or image-formation model.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.2196/31697",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-14-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": "Optical scattering is not measured or modeled.",
+      "source_id": "PA-0014",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0014-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "algorithm_or_workflow",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-algorithm_or_workflow"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "author_claimed_contribution",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-author_claimed_contribution"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "calibration_design",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-calibration_design"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "camera_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-camera_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "capture_protocol",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-capture_protocol"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "computational_model",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-computational_model"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "datasets",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-datasets"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-equations"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "evaluation_metrics",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-evaluation_metrics"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "illumination_assumptions",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-illumination_assumptions"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "instrument_or_camera",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-instrument_or_camera"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "measured_inputs",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-measured_inputs"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "observables",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-observables"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "problem_addressed",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-problem_addressed"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "reported_limitations",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-reported_limitations"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "reported_results",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-reported_results"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-scattering_representation"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "scientific_objective",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-scientific_objective"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "skin_representation",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-skin_representation"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "truecolor_relevance",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-truecolor_relevance"
+    },
+    {
+      "canonical_key": "doi:10.1007/s10043-010-0040-5",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-15-scientific-evidence.json",
+      "field_name": "validation_design",
+      "review_notes": null,
+      "source_id": "PA-0015",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0015-validation_design"
+    },
+    {
+      "canonical_key": "doi:10.35772/ghm.2026.01058",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-16-scientific-evidence.json",
+      "field_name": "chromophore_representation",
+      "review_notes": "The review discusses pigmentation and erythema visibility but does not estimate melanin, hemoglobin, or other chromophore concentrations.",
+      "source_id": "PA-0016",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0016-chromophore_representation"
+    },
+    {
+      "canonical_key": "doi:10.35772/ghm.2026.01058",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-16-scientific-evidence.json",
+      "field_name": "equations",
+      "review_notes": "The review does not introduce a mathematical model, loss function, estimator, or original metric equation.",
+      "source_id": "PA-0016",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0016-equations"
+    },
+    {
+      "canonical_key": "doi:10.35772/ghm.2026.01058",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-16-scientific-evidence.json",
+      "field_name": "physical_model",
+      "review_notes": "The review discusses optical visibility and color variation but does not define a formal light\u2013tissue interaction, reflectance, absorption, or scattering model.",
+      "source_id": "PA-0016",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0016-physical_model"
+    },
+    {
+      "canonical_key": "doi:10.35772/ghm.2026.01058",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-16-scientific-evidence.json",
+      "field_name": "sample_or_subject_population",
+      "review_notes": "Paper 16 is a mini-review and proposed framework. It does not enroll participants, define a patient cohort, or report an original image-level sample.",
+      "source_id": "PA-0016",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0016-sample_or_subject_population"
+    },
+    {
+      "canonical_key": "doi:10.35772/ghm.2026.01058",
+      "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-16-scientific-evidence.json",
+      "field_name": "scattering_representation",
+      "review_notes": "The review does not define or estimate optical scattering.",
+      "source_id": "PA-0016",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "unsupported_field_id": "PA-UNSUP-0016-scattering_representation"
+    }
+  ],
+  "register_schema": "qudipi.stage1.unsupported-field-register",
+  "register_version": 1,
+  "status": "COMPLETE"
+}
