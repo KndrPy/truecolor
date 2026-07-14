@@ -1,70 +1,69 @@
 {
   "completed_matrix_count": 0,
-  "expected_matrix_count": 6,
+  "configured_claim_count": 6,
   "matrices": [
     {
       "claim_id": "TC-NOV-001",
       "completed_row_count": 0,
-      "matrix_id": "PA-MATRIX-001",
-      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_001_matrix.json",
-      "matrix_sha256": "910afb8e45bfec16a68a3ae7c00513ec306f61897ddba6a45dde85326d17fe2e",
+      "matrix_id": "MATRIX-795173d5338f9780",
+      "matrix_path": "artifacts/stage_01/claim_matrices/claim-795173d5338f9780.json",
+      "matrix_sha256": "bb744ac7187416633da1e93d32c6ae2bdd90ccc400e8a2e9e2d33ebf6dd63777",
       "matrix_state": "OPEN",
-      "source_row_count": 5,
-      "unresolved_row_count": 5
+      "pending_row_count": 5,
+      "row_count": 5
     },
     {
       "claim_id": "TC-NOV-002",
       "completed_row_count": 0,
-      "matrix_id": "PA-MATRIX-002",
-      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_002_matrix.json",
-      "matrix_sha256": "ffdfb1ee5e6d8dd66040cf4e4bc1f0917f0c537042b50dc149f8b03f6af5a9ac",
+      "matrix_id": "MATRIX-89424660220500c8",
+      "matrix_path": "artifacts/stage_01/claim_matrices/claim-89424660220500c8.json",
+      "matrix_sha256": "8aeb051b9f300fd28f994c0734340d44b03e3a7db5c50e02560455299cedf04f",
       "matrix_state": "OPEN",
-      "source_row_count": 9,
-      "unresolved_row_count": 9
+      "pending_row_count": 9,
+      "row_count": 9
     },
     {
       "claim_id": "TC-NOV-003",
       "completed_row_count": 0,
-      "matrix_id": "PA-MATRIX-003",
-      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_003_matrix.json",
-      "matrix_sha256": "1c7b0e982ffee3424c425dca78a31081fe29870aa0d125943ba13d7b12691656",
+      "matrix_id": "MATRIX-57b63183fc73b4e6",
+      "matrix_path": "artifacts/stage_01/claim_matrices/claim-57b63183fc73b4e6.json",
+      "matrix_sha256": "57b70d354a46e927b14e9d72daba7c173c16568bc1bae4aad0e01c4ee49bca4c",
       "matrix_state": "OPEN",
-      "source_row_count": 6,
-      "unresolved_row_count": 6
+      "pending_row_count": 6,
+      "row_count": 6
     },
     {
       "claim_id": "TC-NOV-004",
       "completed_row_count": 0,
-      "matrix_id": "PA-MATRIX-004",
-      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_004_matrix.json",
-      "matrix_sha256": "126e67a6daa09ba552ceb75965d6b422e427bd3d4967e6583ed68623ffab0c98",
+      "matrix_id": "MATRIX-a6bb259dfc71bfa5",
+      "matrix_path": "artifacts/stage_01/claim_matrices/claim-a6bb259dfc71bfa5.json",
+      "matrix_sha256": "b2caf952104fc1295941c133077aaa6b0ad4f05a3b8cc7b24cdecb94e3ca1767",
       "matrix_state": "OPEN",
-      "source_row_count": 5,
-      "unresolved_row_count": 5
+      "pending_row_count": 5,
+      "row_count": 5
     },
     {
       "claim_id": "TC-NOV-005",
       "completed_row_count": 0,
-      "matrix_id": "PA-MATRIX-005",
-      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_005_matrix.json",
-      "matrix_sha256": "56af0fe07600010d66ac98a5e2d4f89e55c54a57315a53da8868a0252df254c3",
+      "matrix_id": "MATRIX-5c6b875a940526bf",
+      "matrix_path": "artifacts/stage_01/claim_matrices/claim-5c6b875a940526bf.json",
+      "matrix_sha256": "bc34c8ffb3316fb8c4da72850f2e47390ef23870f08e8c13b23f333a7b2288c7",
       "matrix_state": "OPEN",
-      "source_row_count": 7,
-      "unresolved_row_count": 7
+      "pending_row_count": 7,
+      "row_count": 7
     },
     {
       "claim_id": "TC-NOV-006",
       "completed_row_count": 0,
-      "matrix_id": "PA-MATRIX-006",
-      "matrix_path": "artifacts/stage_01/claim_matrices/tc_nov_006_matrix.json",
-      "matrix_sha256": "6818b1a86e8e448139b8e950b381f15c2fae78db9b9742c0e049a66100f8aa58",
+      "matrix_id": "MATRIX-d130c98c5ffe88a0",
+      "matrix_path": "artifacts/stage_01/claim_matrices/claim-d130c98c5ffe88a0.json",
+      "matrix_sha256": "d69db59bf9220942416bb66e1834c33581f88b9554d11785a8c7874c6e24c22b",
       "matrix_state": "OPEN",
-      "source_row_count": 6,
-      "unresolved_row_count": 6
+      "pending_row_count": 6,
+      "row_count": 6
     }
   ],
   "matrix_count": 6,
   "register_schema": "qudipi.stage1.claim-matrix-register",
-  "register_version": 1,
-  "status": "OPEN"
+  "register_version": 1
 }

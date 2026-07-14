@@ -1,0 +1,63 @@
+{
+  "completed_task_count": 0,
+  "configured_review_policy_id": "truecolor-stage1-review-policy",
+  "pending_task_count": 6,
+  "register_schema": "qudipi.stage1.review-register",
+  "register_version": 1,
+  "tasks": [
+    {
+      "evidence_record_id": "EVID-f16a44a056ee1d90",
+      "source_id": "SRC-f16a44a056ee1d90",
+      "task_id": "REVIEW-40297e6cce3a0676",
+      "task_path": "artifacts/stage_01/review_tasks/review_40297e6cce3a0676.json",
+      "task_sha256": "4cc9ecd8773f7b221e88449859a0dbf7f2ed64e539488947181775f49df08aa4",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ffd709282beeb434",
+      "source_id": "SRC-ffd709282beeb434",
+      "task_id": "REVIEW-a56242f3468b3d73",
+      "task_path": "artifacts/stage_01/review_tasks/review_a56242f3468b3d73.json",
+      "task_sha256": "ba4c81bf5a22c05d6549bf50320bbe71260e3ee3d9cc15f2657f21c8f6825a2c",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-b8115b4c4888dcaf",
+      "source_id": "SRC-b8115b4c4888dcaf",
+      "task_id": "REVIEW-7dc4e492241078c9",
+      "task_path": "artifacts/stage_01/review_tasks/review_7dc4e492241078c9.json",
+      "task_sha256": "9271eb2ba9c3fd279efe3f2cf06c1c81c74e5e0604b15aa2ceaf78d8e8c5635f",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-3c7623b5a86f4e2d",
+      "source_id": "SRC-3c7623b5a86f4e2d",
+      "task_id": "REVIEW-b2af1c702abcae5c",
+      "task_path": "artifacts/stage_01/review_tasks/review_b2af1c702abcae5c.json",
+      "task_sha256": "b770e28bd90bc487ef82c12a89ee9db5794dc5a9fcedcc89e461e3a92581a861",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "task_id": "REVIEW-4d06792425a93b91",
+      "task_path": "artifacts/stage_01/review_tasks/review_4d06792425a93b91.json",
+      "task_sha256": "9a9460b99128c6ebc09da727c6630616329953932d32c79cd01cf9e0ae7e3a18",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "PRIMARY_SCIENTIFIC_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "task_id": "REVIEW-0c1ee50c192e9e31",
+      "task_path": "artifacts/stage_01/review_tasks/review_0c1ee50c192e9e31.json",
+      "task_sha256": "a0487b7cdb732d7fc01e4add0efbb28e763d07e56e10adff81bd84b23da6ff0e",
+      "task_state": "PENDING_REVIEW",
+      "task_type": "INDEPENDENT_SECOND_REVIEW"
+    }
+  ]
+}

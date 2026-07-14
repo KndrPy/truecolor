@@ -1,0 +1,16 @@
+{
+  "compiled_instance_path": "artifacts/stage_01/truecolor_stage1_instance.json",
+  "compiled_instance_sha256": "fb981f8cf7c2875ec613ae4b55f2017ece972ddbd9972d8eb69011abbc1cbd66",
+  "configured_counts": {
+    "claims": 6,
+    "evidence_records": 16,
+    "governed_sources": 48,
+    "kill_decisions": 6,
+    "matrices": 6,
+    "review_tasks": 6
+  },
+  "output_directory": "artifacts/stage_01",
+  "run_schema": "qudipi.stage1.generic-build-run",
+  "run_version": 1,
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+{
+  "canonical_identity": "doi:10.1364/oe.425401",
+  "claim_ids": [
+    "TC-NOV-002",
+    "TC-NOV-003"
+  ],
+  "evidence_record_id": "EVID-ffd709282beeb434",
+  "required_independence": true,
+  "review_output": {
+    "attestation": null,
+    "claim_observations": [],
+    "discrepancies": [],
+    "field_dispositions": [],
+    "final_review_state": null,
+    "review_completed_at": null,
+    "review_started_at": null,
+    "reviewer": null
+  },
+  "review_policy_id": "truecolor-stage1-review-policy",
+  "source_bindings": [],
+  "source_id": "SRC-ffd709282beeb434",
+  "task_id": "REVIEW-a56242f3468b3d73",
+  "task_state": "PENDING_REVIEW",
+  "task_type": "INDEPENDENT_SECOND_REVIEW"
+}

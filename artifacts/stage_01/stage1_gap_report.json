@@ -1,31 +1,36 @@
 {
-  "claim_count": 6,
   "closure_marker_emitted": false,
-  "evidence_record_count": 16,
-  "kill_condition_count": 6,
-  "matrix_count": 6,
+  "completed_kill_decision_count": 0,
+  "completed_matrix_count": 0,
+  "configured_claim_count": 6,
+  "configured_evidence_record_count": 16,
+  "configured_governed_source_count": 48,
+  "configured_matrix_count": 6,
+  "evidence_covered_source_count": 16,
+  "pending_review_task_count": 6,
   "prohibited_actions": [
-    "repeat corpus discovery",
-    "repeat source acquisition",
-    "repeat OCR",
-    "repeat identity resolution",
-    "repeat global ranking",
-    "infer overlap from title or metadata",
+    "hard-code corpus size",
+    "hard-code paper identity",
+    "hard-code claim count",
+    "hard-code review count",
+    "infer scientific facts from title or metadata",
     "infer novelty from corpus absence",
-    "emit Stage 1 closure before all adjudications are complete"
+    "autonomously adjudicate novelty",
+    "emit Stage 1 closure before configured obligations pass"
   ],
   "remaining_blockers": [
+    "governed_corpus_evidence_coverage",
     "primary_scientific_reviews",
     "independent_second_reviews",
     "claim_overlap_adjudication",
-    "novelty_kill_decisions"
+    "novelty_kill_decisions",
+    "full_corpus_synthesis"
   ],
-  "report_schema": "qudipi.stage1.semantic-gap-report",
+  "report_schema": "qudipi.stage1.gap-report",
   "report_version": 1,
-  "second_review_record_count": 5,
-  "semantic_contract_errors": [],
-  "source_record_count": 16,
+  "research_pack_id": "skin_photon",
   "stage_id": 1,
   "stage_key": "prior_art",
-  "status": "OPEN"
+  "stage_state": "OPEN",
+  "study_id": "truecolor"
 }

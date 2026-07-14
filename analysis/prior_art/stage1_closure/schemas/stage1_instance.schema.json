@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qudipi.local/schemas/stage1-instance.schema.json",
+  "title": "QuDiPi Stage 1 Compiled Research-Pack Instance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "schema_version",
+    "research_pack_id",
+    "study_id",
+    "protocol",
+    "corpus",
+    "claims",
+    "evidence_schema",
+    "evidence_records",
+    "review_policy",
+    "closure_contract"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "qudipi.stage1.compiled-instance"
+    },
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "research_pack_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "study_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "protocol": {
+      "type": "object"
+    },
+    "corpus": {
+      "type": "object",
+      "required": [
+        "members",
+        "membership_roles"
+      ]
+    },
+    "claims": {
+      "type": "array"
+    },
+    "evidence_schema": {
+      "type": "object",
+      "required": [
+        "field_ids",
+        "allowed_field_states"
+      ]
+    },
+    "evidence_records": {
+      "type": "array"
+    },
+    "review_policy": {
+      "type": "object"
+    },
+    "closure_contract": {
+      "type": "object"
+    }
+  }
+}

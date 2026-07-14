@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qudipi.local/schemas/stage1-evidence-record.schema.json",
+  "title": "QuDiPi Generic Scientific Evidence Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "evidence_record_id",
+    "source_id",
+    "canonical_identity",
+    "record_path",
+    "record_sha256",
+    "claim_ids",
+    "field_observations",
+    "review_state"
+  ],
+  "properties": {
+    "evidence_record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "record_sha256": {
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "field_observations": {
+      "type": "array"
+    },
+    "review_state": {
+      "type": "object"
+    }
+  }
+}

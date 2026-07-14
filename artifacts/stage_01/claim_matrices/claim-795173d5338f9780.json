@@ -1,0 +1,100 @@
+{
+  "claim": {
+    "canonical_stages": [
+      15,
+      16,
+      25,
+      27
+    ],
+    "claim_id": "TC-NOV-001",
+    "claim_type": "estimand_and_method",
+    "kill_condition": "A prior source already defines and empirically validates the same four-part fractional attribution under materially equivalent estimands.",
+    "name": "four_mechanism_fractional_attribution",
+    "proposed_claim": "Observed skin-imaging information loss can be quantitatively partitioned into measurement noise, spectral projection, biological collinearity and model mismatch using one integrated adjudication framework.",
+    "status": "UNADJUDICATED"
+  },
+  "completed_row_count": 0,
+  "matrix_id": "MATRIX-795173d5338f9780",
+  "matrix_schema": "qudipi.stage1.claim-evidence-matrix",
+  "matrix_state": "OPEN",
+  "matrix_version": 1,
+  "pending_row_count": 5,
+  "row_count": 5,
+  "rows": [
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.1002/jbio.202400118",
+      "claim_id": "TC-NOV-001",
+      "confidence": null,
+      "evidence_record_id": "EVID-0095d8da888f4fcf",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-264c073c569c0752",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-0095d8da888f4fcf",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.1117/1.jbo.28.3.035001",
+      "claim_id": "TC-NOV-001",
+      "confidence": null,
+      "evidence_record_id": "EVID-3c7623b5a86f4e2d",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-95b9d9bc0d79dd77",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-3c7623b5a86f4e2d",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.1007/s10043-010-0040-5",
+      "claim_id": "TC-NOV-001",
+      "confidence": null,
+      "evidence_record_id": "EVID-4595e87ae6847e91",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-ff84eaa6f942ada8",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-4595e87ae6847e91",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.1007/s10043-015-0177-3",
+      "claim_id": "TC-NOV-001",
+      "confidence": null,
+      "evidence_record_id": "EVID-e02fa10cefed1de6",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-a7b7fb22e293fdca",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-e02fa10cefed1de6",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.1046/j.0022-202x.2001.01577.x",
+      "claim_id": "TC-NOV-001",
+      "confidence": null,
+      "evidence_record_id": "EVID-f16a44a056ee1d90",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-3eacc79d0cd8d103",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-f16a44a056ee1d90",
+      "source_limitation": null
+    }
+  ]
+}

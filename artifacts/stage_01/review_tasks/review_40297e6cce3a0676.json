@@ -1,0 +1,39 @@
+{
+  "canonical_identity": "doi:10.1046/j.0022-202x.2001.01577.x",
+  "claim_ids": [
+    "TC-NOV-001",
+    "TC-NOV-002",
+    "TC-NOV-005"
+  ],
+  "evidence_record_id": "EVID-f16a44a056ee1d90",
+  "required_independence": true,
+  "review_output": {
+    "attestation": null,
+    "claim_observations": [],
+    "discrepancies": [],
+    "field_dispositions": [],
+    "final_review_state": null,
+    "review_completed_at": null,
+    "review_started_at": null,
+    "reviewer": null
+  },
+  "review_policy_id": "truecolor-stage1-review-policy",
+  "source_bindings": [
+    {
+      "binding_type": "SOURCE_OBJECT",
+      "exists": true,
+      "path": "analysis/prior_art/ingestion/scientific_sources/paper-002/source.html",
+      "sha256": "a7d6f3aabbdd00d245091f2c2cc4dad8744f22586b3bb52263954dd2e664ed3e"
+    },
+    {
+      "binding_type": "NORMALIZED_TEXT",
+      "exists": true,
+      "path": "analysis/prior_art/ingestion/scientific_sources/paper-002/source.txt",
+      "sha256": "173a510cc2a69317989e00232f4c241ea0367d99a116b1ddc8aae182b0bec283"
+    }
+  ],
+  "source_id": "SRC-f16a44a056ee1d90",
+  "task_id": "REVIEW-40297e6cce3a0676",
+  "task_state": "PENDING_REVIEW",
+  "task_type": "INDEPENDENT_SECOND_REVIEW"
+}

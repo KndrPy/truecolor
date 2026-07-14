@@ -1,0 +1,38 @@
+{
+  "register_schema": "qudipi.stage1.synthesis-register",
+  "register_version": 1,
+  "required_syntheses": [
+    {
+      "state": "PENDING",
+      "synthesis_id": "SOURCE_AND_METHOD"
+    },
+    {
+      "state": "PENDING",
+      "synthesis_id": "ASSUMPTION"
+    },
+    {
+      "state": "PENDING",
+      "synthesis_id": "FRAMING"
+    },
+    {
+      "state": "PENDING",
+      "synthesis_id": "REGIME"
+    },
+    {
+      "state": "PENDING",
+      "synthesis_id": "MATERIAL_LINEAGE"
+    },
+    {
+      "state": "PENDING",
+      "synthesis_id": "CONTRADICTION_AND_QUALIFICATION"
+    },
+    {
+      "state": "PENDING",
+      "synthesis_id": "NOVELTY_FRONTIER"
+    },
+    {
+      "state": "PENDING",
+      "synthesis_id": "GAP_REGISTER"
+    }
+  ]
+}

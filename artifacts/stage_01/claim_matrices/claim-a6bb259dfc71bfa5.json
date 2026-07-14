@@ -1,0 +1,101 @@
+{
+  "claim": {
+    "canonical_stages": [
+      21,
+      22,
+      23,
+      25,
+      27
+    ],
+    "claim_id": "TC-NOV-004",
+    "claim_type": "estimand_and_clinical_validation",
+    "kill_condition": "Prior work performs the same three-component quantitative decomposition with external pathology-confirmed validation.",
+    "name": "physics_contrast_data_quality_decomposition",
+    "proposed_claim": "Clinical performance disparities can be decomposed into measurement-physics, visible-contrast and dataset-quality components under patient-disjoint external validation.",
+    "status": "UNADJUDICATED"
+  },
+  "completed_row_count": 0,
+  "matrix_id": "MATRIX-a6bb259dfc71bfa5",
+  "matrix_schema": "qudipi.stage1.claim-evidence-matrix",
+  "matrix_state": "OPEN",
+  "matrix_version": 1,
+  "pending_row_count": 5,
+  "row_count": 5,
+  "rows": [
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.2196/31697",
+      "claim_id": "TC-NOV-004",
+      "confidence": null,
+      "evidence_record_id": "EVID-4805eabc4828f96e",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-9105cffcf01a70a9",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-4805eabc4828f96e",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.35772/ghm.2026.01058",
+      "claim_id": "TC-NOV-004",
+      "confidence": null,
+      "evidence_record_id": "EVID-8dae60f6a8ada16b",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-8de165d27deccb59",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-8dae60f6a8ada16b",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.1038/s41597-025-04382-5",
+      "claim_id": "TC-NOV-004",
+      "confidence": null,
+      "evidence_record_id": "EVID-b8115b4c4888dcaf",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-4b912970d4f07aed",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-b8115b4c4888dcaf",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.3390/app15158321",
+      "claim_id": "TC-NOV-004",
+      "confidence": null,
+      "evidence_record_id": "EVID-b9227342ba9f0446",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-e6cf33eed3891c8a",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-b9227342ba9f0446",
+      "source_limitation": null
+    },
+    {
+      "adjudicator": null,
+      "canonical_identity": "doi:10.1093/ced/llaf126",
+      "claim_id": "TC-NOV-004",
+      "confidence": null,
+      "evidence_record_id": "EVID-bcdba8ab1377f7e6",
+      "evidence_spans": [],
+      "matrix_row_id": "MATRIXROW-630d531734607c78",
+      "non_overlapping_elements": [],
+      "overlap_state": "UNRESOLVED",
+      "overlapping_elements": [],
+      "review_status": "PENDING",
+      "source_id": "SRC-bcdba8ab1377f7e6",
+      "source_limitation": null
+    }
+  ]
+}

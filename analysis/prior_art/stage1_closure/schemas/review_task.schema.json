@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qudipi.local/schemas/stage1-review-task.schema.json",
+  "title": "QuDiPi Generic Scientific Review Task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "task_type",
+    "task_state",
+    "evidence_record_id",
+    "source_id",
+    "review_policy_id",
+    "required_independence",
+    "source_bindings",
+    "review_output"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_type": {
+      "enum": [
+        "PRIMARY_SCIENTIFIC_REVIEW",
+        "INDEPENDENT_SECOND_REVIEW",
+        "DISCREPANCY_RESOLUTION"
+      ]
+    },
+    "task_state": {
+      "enum": [
+        "PENDING_REVIEW",
+        "IN_PROGRESS",
+        "COMPLETED",
+        "BLOCKED"
+      ]
+    },
+    "evidence_record_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "review_policy_id": {
+      "type": "string"
+    },
+    "required_independence": {
+      "type": "boolean"
+    },
+    "source_bindings": {
+      "type": "array"
+    },
+    "review_output": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "record_count": 24,
+  "records": [
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "algorithm_or_workflow",
+      "pending_field_id": "PENDING-7fbf563928467792",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "author_claimed_contribution",
+      "pending_field_id": "PENDING-01f470b33c888e71",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "calibration_design",
+      "pending_field_id": "PENDING-ea2caf73314d562f",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "camera_assumptions",
+      "pending_field_id": "PENDING-6ef440aa4950e784",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "capture_protocol",
+      "pending_field_id": "PENDING-5f0933110781d28f",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "chromophore_representation",
+      "pending_field_id": "PENDING-3c0fcf738a1409a4",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "computational_model",
+      "pending_field_id": "PENDING-f944fa3adbabcca9",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "datasets",
+      "pending_field_id": "PENDING-542cd183b94c1f4c",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "equations",
+      "pending_field_id": "PENDING-4f8b015f1e565f79",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "evaluation_metrics",
+      "pending_field_id": "PENDING-5465ee209b32406b",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "illumination_assumptions",
+      "pending_field_id": "PENDING-b615b461b43f7fa4",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "instrument_or_camera",
+      "pending_field_id": "PENDING-78256c48029f46a2",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "measured_inputs",
+      "pending_field_id": "PENDING-d7149132fd84ee16",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "observables",
+      "pending_field_id": "PENDING-e91546919e4414d5",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "physical_model",
+      "pending_field_id": "PENDING-c173d7b8d635b5ac",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "problem_addressed",
+      "pending_field_id": "PENDING-22e713ec6aaa004a",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "reported_limitations",
+      "pending_field_id": "PENDING-9592a2d004d6aafb",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "reported_results",
+      "pending_field_id": "PENDING-aadac09a0c6c8d41",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "sample_or_subject_population",
+      "pending_field_id": "PENDING-879010a14b5bda23",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "scattering_representation",
+      "pending_field_id": "PENDING-5ff98b4ec2eb6c9c",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "scientific_objective",
+      "pending_field_id": "PENDING-1d826b8a5803cf1c",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "skin_representation",
+      "pending_field_id": "PENDING-57d9ff6c5f77ada8",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "truecolor_relevance",
+      "pending_field_id": "PENDING-2f60e6912a97a849",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "evidence_record_id": "EVID-ac4bc5194f3e7c66",
+      "field_id": "validation_design",
+      "pending_field_id": "PENDING-031384307f8ec44f",
+      "source_id": "SRC-ac4bc5194f3e7c66",
+      "state": "PENDING_SOURCE_REVIEW"
+    }
+  ],
+  "register_schema": "qudipi.stage1.pending-field-register",
+  "register_version": 1
+}
