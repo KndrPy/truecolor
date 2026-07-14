@@ -18,162 +18,650 @@
   "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
   "fields": {
     "algorithm_or_workflow": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00075",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The core decomposition, reconstruction, and training workflow is described."
+        },
+        {
+          "line_end": "L00149",
+          "line_start": "L00121",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The image-formation, white-balance, and color-transformation stages are described."
+        },
+        {
+          "line_end": "L00173",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The patch combination and clinical comparison procedures are described."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Segment facial skin",
+        "Divide the image into overlapping patches",
+        "Predict melanin, hemoglobin, shading, and specular maps",
+        "Apply the known light source and camera spectral response in the forward model",
+        "Reconstruct the RGB skin image",
+        "Minimize MSE between reconstructed and input images",
+        "Combine overlapping patch outputs using opposing gradient weights",
+        "Compare melanin and hemoglobin maps with VISIA outputs using Pearson correlation"
+      ]
     },
     "author_claimed_contribution": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00005",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The abstract states the primary model and evaluation contributions."
+        },
+        {
+          "line_end": "L00260",
+          "line_start": "L00256",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The conclusion restates the model, extensibility, and clinical correlation."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "A deep model trained through a known light–tissue forward model rather than VISIA map supervision",
+        "Four-map decomposition into melanin, hemoglobin, shading, and specular components",
+        "Input-resolution-preserving patch workflow",
+        "Structural extensibility to different known camera and light-source configurations",
+        "Clinical comparison against VISIA"
+      ]
     },
     "calibration_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00102",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "Illuminant and camera sensitivity normalization is stated."
+        },
+        {
+          "line_end": "L00149",
+          "line_start": "L00134",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "White balance and Virtual ColorChecker transformation are defined."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "color_calibration": "Compute camera RGB and CIE XYZ values for 24 ColorChecker patches and derive a transformation matrix",
+        "illuminant_normalization": "Normalize the illuminant spectrum using camera-channel maximum sensitivity",
+        "implementation": "Python Colour-Science Virtual ColorChecker",
+        "white_balance": "Normalize sensor intensity by direct-light channel response"
+      }
     },
     "camera_assumptions": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00102",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The implementation requires known camera sensitivity and specifies the camera model."
+        },
+        {
+          "line_end": "L00149",
+          "line_start": "L00134",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The Virtual ColorChecker and camera-to-XYZ transformation are described."
+        },
+        {
+          "line_end": "L00255",
+          "line_start": "L00243",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The paper explicitly states that camera information is required prior knowledge."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Camera spectral sensitivity is known before inference.",
+        "The model uses Canon 5D Mark II RGB sensitivity over 400–720 nm for the reported implementation.",
+        "A color transformation can be calculated from camera RGB responses and ColorChecker XYZ values."
+      ]
     },
     "capture_protocol": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00080",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The acquisition system and reported optical priors are specified."
+        }
+      ],
+      "review_notes": "The paper does not provide a device-agnostic mobile capture protocol.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "reported_camera_prior": "Canon 5D Mark II",
+        "reported_capture_system": "VISIA-CR",
+        "reported_illuminant": "D65",
+        "spectral_range_nm": [
+          400,
+          720
+        ],
+        "uncontrolled_environment_requirement": "Measure the composite illumination SPD using a spectrometer"
+      }
     },
     "chromophore_representation": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00120",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The optical model defines melanin and hemoglobin absorption terms."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "hemoglobin": {
+          "location": "Dermis",
+          "parameterization": "Volume fraction, extinction coefficient, and concentration"
+        },
+        "melanin": {
+          "location": "Epidermis",
+          "parameterization": "Volume fraction, extinction coefficient, and concentration"
+        }
+      }
     },
     "computational_model": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00075",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source describes the network structure, patch workflow, four outputs, reconstruction, and MSE loss."
+        },
+        {
+          "line_end": "L00169",
+          "line_start": "L00165",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "Overlapping patch boundaries and gradient combination are described."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "input_processing": [
+          "Skin segmentation",
+          "Patch division",
+          "Overlapping patch combination"
+        ],
+        "model_type": "Deep convolutional image-decomposition and reconstruction network",
+        "outputs": [
+          "Melanin map",
+          "Hemoglobin map",
+          "Shading map",
+          "Specular map"
+        ],
+        "training_signal": "Difference between reconstructed RGB skin image and input RGB skin image"
+      }
     },
     "datasets": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00173",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The study reports 198 subjects partitioned into 168 training and 30 testing subjects."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "data_access": "Institutionally restricted research dataset",
+        "source": "Facial-image dataset acquired with VISIA-CR",
+        "subjects_total": 198,
+        "testing_subjects": 30,
+        "training_subjects": 168
+      }
     },
     "equations": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00133",
+          "line_start": "L00111",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The optical and camera image-formation equations are defined."
+        },
+        {
+          "line_end": "L00149",
+          "line_start": "L00134",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The color transformation and white balance are specified."
+        },
+        {
+          "line_end": "L00173",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "MSE, PSNR, and Pearson correlation are specified."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Skin reflectance expressed through epidermal transmission and dermal reflectance",
+        "Absorption coefficient parameterized by chromophore extinction and concentration",
+        "Reduced scattering coefficient containing Mie and Rayleigh terms",
+        "RGB channel response as wavelength integral of illuminant SPD, skin reflectance, and camera sensitivity",
+        "Diffuse and specular image-formation terms",
+        "White-balance normalization",
+        "Color transformation derived using a Virtual ColorChecker",
+        "Mean-squared reconstruction loss",
+        "Peak signal-to-noise ratio",
+        "Pearson product-moment correlation"
+      ]
     },
     "evaluation_metrics": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00173",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source defines MSE, PSNR, and Pearson correlation."
+        },
+        {
+          "line_end": "L00223",
+          "line_start": "L00175",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "Reconstruction and clinical-map comparison results are presented."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Mean-squared reconstruction error",
+        "Peak signal-to-noise ratio",
+        "Pearson product-moment correlation for melanin maps",
+        "Pearson product-moment correlation for hemoglobin maps",
+        "Qualitative map-detail comparison"
+      ]
     },
     "illumination_assumptions": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00078",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source distinguishes controlled and uncontrolled illumination and explains how SPD is obtained."
+        },
+        {
+          "line_end": "L00255",
+          "line_start": "L00243",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "Accurate SPD measurement is identified as necessary for improved accuracy."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Illuminant SPD is known or measured before analysis.",
+        "D65 SPD is used for the reported VISIA-CR implementation.",
+        "Controlled equipment may use manufacturer SPD specifications.",
+        "Open-environment SPD may be measured using a spectrometer."
+      ]
     },
     "instrument_or_camera": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00080",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "VISIA-CR, Canon 5D Mark II sensitivity, D65, and spectrometer measurement are specified."
+        },
+        {
+          "line_end": "L00173",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "VISIA VAESTRO is the clinical comparison system."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "acquisition_system": "VISIA-CR",
+        "camera_model_used_for_spectral_prior": "Canon 5D Mark II",
+        "clinical_comparator": "VISIA VAESTRO",
+        "comparator_modules": [
+          "RBX-Brown Processing 1.0",
+          "RBX-Red Processing 1.0"
+        ],
+        "spectrometer_role": "Suggested for measuring illuminant SPD under uncontrolled illumination"
+      }
     },
     "measured_inputs": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00075",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The network receives segmented facial image patches."
+        },
+        {
+          "line_end": "L00105",
+          "line_start": "L00078",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The physical model requires illuminant SPD and camera sensitivity."
+        },
+        {
+          "line_end": "L00142",
+          "line_start": "L00134",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "ColorChecker reflectance is used to derive the color transformation."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Facial RGB image",
+        "Skin segmentation mask",
+        "Illuminant spectral power distribution",
+        "Camera RGB spectral sensitivity functions",
+        "ColorChecker spectral reflectances"
+      ]
     },
     "observables": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00075",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The output maps and reconstruction metric are defined."
+        },
+        {
+          "line_end": "L00173",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "MSE, PSNR, and Pearson correlation are the evaluation quantities."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "RGB sensor intensities",
+        "Reconstructed RGB image",
+        "Melanin distribution map",
+        "Hemoglobin distribution map",
+        "Shading map",
+        "Specular map",
+        "PSNR between input and reconstructed images",
+        "Pearson correlation with VISIA maps"
+      ]
     },
     "physical_model": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00120",
+          "line_start": "L00086",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source defines epidermal melanin absorption, dermal hemoglobin absorption, and reduced scattering."
+        },
+        {
+          "line_end": "L00133",
+          "line_start": "L00121",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The image-formation equations combine illuminant, reflectance, camera sensitivity, diffuse light, and specular light."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "layers": {
+          "dermis": "Hemoglobin absorption layer with multiple scattering",
+          "epidermis": "Melanin absorption layer with scattering"
+        },
+        "reflection_components": [
+          "Diffuse reflection",
+          "Specular reflection"
+        ],
+        "relationship": "Skin reflectance is generated from epidermal transmission and dermal reflection, then combined with illuminant SPD and camera spectral sensitivity to produce RGB values."
+      }
     },
     "problem_addressed": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00005",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The abstract identifies the limitations of clinical equipment and states the proposed decomposition and reconstruction approach."
+        },
+        {
+          "line_end": "L00046",
+          "line_start": "L00023",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The introduction describes dedicated acquisition systems and motivates a more extensible model."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Existing clinical skin-analysis systems can estimate melanin and hemoglobin reliably but are acquisition-system-specific, costly, and computationally intensive. The paper addresses image-based recovery of skin-property maps while preserving the input image resolution."
     },
     "reported_limitations": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00255",
+          "line_start": "L00224",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The discussion explicitly identifies comparison, detail, morphology, prior-knowledge, dataset, and SPD limitations."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "The model requires prior knowledge of the light-source SPD and camera information.",
+        "VISIA and the proposed method produce maps in different output formats, requiring conversion before comparison.",
+        "Postprocessing and normalization choices can influence correlation.",
+        "The proposed maps capture less fine detail than VISIA.",
+        "The specular map does not yet preserve all morphological detail needed for wrinkle or pore diagnosis.",
+        "Broader datasets and more accurate spectrometer-based SPD measurements are needed to improve accuracy."
+      ]
     },
     "reported_results": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00203",
+          "line_start": "L00175",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source reports reconstruction PSNR and map behavior over training."
+        },
+        {
+          "line_end": "L00223",
+          "line_start": "L00204",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source reports positive correlations with VISIA and identifies VISIA's superior fine-detail capture."
+        }
+      ],
+      "review_notes": "Exact per-map correlation values are not asserted here because the selected packet output does not expose them unambiguously as plain text.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "clinical_comparison": "Predicted melanin and hemoglobin maps show strong positive relationships with VISIA maps.",
+        "map_detail": "VISIA captures finer detailed features than the proposed model.",
+        "reconstruction": "Average PSNR exceeds 30, which the authors interpret as high similarity between input and reconstructed images.",
+        "training_interpretation": "Because VISIA maps were not used during training, the authors interpret the correlation as evidence that the network learned aspects of the intended light–tissue interaction."
+      }
     },
     "sample_or_subject_population": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00164",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The subject counts and train-test division are stated."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "population_demographics": "Not sufficiently established in the selected source ranges",
+        "subjects": 198,
+        "testing_subjects": 30,
+        "training_subjects": 168,
+        "unit_of_analysis": "Subject facial images and spatial skin maps"
+      }
     },
     "scattering_representation": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00120",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The skin-layer model identifies scattering structures and defines reduced-scattering parameters."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "coefficient": "Reduced scattering coefficient",
+        "parameters": [
+          "Scattering amplitude",
+          "Mie scattering power",
+          "Rayleigh scattering fraction"
+        ],
+        "tissue_sources": [
+          "Keratin fibers",
+          "Collagen fibers",
+          "Elastin fibers"
+        ]
+      }
     },
     "scientific_objective": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00005",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The objective and four-map decomposition are stated in the abstract."
+        },
+        {
+          "line_end": "L00046",
+          "line_start": "L00042",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The stated contribution is a model trained using the forward light–tissue interaction."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Train a deep network to solve a skin light–tissue forward problem by decomposing facial RGB images into melanin, hemoglobin, shading, and specular maps and reconstructing the input image from those components."
     },
     "skin_representation": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00079",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source explicitly defines four spatial output maps."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "color_components": [
+          "Melanin",
+          "Hemoglobin"
+        ],
+        "decomposition": [
+          "Melanin map",
+          "Hemoglobin map",
+          "Shading map",
+          "Specular map"
+        ],
+        "morphological_or_appearance_components": [
+          "Shading",
+          "Specular reflection"
+        ],
+        "spatial_form": "Pixel-aligned two-dimensional maps at the input image resolution"
+      }
     },
     "truecolor_relevance": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00149",
+          "line_start": "L00078",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The physical, chromophore, scattering, camera, illuminant, and image-formation mechanisms are explicit."
+        },
+        {
+          "line_end": "L00255",
+          "line_start": "L00224",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The paper explicitly retains camera and illuminant information as required priors."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "boundary": "The method operates with known illuminant SPD and known camera spectral sensitivity. It does not establish blind recovery under unknown lighting and unknown device response, nor a device-independent mobile observability certificate.",
+        "directly_relevant_mechanisms": [
+          "Physics-constrained decomposition of RGB skin images",
+          "Melanin and hemoglobin spatial maps",
+          "Explicit skin scattering representation",
+          "Illuminant-SPD and camera-sensitivity conditioned image formation",
+          "Diffuse/specular separation",
+          "ColorChecker-based color transformation"
+        ],
+        "relevant_claims": [
+          "TC-NOV-001",
+          "TC-NOV-002",
+          "TC-NOV-003",
+          "TC-NOV-005"
+        ]
+      }
     },
     "validation_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00173",
+          "line_start": "L00151",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The held-out subjects, clinical system, reference-map preparation, and metrics are defined."
+        },
+        {
+          "line_end": "L00223",
+          "line_start": "L00204",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-04-full-text-review.txt",
+          "support": "The source states that VISIA results were not used in training and interprets the positive comparison."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "clinical_reference": "VISIA VAESTRO",
+        "comparisons": [
+          "Input image versus reconstructed image",
+          "Predicted melanin map versus VISIA melanin map",
+          "Predicted hemoglobin map versus VISIA hemoglobin map"
+        ],
+        "held_out_test_subjects": 30,
+        "reference_maps": [
+          "RBX-Brown melanin map",
+          "RBX-Red hemoglobin map"
+        ],
+        "training_independence": "VISIA melanin and hemoglobin results were not used as training ground truth"
+      }
     }
   },
   "minimum_claim_rank": 2,
+  "primary_extraction_evidence_selection": "analysis/prior_art/scientific_extraction/review_packets/paper-04-evidence-selection.txt",
   "quality_control": {
     "discrepancies": [],
-    "final_review_state": "NOT_REVIEWED",
-    "primary_review_completed": false,
-    "primary_reviewer": null,
+    "final_review_state": "PRIMARY_REVIEW_COMPLETE_SECOND_REVIEW_PENDING",
+    "primary_review_completed": true,
+    "primary_reviewer": "OPENAI_GPT_5_6_ASSISTED_REVIEW",
     "second_review_completed": false,
     "second_review_required": true,
     "second_review_selection_rule": "TOP_FIVE_BY_MINIMUM_CLAIM_RANK_THEN_ACQUISITION_ORDER",
     "second_reviewer": null
   },
-  "record_state": "SOURCE_PACKET_READY",
+  "record_state": "PRIMARY_SCIENTIFIC_EXTRACTION_COMPLETE",
   "review_eligibility": "COMPLETE",
   "schema_version": "1.0.0",
   "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
@@ -232,6 +720,6 @@
     }
   ],
   "unique_review_order": 1,
-  "work_package": "S1-EXTRACT-01A",
+  "work_package": "S1-EXTRACT-03C",
   "year": "2023.0"
 }
