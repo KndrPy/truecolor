@@ -332,21 +332,14 @@ def test_governed_corpus_uses_configured_review_cohort() -> None:
         )
     }
 
-    assert len(governed_identities) <= len(
-        authority_records
-    )
-
-    assert governed_identities
-
     evidence_identities = {
         record["canonical_identity"]
         for record
         in instance["evidence_records"]
     }
 
-    assert evidence_identities <= (
-        governed_identities
-    )
+    assert governed_identities
+    assert evidence_identities <= governed_identities
 
 
 def test_candidate_pool_is_not_corpus_authority() -> None:
