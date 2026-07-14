@@ -1,0 +1,358 @@
+# PAPER 03 — EVIDENCE SELECTION
+
+Canonical key: doi:10.1038/s41597-025-04382-5
+Claims: TC-NOV-004, TC-NOV-006
+
+Selection rule: explicit stable line ranges only.
+No keyword-derived or metadata-derived inference is permitted.
+
+## ABSTRACT_AND_STATED_CONTRIBUTION
+Source range: L00010–L00019
+
+L00010	The remarkable progress of deep learning in dermatological tasks has brought us closer to achieving diagnostic accuracies comparable to those of human experts.
+L00011	However, while large
+L00012	datasets play a crucial role in the development of reliable deep neural network models, the quality of data therein and their correct usage are of paramount importance.
+L00013	Several factors can impact data quality, such as the presence of duplicates, data leakage across train-test partitions, mislabeled images, and the absence of a well-defined test partition.
+L00014	In this paper, we conduct meticulous analyses of three popular dermatological image
+L00015	datasets: DermaMNIST, its source HAM10000, and Fitzpatrick17k, uncovering these data quality issues, measure the effects of these problems on the benchmark
+L00016	results, and propose corrections to the
+L00017	datasets.
+L00018	Besides ensuring the reproducibility of our analysis, by making our analysis pipeline and the accompanying code publicly available, we aim to encourage similar explorations and to facilitate the identification and addressing of potential data quality issues in other large
+L00019	datasets.
+
+## STUDY_SCOPE_AND_DATASETS
+Source range: L00075–L00085
+
+L00075	In this paper, we look at three popular and large skin image analysis
+L00076	datasets: the DermaMNIST
+L00077	dataset 38 , 39 and its source HAM10000
+L00078	dataset 15 (10,015 images) and the Fitzpatrick17k
+L00079	dataset 20 (16,577 images).
+L00080	We perform systematic analyses of both
+L00081	datasets and report instances of data duplication, data leakage across training and evaluation partitions, and data mislabeling in both
+L00082	datasets, fixing them where possible.
+L00083	Our corrected
+L00084	datasets and detailed analysis
+L00085	results are available online on Zenodo 40 .
+
+## DERMAMNIST_SOURCE_AND_RESOLUTION
+Source range: L00086–L00105
+
+L00086	Results DermaMNIST Released as a biomedical imaging
+L00087	dataset equivalent to the MNIST
+L00088	dataset of handwritten digits, MedMNIST consists of images from standardized biomedical imaging
+L00089	datasets resized to MNIST-like 28 × 28 resolution.
+L00090	Despite being a fairly new
+L00091	dataset, it has been quite popular (1009 citations as of November, 2024: 633 citations of [a more recent] 2023 paper 39 , and 376 of [an older] 2021 version of the paper 38 ).
+L00092	The dermatological subset of MedMNIST, DermaMNIST, contains resized images from the popular “Human Against Machine with 10000 training images” (HAM10000)
+L00093	dataset 15 .
+L00094	HAM10000 contains 10,015 dermoscopic images of pigmented skin lesions collected from patients at two study sites in Australia and Austria, with their diagnoses confirmed by either histopathology, confocal microscopy, clinical follow-up visits, or expert consensus.
+L00095	The 7 disease labels in the
+L00096	dataset cover 95% of the lesions encountered in clinical practice 15 .
+L00097	Because of these meritorious properties, HAM10000 is a good candidate
+L00098	dataset for dermatological analysis, as aimed for with DermaMNIST.
+L00099	While the “ lightweight ” nature of DermaMNIST due to its “ small size ” is appealing for its adoption in machine learning for biomedical imaging 39 , the low spatial resolution (28 × 28) does not capture sufficient morphological structures of skin lesions compared
+L00100	to the source
+L00101	dataset HAM10000.
+L00102	Despite this, DermaMNIST has been used for a wide variety of applications in peer-reviewed publications: semi- and self-supervised learning 41 – 43 , federated learning 44 – 46 , privacy-preserving learning 47 , 48 , neural architecture search 49 , 50 , adversarially robust learning
+L00103	51 , 52 , data augmentation 53 , 54 , generative modeling 55 , model interpretability 56 , AutoML 57 , active learning 58 , quantum vision transformers 59 , and biomedical vision-language foundation models 60 – 62 , as well as derivative benchmark
+L00104	datasets 63 , 64 .
+L00105	However, as we investigate below, the resulting DermaMNIST and its benchmarks suffer from serious flaws.
+
+## DERMAMNIST_PARTITION_LEAKAGE
+Source range: L00106–L00128
+
+L00106	Data Leakage A caveat of HAM10000, despite its rather large size, is that it contains multiple images of the same lesion captured either from different viewing angles or at different magnification levels (Fig.
+L00107	1(a) ), i.e., the number of lesions with unique lesion IDs (HAM_xxx) is smaller than the number of images with unique image IDs (ISIC_xxx).
+L00108	We visualize the frequency counts of lesions and how many images of the same lesion are present in HAM10000 in Fig.
+L00109	1(b) and observe that the 10,015 images are in fact derived from only 7,470 unique lesions, and 1,956 of these lesion IDs (~26.18%) contains 2 or more images: 1,423 lesions have 2 images, 490 lesions have 3 images, 34 lesions have 4 images, 5 lesions
+L00110	have 5 images, and 6 lesions have 4 images each.
+L00111	Unfortunately, this was not accounted for when preparing train-valid-test splits for DermaMNIST.
+L00112	The DermaMNIST
+L00113	dataset is released as a pre-processed NumPy array, so while the
+L00114	dataset does not contain filenames of the images, we confirmed this by contacting the authors to obtain the exact training-validation-testing split filenames.
+L00115	Therefore, there is considerable data leakage of images of the same lesion across partitions.
+L00116	Fig.
+L00117	1(a) shows 2 examples where images of the same lesion are present in the training, validation, and testing partitions.
+L00118	This issue is quite pervasive across DermaMNIST, and our analysis found the following overlaps across partitions: train-test: 886 images (641 lesions), train-valid: 440 images (332 lesions); valid-test: 128 images (113 lesions); train-valid-test: 51 images (40 lesions) (Fig.
+L00119	1(c) ).
+L00120	Such data leakage naturally raises concerns on the reliability of the DermaMNIST benchmarks and related studies.
+L00121	Fig.
+L00122	1 DermaMNIST analyses: (a,b) show instances of and reasons for the data leakage, and (c) visualizes how the three
+L00123	datasets: DermaMNIST, DermaMNIST-C, and DermaMNIST-E differ in their partition composition, yet have similarly proportionate diagnosis distributions.
+L00124	Images from DermaMNIST are licensed under CC BY-NC 4.0 38 , 39 .
+L00125	Best viewed online.
+L00126	We correct this data leakage by simply moving all images of a lesion ID present in the train partition from valid and test partitions back to the train partition.
+L00127	We choose to do this (i.e., moving the images of a lesion to the training set) instead of removing the images completely, to ensure that images of the same lesion are in one partition while also not discarding any images.
+L00128	Although this has the undesirable side effect of increasing the training partition size at the cost of reduced validation and testing partition sizes, it fixes the data leakage issue by ensuring there is no overlap across partitions.
+
+## HAM10000_DUPLICATE_DETECTION_METHOD
+Source range: L00136–L00160
+
+L00136	Next, we examine the accuracy of HAM10000’s metadata.
+L00137	While the images in HAM10000 and their labels have been collected from clinical sites and the
+L00138	dataset itself has been widely adopted for online challenges 65 , 66 and human-in-the-loop evaluations 67 , 68 , we found that some images with different lesion IDs are in fact duplicates and should have been assigned the same lesion ID.
+L00139	Therefore, for a systematic analysis, we use fastdup 69 , an open-source Python library for analyzing visual
+L00140	datasets at scale, and calculate inter-image embedding similarity scores \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}({x}_{i},{x}_{j})$$\end{document} S ( x i , x j ) for all \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}10,015\\ 2\end{array}\right)$$\end{document} 10 , 015 2 pairs
+L00141	of images ( x i , x j ).
+L00142	Figure 3 visualizes, as a confusion matrix, the following four scenarios that are possible when comparing duplication checks based on the metadata with duplicates detected using fastdup followed by visual human confirmation: “Confirmed duplicates”: image pairs where both images share the same lesion IDs in
+L00143	the metadata and are indeed images of the same lesion. “True non-duplicates”: image pairs where both images differ in their lesion IDs and are images of different lesions. “Missed duplicates”: image pairs where both images differ in their lesion IDs but actually belong to the
+L00144	same lesion. “False duplicates”: image pairs where both images share the same lesion IDs in but actually belong to the same lesion.
+L00145	Fig.
+L00146	3 Visualizing the four scenarios that a pair of images from HAM10000 can be assigned to in duplicate detection, based on the metadata and the fastdup-based duplicate detection followed by manual review. “Confirmed duplicates”, as the name suggests, are pairs that are images of the
+L00147	same lesion, indicated by the same lesion IDs in the metadata.
+L00148	Similarly, “True non-duplicates” are pairs of images that belong to different lesions. “Missed duplicates” refer to image pairs that have differing lesion IDs according to the metadata, but their high visual similarity (measured by cosine similarity of their image embeddings) followed by manual review confirms
+L00149	that these are indeed images of the same lesion, and were therefore ‘missed’ by the metadata.
+L00150	Finally, “False duplicates” refer to pairs where images share the same lesion IDs but do not belong to the same lesion.
+L00151	In our analysis, we did not find any instances of “False duplicates” in HAM10000.
+L00152	For all these sample images, the image IDs and the lesion IDs are along the horizontal and the vertical axis, respectively.
+L00153	Images from HAM10000 are licensed under CC BY-NC 4.0 15 .
+L00154	The image pairs that lie along this confusion matrix’s diagonal, i.e., “confirmed duplicates” and “true non-duplicates”, are those where the metadata agrees with our analysis, and the possible errors in metadata arise out of the other two scenarios.
+L00155	For detecting errors of the first kind, i.e., “missed duplicates”, we analyze the top 1,000 most similar image pairs, measured by similarity of the image embeddings.
+L00156	We look at these 1,000 pairs in intervals of 100 pairs, ordered by decreasing inter-image similarity.
+L00157	For the 100 image pairs in each interval, we look up the HAM10000 metadata for both images in a pair to exclude “confirmed duplicates”, since these duplicates are already accounted for in the metadata.
+L00158	For the remaining pairs, we manually review them to detect which, if any, of these are “missed duplicates” and “true non-duplicates”.
+L00159	We visualize these counts in Fig.
+L00160	4 .
+
+## DERMAMNIST_CORRECTION_AND_BENCHMARK
+Source range: L00205–L00241
+
+L00205	We observe that all the image pairs indeed belong to the same lesion, and the low similarity score values can be easily explained by different zoom levels and/or geometric transformations (e.g., rotation and flipping).
+L00206	Images from HAM10000 are licensed under CC BY-NC 4.0 15 .
+L00207	Of these 18 newly discovered duplicate image pairs in HAM10000, 7 pairs leak across partitions: train-test: 5 images (5 lesions) and train-valid: 2 images (2 lesions).
+L00208	We correct this data leakage by moving both images in each of these 7 pairs to the train partition.
+L00209	We name this “corrected”
+L00210	dataset version as DermaMNIST-C .
+L00211	Furthermore, the relative diagnosis-wise distribution of DermaMNIST-C across partitions is quite similar to that of the original DermaMNIST (Fig.
+L00212	1(c) ).
+L00213	We benchmark DermaMNIST-C using DermaMNIST’s publicly available disease classification codebase, repeating all experiments 3 times for robustness, and the
+L00214	results are presented in Table 1 .
+L00215	Table 1 Benchmark
+L00216	results (3 repeated runs; mean ± std. dev.) of DermaMNIST and the 2 proposed versions: DermaMNIST-C and DermaMNIST-E.
+L00217	Dataset Method ResNet-18 ResNet-50 AUC ACC AUC ACC DermaMNIST Original-28 0.917 0.735 0.913 0.735 Original-224 0.920 0.754 0.912 0.731 DermaMNIST-C 28 × 28 0.946 ± 0.003 0.825 ± 0.006 0.943 ± 0.012 0.831 ± 0.019 224 × 224 0.953 ± 0.001 0.847 ± 0.010 0.948
+L00218	± 0.001 0.847 ± 0.005 DermaMNIST-E 28 × 28 0.892 ± 0.006 0.676 ± 0.009 0.888 ± 0.003 0.674 ± 0.009 224 × 224 0.896 ± 0.010 0.685 ± 0.000 0.901 ± 0.008 0.682 ± 0.003 The metrics being reported are the overall area under
+L00219	the ROC curve (AUC) and the overall accuracy (ACC).
+L00220	Results on 224 × 224 resolution DermaMNIST is created by resizing images from HAM10000’s original 600 × 450 spatial resolution to MNIST-like 28 × 28 resolution using (bi)cubic spline interpolation.
+L00221	However, for their classification benchmark experiments on the 224 × 224 resolution, instead of resizing the original images to 224 × 224, the authors 38 , 39 upsample the low-resolution 28 × 28 to obtain the 224 × 224 using nearest neighbor interpolation (“ 224
+L00222	(resized from 28) ”; verifiable through their source code 70 ).
+L00223	This, unsurprisingly, leads to quite blurry images, given the unrecoverable information lost when downsampling from the original 600 × 450 to 28 × 28 and leads to significant loss of detail (e.g., dermoscopic structures and artifacts) in the images used to train models on 224
+L00224	× 224 images (Fig.
+L00225	2 ).
+L00226	Our approach of directly downsampling from the original high-resolution to 224 × 224 to create DermaMNIST-C and DermaMNIST-E, used when reporting
+L00227	results in Table 1 , yields conspicuously more detailed outputs (Fig.
+L00228	2 ).
+L00229	Extending DermaMNIST Finally, although DermaMNIST-C is a good light-weight
+L00230	dataset of choice for evaluating machine learning models on dermatological tasks and for educational purposes, as MedMNIST intended to be, the quantitative
+L00231	results of DermaMNIST-C (and DermaMNIST for that matter) perhaps paint a deceptively optimistic picture of the state of automated dermatological diagnosis models.
+L00232	We propose a more challenging extension of DermaMNIST named DermaMNIST-E .
+L00233	The original DermaMNIST and its corrected version DermaMNIST-C are based on HAM10000, which was used as the training partition for the ISIC Challenge 2018.
+L00234	However, the ISIC Challenge 2018 had, apart from the 10,015 training images from HAM10000, separate validation and testing partitions containing 193 and 1,512 images, respectively.
+L00235	Therefore, we create DermaMNIST-E with DermaMNIST as training set and ISIC 2018 validation and test partitions as validation and testing sets, respectively.
+L00236	Although the official testing partition of ISIC 2018 contained 1,512 images, we remove one image known as the “easter egg” (ISIC_0035068) 68 , resulting in a total of 1,511 images.
+L00237	While the resulting diagnosis distribution across partitions for DermaMNIST-E is similar to that of DermaMNIST-C and DermaMNIST (Fig.
+L00238	1(c) ), our benchmark
+L00239	results on DermaMNIST-E (Table 1 ) show that it is indeed a more challenging
+L00240	dataset and is guaranteed to be void of any data leakage.
+L00241	It should be noted that the DermaMNIST-E
+
+## FITZPATRICK17K_DUPLICATE_ANALYSIS
+Source range: L00257–L00305
+
+L00257	dataset: SkinCon 97 .
+L00258	Pakzad et al .
+L00259	80 previously highlighted the existence of erroneous and wrongly labeled images in Fitzpatrick17k, and for these reasons, we investigate the extent of labeling inaccuracy in this
+L00260	dataset.
+L00261	Data duplication and leakage To investigate the presence of duplicates in Fitzpatrick17k, we use fastdup to calculate inter-image embedding similarity scores \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}({x}_{i},{x}_{j})$$\end{document} S ( x i , x j ) for all \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+L00262	\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}16,577\\ 2\end{array}\right)$$\end{document} 16 , 577 2 pairs of images ( x i , x j ).
+L00263	These are shown as a 16,577 × 16,577 similarity matrix in Fig.
+L00264	8 , and we can clearly see that there are several pairs with high similarities, denoted by darker shades, spread throughout the
+L00265	dataset.
+L00266	For subsequent analyses, we restrict ourselves to pairs with a high similarity by setting thresholds to \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}\ge \tau ;\,\tau \in \{0.90,0.95\}$$\end{document} S ≥ τ ; τ ∈ { 0.90 , 0.95 } .
+L00267	The distributions of image embedding pairs with these similarity thresholds are shown in Fig.
+L00268	9(a,b) , respectively.
+L00269	Note that there are 6,622 and 1,425 image embedding pairs with similarity scores greater than 0.90 and 0.95, respectively.
+L00270	Manual verification by a human reviewer of these 1,425 image pairs, whose embeddings had similarities greater than 0.95, revealed that 98.39% of these images (1,402 images) were indeed duplicates, with 16 pairs (1.12%) being false positive and 7 pairs (0.49%) being ambiguous.
+L00271	A second reviewer agreed with 1,419 labels of the first reviewer (99.58% match), exhibiting a near-perfect agreement 98 , 99 (Cohen’s kappa κ = 0.87).
+L00272	Due to the publisher’s human data policy, we are unable to visualize these samples in the published manuscript, and instead direct the readers to our arXiv pre-print 100 for additional visualizations and accompanying descriptions, where we visualize some of these pairs, categorizing them according to
+L00273	traits exhibited by the pairs.
+L00274	Since the filenames of the images in Fitzpatrick17k are of the format {MD5hash}.jpg, for each image, we also display their diagnosis abbreviation, their FST label (set to ‘N/A’ when the FST label is missing), and a truncated MD5 hash to uniquely identify the images.
+L00275	Notice that duplicate image pairs exist because of: different crop/zoom levels, different illumination setups, different image resolutions, and simple geometrical transformations (e.g., mirroring).
+L00276	Fig.
+L00277	8 Inter-image similarity matrix (16, 577 × 16, 577) computed and visualized for all pairs of images in the Fitzpatrick17k
+L00278	dataset, where image pairs with higher similarity are represented by darker colors.
+L00279	Note how there are several regions of dark-colored pairs, indicating the presence of potential duplicates in the
+L00280	dataset.
+L00281	Fig.
+L00282	9 Visualizing the distributions of duplicates in Fitzpatrick17k, filtered by different combinations of criteria.
+L00283	Total counts are inset in each plot. \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\mathscr{S}}}_{0.90}$$\end{document} S 0.90 and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\mathscr{S}}}_{0.95}$$\end{document} S 0.95 denotes pairs with similarity scores of at least 0.90 and 0.95 respectively. \documentclass[12pt]{minimal}
+L00284	\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\widehat{{\mathscr{D}}}$$\end{document} D ^ denotes pairs that differ in their diagnoses labels. \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{\ge 1}$$\end{document} F ^ ≥ 1 and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{
+L00285	> 1}$$\end{document} F ^ > 1 denotes pairs that ‘differ in their FST labels by 1’ versus ‘by more than 1’, respectively.
+L00286	Best viewed online.
+L00287	Worryingly, duplicate image pairs containing multiple disjoint objects of interest or multiple people also exist, making it difficult to determine to which of these the diagnosis and the FST labels apply.
+L00288	Finally, several duplicate pairs with more than one of these issues were also detected.
+L00289	For a more detailed duplicate detection, we employ another Python library, cleanvision 101 , to further assess the
+L00290	dataset.
+L00291	Aside from the duplicate image pairs found by fastdup based on our similarity threshold of \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}\ge 0.90$$\end{document} S ≥ 0.90 , the cleanvision analysis found 19 more duplicate pairs that have slightly lower inter-image similarity (
+L00292	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$0.85\le {\mathscr{S}} < 0.90$$\end{document} 0.85 ≤ S < 0.90 ), primarily because of the large difference in spatial resolutions between duplicate pairs.
+L00293	Unfortunately, data duplication in Fitzpatrick17k is not limited to image pairs only.
+L00294	We use fastdup to cluster images whose intra-cluster image similarity is greater than 0.90, i.e., clusters of images where the mean similarity for all the image pairs is greater than 0.90.
+L00295	We consider clusters of at least 3 images, since those with 2 images (i.e., duplicate images pairs) are already covered in our analysis of duplicate pairs.
+L00296	Mathematically, we find all image clusters { x 1 , x 2 , …, x N }; N ≥ 3 such that \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\frac{1}{\left(\begin{array}{c}N\\ 2\end{array}\right)}{\sum }_{i=1}^{N}{\sum }_{j=i+1}^{N}{\mathscr{S}}({x}_{i},{x}_{j}) > 0.90$$\end{document} 1 N 2 ∑ i = 1 N
+L00297	∑ j = i + 1 N S ( x i , x j ) > 0.90 .
+L00298	Manual verification of the clustering outputs yielded 139 image clusters, with 3.71 ± 1.11 images per cluster on average.
+L00299	Visual inspection of these image clusters (we direct the readers to our arXiv pre-print 100 for these visualizations since they could not be put in the published manuscript), shows that these image clusters exhibit similar traits as the duplicate pairs, i.e., the images in each
+L00300	cluster are one or more of: exact matches, zoomed-in or cropped-out duplicates, duplicates with different illumination setups (captured with and without camera flash), or acquired at slightly different viewing angles.
+L00301	Finally, we merge the
+L00302	results of duplicate pairs with duplicate clusters, forming larger clusters as they are discovered.
+L00303	This
+L00304	results in some large duplicate image clusters with as many as 10 images in a cluster, and a total of 2,297 clusters with 2.18 ± 0.66 images per cluster on average.
+L00305	Mislabeled diagnosis and FST labels In addition to the presence of duplicates, Fitzpatrick17k contains images with mislabeled diagnoses and FSTs.
+
+## FITZPATRICK17K_LABEL_ANALYSIS
+Source range: L00382–L00485
+
+L00382	dataset and its source HAM10000
+L00383	dataset (10,015 dermoscopic images of skin lesions) and Fitzpatrick17k (16,577 clinical images of skin diseases).
+L00384	For DermaMNIST, we investigate the extent of data leakage across its training, validation, and testing partitions, and propose corrected (DermaMNIST-C) and extended (DermaMNIST-E) versions.
+L00385	We conducted benchmark evaluations using multiple
+L00386	methods and compare the
+L00387	results to those of DermaMNIST across all
+L00388	datasets.
+L00389	Table 4 For Fitzpatrick17k, we perform a systematic analysis encompassing data duplication, mislabeling of diagnosis and Fitzpatrick skin tone labels, identification of erroneous images, as well as highlighting the use of non-standard data partitions.
+L00390	Finally, we propose a cleaned version of the
+L00391	dataset with standardized partitions called Fitzpatrick17k-C, and release the corresponding updated benchmarks.
+L00392	Table 4 Summary statistics for the two
+L00393	datasets analyzed in this paper and their corresponding corrected versions proposed.
+L00394	Dataset Brief Description #Images #Diagnoses #Training Images #Validation Images #Testing Images DermaMNIST The original DermaMNIST
+L00395	dataset.
+L00396	10,015 7 7,007 1,003 2,005 DermaMNIST-C The “corrected” version of DermaMNIST, without any data leakage.
+L00397	10,015 7 8,215 573 1,227 DermaMNIST-E The “extended” version of DermaMNIST, without any data leakage and with more images.
+L00398	11,719 7 10,015 193 1,511 Fitzpatrick17k The original Fitzpatrick17k
+L00399	dataset.
+L00400	16,577 114 12,751 3,826 0 Fitzpatrick17k-C The “cleaned” version of Fitzpatrick17k, with standardized train-valid-test splits after removing duplicates and erroneous images.
+L00401	11,394 114 7,975 1,139 2,280 For both Fitzpatrick17k and Fitzpatrick17k-C, the partitions correspond to the experiment titled “Random”, both in Table 2 and in Groh et al .
+L00402	20 .
+L00403	DermaMNIST Data leakage and benchmarks The extent of data leakage in DermaMNIST emanating from improper data partitioning is quite severe, with 1,006 of the 7,470 unique lesions (~13.47%) in the
+L00404	dataset being present in more than 1 partition (Fig.
+L00405	1(c) ).
+L00406	Patient-level stratification, or in this case, lesion-level stratification, is crucial to ensure that the model does not “see” the lesions in the held-out test set while training.
+L00407	Consequently, the lack of such a stratification implies that the corresponding benchmark classification
+L00408	results are not truly reflective of the models’ generalization capability and, therefore, we strongly suspect that the models’ performance could be inflated.
+L00409	On the other hand, since most works use the entire HAM10000
+L00410	dataset for training instead of splitting it like in the case of DermaMNIST, undetected duplicates in HAM10000 are arguably a less severe issue.
+L00411	However, a word of caution on comparing the benchmark
+L00412	results of DermaMNIST and DermaMNIST-C (Table 1 ): the two
+L00413	datasets do not share the same test partitions.
+L00414	Specifically, DermaMNIST-C’s test set was obtained from DermaMNIST’s test set by removing all images whose lesion IDs were present in the test set, and therefore, the former is a subset of the other (i.e., DermaMNIST-C test set ⊂ DermaMNIST test set).
+L00415	Similarly, as shown in Fig.
+L00416	1(c) , the training set of DermaMNIST-C is larger than that of DermaMNIST.
+L00417	For these reasons, contrary to the assumption that fixing data leakage in DermaMNIST should decrease performance benchmarks, we emphasize that performance benchmarks for DermaMNIST and DermaMNIST-C should not be compared since these models have been trained and evaluated on dissimilar partitions.
+L00418	A more challenging
+L00419	dataset While HAM10000 is indeed a valuable
+L00420	dataset for skin image analysis research, models trained on HAM10000 do not necessarily perform well when evaluated on other skin lesion image
+L00421	datasets 104 .
+L00422	This was also observed by the organizers of the ISIC 2018 Challenge 65 where they relied on external testing data for ranking the submissions (" multipartition test sets containing data not reflected in training
+L00423	dataset are an effective way to differentiate the ability of algorithms to generalize ”).
+L00424	Therefore, following the ISIC 2018 Challenge, we use the images from the Challenge’s validation and testing partitions, resized to 28 × 28 and 224 × 224, to create the validation and testing partitions, respectively, of the newly proposed DermaMNIST-E
+L00425	dataset, thus allowing for a more robust assessment of the skin lesion diagnosis models trained on this
+L00426	dataset.
+L00427	Incorrect scaling of images Another issue with the DermaMNIST benchmarks was the use of 28 × 28 images to report the
+L00428	results on 224 × 224 resolutions.
+L00429	As we show in Fig.
+L00430	2 , the information lost when downsampling from 600 × 450 to 28 × 28 is quite significant, and it is impossible to recover this when upsampling from 28 × 28 to 224 × 224.
+L00431	This can also be observed in the quantitative
+L00432	results (Table 1 ): intuitively, given that we ensure that the models do not overfit, we would expect that a model with larger capacity (ResNet-50) trained on high- resolution images (224 × 224) should perform better than a lower capacity model (ResNet-18) trained on lower
+L00433	resolution images (28 × 28).
+L00434	However, this is not the case with DermaMNIST
+L00435	results, where ResNet-18/28 × 28 models perform [AUC; ACC] better than ResNet-50/224 × 224 models: [0.917; 0.735] versus [0.912; 0.731].
+L00436	On the other hand, with DermaMNIST-C and DermaMNIST-E, ResNet-50/224 × 224 models do perform better than their ResNet-18/28 × 28 counterparts.
+L00437	Fitzpatrick17k Duplicate detection and guarantees Because of the large scale of the Fitzpatrick17k
+L00438	dataset (16,577 images), manual review of images to verify duplicates is virtually impossible due to the huge combinatorial space: there are \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}16,577\\ 2\end{array}\right)=137$$\end{document} 16 , 577 2 = 137 million pairs of images.
+L00439	Even worse, if we want to verify triplicates (i.e., 3 images that are copies of one another), we would have to review \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}16,577\\ 3\end{array}\right)=759$$\end{document} 16 , 577 3 = 759 billion clusters of 3 images, and
+L00440	the number keeps growing as the size of the clusters being reviewed increases.
+L00441	Therefore, we rely on automated
+L00442	methods for duplicate detection followed by a manual review of duplicates above a reasonable similarity threshold, and our manual review
+L00443	results confirmed a near-perfect agreement with the algorithm’s
+L00444	results.
+L00445	Our experiments showed that using a second method of duplicate detection (cleanvision) was able to discover an additional 19 pairs of duplicates.
+L00446	These pairs were also detected by fastdup, but their similarity scores fell just short of the chosen thresholds of 0.90 and 0.95, and therefore were absent from our manual review of fastdup’s
+L00447	results.
+L00448	Our
+L00449	dataset cleaning pipeline, publicly available on GitHub 105 , is highly modular and configurable, allowing users to adjust similarity thresholds to exclude and use multiple duplicate lists (fastdup and cleanvision) for cleaning, decide whether they want to remove duplicate clusters altogether or retain one representative
+L00450	image from each cluster, decide whether they want to remove images with unknown FST labels, and decide which outliers to exclude based on a similarity threshold.
+L00451	While we can claim with a high degree of certainty that the new cleaned
+L00452	dataset Fitzpatrick17k-C will be devoid of any duplicates, the large scale of manual review required makes it nearly impossible to guarantee it.
+L00453	Dealing with conflicting diagnosis and FST labels Several duplicates in Fitzpatrick17k, despite being near identical copies, do not share the same diagnosis labels.
+L00454	This affects the training and evaluation of models, since a model can be incorrectly penalized for its prediction because of the conflicting labels.
+L00455	However, correcting these labels, so that copies of the same image have the same diagnosis label, requires a domain expert (i.e., a dermatologist) to go through all the images and confirm and correct their labels.
+L00456	Unfortunately, even if such an endeavor were to be undertaken, these diagnoses will not be histopathology-confirmed and the accuracy of diagnoses confirmed through images alone (a scenario similar to “store-and-forward” teledermatology) is expected to be lower than those confirmed through in-person patient visits 106 –
+L00457	108 .
+L00458	Another approach to resolving the diagnosis label conflicts could be through mapping the diagnoses in Fitzpatrick17k to the World Health Organization (WHO) International Classification of Diseases, Eleventh Revision (ICD-11) 109 , and if multiple diagnoses belong to the same “parent”, their label conflict can be
+L00459	resolved by assigning the “parent”’s label to both.
+L00460	However, when mapping the diagnoses in Fitzpatrick17k to using the ICD-11 Browser 110 we ran into the following issues: Several diagnosis labels did not yield any matches (e.g., “acquired autoimmune bullous diseaseherpes gestationis”, “nematode infection”, “neurotic excoriations”, “pediculosis lids”).
+L00461	There were diagnosis labels where one of the labels has an entry in ICD-11, but other seemingly related labels do not (e.g., “basal cell carcinoma” exists in ICD-11, but possibly related “basal cell carcinoma morpheiform” and “solid cystic basal cell carcinoma” do not).
+L00462	There were labels where we found near but not exact matches (e.g., the label “erythema annulare centrifigum” in Fitzpatrick17k does not have an exact match, but ICD-11 contains “Erythema annulare”; other partial matching [Fitzpatrick17k; ICD-11] labels include ["hidradenitis”; “Hidradenitis suppurativa”], ["fixed eruptions”, “Fixed drug eruption”],
+L00463	["lupus subacute”, “Subacute cutaneous lupus erythematosus”], ["porokeratosis actinic”, “Disseminated superficial porokeratosis actinic”], etc.
+L00464	Overall, 8 diagnosis labels had no matches in ICD-11.
+L00465	An additional 29 diagnoses yielded partial matches to entries in ICD-11, and therefore could not be reliably mapped to a single entry.
+L00466	For these diagnoses, i.e., those that had partial or no matches in ICD-11, we expanded our search to the ICD-11 Coding Tool Mortality and Morbidity Statistics (MMS) 111 and the ICD-11 Classification of Dermatological Diseases 112 , 113 , but this did not resolve any
+L00467	issues.
+L00468	Additionally, we also carried out a similar diagnosis lookup on the Systematized Medical Nomenclature of Medicine - Clinical Terminology (SNOMED-CT), a comprehensive clinical global healthcare terminology that may better represent medical vocabulary than ICD-11 114 .
+L00469	Although we were able to find more matches to SNOMED-CT Identifiers 115 (SCTIDs) than to entries in ICD-11 and its derivatives, it was still not perfect: we ended up with 17 and 3 diagnosis labels with partial and no matches, respectively.
+L00470	We make the
+L00471	results of our Fitzpatrick17k diagnosis-to-{ICD-11 classification code, SCTID} mapping publicly available online.
+L00472	As a recommendation for the future
+L00473	datasets containing clinical images of skin diseases, we believe that adding either ICD classification codes or SNOMED-CT Identifiers (SCTIDs) for the disease labels would be a helpful addition to the metadata, and would greatly enhance the usability of such
+L00474	datasets for hierarchical diagnosis
+L00475	methods 7 – 9 .
+L00476	Similar conflicts were observed for FST labels of images, where images with very high similarity varied in their FST labels, sometimes by as much as 4 tones (Fig.
+L00477	9 ).
+L00478	A potential solution to this would be to re-assess the images with conflicting FST labels.
+L00479	This would involve either obtaining manual and verified healthy skin segmentation masks or using an automated healthy skin segmentation method, followed by mapping the skin tone estimated using these healthy skin pixels to an FST label.
+L00480	However, as noted by Groh et al .
+L00481	20 , collecting manual segmentation masks is expensive, and automated skin segmentation approaches suffer from their own set of challenges 116 , 117 , including but not limited to susceptibility to non-standardized illumination, the presence of multiple objects, and/or low quality images (we direct the
+L00482	readers to our arXiv pre-print 100 which contains several more visualizations which could not make it to the publisher’s version of the paper).
+L00483	The presence of diffuse pathologies such as “acne”, “acne vulgaris”, and “disseminated actinic porokeratosis”, where the diseased regions of the skin are spread over a wide region and the exact boundaries between diseased and healthy regions are not well-defined, further compounds the task for any
+L00484	automated healthy skin detection approach.
+L00485	Because of these intractable issues, we make the decision of removing duplicate images that have conflicting diagnosis or FST labels.
+
+## PRIMARY_OBJECTIVE_AND_INTERPRETATION
+Source range: L00550–L00575
+
+L00550	datasets: DermaMNIST from the MedMNIST collection, its source HAM10000, and Fitzpatrick17k.
+L00551	For DermaMNIST, we investigated the extent of data leakage across its partitions and proposed two new and improved versions: a corrected
+L00552	dataset that does not have any leakage (DermaMNIST-C) and an extended and arguably more challenging
+L00553	dataset (DermaMNIST-E) that is almost the same as the ISIC 2018 Challenge
+L00554	dataset except the images are resized to 28 × 28 and 224 × 224 and the “easter egg” image is removed from the test partition.
+L00555	We also investigated the presence of duplicates in HAM10000, the source
+L00556	dataset for DermaMNIST, and discovered 18 new duplicate image pairs that were unaccounted for in the metadata.
+L00557	For Fitzpatrick17k, we conducted a systematic analysis encompassing data duplication, mislabeling of diagnosis and skin tone labels, as well as the identification of outlier images, followed by cleaning the
+L00558	dataset to propose a cleaned version Fitzpatrick17k-Cwith standardized training, validation, and testing partitions.
+L00559	We also showed how Fitzpatrick17k contains labels that do not fully align, which we recommend they should, with internationally recognized standards such as ICD-11 and SNOMED-CT, limiting its utility for hierarchical and differential diagnosis-based approaches.
+L00560	For all the
+L00561	datasets, we conducted benchmark evaluations using multiple
+L00562	methods, repeated 3 times for robustness.
+L00563	The primary
+L00564	objective of this paper is to raise awareness about potential data quality issues that may arise in large
+L00565	datasets, and how these issues can go unnoticed even in popular
+L00566	datasets, casting doubts on the
+L00567	conclusions made about the robustness and the generalizability of the models trained on these
+L00568	datasets.
+L00569	We hope this can serve as a call to action for more stringent data quality assessments.
+L00570	To facilitate this, we plan to make our evaluation method and code publicly available so that they can be used and extended upon for evaluating more existing and new
+L00571	datasets.
+L00572	Methods DermaMNIST Detecting and correcting data leakage We used HAM10000’s publicly available metadata, which contains image ID to lesion ID mappings, and DermaMNIST partitions’ filenames, which contain image IDs, to perform an inner-join using the Python library pandas.
+L00573	By doing so, we were able to obtain the list of images belonging to the same lesion that were common across train-valid, train-test, valid-test, and train-valid-test partitions.
+L00574	To correct the leakage, we follow this approach: if images of a lesion ID exist in the training partition, move all images belonging to that lesion ID from validation and testing partitions to the training.
+L00575	For instance, for the images visualized in Fig.
+
+## DATA_AND_CODE_AVAILABILITY
+Source range: L00674–L00678
+
+L00674	All authors read and approved the manuscript.
+L00675	Data availability All the
+L00676	datasets released with this work: DermaMNIST-C, DermaMNIST-E, and Fitzpatrick17k-C are publicly available on Zenodo 40 .
+L00677	Code availability The codebase for the analyses and the experiments in this paper is available at https://github.com/kakumarabhishek/Corrected-Skin-Image-
+L00678	Datasets .
+

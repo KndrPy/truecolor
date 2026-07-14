@@ -16,162 +16,591 @@
   "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
   "fields": {
     "algorithm_or_workflow": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00128",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "DermaMNIST leakage detection and partition correction workflow."
+        },
+        {
+          "line_end": "L00160",
+          "line_start": "L00136",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "HAM10000 duplicate detection and human-confirmation workflow."
+        },
+        {
+          "line_end": "L00241",
+          "line_start": "L00205",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Corrected/extended dataset generation and benchmark workflow."
+        },
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Fitzpatrick17k duplicate and cluster analysis."
+        },
+        {
+          "line_end": "L00485",
+          "line_start": "L00382",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Label correction, duplicate removal, and standardized split generation."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Join DermaMNIST image filenames to HAM10000 lesion metadata.",
+        "Detect lesion identity appearing in multiple partitions.",
+        "Move overlapping lesion images to a single partition to create DermaMNIST-C.",
+        "Construct DermaMNIST-E using external ISIC validation and test partitions.",
+        "Compute image embeddings and pairwise cosine similarities using fastdup.",
+        "Manually inspect high-similarity pairs and clusters.",
+        "Remove duplicates and erroneous images and standardize partitions to create Fitzpatrick17k-C.",
+        "Repeat classification benchmarks on original and corrected datasets."
+      ]
     },
     "author_claimed_contribution": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00019",
+          "line_start": "L00010",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The abstract states the audit, correction, and reproducibility contributions."
+        },
+        {
+          "line_end": "L00575",
+          "line_start": "L00550",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The concluding discussion restates the corrected and extended datasets."
+        },
+        {
+          "line_end": "L00678",
+          "line_start": "L00674",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The article provides Zenodo datasets and a public code repository."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Systematic quality audit of DermaMNIST, HAM10000, and Fitzpatrick17k",
+        "Identification of duplication, leakage, mislabeling, and image-processing flaws",
+        "Release of DermaMNIST-C, DermaMNIST-E, and Fitzpatrick17k-C",
+        "Public release of analysis code and corrected datasets"
+      ]
     },
     "calibration_design": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "No optical, camera, colorimetric, or spectral calibration procedure is defined.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "camera_assumptions": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "No camera spectral-sensitivity, radiometric-response, exposure, or device-calibration model is provided.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "capture_protocol": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The source audits previously acquired images and does not prescribe a new capture protocol.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "chromophore_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Melanin, hemoglobin, and other chromophores are not modeled or estimated.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "computational_model": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00128",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Lesion identifiers are used to detect and correct cross-partition leakage."
+        },
+        {
+          "line_end": "L00160",
+          "line_start": "L00136",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "fastdup embedding similarity and manual review are used to classify duplicate and nonduplicate pairs."
+        },
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The Fitzpatrick17k analysis uses similarity thresholds and clustering to identify duplicate pairs and groups."
+        },
+        {
+          "line_end": "L00241",
+          "line_start": "L00205",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "ResNet-18 and ResNet-50 benchmarks are repeated on original, corrected, and extended datasets."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "audit_components": [
+          "Metadata-based lesion and image identity analysis",
+          "Embedding-similarity duplicate detection using fastdup",
+          "Cosine-similarity ranking followed by manual visual confirmation",
+          "Duplicate clustering using a similarity threshold",
+          "Dataset reconstruction and benchmark comparison"
+        ],
+        "benchmark_models": [
+          "ResNet-18",
+          "ResNet-50"
+        ]
+      }
     },
     "datasets": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00085",
+          "line_start": "L00075",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The three audited datasets are named and their analysis scope is stated."
+        },
+        {
+          "line_end": "L00105",
+          "line_start": "L00086",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "HAM10000 is described as containing 10,015 dermoscopic images."
+        },
+        {
+          "line_end": "L00400",
+          "line_start": "L00382",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The source summarizes original and corrected dataset versions, including Fitzpatrick17k's 16,577 images."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "audited": [
+          {
+            "name": "DermaMNIST",
+            "role": "Derived benchmark dataset audited for leakage, resizing, and benchmark validity"
+          },
+          {
+            "name": "HAM10000",
+            "role": "Source dataset for DermaMNIST and lesion-identity analysis",
+            "size_images": 10015
+          },
+          {
+            "name": "Fitzpatrick17k",
+            "role": "Clinical dermatology dataset audited for duplication, diagnosis labels, skin-type labels, and partitions",
+            "size_images": 16577
+          }
+        ],
+        "released": [
+          "DermaMNIST-C",
+          "DermaMNIST-E",
+          "Fitzpatrick17k-C"
+        ]
+      }
     },
     "equations": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00160",
+          "line_start": "L00136",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The source defines pairwise embedding-similarity analysis and manual duplicate confirmation."
+        },
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The Fitzpatrick17k analysis applies similarity thresholds and cluster criteria."
+        }
+      ],
+      "review_notes": "The packet preserves the article's rendered mathematical notation imperfectly; the operational similarity relationship and threshold are nevertheless explicit.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Pairwise image-embedding similarity S(x_i, x_j)",
+        "Duplicate-pair or duplicate-cluster threshold based on similarity at or above approximately 0.90"
+      ]
     },
     "evaluation_metrics": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00128",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Partition leakage is quantified by images and lesions."
+        },
+        {
+          "line_end": "L00219",
+          "line_start": "L00205",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The benchmark reports AUC and overall accuracy."
+        },
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Duplicate analysis reports similarity, pairs, and clusters."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Area under the ROC curve",
+        "Overall classification accuracy",
+        "Image overlap counts",
+        "Unique-lesion overlap counts",
+        "Embedding cosine similarity",
+        "Duplicate-pair counts",
+        "Duplicate-cluster counts",
+        "Label-error and removal counts"
+      ]
     },
     "illumination_assumptions": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Illumination variation appears as a possible source of visual duplication or segmentation difficulty, but no illuminant model or controlled-light assumption is defined.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "instrument_or_camera": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The study analyzes existing image datasets and does not specify a canonical acquisition instrument or camera system.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "measured_inputs": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00086",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "DermaMNIST is traced to HAM10000 and its image-resolution transformation."
+        },
+        {
+          "line_end": "L00160",
+          "line_start": "L00136",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Image-pair similarity is compared with lesion-identity metadata."
+        },
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Fitzpatrick17k image and label content is examined for duplication and mislabeling."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Dermoscopic images and metadata from HAM10000 and DermaMNIST",
+        "Clinical dermatology images and labels from Fitzpatrick17k",
+        "Image IDs",
+        "Lesion IDs",
+        "Diagnosis labels",
+        "Fitzpatrick skin-type labels",
+        "Existing train-validation-test assignments"
+      ]
     },
     "observables": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00128",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The study reports image and lesion overlap across dataset partitions."
+        },
+        {
+          "line_end": "L00160",
+          "line_start": "L00136",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Cosine similarity and manually confirmed duplicate classes are observed."
+        },
+        {
+          "line_end": "L00241",
+          "line_start": "L00205",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "AUC and accuracy are the reported benchmark metrics."
+        },
+        {
+          "line_end": "L00485",
+          "line_start": "L00382",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The source reports diagnosis-label, skin-type-label, duplicate, and split corrections."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Cross-partition image and lesion overlap",
+        "Image-pair embedding similarity",
+        "Duplicate clusters",
+        "Diagnosis-label inconsistencies",
+        "Fitzpatrick skin-type label inconsistencies",
+        "Image-resolution degradation",
+        "Classification AUC",
+        "Classification accuracy"
+      ]
     },
     "physical_model": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The study is a dataset-quality and benchmark audit. The source does not define a light-tissue physical model.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "problem_addressed": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00019",
+          "line_start": "L00010",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The abstract identifies duplicates, partition leakage, mislabeling, and test-partition problems as the study target."
+        },
+        {
+          "line_end": "L00085",
+          "line_start": "L00075",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The study scope explicitly covers DermaMNIST, HAM10000, and Fitzpatrick17k and reports correction of identified defects."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Quality defects in widely used dermatological image datasets, including duplicate images, train-validation-test leakage, mislabeled images, metadata errors, inappropriate image resizing, and absent or unsuitable held-out test partitions."
     },
     "reported_limitations": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The source documents threshold-bound duplicate detection and manual-review limitations."
+        },
+        {
+          "line_end": "L00485",
+          "line_start": "L00382",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The discussion identifies benchmark noncomparability, threshold misses, manual-review limits, and segmentation challenges."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Similarity thresholds may miss true duplicates whose scores fall below the selected cutoff.",
+        "The scale of manual review prevents a guarantee that Fitzpatrick17k-C is entirely free of duplicates.",
+        "Automated healthy-skin segmentation is sensitive to illumination, image quality, multiple objects, and diffuse pathology boundaries.",
+        "DermaMNIST and DermaMNIST-C benchmark values should not be directly compared because their training and evaluation partitions differ."
+      ]
     },
     "reported_results": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00128",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The source reports exact image and lesion overlap counts across DermaMNIST partitions."
+        },
+        {
+          "line_end": "L00241",
+          "line_start": "L00205",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The source reports AUC and accuracy for original, corrected, and extended DermaMNIST versions."
+        },
+        {
+          "line_end": "L00435",
+          "line_start": "L00382",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The source summarizes corrected dataset sizes, split composition, and the fraction of DermaMNIST lesions affected by leakage."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "DermaMNIST_partition_overlap": {
+          "all_three_partitions": {
+            "images": 51,
+            "lesions": 40
+          },
+          "train_test": {
+            "images": 886,
+            "lesions": 641
+          },
+          "train_validation": {
+            "images": 440,
+            "lesions": 332
+          },
+          "validation_test": {
+            "images": 128,
+            "lesions": 113
+          }
+        },
+        "DermaMNIST_unique_lesions_affected": {
+          "count": 1006,
+          "percentage": 13.47
+        },
+        "Fitzpatrick17k_cleaned_version": {
+          "diagnosis_classes": 114,
+          "images": 11394,
+          "name": "Fitzpatrick17k-C",
+          "test": 2280,
+          "train": 7975,
+          "validation": 1139
+        },
+        "benchmark_observation": "Corrected and extended datasets produce materially different AUC and accuracy profiles; DermaMNIST-E is more challenging than the original benchmark."
+      }
     },
     "sample_or_subject_population": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00086",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "HAM10000 includes multiple images of lesions acquired at two clinical sites."
+        },
+        {
+          "line_end": "L00128",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Leakage is quantified using images and unique lesion identifiers."
+        },
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Fitzpatrick17k duplicate analysis is performed at image-pair and cluster levels."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "The unit of analysis is the image, lesion identity, image pair, or duplicate cluster. The article does not establish a unified subject-level cohort across the three datasets."
     },
     "scattering_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Optical scattering is not modeled or estimated.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "scientific_objective": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00019",
+          "line_start": "L00014",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The authors state that they uncover quality issues, measure benchmark effects, propose corrections, and release the analysis pipeline."
+        },
+        {
+          "line_end": "L00575",
+          "line_start": "L00550",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The closing interpretation restates the corrected and extended datasets and the objective of exposing hidden data-quality defects."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Systematically audit DermaMNIST, its source dataset HAM10000, and Fitzpatrick17k; quantify the effects of identified quality defects; and release corrected datasets and reproducible analysis code."
     },
     "skin_representation": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00105",
+          "line_start": "L00086",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "DermaMNIST and HAM10000 are image and lesion-label datasets."
+        },
+        {
+          "line_end": "L00305",
+          "line_start": "L00257",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Fitzpatrick17k includes clinical images, diagnosis labels, and Fitzpatrick skin-type labels."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Skin is represented through existing dermoscopic or clinical RGB images, disease labels, lesion identities, and Fitzpatrick skin-type labels. No continuous spectral skin representation is introduced."
     },
     "truecolor_relevance": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00019",
+          "line_start": "L00010",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The paper explicitly links dataset quality defects with benchmark reliability."
+        },
+        {
+          "line_end": "L00128",
+          "line_start": "L00106",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Partition leakage is shown to threaten benchmark validity."
+        },
+        {
+          "line_end": "L00485",
+          "line_start": "L00382",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "The discussion details data, split, label, and evaluation limitations."
+        },
+        {
+          "line_end": "L00678",
+          "line_start": "L00674",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Public data and code support a traceable evidence chain."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "not_established": "The paper does not establish a physics-based skin-color decomposition, spectral reflectance recovery method, camera observability model, capture control boundary, or conditioned skin spectral representation.",
+        "relevance": "The study establishes that duplicate identity, partition leakage, label integrity, image-processing provenance, and explicit train-validation-test construction materially affect reported dermatology-model performance. It supports TrueColor's requirement to separate data-quality and evidence-chain failures from model or physical-model performance.",
+        "relevant_claims": [
+          "TC-NOV-004",
+          "TC-NOV-006"
+        ]
+      }
     },
     "validation_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00160",
+          "line_start": "L00136",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Candidate duplicates are verified through manual review."
+        },
+        {
+          "line_end": "L00219",
+          "line_start": "L00205",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-03-full-text-review.txt",
+          "support": "Benchmark experiments are repeated three times and reported as mean plus or minus standard deviation."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "benchmark_validation": "ResNet-18 and ResNet-50 classification experiments repeated three times",
+        "dataset_comparisons": [
+          "DermaMNIST",
+          "DermaMNIST-C",
+          "DermaMNIST-E"
+        ],
+        "duplicate_validation": "Embedding-similarity detection followed by manual visual confirmation",
+        "reported_summary": "Mean and standard deviation across repeated benchmark runs"
+      }
     }
   },
   "minimum_claim_rank": 1,
+  "primary_extraction_evidence_selection": "analysis/prior_art/scientific_extraction/review_packets/paper-03-evidence-selection.txt",
   "quality_control": {
     "discrepancies": [],
-    "final_review_state": "NOT_REVIEWED",
-    "primary_review_completed": false,
-    "primary_reviewer": null,
+    "final_review_state": "PRIMARY_REVIEW_COMPLETE_SECOND_REVIEW_PENDING",
+    "primary_review_completed": true,
+    "primary_reviewer": "OPENAI_GPT_5_6_ASSISTED_REVIEW",
     "second_review_completed": false,
     "second_review_required": true,
     "second_review_selection_rule": "TOP_FIVE_BY_MINIMUM_CLAIM_RANK_THEN_ACQUISITION_ORDER",
     "second_reviewer": null
   },
-  "record_state": "SOURCE_PACKET_READY",
+  "record_state": "PRIMARY_SCIENTIFIC_EXTRACTION_COMPLETE",
   "review_eligibility": "COMPLETE",
   "schema_version": "1.0.0",
   "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
@@ -214,6 +643,6 @@
     }
   ],
   "unique_review_order": 10,
-  "work_package": "S1-EXTRACT-01A",
+  "work_package": "S1-EXTRACT-02C",
   "year": "2025.0"
 }
