@@ -1,0 +1,20 @@
+test_csv_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_csv_route_contract) ... ok
+test_docx_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_docx_route_contract) ... ok
+test_embedded_pdf_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_embedded_pdf_contract) ... ok
+test_html_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_html_route_contract) ... ok
+test_markdown_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_markdown_route_contract) ... ok
+test_ocr_pdf_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_ocr_pdf_contract) ... ok
+test_prose_formats_share_text (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_prose_formats_share_text) ... ok
+test_prose_projection_preserves_semantics (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_prose_projection_preserves_semantics) ... ok
+test_schema_covers_all_registered_routes (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_schema_covers_all_registered_routes) ... ok
+test_tabular_formats_share_matrix (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_tabular_formats_share_matrix) ... ok
+test_text_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_text_route_contract) ... ok
+test_tsv_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_tsv_route_contract) ... ok
+test_validator_rejects_tampered_document_id (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_validator_rejects_tampered_document_id) ... ok
+test_xlsx_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_xlsx_route_contract) ... ok
+test_xml_route_contract (analysis.prior_art.parsing.test_cross_format_canonical.CrossFormatCanonicalTests.test_xml_route_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.683s
+
+OK
