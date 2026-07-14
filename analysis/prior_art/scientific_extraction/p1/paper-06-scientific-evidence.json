@@ -16,162 +16,549 @@
   "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
   "fields": {
     "algorithm_or_workflow": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00182",
+          "line_start": "L00112",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The AWAN processing architecture is described."
+        },
+        {
+          "line_end": "L00231",
+          "line_start": "L00198",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The spectral and CSS losses are defined."
+        },
+        {
+          "line_end": "L00350",
+          "line_start": "L00317",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Self-ensemble and multi-model ensemble procedures are described."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Extract shallow features from the RGB input with convolution",
+        "Process features through stacked dual residual attention blocks",
+        "Apply adaptive weighted channel attention",
+        "Apply patch-level second-order non-local spatial modeling",
+        "Predict a 31-band hyperspectral image",
+        "Compute supervised spectral reconstruction loss",
+        "When CSS is known, project the reconstructed HSI back to RGB and add the CSS consistency loss",
+        "Optionally apply self-ensemble and multi-model ensemble at evaluation"
+      ]
     },
     "author_claimed_contribution": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00095",
+          "line_start": "L00055",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The paper's contribution list names the network, modules, CSS prior, and challenge performance."
+        },
+        {
+          "line_end": "L00364",
+          "line_start": "L00351",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The conclusion restates the model and performance claims."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Adaptive Weighted Attention Network for spectral reconstruction",
+        "Dual residual attention backbone with long and short skip connections",
+        "Adaptive weighted channel attention",
+        "Patch-level second-order non-local spatial-context module",
+        "CSS-based RGB consistency constraint",
+        "First place on NTIRE2020 Clean and third place on Real World"
+      ]
     },
     "calibration_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00231",
+          "line_start": "L00198",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The CSS operator forms the RGB consistency loss."
+        },
+        {
+          "line_end": "L00316",
+          "line_start": "L00305",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The constraint is limited to tracks with known CSS."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Camera consistency is enforced using the benchmark-provided CSS function to project ground-truth and reconstructed HSIs into RGB space. No blind camera calibration is performed."
     },
     "camera_assumptions": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00205",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The source identifies known and unknown camera-response tracks."
+        },
+        {
+          "line_end": "L00316",
+          "line_start": "L00305",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The authors explicitly state that CSS can only be introduced for the Clean track."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "The CSS consistency constraint requires a known camera spectral-sensitivity function.",
+        "Different benchmark tracks may use different sensitivity functions.",
+        "When camera response is unknown, the CSS constraint cannot be applied."
+      ]
     },
     "capture_protocol": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00208",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The benchmark track generation and spectral sampling are specified."
+        }
+      ],
+      "review_notes": "This is a benchmark data-generation protocol, not an operational mobile capture procedure.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "clean_track": "Noise-free RGB generated with a known camera spectral-sensitivity function",
+        "real_world_track": "JPEG-compressed RGB generated through an unknown camera response function",
+        "spectral_sampling": "31 bands from 400 to 700 nm at approximately 10 nm intervals"
+      }
     },
     "chromophore_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Melanin, hemoglobin, and other skin chromophores are not represented.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "computational_model": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00146",
+          "line_start": "L00112",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The AWAN backbone, DRABs, convolutional layers, skip connections, and residual design are described."
+        },
+        {
+          "line_end": "L00182",
+          "line_start": "L00147",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The AWCA and PSNL mechanisms are defined."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "backbone": "Stacked dual residual attention blocks",
+        "mapping": "Three-channel RGB image to 31-channel hyperspectral image",
+        "model": "Adaptive Weighted Attention Network",
+        "modules": [
+          "Adaptive weighted channel attention",
+          "Patch-level second-order non-local module",
+          "Global residual connection"
+        ]
+      }
     },
     "datasets": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00208",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The NTIRE2018 and NTIRE2020 dataset sizes, dimensions, bands, and tracks are reported."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "NTIRE2018": {
+          "spatial_size": "1392 × 1300",
+          "spectral_bands": 31,
+          "spectral_range_nm": [
+            400,
+            700
+          ],
+          "testing_hsi": 10,
+          "training_hsi": 256,
+          "validation_hsi": 5
+        },
+        "NTIRE2020": {
+          "spatial_size": "512 × 482",
+          "spectral_bands": 31,
+          "testing_images": 20,
+          "training_images": 450,
+          "validation_images": 10
+        },
+        "tracks": [
+          "Clean",
+          "Real World"
+        ]
+      }
     },
     "equations": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00182",
+          "line_start": "L00147",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The AWCA and PSNL equations are provided."
+        },
+        {
+          "line_end": "L00231",
+          "line_start": "L00198",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The combined loss, HSI loss, CSS loss, MRAE, and RMSE equations are defined."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Adaptive weighted pooling for channel descriptors",
+        "Sigmoid-gated channel attention rescaling",
+        "Second-order non-local spatial attention and residual refinement",
+        "Combined loss l = l_h + tau l_r",
+        "Hyperspectral MRAE loss between ground truth and reconstruction",
+        "CSS reprojection discrepancy between ground-truth and reconstructed HSI",
+        "MRAE evaluation metric",
+        "RMSE evaluation metric"
+      ]
     },
     "evaluation_metrics": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00231",
+          "line_start": "L00209",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "MRAE and RMSE are formally defined."
+        },
+        {
+          "line_end": "L00350",
+          "line_start": "L00317",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Comparative tables, runtime, visual errors, and spectral curves are used."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Mean relative absolute error",
+        "Root mean square error",
+        "Runtime",
+        "Official challenge rank",
+        "Visual reconstruction error maps",
+        "Spectral response-curve agreement"
+      ]
     },
     "illumination_assumptions": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The source does not define, estimate, or recover scene illumination or illuminant spectral power distribution.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "instrument_or_camera": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00205",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The Clean and Real World camera-response conditions are explicitly distinguished."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "The benchmark supplies camera-response conditions rather than identifying a single physical camera model. Clean tracks provide known CSS functions; Real World tracks use unknown camera response functions and JPEG-compressed RGB images."
     },
     "measured_inputs": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00120",
+          "line_start": "L00101",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The task is formulated as mapping RGB pixels to hyperspectral signals."
+        },
+        {
+          "line_end": "L00231",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Training uses RGB-HSI pairs and the known CSS function where available."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Three-channel RGB image",
+        "Camera spectral-sensitivity function when known",
+        "Ground-truth hyperspectral image during supervised training"
+      ]
     },
     "observables": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00231",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The datasets, reconstructed HSI, CSS projection, MRAE, and RMSE are defined."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "RGB pixel values",
+        "Recovered hyperspectral radiance values",
+        "Ground-truth hyperspectral values",
+        "RGB reprojection discrepancy under the camera sensitivity function",
+        "Mean relative absolute error",
+        "Root mean square error"
+      ]
     },
     "physical_model": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00090",
+          "line_start": "L00082",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The paper states that RGB can be generated by applying a known CSS function to the reconstructed HSI."
+        },
+        {
+          "line_end": "L00231",
+          "line_start": "L00198",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The CSS projection operator is included in the reconstruction loss."
+        }
+      ],
+      "review_notes": "This is a camera spectral projection constraint, not a scene illumination or skin light-transport model.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "A camera projection relationship in which a reconstructed hyperspectral image is mapped back to RGB through the supplied camera spectral-sensitivity function."
     },
     "problem_addressed": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00041",
+          "line_start": "L00010",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The abstract and introduction define RGB-to-HSI spectral reconstruction and state that the inverse process is severely ill-posed."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Recovering a high-dimensional hyperspectral image from a three-channel RGB image. The inverse mapping is severely ill-posed because multiple spectra can produce the same RGB observation."
     },
     "reported_limitations": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00041",
+          "line_start": "L00010",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The inverse ambiguity is stated."
+        },
+        {
+          "line_end": "L00205",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Known and unknown camera-response conditions are distinguished."
+        },
+        {
+          "line_end": "L00316",
+          "line_start": "L00305",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The CSS prior is explicitly restricted to the Clean track."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "The RGB-to-HSI inverse problem is severely ill-posed.",
+        "The CSS prior requires a known camera spectral-sensitivity function.",
+        "The CSS prior cannot be applied to the Real World benchmark because its camera response is unknown.",
+        "The method is trained and evaluated on benchmark camera-response conditions and does not infer an unseen device response.",
+        "The paper does not address illumination variation as a separate latent variable."
+      ]
     },
     "reported_results": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00259",
+          "line_start": "L00232",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Validation MRAE and RMSE values and official test values are tabulated."
+        },
+        {
+          "line_end": "L00316",
+          "line_start": "L00273",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "AWCA and CSS ablation improvements are reported."
+        },
+        {
+          "line_end": "L00364",
+          "line_start": "L00317",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Comparative results and official ranks are reported."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "AWCA_ablation": {
+          "clean_MRAE_reduction_percent": 5.0,
+          "real_world_MRAE_reduction_percent": 2.2
+        },
+        "CSS_ablation": "Adding the CSS consistency term improves Clean-track reconstruction accuracy.",
+        "NTIRE2020_validation": {
+          "AWAN_clean_MRAE": 0.0321,
+          "AWAN_clean_RMSE": 0.0112,
+          "AWAN_plus_clean_MRAE": 0.0312,
+          "AWAN_plus_clean_RMSE": 0.0111,
+          "AWAN_plus_real_world_MRAE": 0.0639,
+          "AWAN_plus_real_world_RMSE": 0.017,
+          "AWAN_real_world_MRAE": 0.0668,
+          "AWAN_real_world_RMSE": 0.0175
+        },
+        "official_NTIRE2020": {
+          "clean_track_rank": 1,
+          "real_world_track_rank": 3
+        },
+        "qualitative_result": "Recovered spectra and error maps are reported as closer to ground truth than the compared methods."
+      }
     },
     "sample_or_subject_population": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00208",
+          "line_start": "L00186",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The benchmark consists of natural HSIs and RGB images."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Natural-scene hyperspectral images and their corresponding RGB projections. No human-subject or skin-subject population is reported."
     },
     "scattering_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Tissue or surface scattering is not modeled.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "scientific_objective": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00041",
+          "line_start": "L00010",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The abstract states the AWAN, AWCA, PSNL, and CSS-prior objectives."
+        },
+        {
+          "line_end": "L00095",
+          "line_start": "L00055",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The contribution list describes the network modules and CSS consistency constraint."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Improve RGB-to-HSI reconstruction by combining a deep adaptive attention network with channel and spatial-context modeling and, when available, a known camera spectral-sensitivity consistency constraint."
     },
     "skin_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The study uses general natural-scene hyperspectral datasets and does not define a skin-specific representation.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "truecolor_relevance": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00231",
+          "line_start": "L00198",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The camera-response consistency mechanism is explicit."
+        },
+        {
+          "line_end": "L00316",
+          "line_start": "L00305",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "The unknown-camera boundary is explicit."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "boundary": "AWAN assumes a supplied CSS function when using its camera-consistency prior. It explicitly cannot apply that prior when camera response is unknown. It does not estimate illumination, camera response, skin chromophores, scattering, or capture observability.",
+        "directly_relevant_mechanisms": [
+          "RGB-to-spectrum reconstruction",
+          "Explicit camera spectral-sensitivity conditioning",
+          "RGB reprojection consistency from reconstructed spectra",
+          "Unknown-camera-response benchmark boundary"
+        ],
+        "relevant_claims": [
+          "TC-NOV-001",
+          "TC-NOV-002",
+          "TC-NOV-003",
+          "TC-NOV-005"
+        ]
+      }
     },
     "validation_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00316",
+          "line_start": "L00273",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Ablations evaluate PSNL, AWCA, and CSS."
+        },
+        {
+          "line_end": "L00350",
+          "line_start": "L00317",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-06-full-text-review.txt",
+          "support": "Comparative and ensemble evaluations are described."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "datasets": [
+          "NTIRE2018",
+          "NTIRE2020"
+        ],
+        "ensemble_variants": [
+          "Self-ensemble",
+          "Multi-model ensemble AWAN+"
+        ],
+        "tracks": [
+          "Clean",
+          "Real World"
+        ],
+        "validation_types": [
+          "Module ablation",
+          "CSS-prior ablation",
+          "Comparison against six prior spectral-reconstruction methods",
+          "Official challenge testing",
+          "Visual spectral reconstruction review"
+        ]
+      }
     }
   },
   "minimum_claim_rank": 2,
+  "primary_extraction_evidence_selection": "analysis/prior_art/scientific_extraction/review_packets/paper-06-evidence-selection.txt",
   "quality_control": {
     "discrepancies": [],
-    "final_review_state": "NOT_REVIEWED",
-    "primary_review_completed": false,
-    "primary_reviewer": null,
+    "final_review_state": "PRIMARY_REVIEW_COMPLETE",
+    "primary_review_completed": true,
+    "primary_reviewer": "OPENAI_GPT_5_6_ASSISTED_REVIEW",
     "second_review_completed": false,
     "second_review_required": false,
     "second_review_selection_rule": null,
     "second_reviewer": null
   },
-  "record_state": "SOURCE_PACKET_READY",
+  "record_state": "PRIMARY_SCIENTIFIC_EXTRACTION_COMPLETE",
   "review_eligibility": "COMPLETE",
   "schema_version": "1.0.0",
   "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
@@ -214,6 +601,6 @@
     }
   ],
   "unique_review_order": 12,
-  "work_package": "S1-EXTRACT-01A",
+  "work_package": "S1-EXTRACT-04C",
   "year": "2020.0"
 }
