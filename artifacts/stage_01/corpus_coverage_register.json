@@ -1,5 +1,6 @@
 {
   "configured_governed_source_count": 48,
+  "disposition_reconciliation_config_id": "truecolor-stage1-disposition-sources-v1",
   "invalid_disposition_count": 0,
   "pending_disposition_count": 32,
   "policy_id": "truecolor-stage1-corpus-coverage-v1",

@@ -7,6 +7,7 @@
   "configured_governed_source_count": 48,
   "configured_matrix_count": 6,
   "corpus_coverage_policy_id": "truecolor-stage1-corpus-coverage-v1",
+  "corpus_disposition_conflict_count": 0,
   "evidence_covered_source_count": 16,
   "full_extraction_is_not_required_for_all_governed_sources": true,
   "invalid_corpus_disposition_count": 0,
@@ -37,5 +38,6 @@
   "stage_key": "prior_art",
   "stage_state": "OPEN",
   "study_id": "truecolor",
-  "terminal_coverage_count": 16
+  "terminal_coverage_count": 16,
+  "unmapped_explicit_disposition_count": 0
 }

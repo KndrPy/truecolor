@@ -1,0 +1,142 @@
+{
+  "config_schema": "qudipi.stage1.disposition-source-config",
+  "config_version": 1,
+  "config_id": "truecolor-stage1-disposition-sources-v1",
+  "sources": [
+    {
+      "source_id": "claim-review-cohort",
+      "path": "analysis/prior_art/adjudication/stage1_claim_review_cohort_final.json",
+      "format": "json",
+      "precedence": 10,
+      "identity_fields": [
+        "canonical_key",
+        "canonical_identity",
+        "doi",
+        "pmid"
+      ],
+      "disposition_fields": [
+        "coverage_role",
+        "corpus_role",
+        "review_role",
+        "final_disposition",
+        "review_disposition",
+        "adjudication_disposition",
+        "disposition",
+        "status"
+      ],
+      "reason_fields": [
+        "disposition_reason",
+        "adjudication_reason",
+        "exclusion_reason",
+        "review_notes",
+        "reason",
+        "notes"
+      ]
+    },
+    {
+      "source_id": "canonical-adjudication-cohort",
+      "path": "analysis/prior_art/adjudication/stage1_canonical_adjudication_cohort.csv",
+      "format": "csv",
+      "precedence": 20,
+      "identity_fields": [
+        "canonical_key",
+        "canonical_identity",
+        "doi",
+        "pmid"
+      ],
+      "disposition_fields": [
+        "coverage_role",
+        "corpus_role",
+        "review_role",
+        "final_disposition",
+        "review_disposition",
+        "adjudication_disposition",
+        "disposition",
+        "status"
+      ],
+      "reason_fields": [
+        "disposition_reason",
+        "adjudication_reason",
+        "exclusion_reason",
+        "review_notes",
+        "reason",
+        "notes"
+      ]
+    },
+    {
+      "source_id": "source-status-final",
+      "path": "analysis/prior_art/acquisition/stage1_p1_source_status_final.json",
+      "format": "json",
+      "precedence": 30,
+      "identity_fields": [
+        "canonical_key",
+        "canonical_identity",
+        "doi",
+        "pmid"
+      ],
+      "disposition_fields": [
+        "coverage_role",
+        "terminal_source_state",
+        "source_state",
+        "availability_state",
+        "acquisition_state",
+        "status"
+      ],
+      "reason_fields": [
+        "availability_reason",
+        "acquisition_notes",
+        "failure_reason",
+        "reason",
+        "notes"
+      ]
+    }
+  ],
+  "role_aliases": {
+    "FULL_SCIENTIFIC_EXTRACTION": [
+      "full_scientific_extraction",
+      "scientific_extraction_complete",
+      "deep_review_complete"
+    ],
+    "BOUNDED_SCIENTIFIC_REVIEW": [
+      "bounded_scientific_review",
+      "bounded_review",
+      "abstract_review_complete",
+      "metadata_and_abstract_review",
+      "screened_in_for_review"
+    ],
+    "MATERIAL_LINEAGE_REFERENCE": [
+      "material_lineage_reference",
+      "lineage_reference",
+      "background_reference",
+      "supporting_reference",
+      "citation_lineage"
+    ],
+    "EXCLUDED_WITH_REASON": [
+      "excluded_with_reason",
+      "excluded",
+      "exclude",
+      "out_of_scope",
+      "not_relevant",
+      "duplicate_excluded"
+    ],
+    "TERMINAL_SOURCE_UNAVAILABLE": [
+      "terminal_source_unavailable",
+      "source_unavailable",
+      "unavailable",
+      "not_retrievable",
+      "access_denied",
+      "no_full_text"
+    ]
+  },
+  "reason_required_roles": [
+    "EXCLUDED_WITH_REASON",
+    "TERMINAL_SOURCE_UNAVAILABLE"
+  ],
+  "identity_policy": {
+    "exact_canonical_identity_only": true,
+    "doi_normalization_allowed": true,
+    "pmid_normalization_allowed": true,
+    "title_matching_prohibited": true,
+    "fuzzy_matching_prohibited": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "configured_governed_source_count": 48,
+  "conflict_count": 0,
+  "invalid_identity_count": 0,
+  "pending_disposition_count": 32,
+  "previous_terminal_count": 16,
+  "report_schema": "qudipi.stage1.corpus-disposition-reconciliation-report",
+  "report_version": 1,
+  "resolved_from_existing_artifacts": 0,
+  "role_counts": {
+    "FULL_SCIENTIFIC_EXTRACTION": 16,
+    "REVIEW_DISPOSITION_REQUIRED": 32
+  },
+  "terminal_coverage_count": 16,
+  "unmapped_identity_count": 0
+}
