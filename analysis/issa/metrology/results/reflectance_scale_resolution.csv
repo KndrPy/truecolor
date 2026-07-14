@@ -1,0 +1,2 @@
+reflectance_scale,normalization_factor,normalization_applied,raw_min,raw_median,raw_max,normalized_min,normalized_median,normalized_max
+percent,0.01,True,0.03,25.07,73.27,0.0003,0.25070000000000003,0.7327

@@ -1,0 +1,7 @@
+claim_id,level,claim,status,primary_evidence,replication,controls
+C-A1,A/B,Measured human-skin spectral variation has a finite empirical geometry whose dimension and strata dependence can be estimated from ISSA.,active,ISSA,,
+C-B1,B,The observability of measured skin spectra depends on the alignment between empirical skin variation and the declared camera-illuminant row space.,active,ISSA; camera sensitivity family; illuminant family,,
+C-B2,B/C,"Physically plausible skin spectra can collapse to indistinguishable camera responses under realistic tolerance, with prevalence and severity that may vary by operating condition.",active,ISSA direct collisions; forward-model-constrained metamers,,
+C-C1,C,Tone-dependent uncertainty can be decomposed into interacting measurement and biological mechanisms under a declared forward and noise model.,active,ISSA; validated forward model; camera/illuminant/noise families,,
+C-C2,C,An added measurement can be selected to contract uncertainty subject to cost and subgroup-parity constraints.,active,ISSA held-out recovery; sensor-design simulation,,
+C-D1,D,A physics-derived recoverability score has incremental clinical explanatory value beyond lesion contrast and data quality.,active_separate_paper,DDI,DDI-2,Fitzpatrick17k/CleanPatrick; MST-E

@@ -1,0 +1,10 @@
+dataset_id,dataset,scale,unique_role,validation_role,hard_limit
+D01,ISSA,"15,256 measurements / 2,107 IDs / 31 bands",instrument spectral/colorimetric ground truth,primary physics lab,No paired consumer RGB of same patch
+D02,NIST skin reflectance,smaller traceable reference set,external metrology replication,external spectral validator,Different scope and acquisition conditions
+D03,Hyper-Skin,330 cubes / 51 subjects,external skin spectral reconstruction and RGB+NIR comparison,external spectral validator,RGB synthesized from HSI
+D04,2025 facial HSI database,29 faces; 9 regions; 400–720 nm,spatial/anatomical spectral validation,external spatial validator,Only 4 darker-tone participants; device/geometry disagreement
+D05,MST-E,"repeated images/videos, 19 subjects locally",within-subject capture robustness,manifestation validator,LOSO mandatory; perceptual labels
+D06,DDI,656 pathology-confirmed images,clinical discovery,clinical validator 1,No spectral truth; confounding
+D07,DDI-2,665 images / 550 patients locally,independent clinical replication,clinical validator 2,Public provenance must remain explicit
+D08,Fitzpatrick17k + CleanPatrick,"16,577 images plus cleaning audit",data-quality adversarial control,alternative-explanation validator,Fitzpatrick labels are not objective color
+D09,MRA-MIDAS,"3,404 analysis-eligible linked records locally",modality/distance/framing analysis if pairing closes,optional manifestation validator,No spectral truth; pairing must be proven

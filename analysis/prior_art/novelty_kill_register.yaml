@@ -1,0 +1,20 @@
+stage_1_global_kill: A supplied or newly identified prior work already performs the
+  same real-skin, camera-family, interaction-aware mechanism attribution and clinical
+  replication with equivalent evidence.
+claim_kills:
+  N1: Angles are small and tone-invariant; realistic collision rate is negligible.
+  N2: Generated alternatives are not physiologically plausible or yield no material
+    target ambiguity.
+  N3: Model confidence does not track added measurement or remains high under known
+    non-identifiability.
+  N4: Attribution is unstable across operator families, bootstrap samples, or ablation
+    order.
+  N5: Gain is below metrology floor or optimum is unstable across strata and priors.
+  N6: Physics adds no incremental value after alternatives or fails replication.
+scope_guards:
+- No physical claim from image-only datasets.
+- No consumer-camera correction claim without paired image-spectrum truth.
+- No pooling across instruments/geometries until metrology analysis permits it.
+- No clinical causal claim without explicit assumptions and alternative-explanation
+  controls.
+- No use of model confidence as evidence of identifiability.

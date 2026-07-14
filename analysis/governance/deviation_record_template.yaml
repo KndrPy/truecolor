@@ -1,0 +1,12 @@
+deviation_id: ''
+timestamp_utc: ''
+stage: 2
+affected_artifact: ''
+affected_field_or_claim: ''
+reason: ''
+data_seen_before_change: false
+expected_bias_direction: none|toward_null|away_from_null|unknown
+replacement: ''
+confirmatory_status_after_change: confirmatory|secondary|exploratory|withdrawn
+approved_by: ''
+git_commit: ''

@@ -1,0 +1,21 @@
+stage: 2
+name: estimand_and_claim_registration
+status: closed
+version: 1.0.0
+registered_primary_estimands: 8
+registered_claims: 6
+primary_multiplicity_families: 2
+issa_lockbox_rows: 2314
+next_stage:
+  id: 3
+  name: issa_metrology_and_provenance_closure
+binding_artifacts:
+- estimand_registry.yaml
+- claim_hierarchy.yaml
+- admissibility_rules.yaml
+- falsification_rules.yaml
+- multiplicity_family.yaml
+- lockbox_policy.yaml
+- preregistration.md
+- deviation_record_template.yaml
+- registered_claims.csv

@@ -1,0 +1,41 @@
+stage: 3
+name: issa_metrology_and_provenance_closure
+status: CLOSED
+canonical_path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+canonical_sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+canonical_rows: 15256
+canonical_columns: 47
+wavelength_exact_match: true
+unique_subject_keys: 2107
+expected_subject_or_composite_ids: 2107
+split_leakage_subject_keys: 0
+reflectance_scale: percent
+normalization_applied: true
+normalization_factor: 0.01
+raw_reflectance_min: 0.03
+raw_reflectance_median: 25.07
+raw_reflectance_max: 73.27
+normalized_reflectance_min: 0.0003
+normalized_reflectance_median: 0.25070000000000003
+normalized_reflectance_max: 0.7327
+admissible_rows: 15256
+basic_inadmissible_rows: 0
+admissible_fraction: 1.0
+minimum_admissible_fraction: 0.95
+exact_duplicate_rows: 138
+near_duplicate_pairs: 594
+hard_failed_gates: []
+gates:
+  source_hash_present: true
+  canonical_row_count_match: true
+  wavelength_grid_exact: true
+  subject_key_present: true
+  subject_count_reconciled: true
+  split_leakage_zero: true
+  reflectance_scale_resolved: true
+  nonzero_admissible_rows: true
+  all_rows_not_rejected: true
+  admissible_fraction_nontrivial: true
+next_stage:
+  id: 4
+  name: measurand_stability_and_biological_nuisance_decomposition

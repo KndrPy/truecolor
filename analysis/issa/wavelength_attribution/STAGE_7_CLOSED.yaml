@@ -1,0 +1,97 @@
+stage: 7
+name: dominant_axis_interpretation_and_wavelength_attribution
+status: CLOSED_WITH_SCOPE_LIMITATION
+
+canonical_source:
+  path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+  sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+  rows: 15256
+  admissible_rows: 15256
+  subjects: 2107
+  body_site_levels: 12
+  wavelengths:
+    start_nm: 400
+    end_nm: 700
+    step_nm: 10
+    count: 31
+
+method:
+  inherited_representation: site_specific_basis
+  registered_compact_components: 3
+  bootstrap_unit: subject_within_body_site
+  bootstrap_iterations_per_site: 200
+  loading_tail_statistics:
+    - p2_5
+    - p50
+    - p97_5
+    - p99
+
+component_adjudication:
+  component_1:
+    empirical_identity: broadband_reflectance_axis
+    optical_status: resolved
+    biological_identity: unresolved
+    dominant_descriptor: broadband_mean_reflectance
+    median_absolute_descriptor_correlation: 0.9989197744903342
+    p2_5_absolute_descriptor_correlation: 0.9923170686416485
+    same_direction_site_fraction: 1.0
+    minimum_bootstrap_cosine_p2_5: 0.9991940823208301
+    median_cross_site_absolute_cosine: 0.9955559210856383
+    minimum_cross_site_absolute_cosine: 0.9001674474980476
+
+  component_2:
+    empirical_identity: provisional_red_green_spectral_shape_axis
+    optical_status: provisional
+    biological_identity: unresolved
+    dominant_descriptor: log_red_green_ratio_650_560
+    median_absolute_descriptor_correlation: 0.7993486872051465
+    p2_5_absolute_descriptor_correlation: 0.5421031328091562
+    same_direction_site_fraction: 0.8333333333333334
+
+  component_3:
+    empirical_identity: unresolved_local_spectral_shape_axis
+    optical_status: unresolved
+    biological_identity: unresolved
+    descriptor_candidate: green_band_depth_560_vs_500_650
+    median_absolute_descriptor_correlation: 0.4606284868015983
+    p2_5_absolute_descriptor_correlation: 0.26898029993371303
+    same_direction_site_fraction: 0.9166666666666666
+
+pc1_limiting_pair:
+  body_site_a: "12"
+  body_site_b: "7"
+  absolute_cosine_similarity: 0.9001674474980476
+  sign_flipped_for_comparison: false
+  wavelengths_compared: 31
+  interpretation: body_site_specific_wavelength_weighting_with_preserved_broadband_axis
+
+scientific_adjudication:
+  pc1_optical_descriptor_resolved: true
+  pc2_optical_descriptor_provisional: true
+  pc3_optical_descriptor_resolved: false
+  biological_identity_resolved: false
+  global_subject_skin_tone_scalar_admissible: false
+
+prohibited_interpretations:
+  - melanin
+  - pigmentation
+  - skin_tone
+  - global_subject_skin_tone_scalar
+
+inherited_scope_limitations:
+  - instrument_effect_not_estimable_single_level
+  - sci_sce_effect_not_estimable_single_level
+  - protected_exposed_effect_not_testable
+  - cross_instrument_stability_not_established
+  - sci_sce_equivalence_not_established
+  - protected_exposed_equivalence_not_established
+  - body_location_code_conditioning_required
+
+validation:
+  all_registered_gates_passed: true
+  pc1_limiting_pair_diagnostic_reproducible: true
+  final_validation: PASS
+
+next_stage:
+  id: 8
+  name: wavelength_reduction_and_external_colorimetric_validation

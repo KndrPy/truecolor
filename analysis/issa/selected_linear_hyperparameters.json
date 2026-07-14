@@ -1,0 +1,6 @@
+{
+  "elastic_net_alpha": 0.0007278953843983154,
+  "elastic_net_l1_ratio": 0.05,
+  "lasso_alpha": 0.0012689610031679235,
+  "ridge_alpha": 0.01
+}

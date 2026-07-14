@@ -1,0 +1,127 @@
+levels:
+- level: A
+  name: direct_measurement
+  definition: Supported directly by instrument-measured spectra, colorimetry, or explicit
+    paired measurements.
+  examples:
+  - ISSA R(lambda)
+  - paired L*a*b*
+  - SCI/SCE metadata
+  allowed_verbs:
+  - measured
+  - observed
+  - estimated from measured data
+- level: B
+  name: deterministic_transformation
+  definition: Derived from measured data by a declared deterministic operator.
+  examples:
+  - ITA from L* and b*
+  - camera projection
+  - principal angles
+  - null-space energy
+  allowed_verbs:
+  - computed
+  - derived
+  - projected
+- level: C
+  name: physically_modeled
+  definition: Depends on a forward model, priors, sensor model, or unmeasured operating
+    condition.
+  examples:
+  - photon-noise CRB
+  - chromophore inversion
+  - unknown camera sensitivity family
+  allowed_verbs:
+  - modeled
+  - simulated
+  - bounded under assumptions
+- level: D
+  name: empirical_manifestation
+  definition: Association observed in image-domain or clinical benchmark data without
+    direct spectral truth.
+  examples:
+  - MST-E instability
+  - DDI performance gap
+  - CleanPatrick change
+  allowed_verbs:
+  - associated
+  - replicated
+  - consistent with
+- level: E
+  name: not_testable_with_current_assets
+  definition: Requires paired data or interventions not currently available.
+  examples:
+  - validated universal consumer RGB-to-spectrum corrector
+  - direct melanin concentration truth
+  allowed_verbs:
+  - not established
+  - requires new acquisition
+registered_claims:
+- id: C-A1
+  level: A/B
+  claim: Measured human-skin spectral variation has a finite empirical geometry whose
+    dimension and strata dependence can be estimated from ISSA.
+  primary_evidence:
+  - ISSA
+  external_validation:
+  - NIST skin reflectance
+  - Hyper-Skin
+  - 2025 facial HSI database
+  status: active
+- id: C-B1
+  level: B
+  claim: The observability of measured skin spectra depends on the alignment between
+    empirical skin variation and the declared camera-illuminant row space.
+  primary_evidence:
+  - ISSA
+  - camera sensitivity family
+  - illuminant family
+  status: active
+- id: C-B2
+  level: B/C
+  claim: Physically plausible skin spectra can collapse to indistinguishable camera
+    responses under realistic tolerance, with prevalence and severity that may vary
+    by operating condition.
+  primary_evidence:
+  - ISSA direct collisions
+  - forward-model-constrained metamers
+  status: active
+- id: C-C1
+  level: C
+  claim: Tone-dependent uncertainty can be decomposed into interacting measurement
+    and biological mechanisms under a declared forward and noise model.
+  primary_evidence:
+  - ISSA
+  - validated forward model
+  - camera/illuminant/noise families
+  status: active
+- id: C-C2
+  level: C
+  claim: An added measurement can be selected to contract uncertainty subject to cost
+    and subgroup-parity constraints.
+  primary_evidence:
+  - ISSA held-out recovery
+  - sensor-design simulation
+  status: active
+- id: C-D1
+  level: D
+  claim: A physics-derived recoverability score has incremental clinical explanatory
+    value beyond lesion contrast and data quality.
+  primary_evidence:
+  - DDI
+  replication:
+  - DDI-2
+  controls:
+  - Fitzpatrick17k/CleanPatrick
+  - MST-E
+  status: active_separate_paper
+prohibited_claims:
+- ISSA proves consumer smartphone correction accuracy
+- ITA is direct melanin concentration
+- all darker skin is intrinsically less measurable
+- metamerism alone explains a clinical fairness gap
+- a low reconstruction error proves identifiability
+- a physically plausible forward fit proves recovered parameters are true
+- a single camera or illuminant supports a universal claim
+- image-domain tone labels are equivalent to instrument colorimetry
+- current assets validate a production RGB-to-spectrum corrector

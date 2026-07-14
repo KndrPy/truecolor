@@ -1,0 +1,67 @@
+stage: 4
+name: measurand_stability_and_biological_nuisance_decomposition
+status: CLOSED_WITH_SCOPE_LIMITATION
+canonical_path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+canonical_sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+canonical_rows: 15256
+resolved_columns:
+  subject: subject_id
+  origin: origin_code
+  instrument: instrument_code
+  body_site: body_location_code
+  specular: spin_spex_code
+  exposure: null
+  L: L*
+  a: a*
+  b: b*
+  ita: null
+valid_ita_rows: 15256
+missing_ita_rows: 0
+ita_instability_rows: 0
+ita_p95_registered_perturbation_shift_degrees: 0.34788788407660753
+erythema_partial_r2: 0.033973383721024764
+erythema_material: false
+instrument_level_count: 1
+instrument_testable: false
+body_site_level_count: 12
+body_site_testable: true
+body_site_mean_ita_range: 20.025960946177864
+body_site_restriction_required: true
+specular_level_count: 1
+specular_testable: false
+sci_sce_pair_count: 0
+sci_sce_mean_delta_ita: null
+specular_restriction_required: null
+exposure_level_count: 0
+protected_exposed_testable: false
+protected_exposed_pair_count: 0
+protected_exposed_mean_delta_ita: null
+unresolved_scope_dimensions:
+- instrument_effect_not_estimable_single_level
+- sci_sce_effect_not_estimable_single_level
+- protected_exposed_effect_not_testable
+global_scalar_tone_admissible: false
+gates:
+  stage3_closed: true
+  canonical_row_count_match: true
+  required_columns_resolved: true
+  subject_count_reconciled: true
+  ita_reconstructed: true
+  ita_numerical_sensitivity_quantified: true
+  erythema_contamination_quantified: true
+  body_site_metadata_resolved: true
+  body_site_effect_quantified: true
+  instrument_metadata_resolved: true
+  specular_metadata_resolved: true
+  protected_pairs_completed_or_optional: true
+  sci_sce_pairs_completed_or_optional: true
+hard_failed_gates: []
+next_stage:
+  id: 5
+  name: spectral_geometry_and_effective_information_dimension
+  inherited_restrictions:
+  - condition_or_stratify_by_body_location_code
+  - do_not_claim_cross_instrument_stability
+  - do_not_claim_SCI_SCE_equivalence
+  - do_not_claim_protected_exposed_equivalence
+  - do_not_use_global_subject_skin_tone_scalar

@@ -1,0 +1,13 @@
+method_id,method,papers,role,disposition,binding_requirement
+M01,Affine / region-specific color correction,P01,device color transfer,baseline only,must operate in linear light for physical interpretation; report ΔE and absolute agreement
+M02,Null-space / metameric-black analysis,"P02,P18",identifiability,core baseline,must constrain to measured or physically plausible skin
+M03,Deep RGB-to-HSI reconstruction,"P03,P13,P18",prediction,benchmark only,must separate evidence from prior and include device/illuminant holdout
+M04,Data cleaning and expert relabeling,P04,data quality,mandatory control,must test differential removal by tone and disease
+M05,Clinical subgroup performance,"P05,P06,P16",clinical manifestation,external analysis,patient-disjoint; disease/prevalence/contrast controls
+M06,Perceptual tone scales,"P06,P07,P16",grouping/appearance,secondary descriptor,not a physical measurand
+M07,Controlled smartphone tristimulus colorimetry,P08,positive control,capture boundary,does not prove spectrum recovery
+M08,Camera spectral/radiometric calibration,"P09,P10",observation operator,required uncertainty family,measured and estimated sensitivity curves kept distinct
+M09,Polarization imaging,P11,added measurement,candidate,evaluate incremental information under equal cost
+M10,Layered skin forward model,P12,physics,falsifiable model,"fit residuals, solver disagreement, identifiability"
+M11,Traceable reflectance metrology,"P14,P15",external truth,required validation,sampling area and geometry treated explicitly
+M12,Eigenspectral / low-dimensional basis,P17,representation,candidate,cannot be treated as new measured information

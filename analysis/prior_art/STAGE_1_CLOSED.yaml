@@ -1,0 +1,21 @@
+stage: 1
+name: prior_art_extraction_and_claim_lock
+status: closed
+paper_count: 18
+valid_pdf_count: 18
+invalid_pdf_count: 0
+active_novelty_claims: 6
+artifacts:
+  - README.md
+  - prior_art_canonical_inventory.csv
+  - prior_art_claim_matrix.csv
+  - prior_art_dataset_matrix.csv
+  - prior_art_equation_inventory.csv
+  - prior_art_method_matrix.csv
+  - novelty_claim_register.yaml
+  - novelty_kill_register.yaml
+  - prior_art_review.md
+  - sha256_manifest.csv
+next_stage:
+  id: 2
+  name: estimand_and_claim_registration

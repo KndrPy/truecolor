@@ -1,0 +1,30 @@
+dataset: ISSA
+test_rows: 2314
+status: sealed
+opening_conditions:
+- Stage 3 metrology closure passed
+- Stage 4 measurand admissibility passed
+- Stage 5-12 analysis code and thresholds frozen
+- simulation gate passed
+- preprocessing and model-selection procedures frozen
+- Git commit and environment lock recorded
+- one-time open authorization recorded
+permitted_before_open:
+- schema validation
+- row-count and subject-disjoint verification
+- cryptographic hashing
+- no target distributions, metrics, plots, or model evaluation
+opening_record:
+  required_fields:
+  - timestamp
+  - git_commit
+  - environment_hash
+  - authorized_by
+  - purpose
+  - files_opened
+  file: lockbox_open_record.yaml
+post_open:
+- no retuning
+- all deviations are material protocol deviations
+- failed primary claims remain failed
+- additional analyses are labeled post-lockbox exploratory

@@ -1,0 +1,56 @@
+stage: 4
+name: measurand_stability_and_biological_nuisance_decomposition
+status: closed_with_scope_limitation
+
+canonical_source:
+  path: /mnt/d/truecolor-data/derived/issa/issa_analysis_table.parquet
+  sha256: 07544f431bfb1892bae639570c871a4ebc56849e18f92e960699916f96dfb090
+  rows: 15256
+
+ita:
+  reconstructed_rows: 15256
+  missing_rows: 0
+  numerical_instability_rows: 0
+  p95_registered_perturbation_shift_degrees: 0.34788788407660753
+
+erythema:
+  partial_r2_a_star: 0.033973383721024764
+  registered_material_threshold: 0.05
+  material: false
+
+body_site:
+  column: body_location_code
+  levels: 12
+  mean_ita_range_degrees: 20.025960946177864
+  registered_material_threshold_degrees: 5.0
+  restriction_required: true
+
+instrument:
+  column: instrument_code
+  levels: 1
+  value: SP
+  effect_estimable: false
+
+specular:
+  column: spin_spex_code
+  levels: 1
+  value: SCI
+  sci_sce_effect_estimable: false
+
+protected_exposed:
+  metadata_available: false
+  effect_estimable: false
+
+adjudication:
+  global_scalar_tone_admissible: false
+  required_analysis_unit: body_site_conditioned_measurement
+  inherited_restrictions:
+    - condition_or_stratify_by_body_location_code
+    - do_not_claim_cross_instrument_stability
+    - do_not_claim_SCI_SCE_equivalence
+    - do_not_claim_protected_exposed_equivalence
+    - do_not_use_global_subject_skin_tone_scalar
+
+next_stage:
+  id: 5
+  name: spectral_geometry_and_effective_information_dimension

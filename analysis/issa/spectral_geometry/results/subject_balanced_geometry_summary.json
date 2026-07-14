@@ -1,0 +1,12 @@
+{
+  "body_sites": 12,
+  "components_for_targets": {
+    "0.9": 1,
+    "0.95": 2,
+    "0.99": 3
+  },
+  "participation_ratio": 1.1220300268213095,
+  "shannon_effective_rank": 1.3048059324459265,
+  "subject_site_rows": 14543,
+  "unique_subjects": 2107
+}
