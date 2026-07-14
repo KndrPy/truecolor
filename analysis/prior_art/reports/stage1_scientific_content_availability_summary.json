@@ -1,0 +1,11 @@
+{
+  "candidate_file_count": 10,
+  "output": "analysis/prior_art/adjudication/stage1_scientific_content_availability.csv",
+  "paper_count": 48,
+  "readable_file_count": 10,
+  "schema_version": "1.0.0",
+  "scientific_content_state_counts": {
+    "NO_EXISTING_SOURCE_MATCH": 48
+  },
+  "work_package": "S1-CANON-02C"
+}

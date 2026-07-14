@@ -1,0 +1,17 @@
+{
+  "blocker_code": "SCIENTIFIC_SOURCE_CONTENT_NOT_ACQUIRED",
+  "blocker_state": "BLOCKED",
+  "outputs": {
+    "acquisition_queue_csv": "analysis/prior_art/adjudication/stage1_source_acquisition_queue.csv",
+    "acquisition_queue_json": "analysis/prior_art/adjudication/stage1_source_acquisition_queue.json",
+    "stage_blocker": "analysis/prior_art/STAGE_1_BLOCKED.yaml"
+  },
+  "paper_count": 48,
+  "papers_with_existing_content": 0,
+  "priority_counts": {
+    "P1_CLOSEST_PAPERS": 16,
+    "P2_REMAINING_COHORT": 32
+  },
+  "schema_version": "1.0.0",
+  "work_package": "S1-CANON-02D"
+}

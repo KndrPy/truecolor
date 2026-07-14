@@ -1,0 +1,33 @@
+{
+  "claim_counts": {
+    "TC-NOV-001": 15,
+    "TC-NOV-002": 15,
+    "TC-NOV-003": 15,
+    "TC-NOV-004": 15,
+    "TC-NOV-005": 15,
+    "TC-NOV-006": 15
+  },
+  "claim_slot_count": 90,
+  "cohort_source_sha256": "a06f21091847836ff9ba0483733d1aad965c3348b8a360123127086818b18cd2",
+  "evidence_state_counts": {
+    "EVIDENCE_RESOLVED": 48
+  },
+  "final_correction": {
+    "canonical_key": "doi:10.5220/0014632400004084",
+    "decision": "EXCLUDE_OFF_TOPIC",
+    "reason": "Synthetic edge-detection image and annotation data do not address dermatology, skin-tone fairness, measurement physics, clinical validation, or the TrueColor cross-domain evidence chain.",
+    "reason_code": "GENERIC_SYNTHETIC_EDGE_DATASET"
+  },
+  "indexed_file_count": 4594,
+  "outputs": {
+    "evidence_manifest": "analysis/prior_art/adjudication/stage1_evidence_resolution_manifest.csv",
+    "extraction_queue": "analysis/prior_art/adjudication/stage1_scientific_extraction_queue.csv",
+    "final_cohort": "analysis/prior_art/adjudication/stage1_claim_review_cohort_final.csv",
+    "final_exclusions": "analysis/prior_art/adjudication/stage1_exclusion_ledger_final.csv",
+    "final_queue": "analysis/prior_art/adjudication/stage1_scientific_review_queue_final.csv"
+  },
+  "queue_source_sha256": "f4a0d8cb630111728c1b07c254b49e129179515484cd4ff324c5abb99e68f6cf",
+  "schema_version": "1.0.0",
+  "unique_review_paper_count": 48,
+  "work_package": "S1-CANON-02A"
+}

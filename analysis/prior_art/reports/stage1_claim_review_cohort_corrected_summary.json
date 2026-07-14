@@ -1,0 +1,26 @@
+{
+  "claim_candidate_counts": {
+    "TC-NOV-001": 15,
+    "TC-NOV-002": 15,
+    "TC-NOV-003": 15,
+    "TC-NOV-004": 15,
+    "TC-NOV-005": 15,
+    "TC-NOV-006": 15
+  },
+  "claim_slot_count": 90,
+  "contextual_record_count": 1,
+  "correction_count": 3,
+  "excluded_record_count": 16,
+  "outputs": {
+    "claim_cohort": "analysis/prior_art/adjudication/stage1_claim_review_cohort_corrected.csv",
+    "claim_cohort_json": "analysis/prior_art/adjudication/stage1_claim_review_cohort_corrected.json",
+    "exclusion_ledger": "analysis/prior_art/adjudication/stage1_exclusion_ledger_v2.csv",
+    "queue": "analysis/prior_art/adjudication/stage1_scientific_review_queue_adjudicated_v2.csv"
+  },
+  "queue_source": "analysis/prior_art/adjudication/stage1_scientific_review_queue_adjudicated.csv",
+  "queue_source_sha256": "288a03acb13e1eccfc127006a958fd3a8a2f1fc57b186a54f5383681d7b3bf99",
+  "schema_version": "1.0.0",
+  "total_exclusion_ledger_rows": 17,
+  "unique_review_paper_count": 48,
+  "work_package": "S1-CANON-01D"
+}
