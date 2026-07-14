@@ -1,0 +1,79 @@
+{
+  "allowed_terminal_roles": [
+    "FULL_SCIENTIFIC_EXTRACTION",
+    "BOUNDED_SCIENTIFIC_REVIEW",
+    "MATERIAL_LINEAGE_REFERENCE",
+    "EXCLUDED_WITH_REASON",
+    "TERMINAL_SOURCE_UNAVAILABLE"
+  ],
+  "canonical_identity": "doi:10.1111/srt.12421",
+  "corpus_member_id": "CORPUS-45015e13a1263d20",
+  "current_coverage_role": "REVIEW_DISPOSITION_REQUIRED",
+  "current_coverage_state": "PENDING",
+  "decision": {
+    "decision_reason": null,
+    "evidence_basis": [],
+    "reviewed_at": null,
+    "reviewer": null,
+    "reviewer_attestation": null,
+    "selected_terminal_role": null
+  },
+  "decision_contract": {
+    "fuzzy_identity_matching_prohibited": true,
+    "rank_only_decision_prohibited": true,
+    "role_contracts": {
+      "BOUNDED_SCIENTIFIC_REVIEW": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "EXCLUDED_WITH_REASON": {
+        "evidence_basis_required": true,
+        "reason_required": true,
+        "reviewer_attestation_required": true
+      },
+      "FULL_SCIENTIFIC_EXTRACTION": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "MATERIAL_LINEAGE_REFERENCE": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "TERMINAL_SOURCE_UNAVAILABLE": {
+        "evidence_basis_required": true,
+        "reason_required": true,
+        "reviewer_attestation_required": true
+      }
+    },
+    "scientific_claim_inference_prohibited": true,
+    "terminal_role_requires_explicit_reviewer_decision": true,
+    "title_only_decision_prohibited": true
+  },
+  "existing_disposition_observations": [],
+  "source_metadata": {
+    "best_domain_rank": 4,
+    "canonical_key": "doi:10.1111/srt.12421",
+    "claim_count": 2,
+    "claim_id": "TC-NOV-001",
+    "claim_rank": 12,
+    "claims_json": "[\"TC-NOV-001\",\"TC-NOV-005\"]",
+    "doi": "10.1111/srt.12421",
+    "domain_count": 1,
+    "domains_json": "[\"skin_tissue_optical_forward_models\"]",
+    "maximum_domain_score": 16.079181,
+    "review_status": "PENDING_EVIDENCE_RESOLUTION",
+    "scientific_review_priority": 83.158362,
+    "screen_decision": "UNADJUDICATED",
+    "title": "Analysis of the influence of collagen fibres in the dermis on skin optical reflectance by Monte Carlo simulation in a nine\u2010layered skin model",
+    "unique_review_order": 33,
+    "url": "https://doi.org/10.1111/srt.12421",
+    "year": "2018.0"
+  },
+  "task_id": "DISPOSITION-TASK-45015e13a1263d20",
+  "task_schema": "qudipi.stage1.corpus-disposition-task",
+  "task_state": "PENDING_DISPOSITION",
+  "task_version": 1
+}

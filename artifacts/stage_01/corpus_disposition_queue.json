@@ -1,0 +1,306 @@
+{
+  "completed_task_count": 0,
+  "coverage_path": "artifacts/stage_01/corpus_coverage_register.json",
+  "coverage_policy_path": "analysis/prior_art/stage1_closure/truecolor_stage1_coverage_policy.json",
+  "coverage_policy_sha256": "2acd6526f7c022fb55098218a12d81aa5899a48b736eb35ca4c02bbff5ed41f9",
+  "coverage_sha256": "ffa83985f3de70d0fd5c00a88ac8aefbe437fccb1f1416b9bc92b2c5c99d359b",
+  "disposition_evidence_path": "artifacts/stage_01/corpus_disposition_evidence_register.json",
+  "disposition_evidence_sha256": "f9052106737729110e21c22143d296a6fd8915a3c02f3df869d3490dc3c4654d",
+  "manifest_path": "artifacts/stage_01/truecolor_stage1_instance.json",
+  "manifest_sha256": "fb981f8cf7c2875ec613ae4b55f2017ece972ddbd9972d8eb69011abbc1cbd66",
+  "pending_source_count": 32,
+  "queue_schema": "qudipi.stage1.corpus-disposition-queue",
+  "queue_state": "READY",
+  "queue_version": 1,
+  "task_count": 32,
+  "tasks": [
+    {
+      "canonical_identity": "doi:10.1016/j.jaad.2022.06.115",
+      "corpus_member_id": "CORPUS-c84160c4be5aec03",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-c84160c4be5aec03",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_c84160c4be5aec03.json",
+      "task_sha256": "2947566a963b7b8795c3ce0a35c7266de3ec70c077b0e41a130a16ec5f0dfccb",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1016/j.visres.2022.108048",
+      "corpus_member_id": "CORPUS-0fdb2019d281b81c",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-0fdb2019d281b81c",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_0fdb2019d281b81c.json",
+      "task_sha256": "b0bd4f5416bdcda6dc8f9d284f34c11f1983198d1d902c2ca62fb5242e9c254f",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1016/s0924-2031(01)00144-8",
+      "corpus_member_id": "CORPUS-c6ae9161a87747ca",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-c6ae9161a87747ca",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_c6ae9161a87747ca.json",
+      "task_sha256": "2982606895c91fbacbf12917700c4d4e28ce06405af8eab3c6fa8aee4db153a8",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1038/s41591-023-02540-z",
+      "corpus_member_id": "CORPUS-eec76c4dd7b0817f",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-eec76c4dd7b0817f",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_eec76c4dd7b0817f.json",
+      "task_sha256": "700d320b42b44744d60fbbd4a01c0e2c2e3018f9783cbef50dd449afb0ba0f62",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1093/bjd/ljag151.052",
+      "corpus_member_id": "CORPUS-bc75393e9f09c939",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-bc75393e9f09c939",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_bc75393e9f09c939.json",
+      "task_sha256": "846a7bba569f4e9a045f6640ddf1441a66ed4c20e26dcf5b8b6933810e39c7e4",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1093/ced/llaf145",
+      "corpus_member_id": "CORPUS-b865cc8780095eb9",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-b865cc8780095eb9",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_b865cc8780095eb9.json",
+      "task_sha256": "66d29703924cfc09fbb5f401f5a1dc7cd66ae6756b16f927bb36fae768911d48",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1109/iccphot.2016.7492879",
+      "corpus_member_id": "CORPUS-9800795f20165472",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-9800795f20165472",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_9800795f20165472.json",
+      "task_sha256": "3b1531ae9bef9d62a5e5622bfdf18f38be87206e55e04710a0baf140bd667c54",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1109/iccvw60793.2023.00122",
+      "corpus_member_id": "CORPUS-b6ab3fc03178082f",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-b6ab3fc03178082f",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_b6ab3fc03178082f.json",
+      "task_sha256": "740f27af8187c6d057caf5b6ecae31420690eff5436dab2db35009a522b7142a",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1109/tip.2017.2764264",
+      "corpus_member_id": "CORPUS-e6236613e4733a0d",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-e6236613e4733a0d",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_e6236613e4733a0d.json",
+      "task_sha256": "1da5818e56ce1feb51275429fa5c09adde451559c5bdff5eed7598526dbaee6b",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1109/wacvw60836.2024.00067",
+      "corpus_member_id": "CORPUS-3043caf9e757ba1d",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-3043caf9e757ba1d",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_3043caf9e757ba1d.json",
+      "task_sha256": "4be0c14395b3992930bb8f8bf1855a0737fe64cf245a0f9abc6abd960ff42bc4",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1111/ics.12147",
+      "corpus_member_id": "CORPUS-a9aa478e6b533356",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-a9aa478e6b533356",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_a9aa478e6b533356.json",
+      "task_sha256": "5174c483e4e60ed486cc76d2eadefc402ce7eee3bbfa910665136b425f930f63",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1111/ijd.70452",
+      "corpus_member_id": "CORPUS-65e3bb54b0d7adc4",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-65e3bb54b0d7adc4",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_65e3bb54b0d7adc4.json",
+      "task_sha256": "b732f0ad6b42313f3f282a459eca95fcfce436fc55785d942dbd6fc018d1507f",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1111/j.1600-0846.1997.tb00191.x",
+      "corpus_member_id": "CORPUS-e7f3fc0263e72f79",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-e7f3fc0263e72f79",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_e7f3fc0263e72f79.json",
+      "task_sha256": "1876b15295fa4662d4e7aeadde43150886495677311badd596ea83fb2dd83d0b",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1111/srt.12396",
+      "corpus_member_id": "CORPUS-5916f5967be4db17",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-5916f5967be4db17",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_5916f5967be4db17.json",
+      "task_sha256": "2744ae24ca7fc888f04a901e335a661deeeef9cc624dbd03f6678b9cb8662c4f",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1111/srt.12421",
+      "corpus_member_id": "CORPUS-45015e13a1263d20",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-45015e13a1263d20",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_45015e13a1263d20.json",
+      "task_sha256": "a43a8e9be26469f994c48a7c93c054ed2be7549698d101c2286808586849fd9c",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1111/srt.13207",
+      "corpus_member_id": "CORPUS-0c20a1f05d8be4be",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-0c20a1f05d8be4be",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_0c20a1f05d8be4be.json",
+      "task_sha256": "b54b53b04fcd8513730d3f0fd4148ed18ee04ba29b7bfc7d35ccfd4b8a097bbe",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1117/1.jbo.27.2.026004",
+      "corpus_member_id": "CORPUS-13fcfe1ce95a00f0",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-13fcfe1ce95a00f0",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_13fcfe1ce95a00f0.json",
+      "task_sha256": "9e288669f5533ddef95f9ddd8bef83ee4400c651dd00f60fb32f8eab5b3b6c56",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1117/1.jbo.28.10.107001",
+      "corpus_member_id": "CORPUS-4b1e6a689b9d4328",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-4b1e6a689b9d4328",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_4b1e6a689b9d4328.json",
+      "task_sha256": "dd4b5099ebfaf5c9a57644b5ccd78a4d288b46108ee9bf538b144c8cd1df2932",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1117/1.jbo.29.9.093507",
+      "corpus_member_id": "CORPUS-ead1102aae0c938a",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-ead1102aae0c938a",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_ead1102aae0c938a.json",
+      "task_sha256": "a78c4ac4f242aec4d7d2e92c8453e2f3614093e0ae3bbc7bf401c94ba3b288f6",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1117/12.3098404",
+      "corpus_member_id": "CORPUS-1f4f0478ed0babcf",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-1f4f0478ed0babcf",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_1f4f0478ed0babcf.json",
+      "task_sha256": "bac1f75b78090c7edac14c88f8c3a5ab8b093d46b464b1b65ecf978db8a076e0",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1364/boe.507361",
+      "corpus_member_id": "CORPUS-eb4b597fdf8a1bc0",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-eb4b597fdf8a1bc0",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_eb4b597fdf8a1bc0.json",
+      "task_sha256": "367d497c1518e92ab9e3a966a8b5f1b81364083367c28cd98c36ef8166d02612",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1364/boe.570414",
+      "corpus_member_id": "CORPUS-37d387d2ae7cd099",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-37d387d2ae7cd099",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_37d387d2ae7cd099.json",
+      "task_sha256": "18d6d34fa3249c6f491bce795bb07f32100ac11161dec9b318760200edd45e9b",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1364/josaa.23.001814",
+      "corpus_member_id": "CORPUS-11f30fb957882c10",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-11f30fb957882c10",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_11f30fb957882c10.json",
+      "task_sha256": "0229ee66f60dd4bb70f9c96f6e6d2fd56ad23819807e91e7444b639ae113226b",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.1371/journal.pone.0280670",
+      "corpus_member_id": "CORPUS-caacedd3bf88372c",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-caacedd3bf88372c",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_caacedd3bf88372c.json",
+      "task_sha256": "a879848c86c306c27d9813a7b418834403adc7567d7c88b7eb36d21ed1ccffea",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.19184/cerimre.v5i2.31668",
+      "corpus_member_id": "CORPUS-279512c38e323944",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-279512c38e323944",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_279512c38e323944.json",
+      "task_sha256": "6ef268745bada7a0fadd3942f1c1b446b20b124e3d292e8730cf7a2a89dae13d",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.3390/jimaging12050203",
+      "corpus_member_id": "CORPUS-216e636378952ff3",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-216e636378952ff3",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_216e636378952ff3.json",
+      "task_sha256": "d14df673ef7c3d894ffc136b8f34b07d97a16ab935b8f2158f13d8f0f39d6197",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.3390/jimaging9020047",
+      "corpus_member_id": "CORPUS-c78ba86b99b9b24a",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-c78ba86b99b9b24a",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_c78ba86b99b9b24a.json",
+      "task_sha256": "f4a7f0475298e3cda95ca9652d6498a5b2d5f3985a8b3152ea2498b589b75c6d",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.3390/s130607902",
+      "corpus_member_id": "CORPUS-f080b5839173d8c5",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-f080b5839173d8c5",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_f080b5839173d8c5.json",
+      "task_sha256": "189c3355c970b2875d9472c1ba23fc301a3af8d5152baa1205da82bcbb58b45d",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.3390/s22134923",
+      "corpus_member_id": "CORPUS-caa3807463814a9c",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-caa3807463814a9c",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_caa3807463814a9c.json",
+      "task_sha256": "02688bd350b4433b5c0fb0565eed6ce8b161f735d290813d00f9354cd62928e2",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.3390/s23083888",
+      "corpus_member_id": "CORPUS-f3072983e3180c15",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-f3072983e3180c15",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_f3072983e3180c15.json",
+      "task_sha256": "f488f5a32b492ad5f1ba28968576472e331120acc4587c533cc6327fa03c6772",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.5753/sibgrapi.est.2024.31648",
+      "corpus_member_id": "CORPUS-5c8179033fa93f1f",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-5c8179033fa93f1f",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_5c8179033fa93f1f.json",
+      "task_sha256": "8b4a8d50bbfac2a58b8a547a06461bf033867b1a2596a63892984ef2fe9f6ffd",
+      "task_state": "PENDING_DISPOSITION"
+    },
+    {
+      "canonical_identity": "doi:10.7759/cureus.94909",
+      "corpus_member_id": "CORPUS-cea3a0861fd3571a",
+      "existing_observation_count": 0,
+      "task_id": "DISPOSITION-TASK-cea3a0861fd3571a",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_cea3a0861fd3571a.json",
+      "task_sha256": "4328673be4d13b6a704cd265c990a91c23e24416278545c0d001498df49f0f5b",
+      "task_state": "PENDING_DISPOSITION"
+    }
+  ]
+}

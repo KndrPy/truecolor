@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qudipi.local/schemas/stage1-corpus-disposition-task.schema.json",
+  "title": "QuDiPi Stage 1 Corpus Disposition Task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_schema",
+    "task_version",
+    "task_id",
+    "task_state",
+    "corpus_member_id",
+    "canonical_identity",
+    "current_coverage_state",
+    "current_coverage_role",
+    "source_metadata",
+    "existing_disposition_observations",
+    "allowed_terminal_roles",
+    "decision_contract",
+    "decision"
+  ],
+  "properties": {
+    "task_schema": {
+      "const": "qudipi.stage1.corpus-disposition-task"
+    },
+    "task_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_state": {
+      "enum": [
+        "PENDING_DISPOSITION",
+        "IN_REVIEW",
+        "COMPLETED",
+        "BLOCKED"
+      ]
+    },
+    "corpus_member_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_coverage_state": {
+      "type": "string"
+    },
+    "current_coverage_role": {
+      "type": "string"
+    },
+    "source_metadata": {
+      "type": "object"
+    },
+    "existing_disposition_observations": {
+      "type": "array"
+    },
+    "allowed_terminal_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "decision_contract": {
+      "type": "object"
+    },
+    "decision": {
+      "type": "object"
+    }
+  }
+}

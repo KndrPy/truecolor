@@ -8,10 +8,12 @@
   "configured_matrix_count": 6,
   "corpus_coverage_policy_id": "truecolor-stage1-corpus-coverage-v1",
   "corpus_disposition_conflict_count": 0,
+  "corpus_disposition_queue_path": "artifacts/stage_01/corpus_disposition_queue.json",
   "evidence_covered_source_count": 16,
   "full_extraction_is_not_required_for_all_governed_sources": true,
   "invalid_corpus_disposition_count": 0,
   "pending_corpus_disposition_count": 32,
+  "pending_corpus_disposition_task_count": 32,
   "pending_review_task_count": 6,
   "prohibited_actions": [
     "hard-code corpus size",

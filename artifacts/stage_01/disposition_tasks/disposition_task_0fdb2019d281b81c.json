@@ -1,0 +1,79 @@
+{
+  "allowed_terminal_roles": [
+    "FULL_SCIENTIFIC_EXTRACTION",
+    "BOUNDED_SCIENTIFIC_REVIEW",
+    "MATERIAL_LINEAGE_REFERENCE",
+    "EXCLUDED_WITH_REASON",
+    "TERMINAL_SOURCE_UNAVAILABLE"
+  ],
+  "canonical_identity": "doi:10.1016/j.visres.2022.108048",
+  "corpus_member_id": "CORPUS-0fdb2019d281b81c",
+  "current_coverage_role": "REVIEW_DISPOSITION_REQUIRED",
+  "current_coverage_state": "PENDING",
+  "decision": {
+    "decision_reason": null,
+    "evidence_basis": [],
+    "reviewed_at": null,
+    "reviewer": null,
+    "reviewer_attestation": null,
+    "selected_terminal_role": null
+  },
+  "decision_contract": {
+    "fuzzy_identity_matching_prohibited": true,
+    "rank_only_decision_prohibited": true,
+    "role_contracts": {
+      "BOUNDED_SCIENTIFIC_REVIEW": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "EXCLUDED_WITH_REASON": {
+        "evidence_basis_required": true,
+        "reason_required": true,
+        "reviewer_attestation_required": true
+      },
+      "FULL_SCIENTIFIC_EXTRACTION": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "MATERIAL_LINEAGE_REFERENCE": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "TERMINAL_SOURCE_UNAVAILABLE": {
+        "evidence_basis_required": true,
+        "reason_required": true,
+        "reviewer_attestation_required": true
+      }
+    },
+    "scientific_claim_inference_prohibited": true,
+    "terminal_role_requires_explicit_reviewer_decision": true,
+    "title_only_decision_prohibited": true
+  },
+  "existing_disposition_observations": [],
+  "source_metadata": {
+    "best_domain_rank": 7,
+    "canonical_key": "doi:10.1016/j.visres.2022.108048",
+    "claim_count": 3,
+    "claim_id": "TC-NOV-001",
+    "claim_rank": 10,
+    "claims_json": "[\"TC-NOV-001\",\"TC-NOV-003\",\"TC-NOV-005\"]",
+    "doi": "10.1016/j.visres.2022.108048",
+    "domain_count": 3,
+    "domains_json": "[\"fisher_information_and_cramer_rao_skin_imaging\",\"melanin_hemoglobin_and_scattering_identifiability\",\"multispectral_band_selection_and_measurement_design\"]",
+    "maximum_domain_score": 11.255273,
+    "review_status": "PENDING_EVIDENCE_RESOLUTION",
+    "scientific_review_priority": 89.79626028571428,
+    "screen_decision": "UNADJUDICATED",
+    "title": "Effect of skin colors due to hemoglobin or melanin modulation on facial expression recognition",
+    "unique_review_order": 8,
+    "url": "https://doi.org/10.1016/j.visres.2022.108048",
+    "year": "2022.0"
+  },
+  "task_id": "DISPOSITION-TASK-0fdb2019d281b81c",
+  "task_schema": "qudipi.stage1.corpus-disposition-task",
+  "task_state": "PENDING_DISPOSITION",
+  "task_version": 1
+}

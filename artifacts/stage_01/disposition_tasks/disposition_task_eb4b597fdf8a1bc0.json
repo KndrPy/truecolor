@@ -1,0 +1,79 @@
+{
+  "allowed_terminal_roles": [
+    "FULL_SCIENTIFIC_EXTRACTION",
+    "BOUNDED_SCIENTIFIC_REVIEW",
+    "MATERIAL_LINEAGE_REFERENCE",
+    "EXCLUDED_WITH_REASON",
+    "TERMINAL_SOURCE_UNAVAILABLE"
+  ],
+  "canonical_identity": "doi:10.1364/boe.507361",
+  "corpus_member_id": "CORPUS-eb4b597fdf8a1bc0",
+  "current_coverage_role": "REVIEW_DISPOSITION_REQUIRED",
+  "current_coverage_state": "PENDING",
+  "decision": {
+    "decision_reason": null,
+    "evidence_basis": [],
+    "reviewed_at": null,
+    "reviewer": null,
+    "reviewer_attestation": null,
+    "selected_terminal_role": null
+  },
+  "decision_contract": {
+    "fuzzy_identity_matching_prohibited": true,
+    "rank_only_decision_prohibited": true,
+    "role_contracts": {
+      "BOUNDED_SCIENTIFIC_REVIEW": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "EXCLUDED_WITH_REASON": {
+        "evidence_basis_required": true,
+        "reason_required": true,
+        "reviewer_attestation_required": true
+      },
+      "FULL_SCIENTIFIC_EXTRACTION": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "MATERIAL_LINEAGE_REFERENCE": {
+        "evidence_basis_required": true,
+        "reason_required": false,
+        "reviewer_attestation_required": true
+      },
+      "TERMINAL_SOURCE_UNAVAILABLE": {
+        "evidence_basis_required": true,
+        "reason_required": true,
+        "reviewer_attestation_required": true
+      }
+    },
+    "scientific_claim_inference_prohibited": true,
+    "terminal_role_requires_explicit_reviewer_decision": true,
+    "title_only_decision_prohibited": true
+  },
+  "existing_disposition_observations": [],
+  "source_metadata": {
+    "best_domain_rank": 2,
+    "canonical_key": "doi:10.1364/boe.507361",
+    "claim_count": 2,
+    "claim_id": "TC-NOV-002",
+    "claim_rank": 13,
+    "claims_json": "[\"TC-NOV-002\",\"TC-NOV-005\"]",
+    "doi": "10.1364/boe.507361",
+    "domain_count": 1,
+    "domains_json": "[\"spectral_reflectance_geometry_and_dimension\"]",
+    "maximum_domain_score": 13.977121,
+    "review_status": "PENDING_EVIDENCE_RESOLUTION",
+    "scientific_review_priority": 98.954242,
+    "screen_decision": "UNADJUDICATED",
+    "title": "Dynamic model for the strain-modulated spectral reflectance of the human skin in vivo",
+    "unique_review_order": 26,
+    "url": "https://doi.org/10.1364/boe.507361",
+    "year": "2024.0"
+  },
+  "task_id": "DISPOSITION-TASK-eb4b597fdf8a1bc0",
+  "task_schema": "qudipi.stage1.corpus-disposition-task",
+  "task_state": "PENDING_DISPOSITION",
+  "task_version": 1
+}
