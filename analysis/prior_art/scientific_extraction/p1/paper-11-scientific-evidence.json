@@ -16,162 +16,630 @@
   "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
   "fields": {
     "algorithm_or_workflow": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00080",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Palette construction, calibration, sites, and instrument measurement are described."
+        },
+        {
+          "line_end": "L00143",
+          "line_start": "L00083",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Survey, exclusion, repeat reliability, and criterion-validity workflow are described."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Draft a broad palette using cosmetically relevant skin-tone shades",
+        "Conduct expert face-validity review and cognitive interviews",
+        "Reduce the palette to nine discriminable shades",
+        "Assign each shade a DSM II melanin-index reference value",
+        "Have participants select the closest shade for upper-inner arm and outer forearm",
+        "Measure melanin index at the same two sites with DSM II ColorMeter",
+        "Exclude recent artificial tanners from validity analysis",
+        "Assess repeat reliability with ICC",
+        "Assess criterion validity with Pearson correlation and 95% confidence intervals"
+      ]
     },
     "author_claimed_contribution": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00009",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The abstract states the inclusive, lower-cost palette and validation claim."
+        },
+        {
+          "line_end": "L00080",
+          "line_start": "L00041",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The development, calibration, and instrument comparison contributions are described."
+        },
+        {
+          "line_end": "L00205",
+          "line_start": "L00199",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The discussion interprets the palette as an accurate self-assessment tool at both sites."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "A compact nine-shade self-assessment skin-tone palette designed for broader racial and ethnic inclusion",
+        "Face-validity and cognitive-interviewing development process",
+        "Instrument calibration of palette shades to melanin-index values",
+        "Criterion validation against DSM II ColorMeter measurements",
+        "A less costly and less burdensome alternative for population skin-cancer research"
+      ]
     },
     "calibration_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00080",
+          "line_start": "L00060",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The palette shades and instrument-derived melanin values are specified."
+        },
+        {
+          "line_end": "L00143",
+          "line_start": "L00131",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The statistical analysis uses palette shades translated to their measured melanin values."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "The nine printed palette shades were measured with the DSM II ColorMeter and assigned fixed reference melanin-index values. These values were then used as the numerical representation of each participant's selected palette shade."
     },
     "camera_assumptions": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "No consumer camera, camera spectral sensitivity, camera-response curve, or camera-calibration assumption is involved.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "capture_protocol": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00080",
+          "line_start": "L00060",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The two sites and both assessment methods are specified."
+        },
+        {
+          "line_end": "L00130",
+          "line_start": "L00083",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Exclusions, recruitment, simultaneous assessment context, and repeat measurement are described."
+        },
+        {
+          "line_end": "L00143",
+          "line_start": "L00131",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Criterion validity compares contemporaneous palette and colorimeter values."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "assessment_methods": [
+          "Participant holds and selects from SASTP",
+          "Colorimeter melanin-index measurement"
+        ],
+        "exclusion": "Recent artificial tanning use excluded from validity analyses",
+        "repeat_assessment": "Repeat SASTP assessment approximately 3–5 weeks later",
+        "sites": {
+          "outer_forearm": "Sun-exposed or tanned skin",
+          "upper_inner_arm": "Non-sun-exposed or untanned skin"
+        },
+        "timing": "Palette selection and colorimeter measurement obtained at the same time for validity analysis"
+      }
     },
     "chromophore_representation": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00077",
+          "line_start": "L00069",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The colorimeter output is defined as a melanin index measuring skin tan level."
+        }
+      ],
+      "review_notes": "This field is established only at the scalar-index level; no mechanistic chromophore model is present.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Skin pigmentation is represented indirectly by the instrument's scalar melanin index. The paper does not estimate melanin concentration, spectral absorption, depth distribution, or other chromophores."
     },
     "computational_model": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00067",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The nine-shade palette and translated melanin values are defined."
+        },
+        {
+          "line_end": "L00143",
+          "line_start": "L00119",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The reliability and validity analyses are specified."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "analysis": [
+          "Intraclass correlation for repeat reliability",
+          "Pearson product-moment correlation for criterion validity",
+          "Confidence intervals"
+        ],
+        "mapping": "Each palette shade is assigned a reference melanin-index value measured with the colorimeter",
+        "representation": "Nine-category visual self-assessment palette"
+      }
     },
     "datasets": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00130",
+          "line_start": "L00083",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Recruitment, location, collection period, exclusion, and repeat-assessment design are reported."
+        },
+        {
+          "line_end": "L00171",
+          "line_start": "L00145",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The validity population and demographics are reported."
+        },
+        {
+          "line_end": "L00197",
+          "line_start": "L00192",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The reliability and validity analysis sample sizes are tabulated."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "collection_period": "October–December 2016",
+        "repeat_reliability_sample": {
+          "in_person_repeat_group": 73,
+          "online_repeat_group": 72,
+          "reported_participants": 146
+        },
+        "study_location": "Tucson, Arizona",
+        "validity_sample": {
+          "participants": 188,
+          "population": "Non-artificial tanners"
+        }
+      }
     },
     "equations": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00143",
+          "line_start": "L00119",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The statistical quantities and rationale for Pearson correlation are defined."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Intraclass correlation coefficient for test–retest reliability",
+        "Square root of reliability coefficient as an estimated upper limit of validity",
+        "Pearson product-moment correlation between palette-derived melanin values and measured melanin index",
+        "95% confidence intervals"
+      ]
     },
     "evaluation_metrics": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00143",
+          "line_start": "L00119",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "ICC, Pearson correlation, confidence intervals, and descriptive interpretation are defined."
+        },
+        {
+          "line_end": "L00197",
+          "line_start": "L00145",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Means, ranges, correlations, confidence intervals, and significance are reported."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Intraclass correlation coefficient",
+        "Pearson product-moment correlation coefficient",
+        "95% confidence interval",
+        "p-value",
+        "Mean melanin index",
+        "Melanin-index range"
+      ]
     },
     "illumination_assumptions": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00080",
+          "line_start": "L00076",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The source states that the instrument is not affected by ambient lighting and reports a location comparison with p = 0.99."
+        },
+        {
+          "line_end": "L00276",
+          "line_start": "L00272",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The discussion notes measurement under varying natural and artificial light and the manufacturer's internal-light compensation."
+        }
+      ],
+      "review_notes": "This is an instrument-controlled illumination condition, not estimation of unknown ambient illumination from an image.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "The handheld colorimeter is treated as insensitive to ambient lighting because its measurement system supplies and controls its own measurement illumination. The investigators also tested palette measurements across locations and found no location effect."
     },
     "instrument_or_camera": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00080",
+          "line_start": "L00069",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The instrument, manufacturer, output, and measurement technologies are stated."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "form_factor": "Handheld",
+        "instrument": "DSM II ColorMeter",
+        "manufacturer": "Cortex Technology, Hadsund, Denmark",
+        "measurement": "Melanin index",
+        "technologies": [
+          "Tristimulus colorimetry",
+          "Narrow-band spectrophotometry"
+        ]
+      }
     },
     "measured_inputs": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00080",
+          "line_start": "L00060",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The palette, anatomical sites, instrument, and melanin-index measurements are specified."
+        },
+        {
+          "line_end": "L00117",
+          "line_start": "L00083",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The questionnaire and participant-selected skin-tone measurements are described."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Participant-selected SASTP category for the upper-inner arm",
+        "Participant-selected SASTP category for the outer forearm",
+        "DSM II ColorMeter melanin-index measurement for the upper-inner arm",
+        "DSM II ColorMeter melanin-index measurement for the outer forearm",
+        "Demographic and sun-sensitivity questionnaire data"
+      ]
     },
     "observables": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00143",
+          "line_start": "L00119",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "ICC, Pearson correlation, continuous melanin index, and confidence intervals are defined."
+        },
+        {
+          "line_end": "L00197",
+          "line_start": "L00184",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Observed reliability and validity measures are reported."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Nine-level self-assessed skin-tone value",
+        "Continuous melanin index",
+        "Test–retest intraclass correlation",
+        "Pearson criterion-validity correlation",
+        "95% confidence interval",
+        "Sun-exposure status by anatomical site"
+      ]
     },
     "physical_model": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The study does not define a physical light–tissue, reflectance, absorption, or scattering model.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "problem_addressed": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00043",
+          "line_start": "L00021",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The introduction describes ambiguity, misclassification, inconsistent scale use, and underrepresentation of Hispanic and Black populations."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Conventional self-reported skin-color and sun-sensitivity scales were developed largely for White populations, may be interpreted inconsistently, and can misclassify skin color across racial and ethnic groups."
     },
     "reported_limitations": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00171",
+          "line_start": "L00145",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The results identify limited representation of Black participants and high melanin values."
+        },
+        {
+          "line_end": "L00276",
+          "line_start": "L00255",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The discussion identifies demographic and generalizability limitations."
+        }
+      ],
+      "review_notes": "The final limitation concerning representation granularity is an evidence-grounded methodological boundary: the paper explicitly defines a nine-point scale compared with a continuous instrument index.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "The population was predominantly White and/or Hispanic.",
+        "Few participants self-identified as Black.",
+        "Few participants had melanin-index values above 70.",
+        "The population was predominantly young.",
+        "Additional validation is required in darker-skinned and older populations.",
+        "The palette is a nine-level self-assessment tool and does not preserve continuous spectral or full colorimetric information."
+      ]
     },
     "reported_results": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00009",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The abstract reports the two primary criterion-validity correlations and significance."
+        },
+        {
+          "line_end": "L00197",
+          "line_start": "L00184",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The reliability, validity, sample sizes, and confidence intervals are tabulated."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "criterion_validity": {
+          "outer_forearm": {
+            "confidence_interval": [
+              0.7,
+              0.82
+            ],
+            "n": 188,
+            "p_value": "<0.001",
+            "pearson_r": 0.77
+          },
+          "upper_inner_arm": {
+            "confidence_interval": [
+              0.75,
+              0.85
+            ],
+            "n": 188,
+            "p_value": "<0.001",
+            "pearson_r": 0.81
+          }
+        },
+        "interpretation": "The palette correlated well with the colorimeter melanin index at both unexposed and exposed anatomical sites.",
+        "repeat_reliability": {
+          "in_person": {
+            "outer_forearm_ICC": 0.72,
+            "upper_inner_arm_ICC": 0.57
+          },
+          "online": {
+            "outer_forearm_ICC": 0.71,
+            "upper_inner_arm_ICC": 0.83
+          }
+        }
+      }
     },
     "sample_or_subject_population": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00009",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The abstract reports the core demographic composition."
+        },
+        {
+          "line_end": "L00171",
+          "line_start": "L00145",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Detailed race, age, sex, and darker-skin representation limits are reported."
+        },
+        {
+          "line_end": "L00276",
+          "line_start": "L00255",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The discussion identifies the predominant population and need for darker-skin and older population validation."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "age_percent": {
+          "18_to_29": 81,
+          "30_or_older": 19
+        },
+        "population_constraint": "Predominantly White and/or Hispanic, with few Black participants and few melanin-index values above 70",
+        "race_ethnicity_percent": {
+          "African_American": 4,
+          "Asian": 12,
+          "Hispanic_or_White_Hispanic": 30,
+          "Native_American_or_Alaskan": 3,
+          "White": 50
+        },
+        "sex_percent": {
+          "female": 70,
+          "male": 30
+        },
+        "validity_participants": 188
+      }
     },
     "scattering_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The study does not model or estimate optical scattering.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "scientific_objective": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00009",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The abstract defines the palette, comparator, anatomical sites, population, and criterion-validity objective."
+        },
+        {
+          "line_end": "L00043",
+          "line_start": "L00041",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The stated study purpose includes palette development and comparison with colorimeter melanin index."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Develop a compact nine-shade Self-Assessment Skin Tone Palette and test its face validity, repeat reliability, and criterion validity against a colorimeter-derived melanin index at sun-exposed and non-sun-exposed sites."
     },
     "skin_representation": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00067",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The palette structure, ordering, sites, and reference melanin values are defined."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "anatomical_conditioning": [
+          "Upper-inner arm, unexposed",
+          "Outer forearm, exposed"
+        ],
+        "instrument_reference": "Continuous melanin-index value",
+        "palette_order": "A1 lightest through C3 darkest in a 3 × 3 grid",
+        "reference_melanin_values": [
+          19.4,
+          20.5,
+          25.0,
+          30.6,
+          37.6,
+          58.6,
+          72.0,
+          90.5,
+          102.2
+        ],
+        "self_assessment": "Nine discrete visual skin-tone categories"
+      }
     },
     "truecolor_relevance": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00080",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The palette, anatomical sites, scalar melanin index, and controlled instrument are explicit."
+        },
+        {
+          "line_end": "L00197",
+          "line_start": "L00131",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Reliability and criterion-validity design and results are explicit."
+        },
+        {
+          "line_end": "L00276",
+          "line_start": "L00255",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Population coverage and generalizability limits are explicit."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "boundary": "The study validates a nine-category visual palette against a scalar melanin index from a controlled handheld instrument. It does not recover skin reflectance spectra, separate ambient illumination, infer camera response, or estimate mechanistic skin optical parameters.",
+        "directly_relevant_mechanisms": [
+          "Instrument-referenced validation of a human-facing skin-tone representation",
+          "Explicit distinction between exposed and unexposed anatomical sites",
+          "Population inclusion and darker-skin coverage limitations",
+          "Repeat reliability and criterion validity"
+        ],
+        "relevant_claims": [
+          "TC-NOV-004",
+          "TC-NOV-006"
+        ]
+      }
     },
     "validation_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00058",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Expert review and cognitive interviewing are described."
+        },
+        {
+          "line_end": "L00143",
+          "line_start": "L00119",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "Repeat reliability and criterion-validity methods are defined."
+        },
+        {
+          "line_end": "L00197",
+          "line_start": "L00184",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-11-full-text-review.txt",
+          "support": "The reported reliability and validity results are tabulated."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "criterion_validity": {
+          "method": "Pearson product-moment correlation",
+          "reference": "DSM II ColorMeter melanin index",
+          "sample": 188,
+          "sites": [
+            "Upper-inner arm",
+            "Outer forearm"
+          ]
+        },
+        "face_validity": [
+          "Skin-cancer expert review",
+          "Cognitive interviewing with diverse volunteers"
+        ],
+        "repeat_reliability": {
+          "interval": "Approximately one month",
+          "method": "Intraclass correlation coefficient"
+        }
+      }
     }
   },
   "minimum_claim_rank": 3,
+  "primary_extraction_evidence_selection": "analysis/prior_art/scientific_extraction/review_packets/paper-11-evidence-selection.txt",
   "quality_control": {
     "discrepancies": [],
-    "final_review_state": "NOT_REVIEWED",
-    "primary_review_completed": false,
-    "primary_reviewer": null,
+    "final_review_state": "PRIMARY_REVIEW_COMPLETE",
+    "primary_review_completed": true,
+    "primary_reviewer": "OPENAI_GPT_5_6_ASSISTED_REVIEW",
     "second_review_completed": false,
     "second_review_required": false,
     "second_review_selection_rule": null,
     "second_reviewer": null
   },
-  "record_state": "SOURCE_PACKET_READY",
+  "record_state": "PRIMARY_SCIENTIFIC_EXTRACTION_COMPLETE",
   "review_eligibility": "COMPLETE",
   "schema_version": "1.0.0",
   "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
@@ -214,6 +682,6 @@
     }
   ],
   "unique_review_order": 16,
-  "work_package": "S1-EXTRACT-01A",
+  "work_package": "S1-EXTRACT-05C",
   "year": "2023.0"
 }
