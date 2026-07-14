@@ -16,162 +16,491 @@
   "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
   "fields": {
     "algorithm_or_workflow": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00051",
+          "line_start": "L00029",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The complete acquisition, transfer-learning, partitioning, testing, and evaluation workflow is described."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Acquire labeled melanoma and basal-cell-carcinoma images from four open repositories",
+        "Separate images into Fitzpatrick 1–3 and Fitzpatrick 4–5 cohorts",
+        "Create one Inception v3 model per skin-type cohort",
+        "Retain pretrained layers and retrain the final layer on dermatology images",
+        "Train each model on 150 images",
+        "Validate each model on 38 naïve images",
+        "Test each model on 30 held-out images",
+        "Calculate class-specific diagnostic metrics and ROC AUC",
+        "Compare the two skin-type-stratified model performances"
+      ]
     },
     "author_claimed_contribution": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00008",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The abstract states the comparison and principal conclusion."
+        },
+        {
+          "line_end": "L00071",
+          "line_start": "L00064",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The discussion and conclusion interpret the remaining performance difference."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "An equal-image-count comparison of separate dermatology classifiers for Fitzpatrick 1–3 and Fitzpatrick 4–5",
+        "Evidence that equal image counts do not eliminate the darker-skin performance gap",
+        "A finding that more darker-skin disease images may be required to obtain comparable model performance"
+      ]
     },
     "calibration_design": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "No color, camera, illuminant, spectral, geometric, or cross-repository calibration procedure is reported.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "camera_assumptions": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Camera spectral sensitivity, image signal processing, white balance, exposure, and device response are not reported or modeled.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "capture_protocol": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The paper does not provide a standardized image capture protocol. It reuses images from multiple open dermatology repositories.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "chromophore_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Melanin, hemoglobin, and other chromophores are not measured or modeled.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "computational_model": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00046",
+          "line_start": "L00029",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The source specifies TensorFlow, Inception v3, pretraining, final-layer retraining, and probability outputs."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "architecture": "Inception v3",
+        "framework": "TensorFlow",
+        "model_type": "Transfer-learned deep convolutional neural network",
+        "output": "Class probabilities for melanoma and basal cell carcinoma",
+        "pretraining": "All layers except the final layer pretrained on more than 1.2 million images",
+        "retraining": "Final layer retrained on gathered dermatology images"
+      }
     },
     "datasets": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00036",
+          "line_start": "L00029",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The image repositories and disease classes are reported."
+        },
+        {
+          "line_end": "L00050",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The skin-group-specific train, validation, and test sizes are reported."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "classes": [
+          "Melanoma",
+          "Basal cell carcinoma"
+        ],
+        "light_skin_model": {
+          "fitzpatrick_types": [
+            1,
+            2,
+            3
+          ],
+          "testing_images": 30,
+          "training_images": 150,
+          "validation_images": 38
+        },
+        "skin_of_color_model": {
+          "fitzpatrick_types": [
+            4,
+            5
+          ],
+          "testing_images": 30,
+          "training_images": 150,
+          "validation_images": 38
+        },
+        "sources": [
+          "Hellenic Dermatological Atlas",
+          "Dermatology Atlas",
+          "Interactive Dermatology Atlas",
+          "DermNet NZ"
+        ]
+      }
     },
     "equations": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00051",
+          "line_start": "L00040",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The study identifies the classification metrics and explicitly defines the F1 score."
+        }
+      ],
+      "review_notes": "The source names standard diagnostic-classification metrics but does not print their complete formulas.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Sensitivity from true-positive and false-negative outcomes",
+        "Specificity from true-negative and false-positive outcomes",
+        "Positive predictive value",
+        "Negative predictive value",
+        "F1 score as the harmonic mean of recall and precision",
+        "Area under the receiver operating characteristic curve"
+      ]
     },
     "evaluation_metrics": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00051",
+          "line_start": "L00040",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The complete classification metric set is defined."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Sensitivity",
+        "Specificity",
+        "Positive predictive value",
+        "Negative predictive value",
+        "F1 score",
+        "ROC AUC"
+      ]
     },
     "illumination_assumptions": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Illumination source, intensity, spectrum, uniformity, and control are not reported.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "instrument_or_camera": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The source identifies public image repositories but does not establish the cameras, dermatoscopes, imaging devices, or acquisition hardware used to create the images.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "measured_inputs": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00046",
+          "line_start": "L00029",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The source identifies the image repositories, disease labels, and classification task."
+        },
+        {
+          "line_end": "L00050",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The images are partitioned into light-skin and skin-of-color model cohorts."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Open-source dermatology images labeled as melanoma or basal cell carcinoma",
+        "Image grouping by Fitzpatrick types 1–3 or 4–5"
+      ]
     },
     "observables": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00051",
+          "line_start": "L00040",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The prediction outputs and evaluation quantities are specified."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Predicted melanoma probability",
+        "Predicted basal-cell-carcinoma probability",
+        "Ground-truth diagnostic class",
+        "Sensitivity",
+        "Specificity",
+        "Positive predictive value",
+        "Negative predictive value",
+        "F1 score",
+        "Area under the receiver operating characteristic"
+      ]
     },
     "physical_model": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The paper does not define a light–tissue, reflectance, absorption, or image-formation model.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "problem_addressed": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00008",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The abstract states lower model performance for Fitzpatrick types 4 and 5."
+        },
+        {
+          "line_end": "L00028",
+          "line_start": "L00020",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The introduction identifies darker-skin performance degradation and asks whether it persists under equal image counts."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Dermatology image-recognition systems perform less effectively on images from darker Fitzpatrick skin classifications, potentially because of both data scarcity and lower visual contrast between lesions and surrounding skin."
     },
     "reported_limitations": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00071",
+          "line_start": "L00064",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The paper explicitly identifies image scarcity, small sample size, darker-skin presentation variability, and the need for more images."
+        }
+      ],
+      "review_notes": "The acquisition, patient-level, and representation boundaries follow from information absent from the reported design and from its explicit use of grouped Fitzpatrick categories.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "The available number of Fitzpatrick 4–5 images was limited.",
+        "Both models were constrained to the same small training-set size because of darker-skin image scarcity.",
+        "A larger sample was needed to test whether the result would recur consistently.",
+        "The source does not establish acquisition standardization across its four repositories.",
+        "The source does not report patient-level independence, demographic composition, or external validation.",
+        "Fitzpatrick grouping is coarse and is not a continuous measurement of skin color."
+      ]
     },
     "reported_results": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00063",
+          "line_start": "L00052",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The class-specific metrics, AUC values, average AUC, and comparative finding are reported."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "average_AUC": {
+          "fitzpatrick_1_to_3": 0.598,
+          "fitzpatrick_4_to_5": 0.5
+        },
+        "basal_cell_carcinoma": {
+          "fitzpatrick_1_to_3": {
+            "AUC": 0.6,
+            "F1": 0.55,
+            "NPV": 0.56,
+            "PPV": 0.57,
+            "sensitivity": 0.53,
+            "specificity": 0.6
+          },
+          "fitzpatrick_4_to_5": {
+            "AUC": 0.53,
+            "F1": 0.48,
+            "NPV": 0.5,
+            "PPV": 0.5,
+            "sensitivity": 0.47,
+            "specificity": 0.53
+          }
+        },
+        "melanoma": {
+          "fitzpatrick_1_to_3": {
+            "AUC": 0.59,
+            "F1": 0.58,
+            "NPV": 0.57,
+            "PPV": 0.56,
+            "sensitivity": 0.6,
+            "specificity": 0.53
+          },
+          "fitzpatrick_4_to_5": {
+            "AUC": 0.57,
+            "F1": 0.52,
+            "NPV": 0.5,
+            "PPV": 0.5,
+            "sensitivity": 0.53,
+            "specificity": 0.47
+          }
+        },
+        "overall_finding": "The Fitzpatrick 1–3 models outperformed the Fitzpatrick 4–5 models across the reported classification measures."
+      }
     },
     "sample_or_subject_population": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00050",
+          "line_start": "L00029",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The source reports image-level cohorts, disease labels, and Fitzpatrick groups."
+        }
+      ],
+      "review_notes": "The evidence unit is the image. The source does not establish whether multiple images came from the same patient.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "patient_count": "Not established from the source",
+        "patient_demographics": "Not established from the source",
+        "represented_conditions": [
+          "Melanoma",
+          "Basal cell carcinoma"
+        ],
+        "represented_skin_groups": [
+          "Fitzpatrick 1–3",
+          "Fitzpatrick 4–5"
+        ],
+        "unit": "Dermatology image"
+      }
     },
     "scattering_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Optical scattering is not measured or modeled.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "scientific_objective": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00008",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The abstract defines the two-class task and equal-image-count comparison."
+        },
+        {
+          "line_end": "L00028",
+          "line_start": "L00025",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The study objective explicitly compares performance under equal image counts."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Determine whether equal-sized deep-learning models trained, validated, and tested separately on Fitzpatrick types 1–3 and types 4–5 differ in their ability to classify melanoma versus basal cell carcinoma."
     },
     "skin_representation": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00018",
+          "line_start": "L00008",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The abstract defines Fitzpatrick groups 1–3 and 4–5."
+        },
+        {
+          "line_end": "L00063",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The model cohorts and performance table are stratified by the two Fitzpatrick groups."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "light_skin_group": [
+          1,
+          2,
+          3
+        ],
+        "representation": "Grouped Fitzpatrick skin-type classification",
+        "role": "Dataset-stratification variable for separate model training, validation, testing, and performance comparison",
+        "skin_of_color_group": [
+          4,
+          5
+        ]
+      }
     },
     "truecolor_relevance": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00063",
+          "line_start": "L00047",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The equal-sized Fitzpatrick-stratified design and performance disparity are explicit."
+        },
+        {
+          "line_end": "L00071",
+          "line_start": "L00064",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "The darker-skin data and visual-presentation limitations are explicit."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "boundary": "The paper evaluates downstream disease classification using coarse Fitzpatrick groups. It does not measure true skin color, recover reflectance, normalize illumination, calibrate camera response, or establish a device-independent color representation.",
+        "directly_relevant_findings": [
+          "Model performance differs across grouped Fitzpatrick skin classifications even under equal image counts",
+          "Darker-skin dermatology images are less available",
+          "Darker-skin lesion presentation may have lower contrast against surrounding skin",
+          "Validation must be stratified by skin representation rather than reported only as an aggregate"
+        ],
+        "relevant_claims": [
+          "TC-NOV-004",
+          "TC-NOV-006"
+        ]
+      }
     },
     "validation_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00051",
+          "line_start": "L00037",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-14-full-text-review.txt",
+          "support": "Training, naïve validation, held-out testing, equal cohort sizes, and balanced disease classes are specified."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "class_balance": {
+          "testing": "15 melanoma and 15 basal cell carcinoma",
+          "training": "75 melanoma and 75 basal cell carcinoma",
+          "validation": "19 melanoma and 19 basal cell carcinoma"
+        },
+        "comparison": "Separate but equal-sized models for Fitzpatrick 1–3 and Fitzpatrick 4–5",
+        "held_out_testing": true,
+        "per_model_testing_images": 30,
+        "per_model_training_images": 150,
+        "per_model_validation_images": 38
+      }
     }
   },
   "minimum_claim_rank": 4,
+  "primary_extraction_evidence_selection": "analysis/prior_art/scientific_extraction/review_packets/paper-14-evidence-selection.txt",
   "quality_control": {
     "discrepancies": [],
-    "final_review_state": "NOT_REVIEWED",
-    "primary_review_completed": false,
-    "primary_reviewer": null,
+    "final_review_state": "PRIMARY_REVIEW_COMPLETE",
+    "primary_review_completed": true,
+    "primary_reviewer": "OPENAI_GPT_5_6_ASSISTED_REVIEW",
     "second_review_completed": false,
     "second_review_required": false,
     "second_review_selection_rule": null,
     "second_reviewer": null
   },
-  "record_state": "SOURCE_PACKET_READY",
+  "record_state": "PRIMARY_SCIENTIFIC_EXTRACTION_COMPLETE",
   "review_eligibility": "COMPLETE",
   "schema_version": "1.0.0",
   "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
@@ -214,6 +543,6 @@
     }
   ],
   "unique_review_order": 18,
-  "work_package": "S1-EXTRACT-01A",
+  "work_package": "S1-EXTRACT-06C",
   "year": "2021.0"
 }
