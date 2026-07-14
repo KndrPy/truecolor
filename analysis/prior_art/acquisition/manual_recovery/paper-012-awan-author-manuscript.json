@@ -1,0 +1,27 @@
+{
+  "arxiv_identifier": "2005.09305",
+  "canonical_key": "doi:10.1109/cvprw50498.2020.00239",
+  "doi": "10.1109/cvprw50498.2020.00239",
+  "downloaded_bytes": 5160598,
+  "identity_validated": true,
+  "local_source_path": "analysis/prior_art/ingestion/scientific_sources/paper-012/source.pdf",
+  "local_text_path": "analysis/prior_art/ingestion/scientific_sources/paper-012/source.txt",
+  "schema_version": "1.0.0",
+  "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
+  "section_presence": {
+    "conclusion": true,
+    "introduction": true,
+    "method": true,
+    "references": true,
+    "results": true
+  },
+  "source_class": "AUTHOR_MANUSCRIPT",
+  "source_repository": "ARXIV",
+  "source_sha256": "ab9936a59ff597b36cf1a92bb52ee88a64f5cccfcaccc515a18c04d39927ac2b",
+  "source_url": "https://arxiv.org/pdf/2005.09305",
+  "terminal_source_state": "AUTHOR_MANUSCRIPT_ACQUIRED",
+  "title": "Adaptive Weighted Attention Network with Camera Spectral Sensitivity Prior for Spectral Reconstruction from RGB Images",
+  "title_token_ratio": 1.0,
+  "word_count": 5856,
+  "work_package": "S1-SOURCE-02A"
+}
