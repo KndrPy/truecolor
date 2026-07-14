@@ -1,0 +1,62 @@
+[
+  {
+    "acquisition_order": 1,
+    "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+    "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-01-scientific-evidence.json",
+    "extraction_scope": "ABSTRACT_OR_PREVIEW_CONSTRAINED",
+    "minimum_claim_rank": 1,
+    "review_eligibility": "IDENTITY_AND_ABSTRACT_ONLY",
+    "scientific_content_state": "ABSTRACT_OR_PREVIEW_ONLY",
+    "second_review_order": 1,
+    "title": "Skin Melanin, Hemoglobin, and Light Scattering Properties can be Quantitatively Assessed In Vivo Using Diffuse Reflectance Spectroscopy",
+    "unique_review_order": 2
+  },
+  {
+    "acquisition_order": 2,
+    "canonical_key": "doi:10.1364/oe.425401",
+    "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-02-scientific-evidence.json",
+    "extraction_scope": "SOURCE_UNAVAILABLE_RECORD",
+    "minimum_claim_rank": 1,
+    "review_eligibility": "UNAVAILABLE",
+    "scientific_content_state": "UNRESOLVED_NO_VALIDATED_SOURCE",
+    "second_review_order": 2,
+    "title": "Optimized light source spectral power distribution for RGB camera based spectral reflectance recovery",
+    "unique_review_order": 9
+  },
+  {
+    "acquisition_order": 3,
+    "canonical_key": "doi:10.1038/s41597-025-04382-5",
+    "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-03-scientific-evidence.json",
+    "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
+    "minimum_claim_rank": 1,
+    "review_eligibility": "COMPLETE",
+    "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
+    "second_review_order": 3,
+    "title": "Investigating the Quality of DermaMNIST and Fitzpatrick17k Dermatological Image Datasets.",
+    "unique_review_order": 10
+  },
+  {
+    "acquisition_order": 4,
+    "canonical_key": "doi:10.1117/1.jbo.28.3.035001",
+    "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-04-scientific-evidence.json",
+    "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
+    "minimum_claim_rank": 2,
+    "review_eligibility": "COMPLETE",
+    "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
+    "second_review_order": 4,
+    "title": "Deep learning-based optical approach for skin analysis of melanin and hemoglobin distribution.",
+    "unique_review_order": 1
+  },
+  {
+    "acquisition_order": 5,
+    "canonical_key": "doi:10.1111/jdv.17076",
+    "evidence_record_path": "analysis/prior_art/scientific_extraction/p1/paper-05-scientific-evidence.json",
+    "extraction_scope": "BOUNDED_PARTIAL_TEXT_EXTRACTION",
+    "minimum_claim_rank": 2,
+    "review_eligibility": "BOUNDED",
+    "scientific_content_state": "SUBSTANTIVE_PARTIAL_TEXT",
+    "second_review_order": 5,
+    "title": "Hyperspectral measurement of skin reflectance detects differences in the visible and near‐infrared regions according to race, gender and body site",
+    "unique_review_order": 11
+  }
+]

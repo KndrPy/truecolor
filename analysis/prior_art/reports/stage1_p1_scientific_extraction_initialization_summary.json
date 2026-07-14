@@ -1,0 +1,27 @@
+{
+  "evidence_record_count": 16,
+  "evidence_record_root": "analysis/prior_art/scientific_extraction/p1",
+  "extraction_scope_counts": {
+    "ABSTRACT_OR_PREVIEW_CONSTRAINED": 6,
+    "BOUNDED_PARTIAL_TEXT_EXTRACTION": 1,
+    "COMPLETE_SCIENTIFIC_EXTRACTION": 6,
+    "SOURCE_UNAVAILABLE_RECORD": 3
+  },
+  "index_csv": "analysis/prior_art/scientific_extraction/stage1_p1_scientific_evidence_index.csv",
+  "index_json": "analysis/prior_art/scientific_extraction/stage1_p1_scientific_evidence_index.json",
+  "initialized_not_reviewed_count": 16,
+  "schema_version": "1.1.0",
+  "scientific_content_state_counts": {
+    "ABSTRACT_OR_PREVIEW_ONLY": 6,
+    "FULL_SCIENTIFIC_TEXT": 6,
+    "SUBSTANTIVE_PARTIAL_TEXT": 1,
+    "UNRESOLVED_NO_VALIDATED_SOURCE": 3
+  },
+  "scientific_extraction_state": "INITIALIZED",
+  "second_review_cohort_csv": "analysis/prior_art/scientific_extraction/stage1_p1_second_review_cohort.csv",
+  "second_review_cohort_json": "analysis/prior_art/scientific_extraction/stage1_p1_second_review_cohort.json",
+  "second_review_required_count": 5,
+  "second_review_selection_rule": "Select the first five P1 papers after sorting by minimum_claim_rank ascending and acquisition_order ascending.",
+  "source_acquisition_state": "TERMINAL_CLOSED",
+  "work_package": "S1-EXTRACT-01B"
+}

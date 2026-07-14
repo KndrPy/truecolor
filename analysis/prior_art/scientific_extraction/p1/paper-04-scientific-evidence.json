@@ -1,0 +1,230 @@
+{
+  "acquisition_order": 4,
+  "canonical_key": "doi:10.1117/1.jbo.28.3.035001",
+  "claim_ids": [
+    "TC-NOV-001",
+    "TC-NOV-002",
+    "TC-NOV-003",
+    "TC-NOV-005"
+  ],
+  "doi": "10.1117/1.jbo.28.3.035001",
+  "evidence_rules": {
+    "abstract_only_cannot_establish_methods_equations_results_or_limitations": true,
+    "complete_text_required_for_complete_review": true,
+    "no_title_or_metadata_inference": true,
+    "source_unavailable_cannot_support_scientific_overlap_disposition": true,
+    "unsupported_fields_must_remain_explicit": true
+  },
+  "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
+  "fields": {
+    "algorithm_or_workflow": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "author_claimed_contribution": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "calibration_design": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "camera_assumptions": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "capture_protocol": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "chromophore_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "computational_model": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "datasets": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "equations": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "evaluation_metrics": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "illumination_assumptions": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "instrument_or_camera": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "measured_inputs": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "observables": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "physical_model": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "problem_addressed": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "reported_limitations": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "reported_results": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "sample_or_subject_population": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "scattering_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "scientific_objective": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "skin_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "truecolor_relevance": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "validation_design": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    }
+  },
+  "minimum_claim_rank": 2,
+  "quality_control": {
+    "discrepancies": [],
+    "final_review_state": "NOT_REVIEWED",
+    "primary_review_completed": false,
+    "primary_reviewer": null,
+    "second_review_completed": false,
+    "second_review_required": true,
+    "second_review_selection_rule": "TOP_FIVE_BY_MINIMUM_CLAIM_RANK_THEN_ACQUISITION_ORDER",
+    "second_reviewer": null
+  },
+  "record_state": "INITIALIZED_NOT_REVIEWED",
+  "review_eligibility": "COMPLETE",
+  "schema_version": "1.0.0",
+  "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
+  "source": {
+    "expected_source_sha256": "7f1b5c422f5431b9d40a9ba7a497962b8fbc754a9a361ecf80510b7abeea1109",
+    "format": "XML",
+    "local_source_path": "analysis/prior_art/ingestion/scientific_sources/paper-001/source.xml",
+    "local_text_path": "analysis/prior_art/ingestion/scientific_sources/paper-001/source.txt",
+    "observed_source_sha256": "7f1b5c422f5431b9d40a9ba7a497962b8fbc754a9a361ecf80510b7abeea1109",
+    "source_exists": true,
+    "source_hash_valid": true,
+    "text_exists": true,
+    "word_count": "6773.0"
+  },
+  "terminal_source_state": "",
+  "title": "Deep learning-based optical approach for skin analysis of melanin and hemoglobin distribution.",
+  "truecolor_claim_overlap": [
+    {
+      "claim_id": "TC-NOV-001",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    },
+    {
+      "claim_id": "TC-NOV-002",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    },
+    {
+      "claim_id": "TC-NOV-003",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    },
+    {
+      "claim_id": "TC-NOV-005",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    }
+  ],
+  "unique_review_order": 1,
+  "work_package": "S1-EXTRACT-01A",
+  "year": "2023.0"
+}

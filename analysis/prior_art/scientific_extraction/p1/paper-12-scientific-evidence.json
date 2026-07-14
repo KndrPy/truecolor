@@ -1,0 +1,212 @@
+{
+  "acquisition_order": 12,
+  "canonical_key": "doi:10.3390/app15158321",
+  "claim_ids": [
+    "TC-NOV-004",
+    "TC-NOV-006"
+  ],
+  "doi": "10.3390/app15158321",
+  "evidence_rules": {
+    "abstract_only_cannot_establish_methods_equations_results_or_limitations": true,
+    "complete_text_required_for_complete_review": true,
+    "no_title_or_metadata_inference": true,
+    "source_unavailable_cannot_support_scientific_overlap_disposition": true,
+    "unsupported_fields_must_remain_explicit": true
+  },
+  "extraction_scope": "SOURCE_UNAVAILABLE_RECORD",
+  "fields": {
+    "algorithm_or_workflow": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "author_claimed_contribution": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "calibration_design": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "camera_assumptions": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "capture_protocol": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "chromophore_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "computational_model": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "datasets": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "equations": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "evaluation_metrics": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "illumination_assumptions": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "instrument_or_camera": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "measured_inputs": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "observables": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "physical_model": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "problem_addressed": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "reported_limitations": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "reported_results": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "sample_or_subject_population": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "scattering_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "scientific_objective": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "skin_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "truecolor_relevance": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    },
+    "validation_design": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
+      "value": null
+    }
+  },
+  "minimum_claim_rank": 3,
+  "quality_control": {
+    "discrepancies": [],
+    "final_review_state": "NOT_REVIEWED",
+    "primary_review_completed": false,
+    "primary_reviewer": null,
+    "second_review_completed": false,
+    "second_review_required": false,
+    "second_review_selection_rule": null,
+    "second_reviewer": null
+  },
+  "record_state": "INITIALIZED_NOT_REVIEWED",
+  "review_eligibility": "UNAVAILABLE",
+  "schema_version": "1.0.0",
+  "scientific_content_state": "UNRESOLVED_NO_VALIDATED_SOURCE",
+  "source": {
+    "expected_source_sha256": "",
+    "format": "",
+    "local_source_path": "",
+    "local_text_path": "",
+    "observed_source_sha256": "",
+    "source_exists": false,
+    "source_hash_valid": false,
+    "text_exists": false,
+    "word_count": ""
+  },
+  "terminal_source_state": "PAYWALLED_OR_INACCESSIBLE",
+  "title": "Evaluating Skin Tone Fairness in Convolutional Neural Networks for the Classification of Diabetic Foot Ulcers",
+  "truecolor_claim_overlap": [
+    {
+      "claim_id": "TC-NOV-004",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    },
+    {
+      "claim_id": "TC-NOV-006",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    }
+  ],
+  "unique_review_order": 17,
+  "work_package": "S1-EXTRACT-01A",
+  "year": "2025.0"
+}

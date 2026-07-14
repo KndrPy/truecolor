@@ -1,0 +1,212 @@
+{
+  "acquisition_order": 5,
+  "canonical_key": "doi:10.1111/jdv.17076",
+  "claim_ids": [
+    "TC-NOV-002",
+    "TC-NOV-005"
+  ],
+  "doi": "10.1111/jdv.17076",
+  "evidence_rules": {
+    "abstract_only_cannot_establish_methods_equations_results_or_limitations": true,
+    "complete_text_required_for_complete_review": true,
+    "no_title_or_metadata_inference": true,
+    "source_unavailable_cannot_support_scientific_overlap_disposition": true,
+    "unsupported_fields_must_remain_explicit": true
+  },
+  "extraction_scope": "BOUNDED_PARTIAL_TEXT_EXTRACTION",
+  "fields": {
+    "algorithm_or_workflow": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "author_claimed_contribution": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "calibration_design": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "camera_assumptions": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "capture_protocol": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "chromophore_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "computational_model": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "datasets": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "equations": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "evaluation_metrics": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "illumination_assumptions": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "instrument_or_camera": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "measured_inputs": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "observables": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "physical_model": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "problem_addressed": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "reported_limitations": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "reported_results": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "sample_or_subject_population": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "scattering_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "scientific_objective": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "skin_representation": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "truecolor_relevance": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    },
+    "validation_design": {
+      "evidence": [],
+      "review_notes": null,
+      "state": "PENDING_SOURCE_REVIEW",
+      "value": null
+    }
+  },
+  "minimum_claim_rank": 2,
+  "quality_control": {
+    "discrepancies": [],
+    "final_review_state": "NOT_REVIEWED",
+    "primary_review_completed": false,
+    "primary_reviewer": null,
+    "second_review_completed": false,
+    "second_review_required": true,
+    "second_review_selection_rule": "TOP_FIVE_BY_MINIMUM_CLAIM_RANK_THEN_ACQUISITION_ORDER",
+    "second_reviewer": null
+  },
+  "record_state": "INITIALIZED_NOT_REVIEWED",
+  "review_eligibility": "BOUNDED",
+  "schema_version": "1.0.0",
+  "scientific_content_state": "SUBSTANTIVE_PARTIAL_TEXT",
+  "source": {
+    "expected_source_sha256": "5f80d0fa3643c73d7abfb7ac8cde1152b0c5afa6b0ded63515ddb4232d099ea7",
+    "format": "HTML",
+    "local_source_path": "analysis/prior_art/ingestion/scientific_sources/paper-011/source.html",
+    "local_text_path": "analysis/prior_art/ingestion/scientific_sources/paper-011/source.txt",
+    "observed_source_sha256": "5f80d0fa3643c73d7abfb7ac8cde1152b0c5afa6b0ded63515ddb4232d099ea7",
+    "source_exists": true,
+    "source_hash_valid": true,
+    "text_exists": true,
+    "word_count": "1936.0"
+  },
+  "terminal_source_state": "SUBSTANTIVE_PARTIAL_ONLY",
+  "title": "Hyperspectral measurement of skin reflectance detects differences in the visible and near‐infrared regions according to race, gender and body site",
+  "truecolor_claim_overlap": [
+    {
+      "claim_id": "TC-NOV-002",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    },
+    {
+      "claim_id": "TC-NOV-005",
+      "evidence": [],
+      "overlap_classification": null,
+      "overlapping_mechanism": null,
+      "source_limitation": null,
+      "state": "NOT_ADJUDICATED"
+    }
+  ],
+  "unique_review_order": 11,
+  "work_package": "S1-EXTRACT-01A",
+  "year": "2021.0"
+}
