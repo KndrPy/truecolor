@@ -1,8 +1,8 @@
 {
-  "document_id": "document:sha256:0252e13aa4ae257f5e8521b094ade62ede9f4c69c23daabbea01ed20e8d36d71",
-  "output": "/tmp/truecolor-parse-slice-a/parsed/47/476bb9236aa6daff26bde833bd38113c32d17b58f745e186bdf14ea7bcd7d9ed/0252e13aa4ae257f5e8521b094ade62ede9f4c69c23daabbea01ed20e8d36d71.canonical.json",
+  "document_id": "document:sha256:df2f6f52ac516c10a0bfac6098d174bc46be14f1f3b8255b026274851575fc9c",
+  "output": "/tmp/truecolor-parse-slice-a/parsed/ae/aebd2d1e4272a45199afdb6d69415f59d81ee388edfb9da736267679d63f14b8/df2f6f52ac516c10a0bfac6098d174bc46be14f1f3b8255b026274851575fc9c.canonical.json",
   "page_count": 0,
-  "route": "HTML",
-  "segment_count": 4,
+  "route": "XML",
+  "segment_count": 2,
   "status": "PARSED"
 }

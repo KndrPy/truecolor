@@ -1,10 +1,10 @@
 {
-  "artifact_id": "artifact:sha256:476bb9236aa6daff26bde833bd38113c32d17b58f745e186bdf14ea7bcd7d9ed",
-  "byte_length": 480,
-  "content_sha256": "476bb9236aa6daff26bde833bd38113c32d17b58f745e186bdf14ea7bcd7d9ed",
+  "artifact_id": "artifact:sha256:aebd2d1e4272a45199afdb6d69415f59d81ee388edfb9da736267679d63f14b8",
+  "byte_length": 246,
+  "content_sha256": "aebd2d1e4272a45199afdb6d69415f59d81ee388edfb9da736267679d63f14b8",
   "deduplicated": false,
-  "detected_media_type": "text/html",
-  "manifest_path": "/tmp/truecolor-parse-slice-a/manifests/47/476bb9236aa6daff26bde833bd38113c32d17b58f745e186bdf14ea7bcd7d9ed/intake_618fd7e9908d4dd1970e04cfcfbcccaf.json",
-  "object_path": "/tmp/truecolor-parse-slice-a/store/objects/sha256/47/6b/476bb9236aa6daff26bde833bd38113c32d17b58f745e186bdf14ea7bcd7d9ed.blob",
+  "detected_media_type": "application/xml",
+  "manifest_path": "/tmp/truecolor-parse-slice-a/manifests/ae/aebd2d1e4272a45199afdb6d69415f59d81ee388edfb9da736267679d63f14b8/intake_391c93f5c84c41059c0f8cf92b21dbc5.json",
+  "object_path": "/tmp/truecolor-parse-slice-a/store/objects/sha256/ae/bd/aebd2d1e4272a45199afdb6d69415f59d81ee388edfb9da736267679d63f14b8.blob",
   "status": "STORED_IMMUTABLY"
 }

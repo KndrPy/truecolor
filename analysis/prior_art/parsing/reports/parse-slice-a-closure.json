@@ -6,9 +6,9 @@
       "sha256": "4cf99e3cbbc447c4a36cd8111b644472f7a94b09436aa8eb5abded8f166eb367"
     },
     {
-      "bytes": 1618,
+      "bytes": 2125,
       "path": "analysis/prior_art/parsing/parser_router.py",
-      "sha256": "d904050e2a8d603460d65c0f665ee8dab8ef3560772f2a3ea9f19ddf31eaa97c"
+      "sha256": "a3e30d6e7495d2338111a114bb98476fe2228d9951630184e26bd111993ebef7"
     },
     {
       "bytes": 2785,
@@ -16,29 +16,29 @@
       "sha256": "a775b273025deec58b27537d10f9148bfa55f7b683e90ad2fd9fe358984b2e0d"
     },
     {
-      "bytes": 7769,
+      "bytes": 17148,
       "path": "analysis/prior_art/parsing/xml_parser.py",
-      "sha256": "d015a49a1d7a0982715fb26f5d49a9b923842f7a9c0bd907032e3977f98bbdf1"
+      "sha256": "0604aba164a00049f36ba3305ca76872d2be75d8aed26503429976f56a2d39d8"
     },
     {
-      "bytes": 9855,
+      "bytes": 16977,
       "path": "analysis/prior_art/parsing/pdf_parser.py",
-      "sha256": "213937c59fc0de9878db9e26bb17196782d15a994d56fe9f69888e883ab40516"
+      "sha256": "47a1119007aad13ae98e9c34aa7cca2ec3dc208f2658c089fbe63a7ed9665965"
     },
     {
-      "bytes": 8023,
+      "bytes": 11900,
       "path": "analysis/prior_art/parsing/parse_document.py",
-      "sha256": "f2cd26bd118b9b85fab574ff10d0191132e3f64d8b150311a122a2f0af17679f"
+      "sha256": "b64f8cd813d10b7827c8a901bc509f226b3f7a7093839faed14094d8b1010b16"
     },
     {
-      "bytes": 14645,
+      "bytes": 26414,
       "path": "analysis/prior_art/parsing/test_parsing.py",
-      "sha256": "95013c15dd56edf527ac0d7e3e96314b07ec4539a5167acf122618a3d7f8beec"
+      "sha256": "972a49356404cb1970e18416fd22e0adda9ef9da94e94338ddcfd4f8d8de7787"
     },
     {
-      "bytes": 6015,
+      "bytes": 13560,
       "path": "analysis/prior_art/parsing/schemas/canonical_document.schema.json",
-      "sha256": "76951fb1ecd77c3724add3fa38dc70ba40c0adc2a36fd7743e64e823fa3106db"
+      "sha256": "dd49a46c9040e648f05612cf52e0a1c5c3c559032be5aa9da6af80faee39273e"
     },
     {
       "bytes": 2556,
@@ -51,14 +51,14 @@
       "sha256": "b2afe16cfe628004cd2eac5263e7419a190f19d9abcf68aa1af1ce40e9c0aa18"
     },
     {
-      "bytes": 629,
+      "bytes": 635,
       "path": "analysis/prior_art/parsing/reports/parse-slice-a-intake.json",
-      "sha256": "97c45973e99efb7daa5dd75531a5aab941ba249e1996f1b9869e2a6feea0fd04"
+      "sha256": "48d0501dda81ad8f90f722fffcc1d9d67c2786642f9fd821356f83c93828f52d"
     },
     {
-      "bytes": 385,
+      "bytes": 384,
       "path": "analysis/prior_art/parsing/reports/parse-slice-a-pilot.json",
-      "sha256": "34603240f3e8de5ae6ae13656e583813ad9dbecaf459df271152acec781a0af6"
+      "sha256": "7a76e467a55f4a344f0c9e27ed80120d4d3e3a61ded75641cbde5fc5afce2e03"
     },
     {
       "bytes": 0,
@@ -66,9 +66,9 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "bytes": 470,
+      "bytes": 467,
       "path": "analysis/prior_art/parsing/reports/parse-slice-a-pilot-validation.json",
-      "sha256": "703ff1ad51e173333d433efe5037672e84cf7ad6f093a7c6bd7dc5e90a5f7385"
+      "sha256": "86e32bfe93d673671348d49fc280b32af2f06b663ccecfb2dfd4be1961420757"
     }
   ],
   "capabilities": [
@@ -82,15 +82,15 @@
   "gates": {
     "intake_passed": true,
     "pilot_parsed": true,
-    "pilot_route_is_xml": false,
+    "pilot_route_is_xml": true,
     "pilot_stderr_empty": true,
-    "pilot_validation_passed": false,
+    "pilot_validation_passed": true,
     "required_files_exist": true,
     "unit_tests_passed": true
   },
   "missing_files": [],
   "schema_version": "1.0.0",
   "slice": "A",
-  "status": "FAIL",
+  "status": "PASS",
   "work_package": "WP-PARSE-01"
 }

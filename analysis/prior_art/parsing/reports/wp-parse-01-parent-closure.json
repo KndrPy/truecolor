@@ -1,0 +1,233 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6815,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_CLOSURE.md",
+      "sha256": "daea924b11e30055caf9139ee62449c4a7e808b330b270bee3a42db990591b89"
+    },
+    {
+      "bytes": 2125,
+      "path": "analysis/prior_art/parsing/parser_router.py",
+      "sha256": "a3e30d6e7495d2338111a114bb98476fe2228d9951630184e26bd111993ebef7"
+    },
+    {
+      "bytes": 11900,
+      "path": "analysis/prior_art/parsing/parse_document.py",
+      "sha256": "b64f8cd813d10b7827c8a901bc509f226b3f7a7093839faed14094d8b1010b16"
+    },
+    {
+      "bytes": 14173,
+      "path": "analysis/prior_art/parsing/canonical_validator.py",
+      "sha256": "01f58bf0c5e5fb41d508c828ca4111410df933173ef89a25b611fda4f339b39f"
+    },
+    {
+      "bytes": 12361,
+      "path": "analysis/prior_art/parsing/parse_attempt.py",
+      "sha256": "018ad48888b3b4446571f07391d354ade1eb438a7ebc6389e85b6c4307e35f89"
+    },
+    {
+      "bytes": 13560,
+      "path": "analysis/prior_art/parsing/schemas/canonical_document.schema.json",
+      "sha256": "dd49a46c9040e648f05612cf52e0a1c5c3c559032be5aa9da6af80faee39273e"
+    },
+    {
+      "bytes": 3652,
+      "path": "analysis/prior_art/parsing/schemas/parse_attempt.schema.json",
+      "sha256": "b47b23f45b7d74608d00bc96faff0c0c5ba904a1129b778574331670aa893bf3"
+    },
+    {
+      "bytes": 10864,
+      "path": "analysis/prior_art/parsing/reports/wp-parse-01-final-tests.txt",
+      "sha256": "31eab0164c470e2b81f0a4686da53b60a1ae5fefa8f66d2688c40998f92a2e5d"
+    },
+    {
+      "bytes": 3137,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-a-closure.json",
+      "sha256": "24c46e40fbe28e1a0d53346a5caa90fa8418360a63f01cffaf10722ee55a28a2"
+    },
+    {
+      "bytes": 3639,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b1-closure.json",
+      "sha256": "b1cc2fdf9a4d0a7b6a30d104a5adf53459c37b778649ebc622e6aaa7d8601d04"
+    },
+    {
+      "bytes": 4216,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b2-closure.json",
+      "sha256": "c98d2de795fcdbb4110bebf838140b98c358c74444e2149debdffd4c16ba61ac"
+    },
+    {
+      "bytes": 1881,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b3-closure.json",
+      "sha256": "4792e4971668839106d2302309aa8f29cd80197cc5112854ed1efd30dada6dc3"
+    },
+    {
+      "bytes": 2482,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b4-closure.json",
+      "sha256": "f6c141eebcd87c43ff9ed13415889ec2a4feef7ef7a3501d6de72383a4f56f97"
+    },
+    {
+      "bytes": 1960,
+      "path": "analysis/prior_art/parsing/reports/parse-slice-b5-closure.json",
+      "sha256": "7cfc2fa13730a4713ef72e0533589c8f9aa0a04700608b3a1bf6f16101d0d015"
+    },
+    {
+      "bytes": 2556,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_A.md",
+      "sha256": "9933ae806532500ef677ea4b740fe9268386b1caa47e8f006a50594c94f7fab0"
+    },
+    {
+      "bytes": 3026,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B2.md",
+      "sha256": "0176d4298ebd4f35fec646003349e5ac56888314fb2f1bb9563f77aa9a6acd5d"
+    },
+    {
+      "bytes": 3123,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B3.md",
+      "sha256": "be7d508a72e2c53afa2a3d9bf724feb0ec7d81c4341629a7d8d07e97f58543a0"
+    },
+    {
+      "bytes": 2024,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B1.md",
+      "sha256": "ee49208640a26ff004e6257eb89e69c9857dea63fc5177b13a2617cef449ddb1"
+    },
+    {
+      "bytes": 5041,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B4.md",
+      "sha256": "5299c3d3c59038e3cca5c0fb0a27521cfc050a37d595f18a591aa4ba82b9dedc"
+    },
+    {
+      "bytes": 4961,
+      "path": "analysis/prior_art/parsing/WP_PARSE_01_SLICE_B5.md",
+      "sha256": "b1ad900cd91042333ebe74d6b4e5f86b565ff63d85493b294c096347a9a316df"
+    }
+  ],
+  "capability_coverage": {
+    "CAP-PARSE-001": true,
+    "CAP-PARSE-002": true,
+    "CAP-PARSE-003": true,
+    "CAP-PARSE-004": true,
+    "CAP-PARSE-005": true,
+    "CAP-PARSE-006": true,
+    "CAP-PARSE-007": true,
+    "CAP-PARSE-008": true,
+    "CAP-PARSE-009": true,
+    "CAP-PARSE-010": true,
+    "CAP-PARSE-011": true,
+    "CAP-PARSE-012": true
+  },
+  "capability_map": {
+    "CAP-PARSE-001": [
+      "WP_PARSE_01_SLICE_A.md"
+    ],
+    "CAP-PARSE-002": [
+      "WP_PARSE_01_SLICE_A.md"
+    ],
+    "CAP-PARSE-003": [
+      "WP_PARSE_01_SLICE_A.md"
+    ],
+    "CAP-PARSE-004": [
+      "WP_PARSE_01_SLICE_B2.md"
+    ],
+    "CAP-PARSE-005": [
+      "WP_PARSE_01_SLICE_A.md"
+    ],
+    "CAP-PARSE-006": [
+      "WP_PARSE_01_SLICE_B3.md"
+    ],
+    "CAP-PARSE-007": [
+      "WP_PARSE_01_SLICE_A.md"
+    ],
+    "CAP-PARSE-008": [
+      "WP_PARSE_01_SLICE_B1.md"
+    ],
+    "CAP-PARSE-009": [
+      "WP_PARSE_01_SLICE_B1.md"
+    ],
+    "CAP-PARSE-010": [
+      "WP_PARSE_01_SLICE_B4.md"
+    ],
+    "CAP-PARSE-011": [
+      "WP_PARSE_01_SLICE_A.md"
+    ],
+    "CAP-PARSE-012": [
+      "WP_PARSE_01_SLICE_B5.md"
+    ]
+  },
+  "capability_range": {
+    "expected_count": 12,
+    "first": "CAP-PARSE-001",
+    "last": "CAP-PARSE-012"
+  },
+  "expected_routes": [
+    "CSV",
+    "DOCX",
+    "HTML",
+    "MARKDOWN",
+    "PDF",
+    "TEXT",
+    "TSV",
+    "XLSX",
+    "XML"
+  ],
+  "gates": {
+    "all_routes_registered": true,
+    "all_slice_reports_pass": true,
+    "capability_contracts_present": true,
+    "capability_range_complete": true,
+    "final_75_tests_pass": true,
+    "required_files_exist": true
+  },
+  "missing_files": [],
+  "registered_routes": [
+    "CSV",
+    "DOCX",
+    "HTML",
+    "MARKDOWN",
+    "PDF",
+    "TEXT",
+    "TSV",
+    "XLSX",
+    "XML"
+  ],
+  "schema_version": "1.0.0",
+  "slice_status": {
+    "A": {
+      "passed": true,
+      "present": true,
+      "status": "PASS"
+    },
+    "B1": {
+      "passed": true,
+      "present": true,
+      "status": "PASS"
+    },
+    "B2": {
+      "passed": true,
+      "present": true,
+      "status": "PASS"
+    },
+    "B3": {
+      "passed": true,
+      "present": true,
+      "status": "PASS"
+    },
+    "B4": {
+      "passed": true,
+      "present": true,
+      "status": "PASS"
+    },
+    "B5": {
+      "passed": true,
+      "present": true,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS",
+  "test_evidence": {
+    "expected": 75,
+    "observed": 75,
+    "passed": true,
+    "report": "analysis/prior_art/parsing/reports/wp-parse-01-final-tests.txt"
+  },
+  "work_package": "WP-PARSE-01"
+}
