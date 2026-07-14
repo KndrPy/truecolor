@@ -6,7 +6,11 @@
   "configured_evidence_record_count": 16,
   "configured_governed_source_count": 48,
   "configured_matrix_count": 6,
+  "corpus_coverage_policy_id": "truecolor-stage1-corpus-coverage-v1",
   "evidence_covered_source_count": 16,
+  "full_extraction_is_not_required_for_all_governed_sources": true,
+  "invalid_corpus_disposition_count": 0,
+  "pending_corpus_disposition_count": 32,
   "pending_review_task_count": 6,
   "prohibited_actions": [
     "hard-code corpus size",
@@ -19,12 +23,12 @@
     "emit Stage 1 closure before configured obligations pass"
   ],
   "remaining_blockers": [
-    "governed_corpus_evidence_coverage",
     "primary_scientific_reviews",
     "independent_second_reviews",
     "claim_overlap_adjudication",
     "novelty_kill_decisions",
-    "full_corpus_synthesis"
+    "full_corpus_synthesis",
+    "governed_corpus_terminal_disposition"
   ],
   "report_schema": "qudipi.stage1.gap-report",
   "report_version": 1,
@@ -32,5 +36,6 @@
   "stage_id": 1,
   "stage_key": "prior_art",
   "stage_state": "OPEN",
-  "study_id": "truecolor"
+  "study_id": "truecolor",
+  "terminal_coverage_count": 16
 }

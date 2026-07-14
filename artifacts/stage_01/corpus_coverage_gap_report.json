@@ -1,0 +1,205 @@
+{
+  "configured_governed_source_count": 48,
+  "invalid_corpus_members": [],
+  "invalid_disposition_count": 0,
+  "pending_corpus_members": [
+    {
+      "canonical_identity": "doi:10.1016/j.jaad.2022.06.115",
+      "corpus_member_id": "CORPUS-c84160c4be5aec03",
+      "coverage_record_id": "COVERAGE-c84160c4be5aec03",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1016/j.visres.2022.108048",
+      "corpus_member_id": "CORPUS-0fdb2019d281b81c",
+      "coverage_record_id": "COVERAGE-0fdb2019d281b81c",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1016/s0924-2031(01)00144-8",
+      "corpus_member_id": "CORPUS-c6ae9161a87747ca",
+      "coverage_record_id": "COVERAGE-c6ae9161a87747ca",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1038/s41591-023-02540-z",
+      "corpus_member_id": "CORPUS-eec76c4dd7b0817f",
+      "coverage_record_id": "COVERAGE-eec76c4dd7b0817f",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1093/bjd/ljag151.052",
+      "corpus_member_id": "CORPUS-bc75393e9f09c939",
+      "coverage_record_id": "COVERAGE-bc75393e9f09c939",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1093/ced/llaf145",
+      "corpus_member_id": "CORPUS-b865cc8780095eb9",
+      "coverage_record_id": "COVERAGE-b865cc8780095eb9",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1109/iccphot.2016.7492879",
+      "corpus_member_id": "CORPUS-9800795f20165472",
+      "coverage_record_id": "COVERAGE-9800795f20165472",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1109/iccvw60793.2023.00122",
+      "corpus_member_id": "CORPUS-b6ab3fc03178082f",
+      "coverage_record_id": "COVERAGE-b6ab3fc03178082f",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1109/tip.2017.2764264",
+      "corpus_member_id": "CORPUS-e6236613e4733a0d",
+      "coverage_record_id": "COVERAGE-e6236613e4733a0d",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1109/wacvw60836.2024.00067",
+      "corpus_member_id": "CORPUS-3043caf9e757ba1d",
+      "coverage_record_id": "COVERAGE-3043caf9e757ba1d",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1111/ics.12147",
+      "corpus_member_id": "CORPUS-a9aa478e6b533356",
+      "coverage_record_id": "COVERAGE-a9aa478e6b533356",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1111/ijd.70452",
+      "corpus_member_id": "CORPUS-65e3bb54b0d7adc4",
+      "coverage_record_id": "COVERAGE-65e3bb54b0d7adc4",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1111/j.1600-0846.1997.tb00191.x",
+      "corpus_member_id": "CORPUS-e7f3fc0263e72f79",
+      "coverage_record_id": "COVERAGE-e7f3fc0263e72f79",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1111/srt.12396",
+      "corpus_member_id": "CORPUS-5916f5967be4db17",
+      "coverage_record_id": "COVERAGE-5916f5967be4db17",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1111/srt.12421",
+      "corpus_member_id": "CORPUS-45015e13a1263d20",
+      "coverage_record_id": "COVERAGE-45015e13a1263d20",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1111/srt.13207",
+      "corpus_member_id": "CORPUS-0c20a1f05d8be4be",
+      "coverage_record_id": "COVERAGE-0c20a1f05d8be4be",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1117/1.jbo.27.2.026004",
+      "corpus_member_id": "CORPUS-13fcfe1ce95a00f0",
+      "coverage_record_id": "COVERAGE-13fcfe1ce95a00f0",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1117/1.jbo.28.10.107001",
+      "corpus_member_id": "CORPUS-4b1e6a689b9d4328",
+      "coverage_record_id": "COVERAGE-4b1e6a689b9d4328",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1117/1.jbo.29.9.093507",
+      "corpus_member_id": "CORPUS-ead1102aae0c938a",
+      "coverage_record_id": "COVERAGE-ead1102aae0c938a",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1117/12.3098404",
+      "corpus_member_id": "CORPUS-1f4f0478ed0babcf",
+      "coverage_record_id": "COVERAGE-1f4f0478ed0babcf",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1364/boe.507361",
+      "corpus_member_id": "CORPUS-eb4b597fdf8a1bc0",
+      "coverage_record_id": "COVERAGE-eb4b597fdf8a1bc0",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1364/boe.570414",
+      "corpus_member_id": "CORPUS-37d387d2ae7cd099",
+      "coverage_record_id": "COVERAGE-37d387d2ae7cd099",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1364/josaa.23.001814",
+      "corpus_member_id": "CORPUS-11f30fb957882c10",
+      "coverage_record_id": "COVERAGE-11f30fb957882c10",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.1371/journal.pone.0280670",
+      "corpus_member_id": "CORPUS-caacedd3bf88372c",
+      "coverage_record_id": "COVERAGE-caacedd3bf88372c",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.19184/cerimre.v5i2.31668",
+      "corpus_member_id": "CORPUS-279512c38e323944",
+      "coverage_record_id": "COVERAGE-279512c38e323944",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.3390/jimaging12050203",
+      "corpus_member_id": "CORPUS-216e636378952ff3",
+      "coverage_record_id": "COVERAGE-216e636378952ff3",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.3390/jimaging9020047",
+      "corpus_member_id": "CORPUS-c78ba86b99b9b24a",
+      "coverage_record_id": "COVERAGE-c78ba86b99b9b24a",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.3390/s130607902",
+      "corpus_member_id": "CORPUS-f080b5839173d8c5",
+      "coverage_record_id": "COVERAGE-f080b5839173d8c5",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.3390/s22134923",
+      "corpus_member_id": "CORPUS-caa3807463814a9c",
+      "coverage_record_id": "COVERAGE-caa3807463814a9c",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.3390/s23083888",
+      "corpus_member_id": "CORPUS-f3072983e3180c15",
+      "coverage_record_id": "COVERAGE-f3072983e3180c15",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.5753/sibgrapi.est.2024.31648",
+      "corpus_member_id": "CORPUS-5c8179033fa93f1f",
+      "coverage_record_id": "COVERAGE-5c8179033fa93f1f",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    },
+    {
+      "canonical_identity": "doi:10.7759/cureus.94909",
+      "corpus_member_id": "CORPUS-cea3a0861fd3571a",
+      "coverage_record_id": "COVERAGE-cea3a0861fd3571a",
+      "coverage_role": "REVIEW_DISPOSITION_REQUIRED"
+    }
+  ],
+  "pending_disposition_count": 32,
+  "policy_id": "truecolor-stage1-corpus-coverage-v1",
+  "report_schema": "qudipi.stage1.corpus-coverage-gap-report",
+  "report_version": 1,
+  "stage_state": "OPEN",
+  "terminal_coverage_count": 16
+}

@@ -1,0 +1,123 @@
+{
+  "policy_schema": "qudipi.stage1.corpus-coverage-policy",
+  "policy_version": 1,
+  "policy_id": "truecolor-stage1-corpus-coverage-v1",
+  "terminal_roles": [
+    "FULL_SCIENTIFIC_EXTRACTION",
+    "BOUNDED_SCIENTIFIC_REVIEW",
+    "MATERIAL_LINEAGE_REFERENCE",
+    "EXCLUDED_WITH_REASON",
+    "TERMINAL_SOURCE_UNAVAILABLE"
+  ],
+  "pending_role": "REVIEW_DISPOSITION_REQUIRED",
+  "evidence_record_role": "FULL_SCIENTIFIC_EXTRACTION",
+  "explicit_role_mappings": [
+    {
+      "role": "EXCLUDED_WITH_REASON",
+      "metadata_fields": [
+        "disposition",
+        "final_disposition",
+        "review_disposition",
+        "adjudication_disposition",
+        "status"
+      ],
+      "accepted_values": [
+        "excluded",
+        "exclude",
+        "excluded_with_reason",
+        "out_of_scope",
+        "not_relevant",
+        "rejected"
+      ],
+      "reason_fields": [
+        "reason",
+        "exclusion_reason",
+        "disposition_reason",
+        "adjudication_reason",
+        "notes"
+      ],
+      "reason_required": true
+    },
+    {
+      "role": "MATERIAL_LINEAGE_REFERENCE",
+      "metadata_fields": [
+        "corpus_role",
+        "review_role",
+        "source_role",
+        "evidence_role",
+        "classification"
+      ],
+      "accepted_values": [
+        "material_lineage_reference",
+        "lineage_reference",
+        "background_reference",
+        "supporting_reference",
+        "citation_lineage"
+      ],
+      "reason_fields": [
+        "reason",
+        "role_reason",
+        "notes"
+      ],
+      "reason_required": false
+    },
+    {
+      "role": "BOUNDED_SCIENTIFIC_REVIEW",
+      "metadata_fields": [
+        "corpus_role",
+        "review_role",
+        "source_role",
+        "evidence_role",
+        "classification",
+        "review_state"
+      ],
+      "accepted_values": [
+        "bounded_scientific_review",
+        "bounded_review",
+        "abstract_review",
+        "metadata_and_abstract_review",
+        "screened",
+        "reviewed"
+      ],
+      "reason_fields": [
+        "reason",
+        "role_reason",
+        "review_notes",
+        "notes"
+      ],
+      "reason_required": false
+    },
+    {
+      "role": "TERMINAL_SOURCE_UNAVAILABLE",
+      "metadata_fields": [
+        "source_state",
+        "availability_state",
+        "acquisition_state",
+        "terminal_source_state",
+        "status"
+      ],
+      "accepted_values": [
+        "terminal_source_unavailable",
+        "unavailable",
+        "not_retrievable",
+        "access_denied",
+        "no_full_text",
+        "source_unavailable"
+      ],
+      "reason_fields": [
+        "reason",
+        "availability_reason",
+        "acquisition_notes",
+        "notes"
+      ],
+      "reason_required": true
+    }
+  ],
+  "closure_rule": {
+    "every_governed_source_requires_terminal_role": true,
+    "full_extraction_requires_evidence_record": true,
+    "excluded_role_requires_reason": true,
+    "terminal_unavailable_requires_reason": true,
+    "metadata_inference_beyond_explicit_values_prohibited": true
+  }
+}
