@@ -5,6 +5,7 @@ edition.workspace = true
 license-file.workspace = true
 rust-version.workspace = true
 
+default-run = "qudipi"
 [[bin]]
 name = "qudipi"
 path = "src/main.rs"

@@ -159,7 +159,17 @@ fn run_reproducibility_gates(repository_root: &Path) -> Result<Vec<GateResult>, 
         (
             "config_validation",
             "cargo",
-            &["run", "-q", "-p", "qudipi-cli", "--", "config", "validate"],
+            &[
+                "run",
+                "-q",
+                "-p",
+                "qudipi-cli",
+                "--bin",
+                "qudipi",
+                "--",
+                "config",
+                "validate",
+            ],
         ),
         (
             "python_tests",
