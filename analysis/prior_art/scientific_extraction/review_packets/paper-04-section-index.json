@@ -1,0 +1,222 @@
+[
+  {
+    "classification": "ABSTRACT",
+    "line": 5,
+    "text": "Abstract."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 8,
+    "text": "results, but it has several drawbacks: exclusive to the acquisition system, expensive, and computationally intensive."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 14,
+    "text": "Results The proposed approach was evaluated on 30"
+  },
+  {
+    "classification": "DATA",
+    "line": 15,
+    "text": "subjects using the professional clinical system, VISIA VAESTRO."
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 18,
+    "text": "Conclusion The proposed approach showed high correlation with the clinical system for analyzing melanin and hemoglobin distribution, indicating its potential for accurate diagnosis."
+  },
+  {
+    "classification": "INTRODUCTION",
+    "line": 23,
+    "text": "Introduction The optical properties of human skin have been studied for various purposes."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 36,
+    "text": "results and are widely used in clinics, they have several"
+  },
+  {
+    "classification": "LIMITATIONS",
+    "line": 37,
+    "text": "limitations: the analytical tool is dedicated to the image acquisition system."
+  },
+  {
+    "classification": "LIMITATIONS",
+    "line": 42,
+    "text": "limitations, we propose a novel approach using a deep learning model trained to solve the forward problem of light–tissue interactions."
+  },
+  {
+    "classification": "METHODS",
+    "line": 47,
+    "text": "Methods The concept of the decomposition structure is based on the reference study in Ref."
+  },
+  {
+    "classification": "DATA",
+    "line": 68,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 72,
+    "text": "dataset by randomly flipping, scaling, and rotating it."
+  },
+  {
+    "classification": "METHODS",
+    "line": 94,
+    "text": "methods Monte Carlo simulation 27 , 28 can be used to solve this mathematical model."
+  },
+  {
+    "classification": "METHODS",
+    "line": 113,
+    "text": "methods for modeling light reflection in skin layers."
+  },
+  {
+    "classification": "METHODS",
+    "line": 151,
+    "text": "methods are employed in this study: the MSE, PSNR, and the Pearson product-moment correlation coefficients."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 154,
+    "text": "results with the clinical equipment, VISIA system."
+  },
+  {
+    "classification": "DATA",
+    "line": 157,
+    "text": "dataset was acquired from 198"
+  },
+  {
+    "classification": "DATA",
+    "line": 158,
+    "text": "subjects using the VISIA acquisition system, VISIA–CR."
+  },
+  {
+    "classification": "DATA",
+    "line": 160,
+    "text": "dataset was divided into 2 groups: 168"
+  },
+  {
+    "classification": "DATA",
+    "line": 161,
+    "text": "subjects for model training and 30"
+  },
+  {
+    "classification": "DATA",
+    "line": 162,
+    "text": "subjects for testing the performance of the trained model."
+  },
+  {
+    "classification": "DATA",
+    "line": 164,
+    "text": "subjects, in accordance with all relevant national regulations and institutional policies, and approved by the authors’ institutional committees."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 175,
+    "text": "Results The proposed model decomposes the skin segmented area into hemoglobin, melanin, shading, and specular components that are combined to reconstruct the skin image, as shown in Fig."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 180,
+    "text": "results of the hemoglobin and melanin obtained from the proposed model and the VISIA system are shown in Fig."
+  },
+  {
+    "classification": "METHODS",
+    "line": 185,
+    "text": "methods, the grayscale images produced by the proposed method are inverted in Figs."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 188,
+    "text": "results of the proposed model for seven different epochs are postprocessed and compared to the VISIA system."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 194,
+    "text": "results from the proposed model (inverted) and VISIA system."
+  },
+  {
+    "classification": "DISCUSSION",
+    "line": 203,
+    "text": "Discussion The average PSNR value of the trained model exceeds 30, which indicates a high degree of similarity 54 between the input and reconstructed images, shown in Fig."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 213,
+    "text": "results of the VISIA system are not used in training, this strong positive relationship with clinical equipment can be interpreted as the light–tissue interactions being learned well as intended."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 224,
+    "text": "results, there are factors that can potentially affect the correlation values."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 226,
+    "text": "results into an image."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 231,
+    "text": "results of both systems, we calculated the correlation coefficients of the entire image rather than comparing the pixel intensity alone."
+  },
+  {
+    "classification": "METHODS",
+    "line": 246,
+    "text": "methods are considered."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 248,
+    "text": "results of the VISIA system as ground truth (GT) during training can potentially improve the model’s performance by providing detailed information about skin properties."
+  },
+  {
+    "classification": "DATA",
+    "line": 254,
+    "text": "datasets and measuring accurate SPD using a spectrometer can help improve accuracy."
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 256,
+    "text": "Conclusion In this study, we trained a deep learning model to solve the forward problem of light–tissue interactions and its performance was evaluated using professional clinical equipment, the VISIA system."
+  },
+  {
+    "classification": "METHODS",
+    "line": 258,
+    "text": "methods are applied for medical applications."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 260,
+    "text": "results showed a high correlation coefficients for melanin and hemoglobin."
+  },
+  {
+    "classification": "DATA",
+    "line": 285,
+    "text": "dataset is subject to institutional restrictions and can only be used for research purposes with the prior consent of the"
+  },
+  {
+    "classification": "DATA",
+    "line": 286,
+    "text": "subjects and the approval of the author’s institutional committees."
+  },
+  {
+    "classification": "DATA",
+    "line": 288,
+    "text": "subjects."
+  },
+  {
+    "classification": "REFERENCES",
+    "line": 289,
+    "text": "References 1."
+  },
+  {
+    "classification": "METHODS",
+    "line": 436,
+    "text": "Methods Programs Biomed."
+  },
+  {
+    "classification": "METHODS",
+    "line": 562,
+    "text": "Methods 311 ( 1-2 ), 117 – 129 ( 2006 )."
+  }
+]

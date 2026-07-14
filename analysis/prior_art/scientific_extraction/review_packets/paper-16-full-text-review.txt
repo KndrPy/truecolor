@@ -1,0 +1,661 @@
+L00001	Global Health & Medicine - Advance Publication Mini-Review
+L00002	DOI: 10.35772/ghm.2026.01058
+L00003	Artificial intelligence (AI)-assisted diagnosis of skin diseases: From
+L00004	image classification to dermatology-specific multimodal clinical
+L00005	reasoning
+L00006	§ §
+L00007	Yuhan Cheng1,2, , Chu Zhou3, , Ping Wang3, Huanran Liu4, Yue Han3,*
+L00008	1
+L00009	School of Medicine, Tongji University, Shanghai, China;
+L00010	2
+L00011	Department of Nursing, Shanghai Tenth People's Hospital, School of Medicine, Tongji University, Shanghai, China;
+L00012	3
+L00013	Department of Dermatology, The Union Hospital, Fujian Medical University, Fuzhou, Fujian, China;
+L00014	4
+L00015	Graduate School of Engineering, Tamagawa University, Machida, Tokyo, Japan.
+L00016	Abstract: Artificial intelligence (AI) in dermatology has moved beyond the early paradigm of single-image
+L00017	classification. Dermatological diagnosis is achieved based on morphology, distribution, symptoms, tactile findings,
+L00018	temporal evolution, patient history, histopathology, and treatment response. Clinically important differentials, such as
+L00019	eczema versus psoriasis, cutaneous T-cell lymphoma versus chronic dermatitis, drug eruption versus viral exanthem,
+L00020	lupus erythematosus versus dermatomyositis, and melanoma versus atypical nevus, are rarely resolved with one
+L00021	photograph alone. This review therefore frames AI-assisted dermatology around a central argument: the field must
+L00022	progress from lesion recognition to dermatology-specific multimodal clinical reasoning. We summarize major advances
+L00023	in convolutional neural networks, dermoscopic benchmarks, clinical-image datasets, large language models, vision-
+L00024	language systems, and dermatology foundation models. We also analyze challenges that are particularly relevant
+L00025	to dermatology, including morphologic overlap, skin-tone bias, reduced erythema visibility on darker skin, dataset
+L00026	imbalance, variable smartphone imaging, imperfect reference standards, and the gap between benchmark performance
+L00027	and clinical deployment. Special attention is given to fairness, regulatory oversight, software as a medical device,
+L00028	human-AI collaboration, prognosis prediction, biologic-response modeling, longitudinal monitoring, and treatment
+L00029	optimization. Finally, we discuss future directions, including skin-tone-aware foundation models, lesion-level and
+L00030	body-site grounding, pathology-genomics integration, dermatology copilots, post-marketing surveillance, and
+L00031	prospective clinical trials. By prioritizing dermatological reasoning rather than generic AI architecture, this review
+L00032	outlines a clinically grounded pathway for building safe, interpretable, equitable, and useful AI systems for skin disease
+L00033	management.
+L00034	Keywords: dermatology, artificial intelligence, multimodal reasoning, foundation models
+L00035	1. Introduction body site, distribution, skin tone, symptoms, palpation,
+L00036	tempo of evolution, medication exposure, comorbidities,
+L00037	Skin diseases are among the most common human occupational and environmental triggers, dermoscopy,
+L00038	disorders and encompass inflammatory, infectious, histopathology, microbiology, serology, and the response
+L00039	neoplastic, autoimmune, genetic, and drug-related to treatment (1,2).
+L00040	conditions. Dermatology is also an unusually visible The first generation of dermatology artificial
+L00041	specialty: patients, primary care clinicians, dermatologists, intelligence (AI) relied largely on convolutional neural
+L00042	pathologists, and digital platforms can all observe the networks (CNNs) trained on clinical or dermoscopic
+L00043	same organ, although at different levels of resolution and images. Landmark work reported dermatologist-level or
+L00044	with different amounts of context. This visibility has made near-dermatologist-level performance in selected skin
+L00045	dermatology an early adopter of computer vision, but it cancer tasks, and public datasets such as HAM10000 and
+L00046	has also encouraged the misleading view that diagnosis ISIC accelerated algorithm benchmarking (3-9). These
+L00047	is primarily an image classification task. In clinical studies were important because they showed that visual
+L00048	practice, dermatologists rarely make decisions based on pattern recognition could be scaled, standardized, and
+L00049	an isolated image. They integrate lesion morphology with compared across groups. At the same time, they revealed
+L00050	(P1)
+L00051	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00052	a substantial dataset-to-clinic gap: algorithms usually cutaneous lupus erythematosus, pityriasis rubra pilaris, or
+L00053	performed best on curated pigmented-lesion images early mycosis fungoides. Vesicles may indicate allergic
+L00054	and often decreased in reliability when confronted with contact dermatitis, herpesvirus infection, dyshidrotic
+L00055	different devices, image quality, disease spectra, clinical eczema, bullous pemphigoid, or a drug eruption
+L00056	settings, and patient populations. This gap is particularly depending on distribution, age, symptoms, mucosal
+L00057	vast in dermatology, where real-world photographs involvement, and chronology. A cropped trunk lesion
+L00058	vary in lighting, distance, compression, hair, scale, can be photographed and classified, but dermatologists
+L00059	ulceration, cosmetics, anatomical site, and background often make a diagnosis by comparing multiple lesions
+L00060	pigmentation. and asking whether they are symmetrical, grouped,
+L00061	A second generation of systems is now emerging. photo-distributed, acral, flexural, follicular, dermatomal,
+L00062	Large language models (LLMs) and multimodal annular, targetoid, retiform, or livedoid.
+L00063	vision-language models can process patient narratives, This morphologic overlap helps explain why
+L00064	electronic health records, pathology reports, and clinical dermatology AI may involve more difficulty than many
+L00065	instructions along with images. General medical standardized imaging tasks. Radiologic images usually
+L00066	foundation models, pathology copilots, and dermatology- follow consistent acquisition protocols and utilize
+L00067	specific multimodal models offer a route to align consistent anatomical planes, whereas dermatology
+L00068	morphology with clinical text, histology, and longitudinal photographs may be taken by patients, nurses, primary
+L00069	data (10-15). The goal is not simply to improve top-1 care physicians, or specialists using different devices,
+L00070	accuracy. Clinically useful systems should generate a angles, distances, and lighting conditions. The relevant
+L00071	ranked differential diagnosis, explain which visual and signal may include background skin, hair-bearing status,
+L00072	historical features substantiate each option, indicate when nail or mucosal involvement, scale texture, or even the
+L00073	biopsy or referral is needed, express uncertainty, and absence of a finding. In addition, the diagnostic reference
+L00074	maintain performance across skin tones and care settings. standard is often mixed: some diseases are diagnosed
+L00075	This review departs from a generic 'AI in medicine' clinically, some require clinicopathologic correlation, and
+L00076	framework by asking a dermatology-specific question: some become evident only after follow-up or treatment
+L00077	what must an AI system understand to reason in a failure. AI systems therefore need to learn a diagnostic
+L00078	clinically dermatological manner? We propose four hierarchy that includes lesion type, color, scale, border,
+L00079	requirements. First, the system should encode morphology configuration, distribution, temporal behavior, and
+L00080	and distribution rather than disease labels alone. Second, clinicopathologic consistency. Table 1 summarizes key
+L00081	it must account for skin color and optical visibility dermatology-specific problems and the multimodal
+L00082	because erythema, scale, pigment network, and vascular capabilities required to address them.
+L00083	structures are not equally visible across skin tones. Third,
+L00084	it should model time, symptoms, and treatment response 2.2. Skin tone is not a secondary fairness issue; it
+L00085	since many inflammatory and lymphoproliferative changes the visual signal
+L00086	diseases declare themselves longitudinally. Fourth, it must
+L00087	be embedded in a supervised workflow with regulatory, Skin-tone bias is one of the defining challenges in
+L00088	ethical, and fairness safeguards. dermatology AI. Many training datasets overrepresent
+L00089	Dermatology is fundamentally a multimodal lighter skin, while darker skin types, acral lesions,
+L00090	specialty, making image-only AI intrinsically incomplete mucosal disease, and conditions common in underserved
+L00091	for many inflammatory, lymphoproliferative, drug- populations remain comparatively scarce. This
+L00092	related, and longitudinal disorders. The most clinically imbalance is not only statistical; it changes the visual
+L00093	useful question is therefore not whether more modalities basis of diagnosis. Erythema may appear bright red on
+L00094	always improve accuracy but which diagnostic decisions lightly pigmented skin but violaceous, gray, brown, or
+L00095	are impossible, unsafe, or poorly calibrated without subtle on deeply pigmented skin. Post-inflammatory
+L00096	history, distribution, time, pathology, and treatment hyperpigmentation may mask active inflammation,
+L00097	response. and pigment networks or vascular patterns may
+L00098	differ in contrast. Psoriasis, atopic dermatitis, lupus
+L00099	2. Why dermatology is uniquely amenable to and erythematosus, dermatomyositis, and drug eruptions can
+L00100	uniquely difficult for AI therefore present with skin-tone-dependent cues that a
+L00101	narrow model may not have learned.
+L00102	2.1. Morphologic overlap is the central clinical problem Fairness studies have shown that dermatology AI can
+L00103	perform worse on datasets enriched for darker skin tones
+L00104	The core challenge for dermatology AI is not merely and uncommon diseases and that post-hoc reweighting
+L00105	whether a CNN can detect a border or a pigment network cannot fully compensate for models trained on narrow
+L00106	but whether a model can separate diseases that share the data (16,17). Fitzpatrick skin type labels are useful but
+L00107	same visible vocabulary. Erythematous scaly plaques incomplete because they describe ultraviolet response
+L00108	may represent psoriasis, chronic eczema, tinea corporis, rather than the full range of skin color, hue, undertone,
+L00109	(P2)
+L00110	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00111	Table 1. Dermatology-specific clinical problems that multimodal AI should address
+L00112	Clinical problem Typical examples Why image-only AI is insufficient Desired multimodal capability
+L00113	Morphologic Eczema vs. psoriasis, CTCL vs. chronic Single images may show the same Modeling primary and secondary lesion
+L00114	overlap dermatitis, lupus vs. dermatomyositis, erythematous plaques, scale, vesicles, or morphology, symptoms, distribution,
+L00115	drug eruption vs. viral exanthem annular patterns without enough context. chronicity, medications, pathology, and
+L00116	treatment response.
+L00117	Distribution and Extensor psoriasis, flexural eczema, Cropped lesion photographs remove Integrating close-up images, distant
+L00118	body-site logic photo-distributed lupus, dermatomal the body map and may hide symmetry, distribution photos, body maps, anatomical
+L00119	zoster, acral melanoma, nail disease clustering, or site-specific clues. metadata, and prior visits.
+L00120	Temporal evolution Changing nevus, flare-remitting A one-time image cannot show growth, Using longitudinal images, symptom
+L00121	eczema, treatment-resistant CTCL, recurrence, latency, dechallenge, or diaries, medication timelines, and disease
+L00122	delayed drug eruption response to therapy. trajectory models.
+L00123	Tactile and Induration, warmth, tenderness, The model cannot palpate or perform Prompting clinicians or patients for
+L00124	bedside signs blanching, Nikolsky's sign, scale bedside procedures based on pixels structured signs and flag tests needed
+L00125	texture, edema alone. before decision-making.
+L00126	Skin tone and Subtle erythema on darker skin, post- Color cues learned from light-skin Reporting skin-tone-stratified performance,
+L00127	optical visibility inflammatory hyperpigmentation, low- datasets may not transfer and may calibrating color, enriching darker skin
+L00128	contrast vascular features amplify racial disparities. datasets, and using fairness audits.
+L00129	Weak or mixed Clinical diagnosis without biopsy, A single disease label can be noisy or Using consensus labels, uncertainty-aware
+L00130	gold standards clinicopathologic discordance, evolving misleading. training, pathology linkage, and follow-up
+L00131	diagnoses outcome labels.
+L00132	Abbreviations: AI, artificial intelligence; CTCL, cutaneous T-cell lymphoma.
+L00133	and imaging contrast. Future dermatology AI should and detect infection or ischemia. These use cases require
+L00134	report performance by skin tone, race and ethnicity multimodal and longitudinal modeling rather than
+L00135	when ethically collected, age, sex, anatomical site, isolated image classification (18-20).
+L00136	image source, and disease prevalence. It should also test
+L00137	erythema-dependent conditions explicitly. Equity must be 3. From image classification to multimodal clinical
+L00138	designed into data collection, annotation, model training, reasoning
+L00139	external validation, and post-deployment monitoring
+L00140	rather than added after model development. 3.1. What image-based AI has achieved and where it
+L00141	remains limited
+L00142	2.3. Dermatological diagnosis is longitudinal and often
+L00143	therapeutic CNNs, EfficientNet, ResNet, Vision Transformers, and
+L00144	ensemble methods have performed well in selected
+L00145	Time is diagnostically important in dermatology. dermoscopic and clinical-image tasks. Early studies
+L00146	Melanoma screening depends on changes in size, shape, demonstrated that deep networks could classify skin
+L00147	color, and structure. Psoriasis and atopic dermatitis cancers at a level comparable to dermatologists under
+L00148	fluctuate with infection, stress, season, adherence, and experimental conditions, and ISIC-style challenges
+L00149	treatment. Cutaneous T-cell lymphoma (CTCL) may created shared benchmarks for lesion segmentation,
+L00150	mimic eczema for years before the clinicopathologic attribute detection, and classification (3-9,21-23).
+L00151	pattern reaches a diagnostic threshold. Drug eruptions These studies remain foundational because they made
+L00152	require attention to medication chronology, latency, dermatology one of the most visible specialties in
+L00153	dechallenge, rechallenge, and systemic features. Models medical computer vision.
+L00154	that rely on a single image at a given time therefore Nevertheless, high area under the curve (AUC) values
+L00155	discard information that dermatologists routinely in curated datasets should not be mistaken for clinical
+L00156	consider essential. readiness. A pigmented-lesion classifier trained on
+L00157	The clinical horizon of dermatology AI is also dermoscopy cannot necessarily diagnose inflammatory
+L00158	expanding beyond diagnosis. In chronic inflammatory rashes, infections, vasculitis, connective tissue disease, or
+L00159	diseases, the central question may be whether a patient genodermatoses. A model validated on biopsy-confirmed
+L00160	will respond to a biologic, have a flare-up, experience lesions may perform poorly on low-quality smartphone
+L00161	treatment toxicity, or need to be escalated. In melanoma, images from primary care. Likewise, a melanoma-versus-
+L00162	AI may help integrate histology, molecular markers, nevus classifier may still fail to recommend biopsy when
+L00163	and clinical staging for risk assessment. In wounds and the lesion is amelanotic, the image is incomplete, or
+L00164	ulcers, the task may be to quantify healing trajectory the history is concerning. Image AI should therefore be
+L00165	(P3)
+L00166	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00167	treated as one component of clinical reasoning and not as labeled reports are especially promising (15). The
+L00168	the reasoning process itself. next step is not only larger pretraining but clinically
+L00169	grounded pretraining. Models should learn relationships
+L00170	3.2. LLMs may be especially important in dermatology between morphological terms and image regions, lesion
+L00171	because diagnosis is narrative distribution and body maps, histopathologic patterns
+L00172	and clinical phenotypes, and longitudinal changes and
+L00173	LLMs are often described as documentation tools, but treatment response.
+L00174	in dermatology their deeper value may lie in narrative Foundation models may change dermatology more
+L00175	reasoning. Dermatologists transform a history into profoundly than classic CNNs because they are better
+L00176	diagnostic constraints: acute or chronic, localized or aligned with the three characteristics of the specialty:
+L00177	generalized, itchy or painful, febrile or afebrile, drug- label ambiguity, an open vocabulary, and morphology-
+L00178	associated or spontaneous, recurrent episodes or an initial language coupling. A CNN can learn that a lesion
+L00179	episode, and treatment-responsive or refractory. LLMs resembles training examples labeled psoriasis, but a
+L00180	can extract these constraints from consultation notes, vision-language model can represent the phrase "well-
+L00181	referral letters, pathology reports, patient-submitted demarcated erythematous plaques with silvery scale on
+L00182	descriptions, and teledermatology intake forms. They extensor surfaces" and relate it to competing diagnoses,
+L00183	can also translate patient language into dermatological body-site logic, and clinical history. This matters because
+L00184	terminology; for example, 'spreading red itchy patches dermatological labels are often provisional, overlapping,
+L00185	after antibiotics' can be mapped to a differential that or refined after biopsy and follow-up rather than fixed at
+L00186	includes morbilliform drug eruption, viral exanthem, the moment of imaging (10,14,15).
+L00187	urticaria, and an early severe cutaneous adverse reaction. Dermatology may therefore be one of the medical
+L00188	LLMs also create safety risks. They may generate specialties most naturally amenable to multimodal
+L00189	unsupported diagnoses, overstate certainty, suggest foundation models. Its diagnostic vocabulary is visual but
+L00190	an unsafe treatment, or miss emergencies such as not purely visual: morphology is described in language,
+L00191	Stevens-Johnson syndrome/toxic epidermal necrolysis, distribution is mapped across the body, histopathology
+L00192	meningococcemia, necrotizing infection, or rapidly provides tissue-level confirmation, and chronic diseases
+L00193	progressive melanoma. Dermatology-specific evolve across visits. The field should judge foundation
+L00194	deployment therefore requires retrieval from curated models not only by top-1 disease classification but by
+L00195	guidelines, awareness of local formularies, calibrated whether they can retrieve visually similar cases, ground
+L00196	uncertainty, escalation rules, and clinician review. A morphological terms in image regions, recognize missing
+L00197	dermatology copilot should not merely provide an clinical context, and express uncertainty when a single
+L00198	answer; it should show which visual signs, historical photograph cannot lead to a safe diagnosis.
+L00199	features, and evidence sources substantiate its differential
+L00200	diagnosis (12,19). 3.4. Multimodal fusion should follow the dermatologist's
+L00201	workflow
+L00202	3.3. Vision-language and foundation models:
+L00203	Opportunities for dermatology-specific grounding Early fusion, late fusion, cross-modal attention,
+L00204	contrastive pretraining, and retrieval-augmented
+L00205	Vision-language models align images and text in a shared generation are useful engineering strategies, but their
+L00206	representation space and may enable open-vocabulary value depends on whether they reproduce dermatological
+L00207	recognition, image-text retrieval, and explanations in reasoning. A practical multimodal pipeline should
+L00208	dermatological terms. General medical foundation assess image quality and skin tone, segment relevant
+L00209	models and multimodal systems show how images, lesions, identify morphology and distribution, extract a
+L00210	text, structured variables, and long clinical records can structured history from text, retrieve guidelines or prior
+L00211	be interpreted through a unified interface (10-15). This images when appropriate, generate a ranked differential
+L00212	architecture is attractive in dermatology because the diagnosis, calibrate uncertainty, and recommend triage
+L00213	disease label alone is rarely sufficient. A system should or next steps only when the available information is
+L00214	understand that an 'annular scaly plaque with central sufficient.
+L00215	clearing on the trunk' implies a different differential from This workflow differs from generic medical AI
+L00216	a "well-demarcated extensor plaque with silvery scale," because the dermatological examination is partly visual,
+L00217	even if both appear as erythematous plaques. partly tactile, and partly historical. A model cannot
+L00218	Segmentation and multimodal foundation models palpate an induration or gauge warmth, tenderness,
+L00219	may aid in lesion boundary detection, body-site or blanching, but it can ask the clinician or patient
+L00220	mapping, ulcer area monitoring, total-body photography, to provide those findings. It cannot directly perform
+L00221	and clinicopathologic alignment. Dermatology- bedside procedures, but it can flag which tests are needed
+L00222	specific models trained on large collections of clinical before making a decision. Multimodal dermatology
+L00223	photographs, dermoscopy, histopathology, and weakly AI should therefore be interactive: it should improve
+L00224	(P4)
+L00225	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00226	data acquisition and clinical questioning rather than Melanoma screening illustrates this distinction. For
+L00227	simply classify what has already been uploaded. The many dermoscopic images of pigmented lesions, visual
+L00228	dermatological multimodal reasoning architecture for AI- structure represents a large fraction of the diagnostic
+L00229	assisted skin disease diagnosis is shown in Figure 1. signal, and image-based models can provide useful risk
+L00230	stratification. And yet the same model is incomplete for
+L00231	3.5. Which dermatological tasks truly require multimodal amelanotic lesions, lesions selected from high-risk total-
+L00232	AI? body photography, changing nevi, immunosuppressed
+L00233	patients, or cases in which the relevant clinical decision is
+L00234	A critical weakness of early dermatology AI was the biopsy versus short-interval monitoring. In these settings,
+L00235	implicit assumption that every skin task should be prior images, lesion evolution, age, site, personal and
+L00236	solved as an image classification problem. The opposite family history, and a clinician's suspicions become part
+L00237	error would be to assume that every task requires of the diagnostic signal (3-9,21-23).
+L00238	maximal multimodalities. Multimodal AI is valuable Inflammatory, drug-related, infectious, and
+L00239	when additional context changes the clinical decision, lymphoproliferative dermatoses are different. A photograph
+L00240	reduces unsafe uncertainty, or distinguishes diseases with of an erythematous scaly plaque may be consistent with
+L00241	overlapping morphology. It is less necessary when the eczema, psoriasis, tinea, lupus, dermatomyositis, or early
+L00242	target is a narrowly defined visual triage problem under CTCL. The decisive information may be itching, pain,
+L00243	standardized acquisition conditions. a fever, the timing of medication, mucosal involvement,
+L00244	Figure 1. Dermatological multimodal reasoning architecture for AI-assisted skin disease diagnosis. The schematic illustrates a
+L00245	clinically grounded pipeline that integrates multiple data modalities to aid in dermatological decision-making. Inputs include clinical
+L00246	images, dermoscopy, patient history, symptoms, medication timelines, prior images, and histopathology reports. The core reasoning
+L00247	engine performs lesion segmentation, morphology and distribution analysis, detection of temporal changes, and clinicopathologic
+L00248	alignment using vision-language and foundation models. Outputs consist of a ranked differential diagnosis with uncertainty
+L00249	calibration, visual and textual explanations linked to dermatological signs, triage recommendations, and suggestions for missing
+L00250	information. The architecture emphasizes interactive data acquisition, clinician oversight, and fairness across skin tones.
+L00251	(P5)
+L00252	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00253	distribution, chronicity, histology, immunophenotype, If these cues are not controlled, external validation may
+L00254	laboratory findings, or treatment failure. For these tasks, reveal an abrupt drop in performance in primary care,
+L00255	image-only AI is not merely incomplete; it can yield teledermatology, darker skin tones, or limited-resource
+L00256	methodologically unsound results because the required settings (16,17,19,23-25).
+L00257	clinical variables are absent from the input. Robust development should therefore include
+L00258	shortcut stress tests. Investigators should perform
+L00259	4. Dermatology-specific bottlenecks and challenges metadata ablation, background masking, lesion-only
+L00260	versus context-aware comparisons, device-stratified
+L00261	4.1. Data quality and annotation: Labels must depict validation, counterfactual removal of rulers and markers,
+L00262	morphology and not just diagnosis compression robustness testing, and prospective
+L00263	evaluation in the intended workflow. Explanations should
+L00264	Many dermatology AI datasets provide disease labels, be audited for whether they highlight true dermatological
+L00265	but dermatologists reason with intermediate descriptors. signs rather than artifacts. This failure analysis is as
+L00266	A label such as 'psoriasis' is less informative than important as reporting the aggregate AUC.
+L00267	a structured description such as 'well-demarcated
+L00268	erythematous plaque, silvery scale, extensor surface, 4.3. Real-world deployment
+L00269	chronic recurrent course, family history, and no fungal
+L00270	hyphae.' Similarly, a melanoma dataset becomes more Many AI systems perform well on images acquired
+L00271	clinically useful when it includes body site, lesion size, under standardized conditions but face a different
+L00272	evolution, dermoscopic structures, histopathology, reality in teledermatology and primary care. Patient-
+L00273	and whether the lesion was identified during high-risk submitted photographs may be blurred, underexposed,
+L00274	surveillance or routine care. Disease-only labels may overcompressed, too close, too far, or taken after the
+L00275	encourage models to learn shortcuts, including device application of emollients, makeup, antiseptics, topical
+L00276	type, background skin, ruler marks, biopsy ink, or center- corticosteroids, or dressings. Hair, tattoos, scale,
+L00277	specific artifacts. crust, ulceration, nail polish, and anatomical curvature
+L00278	Annotation should therefore move from single labels can obscure lesions. Smartphone color calibration
+L00279	towards structured dermatological ontologies that include and automatic white balance can alter erythema and
+L00280	primary lesion type, secondary changes, arrangement, pigmentation. These factors are not merely technical
+L00281	distribution, body site, symptom profile, skin tone, image noise; they directly change the diagnostic signal available
+L00282	quality, and diagnostic certainty. Consensus annotation, to both a clinician and a model (24,25).
+L00283	adjudication of difficult cases, and uncertainty-aware Deployment-ready systems should provide image-
+L00284	labels are essential because dermatology reference quality feedback, standardized acquisition instructions,
+L00285	standards are often imperfect. For rare diseases, sharing color calibration or reference cards when feasible,
+L00286	of registry-based data, active learning, and expert-in-the- validation across devices, and the ability to safely
+L00287	loop annotation may be more useful than indiscriminate reject inadequate images. They should also be tested in
+L00288	data scaling. common teledermatology scenarios, including multiple-
+L00289	lesion uploads, rashes involving several body sites,
+L00290	4.2. Learning of hidden shortcuts by dermatology AI darker skin tones, pediatric images, nail and scalp
+L00291	disease, genital or mucosal lesions requiring careful
+L00292	Dermatology AI can fail even when retrospective consent, and follow-up photographs taken at different
+L00293	accuracy appears high because models may learn distances or under different lighting conditions.
+L00294	features that correlate with labels but do not represent
+L00295	disease biology. Common hidden shortcuts include ruler 4.4. Bias, global inequity, and dataset colonialism
+L00296	marks placed beside suspicious lesions, skin-marker ink,
+L00297	biopsy-site framing, surgical drapes, dermoscopy device Global dermatology AI should not be created based
+L00298	signatures, clinic-specific backgrounds, compression solely on images collected at wealthy, urban, specialist
+L00299	artifacts, hair removal patterns, and anatomical-site centers and then exported to settings with different
+L00300	or referral-center cues. A model can therefore appear diseases, skin tones, pathogens, occupational exposure,
+L00301	to detect melanoma while partly detecting the clinical climate, access to care, and treatment pathways. Such a
+L00302	behavior that preceded biopsy or photography. pattern, sometimes discussed as dataset colonialism, risks
+L00303	These failures are especially dangerous because turning underrepresented populations into data sources or
+L00304	dermatology images are often collected after a clinician target markets without giving them governance authority,
+L00305	has already identified a lesion as concerning. The dataset clinical benefit, or locally valid tools. It may also
+L00306	may encode selection bias, workup bias, and spectrum miss conditions common in limited-resource settings,
+L00307	bias: benign lesions photographed casually, malignant including neglected tropical diseases, pigmentary
+L00308	lesions photographed with rulers and dermoscopy, and disorders, leprosy, scabies, deep fungal infections,
+L00309	inflammatory rashes photographed only after referral. Kaposi sarcoma, and HIV-associated dermatoses.
+L00310	(P6)
+L00311	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00312	Equitable dermatology AI requires locally and why the final decision was made. High-risk
+L00313	meaningful datasets, partnerships between communities recommendations should require clinician confirmation
+L00314	and clinicians, transparent consent, shared governance, and should be linked to visible evidence and current
+L00315	subgroup performance reporting, and mechanisms guidance.
+L00316	for sharing benefits. Fairness should be assessed not
+L00317	only with an equal AUC but also based on clinically 5. Future breakthroughs and technical pathways
+L00318	meaningful outcomes: missed malignancies, delayed
+L00319	diagnosis, unnecessary biopsies, referral burden, 5.1. Dermatology foundation models should be
+L00320	treatment access, patient trust, and whether the system morphology-aware, skin-tone-aware, and longitudinal
+L00321	improves care for groups historically underserved by
+L00322	dermatology (16,17). The next generation of dermatology foundation models
+L00323	should not be evaluated only in terms of disease
+L00324	4.5. Interpretability must be dermatology-specific classification accuracy. They should be tested on
+L00325	morphology recognition, body-site grounding, lesion
+L00326	Generic heatmaps are insufficient if they simply segmentation, image-quality assessment, skin-tone
+L00327	highlight a lesion without explaining the relevant fairness, rare-disease retrieval, detection of temporal
+L00328	signs. Dermatologists need explanations that map to changes, and clinicopathologic correlation. Self-
+L00329	clinical language, such as an atypical pigment network, supervised and weakly supervised learning can capitalize
+L00330	blue-white veil, arborizing vessels, Wickham striae, on large image archives, but clinically meaningful
+L00331	collarette scale, follicular plugging, Gottron papules, a pretraining should pair images with morphology-rich
+L00332	targetoid morphology, retiform purpura, or palmoplantar reports, dermoscopic structures, pathology captions,
+L00333	involvement. A useful explanation should connect distribution maps, and longitudinal treatment data. Table
+L00334	a visible region to a morphology term, the term to a 2 summarizes landmark evidence and emerging model
+L00335	differential diagnosis, and the differential diagnosis to a families.
+L00336	concrete next step. Longitudinal modeling is especially important.
+L00337	Dual-modality explanations are therefore preferable: Total-body photography, sequential dermoscopy,
+L00338	visual evidence should be paired with a textual rationale patient-reported flare-up diaries, laboratory trends, and
+L00339	and calibrated uncertainty. A system might rank psoriasis treatment changes can all be represented as trajectories.
+L00340	as the leading diagnosis because it identifies sharply Such models could identify changing melanocytic
+L00341	demarcated scaly plaques on extensor surfaces and a lesions, quantify psoriasis severity over time, detect
+L00342	chronic recurrent history while also retaining eczema as a atopic dermatitis flare-ups, monitor wound healing,
+L00343	possibility because of pruritus and flexural involvement. and recognize chronic dermatitis cases that warrant a
+L00344	Such explanations allow clinicians to challenge the biopsy for cutaneous lymphoma. They should also report
+L00345	model, identify missing information, and reduce uncertainty and clearly distinguish diagnostic prediction,
+L00346	automation bias. prognosis, and estimation of the treatment response.
+L00347	4.6. Regulation and medico-legal responsibility 5.2. Clinicopathologic foundation models
+L00348	Clinical dermatology AI may qualify as software as a The most consequential frontier for dermatology
+L00349	medical device when it provides diagnostic or triage foundation models may be clinicopathologic integration.
+L00350	recommendations. Regulatory evaluation should consider Dermatologists rarely treat clinical photographs and
+L00351	the intended use, target population, user type, autonomy pathology slides as independent evidence streams; instead,
+L00352	level, risk of harm, and whether the model is locked or they ask whether the clinical morphology, dermoscopic
+L00353	adaptive. Earlier devices such as MelaFind demonstrated structures, histopathologic pattern, immunophenotype,
+L00354	the feasibility of computerized lesion assessment but also molecular alterations, and disease course support the same
+L00355	underscored problems related to specificity, workflow diagnosis. AI systems should be designed to model this
+L00356	fit, and clinical utility; newer primary care systems have alignment rather than simply concatenate modalities.
+L00357	renewed interest in regulated AI-assisted skin cancer Melanoma, CTCL, autoimmune connective-tissue
+L00358	triage (26,27). disease, vasculitis, blistering disorders, and complex
+L00359	Modern multimodal and adaptive systems require drug reactions are particularly amenable to this approach.
+L00360	representative validation, skin-tone subgroup analysis, In melanoma, clinical and dermoscopic images can be
+L00361	human-factor testing, cybersecurity review, data connected with histologic subtype, Breslow thickness,
+L00362	governance, change-control planning, and post-marketing ulceration, mitotic rate, genomics, and outcomes. In
+L00363	performance monitoring (28-30). Responsibility must CTCL, persistent patches or plaques, serial photographs,
+L00364	also be explicit. When an AI output conflicts with a repeated biopsies, T-cell receptor clonality, and treatment
+L00365	clinician's judgment, the medical record should show response form a longitudinal clinicopathologic pattern. In
+L00366	who reviewed the output, what evidence was considered, autoimmune disease, morphology and distribution must
+L00367	(P7)
+L00368	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00369	Table 2. Landmark evidence and emerging model families in dermatology AI
+L00370	Area or model
+L00371	Representative evidence or dataset Dermatology-specific contribution Remaining gap
+L00372	family
+L00373	Classic skin cancer Esteva et al. (3), Haenssle et al. (4), Established dermatologist-level performance Often have a narrow disease spectrum,
+L00374	CNNs Tschandl et al. (5): human-computer in selected dermoscopic or clinical image curated images, and limited real-world
+L00375	studies. tasks. workflow evaluation.
+L00376	Public dermoscopy ISIC challenges, HAM10000, Enabled reproducible lesion segmentation Underrepresentation of darker skin, non-
+L00377	benchmarks BCN20000. and pigmented-lesion classification. pigmented lesions, rare disorders, and
+L00378	primary care images.
+L00379	Clinical image + Liu et al. (6): deep learning system Demonstrated that history and metadata Require prospective triage evaluation
+L00380	history systems for 26 common skin diseases; PAD- improve differential diagnosis beyond and better handling of incomplete patient
+L00381	UFES-20 smartphone dataset. lesion pixels. contexts.
+L00382	Broad dermatology Han et al. (7): 134 skin disorders, Expanded AI from melanoma to May still rely on disease labels rather than
+L00383	classifiers mobile and few-shot platforms. inflammatory, infectious, and benign morphology and distribution annotations.
+L00384	conditions.
+L00385	Fairness datasets DDI, Fitzpatrick17k, skin-tone Exhibited clinically significant performance Require global, prospective, skin-tone-
+L00386	and audits subgroup analysis. degradation on darker skin tones and aware validation and local governance.
+L00387	uncommon diseases.
+L00388	Vision-language CLIP, BiomedCLIP, GPT-4V Enabled open-vocabulary matching, image- Prone to prompt sensitivity, hallucinations,
+L00389	models dermatology prompting. text retrieval, and morphology-grounded and weak spatial grounding without
+L00390	explanations. clinical guardrails.
+L00391	Medical generalist Med-PaLM M, Med-Gemini, Supported flexible reasoning over text, Dermatology-specific performance,
+L00392	models multimodal pathology copilots. images, records, pathology, and long safety, and fairness remain insufficiently
+L00393	contexts. validated.
+L00394	Dermatology PanDerm-like multimodal Can learn transferable representations Need prospective external validation,
+L00395	foundation models dermatology pretraining. acr o ss cl i n i cal , d er m o sco p i c, an d transparent failure analysis, and equitable
+L00396	histopathologic modalities. deployment.
+L00397	Regulated or near- MelaFind, DermaSensor, Skin Moved AI from benchmark datasets Need evidence for specificity, workflow
+L00398	regulated systems Analytics-type triage tools. towards clinical pathways and device impact, liability, and post-marketing
+L00399	regulation. monitoring.
+L00400	Clinicopathologic Multimodal pathology copilots, Connected clinical morphology, dermoscopy, Require lesion-to-biopsy linkage, tissue-
+L00401	foundation models dermatology foundation models, and histopathology, immunophenotype, level grounding, temporal alignment,
+L00402	paired clinicopathologic datasets. genomics, transcriptomics, and outcomes external validation, and explicit handling
+L00403	into one reasoning space. of discordant evidence.
+L00404	Abbreviations: AI, artificial intelligence; CNNs, convolutional neural networks; DDI, Diverse Dermatology Images; ISIC, International Skin
+L00405	Imaging Collaboration.
+L00406	be aligned with serology, histology, immunofluorescence, tools, retrieve information, ask follow-up questions, and
+L00407	and transcriptomic signatures (14,15,18). coordinate workflow steps. In dermatology, a safe agent
+L00408	Clinicopathologic foundation models would require might check image quality, request close-up and distant
+L00409	paired and temporally linked datasets, tissue-level distribution photographs, ask about pain, itching, a fever,
+L00410	grounding, lesion-level mapping between the clinical medication exposure, mucosal involvement, pregnancy,
+L00411	image and biopsy site, and outcome labels that distinguish immunosuppression, and duration, retrieve prior images,
+L00412	diagnosis, prognosis, and the therapy response. Their value generate a differential diagnosis, recommend whether
+L00413	should be judged by whether they detect discordance, urgent referral is needed, and draft a structured note for
+L00414	recommend a repeat biopsy when morphology and clinician review.
+L00415	histology conflict, and support cautious reasoning in Such systems should be designed as copilots rather
+L00416	instances of diseases where a single gold standard is than autonomous dermatologists. They require escalation
+L00417	unrealistic. rules for red-flag conditions, refusal behavior when data
+L00418	are inadequate, transparent uncertainty, and audit trails.
+L00419	5.3. Agentic dermatology AI: A copilot, not an Patient-facing agents should avoid a definitive diagnosis
+L00420	autonomous dermatologist when the risk is high and should direct patients to urgent
+L00421	care when systemic symptoms, a rapidly spreading rash,
+L00422	Agentic AI refers to systems that can plan actions, call mucosal involvement, necrosis, purpura, or suspected
+L00423	(P8)
+L00424	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00425	melanoma is present. Clinician-facing agents can reduce for multimodal AI because it already depends on
+L00426	documentation and the cognitive burden while preserving asynchronous images and text. AI can assist by checking
+L00427	professional accountability. image quality, collecting a structured history, identifying
+L00428	high-risk lesions, suggesting differentials for common
+L00429	5.4. Fairness-by-design and global data collaboration rashes, and prioritizing referrals. In primary care, AI may
+L00430	help clinicians decide whether a lesion requires an urgent
+L00431	Federated learning, secure aggregation, differential dermatology assessment, whether a rash can be treated
+L00432	privacy, and trusted research environments can facilitate empirically, or whether biopsy, culture, serology, or
+L00433	collaboration across institutions without centralizing emergency evaluation is needed (24,25).
+L00434	sensitive images or records (31). However, privacy- The purpose of these systems should not be framed as
+L00435	preserving learning does not automatically ensure replacing dermatologists. Rather, AI can help direct the
+L00436	fairness. A federated network dominated by similar right patient to the right level of care. Low-risk benign
+L00437	populations can still reproduce bias. Collaboration should lesions may be managed with reassurance and follow-
+L00438	therefore be deliberately structured to include diverse up, whereas suspected melanoma, a rapidly progressing
+L00439	skin tones, geographic regions, age groups, anatomical infection, vasculitis, or a severe drug eruption should be
+L00440	sites, disease categories, and care settings. Synthetic escalated. Successful triage depends on a high level of
+L00441	images may help balance rare categories, but they must sensitivity to dangerous diseases, transparent uncertainty,
+L00442	be reviewed by experts and tested for leakage, artifact skin-tone equity, and workflows that reduce rather than
+L00443	amplification, and skin-tone distortion. increase the clinician's burden.
+L00444	A practical global reporting standard should require
+L00445	every dermatology AI study to describe its dataset 6.2. Rare and difficult diseases
+L00446	composition, skin-tone distribution, image source,
+L00447	reference standard, subgroup performance, failure Rare and diagnostically difficult diseases are natural
+L00448	modes, calibration, and external validation. Journals targets for multimodal dermatology AI because
+L00449	and regulators should also require explicit reporting on individual clinicians may encounter only a small
+L00450	darker skin, inflammatory disorders, rare diseases, and number of cases, whereas aggregated data can reveal
+L00451	real-world smartphone images. recognizable patterns. CTCL, autoimmune blistering
+L00452	diseases, genodermatoses, vasculitis, connective tissue
+L00453	5.5. Prospective clinical trials and post-deployment diseases, and rare infections often require integration
+L00454	learning of clinical morphology, distribution, laboratory data,
+L00455	pathology, immunofluorescence, molecular testing,
+L00456	Most dermatology AI evidence remains retrospective. and follow-up. AI systems may aid in these cases
+L00457	Prospective studies should determine whether AI improves by retrieving similar examples, ranking differential
+L00458	outcomes that matter clinically: time to melanoma diagnoses, and detecting discordance between clinical
+L00459	diagnosis, appropriateness of referral, biopsy yield, missed and histopathologic findings.
+L00460	cancer rate, flare-up control, treatment adherence, clinician Few-shot learning, retrieval-augmented reasoning,
+L00461	workload, patient satisfaction, and equity. The SPIRIT-AI, and knowledge graphs may be particularly useful. Even
+L00462	CONSORT-AI, and DECIDE-AI reporting frameworks when a model cannot confidently classify a rare disease,
+L00463	provide useful principles for AI clinical trials and early- it may provide safety-oriented reasoning, such as
+L00464	stage evaluations, but dermatology-specific endpoints are noting that a chronic treatment-resistant patch or plaque
+L00465	still needed (30,32,33). dermatitis with poikiloderma and atypical lymphocytes
+L00466	Post-deployment monitoring is equally important warrants concern about mycosis fungoides and calls for
+L00467	because imaging devices, clinical practice, disease a repeat biopsy. This type of cautious, evidence-linked
+L00468	prevalence, and treatment options change over time. output may be more clinically valuable than forcing a
+L00469	Drift detection, periodic recalibration, safety audits, high-confidence label.
+L00470	and clinician feedback mechanisms should be required.
+L00471	Adaptive updates should remain separate from real-time 6.3. Treatment decision-making support and efficacy
+L00472	decision-making support unless a regulated change-control prediction
+L00473	plan is in place. Table 3 provides a practical deployment
+L00474	checklist for dermatology AI. Dermatology AI is moving from diagnosis towards
+L00475	decision-making support. In psoriasis and atopic
+L00476	6. AI's potential applications and future prospects in dermatitis, multimodal models may combine
+L00477	dermatology images, severity scores, itching and sleep measures,
+L00478	comorbidities, laboratory data, prior therapies, adherence,
+L00479	6.1. Teledermatology and primary care triage and pharmacogenomic or transcriptomic signals to
+L00480	predict the response to biologics, Janus kinase inhibitors,
+L00481	Teledermatology is the most immediate setting phototherapy, or systemic immunomodulators. In acne,
+L00482	(P9)
+L00483	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00484	Table 3. Dermatology AI deployment checklist: From validation to clinical use
+L00485	Risk domain Dermatology-specific manifestation Required evaluation Practical mitigation
+L00486	Skin-tone fairness Erythema and vascular cues vary Reporting performance by skin tone, Diverse recruitment, skin-tone-aware
+L00487	by pigmentation; darker skin is disease type, anatomical site, and image sampling, color calibration, fairness
+L00488	underrepresented in many datasets. source; auditing false negatives and false dashboards, and local validation.
+L00489	positives.
+L00490	Real-world image B l u r, l i g h t i n g , c o m p r e s s i o n , Stress-testing teledermatology and primary Image-quality prompts, acquisition
+L00491	quality cosmetics, hair, scale, ulceration, and care images; measuring the reject rate and guidance, reference cards, and safe
+L00492	variable smartphone cameras. clinician override rate. rejection when images are inadequate.
+L00493	Clinical safety Missed melanoma, severe drug Evaluate high-risk triage sensitivity, Escalation rules, clinician confirmation,
+L00494	eruption, vasculitis, necrotizing calibration, uncertainty, and red-flag conservative thresholds, and emergency
+L00495	infection, or immunosuppression- recognition. warnings.
+L00496	related disease.
+L00497	Workflow Standalone tools add clicks and Ascertaining time, referral quality, biopsy EHR integration, structured output, audit
+L00498	integration may not fit EHR or teledermatology yield, user trust, and documentation trails, and human-centered interface
+L00499	pathways. burden. design.
+L00500	Regulation and Adaptive multimodal models may Defining intended use, autonomy level, S a M D p a t h w a y, p r e d e t e r m i n e d
+L00501	liability change over time and influence locked vs. adaptive status, cybersecurity, change-control plans, post-marketing
+L00502	biopsy, referral, or therapy decisions. and change-control plans. surveillance, and clear responsibility.
+L00503	LLM hallucination Confident but unsupported diagnosis, Benchmarking factuality, guideline Retrieval-augmented generation, curated
+L00504	unsafe treatment advice, or missed consistency, uncertainty expression, and knowledge bases, guardrails, and
+L00505	red flags. failure cases. clinician review.
+L00506	Longitudinal drift D i s e a s e p r e v a l e n c e , c a m e r a s , Monitoring calibration and subgroup Drift detection, scheduled recalibration,
+L00507	guidelines, therapies, and patient performance over time; comparing with rollback mechanisms, and prospective
+L00508	populations evolve. respect to prior model versions. auditing.
+L00509	Abbreviations: AI, artificial intelligence; EHR, electronic health record; LLM, large language model; SaMD, software as a medical device.
+L00510	hidradenitis suppurativa, and rosacea, longitudinal accelerate clinical trial screening by matching patient
+L00511	images and patient-reported outcomes may help monitor phenotypes to eligibility criteria.
+L00512	severity and treatment response. In melanoma, AI Educational and research applications must still
+L00513	may integrate histology, clinicopathologic variables, ensure privacy, consent, and fairness. Synthetic cases
+L00514	and molecular markers for risk stratification and trial should be clearly labeled, and generated educational
+L00515	matching (18-20). material should be reviewed by experts. For trainee
+L00516	These applications require higher safety standards education, AI should emphasize uncertainty and
+L00517	than classification because they affect treatment exposure, differential diagnosis rather than encouraging single-
+L00518	cost, and patient expectations. Recommendations label pattern recognition.
+L00519	should be linked to guidelines, they should factor in
+L00520	local formulary constraints, and they should be patient- 6.5. From diagnosis-centric AI to continuous skin
+L00521	centered and explainable. The model should distinguish intelligence
+L00522	diagnostic confidence from therapeutic evidence, and
+L00523	clinicians should remain responsible for final treatment The future paradigm of dermatology AI should not
+L00524	decisions. be limited to "taking a photograph and receiving a
+L00525	diagnosis". A more ambitious and clinically realistic
+L00526	6.4. Education and research innovation direction is continuous skin intelligence: systems
+L00527	that track lesions, inflammation, wounds, symptoms,
+L00528	Multimodal AI can enhance dermatology education by exposure, and treatment response over time. This
+L00529	generating case-based learning materials that include paradigm fits dermatology because many important
+L00530	images across skin tones, morphology labels, distribution decisions depend on trajectory rather than a single visual
+L00531	maps, histopathology, and differential reasoning. It snapshot.
+L00532	can also give trainees immediate feedback, not only Such systems could combine patient-submitted
+L00533	on whether an answer is correct but also on which images, total-body photography, wearable or smartphone
+L00534	morphology clues were missed. In research, AI can mine sensing, itching and pain diaries, environmental
+L00535	image-text-pathology repositories to identify phenotypes, triggers, medication timelines, sleep and activity
+L00536	disease subtypes, biomarker associations, and treatment data, and clinician-verified outcomes. They could
+L00537	response patterns. Foundation models may also monitor melanoma risk through detection of changes,
+L00538	(P10)
+L00539	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00540	quantification of psoriasis and atopic dermatitis flare-ups, Science and Technology, Fujian Province (2025Y9299),
+L00541	follow hidradenitis suppurativa activity, gauge wound and Fujian Medical University Union Hospital's Project
+L00542	healing, and identify patients whose condition needs to to Foster Excellent Young Scholars (2022XH027).
+L00543	be managed before a severe flare-up occurs.
+L00544	However, continuous monitoring also creates new Conflict of Interest: The authors have no conflicts of
+L00545	risks: overdiagnosis, anxiety, privacy leakage, inequitable interest to disclose.
+L00546	access, false alarms, and unclear responsibility for
+L00547	unattended alerts. The goal should be clinician- References
+L00548	supervised longitudinal decision-making support and not
+L00549	surveillance for its own sake. Safe systems must define 1. Hay RJ, Johns NE, Williams HC, Bolliger IW, Dellavalle
+L00550	what is monitored, who receives alerts, how uncertainty RP, Margolis DJ, Marks R, Naldi L, Weinstock MA,
+L00551	is displayed, and when the model should remain silent. Wulf SK, Michaud C, J L Murray C, Naghavi M. The
+L00552	global burden of skin disease in 2010: An analysis of
+L00553	7. Conclusion the prevalence and impact of skin conditions. J Invest
+L00554	Dermatol. 2014; 134:1527-1534.
+L00555	2. Karimkhani C, Dellavalle RP, Coffeng LE, Flohr C, Hay
+L00556	Dermatology AI has progressed from experimental
+L00557	RJ, Langan SM, Nsoesie EO, Ferrari AJ, Erskine HE,
+L00558	CNN classifiers to multimodal systems that can Silverberg JI, Vos T, Naghavi M. Global skin disease
+L00559	integrate images, text, structured patient information, morbidity and mortality: An update from the Global Burden
+L00560	and histopathology. The key conceptual advance is that of Disease Study 2013. JAMA Dermatol. 2017; 153:406-
+L00561	dermatology AI should be built around clinical reasoning 412.
+L00562	rather than generic computer vision. The field must learn 3. Esteva A, Kuprel B, Novoa RA, Ko J, Swetter SM, Blau
+L00563	morphology, distribution, skin tone, symptoms, temporal HM, Thrun S. Dermatologist-level classification of skin
+L00564	cancer with deep neural networks. Nature. 2017; 542:115-
+L00565	evolution, clinicopathologic correlation, and therapeutic
+L00566	118.
+L00567	context. 4. Haenssle HA, Fink C, Schneiderbauer R, et al. Man against
+L00568	The major barriers are also dermatology-specific. machine: Diagnostic performance of a deep learning
+L00569	Image-only models are vulnerable to morphologic convolutional neural network for dermoscopic melanoma
+L00570	ambiguity, acquisition variability, and missing context. recognition in comparison to 58 dermatologists. Ann Oncol.
+L00571	Skin-tone bias can alter the visual signal itself, and 2018; 29:1836-1842.
+L00572	particularly in erythema-dependent diseases. Benchmark 5. Tschandl P, Rinner C, Apalla Z, et al. Human-computer
+L00573	accuracy may not translate to teledermatology, primary collaboration for skin cancer recognition. Nat Med. 2020;
+L00574	26:1229-1234.
+L00575	care, rare-disease diagnosis, or treatment decision-
+L00576	6. Liu Y, Jain A, Eng C, et al. A deep learning system for
+L00577	making support. LLMs and agentic systems add important differential diagnosis of skin diseases. Nat Med. 2020;
+L00578	capabilities but also risks, including hallucinations, 26:900-908.
+L00579	automation bias, privacy leakage, and unclear medico- 7. Han SS, Park I, Eun Chang S, Lim W, Kim MS, Park
+L00580	legal responsibility. GH, Chae JB, Huh CH, Na JI. Augmented intelligence
+L00581	Future progress will depend on foundation dermatology: Deep neural networks empower medical
+L00582	models that are morphology-aware, skin-tone-aware, professionals in diagnosing skin cancer and predicting
+L00583	treatment options for 134 skin disorders. J Invest Dermatol.
+L00584	longitudinal, and clinically grounded; datasets that are
+L00585	2020; 140:1753-1761.
+L00586	diverse and responsibly governed; explanations that 8. Tschandl P, Rosendahl C, Kittler H. The HAM10000
+L00587	connect visual evidence to dermatological language; dataset, a large collection of multi-source dermatoscopic
+L00588	regulatory pathways that address adaptive multimodal images of common pigmented skin lesions. Sci Data. 2018;
+L00589	software; and prospective studies that measure outcomes 5:180161.
+L00590	valued by patients and clinicians. With these foundations, 9. Marchetti MA, Codella NCF, Dusza SW, et al. Results
+L00591	AI can become a trusted component of digital of the 2016 International Skin Imaging Collaboration
+L00592	International Symposium on Biomedical Imaging
+L00593	dermatology - not a replacement for dermatologists, but
+L00594	challenge: Comparison of the accuracy of computer
+L00595	a tool that expands access, improves triage, improves algorithms to dermatologists for the diagnosis of melanoma
+L00596	diagnostic reasoning, and facilitates more personalized from dermoscopic images. J Am Acad Dermatol. 2018;
+L00597	care. The central methodological challenge is to decide 78:270-277.e1.
+L00598	when AI should recognize a lesion, when it should reason 10. Moor M, Banerjee O, Abad ZSH, et al. Foundation models
+L00599	across modalities, and when it should defer because the for generalist medical artificial intelligence. Nature. 2023;
+L00600	available inputs do not support a safe dermatological 616:259-265.
+L00601	determination. 11. Haug CJ, Drazen JM. Artificial intelligence and machine
+L00602	learning in clinical medicine, 2023. N Engl J Med. 2023;
+L00603	388:1201-1208.
+L00604	Funding: This work was supported by the National 12. Rajpurkar P, Chen E, Banerjee O, Topol EJ. AI in health
+L00605	Natural Science Foundation of China (82203935), and medicine. Nat Med. 2022; 28:31-38.
+L00606	the Fujian Province Natural Science Foundation 13. Topol EJ. High-performance medicine: The convergence
+L00607	(2026J001590), Joint Funds for the innovation of of human and artificial intelligence. Nat Med. 2019; 25:44-
+L00608	(P11)
+L00609	Global Health & Medicine - Advance Publication www.globalhealthmedicine.com
+L00610	56. K, Martini M, Grichnik JM, Mihm M, Prieto VG, Googe
+L00611	14. Lu MY, Chen B, Williamson DFK, et al. A multimodal P, King R, Toledano A, Kabelev N, Wojton M, Gutkowicz-
+L00612	generative AI copilot for human pathology. Nature. 2024; Krusin D. The performance of MelaFind: A prospective
+L00613	634:466-473. multicenter study. Arch Dermatol. 2011; 147:188-194.
+L00614	15. Yan S, Yu Z, Primiero C, et al. A multimodal vision 27. Venkatesh KP, Kvedar JC. Learnings from the first AI-
+L00615	foundation model for clinical dermatology. Nat Med. 2025; enabled skin cancer device for primary care authorized by
+L00616	31:2691-2702. FDA. NPJ Digit Med. 2024; 7:167.
+L00617	16. Daneshjou R, Vodrahalli K, Novoa RA, et al. Disparities in 28. Muehlematter UJ, Daniore P, Vokinger KN. Approval of
+L00618	dermatology AI performance on a diverse, curated clinical artificial intelligence and machine learning-based medical
+L00619	image set. Sci Adv. 2022; 8:eabq6147. devices in the USA and Europe (2015-20): A comparative
+L00620	17. Adamson AS, Smith A. Machine learning and health analysis. Lancet Digit Health. 2021; 3:e195-e203.
+L00621	care disparities in dermatology. JAMA Dermatol. 2018; 29. Benjamens S, Dhunnoo P, Mesko B. The state of artificial
+L00622	154:1247-1248. intelligence-based FDA-approved medical devices and
+L00623	18. Choy SP, Kim BJ, Paolino A, Tan WR, Lim SML, Seo J, algorithms: An online database. NPJ Digit Med. 2020;
+L00624	Tan SP, Francis L, Tsakok T, Simpson M, Barker JNWN, 3:118.
+L00625	Lynch MD, Corbett MS, Smith CH, Mahil SK. Systematic 30. Vasey B, Nagendran M, Campbell B, et al. Reporting
+L00626	review of deep learning image analyses for the diagnosis guideline for the early-stage clinical evaluation of decision
+L00627	and monitoring of skin disease. NPJ Digit Med. 2023; 6:180. support systems driven by artificial intelligence: DECIDE-
+L00628	19. Kelly CJ, Karthikesalingam A, Suleyman M, Corrado G, AI. Nat Med. 2022; 28:924-933.
+L00629	King D. Key challenges for delivering clinical impact with 31. Hossen MN, Panneerselvam V, Koundal D, Ahmed K, Bui
+L00630	artificial intelligence. BMC Med. 2019; 17:195. FM, Ibrahim SM. Federated machine learning for detection
+L00631	20. Widiawaty A, Indriatmi W, Jatmiko W, Novianto E, Kekalih of skin diseases and enhancement of IInternet of Medical
+L00632	A, Gunawan H, Palar PS, Rachmadi MF, Dermawan S, Things (IoMT) Security. IEEE J Biomed Health Inform.
+L00633	Malahayati TL, Ramadhan AW. Multimodal machine 2023; 27:835-841.
+L00634	learning approach for diagnosing atopic dermatitis. 32. Cruz Rivera S, Liu X, Chan AW, Denniston AK, Calvert
+L00635	F1000Res. 2025; 14:952. MJ; SPIRIT-AI and CONSORT-AI Working Group;
+L00636	21. Tschandl P, Rosendahl C, Akay BN, et al. Expert-level SPIRIT-AI and CONSORT-AI Steering Group; SPIRIT-
+L00637	diagnosis of nonpigmented skin cancer by combined AI and CONSORT-AI Consensus Group. Guidelines for
+L00638	convolutional neural networks. JAMA Dermatol. 2019; clinical trial protocols for interventions involving artificial
+L00639	155:58-65. intelligence: The SPIRIT-AI extension. Nat Med. 2020;
+L00640	22. Brinker TJ, Hekler A, Enk AH, Klode J, Hauschild A, 26:1351-1363.
+L00641	Berking C, Schilling B, Haferkamp S, Schadendorf D, 33. Liu X, Rivera SC, Moher D, Calvert MJ, Denniston AK;
+L00642	Holland-Letz T, Utikal JS, von Kalle C; Collaborators. SPIRIT-AI and CONSORT-AI Working Group. Reporting
+L00643	Deep learning outperformed 136 of 157 dermatologists in a guidelines for clinical trial reports for interventions
+L00644	head-to-head dermoscopic melanoma image classification involving artificial intelligence: The CONSORT-AI
+L00645	task. Eur J Cancer. 2019; 113:47-54. extension. Nat Med. 2020; 26:1364-1374.
+L00646	23. Goyal M, Knackstedt T, Yan S, Hassanpour S. Artificial
+L00647	intelligence-based image classification methods for ----
+L00648	diagnosis of skin cancer: Challenges and opportunities. Received April 28, 2026; Revised May 21, 2026; Accepted June
+L00649	Comput Biol Med. 2020; 127:104065. 9, 2026.
+L00650	24. Pacheco AGC, Lima GR, Salomão AS, et al. PAD-
+L00651	UFES-20: A skin lesion dataset composed of patient data Released online in J-STAGE as advance publication June 13,
+L00652	and clinical images collected from smartphones. Data 2026.
+L00653	Brief. 2020; 32:106221.
+L00654	§
+L00655	25. Freeman K, Dinnes J, Chuchu N, Takwoingi Y, Bayliss These authors contributed equally to this work.
+L00656	SE, Matin RN, Jain A, Walter FM, Williams HC, Deeks *Address correspondence to:
+L00657	JJ. Algorithm based smartphone apps to assess risk of skin Yue Han, Department of Dermatology, The Union Hospital,
+L00658	cancer in adults: Systematic review of diagnostic accuracy Fujian Medical University, No. 29 Xinquan Road, Fuzhou
+L00659	studies. BMJ. 2020; 368:m127. 350001, China.
+L00660	26. Monheit G, Cognetta AB, Ferris L, Rabinovitz H, Gross E-mail: dr_hanyue@126.com
+L00661	(P12)

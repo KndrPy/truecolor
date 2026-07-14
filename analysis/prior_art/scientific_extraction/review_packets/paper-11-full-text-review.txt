@@ -1,0 +1,599 @@
+L00001	481 curroncol Current Oncology Curr Oncol Multidisciplinary Digital Publishing Institute (MDPI) PMC10047066 10047066 10047066 36975454 10.3390/curroncol30030241 Validity of a Self-Assessment Skin Tone Palette Compared to a Colorimeter for Characterizing Skin Color for Skin Cancer Research Martin Michelle K Conceptualization,
+L00002	Methodology, Formal analysis, Data curation, Writing – original draft, Writing – review & editing, Project administration 1 Zaman Tanzida
+L00003	Methodology, Formal analysis, Data curation, Writing – original draft, Writing – review & editing, Project administration 1 Okello Amanda M
+L00004	Methodology, Formal analysis, Data curation, Writing – original draft, Writing – review & editing, Project administration 1 Dennis Leslie K Conceptualization,
+L00005	Methodology, Data curation, Writing – review & editing, Project administration 1 * 1 Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, Tucson, AZ 85724, USA * Correspondence: ldennis@arizona.edu 8 3 2023 30 3 3189 3189–3200 29 3 2023 © 2023
+L00006	by the authors.
+L00007	Licensee MDPI, Basel, Switzerland.
+L00008	This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ ).
+L00009	Abstract Our goal is to determine whether our
+L00010	objective 9-point Self-Assessment Skin Tone Palette (SASTP) is correlated with a colorimeter’s assessment of a melanin index, so that Hispanic and Black people can be included in skin cancer research where scales were developed for White populations.
+L00011	Subjects were asked to self-identify their skin tones using the SASTP.
+L00012	This study assessed the criterion validity of the SASTP by measuring a range of skin colors compared to a melanin index reported from a colorimeter for the upper-inner arm (non-sun-exposed skin color), and the outer forearm (sun-exposed).
+L00013	Among 188 non-artificial tanners, 50% were White, 30% were Hispanic or White-Hispanic, and 20% were other racial categories.
+L00014	Meanwhile, 70% were female (30% male) and 81% were age 18–29 (19% age 30+).
+L00015	The mean melanin of the upper-inner arm decreased with lighter skin color and stronger tendency to burn.
+L00016	The SASTP in comparison to melanin index values was correlated for both the upper-inner arm ( r = 0.81, p < 0.001) and the outer forearm ( r = 0.77, p < 0.001).
+L00017	The SASTP provides a 9-point scale that can be considered as an alternative, less expensive method that is comparable to the
+L00018	objective colorimeter melanin index, which may be useful in studies on skin cancer among White, non-White, and Hispanic peoples.
+L00019	Keywords: colorimetry, color palette, skin neoplasms, skin pigmentation status released display-pdf yes is-olf no is-manuscript no is-preprint no is-journal-matter no is-scanned no is-retracted no Received 2022 Nov 22; Revised 2022 Dec 28; Accepted 2023 Feb 27; Collection date 2023 Mar.
+L00020	1.
+L00021	Introduction Skin cancer is an important public health issue [ 1 ].
+L00022	The main risk factors are ultraviolet radiation and skin sensitivity to the sun.
+L00023	Meta-analyses examining phenotypic factors or sun sensitivity and skin cancer (melanoma and basal cell skin cancer) indicated heterogeneity between reported relative risk estimates of the various studies [ 2 , 3 ].
+L00024	This lack of consistent magnitude of odds ratios for risk of skin cancer and sun sensitivity may be attributed to differences in the definition or interpretation of sun sensitivity.
+L00025	Other potential reasons for differences include age, sex, and other demographics among the different populations pooled worldwide.
+L00026	Additionally, studies did not report the same categories, thus making pooling across different nominal scales difficult.
+L00027	Major differences were seen when comparing the magnitude of the odds ratios for sun sensitivity factors and melanoma between Hispanic [ 4 ] and White people [ 2 ] especially for fair, medium, or dark skin color.
+L00028	This may be real or due to differing interpretations of such a subjective scale by people of different racial and/or ethnic groups.
+L00029	Skin cancer studies for White populations typically use self-assessment of sun sensitivity including 4-point scales of tendency to burn, 4-point scales of tanning ability, or combined Fitzpatrick self-assessed skin type to quantify sun sensitivity.
+L00030	Dermatologists often use the expanded V and VI category Fitzpatrick skin-type to include people of color [ 5 ].
+L00031	A self-assessment of tendency to burn and tan was developed for White populations, and is often used in skin cancer studies restricted to White people.
+L00032	There is a moderate chance of misclassifying self-assessed exposures due to different interpretations of the wording of sun sensitivity measures between
+L00033	participants or by the same participant at a later time [ 6 ].
+L00034	Several reliability studies among White populations show a wide range of Kappa statistics ranging from 0.51–0.72 for tendency to burn, 0.59–0.76 for tanning ability, 0.53–0.79 for skin-type, and 0.69–0.78 for skin color [ 6 , 7 , 8 , 9 , 10 ].
+L00035	Kappas are often labeled as very good or excellent above 0.8 and substantial or good above 0.6 to 0.8, fair or moderate for 0.4 to 0.6, but poor below 0.2 [ 11 , 12 , 13 , 14 ], so these
+L00036	results represented a fair to good reliability among White populations.
+L00037	Misclassification of sun sensitivity in questionnaires is largely due to misinterpretation of ambiguously worded descriptions of skin color and inconsistent wording between questionnaires [ 3 , 6 , 15 ].
+L00038	Varying interpretations of wording and inconsistent reliability
+L00039	results for self-assessing risk indicate the need for a more concrete method of describing skin color, such as a more diverse color palette that could be used to better self-assess skin characteristics and skin cancer risk.
+L00040	Other skin color scales have been developed ranging from use of photography, 36 skin tones, or expanded scales only focused on Caucasian/White people.
+L00041	The purpose of our study was to first expand traditional skin color measurements that only focus on non-Hispanic White people to a skin palette to include Hispanic and Black people, and to then assess its validity.
+L00042	To do so, we first assessed face validity of the initial and revised palette to develop our Self-Assessment Skin Tone Palette (SASTP).
+L00043	Secondly, for our main aim here, we used criterion validity, sometimes also referred to as inter-method reliability [ 16 , 17 ], to compare the SASTP to the melanin index obtained from a colorimeter across individuals of various racial/ethnic backgrounds.
+L00044	2.
+L00045	Materials and
+L00046	Methods 2.1.
+L00047	The Self-Assessment Skin Tone Palette (SASTP) Development 2.1.1.
+L00048	Drafted Palette, Face Validity including Cognitive Interviewing Revisions The SASTP was designed to incorporate skin tones with more variation than the Fitzpatrick skin type while being compact and easy for the participant to use.
+L00049	Skin tones were initially chosen similarly to the various skin tone options used for products in the make-up industry for various ethnicities.
+L00050	Then, such tones were created in Adobe Photoshop by varying the color to match.
+L00051	The process began with 24-point skin tones.
+L00052	Face validity, as a subset of content validity, was assessed by skin cancer experts examining the shades and number of skin tones present [ 16 ].
+L00053	Next, cognitive interviewing of volunteers (staff/students/faculty at the College of Public Health born in the US, Mexico, and Africa) with different skin tones was conducted by asking if the skin palette shades were distinguishable enough from each other and fit the
+L00054	participants’ skin tones [ 18 ].
+L00055	This included volunteers originating from Nigeria and other parts of Africa, who suggested the darkest skin tone needed to be lighter.
+L00056	Similarly, other volunteers who considered themselves to be Hispanic/Latinx provided similar input for their skin tones, as did fair
+L00057	subjects who cannot tan.
+L00058	From this, a 9-point scale was determined because the color options were discriminant while allowing for the swatches to be easily viewable on a single sheet of paper.
+L00059	2.1.2.
+L00060	SASTP Scale The scale was set up in a 3 × 3 pattern with rows down A, B, C and columns across 1, 2, 3, where A1 was the lightest color and C3 was the darkest ( Figure 1 ).
+L00061	Participants had the ability to hold up the palette to compare to their forearm and inner arm during
+L00062	data collection.
+L00063	The final SASTP 9 skin tones were translated to melanin values of 19.4, 20.5, 25.0, 30.6, 37.6, 58.6, 72.0, 90.5, and 102.2.
+L00064	Figure 1 This presents the Self-Assessment of Skin Tone Palette (SASTP) with 9 skin tone shades from lightest A1, A2, A3, B1 … to C3.
+L00065	The outer forearm typically represents one of the more tanned areas on a person’s body, whereas the area of the upper-inner arm receives less sun exposure [ 19 ].
+L00066	Thus, we chose the forearm to represent sun exposed skin color and the upper-inner arm to represent unexposed skin color.
+L00067	These sites were used for both SASTP and colorimeter assessment.
+L00068	2.2.
+L00069	Colorimetry Colorimeters can measure melanin index and erythema index using spectrophotometry.
+L00070	The investigators used the DSM II ColorMeter (Cortex Technology, Hadsund, Denmark) to take
+L00071	objective measurements of the melanin index of
+L00072	participants’ upper-inner arm and outer forearm.
+L00073	The melanin index measures the tan level of the skin.
+L00074	The erythema index measures the redness of the skin, but this can be affected by short-term changes in room temperature and blushing along with longer effects of a sunburn.
+L00075	Our focus was skin color, so the erythema index was not pertinent.
+L00076	The DSM II ColorMeter is a handheld colorimeter that is a reliable measure of melanin (M) index that uses tristimulus colorimetry and narrow-band spectrophotometry technology [ 20 , 21 ].
+L00077	The colorimeter’s measurement of a melanin index is discriminative and sensitive when measuring normal skin colors for White people and Black people with day-to-day repeatability [ 20 ].
+L00078	Spectrophotometers or colorimeters are handheld devices that are not affected by ambient lighting [ 22 ].
+L00079	To verify that the DSM II was not affected by ambient lighting, we used the colorimeter to conduct an experiment measuring the colors in the color palette at the same locations with the same lighting as our main study.
+L00080	We added an outdoor location and found the measurements within this reliability study of the colorimeter did not vary by location ( p = 0.99) [ 23 ].
+L00081	Studies have evaluated the reproducibility of related techniques of narrowband reflectance spectrophotometry and tristimulus colorimetry in field conditions [ 24 , 25 ].
+L00082	Uter et al. [ 25 ] reported on reproducibility of field conditions of similar technology (a chromameter and a reflectometer) for a very large population.
+L00083	2.3.
+L00084	Survey A short questionnaire consisting of 15 questions was administered.
+L00085	The three questions about artificial tanning included using sunlamps, tanning beds, or sunbeds in the last year, in the last month, and average minutes of use.
+L00086	Those using a tanning bed in the last month were excluded from analyses as such use could actually change the melanin index, which would reduce the true comparison of measures.
+L00087	Sun sensitivity measures were also surveyed, including tendency to sunburn (on initial exposure to the sun in spring or summer), inability to tan (after repeated and prolonged exposure), skin color of the upper-inner arm (fair, medium or dark), skin color of the forearm in comparison
+L00088	with the upper inner arm, eye color, natural hair color at age 20, and family history of skin cancer (yes, no, do not know).
+L00089	The survey also asked about age (21–29, 30–39, 40–49, 50–59, 60+), sex, and race/ethnicity
+L00090	background.
+L00091	Racial/ethnic
+L00092	background was asked as one question, and respondents were instructed to check all that apply (Hispanic, Native American or Alaska native, African American/Black, Asian or Pacific Islander, or White), but most only checked one category.
+L00093	Thus, a White racial/ethnic
+L00094	background reflects non-Hispanic White, as most who checked Hispanic did not check a racial category.
+L00095	Skin color in two body sites based on the SASTP was included in the survey along with four questions to create a unique identification.
+L00096	The self-perception of skin tone was ascertained for two body sites with a color palette in which
+L00097	participants chose from nine skin tone choices which they believed to match their (1) upper-inner arm and (2) forearm.
+L00098	The survey and measurement took about 5 min.
+L00099	2.4.
+L00100	Recruitment For recruitment, we contacted staff, and faculty via email and/or flyers.
+L00101	Additionally, we setup a
+L00102	data collection booth at the annual Melanoma Walk to create awareness of melanoma on campus and recruited students within an undergraduate statistics course, collecting their data either before or after class on several occasions.
+L00103	The survey was administered from October–December in 2016 in Tucson, Arizona.
+L00104	We consented
+L00105	participants and collected data.
+L00106	The
+L00107	participants were allowed to withdraw at any time or refuse to answer any questions.
+L00108	For
+L00109	subjects who participated in the test–retest reliability, they were recontacted 3–5 weeks after their first in-person survey; some preferred to be recontacted via email and an online second survey.
+L00110	Data were entered and stored on password-protected computers, and physical copies of the questionnaires were kept locked in an investigator’s office.
+L00111	The consent form and study procedures were approved by the Institutional Review Board for human research.
+L00112	2.5.
+L00113	Analysis Analyses excluded
+L00114	participants reporting use of tanning beds or artificial tanning sprays and creams in the prior month, as the artificial tan can influence the melanin index measurements.
+L00115	These excluded
+L00116	subjects were more likely to be age 18–29 and female.
+L00117	Mean values of melanin index obtained from the colorimeter were stratified by various self-reported measures of sun sensitivity, including the new skin tone palette.
+L00118	2.5.1.
+L00119	Repeat Reliability Repeat reliability was examined using an interclass correlation coefficient (ICC) [ 16 ].
+L00120	The square root of the reliability coefficient is an estimate of the upper limit of validity based on the parallel test assumption [ 16 ].
+L00121	Standard “rule of thumb” for interpreting correlations of >0.9 as very high or excellent, 0.8 to 0.9 as high or good, 0.7 to 0.8 as high or fair, 0.5–0.7 as moderate, 0.3–0.5 as low, and <0.3 as negligible correlations were used as descriptive adjectives [
+L00122	26 , 27 , 28 ].
+L00123	As a scale cannot be valid if it is not reliable, thus we first examined its repeat reliability [ 16 ].
+L00124	The SASTP had moderate to high reliability among 146
+L00125	subjects who repeated questions about the color of their upper-inner arm and color of their forearm using the SASTP re-assessed one month later [ 18 ].
+L00126	Half of these
+L00127	subjects completed the re-assessment in-person and half completed it online.
+L00128	As measurements used the same scale, the best measure of repeated reliability is an ICC [ 16 ].
+L00129	The test–retest reliability for the upper inner arm had ICCs ranging from 0.57–0.83, whereas the ICCs ranged from 0.71–0.72 for the forearm [ 18 ].
+L00130	2.5.2.
+L00131	Criterion Validity/Intermethod Reliability Criterion validity, also known as intermethod reliability [ 16 , 17 , 29 ], was ascertained by comparing the melanin index values reported from the colorimeter and the self-selected color from the 9-point color palette obtained at the same time.
+L00132	Intermethod reliability or validity is a measure of the ability of two different instruments measuring the same underlying concept to yield the same
+L00133	results on the same
+L00134	subjects.
+L00135	Validity is when one is comparing a more precise but more burdensome measurement to a simple measurement more easily used in a larger study [ 16 ].
+L00136	Various statistical measures can be used in intermethod reliability/validity, dependent on the type of exposure measurement from continuous, dichotomous, nominal, or ordered category by, respectively, using Pearson correlations, sensitivity and specificity, misclassification matrices, or Spearman correlations [ 16 ].
+L00137	In our study, the colorimeter is the more precise and more burdensome measure which produces values on a continuous scale.
+L00138	The 9-point SASTP scale is between an ordered categorical and continuous scale, which was developed based on skin tones translated via the colorimeter to a melanin scale.
+L00139	The Spearman correlation would compare the SASTP based on the rank order of the 9-values and the melanin values.
+L00140	Because the SASTP was not developed as a 9-point equally spaced scale or a rank ordered scale, the Pearson product-moment correlation is more appropriate for capturing the 9-points of the SASTP based on the melanin scale of the skin tones that they were created to
+L00141	match in comparison to the continuous melanin scale [ 16 ].
+L00142	The SASTP 9-skin tones were translated to melanin values of 19.4, 20.5, 25.0, 30.6, 37.6, 58.6, 72.0, 90.5, and 102.2 based on colorimeter measurements of the skin tones chosen for the scale.
+L00143	SAS versions 9.4 and University (SAS Institute, Inc., Gary, NC, USA) were used for conducting data analysis to obtain correlations and 95 percent confidence intervals.
+L00144	3.
+L00145	Results Of the 188
+L00146	participants, about 50% self-classified as White, 30% as Hispanic or White-Hispanic, 12% as Asian, 3% Native American or Alaskan, and 4% African American.
+L00147	Due to the size and demographics of the undergraduate class ( N = 144), the majority of
+L00148	participants were 18–29 years of age (81%), with 5% ages 30–39, 1% ages 40–49, 8% ages 50–59, and 5% age 60 or older.
+L00149	Majority of our study
+L00150	participants were female (70%).
+L00151	Moreover,
+L00152	subjects excluded from validity analyses for use of tanning sprays or creams in the prior month were more likely to be younger, female, and more likely to burn.
+L00153	On average, female
+L00154	participants had slightly lower average melanin ( M ) index value ( M = 39.4) than male
+L00155	participants ( M = 41.2) for the upper-inner arm (unexposed), and even more so for average melanin of the forearm (exposed), with 46.2 for females compared to 52.7 for males.
+L00156	Mean values and ranges of melanin index of the upper-inner arm and the forearm are presented in Table 1 by sun sensitivity factors to show how standard sun sensitivity measures relate to melanin.
+L00157	Both “tendency to burn” and skin color of the upper-inner arm are measures related to untanned skin color, so they are only compared to upper-inner arm melanoma.
+L00158	Whereas self-assessed forearm color compared to the inner arm is worded to be related to how much darker the sun-exposed forearm is, therefore, it is only compared to the melanin of the forearm.
+L00159	For tendency to sunburn after initial exposure to the sun, the average melanin index values gradually increased across the response categories as expected from 34.8 for
+L00160	subjects reporting a severe and painful sunburn to 42.2 for those who answered no burn.
+L00161	Mean melanin index values of the forearm decreased from 50.2 for an ability to tan deeply to 46.4 for tanning mildly; having no tan had the highest average melanin index value of 51.5.
+L00162	The gradient of melanin of the upper-inner arm did correspond with self-reported skin color of the upper-inner arm ( Table 1 ).
+L00163	Average melanin index values increased with darker eye color and hair pigmentation but were less clearly associated.
+L00164	White
+L00165	participants had the greatest variability of melanin index values with a range of 20 to 60.
+L00166	For the most part, melanin values were lightest in
+L00167	subjects who self-reported their
+L00168	background as White, followed by Hispanic-White, Hispanic, Asian, Native American and then African American or Black peoples.
+L00169	While our face validity and cognitive interviewing processes for developing the SASTP included
+L00170	subjects of a wide range of skin types, the survey and colorimeter data did not capture very many
+L00171	subjects who self-classified as Black or had melanin values above 70 ( Table 1 ; Figure 2 ).
+L00172	Table 1 Mean Colorimeter Values of Melanin and Erythema by Categories of Self-Reported Measures of Sun Sensitivity Among 188 Non-Artificial Tanners.
+L00173	Self-Assessed Risk Factors Upper Inner Arm Forearm N Melanin (M): Mean (Range) N Melanin (M): Mean (Range) Tendency to burn 1 Severe & painful sunburn 8 34.79 (29.12, 39.92) Moderate sunburn 39 38.15 (31.02, 89.75) Mild sunburn 64 38.92 (31.27, 76.30) No sunburn, just tans
+L00174	77 42.22 (19.93, 90.72) Inability to tan 2 Have no tan 10 43.99 (29.12, 89.75) 10 51.51 (33.26, 102.13) Mildly tanned 47 39.34 (31.27, 90.72) 47 46.38 (33.51, 90.72) Moderately tanned 91 39.38 (19.93, 76.30) 91 47.85 (36.88, 76.92) Deeply tanned 40 40.88 (33.15, 73.73)
+L00175	40 50.25 (38.61, 85.16) Skin Color of the upper inner arm (untanned) 3 Fair 109 37.70 (19.93, 89.75) Medium 76 42.07 (33.47, 66.21) Dark 3 67.07 (36.76, 90.72) Forearm compared to upper inner arm About the Same 68 48.23 (33.72, 102.13) A little darker 76
+L00176	47.01 (33.26, 64.14) Somewhat darker 41 49.94 (40.41, 90.72) A lot darker 3 53.16 (50.14, 55.37) Eye Color Gray 2 35.31 (33.29, 37.33) 2 43.60 (37.17, 50.03) Blue 30 35.43 (29.12, 43.00) 30 43.94 (33.51, 60.00) Green 25 35.19 (19.93, 44.67) 25 42.83 (33.26, 58.12)
+L00177	Brown or Black 128 42.10 (32.11, 90.72) 128 50.29 (34.97, 102.13) Natural Hair Color at age 20 Red 2 33.78 (31.08, 36.47) 2 39.90 (33.26, 46.53) Red-Blond 4 32.56 (29.12, 35.64) 4 40.00 (34.06, 46.26) Blonde 18 36.38 (31.92, 43.00) 18 45.83 (36.88, 54.83) Brown,
+L00178	or Auburn 120 38.37 (19.93, 89.75) 120 46.31 (33.51, 102.13) Black 44 46.60 (31.02, 90.72) 44 55.39 (40.47, 90.72) Racial/Ethnic
+L00179	Background White 95 36.10 (19.93, 51.49) 95 44.83 (33.26, 60.00) Hispanic-White 14 37.18 (33.47, 43.00) 14 43.77 (36.26, 53.22) Hispanic 42 41.93 (34.63, 59.31) 42 49.99 (40.47, 64.14) Asian 23 41.87 (32.34, 53.13) 23 50.23 (39.89, 69.46) Native American 6 43.61 (39.78, 47.17) 6 51.97
+L00180	(48.21, 59.23) Black 8 71.53 (53.10, 90.72) 8 77.62 (64.14, 102.13) SASTP choice for the 1 (A1) 20 35.49 (30.68, 39.50) 1 38.43 (38.43, 38.43) 2 (A2) 84 36.80 (19.93, 51.49) 33 41.61 (33.51, 48.88) 3 (A3) 35 39.27 (32.34, 45.55) 41 44.63 (33.26, 54.15)
+L00181	4 (B1) 36 43.95 (33.15, 66.21) 47 45.69 (36.88, 56.81) 5 (B2) 7 43.38 (35.98, 53.13) 53 52.85 (39.89, 68.13) 6 (B3) 3 63.28 (49.99, 73.73) 8 55.64 (42.31, 69.17) 7 (C1) 1 90.72 3 81.78 (69.46, 90.72) 8 (C2) 1 76.30 1 76.92 9
+L00182	(C3) 1 89.75 1 102.1 Abbreviations: N, sample size; SASTP, Self-Assessment of Skin Tone Palette 1 When your skin is first exposed to strong sunlight for an hour for the first time each spring or summer with no protection does it get… 2 After repeated
+L00183	and prolonged exposure to the sun, does your skin become… 3 How would you describe your un-tanned skin color on your upper inner arm?
+L00184	Figure 2 Boxplot of melanin values from the colorimeter vs. the SASTP for the ( A ) upper inner arm, and ( B ) forearm.
+L00185	The diamond represents the mean, the horizontal line in the box represents the median. the length of the box represents the interquartile range, the whiskers at the end of each represent the maximum and minimum values of melanin.
+L00186	Criterion validity of the respondents’ choices within the SASTP in comparison to melanin index values are reported in Table 2 .
+L00187	Our newly developed self-assessment skin color palette values correlated well with colorimeter melanin index values for
+L00188	participants.
+L00189	This was true when comparing values from the palette and the colorimeter for the upper-inner arm and for the forearm with the exception of one subject who chose the 8th darkest color out of 9 colors, but this should be interpreted cautiously with only 1.6%
+L00190	of
+L00191	subjects choosing 7, 8, or 9.
+L00192	Table 2 Repeat reliability and Criterion Validity (Intermethod Reliability) of the Self-Assessment of the Skin Tone Palette (SASTP) initially taken in-person among non-artificial tanners.
+L00193	Reliability/Validity Measure: Repeat Reliability of SASTP 1 N ICC Lower Limit of ICC Upper Limit of Validity 2 Repeat survey taken online 3 Upper inner arm (unexposed skin color) 72 0.83 0.76 0.91 Forearm (exposed skin color) 72 0.71 0.60 0.83 Repeat Survey taken in-person
+L00194	3 Upper inner arm (unexposed skin color) 73 0.57 0.43 0.77 Forearm (exposed skin color) 73 0.72 0.62 0.87 Skin Tone Palette vs.
+L00195	Colorimeter Melanin Intermethod Reliability/Criterion Validity 4 N Corr 95% CI Upper inner arm (unexposed skin color) 188 0.81 0.75–0.85 Forearm (exposed skin color) 188 0.77 0.70–0.82 Abbreviations: CI, confidence interval; Corr, Pearson product-moment correlation; ICC, interclass correlation coefficient; N, number of
+L00196	subjects; SASTP, Self-Assessment of Skin Tone Palette; 1 Instructions: Using the color palette provided, what color best matches the skin color of your…; 2 The upper-limit of validity was estimated based on the reliability; 3 Test–retest reliability of the Self-Assessment of Skin Tone Palette (SASTP)
+L00197	based on an Interclass correlation coefficient (ICC); ICC reliability used to estimate upper limit of validity; 4 Intermethod Reliability/Criterion Validity comparing the SASTP values translated to melanin values to the melanin values from a colorimeter measurement using the Pearson Product-Moment correlation.
+L00198	4.
+L00199	Discussion Our SASTP was developed to include Hispanic people and others in skin cancer research that is often restricted to non-Hispanic White people.
+L00200	The SASTP was designed to have skin tones that sought to match the melanin in one’s skin color, particularly among White and Hispanic people.
+L00201	We found that the SASTP is an accurate tool for self-assessment of skin tone compared to an
+L00202	objective measure of tanness of the skin (the colorimeter) whether looking at untanned skin (upper-inner arm) or tanned skin (forearm).
+L00203	Of our non-artificial tanners, 50% self-classified other than non-Hispanic White people.
+L00204	We saw overlapping melanin values for skin color among those who self-classified their
+L00205	background as Hispanic, Hispanic-White, or White.
+L00206	Robinson et al. [ 30 ] used a culturally adaptive Fitzpatrick skin-type classification based on descriptions by Eilers et al. [ 31 ] among adults attending Latino community health fairs in Chicago.
+L00207	They found significant differences in the melanin values for the adapted Fitzpatrick skin-types II, III verses IV, and IV verses V, using a spectrophotometric assessment.
+L00208	Similar to our
+L00209	findings of overlapping melanin values, they showed overlapping categories of skin-type for Latinos who were Mexican–American (skin-type: 3% I, 42% II, 44% III, 10% IV) and Puerto Rican (skin-type: 4% II, 48% III, 44% IV) [ 30 ].
+L00210	Our study saw similar distributions of melanin among Hispanic people.
+L00211	The development of the SASTP was predicated to help skin cancer studies be more inclusive.
+L00212	Melanoma studies in particular have tended to focus on only White populations based on much higher rates of melanoma among White people (27.2/100,000 compared to 4.8/100,000 among Hispanic people) [ 32 ].
+L00213	Limited studies of skin cancer have been conducted among Hispanic people [ 33 ].
+L00214	Despite this lower incidence rates of melanoma in Hispanic–American people, they are 2.4 times more likely to present at a later stage, and 3.6 times more likely to develop distant metastases [ 34 , 35 , 36 , 37 ].
+L00215	While some assume that the lower incidence of melanoma among Hispanic people is due to protection from darker skin, studies have shown it may also be due in part to behavioral differences including lower indoor tanning use and lower intentional tanning than among non-Hispanic White
+L00216	people [ 38 , 39 ].
+L00217	However, many sun sensitivity factors related to melanoma in White populations have also been shown to be important among Hispanic populations including fair skin color, skin type, and sunburns [ 4 ].
+L00218	Skin cancer surveillance behaviors occur among few Hispanic people [ 33 ], which is likely related to later stage at diagnosis seen among Hispanic populations.
+L00219	Furthermore, many Hispanic people do not perceive that they are at risk of skin cancer despite knowing skin cancer can occur in any skin tone [ 40 ].
+L00220	Changing erroneous beliefs that Hispanic or Latinx people are at no risk of melanoma is important for risk awareness and early detection of melanoma [ 30 ].
+L00221	In skin cancer research, sun sensitivity measured via tendency to sunburn, inability to tan, and skin color (fair, medium or dark) each signify about a 2-fold increase in risk [ 2 , 3 ].
+L00222	When asked about the depth of their tan after repeated and prolonged exposure, the melanin index values for
+L00223	subjects who reported to have “no tan” ( M = 44) were higher than those “deeply tanned” ( M = 41).
+L00224	This reflects what has been seen in other studies that the “no tan” category likely includes both people who do not tan (because they are very fair) and people with naturally dark skin that do not attempt to tan, making a category of “no tan”
+L00225	non-predictive of skin cancer due to heterogeneity.
+L00226	For more accurate risk assessment, the diverse groups within “no tan” need to be separated, but often are not.
+L00227	Early studies of skin tones used von Luschan tiles, a set of 36 tiles created in the 1950s, to match skin tones [ 41 ].
+L00228	A study of 246 volunteers aged 18–40 from Pennsylvania and Atlanta, Georgia had the tiles matched to four body locations by two observers and had their melanin scored for each body location using a spectrophotometer.
+L00229	The Pearson’s correlation coefficient comparing the validity of the skin color predicted by the tiles with measured melanin was 0.95 with p -value < 0.00001 representing differences less than 1 tile [ 41 ].
+L00230	A second study in Thailand, thus including a narrower range of skin tones, found a correlation of 0.90 among 52
+L00231	participants [ 42 ].
+L00232	However, the use of 36 skin tone categories can be laborious.
+L00233	A Skin Color Chart ® computed from skin reflectance spectrum was developed by L’Oreal using the Chromasphere ® based on parameters of the CIELAB 1976 System, but requires their machinery [ 43 ].
+L00234	Others used the Munsell system of soil color charts that was revised to consist of color-chips arranged in a three-dimensional expression of concepts of hue, value, and chroma [ 44 , 45 ].
+L00235	Skin reflectance was measured via spectrophotometer, and reflectance was converted to an Individual Typology Angle (ITA) score which is a measure of reflectance from pure white to black [ 44 ].
+L00236	The ITA value is an
+L00237	objective skin color type.
+L00238	A validity study of Munsell Soil Color Charts reported validity with spectrophotometer that calculated ITA values for an ICC of agreement of 0.61 [ 44 ].
+L00239	A study of skin color of schoolchildren used 40 of the possible 141 Munsell color tiles and, compared to self-reported skin color, found that the mean ITA was different for white, light brown, and brown skin [ 45 ].
+L00240	However, using these tiles is still laborious and requires an interviewer.
+L00241	The Norwegian Women and Cancer study examined test–retest reliability of their 10-point skin color scale, reporting reliability of 0.59 (95% CI of 0.55–0.63) [ 46 ].
+L00242	Unfortunately, they did not provide much information on their scale.
+L00243	Our scale had higher test–retest reliability.
+L00244	The research interviewer in an Australian study classified schoolchildren by natural skin, hair, eye color, and ethnicity, and used two charts for skin color assessment [ 47 ].
+L00245	Chart 1 was based on the 5-point Fitzpatrick skin-type scale.
+L00246	Chart 2 had 10 skin-types.
+L00247	When both charts were modeled together, the Fitzpatrick skin-type scale accounted for 39.7% of variability, whereas the 10-point scale for Chart 2 explained 21.4% [ 47 ].
+L00248	A study on college-aged
+L00249	participants in the Philadelphia area in spring of 2007.
+L00250	Students answered standard sun sensitivity questions and scored their untanned skin color on a 7-point order-ranked scale, along with having an observer rate their skin color on a 6-point scale and having their skin color from light to dark measured using spectrophotometers report of L*
+L00251	where 0 is pure black and 100 is pure white [ 22 ].
+L00252	They found the observer’s measure inversely correlated with the L* (since L* goes from black to white) for the lower arm and the check.
+L00253	Similarly, self-rating of natural skin color was inversely correlated ( r = −0.70) [ 22 ].
+L00254	However, it was unclear at what body site natural skin color was assessed by the individual and the observer, whereas the article clearly stated that the spectrophotometer measured skin color on the lower arm and the cheek.
+L00255	Our self-reported skin tone in comparison to melanin index values had criterion validity not quite as high as the Lucian tiles, but stronger than that reported for the Munsell system.
+L00256	Furthermore, our SASTP did not require trained research staff to evaluate skin color with 36–40 tiles.
+L00257	Strengths of our study include a color palette with a wide range of skin tones while still being easily accessible and a quick measurement tool, a sample size > 175
+L00258	subjects, and an
+L00259	objective measure of skin color (colorimeter) to validate the SASTP.
+L00260	The population included a reasonable number of
+L00261	subjects that self-identified as White and Hispanic, along with a few other
+L00262	subjects who self-classified as Asian, Native American, or African American.
+L00263	The shade-inclusive color palette had a wide variety of shades that were easily distinguishable from one another.
+L00264	The study population was predominately White and/or Hispanic (80%).
+L00265	Thus, more research to investigate self-assessment of SASTP in darker skinned individuals would expand the usefulness of our 9-point skin tone palette.
+L00266	Only three
+L00267	participants selected skin tones C1-C3 that were in the “dark” skin tone category.
+L00268	Having a more diverse study population with more
+L00269	participants for each of the nine skin tones would provide a more accurate representation of the full-scale.
+L00270	However, most populations do not evenly distribute on any scale.
+L00271	Other
+L00272	limitations of this study include a younger population, therefore, additional research among older
+L00273	subjects is warranted.
+L00274	Although measurements using the colorimeter were taken in varying types of natural and artificial light, manufacturers of the DSM II ColorMeter claim that the brightness of bulb compensates for differences in lighting during
+L00275	data collection [ 48 ].
+L00276	To verify this, we used the colorimeter to test the colors on the color palette in the same locations with the same lighting and added on outdoor location and found the measurements did not vary by location ( p = 0.99) [ 23 ].
+L00277	5.
+L00278	Conclusions Our SASTP was shown to be an alternative, less expensive method that is comparable to a colorimeter within our predominantly White and Hispanic population.
+L00279	It may be useful to explore different options for displaying the skin tone palette such as skin tone options that are not in rows and columns of increasing shades, but are linear (all in one row).
+L00280	This could make it easier for
+L00281	participants to choose the color closest to their skin color.
+L00282	Directions for further research would include validating the darker end of the skin tone scale and ordering the palette for skin tone linearly.
+L00283	More information on the validity of self-assessment measures for risk factors of skin cancer is needed for prevention and health promotion.
+L00284	Author Contributions Conceptualization, M.K.M. and L.K.D.;
+L00285	methodology, M.K.M., T.Z., A.M.O. and L.K.D.; formal analysis, M.K.M., T.Z. and A.M.O.; data curation, M.K.M., T.Z., A.M.O. and L.K.D.; writing—original draft preparation, M.K.M., T.Z. and A.M.O.; writing—review and editing, M.K.M., T.Z., A.M.O. and L.K.D.; project administration, M.K.M., T.Z., A.M.O. and L.K.D.
+L00286	All authors have read and agreed to the published version of the manuscript.
+L00287	Institutional Review Board Statement This research was reviewed and approved by the University of Arizona’s Institutional Review Board and determined to be exempt.
+L00288	The study was conducted in accordance with the Declaration of Helsinki and approved by the Institutional Review Board.
+L00289	Informed Consent Statement
+L00290	Subjects were provided elements of consent for these anonymously collected.
+L00291	Data Availability Statement These data were collected with IRB approval as part of course so were not publicly.
+L00292	Conflicts of Interest The authors declare no conflict of interest.
+L00293	Funding Statement This research received no external funding.
+L00294	Footnotes Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s).
+L00295	MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas,
+L00296	methods, instructions or products referred to in the content.
+L00297	References 1.
+L00298	U.S.
+L00299	Department of Health and Human Services .
+L00300	The Surgeon General’s Call to Action to Prevent Skin Cancer.
+L00301	U.S.
+L00302	Dept of Health and Human Services, Office of the Surgeon General; Washington, DC, USA: 2014.
+L00303	2.
+L00304	Gandini S., Sera F., Cattaruzza M.S., Pasquini P., Zanetti R., Masini C., Boyle P., Melchi C.F.
+L00305	Meta-analysis of risk factors for cutaneous melanoma: III.
+L00306	Family history, actinic damage and phenotypic factors.
+L00307	Eur.
+L00308	J.
+L00309	Cancer.
+L00310	2005;41:2040–2059. doi: 10.1016/j.ejca.2005.03.034.
+L00311	3.
+L00312	Khalesi M., Whiteman D.C., Tran B., Kimlin M.G., Olsen C.M., Neale R.E.
+L00313	A meta-analysis of pigmentary characteristics, sun sensitivity, freckling and melanocytic nevi and risk of basal cell carcinoma of the skin.
+L00314	Cancer Epidemiol.
+L00315	2013;37:534–543. doi: 10.1016/j.canep.2013.05.008.
+L00316	4.
+L00317	Dennis L.K., Lashway S.G., Langston M.E.
+L00318	Sun Sensitivity and Sunburns as Related to Cutaneous Melanoma among Populations of Spanish Descent: A Meta-Analysis.
+L00319	J.
+L00320	Dermatol.
+L00321	Res.
+L00322	Ther.
+L00323	2015;1:1–2.
+L00324	5.
+L00325	Fitzpatrick T.B.
+L00326	The validity and practicality of sun-reactive skin types I through VI.
+L00327	Arch.
+L00328	Dermatol.
+L00329	1988;124:869–871. doi: 10.1001/archderm.1988.01670060015008.
+L00330	6.
+L00331	Dennis L.K., Kim Y., Lowe J.B.
+L00332	Consistency of reported tanning behaviors and sunburn history among sorority and fraternity students.
+L00333	Photodermatol.
+L00334	Photoimmunol.
+L00335	Photomed.
+L00336	2008;24:191–198. doi: 10.1111/j.1600-0781.2008.00359.x.
+L00337	7.
+L00338	Beane Freeman L.E., Dennis L.K., Lynch C.F., Lowe J.B., Clarke W.R.
+L00339	Test-retest of self-reported exposure to artificial tanning devices, self-tanning creams, and sun sensitivity showed consistency.
+L00340	J.
+L00341	Clin.
+L00342	Epidemiol.
+L00343	2005;58:430–432. doi: 10.1016/j.jclinepi.2004.09.004.
+L00344	8.
+L00345	Glanz K., Schoenfeld E., Weinstock M.A., Layi G., Kidd J., Shigaki D.M.
+L00346	Development and reliability of a brief skin cancer risk assessment tool.
+L00347	Cancer Detect.
+L00348	Prev.
+L00349	2003;27:311–315. doi: 10.1016/S0361-090X(03)00094-1.
+L00350	9.
+L00351	Rosso S., Minarro R., Schraub S., Tumino R., Franceschi S., Zanetti R.
+L00352	Reproducibility of skin characteristic measurements and reported sun exposure history.
+L00353	Int.
+L00354	J.
+L00355	Epidemiol.
+L00356	2002;31:439–446. doi: 10.1093/ije/31.2.439.
+L00357	10.
+L00358	Weinstock M.A., Colditz G.A., Willett W.C., Stampfer M.J., Rosner B., Speizer F.E.
+L00359	Recall (report) bias and reliability in the retrospective assessment of melanoma risk.
+L00360	Am.
+L00361	J.
+L00362	Epidemiol.
+L00363	1991;133:240–245. doi: 10.1093/oxfordjournals.aje.a115868.
+L00364	11.
+L00365	Altman D.G. ; Ebscohost.
+L00366	Practical Statistics for Medical Research.
+L00367	1st ed.
+L00368	Chapman and Hall; London, UK: New York, NY, USA: 1991.
+L00369	12.
+L00370	Byrt T.
+L00371	How good is that agreement?
+L00372	Epidemiology.
+L00373	1996;7:561. doi: 10.1097/00001648-199609000-00030.
+L00374	13.
+L00375	Fleiss J.L.
+L00376	Statistical
+L00377	Methods for Rates and Proportions.
+L00378	2nd ed.
+L00379	Wiley; New York, NY, USA: Chichester, UK: 1981.
+L00380	321p 14.
+L00381	Landis J.R., Koch G.G.
+L00382	The measurement of observer agreement for categorical data.
+L00383	Biometrics.
+L00384	1977;33:159–174. doi: 10.2307/2529310.
+L00385	15.
+L00386	He S.Y., McCulloch C.E., Boscardin W.J., Chren M.M., Linos E., Arron S.T.
+L00387	Self-reported pigmentary phenotypes and race are significant but incomplete predictors of Fitzpatrick skin phototype in an ethnically diverse population.
+L00388	J.
+L00389	Am.
+L00390	Acad.
+L00391	Dermatol.
+L00392	2014;71:731–737. doi: 10.1016/j.jaad.2014.05.023.
+L00393	16.
+L00394	White E., Armstrong B.K., Saracci R.
+L00395	Principles of Exposure Measurement in Epidemiology: Collecting, Evaluating and Improving measures of Disease Risk Factors.
+L00396	2nd ed.
+L00397	Oxford University Press; Oxford, UK: 2008. p.
+L00398	428.
+L00399	17.
+L00400	Heale R., Twycross A.
+L00401	Validity and reliability in quantitative studies.
+L00402	Evid.
+L00403	Based Nurs.
+L00404	2015;18:66–67. doi: 10.1136/eb-2015-102129.
+L00405	18.
+L00406	Dennis L.K., Martin M.K., Zaman T., Okello A.M.
+L00407	Reliability of self-assessment of skin color using a color palette.
+L00408	Arc.
+L00409	Clin.
+L00410	Exp.
+L00411	Dermatol.
+L00412	2020;2:111.
+L00413	19.
+L00414	Cargill J., Lucas R.M., Gies P., King K., Swaminathan A., Allen M.W., Banks E.
+L00415	Validation of brief questionnaire measures of sun exposure and skin pigmentation against detailed and
+L00416	objective measures including vitamin D status.
+L00417	Photochem.
+L00418	Photobiol.
+L00419	2013;89:219–226. doi: 10.1111/j.1751-1097.2012.01221.x.
+L00420	20.
+L00421	Clarys P., Alewaeters K., Lambrecht R., Barel A.O.
+L00422	Skin color measurements: Comparison between three instruments: The Chromameter(R), the DermaSpectrometer(R) and the Mexameter(R) Ski.
+L00423	Res.
+L00424	Technol.
+L00425	2000;6:230–238. doi: 10.1034/j.1600-0846.2000.006004230.x.
+L00426	21. van der Wal M., Bloemen M., Verhaegen P., Tuinebreijer W., de Vet H., van Zuijlen P., Middelkoop E.
+L00427	Objective color measurements: Clinimetric performance of three devices on normal skin and scar tissue.
+L00428	J.
+L00429	Burn Care Res.
+L00430	2013;34:e187–e194. doi: 10.1097/BCR.0b013e318264bf7d.
+L00431	22.
+L00432	Daniel L.C., Heckman C.J., Kloss J.D., Manne S.L.
+L00433	Comparing alternative
+L00434	methods of measuring skin color and damage.
+L00435	Cancer Causes Control.
+L00436	2009;20:313–321. doi: 10.1007/s10552-008-9245-3.
+L00437	23.
+L00438	Dennis L.K., Brown H.E., Farland L.V.
+L00439	DSM II Colormeter for measuring skin color: Its usefulness and reliability of its measurement of melanin.
+L00440	J.
+L00441	Dermatol.
+L00442	Cosmet Treat.
+L00443	2019;1:1–5.
+L00444	24.
+L00445	Langeveld M., van de Lande L.S., O’Sullivan E., van der Lei B., van Dongen J.A.
+L00446	Skin measurement devices to assess skin quality: A systematic review on reliability and validity.
+L00447	Ski.
+L00448	Res.
+L00449	Technol.
+L00450	2022;28:212–224. doi: 10.1111/srt.13113.
+L00451	25.
+L00452	Uter W., Benz M., Mayr A., Gefeller O., Pfahlberg A.
+L00453	Assessing skin pigmentation in epidemiological studies: The reliability of measurements under different conditions.
+L00454	Ski.
+L00455	Res.
+L00456	Technol.
+L00457	2013;19:100–106. doi: 10.1111/srt.12013.
+L00458	26.
+L00459	Hinkle D.E., Wiersma W., Jurs S.G.
+L00460	Applied Statistics for the Behavioral Sciences.
+L00461	5th ed.
+L00462	Houghton Mifflin, Hi Marketing Distributor; Boston, MA, USA: London, UK: 2003.
+L00463	756p 27.
+L00464	Mukaka M.M.
+L00465	Statistics corner: A guide to appropriate use of correlation coefficient in medical research.
+L00466	Malawi.
+L00467	Med.
+L00468	J.
+L00469	2012;24:69–71.
+L00470	28.
+L00471	Cicchetti D.V.
+L00472	Guidelines, Criteria, and Rules of Thumb for Evaluating Normed and Standardized Assessment Instruments in Psychology.
+L00473	Psychol.
+L00474	Assess.
+L00475	1994;6:284–290. doi: 10.1037/1040-3590.6.4.284.
+L00476	29.
+L00477	Szklo M., Nieto F.J.
+L00478	Epidemiology: Beyond the Basics.
+L00479	3rd ed.
+L00480	Jones & Bartlett Learning; Burlington, MA, USA: 2014. p.
+L00481	515.
+L00482	30.
+L00483	Robinson J.K., Penedo F.J., Hay J.L., Jablonski N.G.
+L00484	Recognizing Latinos’ range of skin pigment and phototypes to enhance skin cancer prevention.
+L00485	Pigment.
+L00486	Cell Melanoma Res.
+L00487	2017;30:488–492. doi: 10.1111/pcmr.12598.
+L00488	31.
+L00489	Eilers S., Bach D.Q., Gaber R., Blatt H., Guevara Y., Nitsche K., Kunda R.V., Robinson J.K.
+L00490	Accuracy of self-report in assessing Fitzpatrick skin phototypes I through VI.
+L00491	JAMA Dermatol.
+L00492	2013;149:1289–1294. doi: 10.1001/jamadermatol.2013.6101.
+L00493	32.
+L00494	Howlader N., Noone A.M., Krapcho M., Miller D., Brest A., Yu M., Ruhl J., Tatalovich Z., Mariotto A., Lewis D.R., et al.
+L00495	SEER Cancer Statistics Review, 1975–2017.
+L00496	National Cancer Institute Bethesda; Bethesda, MD, USA: 2020. [(accessed on 28 February 2023)].
+L00497	Available online: https://seercancergov/csr/1975_2017/ 33.
+L00498	Coups E.J., Stapleton J.L., Hudson S.V., Medina-Forrester A., Rosenberg S.A., Gordon M., Natale-Pereira A., Goydos J.S.
+L00499	Skin cancer surveillance behaviors among US Hispanic adults.
+L00500	J.
+L00501	Am.
+L00502	Acad.
+L00503	Dermatol.
+L00504	2013;68:576–584. doi: 10.1016/j.jaad.2012.09.032.
+L00505	34.
+L00506	Clairwood M., Ricketts J., Grant-Kels J., Gonsalves L.
+L00507	Melanoma in skin of color in Connecticut: An analysis of melanoma incidence and stage at diagnosis in non-Hispanic blacks, non-Hispanic whites, and Hispanics.
+L00508	Int.
+L00509	J.
+L00510	Dermatol.
+L00511	2014;53:425–433. doi: 10.1111/j.1365-4632.2012.05713.x.
+L00512	35.
+L00513	Harvey V.M.
+L00514	Melanoma in US Hispanics: Recommended strategies to reduce disparities in outcomes.
+L00515	Cutis.
+L00516	2018;101:243–246.
+L00517	36.
+L00518	Cormier J.N., Xing Y., Ding M., Lee J.E., Mansfield P.F., Gershenwald J.E., Ross M.I., Du X.L.
+L00519	Ethnic differences among patients with cutaneous melanoma.
+L00520	Arch.
+L00521	Intern.
+L00522	Med.
+L00523	2006;166:1907–1914. doi: 10.1001/archinte.166.17.1907.
+L00524	37.
+L00525	Hu S., Parmet Y., Allen G., Parker D.F., Ma F., Rouhani P., Kirsner R.S.
+L00526	Disparity in melanoma: A trend analysis of melanoma incidence and stage at diagnosis among whites, Hispanics, and blacks in Florida.
+L00527	Arch.
+L00528	Dermatol.
+L00529	2009;145:1369–1374. doi: 10.1001/archdermatol.2009.302.
+L00530	38.
+L00531	Guy G.P., Jr., Berkowitz Z., Everett Jones S., Watson M., Richardson L.C.
+L00532	Prevalence of Indoor Tanning and Association With Sunburn Among Youth in the United States.
+L00533	JAMA Dermatol.
+L00534	2017;153:387–390. doi: 10.1001/jamadermatol.2016.6273.
+L00535	39.
+L00536	Shoemaker M.L., Berkowitz Z., Watson M.
+L00537	Intentional outdoor tanning in the United States:
+L00538	Results from the 2015 Summer ConsumerStyles survey.
+L00539	Prev.
+L00540	Med.
+L00541	2017;101:137–141. doi: 10.1016/j.ypmed.2017.06.003.
+L00542	40.
+L00543	Coups E.J., Stapleton J.L., Hudson S.V., Medina-Forrester A., Rosenberg S.A., Gordon M.A., Natale-Pereira A., Goydos J.S.
+L00544	Linguistic acculturation and skin cancer-related behaviors among Hispanics in the southern and western United States.
+L00545	JAMA Dermatol.
+L00546	2013;149:679–686. doi: 10.1001/jamadermatol.2013.745.
+L00547	41.
+L00548	Swiatoniowski A.K., Quillen E.E., Shriver M.D., Jablonski N.G.
+L00549	Technical note: Comparing von Luschan skin color tiles and modern spectrophotometry for measuring human skin pigmentation.
+L00550	Am.
+L00551	J.
+L00552	Phys.
+L00553	Anthropol.
+L00554	2013;151:325–330. doi: 10.1002/ajpa.22274.
+L00555	42.
+L00556	Treesirichod A., Chansakulporn S., Wattanapan P.
+L00557	Correlation between skin color evaluation by skin color scale chart and narrowband reflectance spectrophotometer.
+L00558	Indian J.
+L00559	Dermatol.
+L00560	2014;59:339–342. doi: 10.4103/0019-5154.135476.
+L00561	43. de Rigal J., Abella M.L., Giron F., Caisey L., Lefebvre M.A.
+L00562	Development and validation of a new Skin Color Chart.
+L00563	Ski.
+L00564	Res.
+L00565	Technol.
+L00566	2007;13:101–109. doi: 10.1111/j.1600-0846.2007.00223.x.
+L00567	44.
+L00568	Reeder A.I., Iosua E., Gray A.R., Hammond V.A.
+L00569	Validity and reliability of the munsell soil color charts for assessing human skin color.
+L00570	Cancer Epidemiol.
+L00571	Biomark.
+L00572	Prev.
+L00573	2014;23:2041–2047. doi: 10.1158/1055-9965.EPI-14-0269.
+L00574	45.
+L00575	Wright C.Y., Reeder A.I., Gray A.R., Hammond V.A.
+L00576	Comparison of Munsell((R)) color chart assessments with primary schoolchildren’s self-reported skin color.
+L00577	Ski.
+L00578	Res.
+L00579	Technol.
+L00580	2015;21:459–465. doi: 10.1111/srt.12215.
+L00581	46.
+L00582	Veierod M.B., Parr C.L., Lund E., Hjartaker A.
+L00583	Reproducibility of self-reported melanoma risk factors in a large cohort study of Norwegian women.
+L00584	Melanoma Res.
+L00585	2008;18:1–9. doi: 10.1097/CMR.0b013e3282f120d2.
+L00586	47.
+L00587	Pezic A., Ponsonby A.L., Cameron F.J., Rodda C., Ellis J.A., Halliday J., Siero W., Lucas R.M., Dwyer T.
+L00588	Constitutive and relative facultative skin pigmentation among Victorian children including comparison of two visual skin charts for determining constitutive melanin density.
+L00589	Photochem.
+L00590	Photobiol.
+L00591	2013;89:714–723. doi: 10.1111/php.12043.
+L00592	48.
+L00593	Lee K.C., Dretzke J., Grover L., Logan A., Moiemen N.
+L00594	A systematic review of
+L00595	objective burn scar measurements.
+L00596	Burn.
+L00597	Trauma.
+L00598	2016;4:14. doi: 10.1186/s41038-016-0036-x.
+L00599	Associated Data Data Availability Statement These data were collected with IRB approval as part of course so were not publicly.

@@ -1,0 +1,1012 @@
+[
+  {
+    "classification": "DATA",
+    "line": 2,
+    "text": "Datasets http://orcid.org/0000-0002-7341-9617 Abhishek Kumar kabhishe@sfu.ca 1 https://orcid.org/0009-0004-0402-2300 Jain Aditi 2 http://orcid.org/0000-0001-5040-7448 Hamarneh Ghassan 1 1 https://ror.org/0213rcc28 grid.61971.38 0000 0004 1936 7494 School of Computing Science, Simon Fraser University, Burnaby, V5A 1S6 Canada 2 https://ror.org/049tgcd06 grid.417967.a 0000 0004 0558 8755 Department of Mathematics, Indian Institute of"
+  },
+  {
+    "classification": "DATA",
+    "line": 12,
+    "text": "datasets play a crucial role in the development of reliable deep neural network models, the quality of data therein and their correct usage are of paramount importance."
+  },
+  {
+    "classification": "DATA",
+    "line": 15,
+    "text": "datasets: DermaMNIST, its source HAM10000, and Fitzpatrick17k, uncovering these data quality issues, measure the effects of these problems on the benchmark"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 16,
+    "text": "results, and propose corrections to the"
+  },
+  {
+    "classification": "DATA",
+    "line": 17,
+    "text": "datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 19,
+    "text": "datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 20,
+    "text": "Subject terms Scientific data Computer science 501100004326 Simon Fraser University (SFU) 501100000038 Gouvernement du Canada | Natural Sciences and Engineering Research Council of Canada (Conseil de Recherches en Sciences Naturelles et en Génie du Canada) RGPIN 06795 pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no pmc-status-released yes"
+  },
+  {
+    "classification": "INTRODUCTION",
+    "line": 22,
+    "text": "Introduction Skin diseases are the most common reason for clinical consultations in studied populations 1 , affecting almost a third of the global population 2 , 3 ."
+  },
+  {
+    "classification": "METHODS",
+    "line": 28,
+    "text": "methods for dermatological tasks have produced models that are approaching the diagnostic accuracies of experts, some even mimicking clinical approaches of hierarchical 7 – 9 and differential 10 diagnoses."
+  },
+  {
+    "classification": "METHODS",
+    "line": 30,
+    "text": "methods implies that large and diverse"
+  },
+  {
+    "classification": "DATA",
+    "line": 31,
+    "text": "datasets are needed to train accurate, robust, and generalizable models."
+  },
+  {
+    "classification": "DATA",
+    "line": 33,
+    "text": "datasets, medical image"
+  },
+  {
+    "classification": "DATA",
+    "line": 34,
+    "text": "datasets are relatively smaller, primarily because of the large costs associated with image acquisition and annotation, legal, ethical, and privacy concerns 11 , and are more cost prohibitive to expand 12 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 36,
+    "text": "datasets 13 , 14 , where the surge in skin image analysis research over the past decade can be attributed in part to recent publicly available"
+  },
+  {
+    "classification": "DATA",
+    "line": 37,
+    "text": "datasets, most notably the"
+  },
+  {
+    "classification": "DATA",
+    "line": 38,
+    "text": "datasets and challenges of the International Skin Imaging Collaboration (ISIC) and the associated HAM10000 15 and BCN2000 16"
+  },
+  {
+    "classification": "DATA",
+    "line": 39,
+    "text": "datasets, which are primarily dermoscopic image"
+  },
+  {
+    "classification": "DATA",
+    "line": 40,
+    "text": "datasets, as well as other clinical image"
+  },
+  {
+    "classification": "DATA",
+    "line": 41,
+    "text": "datasets such as SD-198 17 , SD-260 18 , derm7pt 19 , and Fitzpatrick17k 20 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 48,
+    "text": "datasets, Northcutt et al ."
+  },
+  {
+    "classification": "DATA",
+    "line": 55,
+    "text": "datasets where histopathology image patches from the same subject are present in training and validation partitions."
+  },
+  {
+    "classification": "DATA",
+    "line": 60,
+    "text": "datasets from 2016 through 2018 have considerable overlap among their training partitions, and that 706 images are present in all three"
+  },
+  {
+    "classification": "DATA",
+    "line": 61,
+    "text": "datasets’ training splits, a surprising discovery since ISIC 2016 only has 900 training images."
+  },
+  {
+    "classification": "DATA",
+    "line": 64,
+    "text": "datasets from 2016 to 2020, and found overlap and duplicates across these"
+  },
+  {
+    "classification": "DATA",
+    "line": 65,
+    "text": "datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 69,
+    "text": "dataset, used in several peer-reviewed publications, contained “medically irrelevant images” and that models trained on these images did not necessarily rely on features underlying the diseases."
+  },
+  {
+    "classification": "DATA",
+    "line": 73,
+    "text": "datasets in their study were small, with 3 of 6"
+  },
+  {
+    "classification": "DATA",
+    "line": 74,
+    "text": "datasets (MED-NODE, PH2, DDI) consisting of less than 700 images and the largest (SD-128) containing 5,619 images."
+  },
+  {
+    "classification": "DATA",
+    "line": 76,
+    "text": "datasets: the DermaMNIST"
+  },
+  {
+    "classification": "DATA",
+    "line": 77,
+    "text": "dataset 38 , 39 and its source HAM10000"
+  },
+  {
+    "classification": "DATA",
+    "line": 78,
+    "text": "dataset 15 (10,015 images) and the Fitzpatrick17k"
+  },
+  {
+    "classification": "DATA",
+    "line": 79,
+    "text": "dataset 20 (16,577 images)."
+  },
+  {
+    "classification": "DATA",
+    "line": 81,
+    "text": "datasets and report instances of data duplication, data leakage across training and evaluation partitions, and data mislabeling in both"
+  },
+  {
+    "classification": "DATA",
+    "line": 82,
+    "text": "datasets, fixing them where possible."
+  },
+  {
+    "classification": "DATA",
+    "line": 84,
+    "text": "datasets and detailed analysis"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 85,
+    "text": "results are available online on Zenodo 40 ."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 86,
+    "text": "Results DermaMNIST Released as a biomedical imaging"
+  },
+  {
+    "classification": "DATA",
+    "line": 87,
+    "text": "dataset equivalent to the MNIST"
+  },
+  {
+    "classification": "DATA",
+    "line": 88,
+    "text": "dataset of handwritten digits, MedMNIST consists of images from standardized biomedical imaging"
+  },
+  {
+    "classification": "DATA",
+    "line": 89,
+    "text": "datasets resized to MNIST-like 28 × 28 resolution."
+  },
+  {
+    "classification": "DATA",
+    "line": 91,
+    "text": "dataset, it has been quite popular (1009 citations as of November, 2024: 633 citations of [a more recent] 2023 paper 39 , and 376 of [an older] 2021 version of the paper 38 )."
+  },
+  {
+    "classification": "DATA",
+    "line": 93,
+    "text": "dataset 15 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 96,
+    "text": "dataset cover 95% of the lesions encountered in clinical practice 15 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 98,
+    "text": "dataset for dermatological analysis, as aimed for with DermaMNIST."
+  },
+  {
+    "classification": "DATA",
+    "line": 101,
+    "text": "dataset HAM10000."
+  },
+  {
+    "classification": "DATA",
+    "line": 104,
+    "text": "datasets 63 , 64 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 106,
+    "text": "Data Leakage A caveat of HAM10000, despite its rather large size, is that it contains multiple images of the same lesion captured either from different viewing angles or at different magnification levels (Fig."
+  },
+  {
+    "classification": "DATA",
+    "line": 113,
+    "text": "dataset is released as a pre-processed NumPy array, so while the"
+  },
+  {
+    "classification": "DATA",
+    "line": 114,
+    "text": "dataset does not contain filenames of the images, we confirmed this by contacting the authors to obtain the exact training-validation-testing split filenames."
+  },
+  {
+    "classification": "DATA",
+    "line": 123,
+    "text": "datasets: DermaMNIST, DermaMNIST-C, and DermaMNIST-E differ in their partition composition, yet have similarly proportionate diagnosis distributions."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 132,
+    "text": "results in visibly pixelated images."
+  },
+  {
+    "classification": "DATA",
+    "line": 138,
+    "text": "dataset itself has been widely adopted for online challenges 65 , 66 and human-in-the-loop evaluations 67 , 68 , we found that some images with different lesion IDs are in fact duplicates and should have been assigned the same lesion ID."
+  },
+  {
+    "classification": "DATA",
+    "line": 140,
+    "text": "datasets at scale, and calculate inter-image embedding similarity scores \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$${\\mathscr{S}}({x}_{i},{x}_{j})$$\\end{document} S ( x i , x j ) for all \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\left(\\begin{array}{c}10,015\\\\ 2\\end{array}\\right)$$\\end{document} 10 , 015 2 pairs"
+  },
+  {
+    "classification": "DATA",
+    "line": 210,
+    "text": "dataset version as DermaMNIST-C ."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 214,
+    "text": "results are presented in Table 1 ."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 216,
+    "text": "results (3 repeated runs; mean ± std. dev.) of DermaMNIST and the 2 proposed versions: DermaMNIST-C and DermaMNIST-E."
+  },
+  {
+    "classification": "DATA",
+    "line": 217,
+    "text": "Dataset Method ResNet-18 ResNet-50 AUC ACC AUC ACC DermaMNIST Original-28 0.917 0.735 0.913 0.735 Original-224 0.920 0.754 0.912 0.731 DermaMNIST-C 28 × 28 0.946 ± 0.003 0.825 ± 0.006 0.943 ± 0.012 0.831 ± 0.019 224 × 224 0.953 ± 0.001 0.847 ± 0.010 0.948"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 220,
+    "text": "Results on 224 × 224 resolution DermaMNIST is created by resizing images from HAM10000’s original 600 × 450 spatial resolution to MNIST-like 28 × 28 resolution using (bi)cubic spline interpolation."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 227,
+    "text": "results in Table 1 , yields conspicuously more detailed outputs (Fig."
+  },
+  {
+    "classification": "DATA",
+    "line": 230,
+    "text": "dataset of choice for evaluating machine learning models on dermatological tasks and for educational purposes, as MedMNIST intended to be, the quantitative"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 231,
+    "text": "results of DermaMNIST-C (and DermaMNIST for that matter) perhaps paint a deceptively optimistic picture of the state of automated dermatological diagnosis models."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 239,
+    "text": "results on DermaMNIST-E (Table 1 ) show that it is indeed a more challenging"
+  },
+  {
+    "classification": "DATA",
+    "line": 240,
+    "text": "dataset and is guaranteed to be void of any data leakage."
+  },
+  {
+    "classification": "DATA",
+    "line": 242,
+    "text": "dataset is almost the same as the official partitions of the ISIC 2018 Challenge data with 2 distinctions: the images in DermaMNIST-E are resized (28 × 28 or 224 × 224) and the “easter egg” image has been removed from the testing partition."
+  },
+  {
+    "classification": "DATA",
+    "line": 244,
+    "text": "datasets: DermaMNIST, DermaMNIST-C, and DermaMNIST-E is presented in Table 4 , listing a brief description and statistics of the"
+  },
+  {
+    "classification": "DATA",
+    "line": 245,
+    "text": "datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 247,
+    "text": "datasets of clinical skin disease images."
+  },
+  {
+    "classification": "DATA",
+    "line": 249,
+    "text": "dataset for skin image analysis research."
+  },
+  {
+    "classification": "DATA",
+    "line": 253,
+    "text": "dataset (504 out of 16,577 images) where 2 board-certified dermatologists assessed the diagnoses of the images, and the consensus was that only 69.0% of the images were clearly diagnostic of the disease label and, more importantly, 3.4% of the images were mislabeled."
+  },
+  {
+    "classification": "DATA",
+    "line": 257,
+    "text": "dataset: SkinCon 97 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 260,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 261,
+    "text": "Data duplication and leakage To investigate the presence of duplicates in Fitzpatrick17k, we use fastdup to calculate inter-image embedding similarity scores \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$${\\mathscr{S}}({x}_{i},{x}_{j})$$\\end{document} S ( x i , x j ) for all \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts}"
+  },
+  {
+    "classification": "DATA",
+    "line": 265,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 278,
+    "text": "dataset, where image pairs with higher similarity are represented by darker colors."
+  },
+  {
+    "classification": "DATA",
+    "line": 280,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 290,
+    "text": "dataset."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 302,
+    "text": "results of duplicate pairs with duplicate clusters, forming larger clusters as they are discovered."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 304,
+    "text": "results in some large duplicate image clusters with as many as 10 images in a cluster, and a total of 2,297 clusters with 2.18 ± 0.66 images per cluster on average."
+  },
+  {
+    "classification": "DATA",
+    "line": 326,
+    "text": "dataset based on their probability of being an outlier."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 333,
+    "text": "results 103 are the same."
+  },
+  {
+    "classification": "DATA",
+    "line": 337,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 340,
+    "text": "dataset and refer to this “cleaned” version of Fitzpatrick17k as Fitzpatrick17k-C."
+  },
+  {
+    "classification": "DATA",
+    "line": 342,
+    "text": "dataset partitions, researchers who used Fitzpatrick17k for their models had to resort to generating their own splits 74 , 79 , 80 , making it very hard for models across papers to be compared."
+  },
+  {
+    "classification": "DATA",
+    "line": 345,
+    "text": "datasets: Fitzpatrick17k and Fitzpatrick17k-C, listing the number of images in their respective partitions."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 353,
+    "text": "results (3 repeated runs; mean ± std. dev.) of Fitzpatrick17k-C for all the experiments originally reported by Groh et al ."
+  },
+  {
+    "classification": "DATA",
+    "line": 364,
+    "text": "dataset, randomly sampled stratified on the disease labels."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 369,
+    "text": "results in the last row have been reported verbatim from Groh et al ."
+  },
+  {
+    "classification": "DISCUSSION",
+    "line": 380,
+    "text": "Discussion In this paper, we examine the data quality of three popular and large skin image analysis"
+  },
+  {
+    "classification": "DATA",
+    "line": 381,
+    "text": "datasets: DermaMNIST from the MedMNIST"
+  },
+  {
+    "classification": "DATA",
+    "line": 382,
+    "text": "dataset and its source HAM10000"
+  },
+  {
+    "classification": "DATA",
+    "line": 383,
+    "text": "dataset (10,015 dermoscopic images of skin lesions) and Fitzpatrick17k (16,577 clinical images of skin diseases)."
+  },
+  {
+    "classification": "METHODS",
+    "line": 386,
+    "text": "methods and compare the"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 387,
+    "text": "results to those of DermaMNIST across all"
+  },
+  {
+    "classification": "DATA",
+    "line": 388,
+    "text": "datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 391,
+    "text": "dataset with standardized partitions called Fitzpatrick17k-C, and release the corresponding updated benchmarks."
+  },
+  {
+    "classification": "DATA",
+    "line": 393,
+    "text": "datasets analyzed in this paper and their corresponding corrected versions proposed."
+  },
+  {
+    "classification": "DATA",
+    "line": 394,
+    "text": "Dataset Brief Description #Images #Diagnoses #Training Images #Validation Images #Testing Images DermaMNIST The original DermaMNIST"
+  },
+  {
+    "classification": "DATA",
+    "line": 395,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 399,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 404,
+    "text": "dataset being present in more than 1 partition (Fig."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 408,
+    "text": "results are not truly reflective of the models’ generalization capability and, therefore, we strongly suspect that the models’ performance could be inflated."
+  },
+  {
+    "classification": "DATA",
+    "line": 410,
+    "text": "dataset for training instead of splitting it like in the case of DermaMNIST, undetected duplicates in HAM10000 are arguably a less severe issue."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 412,
+    "text": "results of DermaMNIST and DermaMNIST-C (Table 1 ): the two"
+  },
+  {
+    "classification": "DATA",
+    "line": 413,
+    "text": "datasets do not share the same test partitions."
+  },
+  {
+    "classification": "DATA",
+    "line": 419,
+    "text": "dataset While HAM10000 is indeed a valuable"
+  },
+  {
+    "classification": "DATA",
+    "line": 420,
+    "text": "dataset for skin image analysis research, models trained on HAM10000 do not necessarily perform well when evaluated on other skin lesion image"
+  },
+  {
+    "classification": "DATA",
+    "line": 421,
+    "text": "datasets 104 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 423,
+    "text": "dataset are an effective way to differentiate the ability of algorithms to generalize ”)."
+  },
+  {
+    "classification": "DATA",
+    "line": 425,
+    "text": "dataset, thus allowing for a more robust assessment of the skin lesion diagnosis models trained on this"
+  },
+  {
+    "classification": "DATA",
+    "line": 426,
+    "text": "dataset."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 428,
+    "text": "results on 224 × 224 resolutions."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 432,
+    "text": "results (Table 1 ): intuitively, given that we ensure that the models do not overfit, we would expect that a model with larger capacity (ResNet-50) trained on high- resolution images (224 × 224) should perform better than a lower capacity model (ResNet-18) trained on lower"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 435,
+    "text": "results, where ResNet-18/28 × 28 models perform [AUC; ACC] better than ResNet-50/224 × 224 models: [0.917; 0.735] versus [0.912; 0.731]."
+  },
+  {
+    "classification": "DATA",
+    "line": 438,
+    "text": "dataset (16,577 images), manual review of images to verify duplicates is virtually impossible due to the huge combinatorial space: there are \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\left(\\begin{array}{c}16,577\\\\ 2\\end{array}\\right)=137$$\\end{document} 16 , 577 2 = 137 million pairs of images."
+  },
+  {
+    "classification": "METHODS",
+    "line": 442,
+    "text": "methods for duplicate detection followed by a manual review of duplicates above a reasonable similarity threshold, and our manual review"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 443,
+    "text": "results confirmed a near-perfect agreement with the algorithm’s"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 444,
+    "text": "results."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 447,
+    "text": "results."
+  },
+  {
+    "classification": "DATA",
+    "line": 449,
+    "text": "dataset cleaning pipeline, publicly available on GitHub 105 , is highly modular and configurable, allowing users to adjust similarity thresholds to exclude and use multiple duplicate lists (fastdup and cleanvision) for cleaning, decide whether they want to remove duplicate clusters altogether or retain one representative"
+  },
+  {
+    "classification": "DATA",
+    "line": 452,
+    "text": "dataset Fitzpatrick17k-C will be devoid of any duplicates, the large scale of manual review required makes it nearly impossible to guarantee it."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 471,
+    "text": "results of our Fitzpatrick17k diagnosis-to-{ICD-11 classification code, SCTID} mapping publicly available online."
+  },
+  {
+    "classification": "DATA",
+    "line": 473,
+    "text": "datasets containing clinical images of skin diseases, we believe that adding either ICD classification codes or SNOMED-CT Identifiers (SCTIDs) for the disease labels would be a helpful addition to the metadata, and would greatly enhance the usability of such"
+  },
+  {
+    "classification": "DATA",
+    "line": 474,
+    "text": "datasets for hierarchical diagnosis"
+  },
+  {
+    "classification": "METHODS",
+    "line": 475,
+    "text": "methods 7 – 9 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 489,
+    "text": "dataset partitions for training and evaluating their models for benchmarking, the most notable issue being the absence of a well-defined and held-out test set, thus violating one of the most basic rules of machine learning."
+  },
+  {
+    "classification": "DATA",
+    "line": 491,
+    "text": "dataset partition for validation, i.e., choosing the best performing models, and for testing ensures that the reported performance is the best possible, but it is a poor reflection of the models’ generalization capabilities, since the models have been overfit to the testing data."
+  },
+  {
+    "classification": "DATA",
+    "line": 496,
+    "text": "dataset cleaning, implying that 133 images were duplicates in Fitzpatrick17k’s testing partition, which explains why their benchmark"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 497,
+    "text": "results were inflated."
+  },
+  {
+    "classification": "DATA",
+    "line": 499,
+    "text": "dataset cleaning, and the number of both training and testing images for the “Fitz 1-4” experiments decreased by more than 50%."
+  },
+  {
+    "classification": "DATA",
+    "line": 501,
+    "text": "dataset and make comparison across"
+  },
+  {
+    "classification": "METHODS",
+    "line": 502,
+    "text": "methods easier and standardized."
+  },
+  {
+    "classification": "DATA",
+    "line": 504,
+    "text": "datasets by Abhishek 34 focused on ISIC Challenge"
+  },
+  {
+    "classification": "DATA",
+    "line": 505,
+    "text": "datasets for the skin lesion segmentation task, specifically on the challenges from 2016, 2017, and 2018."
+  },
+  {
+    "classification": "DATA",
+    "line": 507,
+    "text": "datasets to have considerable overlap across their training partitions, and this can be attributed to all of them being subsets of the ISIC Archive 118 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 512,
+    "text": "datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 517,
+    "text": "dataset, and found it to contain “medically irrelevant images”."
+  },
+  {
+    "classification": "DATA",
+    "line": 520,
+    "text": "dataset’s authors about the utility of the images might not have been true, since a model trained by Vega et al . on “blinded” images (i.e., images where the regions of interest related to the disease were covered by black rectangles) was also able to"
+  },
+  {
+    "classification": "DATA",
+    "line": 523,
+    "text": "dataset analysis to our work, both in the scale of the analyses and the sizes of the"
+  },
+  {
+    "classification": "DATA",
+    "line": 524,
+    "text": "datasets analyzed, is the work by Cassidy et al ."
+  },
+  {
+    "classification": "DATA",
+    "line": 526,
+    "text": "datasets from 2016 through 2020, where the authors employed a multi-step duplicate removal strategy."
+  },
+  {
+    "classification": "DATA",
+    "line": 528,
+    "text": "dataset partitions based on filenames."
+  },
+  {
+    "classification": "METHODS",
+    "line": 530,
+    "text": "methods on “ a random selection of training images for 72 hours ”: (a) a Python library called ImageHash to measure similarity based on several hashing"
+  },
+  {
+    "classification": "METHODS",
+    "line": 531,
+    "text": "methods (average, perceptual, difference, and wavelet), (b) mean-squared error (MSE)-based image similarity detection, (c) structural similarity index measure (SSIM)-based image similarity detection, and (d) cosine similarity-based detection."
+  },
+  {
+    "classification": "DATA",
+    "line": 534,
+    "text": "datasets in this paper: DermaMNIST, HAM10000, and Fitzpatrick17k arguably goes beyond those presented in these previous works."
+  },
+  {
+    "classification": "DATA",
+    "line": 542,
+    "text": "Data leakage and reproducibility crisis Kapoor et al ."
+  },
+  {
+    "classification": "DATA",
+    "line": 546,
+    "text": "datasets ” and “ [L3.2] : Non-independence between train and test samples ”, where the latter is a direct consequence of the former."
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 549,
+    "text": "conclusion, in this paper, we examined the data quality of three popular skin image analysis"
+  },
+  {
+    "classification": "DATA",
+    "line": 550,
+    "text": "datasets: DermaMNIST from the MedMNIST collection, its source HAM10000, and Fitzpatrick17k."
+  },
+  {
+    "classification": "DATA",
+    "line": 552,
+    "text": "dataset that does not have any leakage (DermaMNIST-C) and an extended and arguably more challenging"
+  },
+  {
+    "classification": "DATA",
+    "line": 553,
+    "text": "dataset (DermaMNIST-E) that is almost the same as the ISIC 2018 Challenge"
+  },
+  {
+    "classification": "DATA",
+    "line": 554,
+    "text": "dataset except the images are resized to 28 × 28 and 224 × 224 and the “easter egg” image is removed from the test partition."
+  },
+  {
+    "classification": "DATA",
+    "line": 556,
+    "text": "dataset for DermaMNIST, and discovered 18 new duplicate image pairs that were unaccounted for in the metadata."
+  },
+  {
+    "classification": "DATA",
+    "line": 558,
+    "text": "dataset to propose a cleaned version Fitzpatrick17k-Cwith standardized training, validation, and testing partitions."
+  },
+  {
+    "classification": "DATA",
+    "line": 561,
+    "text": "datasets, we conducted benchmark evaluations using multiple"
+  },
+  {
+    "classification": "METHODS",
+    "line": 562,
+    "text": "methods, repeated 3 times for robustness."
+  },
+  {
+    "classification": "DATA",
+    "line": 565,
+    "text": "datasets, and how these issues can go unnoticed even in popular"
+  },
+  {
+    "classification": "DATA",
+    "line": 566,
+    "text": "datasets, casting doubts on the"
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 567,
+    "text": "conclusions made about the robustness and the generalizability of the models trained on these"
+  },
+  {
+    "classification": "DATA",
+    "line": 568,
+    "text": "datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 571,
+    "text": "datasets."
+  },
+  {
+    "classification": "METHODS",
+    "line": 572,
+    "text": "Methods DermaMNIST Detecting and correcting data leakage We used HAM10000’s publicly available metadata, which contains image ID to lesion ID mappings, and DermaMNIST partitions’ filenames, which contain image IDs, to perform an inner-join using the Python library pandas."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 581,
+    "text": "results in “ only false positive"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 582,
+    "text": "results ”, as noted by Cassidy et al ."
+  },
+  {
+    "classification": "DATA",
+    "line": 596,
+    "text": "dataset’s metadata."
+  },
+  {
+    "classification": "DATA",
+    "line": 623,
+    "text": "dataset, and would therefore have low similarity scores with its nearest neighbors."
+  },
+  {
+    "classification": "DATA",
+    "line": 629,
+    "text": "dataset is greater than this threshold is removed."
+  },
+  {
+    "classification": "DATA",
+    "line": 640,
+    "text": "datasets for the seven experimental settings (i.e., “Verified”, “Random”, “Source A”, “Source B”, “FST 3–6”, “FST 1–2 & 5–6”, and “FST 1–4”) proposed by Groh et al ."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 645,
+    "text": "results are reported in Table 2 ."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 651,
+    "text": "results are presented in Table 3 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 658,
+    "text": "Datasets’ Licenses All the source"
+  },
+  {
+    "classification": "DATA",
+    "line": 659,
+    "text": "datasets are associated with the Creative Commons (CC) Licenses: DermaMNIST (CC BY-NC 4.0) 125 , Fitzpatrick17k (CC BY-NC-SA 3.0) 123 , and ISIC 2018 Challenge"
+  },
+  {
+    "classification": "DATA",
+    "line": 660,
+    "text": "Datasets (CC BY-NC 4.0) 126 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 664,
+    "text": "dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 675,
+    "text": "Data availability All the"
+  },
+  {
+    "classification": "DATA",
+    "line": 676,
+    "text": "datasets released with this work: DermaMNIST-C, DermaMNIST-E, and Fitzpatrick17k-C are publicly available on Zenodo 40 ."
+  },
+  {
+    "classification": "DATA",
+    "line": 678,
+    "text": "Datasets ."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 680,
+    "text": "results of analysis, including the visualizations, are available online on Zenodo 40 ."
+  },
+  {
+    "classification": "REFERENCES",
+    "line": 682,
+    "text": "References 1."
+  },
+  {
+    "classification": "DATA",
+    "line": 737,
+    "text": "Dataset Growth in Medical Image Analysis Research Journal of Imaging 2021 7 155 10.3390/jimaging7080155 34460791 PMC8404917 Kiryati, N. & Landau, Y."
+  },
+  {
+    "classification": "DATA",
+    "line": 738,
+    "text": "Dataset Growth in Medical Image Analysis Research."
+  },
+  {
+    "classification": "DATA",
+    "line": 742,
+    "text": "datasets: a systematic review The Lancet Digital Health 2022 4 e64 e74 10.1016/S2589-7500(21)00252-1 34772649 Wen, D. et al ."
+  },
+  {
+    "classification": "DATA",
+    "line": 744,
+    "text": "datasets: a systematic review."
+  },
+  {
+    "classification": "DATA",
+    "line": 752,
+    "text": "dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions Scientific Data 2018 5 180161 10.1038/sdata.2018.161 30106392 PMC6091241 Tschandl, P., Rosendahl, C. & Kittler, H."
+  },
+  {
+    "classification": "DATA",
+    "line": 754,
+    "text": "dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions."
+  },
+  {
+    "classification": "DATA",
+    "line": 776,
+    "text": "Dataset."
+  },
+  {
+    "classification": "DATA",
+    "line": 791,
+    "text": "Data management for production quality deep learning models: Challenges and solutions."
+  },
+  {
+    "classification": "DATA",
+    "line": 805,
+    "text": "Datasets and Benchmarks Track (Round 1) (2021)."
+  },
+  {
+    "classification": "DATA",
+    "line": 853,
+    "text": "datasets: Usage, benchmarks and recommendations."
+  },
+  {
+    "classification": "DATA",
+    "line": 857,
+    "text": "Datasets of Monkeypox Skin Images Journal of Medical Systems 2023 47 1 16 10.1007/s10916-023-01928-1 PMC10024024 36933065 Vega, C., Schneider, R. & Satagopam, V."
+  },
+  {
+    "classification": "DATA",
+    "line": 859,
+    "text": "Datasets of Monkeypox Skin Images."
+  },
+  {
+    "classification": "DATA",
+    "line": 877,
+    "text": "datasets, 10.5281/ZENODO.11101337 (2024)."
+  },
+  {
+    "classification": "DATA",
+    "line": 887,
+    "text": "Datasets with Partial Labels."
+  },
+  {
+    "classification": "DATA",
+    "line": 991,
+    "text": "Dataset Collection, 10.48550/ARXIV.2404.15786 (2024)."
+  },
+  {
+    "classification": "DATA",
+    "line": 1016,
+    "text": "Datasets."
+  },
+  {
+    "classification": "DATA",
+    "line": 1107,
+    "text": "Dataset for Dermatology."
+  },
+  {
+    "classification": "DATA",
+    "line": 1138,
+    "text": "dataset densely annotated by domain experts for fine-grained debugging and analysis."
+  },
+  {
+    "classification": "DATA",
+    "line": 1140,
+    "text": "Datasets and Benchmarks Track (2022)."
+  },
+  {
+    "classification": "DATA",
+    "line": 1154,
+    "text": "Datasets, 10.48550/arXiv.2401.14497 (2024)."
+  },
+  {
+    "classification": "DATA",
+    "line": 1174,
+    "text": "datasets. https://github.com/kakumarabhishek/Corrected-Skin-Image-"
+  },
+  {
+    "classification": "DATA",
+    "line": 1175,
+    "text": "Datasets . [Online."
+  },
+  {
+    "classification": "DATA",
+    "line": 1264,
+    "text": "datasets for 2D and 3D biomedical image classification. https://www.medmnist.com [Online."
+  },
+  {
+    "classification": "DATA",
+    "line": 1269,
+    "text": "Datasets – 2018. https://challenge.isic-archive.com/data/#2018 [Online."
+  }
+]

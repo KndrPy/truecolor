@@ -1,0 +1,468 @@
+L00001	Adaptive Weighted Attention Network with Camera Spectral Sensitivity Prior
+L00002	for Spectral Reconstruction from RGB Images
+L00003	Jiaojiao Li1∗ Chaoxiong Wu1∗ Rui Song1 Yunsong Li1 Fei Liu2
+L00004	1
+L00005	The State Key Laboratory of Integrated Service Networks, Xidian University, Xian 710071, China
+L00006	2
+L00007	School of Physics and Optoelectronic Engineering, Xidian University, Xian 710071, China
+L00008	arXiv:2005.09305v1 [eess.IV] 19 May 2020
+L00009	{jjli, rsong, ysli, feiliu}@xidian.edu.cn, cxwu@stu.xidian.edu.cn
+L00010	Abstract (HSIs) typically have a multitude of spectral bands rang-
+L00011	ing from the infrared spectrum to ultraviolet spectrum. The
+L00012	Recent promising effort for spectral reconstruction (SR) rich spectral signatures have been widely explored to var-
+L00013	focuses on learning a complicated mapping through using ious tasks e.g., face recognition, image classification and
+L00014	a deeper and wider convolutional neural networks (CNNs). anomaly detection[24, 20, 27]. However, capturing such
+L00015	Nevertheless, most CNN-based SR algorithms neglect to ex- HSIs containing plentiful spectral information with high
+L00016	plore the camera spectral sensitivity (CSS) prior and in- spatial/temporal resolution is time consuming due to the
+L00017	terdependencies among intermediate features, thus limit- limitations of the imaging technology, hence ineluctably
+L00018	ing the representation ability of the network and perfor- preventing the application scope of HSIs.
+L00019	mance of SR. To conquer these issues, we propose a novel One way to solve this problem is to develop scan-free or
+L00020	adaptive weighted attention network (AWAN) for SR, whose snapshot hyperspectral devices based on compressed sens-
+L00021	backbone is stacked with multiple dual residual attention ing and computational reconstruction, for instance, com-
+L00022	blocks (DRAB) decorating with long and short skip connec- puted tomography imaging spectrometers (CTIS) [9], hy-
+L00023	tions to form the dual residual learning. Concretely, we brid RGB-HS systems [19] and aperture masks [7] etc. Nev-
+L00024	investigate an adaptive weighted channel attention (AWCA) ertheless, these acquisition systems still rely on expensive
+L00025	module to reallocate channel-wise feature responses via in- hardware devices. Another effective way is to generate such
+L00026	tegrating correlations between channels. Furthermore, a HSIs through recovering the lost spectral information from
+L00027	patch-level second-order non-local (PSNL) module is de- a given RGB image, defined as spectral reconstruction (SR)
+L00028	veloped to capture long-range spatial contextual informa- or spectral super-resolution. However, this inverse process
+L00029	tion by second-order non-local operations for more power- is severely ill-posed since amounts of HSIs can project to
+L00030	ful feature representations. Based on the fact that the re- any RGB input. To make the problem resolvable, a large
+L00031	covered RGB images can be projected by the reconstructed number of SR approaches have been proposed, roughly di-
+L00032	hyperspectral image (HSI) and the given CSS function, we vided into two categories: early sparse/shallow learning
+L00033	incorporate the discrepancies of the RGB images and HSIs methods [3] and recent deep CNN-based models [12, 4].
+L00034	as a finer constraint for more accurate reconstruction. Ex- The early researchers mainly concentrate on building
+L00035	perimental results demonstrate the effectiveness of our pro- sparse coding or relatively shallow learning models from
+L00036	posed AWAN network in terms of quantitative comparison a specific hyperspectral prior to fulfill spectral super-
+L00037	and perceptual quality over other state-of-the-art SR meth- resolution [25, 3, 15, 1]. Nonetheless, these methods are
+L00038	ods. In the NTIRE 2020 Spectral Reconstruction Challenge, restricted to perform well on images in specific domains
+L00039	our entries obtain the 1st ranking on the “Clean” track and owing to the poor expression capacity and the limited gen-
+L00040	the 3rd place on the “Real World” track. Codes are avail- eralizability. In recent years, as CNNs have achieved re-
+L00041	able at https://github.com/Deep-imagelab/AWAN. markable success in many computer vision tasks, a series
+L00042	of CNN-based SR models are also presented to learn a
+L00043	mapping function from a single RGB image to its corre-
+L00044	1. Introduction sponding HSI [16, 33, 4, 26, 28, 32]. Besides, the self-
+L00045	attention mechanism for capturing the long range depen-
+L00046	Hyperspectral imaging records the reflectance or trans-
+L00047	dencies is adopted for SR [22]. Although promising per-
+L00048	mittance of objects and the acquired hyperspectral images
+L00049	formances have been implemented in SR, the existing ap-
+L00050	∗ These authors contribute equally to this work. proaches based on CNNs still involve with some disadvan-
+L00051	Arad [3] Galliani [12] Yan [33] Stiebel [28] HSCNN-R [26] Ours
+L00052	Figure 1: The Visual results of the 18-th band and the reconstruction error images of an HSI chosen from validation set of
+L00053	NTIRE2020 “Clean” track. The error images are the heat maps of mean relative absolute error (MRAE) between the ground
+L00054	truth and the recovered HSI. our approach obtains more precise HSI and better recovered quality over other SR methods.
+L00055	tages. Most of CNN-based SR methods devote to design 1. A novel deep adaptive weighted attention network
+L00056	deeper or wider network architectures to acquire a more ad- (AWAN) for SR is presented. Experimental results
+L00057	vanced feature expression, lacking the exploration of rich demonstrate the effectiveness of the proposed AWAN
+L00058	contextual information and interdependencies among in- in terms of quantitative comparison and perceptual
+L00059	termediate features, therefore restricting the discriminative quality. In the NTIRE 2020 Spectral Reconstruction
+L00060	learning of CNNs. Additionally, the existing CNN-based Challenge [5], our entries obtain the 1st ranking on the
+L00061	SR models invariably accomplish a complicated RGB-to- “Clean” track and the 3rd place only 1.59106e-4 more
+L00062	HSI mapping function and rarely consider to integrate cam- than the 1st on the “Real World” track.
+L00063	era spectral sensitivity (CSS) prior into SR for more accu-
+L00064	rate reconstruction. 2. We propose an adaptive weighted channel attention
+L00065	(AWCA) module to adaptively recalibrate channel-
+L00066	To address these issues, a novel deep adaptive weighted
+L00067	wise feature responses by exploiting the adaptive
+L00068	attention network (AWAN) for SR is proposed in this pa-
+L00069	weighted feature statistics instead of average-pooled
+L00070	per. In specific, the backbone architecture of our AWAN
+L00071	ones. Such AWCA module allows our network to se-
+L00072	network is constituted of multiple dual residual attention
+L00073	lectively emphasize informative features and boost dis-
+L00074	blocks (DRAB), in which the long and short skip connec-
+L00075	criminant learning power.
+L00076	tions form the dual residual learning to allow abundant low-
+L00077	frequency information to be bypassed to enhance feature 3. We develop a patch-level second-order non-local
+L00078	correlation learning. Moreover, we present a trainable adap- (PSNL) module to capture long-range spatial contex-
+L00079	tive weighted channel attention (AWCA) module for better tual information via second-order non-local operations
+L00080	modeling channel-wise dependencies. Our AWCA mod- for more powerful feature representations.
+L00081	ule adaptively reallocates channel-wise feature responses
+L00082	by exploiting adaptive weighted feature statistics instead 4. The CSS function prior is integrated into the SR Loss
+L00083	of average-pooled ones. Besides, for more powerful fea- process for more accurate reconstruction through in-
+L00084	ture representation, a patch-level second-order non-local corporating the discrepancies of the RGB images and
+L00085	(PSNL) module is developed to capture long-range spatial HSIs as a finer constraint.
+L00086	contextual information by the second-order non-local oper-
+L00087	ations. Based on the fact that the recovered RGB images
+L00088	can be generated through employing the known CSS func- 2. Related Work
+L00089	tion to reconstructed HSI, we incorporate the discrepancies In the past few years, an increasing amount of algorithms
+L00090	of the RGB images and HSIs as a finer constraint for more for SR have been proposed, including specific acquisition
+L00091	accurate reconstruction. As shown in Fig. 1, our approach systems [19, 7], sparse/shallow learning methods [25, 3, 15,
+L00092	obtains more precise HSI and better reconstruction quality 1] and CNN-based models [12, 33, 11, 23, 4, 26, 34, 28, 6,
+L00093	over other different SR methods. 2, 18]. Here we summarize some CNN-based SR works and
+L00094	The main contributions of this paper are summarized as the attention mechanism without enumerating them all due
+L00095	follows: to space limitation.
+L00096	Figure 2: Network architecture of our adaptive weighted attention network (AWAN). Fm-1 and Fm denote direct input anf
+L00097	output of the m-th DRAB. Rm-1 and Rm denote residual input anf output of the m-th DRAB.
+L00098	CNN-based SR models. Recently, CNN-based SR patch-level second-order non-local (PSNL) module to re-
+L00099	methods have been widely studied and developed with the duce the computational burden. Hu et al. [14] proposed
+L00100	great success of CNNs in computer vision tasks. Typi- a squeeze-and-excitation (SE) block in channel domain to
+L00101	cally, these methods formulate SR as an image-to-image re- model channel-wise feature correlations for image classifi-
+L00102	gression problem and learn a deep mapping function from cation. However, this attention module adaptively reallo-
+L00103	three-dimensional RGB pixel values to high-dimensional cates channel-wise feature responses by exploiting global
+L00104	hyperspectral signals. Initially, Galliani et al. [12] and average-pooled statistics, indicating that it treats equally
+L00105	Xiong et al. [32] trained an end-to-end CNN for SR, which across spatial locations without consideration of different
+L00106	achieved unprecedented results. Later, Arad et al. [4] orga- importance degree of them, resulting to hinder the repre-
+L00107	nized the NTIRE 2018 Spectral Reconstruction Challenge sentational power of CNNs. Therefore, we propose a novel
+L00108	and a plent of excellent algorithms were proposed. For in- deep adaptive weighted attention network (AWAN) by ex-
+L00109	stance, Shi et al. [26] proposed a deep residual network ploring adaptive weighted feature statistics for stronger fea-
+L00110	HSCNN-R consisting of adapted residual blocks. To further ture representations.
+L00111	improve performance, they designed a deeper HSCNN-D
+L00112	model based on a densely-connected structure with a novel 3. Our Proposed Method
+L00113	fusion scheme. Stiebel et al. [28] introduced modified U-
+L00114	net from the semantic segmentation to this task and won 3.1. Network Architecture
+L00115	the 4th place in the spectral reconstruction competition. To
+L00116	The overall architecture of proposed AWAN is illustrated
+L00117	increase the flexibility of the network for learning the pixel-
+L00118	in Fig. 2. Firstly, we employ an individual convolutional
+L00119	wise mapping, Zhang et al. [34] completed the RGB-to-HSI
+L00120	layer to extract the shallow features from the RGB input.
+L00121	mapping using a pixel-aware deep function-mixture net-
+L00122	Then we stack M dual residual attention blocks (DRABs)
+L00123	work composing of a couple of function-mixture blocks.
+L00124	to form a deep network for the deep feature extraction. To
+L00125	Attention mechanism. In general, attention mechanism eliminate the problem of gradient vanishing and explosion
+L00126	can be viewed as a tool to redistribute available informa- in the very deep network, the global residual connection is
+L00127	tion and focus on the salient components of an image [29], adopted. Each DRAB consists of a fundamental residual
+L00128	which has already played an important role in the current module [13] and additional paired convolutional operations
+L00129	computer vision society, such as video classification, super- with a large (5 × 5) and small size (3 × 3) kernels, in which
+L00130	resolution and scene segmentation [30, 8, 10] etc. In spe- the long and short skip connections form the dual resid-
+L00131	cific, Xia et al. [31] presented a novel attention module ual learning in the block. This type of residual in residual
+L00132	in spatial domain incorporating non-local operations with structure makes the best of exploiting the potential of pair-
+L00133	second-order statistics in CNN to extract contextual depen- wise operations by increasing the interaction between the
+L00134	dencies directly for person re-identification and gain supe- basic residual blocks. Also, such module can allow abun-
+L00135	rior performance. Due to that the realization of non-local dant low-frequency information of the original RGB images
+L00136	operations in whole image is time consuming, we develop a to be bypassed and utilized adequately, which enhances the
+L00137	Figure 3: Diagram of adaptive weighted channel attention (AWCA) module. denotes element-wise multiplication.
+L00138	feature correlation learning greatly. Different from the work where W1 and W2 are the weight set of two convolutional
+L00139	[21], batch normalization is not applied in our paper, since layers. δ(·) and σ(·) denote the sigmoid and ReLU acti-
+L00140	the normalization limits the strength of the network to learn vation functions. Then we assign channel attention map
+L00141	correlations between the spectral distribution and the local V = [v1 , v2 , · · · , vc , · · · , vC ] to rescale the input F
+L00142	spatial intensities for SR task, which can further reduce its
+L00143	robustness to variations in the intensity range of an HSI. Be- ec = vc · fc (3)
+L00144	sides, we choose Parametric Rectified Linear Unit (PReLU) where vc and fc are the scaling factor and feature map of the
+L00145	rather than ReLU as activation function to introduce more c-th channel. E = [e1 , e2 , · · · , ec , · · · , eC ] is output feature
+L00146	nonlinear and accelerate convergence. map of AWCA module. Embedded with AWCA block, the
+L00147	3.2. Adaptive Weighted Channel Attention (AWCA) proposed DRAB module can adjust channel-wise feature re-
+L00148	calibration adaptively to boost representational learning of
+L00149	Extracting interdependencies among intermediate fea- the network.
+L00150	tures is indispensable for strengthening discriminant learn-
+L00151	ing power of CNNs. SE block [14] is proposed to adap- 3.3. Patch-level Second-order Non-local (PSNL)
+L00152	tively recalibrate channel-wise feature responses by explic- The non-local neural block [30] was proposed to cap-
+L00153	itly modelling interdependencies between channels. How- ture the long-range dependencies throughout the entire im-
+L00154	ever, it treats equally across spatial locations by exploit- age. Meanwhile, recent works [8, 31] have indicated that
+L00155	ing global average-pooled statistics in the squeeze pro- second-order statistics is an effective tool for more discrim-
+L00156	cess, thus preventing the representational capacity of CNNs. inative representations of CNNs. However, non-local opera-
+L00157	For more powerful feature correlation learning, an adaptive tions need huge computational burden. To decrease compu-
+L00158	weighted channel attention (AWCA) module is proposed to tational cost and model distant region relationships simul-
+L00159	selectively emphasize the informative features by exploring taneously, we develop a patch-level second-order non-local
+L00160	adaptive weighted feature statistics. (PSNL) module. Fig.4 depicts an illustration of PSNL mod-
+L00161	Given an intermediate feature map group denoted as ule. Given a feature map F ∈ RC×H×W , we split it into
+L00162	F = [f1 , f2 , · · · , fc , · · · , fC ] containing C feature maps with four sub-feature maps Fk ∈ RC×h×w (k = 1, 2, 3, 4; h =
+L00163	size of H × W and then reshape F to RC×(H×W ) . We ex- H/2; w = W/2) along spatial dimension, each of which is
+L00164	ploit one convolutional layer to learn the adaptive weighted processed by the subsequent PSNL module.
+L00165	matrix Y ∈ R1×H×W and reshape Y to R(H×W )×1 . Then Firstly, we feed the feature map Fk ∈ RC×h×w into a
+L00166	we apply a softmax layer to normalize Y and multiply F 1×1 convolutional layer with output channel = C/r to pro-
+L00167	with Y. As shown in Fig. 3, we define the above process as duce two new feature maps Bk and Dk , respectively. Then
+L00168	adaptive weighted pooling HAW P (·) we reshape and transpose them to R(h×w)×C/r . The covari-
+L00169	Z = HAW P (F) (1) ance matrix can be computed using B as
+L00170	where Z = [z1 , z2 , · · · , zC ](Z ∈ R C×1
+L00171	) is channel-wise Xk = Bk IBTk (4)
+L00172	descriptors. To make use of the aggregated information 1 1
+L00173	
+L00174	where I = n I − n 1 , n = h × w and Xk ∈ Rn×n . I
+L00175	Z by adaptive weighted pooling, we adopt a simple gating and 1 represent the n × n identity matrix and matrix of all
+L00176	mechanism with sigmoid function, where the output dimen- ones. Xk is the spatial attention map, where xi,j encodes
+L00177	sion of the first convolutional layer is R(C/t)×1×1 and the the dependence between the i-th location and j-th location.
+L00178	output size of the second convolutional layer is RC×1×1 . t Then we input Xk into a softmax layer and perform a matrix
+L00179	is the reduction ratio. The final channel map is computed multiplication between the Xk and Dk
+L00180	as:
+L00181	V = δ(W2 (σ(W1 (Z)))) (2) Uk = sof tmax(Xk )Dk (5)
+L00182	Figure 4: Diagram of patch-level second-order non-local (PSNL) module. ⊗ denotes matrix multiplication.
+L00183	where Uk ∈ Rn×C/r and we reshape and transpose it to 4. Experiments
+L00184	Rh×w×C/r . Then the Uk is feeded to a 1 × 1 convolutional
+L00185	layer φ(·) with output channel = C and the residual con- 4.1. Settings
+L00186	nection with original feature Fk is adopted. Hyperspectral datasets. In this paper, we evaluate our
+L00187	AWAN network on two challenging spectral reconstruction
+L00188	Sk = φ(Uk ) + Fk (6) challenge datasets: NTIRE2018 [4] and NTIRE2020 [5].
+L00189	Both of two challenges are divided into two tracks: “Clean”
+L00190	After the whole sub-feature maps Fk are refined, we obtain
+L00191	and “Real World”. The “Clean” track aims to recover HSIs
+L00192	new feature map S containing rich spatial contextual infor-
+L00193	from the noise-free RGB images obtained by a known CSS
+L00194	mation. Finally, we append such PSNL module on the tail
+L00195	function, while the “Real World” track requires participants
+L00196	of our proposed AWAN (see in Fig. 2).
+L00197	to rebuild the HSIs from JPEG-compression RGB images
+L00198	3.4. Camera Spectral Sensitivity (CSS) Prior created by the an unknown camera response function. Note
+L00199	that the CSS functions of the same tracks are also differ-
+L00200	Previous existing CNN-based SR models invariably to ent. Thus, there are four established benchmarks in total for
+L00201	fit a brute-force RGB-to-HSI mapping and hardly consider SR in these two challenges. The NTIRE2018 dataset con-
+L00202	to integrate camera spectral sensitivity (CSS) prior into SR tains 256 natural HSIs for training and 5 + 10 additional im-
+L00203	for more accurate reconstruction. Based on the fact that ages for validation and testing. All images are 1392 × 1300
+L00204	the recovered RGB images can be created through applying in spatial size and have 31 spectral bands (400-700nm at
+L00205	the given CSS function to reconstructed HSI, we incorpo- roughly 10nm increments). The NTIRE2020 dataset con-
+L00206	rate the discrepancies of the RGB images and differences sists of 450 images for training, 10 images for valida-
+L00207	of HSIs as a finer constraint. Accordingly, our loss function tion and 20 images for testing with a spatial resolution of
+L00208	is a linear combination of two terms: 512 × 482. The band number is also 31.
+L00209	Evaluation metrics. To objectively evaluate the perfor-
+L00210	l = lh + τ lr (7)
+L00211	mance of our proposed method on the NTIRE2020 and
+L00212	where τ is the tradeoff parameter. Given the ground truth NTIRE2018 datasets, the root mean square error (RMSE)
+L00213	IHSI and the spectral reconstructed HSI ISR , the two loss and mean relative absolute error (MRAE) are utilized as
+L00214	functions are specifically defined as evaluation metrics following the scoring script provided by
+L00215	the challenge. MRAE is chosen as the ranking criterion
+L00216	N rather than RMSE to avoid overweighting errors in higher
+L00217	1 X (p) (p) (p)
+L00218	lh = (|I − ISR |/IHSI ) (8) luminance areas of the test images. MRAE and RMSE are
+L00219	N p=1 HSI
+L00220	calculated as follows
+L00221	N N
+L00222	1 X (p) (p) 1 X  (p) (p) (p)
+L00223	
+L00224	lr = (|Φ(IHSI ) − Φ(ISR )|)) (9) M RAE = IHSI − ISR /IHSI (10)
+L00225	N p=1 N p=1
+L00226	(p) (p) v
+L00227	where IHSI and ISR denote the p-th pixel value and Φ is u
+L00228	u1 X N  2
+L00229	CSS function. N is the total number of pixels. In our ex- (p) (p)
+L00230	RM SE = t IHSI − ISR (11)
+L00231	periments, τ is set to 10 empirically. N p=1
+L00232	Clean Real World
+L00233	Description Ea Eb Ec Ed Ee Ef Eg Eh Ei
+L00234	PSNL 8 4 8 4 4 8 4 8 4
+L00235	AWAC 8 8 4 4 4 8 8 4 4
+L00236	CSS 8 8 8 8 4 8 8 8 8
+L00237	MRAE 0.0359 0.0350 0.0341 0.0326 0.0321 0.0687 0.0679 0.0672 0.0668
+L00238	Table 1: Ablation study on validation set of NTIRE2020 “Clean” and “Real World” tracks. We report the best MRAE values
+L00239	in 3 × 105 iterations.
+L00240	Clean Real World Clean Real World
+L00241	Method Method
+L00242	MRAE RMSE MRAE RMSE MRAE RMSE MRAE RMSE
+L00243	AWAN+ 0.0312 0.0111 0.0639 0.0170 AWAN+ 0.0114 10.24 0.0277 21.33
+L00244	AWAN 0.0321 0.0112 0.0668 0.0175 AWAN 0.0116 10.49 0.0289 22.18
+L00245	HSCNN-R [26] 0.0372 0.0143 0.0684 0.0182 HSCNN-D[26] 0.0131 12.99 0.0288 22.40
+L00246	Stiebel [28] 0.0395 0.0152 0.0698 0.0187 HSCNN-R[26] 0.0134 13.17 0.0297 22.88
+L00247	Yan [33] 0.0724 0.0235 0.0875 0.0225 Stiebel[28] 0.0156 15.88 0.0312 23.88
+L00248	Galliani [12] 0.0850 0.0251 0.0941 0.0243 Yan[33] 0.0231 19.28 0.0389 31.65
+L00249	Arad [3] 0.0787 0.0331 —— —— Galliani[12] 0.0272 20.98 0.0660 55.19
+L00250	Arad[3] 0.0808 51.48 —— ——
+L00251	Table 2: The quantitative results on validation set of
+L00252	NTIRE2020 “Clean” and “Real World” tracks. The best Table 3: The quantitative results of validation set of
+L00253	and second best results are highlighted and underlined. NTIRE2018 “Clean” and “Real World” tracks. The best
+L00254	and second best results are highlighted and underlined.
+L00255	(p) (p)
+L00256	where IHSI and ISR denote the p-th pixel value of the
+L00257	Method MRAE Runtime/s Compute Platform
+L00258	ground truth and the spectral reconstructed HSI. A smaller
+L00259	MRAE or RMSE indicate better performance. AWAN+ 0.03010 0.56 NVIDIA 2080Ti
+L00260	Implementations details. We design DRAB number as 2nd method 0.03076 16 NVIDIA 1080Ti
+L00261	M = 8 and output channel = 200. During the training pro- 3rd method 0.03231 3.748 NVIDIA Titan XP
+L00262	cess, we set up 64 × 64 RGB and HSI sample pairs from the 4th method 0.03476 ∼1 ——
+L00263	original dataset. The batch size of our model is 32 and the 5th method 0.03516 0.7 Tesla K80
+L00264	parameter optimization algorithm chooses Adam [17] with
+L00265	β1 = 0.9, β2 = 0.99 and  = 10−8 . The reduction ratio t Table 4: The quantitative results of official test set for
+L00266	value of the AWCA module is 16 and r value of PSNL mod- NTIRE2020 “Clean” track.
+L00267	ule is 8. The learning rate is initialized as 0.0001 and the Method MRAE Runtime/s Compute Platform
+L00268	polynomial function is set as the decay policy with power 1st method 0.06201 3.748 NVIDIA Titan XP
+L00269	= 1.5. We stop network training at 100 epochs. Our pro- 2nd method 0.06213 16 NVIDIA 1080Ti
+L00270	posed AWAN network has been implemented on the Py- AWAN+ 0.06217 0.56 NVIDIA 2080Ti
+L00271	torch framework and the training time is approximately 36 4th method 0.06515 ∼30 NVIDIA Titan XP
+L00272	hours on 2 NVIDIA 2080Ti GPUs. 5th method 0.06733 —— NVIDIA 2080Ti
+L00273	4.2. Ablation Analysis
+L00274	Table 5: The quantitative results of official test set for
+L00275	To verify the effects of different modules, we carry NTIRE2020 “Real World” track.
+L00276	out ablation study on the NTIRE2020 “Clean” and “Real
+L00277	World” tracks. The detailed experimental results are listed long-range dependencies via second-order non-local oper-
+L00278	in the TABLE 1. Ea and Ef refer to a baseline network ations. Compared with the baseline results, Eb and Eg
+L00279	stacked with 8 DRABs, which only contains plenty of ordi- demonstrate the effectiveness of modeling distant region re-
+L00280	nary convolutional layers. lationships.
+L00281	Patch-level second-order non-local (PSNL). From Adaptive weighted channel attention (AWCA). Based
+L00282	TABLE 1 we can see that the baseline results reach on the baseline network, we conduct another experiment
+L00283	MRAE=0.0359 and MRAE=0.0687 on the two tracks sep- to inspect the effect of AWCA module. Results of Ec
+L00284	arately. As described in Section 3.3, we append the PSNL and Eh brings 5.0% and 2.2% decrease in MRAE metrics
+L00285	module on the tail of our proposed AWAN to capture the over the baseline results for the NTIRE2020 “Clean” and
+L00286	Galliani [12] Yan [33] Stiebel [28] HSCNN-R [26] Ours
+L00287	Figure 5: The Visual results of the 22-th band and the reconstruction error images of an HSI chosen from validation set of
+L00288	NTIRE2020 “Real World” track. The error images are the heat maps of MRAE between the ground truth and the recovered
+L00289	HSI. The best view on the screen.
+L00290	Galliani [12] Yan [33] Stiebel [28] HSCNN-R [26] HSCNN-D [26] Ours
+L00291	Figure 6: The Visual results of the 15-th band and the reconstruction error images of an HSI chosen from validation set of
+L00292	NTIRE2018 “Real World” track. The error images are the heat maps of MRAE between the ground truth and the recovered
+L00293	HSI. The best view on the screen.
+L00294	Arad [3] Galliani [12] Yan [33] Stiebel [28] HSCNN-R [26] HSCNN-D [26] Ours
+L00295	Figure 7: The Visual results of the 24-th band and the reconstruction error images of an HSI chosen from validation set of
+L00296	NTIRE2018 “Clean” track. The error images are the heat maps of MRAE between the ground truth and the recovered HSI.
+L00297	The best view on the screen.
+L00298	“Real World” tracks. The main reason lies in that AWCA
+L00299	module adaptively integrates channel-wise interdependen-
+L00300	cies for more powerful feature correlation learning. After-
+L00301	wards, we combine PSNL and AWCA modules to further
+L00302	strengthen discriminant learning of our network. Experi-
+L00303	mental results of Ed and Ei demonstrate that the more su-
+L00304	perior performance can be achieved with such two modules.
+L00305	Camera spectral sensitivity (CSS) prior. Experiments
+L00306	of Ea to Ed and Ef to Ei are all optimized by stochas-
+L00307	tic gradient descent algorithm with individual MRAE loss
+L00308	term lh in Section 3.4. Since the CSS function is known in
+L00309	(a) (b)
+L00310	the “Clean” track and unknown in the “Real World” track,
+L00311	we can only introduce CSS prior into AWAN network for
+L00312	“Clean” track. Ee means that we utilize a linear combi-
+L00313	nation of MRAE loss term lh and CSS constraint lr as the
+L00314	final loss function and indicates that the incorporation of
+L00315	CSS prior is useful to improve the accuracy of spectral re-
+L00316	construction.
+L00317	4.3. Results
+L00318	To test the superiority of our proposed network, we com-
+L00319	pare our algorithm with six state-of-the-art methods, includ-
+L00320	(c) (d)
+L00321	ing Arad[3], Galliani[12], Yan[33], Stiebel[28], HSCNN-
+L00322	R[26], and HSCNN-D[26]. The numerical results of val-
+L00323	Figure 8: Spectral response curves of selected several spa-
+L00324	idation set for NTIRE2020 and NTIRE2018 “Clean” and
+L00325	tial points from the reconstructed HSI. (a) and (b) are for
+L00326	“Real World” tracks are listed in Table 2 and Table 3. As
+L00327	the NTIRE2018 “Clean” and “Real World” tracks respec-
+L00328	in [26], we also adopt multi-model ensemble method de-
+L00329	tively. (c) and (d) are for the NTIRE2020 “Clean” and “Real
+L00330	noted as AWCA+. For the NTIRE2020 “Clean” track, ad-
+L00331	World” track respectively.
+L00332	ditional three models are trained, including one model with
+L00333	8 DRABs and 200 output channels and two models with
+L00334	results, we display some visual reconstructed HSIs and the
+L00335	20 DRABs and 128 output channels. For the NTIRE2020
+L00336	corresponding error maps of different methods in Figure 5,
+L00337	“Real World” track, we firstly adopt self-ensemble method
+L00338	Figure 6 and Figure 7. From these figures, we can see that
+L00339	for single AWAN network that the RGB input is flipped
+L00340	our approach yields better recovery results and higher re-
+L00341	up/down to acquire a mirrored output and then the mirrored
+L00342	construction fidelity than other methods. In addition, we
+L00343	output and the original output are averaged into the target
+L00344	also plot the spectral response curves in Figure 8. Obvi-
+L00345	result. Additional two models with 8 DRABs and 200 out-
+L00346	ously, the results of our proposed method are more accurate,
+L00347	put channels and one model with 10 DRABs and 180 out-
+L00348	which are closer to the ground truth HSIs.
+L00349	put channels are trained for multi-model ensemble. As for
+L00350	NTIRE2018 datasets, we perform the similar self-ensemble
+L00351	5. Conclusion
+L00352	method as NTIRE2020 “Real World” track. Also, addi-
+L00353	tional two models with 8 DRABs and 200 output channels In this paper, we propose a deep adaptive weighted at-
+L00354	are on the “Clean” track and additional two models with 10 tention network (AWAN) for SR. Specifically, a patch-level
+L00355	DRABs and 200 output channels are for the “Real World” second-order non-local (PSNL) module is presented to cap-
+L00356	track. From Table 2 and Table 3, we can observe that our ture distant region correlations via second-order non-local
+L00357	single model outperforms other compared approaches and operations. Besides, a trainable adaptive weighted channel
+L00358	our method further improves the performance of SR with attention (AWCA) module is proposed to adaptively recali-
+L00359	model-ensemble strategy. Finally, our entries obtain the brate channel-wise feature responses by exploiting adaptive
+L00360	1st ranking on the official test set of “Clean” track and the weighted feature statistics. To further improve the accuracy
+L00361	3rd place only 1.59106e-4 more than the 1st on the “Real of SR, we introduce camera spectral sensitivity (CSS) prior
+L00362	World” track in the NTIRE 2020 Spectral Reconstruction and incorporate the discrepancies of the RGB images and
+L00363	Challenge (see in Table 4 and Table 5). It should be noted HSIs as a finer constraint. Experimental results on challeng-
+L00364	that we only list top 5 methods. ing benchmarks demonstrate the superiority of our AWAN
+L00365	Visual results. To evaluate the perceptual quality of SR network in terms of numerical and visual results.
+L00366	References [14] Jie Hu, Li Shen, and Gang Sun. Squeeze-and-excitation net-
+L00367	works. In Proceedings of the IEEE conference on computer
+L00368	[1] Jonas Aeschbacher, Jiqing Wu, and Radu Timofte. In de- vision and pattern recognition, pages 7132–7141, 2018.
+L00369	fense of shallow learned spectral reconstruction from rgb im- [15] Yan Jia, Yinqiang Zheng, Lin Gu, Art Subpa-Asa, Antony
+L00370	ages. In Proceedings of the IEEE International Conference Lam, Yoichi Sato, and Imari Sato. From rgb to spectrum for
+L00371	on Computer Vision, pages 471–479, 2017. natural scenes via manifold-based mapping. In Proceedings
+L00372	[2] Aitor Alvarez-Gila, Joost Van De Weijer, and Estibaliz Gar- of the IEEE International Conference on Computer Vision,
+L00373	rote. Adversarial networks for spatial context-aware spectral pages 4705–4713, 2017.
+L00374	image reconstruction from rgb. In Proceedings of the IEEE [16] Berk Kaya, Yigit Baran Can, and Radu Timofte. Towards
+L00375	International Conference on Computer Vision, pages 480– spectral estimation from a single rgb image in the wild. In
+L00376	490, 2017. 2019 IEEE/CVF International Conference on Computer Vi-
+L00377	[3] Boaz Arad and Ohad Ben-Shahar. Sparse recovery of hyper- sion Workshop (ICCVW), pages 3546–3555. IEEE, 2019.
+L00378	spectral signal from natural rgb images. In European Con- [17] Diederik P Kingma and Jimmy Ba. Adam: A method for
+L00379	ference on Computer Vision, pages 19–34. Springer, 2016. stochastic optimization. arXiv preprint arXiv:1412.6980,
+L00380	[4] Boaz Arad, Ohad Ben-Shahar, and Radu Timofte. Ntire 2014.
+L00381	2018 challenge on spectral reconstruction from rgb images. [18] Sriharsha Koundinya, Himanshu Sharma, Manoj Sharma,
+L00382	In Proceedings of the IEEE Conference on Computer Vision Avinash Upadhyay, Raunak Manekar, Rudrabha Mukhopad-
+L00383	and Pattern Recognition Workshops, pages 929–938, 2018. hyay, Abhijit Karmakar, and Santanu Chaudhury. 2d-3d cnn
+L00384	[5] Boaz Arad, Radu Timofte, Ohad Ben-Shahar, Yi-Tun Lin, based architectures for spectral reconstruction from rgb im-
+L00385	Graham Finlayson, et al. Ntire 2020 challenge on spectral ages. In Proceedings of the IEEE Conference on Computer
+L00386	reconstruction from an rgb image. In The IEEE Conference Vision and Pattern Recognition Workshops, pages 844–851,
+L00387	on Computer Vision and Pattern Recognition (CVPR) Work- 2018.
+L00388	shops, June 2020. [19] Hyeokhyen Kwon and Yu-Wing Tai. Rgb-guided hyperspec-
+L00389	[6] Yigit Baran Can and Radu Timofte. An efficient cnn for tral image upsampling. In Proceedings of the IEEE Inter-
+L00390	spectral reconstruction from rgb images. arXiv preprint national Conference on Computer Vision, pages 307–315,
+L00391	arXiv:1804.04647, 2018. 2015.
+L00392	[7] Xun Cao, Hao Du, Xin Tong, Qionghai Dai, and Stephen [20] Jiaojiao Li, Qian Du, Yunsong Li, and Wei Li. Hyperspectral
+L00393	Lin. A prism-mask system for multispectral video acqui- image classification with imbalanced data based on orthogo-
+L00394	sition. IEEE transactions on pattern analysis and machine nal complement subspace projection. IEEE Transactions on
+L00395	intelligence, 33(12):2423–2435, 2011. Geoscience and Remote Sensing, 56(7):3838–3851, 2018.
+L00396	[21] Xing Liu, Masanori Suganuma, Zhun Sun, and Takayuki
+L00397	[8] Tao Dai, Jianrui Cai, Yongbing Zhang, Shu-Tao Xia, and
+L00398	Okatani. Dual residual networks leveraging the potential
+L00399	Lei Zhang. Second-order attention network for single im-
+L00400	of paired operations for image restoration. In Proceedings
+L00401	age super-resolution. In Proceedings of the IEEE Conference
+L00402	of the IEEE Conference on Computer Vision and Pattern
+L00403	on Computer Vision and Pattern Recognition, pages 11065–
+L00404	Recognition, pages 7007–7016, 2019.
+L00405	11074, 2019.
+L00406	[22] Xin Miao, Xin Yuan, Yunchen Pu, and Vassilis Athitsos. l-
+L00407	[9] Michael Descour and Eustace Dereniak. Computed-
+L00408	net: Reconstruct hyperspectral images from a snapshot mea-
+L00409	tomography imaging spectrometer: experimental calibration
+L00410	surement. In The IEEE International Conference on Com-
+L00411	and reconstruction results. Applied Optics, 34(22):4817–
+L00412	puter Vision (ICCV), October 2019.
+L00413	4826, 1995.
+L00414	[23] Shijie Nie, Lin Gu, Yinqiang Zheng, Antony Lam, Nobutaka
+L00415	[10] Jun Fu, Jing Liu, Haijie Tian, Yong Li, Yongjun Bao, Zhi- Ono, and Imari Sato. Deeply learned filter response func-
+L00416	wei Fang, and Hanqing Lu. Dual attention network for tions for hyperspectral reconstruction. In Proceedings of the
+L00417	scene segmentation. In Proceedings of the IEEE Conference IEEE Conference on Computer Vision and Pattern Recogni-
+L00418	on Computer Vision and Pattern Recognition, pages 3146– tion, pages 4767–4776, 2018.
+L00419	3154, 2019.
+L00420	[24] Zhihong Pan, Glenn Healey, Manish Prasad, and Bruce
+L00421	[11] Ying Fu, Tao Zhang, Yinqiang Zheng, Debing Zhang, and Tromberg. Face recognition in hyperspectral images. IEEE
+L00422	Hua Huang. Joint camera spectral sensitivity selection and Transactions on Pattern Analysis and Machine Intelligence,
+L00423	hyperspectral image recovery. In Proceedings of the Euro- 25(12):1552–1560, 2003.
+L00424	pean Conference on Computer Vision (ECCV), pages 788– [25] Antonio Robles-Kelly. Single image spectral reconstruction
+L00425	804, 2018. for multimedia applications. In Proceedings of the 23rd
+L00426	[12] Silvano Galliani, Charis Lanaras, Dimitrios Marmanis, Em- ACM international conference on Multimedia, pages 251–
+L00427	manuel Baltsavias, and Konrad Schindler. Learned spectral 260. ACM, 2015.
+L00428	super-resolution. arXiv preprint arXiv:1703.09470, 2017. [26] Zhan Shi, Chang Chen, Zhiwei Xiong, Dong Liu, and Feng
+L00429	[13] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Wu. Hscnn+: Advanced cnn-based hyperspectral recovery
+L00430	Deep residual learning for image recognition. In Proceed- from rgb images. In Proceedings of the IEEE Conference on
+L00431	ings of the IEEE conference on computer vision and pattern Computer Vision and Pattern Recognition Workshops, pages
+L00432	recognition, pages 770–778, 2016. 939–947, 2018.
+L00433	[27] David WJ Stein, Scott G Beaven, Lawrence E Hoff, Ed-
+L00434	win M Winter, Alan P Schaum, and Alan D Stocker.
+L00435	Anomaly detection from hyperspectral imagery. IEEE sig-
+L00436	nal processing magazine, 19(1):58–69, 2002.
+L00437	[28] Tarek Stiebel, Simon Koppers, Philipp Seltsam, and Dorit
+L00438	Merhof. Reconstructing spectral images from rgb-images
+L00439	using a convolutional neural network. In Proceedings of the
+L00440	IEEE Conference on Computer Vision and Pattern Recogni-
+L00441	tion Workshops, pages 948–953, 2018.
+L00442	[29] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszko-
+L00443	reit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia
+L00444	Polosukhin. Attention is all you need. In Advances in neural
+L00445	information processing systems, pages 5998–6008, 2017.
+L00446	[30] Xiaolong Wang, Ross Girshick, Abhinav Gupta, and Kaim-
+L00447	ing He. Non-local neural networks. In Proceedings of the
+L00448	IEEE conference on computer vision and pattern recogni-
+L00449	tion, pages 7794–7803, 2018.
+L00450	[31] Bryan Ning Xia, Yuan Gong, Yizhe Zhang, and Christian
+L00451	Poellabauer. Second-order non-local attention networks for
+L00452	person re-identification. In Proceedings of the IEEE Inter-
+L00453	national Conference on Computer Vision, pages 3760–3769,
+L00454	2019.
+L00455	[32] Zhiwei Xiong, Zhan Shi, Huiqun Li, Lizhi Wang, Dong Liu,
+L00456	and Feng Wu. Hscnn: Cnn-based hyperspectral image re-
+L00457	covery from spectrally undersampled projections. In Pro-
+L00458	ceedings of the IEEE International Conference on Computer
+L00459	Vision, pages 518–525, 2017.
+L00460	[33] Yiqi Yan, Lei Zhang, Jun Li, Wei Wei, and Yanning Zhang.
+L00461	Accurate spectral super-resolution from single rgb image
+L00462	using multi-scale cnn. In Chinese Conference on Pattern
+L00463	Recognition and Computer Vision (PRCV), pages 206–217.
+L00464	Springer, 2018.
+L00465	[34] Lei Zhang, Zhiqiang Lang, Peng Wang, Wei Wei, Sheng-
+L00466	cai Liao, Ling Shao, and Yanning Zhang. Pixel-aware
+L00467	deep function-mixture network for spectral super-resolution.
+L00468	arXiv preprint arXiv:1903.10501, 2019.

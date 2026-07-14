@@ -1,0 +1,1270 @@
+L00001	pmc Sci Data Sci Data 2628 sdata Scientific Data 2052-4463 Nature Publishing Group PMC11787307 PMC11787307.1 11787307 11787307 39893183 10.1038/s41597-025-04382-5 4382 1 Analysis Investigating the Quality of DermaMNIST and Fitzpatrick17k Dermatological Image
+L00002	Datasets http://orcid.org/0000-0002-7341-9617 Abhishek Kumar kabhishe@sfu.ca 1 https://orcid.org/0009-0004-0402-2300 Jain Aditi 2 http://orcid.org/0000-0001-5040-7448 Hamarneh Ghassan 1 1 https://ror.org/0213rcc28 grid.61971.38 0000 0004 1936 7494 School of Computing Science, Simon Fraser University, Burnaby, V5A 1S6 Canada 2 https://ror.org/049tgcd06 grid.417967.a 0000 0004 0558 8755 Department of Mathematics, Indian Institute of
+L00003	Technology Delhi, New Delhi, 110016 India 1 2 2025 2025 12 478261 196 25 1 2024 2 1 2025 01 02 2025 02 02 2025 07 06 2026 © The Author(s) 2025 2025 https://creativecommons.org/licenses/by-nc-nd/4.0/ Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives
+L00004	4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the
+L00005	licensed material.
+L00006	You do not have permission under this licence to share adapted material derived from this article or parts of it.
+L00007	The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material.
+L00008	If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder.
+L00009	To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/ .
+L00010	The remarkable progress of deep learning in dermatological tasks has brought us closer to achieving diagnostic accuracies comparable to those of human experts.
+L00011	However, while large
+L00012	datasets play a crucial role in the development of reliable deep neural network models, the quality of data therein and their correct usage are of paramount importance.
+L00013	Several factors can impact data quality, such as the presence of duplicates, data leakage across train-test partitions, mislabeled images, and the absence of a well-defined test partition.
+L00014	In this paper, we conduct meticulous analyses of three popular dermatological image
+L00015	datasets: DermaMNIST, its source HAM10000, and Fitzpatrick17k, uncovering these data quality issues, measure the effects of these problems on the benchmark
+L00016	results, and propose corrections to the
+L00017	datasets.
+L00018	Besides ensuring the reproducibility of our analysis, by making our analysis pipeline and the accompanying code publicly available, we aim to encourage similar explorations and to facilitate the identification and addressing of potential data quality issues in other large
+L00019	datasets.
+L00020	Subject terms Scientific data Computer science 501100004326 Simon Fraser University (SFU) 501100000038 Gouvernement du Canada | Natural Sciences and Engineering Research Council of Canada (Conseil de Recherches en Sciences Naturelles et en Génie du Canada) RGPIN 06795 pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no pmc-status-released yes
+L00021	pmc-prop-open-access yes pmc-prop-olf no pmc-prop-manuscript no pmc-prop-legally-suppressed no pmc-prop-has-pdf yes pmc-prop-has-supplement no pmc-prop-pdf-only no pmc-prop-suppress-copyright no pmc-prop-is-real-version no pmc-prop-is-scanned-article no pmc-prop-preprint no pmc-prop-in-epmc yes pmc-license-ref CC BY-NC-ND issue-copyright-statement © Springer Nature Limited 2025
+L00022	Introduction Skin diseases are the most common reason for clinical consultations in studied populations 1 , affecting almost a third of the global population 2 , 3 .
+L00023	The 2013 Global Burden of Disease found skin diseases to be the fourth leading cause of nonfatal disabilities globally, accounting for 41.6 million Disability Adjusted Life Years and 39.0 million Years Lost due to Disability 4 .
+L00024	In the USA alone, the healthcare cost of skin diseases was estimated to be $75 billion in 2016 5 .
+L00025	Of all the skin diseases, skin cancer is a particularly concerning skin disease condition that merits special attention due to its potential seriousness.
+L00026	With the increased incidence rates of skin cancer over the past decades 6 , coupled with the projected decline in the ratio of dermatologists to populations 5 , automated systems for dermatological diagnosis can be immensely valuable.
+L00027	Advances in deep learning (DL)-based
+L00028	methods for dermatological tasks have produced models that are approaching the diagnostic accuracies of experts, some even mimicking clinical approaches of hierarchical 7 – 9 and differential 10 diagnoses.
+L00029	The data-driven nature of these DL
+L00030	methods implies that large and diverse
+L00031	datasets are needed to train accurate, robust, and generalizable models.
+L00032	However, unlike natural computer vision
+L00033	datasets, medical image
+L00034	datasets are relatively smaller, primarily because of the large costs associated with image acquisition and annotation, legal, ethical, and privacy concerns 11 , and are more cost prohibitive to expand 12 .
+L00035	This is also true for skin cancer image
+L00036	datasets 13 , 14 , where the surge in skin image analysis research over the past decade can be attributed in part to recent publicly available
+L00037	datasets, most notably the
+L00038	datasets and challenges of the International Skin Imaging Collaboration (ISIC) and the associated HAM10000 15 and BCN2000 16
+L00039	datasets, which are primarily dermoscopic image
+L00040	datasets, as well as other clinical image
+L00041	datasets such as SD-198 17 , SD-260 18 , derm7pt 19 , and Fitzpatrick17k 20 .
+L00042	Although large data sets are important for the development of reliable models, the quality of the data therein and their correct use are equally important 21 – 24 : low-quality data may result in inefficient training, inaccurate models that exhibit biases, poor generalizability and low
+L00043	robustness, and may negatively affect the interpretability of such models.
+L00044	The data quality can be affected by several factors: mislabeled images, data leakage across training and evaluation partitions, the absence of a held-out test partition, etc.
+L00045	The issue of data leakage, in particular, is in fact quite widespread, and a recent survey 25 of 17 fields spanning 294 articles, on topics ranging from medicine and bioinformatics to information technology operations and computer security, showed that ML adoption in all these fields
+L00046	suffers from data leakage.
+L00047	In an analysis of 10 popular natural computer vision, natural language, and audio
+L00048	datasets, Northcutt et al .
+L00049	26 estimated an average label error rate of at least 3.3%.
+L00050	In medical image analysis domains, too, investigation into the use of machine learning best practices has found several instances of incorrect data partitioning and feature leakage between training and evaluation partitions.
+L00051	Oner et al .
+L00052	27 showed that a peer-reviewed article published in Nature Medicine using DL for histopathology image analysis suffered from data leakage by using slide-level stratification for data partitioning instead of patient-level stratification.
+L00053	In a large-scale study, Bussola et al .
+L00054	28 showed how DL models can exhibit considerably inflated performance measures when evaluated on
+L00055	datasets where histopathology image patches from the same subject are present in training and validation partitions.
+L00056	In mammography analysis, Samala et al .
+L00057	29 , 30 showed the risks of feature leakage between training and validation partitions and how this could lead to an overly optimistic performance on the validation partition, compared to a completely held out test partition.
+L00058	Similar investigations have been conducted on the adverse effects of incorrect data partitioning on test performance in optical coherence tomography (OCT) image classification 31 , brain magnetic resonance imaging (MRI) classification 32 , and longitudinal brain MRI analysis 33 Specific to skin image analysis, our
+L00059	previous work 34 showed that the popular ISIC Skin Lesion Segmentation Challenge
+L00060	datasets from 2016 through 2018 have considerable overlap among their training partitions, and that 706 images are present in all three
+L00061	datasets’ training splits, a surprising discovery since ISIC 2016 only has 900 training images.
+L00062	Cassidy et al .
+L00063	35 analyzed the ISIC Skin Lesion Diagnosis Challenge
+L00064	datasets from 2016 to 2020, and found overlap and duplicates across these
+L00065	datasets.
+L00066	They used a duplicate removal strategy to curate new clean training, validation, and testing sets.
+L00067	Vega et al .
+L00068	36 found that a popular monkeypox skin image
+L00069	dataset, used in several peer-reviewed publications, contained “medically irrelevant images” and that models trained on these images did not necessarily rely on features underlying the diseases.
+L00070	Very recently, Groger et al .
+L00071	37 carried out an analysis of six dermatology skin data sets (MED-NODE, PH2, DDI, derm7pt, PAD-UFES-20, and SD-128), detecting and removing near duplicates and “irrelevant samples” from them.
+L00072	However, all the
+L00073	datasets in their study were small, with 3 of 6
+L00074	datasets (MED-NODE, PH2, DDI) consisting of less than 700 images and the largest (SD-128) containing 5,619 images.
+L00075	In this paper, we look at three popular and large skin image analysis
+L00076	datasets: the DermaMNIST
+L00077	dataset 38 , 39 and its source HAM10000
+L00078	dataset 15 (10,015 images) and the Fitzpatrick17k
+L00079	dataset 20 (16,577 images).
+L00080	We perform systematic analyses of both
+L00081	datasets and report instances of data duplication, data leakage across training and evaluation partitions, and data mislabeling in both
+L00082	datasets, fixing them where possible.
+L00083	Our corrected
+L00084	datasets and detailed analysis
+L00085	results are available online on Zenodo 40 .
+L00086	Results DermaMNIST Released as a biomedical imaging
+L00087	dataset equivalent to the MNIST
+L00088	dataset of handwritten digits, MedMNIST consists of images from standardized biomedical imaging
+L00089	datasets resized to MNIST-like 28 × 28 resolution.
+L00090	Despite being a fairly new
+L00091	dataset, it has been quite popular (1009 citations as of November, 2024: 633 citations of [a more recent] 2023 paper 39 , and 376 of [an older] 2021 version of the paper 38 ).
+L00092	The dermatological subset of MedMNIST, DermaMNIST, contains resized images from the popular “Human Against Machine with 10000 training images” (HAM10000)
+L00093	dataset 15 .
+L00094	HAM10000 contains 10,015 dermoscopic images of pigmented skin lesions collected from patients at two study sites in Australia and Austria, with their diagnoses confirmed by either histopathology, confocal microscopy, clinical follow-up visits, or expert consensus.
+L00095	The 7 disease labels in the
+L00096	dataset cover 95% of the lesions encountered in clinical practice 15 .
+L00097	Because of these meritorious properties, HAM10000 is a good candidate
+L00098	dataset for dermatological analysis, as aimed for with DermaMNIST.
+L00099	While the “ lightweight ” nature of DermaMNIST due to its “ small size ” is appealing for its adoption in machine learning for biomedical imaging 39 , the low spatial resolution (28 × 28) does not capture sufficient morphological structures of skin lesions compared
+L00100	to the source
+L00101	dataset HAM10000.
+L00102	Despite this, DermaMNIST has been used for a wide variety of applications in peer-reviewed publications: semi- and self-supervised learning 41 – 43 , federated learning 44 – 46 , privacy-preserving learning 47 , 48 , neural architecture search 49 , 50 , adversarially robust learning
+L00103	51 , 52 , data augmentation 53 , 54 , generative modeling 55 , model interpretability 56 , AutoML 57 , active learning 58 , quantum vision transformers 59 , and biomedical vision-language foundation models 60 – 62 , as well as derivative benchmark
+L00104	datasets 63 , 64 .
+L00105	However, as we investigate below, the resulting DermaMNIST and its benchmarks suffer from serious flaws.
+L00106	Data Leakage A caveat of HAM10000, despite its rather large size, is that it contains multiple images of the same lesion captured either from different viewing angles or at different magnification levels (Fig.
+L00107	1(a) ), i.e., the number of lesions with unique lesion IDs (HAM_xxx) is smaller than the number of images with unique image IDs (ISIC_xxx).
+L00108	We visualize the frequency counts of lesions and how many images of the same lesion are present in HAM10000 in Fig.
+L00109	1(b) and observe that the 10,015 images are in fact derived from only 7,470 unique lesions, and 1,956 of these lesion IDs (~26.18%) contains 2 or more images: 1,423 lesions have 2 images, 490 lesions have 3 images, 34 lesions have 4 images, 5 lesions
+L00110	have 5 images, and 6 lesions have 4 images each.
+L00111	Unfortunately, this was not accounted for when preparing train-valid-test splits for DermaMNIST.
+L00112	The DermaMNIST
+L00113	dataset is released as a pre-processed NumPy array, so while the
+L00114	dataset does not contain filenames of the images, we confirmed this by contacting the authors to obtain the exact training-validation-testing split filenames.
+L00115	Therefore, there is considerable data leakage of images of the same lesion across partitions.
+L00116	Fig.
+L00117	1(a) shows 2 examples where images of the same lesion are present in the training, validation, and testing partitions.
+L00118	This issue is quite pervasive across DermaMNIST, and our analysis found the following overlaps across partitions: train-test: 886 images (641 lesions), train-valid: 440 images (332 lesions); valid-test: 128 images (113 lesions); train-valid-test: 51 images (40 lesions) (Fig.
+L00119	1(c) ).
+L00120	Such data leakage naturally raises concerns on the reliability of the DermaMNIST benchmarks and related studies.
+L00121	Fig.
+L00122	1 DermaMNIST analyses: (a,b) show instances of and reasons for the data leakage, and (c) visualizes how the three
+L00123	datasets: DermaMNIST, DermaMNIST-C, and DermaMNIST-E differ in their partition composition, yet have similarly proportionate diagnosis distributions.
+L00124	Images from DermaMNIST are licensed under CC BY-NC 4.0 38 , 39 .
+L00125	Best viewed online.
+L00126	We correct this data leakage by simply moving all images of a lesion ID present in the train partition from valid and test partitions back to the train partition.
+L00127	We choose to do this (i.e., moving the images of a lesion to the training set) instead of removing the images completely, to ensure that images of the same lesion are in one partition while also not discarding any images.
+L00128	Although this has the undesirable side effect of increasing the training partition size at the cost of reduced validation and testing partition sizes, it fixes the data leakage issue by ensuring there is no overlap across partitions.
+L00129	Fig.
+L00130	2 Visualizing how DermaMNIST’s incorrect resizing operation leads to loss of information.
+L00131	DermaMNIST’s approach (top row) to generating 224 × 224 images
+L00132	results in visibly pixelated images.
+L00133	Our approach (bottom row), used for both DermaMNIST-C and DermaMNIST-E, retains much more detailed information.
+L00134	Images from DermaMNIST are licensed under CC BY-NC 4.0 38 , 39 .
+L00135	Best viewed online.
+L00136	Next, we examine the accuracy of HAM10000’s metadata.
+L00137	While the images in HAM10000 and their labels have been collected from clinical sites and the
+L00138	dataset itself has been widely adopted for online challenges 65 , 66 and human-in-the-loop evaluations 67 , 68 , we found that some images with different lesion IDs are in fact duplicates and should have been assigned the same lesion ID.
+L00139	Therefore, for a systematic analysis, we use fastdup 69 , an open-source Python library for analyzing visual
+L00140	datasets at scale, and calculate inter-image embedding similarity scores \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}({x}_{i},{x}_{j})$$\end{document} S ( x i , x j ) for all \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}10,015\\ 2\end{array}\right)$$\end{document} 10 , 015 2 pairs
+L00141	of images ( x i , x j ).
+L00142	Figure 3 visualizes, as a confusion matrix, the following four scenarios that are possible when comparing duplication checks based on the metadata with duplicates detected using fastdup followed by visual human confirmation: “Confirmed duplicates”: image pairs where both images share the same lesion IDs in
+L00143	the metadata and are indeed images of the same lesion. “True non-duplicates”: image pairs where both images differ in their lesion IDs and are images of different lesions. “Missed duplicates”: image pairs where both images differ in their lesion IDs but actually belong to the
+L00144	same lesion. “False duplicates”: image pairs where both images share the same lesion IDs in but actually belong to the same lesion.
+L00145	Fig.
+L00146	3 Visualizing the four scenarios that a pair of images from HAM10000 can be assigned to in duplicate detection, based on the metadata and the fastdup-based duplicate detection followed by manual review. “Confirmed duplicates”, as the name suggests, are pairs that are images of the
+L00147	same lesion, indicated by the same lesion IDs in the metadata.
+L00148	Similarly, “True non-duplicates” are pairs of images that belong to different lesions. “Missed duplicates” refer to image pairs that have differing lesion IDs according to the metadata, but their high visual similarity (measured by cosine similarity of their image embeddings) followed by manual review confirms
+L00149	that these are indeed images of the same lesion, and were therefore ‘missed’ by the metadata.
+L00150	Finally, “False duplicates” refer to pairs where images share the same lesion IDs but do not belong to the same lesion.
+L00151	In our analysis, we did not find any instances of “False duplicates” in HAM10000.
+L00152	For all these sample images, the image IDs and the lesion IDs are along the horizontal and the vertical axis, respectively.
+L00153	Images from HAM10000 are licensed under CC BY-NC 4.0 15 .
+L00154	The image pairs that lie along this confusion matrix’s diagonal, i.e., “confirmed duplicates” and “true non-duplicates”, are those where the metadata agrees with our analysis, and the possible errors in metadata arise out of the other two scenarios.
+L00155	For detecting errors of the first kind, i.e., “missed duplicates”, we analyze the top 1,000 most similar image pairs, measured by similarity of the image embeddings.
+L00156	We look at these 1,000 pairs in intervals of 100 pairs, ordered by decreasing inter-image similarity.
+L00157	For the 100 image pairs in each interval, we look up the HAM10000 metadata for both images in a pair to exclude “confirmed duplicates”, since these duplicates are already accounted for in the metadata.
+L00158	For the remaining pairs, we manually review them to detect which, if any, of these are “missed duplicates” and “true non-duplicates”.
+L00159	We visualize these counts in Fig.
+L00160	4 .
+L00161	Of the 1,000 most similar image pairs in HAM10000, we discover 18 “missed duplicates” image pairs that were not accounted for in the metadata, which are visualized in Fig.
+L00162	5 .
+L00163	Moreover, the fraction of “true non-duplicates” keeps monotonically increasing as we look at intervals of 100 image pairs, going from 0% (0 “true non-duplicates” out of 2 duplicate pairs) in the top 100 most similar pairs to 100% (64 “true non-duplicates” out of 64 duplicate
+L00164	pairs) in the 501 st to the 600 th most similar pairs.
+L00165	This may be explained by the narrow field of view in dermoscopic images (HAM10000 contains dermoscopic images), allowing for fewer visual cues for accurate detection of duplicates.
+L00166	Additionally, the lack of any “missed duplicates” after the top 500 most similar pairs (Fig.
+L00167	4 ) means it is highly unlikely that, apart from the 18 duplicate pairs discovered (Fig.
+L00168	5 ), there are other undetected duplicate image pairs in HAM10000.
+L00169	Fig.
+L00170	4 Analysis of the top 1,000 most similar pairs in HAM10000 detected by fastdup: in intervals of 100 images, we calculate how many of these 100 purported duplicate image pairs are not already present in the HAM10000 metadata, and manually review those to detect which
+L00171	of these are “Missed duplicates” (i.e., pairs where the two images have different lesion IDs, but are actually images of the same lesion; Fig.
+L00172	3 ) and those that are “True non-duplicates” (i.e., pairs where the two images have different lesion IDs but are indeed images of different lesions; Fig.
+L00173	3 ).
+L00174	For example, looking at the 301–400 range, we find that from the 301 st to the 400 th most similar image pairs detected by fastdup, 44 pairs contained images that did not belong to the same lesion ID according to the HAM10000 metadata.
+L00175	Of these 44 pairs, manual inspection revealed 3 pairs to be newly discovered “Confirmed Duplicates”, whereas the remaining 41 pairs were images of different lesion and were therefore “False Positives”.
+L00176	There were 18 confirmed duplicate image pairs detected in HAM10000 and they have been visualized in Fig.
+L00177	5 .
+L00178	Fig.
+L00179	5 Visualizing the 18 “Missed duplicates” (Fig.
+L00180	3 ) in HAM10000 obtained through the analysis of the top 1,000 most similar image pairs (Fig.
+L00181	4 ).
+L00182	These 18 pairs of images (image IDs along the horizontal axis) should belong to different lesions (lesion IDs along the vertical axis) according to the metadata, but manual review shows that both images in these pairs belong to the same lesions, and are thus, duplicate
+L00183	image pairs.
+L00184	Images from HAM10000 are licensed under CC BY-NC 4.0 15 .
+L00185	Figure 6 shows an interesting discovery in the manual review of the highly similar image pairs.
+L00186	We found two instances of image pairs with high similarity scores, but manual inspection confirmed that the lesions had minor morphological differences.
+L00187	HAM10000 contains images acquired during follow-up clinical visits 15 , and it is possible that these highly similar image pairs are images of the same lesion acquired at different time durations.
+L00188	Fig.
+L00189	6 Two image pairs (image IDs along the horizontal axis) that have a high visual similarity but belong to different lesion IDs (vertical axis) according to the HAM10000 metadata.
+L00190	Upon closer inspection, the images are near duplicates but exhibit inconspicuous differences, and are possibly images of the same lesion acquired at different times.
+L00191	Images from HAM10000 are licensed under CC BY-NC 4.0 15 .
+L00192	Next, we check of errors of the second kind, i.e., “false duplicates”.
+L00193	For all the lesion IDs that have more than 1 image per lesion, we measure image similarity between images that belong to the same lesion and manually review the 5 least similar image pairs, as visualized in Fig.
+L00194	7 .
+L00195	We find that there are no errors, meaning that all image pairs, despite their low similarities, indeed belong to the same lesion, and that visual dissimilarities can be attributed to one or more of: zoom and crop levels, rotation, flipping, and artifacts such as gel
+L00196	bubbles and rulers.
+L00197	Fig.
+L00198	7 Visualizing the least similar image pairs that belong to the same lesion in HAM10000 to check for “False duplicates” (Fig.
+L00199	3 ).
+L00200	For each lesion ID with {2, 3, 4, 5, 6} images per lesion (Fig.
+L00201	1(b) ), we look at pairs of images (image IDs along the horizontal axis) that belong to the same lesion (lesion ID along the vertical axis) but have the lowest similarity scores calculated using fastdup.
+L00202	We do this to detect whether images with mislabeled lesion IDs, since images of two different lesions that have been assigned the same lesion ID will be dissimilar and therefore have a low similarity score.
+L00203	In each row, we visualize the 5 least similar image pairs that share a lesion ID, and do so for lesions that have {2, 3, 4, 5, 6} images (Fig.
+L00204	1(b) ).
+L00205	We observe that all the image pairs indeed belong to the same lesion, and the low similarity score values can be easily explained by different zoom levels and/or geometric transformations (e.g., rotation and flipping).
+L00206	Images from HAM10000 are licensed under CC BY-NC 4.0 15 .
+L00207	Of these 18 newly discovered duplicate image pairs in HAM10000, 7 pairs leak across partitions: train-test: 5 images (5 lesions) and train-valid: 2 images (2 lesions).
+L00208	We correct this data leakage by moving both images in each of these 7 pairs to the train partition.
+L00209	We name this “corrected”
+L00210	dataset version as DermaMNIST-C .
+L00211	Furthermore, the relative diagnosis-wise distribution of DermaMNIST-C across partitions is quite similar to that of the original DermaMNIST (Fig.
+L00212	1(c) ).
+L00213	We benchmark DermaMNIST-C using DermaMNIST’s publicly available disease classification codebase, repeating all experiments 3 times for robustness, and the
+L00214	results are presented in Table 1 .
+L00215	Table 1 Benchmark
+L00216	results (3 repeated runs; mean ± std. dev.) of DermaMNIST and the 2 proposed versions: DermaMNIST-C and DermaMNIST-E.
+L00217	Dataset Method ResNet-18 ResNet-50 AUC ACC AUC ACC DermaMNIST Original-28 0.917 0.735 0.913 0.735 Original-224 0.920 0.754 0.912 0.731 DermaMNIST-C 28 × 28 0.946 ± 0.003 0.825 ± 0.006 0.943 ± 0.012 0.831 ± 0.019 224 × 224 0.953 ± 0.001 0.847 ± 0.010 0.948
+L00218	± 0.001 0.847 ± 0.005 DermaMNIST-E 28 × 28 0.892 ± 0.006 0.676 ± 0.009 0.888 ± 0.003 0.674 ± 0.009 224 × 224 0.896 ± 0.010 0.685 ± 0.000 0.901 ± 0.008 0.682 ± 0.003 The metrics being reported are the overall area under
+L00219	the ROC curve (AUC) and the overall accuracy (ACC).
+L00220	Results on 224 × 224 resolution DermaMNIST is created by resizing images from HAM10000’s original 600 × 450 spatial resolution to MNIST-like 28 × 28 resolution using (bi)cubic spline interpolation.
+L00221	However, for their classification benchmark experiments on the 224 × 224 resolution, instead of resizing the original images to 224 × 224, the authors 38 , 39 upsample the low-resolution 28 × 28 to obtain the 224 × 224 using nearest neighbor interpolation (“ 224
+L00222	(resized from 28) ”; verifiable through their source code 70 ).
+L00223	This, unsurprisingly, leads to quite blurry images, given the unrecoverable information lost when downsampling from the original 600 × 450 to 28 × 28 and leads to significant loss of detail (e.g., dermoscopic structures and artifacts) in the images used to train models on 224
+L00224	× 224 images (Fig.
+L00225	2 ).
+L00226	Our approach of directly downsampling from the original high-resolution to 224 × 224 to create DermaMNIST-C and DermaMNIST-E, used when reporting
+L00227	results in Table 1 , yields conspicuously more detailed outputs (Fig.
+L00228	2 ).
+L00229	Extending DermaMNIST Finally, although DermaMNIST-C is a good light-weight
+L00230	dataset of choice for evaluating machine learning models on dermatological tasks and for educational purposes, as MedMNIST intended to be, the quantitative
+L00231	results of DermaMNIST-C (and DermaMNIST for that matter) perhaps paint a deceptively optimistic picture of the state of automated dermatological diagnosis models.
+L00232	We propose a more challenging extension of DermaMNIST named DermaMNIST-E .
+L00233	The original DermaMNIST and its corrected version DermaMNIST-C are based on HAM10000, which was used as the training partition for the ISIC Challenge 2018.
+L00234	However, the ISIC Challenge 2018 had, apart from the 10,015 training images from HAM10000, separate validation and testing partitions containing 193 and 1,512 images, respectively.
+L00235	Therefore, we create DermaMNIST-E with DermaMNIST as training set and ISIC 2018 validation and test partitions as validation and testing sets, respectively.
+L00236	Although the official testing partition of ISIC 2018 contained 1,512 images, we remove one image known as the “easter egg” (ISIC_0035068) 68 , resulting in a total of 1,511 images.
+L00237	While the resulting diagnosis distribution across partitions for DermaMNIST-E is similar to that of DermaMNIST-C and DermaMNIST (Fig.
+L00238	1(c) ), our benchmark
+L00239	results on DermaMNIST-E (Table 1 ) show that it is indeed a more challenging
+L00240	dataset and is guaranteed to be void of any data leakage.
+L00241	It should be noted that the DermaMNIST-E
+L00242	dataset is almost the same as the official partitions of the ISIC 2018 Challenge data with 2 distinctions: the images in DermaMNIST-E are resized (28 × 28 or 224 × 224) and the “easter egg” image has been removed from the testing partition.
+L00243	A summary of the three
+L00244	datasets: DermaMNIST, DermaMNIST-C, and DermaMNIST-E is presented in Table 4 , listing a brief description and statistics of the
+L00245	datasets.
+L00246	Fitzpatrick17k Released in 2021, Fitzpatrick17k is one of the largest publicly available
+L00247	datasets of clinical skin disease images.
+L00248	The large number of skin diseases covered (114), the in-the-wild nature of the images therein, and the availability of associated and diverse Fitzpatrick skin tone (FST) labels 71 make it an immensely valuable
+L00249	dataset for skin image analysis research.
+L00250	However, unlike DermaMNIST, which is collected from clinical visits and whose labels were confirmed, Fitzpatrick17k was curated from 2 publicly available online dermatological atlases: DermaAmin 72 (12,672 images) and Atlas Dermatologico 73 (3,905 images).
+L00251	As such, the diagnosis labels of these images are not confirmed, through histopathology or otherwise.
+L00252	The authors conducted a small-scale study on only 3.04% of the entire
+L00253	dataset (504 out of 16,577 images) where 2 board-certified dermatologists assessed the diagnoses of the images, and the consensus was that only 69.0% of the images were clearly diagnostic of the disease label and, more importantly, 3.4% of the images were mislabeled.
+L00254	This is problematic since Fitzpatrick17k has been used to train models for high-stakes applications such as model explainability 74 , 75 , trustworthiness 76 , skin tone detection 77 , model calibration 78 and fairness 79 – 84 .
+L00255	Fitzpatrick17k has also been used for for training and evaluating large vision-language models 85 – 89 , visual question answering 90 , 91 , clinical decision support for differential diagnosis 92 , generative modeling 93 – 95 , federated learning 96 , and for creating
+L00256	a derivative
+L00257	dataset: SkinCon 97 .
+L00258	Pakzad et al .
+L00259	80 previously highlighted the existence of erroneous and wrongly labeled images in Fitzpatrick17k, and for these reasons, we investigate the extent of labeling inaccuracy in this
+L00260	dataset.
+L00261	Data duplication and leakage To investigate the presence of duplicates in Fitzpatrick17k, we use fastdup to calculate inter-image embedding similarity scores \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}({x}_{i},{x}_{j})$$\end{document} S ( x i , x j ) for all \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+L00262	\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}16,577\\ 2\end{array}\right)$$\end{document} 16 , 577 2 pairs of images ( x i , x j ).
+L00263	These are shown as a 16,577 × 16,577 similarity matrix in Fig.
+L00264	8 , and we can clearly see that there are several pairs with high similarities, denoted by darker shades, spread throughout the
+L00265	dataset.
+L00266	For subsequent analyses, we restrict ourselves to pairs with a high similarity by setting thresholds to \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}\ge \tau ;\,\tau \in \{0.90,0.95\}$$\end{document} S ≥ τ ; τ ∈ { 0.90 , 0.95 } .
+L00267	The distributions of image embedding pairs with these similarity thresholds are shown in Fig.
+L00268	9(a,b) , respectively.
+L00269	Note that there are 6,622 and 1,425 image embedding pairs with similarity scores greater than 0.90 and 0.95, respectively.
+L00270	Manual verification by a human reviewer of these 1,425 image pairs, whose embeddings had similarities greater than 0.95, revealed that 98.39% of these images (1,402 images) were indeed duplicates, with 16 pairs (1.12%) being false positive and 7 pairs (0.49%) being ambiguous.
+L00271	A second reviewer agreed with 1,419 labels of the first reviewer (99.58% match), exhibiting a near-perfect agreement 98 , 99 (Cohen’s kappa κ = 0.87).
+L00272	Due to the publisher’s human data policy, we are unable to visualize these samples in the published manuscript, and instead direct the readers to our arXiv pre-print 100 for additional visualizations and accompanying descriptions, where we visualize some of these pairs, categorizing them according to
+L00273	traits exhibited by the pairs.
+L00274	Since the filenames of the images in Fitzpatrick17k are of the format {MD5hash}.jpg, for each image, we also display their diagnosis abbreviation, their FST label (set to ‘N/A’ when the FST label is missing), and a truncated MD5 hash to uniquely identify the images.
+L00275	Notice that duplicate image pairs exist because of: different crop/zoom levels, different illumination setups, different image resolutions, and simple geometrical transformations (e.g., mirroring).
+L00276	Fig.
+L00277	8 Inter-image similarity matrix (16, 577 × 16, 577) computed and visualized for all pairs of images in the Fitzpatrick17k
+L00278	dataset, where image pairs with higher similarity are represented by darker colors.
+L00279	Note how there are several regions of dark-colored pairs, indicating the presence of potential duplicates in the
+L00280	dataset.
+L00281	Fig.
+L00282	9 Visualizing the distributions of duplicates in Fitzpatrick17k, filtered by different combinations of criteria.
+L00283	Total counts are inset in each plot. \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\mathscr{S}}}_{0.90}$$\end{document} S 0.90 and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\mathscr{S}}}_{0.95}$$\end{document} S 0.95 denotes pairs with similarity scores of at least 0.90 and 0.95 respectively. \documentclass[12pt]{minimal}
+L00284	\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\widehat{{\mathscr{D}}}$$\end{document} D ^ denotes pairs that differ in their diagnoses labels. \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{\ge 1}$$\end{document} F ^ ≥ 1 and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{
+L00285	> 1}$$\end{document} F ^ > 1 denotes pairs that ‘differ in their FST labels by 1’ versus ‘by more than 1’, respectively.
+L00286	Best viewed online.
+L00287	Worryingly, duplicate image pairs containing multiple disjoint objects of interest or multiple people also exist, making it difficult to determine to which of these the diagnosis and the FST labels apply.
+L00288	Finally, several duplicate pairs with more than one of these issues were also detected.
+L00289	For a more detailed duplicate detection, we employ another Python library, cleanvision 101 , to further assess the
+L00290	dataset.
+L00291	Aside from the duplicate image pairs found by fastdup based on our similarity threshold of \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}\ge 0.90$$\end{document} S ≥ 0.90 , the cleanvision analysis found 19 more duplicate pairs that have slightly lower inter-image similarity (
+L00292	\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$0.85\le {\mathscr{S}} < 0.90$$\end{document} 0.85 ≤ S < 0.90 ), primarily because of the large difference in spatial resolutions between duplicate pairs.
+L00293	Unfortunately, data duplication in Fitzpatrick17k is not limited to image pairs only.
+L00294	We use fastdup to cluster images whose intra-cluster image similarity is greater than 0.90, i.e., clusters of images where the mean similarity for all the image pairs is greater than 0.90.
+L00295	We consider clusters of at least 3 images, since those with 2 images (i.e., duplicate images pairs) are already covered in our analysis of duplicate pairs.
+L00296	Mathematically, we find all image clusters { x 1 , x 2 , …, x N }; N ≥ 3 such that \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\frac{1}{\left(\begin{array}{c}N\\ 2\end{array}\right)}{\sum }_{i=1}^{N}{\sum }_{j=i+1}^{N}{\mathscr{S}}({x}_{i},{x}_{j}) > 0.90$$\end{document} 1 N 2 ∑ i = 1 N
+L00297	∑ j = i + 1 N S ( x i , x j ) > 0.90 .
+L00298	Manual verification of the clustering outputs yielded 139 image clusters, with 3.71 ± 1.11 images per cluster on average.
+L00299	Visual inspection of these image clusters (we direct the readers to our arXiv pre-print 100 for these visualizations since they could not be put in the published manuscript), shows that these image clusters exhibit similar traits as the duplicate pairs, i.e., the images in each
+L00300	cluster are one or more of: exact matches, zoomed-in or cropped-out duplicates, duplicates with different illumination setups (captured with and without camera flash), or acquired at slightly different viewing angles.
+L00301	Finally, we merge the
+L00302	results of duplicate pairs with duplicate clusters, forming larger clusters as they are discovered.
+L00303	This
+L00304	results in some large duplicate image clusters with as many as 10 images in a cluster, and a total of 2,297 clusters with 2.18 ± 0.66 images per cluster on average.
+L00305	Mislabeled diagnosis and FST labels In addition to the presence of duplicates, Fitzpatrick17k contains images with mislabeled diagnoses and FSTs.
+L00306	For a more concrete estimation of the extent of mislabeling, we use similarity thresholds of 0.90 (denoted by \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\mathscr{S}}}_{0.90}$$\end{document} S 0.90 ) and 0.95 (denoted by \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${{\mathscr{S}}}_{0.95}$$\end{document}
+L00307	S 0.95 ).
+L00308	We report the number of image pairs that have a similarity higher than {0.90, 0.95} but differ in their labels.
+L00309	Further, given the subjectivity of FST labels, Groh et al .
+L00310	20 evaluated the accuracy of human annotations (HA) to the gold standard (GT) subset using two metrics: accuracy and “off-by-one” accuracy, where the latter considers an annotation to be correct if \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$| {{\mathscr{F}}}_{{\rm{HA}}}-{{\mathscr{F}}}_{{\rm{GT}}}| \le 1$$\end{document} ∣
+L00311	F HA − F GT ∣ ≤ 1 .
+L00312	Similar to previous works that accounted for this “off-by-one” margin 77 , 80 , we count similar images that differ by at least 1 ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{\ge 1}$$\end{document} F ^ ≥ 1 ) and those that differ
+L00313	by strictly more than 1 FST ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{ > 1}$$\end{document} F ^ > 1 ).
+L00314	Visualizations in our arXiv pre-print 100 show sample pairs with very high inter-image similarity ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}} > 0.95$$\end{document} S > 0.95 ) that differ in diagnoses and FST by 1 and more than 1, respectively.
+L00315	Fig.
+L00316	9 shows the distributions of duplicate image pairs filtered by one or more of: their similarity scores, whether their diagnoses are different, and whether and how much their FST scores differ by.
+L00317	For image pair similarity thresholds of [0.90; 0.95], there are [2498; 93] image pairs that differ in their diagnoses ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\widehat{{\mathscr{D}}}$$\end{document} D ^ ). [4030; 803] image pairs differ in their FST labels ( \documentclass[12pt]{minimal} \usepackage{amsmath}
+L00318	\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{\ge 1}$$\end{document} F ^ ≥ 1 ), while [1236; 199] pairs strictly differ in their FST labels ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\widehat{{\mathscr{F}}}}^{ > 1}$$\end{document} F ^ > 1 ). [4947; 841] images
+L00319	pairs differ in either their diagnosis or in their FST label ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\{\widehat{{\mathscr{D}}}\cup {\widehat{{\mathscr{F}}}}^{\ge 1}\}$$\end{document} { D ^ ∪ F ^ ≥ 1 } ), and [3172; 277] differ in their diagnosis or strictly differ in
+L00320	the FST label ( \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\{\widehat{{\mathscr{D}}}\cup {\widehat{{\mathscr{F}}}}^{ > 1}\}$$\end{document} { D ^ ∪ F ^ > 1 } ).
+L00321	Finally, there are [1581; 55] and [562; 15] image pairs for the \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\{\widehat{{\mathscr{D}}}\cap {\widehat{{\mathscr{F}}}}^{\ge 1}\}$$\end{document} { D ^ ∩ F ^ ≥ 1 } and \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\{\widehat{{\mathscr{D}}}\cap {\widehat{{\mathscr{F}}}}^{
+L00322	> 1}\}$$\end{document} { D ^ ∩ F ^ > 1 } categories, respectively.
+L00323	Erroneous images In a recent study, Pakzad et al .
+L00324	80 reported the presence of erroneous or outlier non-skin images in Fitzpatrick17k.
+L00325	Using an outlier detection approach based on distance to the nearest neighbors in the embedding space, we rank images in the
+L00326	dataset based on their probability of being an outlier.
+L00327	Sample outliers include non-dermatological imaging modalities (e.g., histopathology, radiology, microscopy, fundus), images of plants (leaves, trees) and animals (e.g., rodents, bugs, poultry), etc.
+L00328	Worryingly, Fitzpatrick17k does not contain information regarding which images are non-dermatological, which consequently impacts the training and evaluation of models.
+L00329	Non-standardized data partitioning The Fitzpatrick17k benchmarks by Groh et al .
+L00330	20 , as well as several works that followed 75 , 79 , 82 , 84 , also suffer from another major problem: the lack of a strictly held-out test partition.
+L00331	For all their skin condition prediction experiments, the authors only used a training and a validation set, and used the terms “validation” and “testing” interchangeably in the paper.
+L00332	This can also be verified in their accompanying code implementation, where the data partitions used to select the best epoch during training 102 (“ the epoch with the lowest loss on the validation set ”) and to report the final
+L00333	results 103 are the same.
+L00334	This violates the fundamental rules of machine learning model training and evaluation, where the validation and the testing partitions must be separate disjoint sets, and the former is used for choosing the best performing model during training and hyperparameter selection, while the latter is reserved
+L00335	only for the final model evaluation and is never used during training.
+L00336	Correcting Fitzpatrick17k In light of the numerous aforementioned issues with Fitzpatrick17k: data duplication, conflicting labels, the presence of erroneous images, and the absence of a well-defined test partition, we attempt to clean up Fitzpatrick17k and present a smaller, yet more reliable
+L00337	dataset.
+L00338	Specifically, we remove clusters of duplicates (this includes duplicate pairs), keeping one image from each cluster if there are no conflicting diagnosis or FST labels within the cluster, i.e., a “homogenous cluster”.
+L00339	Next, we remove the erroneous images from the
+L00340	dataset and refer to this “cleaned” version of Fitzpatrick17k as Fitzpatrick17k-C.
+L00341	In the absence of standardized
+L00342	dataset partitions, researchers who used Fitzpatrick17k for their models had to resort to generating their own splits 74 , 79 , 80 , making it very hard for models across papers to be compared.
+L00343	To resolve this, we present standardized training, validation, and testing partitions for Fitzpatrick17k-C for the skin image analysis community to use, obtained by splitting Fitzpatrick17k-C in the ratio of 70:10:20, stratified on the diagnosis labels.
+L00344	Table 4 summarizes the two
+L00345	datasets: Fitzpatrick17k and Fitzpatrick17k-C, listing the number of images in their respective partitions.
+L00346	Finally, we also provide benchmarks for Fitzpatrick17k-C using all the different experimental settings proposed by Groh et al .
+L00347	20 in Table 2 .
+L00348	We perform a hyperparameter search for each experimental setting over the space of optimizers ({Adam, SGD}), learning rate ({1 e − 2, 1 e − 3, 1 e − 4}), and number of training epochs ({20, 50, 100, 200}), and list the number of images
+L00349	in the training, validation, and testing partitions.
+L00350	For added robustness, we repeat each experiment using 3 random seeds.
+L00351	We also observed that using one setting’s optimal hyperparameter choices to evaluate another setting’s test partition does not considerably degrade the classification performance (Table 3 ).
+L00352	Table 2 Benchmark
+L00353	results (3 repeated runs; mean ± std. dev.) of Fitzpatrick17k-C for all the experiments originally reported by Groh et al .
+L00354	20 .
+L00355	Holdout Set Verified Random (Stratified) Source A (Atl.
+L00356	Derm.) Source B (DermaAmin) FST 3–6 FST 1–2 & 5–6 FST 1–4 # Train Images 10,060 7,975 6,129 2,175 5,340 3,312 935 # Validation Images 1,119 1,139 703 220 599 337 122 # Test Images 215 2,280 2,395 6,832 5,029 6,685 6,903 Best Hyperparameters (n_epochs,
+L00357	optim, lr) (200, Adam, 1e-3) (200, Adam, 1e-4) (100, Adam, 1e-4) (200, SGD, 1e-2) (100, Adam, 1e-4) (200, Adam, 1e-4) (200, Adam, 1e-4) Overall 4.65% ± 0.00% 24.05% ± 0.34% 16.62% ± 0.86% 5.16% ± 0.20% 14.42% ± 0.13% 17.27% ± 0.38% 12.07% ± 0.28%
+L00358	Type 1 3.51% ± 1.24% 21.71% ± 0.47% 22.55% ± 0.80% 4.80% ± 0.38% — 15.05% ± 0.35% 7.85% ± 0.36% Type 2 6.92% ± 0.89% 21.06% ± 0.50% 18.57% ± 0.51% 4.11% ± 0.38% — 16.43% ± 0.40% 9.81% ± 0.27% Type 3 0.90%
+L00359	± 1.27% 23.72% ± 0.68% 14.39% ± 1.34% 5.21% ± 0.42% 17.18% ± 0.15% — 13.23% ± 0.54% Type 4 8.33% ± 1.18% 28.56% ± 0.93% 15.32% ± 0.61% 6.62% ± 0.52% 13.16% ± 0.45% — 20.22% ± 0.30% Type 5 1.45% ± 2.05% 32.09%
+L00360	± 0.77% 19.43% ± 1.53% 8.12% ± 0.90% 12.23% ± 0.47% 25.70% ± 0.50% — Type 6 4.55% ± 0.00% 25.97% ± 1.06% 15.32% ± 2.37% 8.00% ± 1.08% 9.29% ± 0.22% 18.11% ± 0.45% — Groh et al .
+L00361	20 : Overall 26.7% 20.2% 27.4% 11.4% 13.8% 13.4% 7.7% The metrics being reported are the overall accuracy ("Overall”) and FST-specific accuracy ("Type x ” corresponds to Fitzpatrick skin tone x ).
+L00362	Verified : the models are tested on a set of 215 images that were verified to be diagnostic of the disease label by a board-certified dermatologist.
+L00363	Random (Stratified) : the test partition contains 20% of the
+L00364	dataset, randomly sampled stratified on the disease labels.
+L00365	Source {A, B} : the models were tested on all the images from Atlas Dermatologico and DermaAmin respectively.
+L00366	FST xx − yy : the models were tested on images with FST labels x x , …, y y .
+L00367	For all the experiments, the training and the validation partitions were drawn from the remaining images from Fitzpatrick17k-C.
+L00368	It is important to note that the
+L00369	results in the last row have been reported verbatim from Groh et al .
+L00370	20 , whose training and evaluation partitions differ significantly from our work, and therefore these metrics are not directly comparable.
+L00371	Table 3 Understanding how Fitzpatrick17k-C classification performance varies with change in hyperparameters.
+L00372	Hyperparameters optimized on → Verified Random (Stratified) Source A (Atl.
+L00373	Derm.) Source B (DermaAmin) FST 3–6 FST 1–2 & 5–6 FST 1–4 Best Hyperparameters (n_epochs, optim, lr) (200, Adam, 1e-3) (200, Adam, 1e-4) (100, Adam, 1e-4) (200, SGD, 1e-2) (100, Adam, 1e-4) (200, Adam, 1e-4) (200, Adam, 1e-4) Holdout set performance (overall test accuracy) Verified
+L00374	4.65% ± 0.00% 4.34% ± 0.22% 4.50% ± 0.22% 3.88% ± 0.96% 4.50% ± 0.22% 4.34% ± 0.22% 4.34% ± 0.22% Random Holdout 20.20% ± 0.32% 24.05% ± 0.34% 23.23% ± 0.43% 19.25% ± 0.57% 23.23% ± 0.43% 24.05% ± 0.34% 24.05% ± 0.34% Source
+L00375	A 14.96% ± 0.77% 16.38% ± 0.77% 16.62% ± 0.86% 14.28% ± 0.30% 16.62% ± 0.86% 16.38% ± 0.77% 16.38% ± 0.77% Source B 4.78% ± 0.20% 4.50% ± 0.32% 4.50% ± 0.32% 5.16% ± 0.20% 4.50% ± 0.32% 4.50% ± 0.32% 4.50% ± 0.32%
+L00376	FST 3–6 12.65% ± 0.23% 14.36% ± 0.15% 14.42% ± 0.13% 11.80% ± 0.69% 14.42% ± 0.13% 14.36% ± 0.15% 14.36% ± 0.15% FST 1–2 & 5–6 14.56% ± 0.53% 17.27% ± 0.38% 16.99% ± 0.33% 13.78% ± 0.41% 16.99% ± 0.33% 17.27% ± 0.38%
+L00377	17.27% ± 0.38% FST 1–4 11.34% ± 0.66% 12.07% ± 0.28% 11.92% ± 0.38% 8.08% ± 4.58% 11.92% ± 0.38% 12.07% ± 0.28% 12.07% ± 0.28% The columns denote the optimal hyperparameters for each of the seven experimental settings, and the rows represent the overall
+L00378	test accuracies for all the seven settings when models trained with those particular hyperparameters are evaluated.
+L00379	For example, when a model trained with “Source A”’s optimal hyperparameters (i.e., 100 training epochs, Adam optimizer, 1 e -4 learning rate) is used to generate predictions for the “Verified” setting, the overall test accuracy is 4.50% ± 0.22%.
+L00380	Discussion In this paper, we examine the data quality of three popular and large skin image analysis
+L00381	datasets: DermaMNIST from the MedMNIST
+L00382	dataset and its source HAM10000
+L00383	dataset (10,015 dermoscopic images of skin lesions) and Fitzpatrick17k (16,577 clinical images of skin diseases).
+L00384	For DermaMNIST, we investigate the extent of data leakage across its training, validation, and testing partitions, and propose corrected (DermaMNIST-C) and extended (DermaMNIST-E) versions.
+L00385	We conducted benchmark evaluations using multiple
+L00386	methods and compare the
+L00387	results to those of DermaMNIST across all
+L00388	datasets.
+L00389	Table 4 For Fitzpatrick17k, we perform a systematic analysis encompassing data duplication, mislabeling of diagnosis and Fitzpatrick skin tone labels, identification of erroneous images, as well as highlighting the use of non-standard data partitions.
+L00390	Finally, we propose a cleaned version of the
+L00391	dataset with standardized partitions called Fitzpatrick17k-C, and release the corresponding updated benchmarks.
+L00392	Table 4 Summary statistics for the two
+L00393	datasets analyzed in this paper and their corresponding corrected versions proposed.
+L00394	Dataset Brief Description #Images #Diagnoses #Training Images #Validation Images #Testing Images DermaMNIST The original DermaMNIST
+L00395	dataset.
+L00396	10,015 7 7,007 1,003 2,005 DermaMNIST-C The “corrected” version of DermaMNIST, without any data leakage.
+L00397	10,015 7 8,215 573 1,227 DermaMNIST-E The “extended” version of DermaMNIST, without any data leakage and with more images.
+L00398	11,719 7 10,015 193 1,511 Fitzpatrick17k The original Fitzpatrick17k
+L00399	dataset.
+L00400	16,577 114 12,751 3,826 0 Fitzpatrick17k-C The “cleaned” version of Fitzpatrick17k, with standardized train-valid-test splits after removing duplicates and erroneous images.
+L00401	11,394 114 7,975 1,139 2,280 For both Fitzpatrick17k and Fitzpatrick17k-C, the partitions correspond to the experiment titled “Random”, both in Table 2 and in Groh et al .
+L00402	20 .
+L00403	DermaMNIST Data leakage and benchmarks The extent of data leakage in DermaMNIST emanating from improper data partitioning is quite severe, with 1,006 of the 7,470 unique lesions (~13.47%) in the
+L00404	dataset being present in more than 1 partition (Fig.
+L00405	1(c) ).
+L00406	Patient-level stratification, or in this case, lesion-level stratification, is crucial to ensure that the model does not “see” the lesions in the held-out test set while training.
+L00407	Consequently, the lack of such a stratification implies that the corresponding benchmark classification
+L00408	results are not truly reflective of the models’ generalization capability and, therefore, we strongly suspect that the models’ performance could be inflated.
+L00409	On the other hand, since most works use the entire HAM10000
+L00410	dataset for training instead of splitting it like in the case of DermaMNIST, undetected duplicates in HAM10000 are arguably a less severe issue.
+L00411	However, a word of caution on comparing the benchmark
+L00412	results of DermaMNIST and DermaMNIST-C (Table 1 ): the two
+L00413	datasets do not share the same test partitions.
+L00414	Specifically, DermaMNIST-C’s test set was obtained from DermaMNIST’s test set by removing all images whose lesion IDs were present in the test set, and therefore, the former is a subset of the other (i.e., DermaMNIST-C test set ⊂ DermaMNIST test set).
+L00415	Similarly, as shown in Fig.
+L00416	1(c) , the training set of DermaMNIST-C is larger than that of DermaMNIST.
+L00417	For these reasons, contrary to the assumption that fixing data leakage in DermaMNIST should decrease performance benchmarks, we emphasize that performance benchmarks for DermaMNIST and DermaMNIST-C should not be compared since these models have been trained and evaluated on dissimilar partitions.
+L00418	A more challenging
+L00419	dataset While HAM10000 is indeed a valuable
+L00420	dataset for skin image analysis research, models trained on HAM10000 do not necessarily perform well when evaluated on other skin lesion image
+L00421	datasets 104 .
+L00422	This was also observed by the organizers of the ISIC 2018 Challenge 65 where they relied on external testing data for ranking the submissions (" multipartition test sets containing data not reflected in training
+L00423	dataset are an effective way to differentiate the ability of algorithms to generalize ”).
+L00424	Therefore, following the ISIC 2018 Challenge, we use the images from the Challenge’s validation and testing partitions, resized to 28 × 28 and 224 × 224, to create the validation and testing partitions, respectively, of the newly proposed DermaMNIST-E
+L00425	dataset, thus allowing for a more robust assessment of the skin lesion diagnosis models trained on this
+L00426	dataset.
+L00427	Incorrect scaling of images Another issue with the DermaMNIST benchmarks was the use of 28 × 28 images to report the
+L00428	results on 224 × 224 resolutions.
+L00429	As we show in Fig.
+L00430	2 , the information lost when downsampling from 600 × 450 to 28 × 28 is quite significant, and it is impossible to recover this when upsampling from 28 × 28 to 224 × 224.
+L00431	This can also be observed in the quantitative
+L00432	results (Table 1 ): intuitively, given that we ensure that the models do not overfit, we would expect that a model with larger capacity (ResNet-50) trained on high- resolution images (224 × 224) should perform better than a lower capacity model (ResNet-18) trained on lower
+L00433	resolution images (28 × 28).
+L00434	However, this is not the case with DermaMNIST
+L00435	results, where ResNet-18/28 × 28 models perform [AUC; ACC] better than ResNet-50/224 × 224 models: [0.917; 0.735] versus [0.912; 0.731].
+L00436	On the other hand, with DermaMNIST-C and DermaMNIST-E, ResNet-50/224 × 224 models do perform better than their ResNet-18/28 × 28 counterparts.
+L00437	Fitzpatrick17k Duplicate detection and guarantees Because of the large scale of the Fitzpatrick17k
+L00438	dataset (16,577 images), manual review of images to verify duplicates is virtually impossible due to the huge combinatorial space: there are \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}16,577\\ 2\end{array}\right)=137$$\end{document} 16 , 577 2 = 137 million pairs of images.
+L00439	Even worse, if we want to verify triplicates (i.e., 3 images that are copies of one another), we would have to review \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}16,577\\ 3\end{array}\right)=759$$\end{document} 16 , 577 3 = 759 billion clusters of 3 images, and
+L00440	the number keeps growing as the size of the clusters being reviewed increases.
+L00441	Therefore, we rely on automated
+L00442	methods for duplicate detection followed by a manual review of duplicates above a reasonable similarity threshold, and our manual review
+L00443	results confirmed a near-perfect agreement with the algorithm’s
+L00444	results.
+L00445	Our experiments showed that using a second method of duplicate detection (cleanvision) was able to discover an additional 19 pairs of duplicates.
+L00446	These pairs were also detected by fastdup, but their similarity scores fell just short of the chosen thresholds of 0.90 and 0.95, and therefore were absent from our manual review of fastdup’s
+L00447	results.
+L00448	Our
+L00449	dataset cleaning pipeline, publicly available on GitHub 105 , is highly modular and configurable, allowing users to adjust similarity thresholds to exclude and use multiple duplicate lists (fastdup and cleanvision) for cleaning, decide whether they want to remove duplicate clusters altogether or retain one representative
+L00450	image from each cluster, decide whether they want to remove images with unknown FST labels, and decide which outliers to exclude based on a similarity threshold.
+L00451	While we can claim with a high degree of certainty that the new cleaned
+L00452	dataset Fitzpatrick17k-C will be devoid of any duplicates, the large scale of manual review required makes it nearly impossible to guarantee it.
+L00453	Dealing with conflicting diagnosis and FST labels Several duplicates in Fitzpatrick17k, despite being near identical copies, do not share the same diagnosis labels.
+L00454	This affects the training and evaluation of models, since a model can be incorrectly penalized for its prediction because of the conflicting labels.
+L00455	However, correcting these labels, so that copies of the same image have the same diagnosis label, requires a domain expert (i.e., a dermatologist) to go through all the images and confirm and correct their labels.
+L00456	Unfortunately, even if such an endeavor were to be undertaken, these diagnoses will not be histopathology-confirmed and the accuracy of diagnoses confirmed through images alone (a scenario similar to “store-and-forward” teledermatology) is expected to be lower than those confirmed through in-person patient visits 106 –
+L00457	108 .
+L00458	Another approach to resolving the diagnosis label conflicts could be through mapping the diagnoses in Fitzpatrick17k to the World Health Organization (WHO) International Classification of Diseases, Eleventh Revision (ICD-11) 109 , and if multiple diagnoses belong to the same “parent”, their label conflict can be
+L00459	resolved by assigning the “parent”’s label to both.
+L00460	However, when mapping the diagnoses in Fitzpatrick17k to using the ICD-11 Browser 110 we ran into the following issues: Several diagnosis labels did not yield any matches (e.g., “acquired autoimmune bullous diseaseherpes gestationis”, “nematode infection”, “neurotic excoriations”, “pediculosis lids”).
+L00461	There were diagnosis labels where one of the labels has an entry in ICD-11, but other seemingly related labels do not (e.g., “basal cell carcinoma” exists in ICD-11, but possibly related “basal cell carcinoma morpheiform” and “solid cystic basal cell carcinoma” do not).
+L00462	There were labels where we found near but not exact matches (e.g., the label “erythema annulare centrifigum” in Fitzpatrick17k does not have an exact match, but ICD-11 contains “Erythema annulare”; other partial matching [Fitzpatrick17k; ICD-11] labels include ["hidradenitis”; “Hidradenitis suppurativa”], ["fixed eruptions”, “Fixed drug eruption”],
+L00463	["lupus subacute”, “Subacute cutaneous lupus erythematosus”], ["porokeratosis actinic”, “Disseminated superficial porokeratosis actinic”], etc.
+L00464	Overall, 8 diagnosis labels had no matches in ICD-11.
+L00465	An additional 29 diagnoses yielded partial matches to entries in ICD-11, and therefore could not be reliably mapped to a single entry.
+L00466	For these diagnoses, i.e., those that had partial or no matches in ICD-11, we expanded our search to the ICD-11 Coding Tool Mortality and Morbidity Statistics (MMS) 111 and the ICD-11 Classification of Dermatological Diseases 112 , 113 , but this did not resolve any
+L00467	issues.
+L00468	Additionally, we also carried out a similar diagnosis lookup on the Systematized Medical Nomenclature of Medicine - Clinical Terminology (SNOMED-CT), a comprehensive clinical global healthcare terminology that may better represent medical vocabulary than ICD-11 114 .
+L00469	Although we were able to find more matches to SNOMED-CT Identifiers 115 (SCTIDs) than to entries in ICD-11 and its derivatives, it was still not perfect: we ended up with 17 and 3 diagnosis labels with partial and no matches, respectively.
+L00470	We make the
+L00471	results of our Fitzpatrick17k diagnosis-to-{ICD-11 classification code, SCTID} mapping publicly available online.
+L00472	As a recommendation for the future
+L00473	datasets containing clinical images of skin diseases, we believe that adding either ICD classification codes or SNOMED-CT Identifiers (SCTIDs) for the disease labels would be a helpful addition to the metadata, and would greatly enhance the usability of such
+L00474	datasets for hierarchical diagnosis
+L00475	methods 7 – 9 .
+L00476	Similar conflicts were observed for FST labels of images, where images with very high similarity varied in their FST labels, sometimes by as much as 4 tones (Fig.
+L00477	9 ).
+L00478	A potential solution to this would be to re-assess the images with conflicting FST labels.
+L00479	This would involve either obtaining manual and verified healthy skin segmentation masks or using an automated healthy skin segmentation method, followed by mapping the skin tone estimated using these healthy skin pixels to an FST label.
+L00480	However, as noted by Groh et al .
+L00481	20 , collecting manual segmentation masks is expensive, and automated skin segmentation approaches suffer from their own set of challenges 116 , 117 , including but not limited to susceptibility to non-standardized illumination, the presence of multiple objects, and/or low quality images (we direct the
+L00482	readers to our arXiv pre-print 100 which contains several more visualizations which could not make it to the publisher’s version of the paper).
+L00483	The presence of diffuse pathologies such as “acne”, “acne vulgaris”, and “disseminated actinic porokeratosis”, where the diseased regions of the skin are spread over a wide region and the exact boundaries between diseased and healthy regions are not well-defined, further compounds the task for any
+L00484	automated healthy skin detection approach.
+L00485	Because of these intractable issues, we make the decision of removing duplicate images that have conflicting diagnosis or FST labels.
+L00486	While we realize that relabeling might be able to solve these label conflicts, we also acknowledge the enormous time, effort, and expenses such an endeavor would entail.
+L00487	Updated benchmarks As discussed above, Groh et al .
+L00488	20 used non-standardized
+L00489	dataset partitions for training and evaluating their models for benchmarking, the most notable issue being the absence of a well-defined and held-out test set, thus violating one of the most basic rules of machine learning.
+L00490	The use of the same
+L00491	dataset partition for validation, i.e., choosing the best performing models, and for testing ensures that the reported performance is the best possible, but it is a poor reflection of the models’ generalization capabilities, since the models have been overfit to the testing data.
+L00492	This issue, coupled with the presence of duplicates in Fitzpatrick17k, which would inevitably lead to data leakage across partitions, is the reason for the difference between Fitzpatrick17k model benchmarks by Groh et al . and our Fitzpatrick17k-C benchmarks (Table 2 ).
+L00493	For the “Verified” experiments (i.e., “ testing on the subset of images labeled by a board-certified dermatologist as diagnostic of the labeled condition and training on the rest of the data ” 20 ), the number of training images for Fitzpatrick17k decreased from 16,229 to
+L00494	10,060, meaning the models were trained on considerably fewer images.
+L00495	On the other hand, the number of testing images in Fitzpatrick17k-C decreased by ~ 38% (from 348 in Fitzpatrick17k to 215) after
+L00496	dataset cleaning, implying that 133 images were duplicates in Fitzpatrick17k’s testing partition, which explains why their benchmark
+L00497	results were inflated.
+L00498	Similar trends can be observed across all the benchmark experiments: the number of training images for “Source A”, “Source B”, and “Fitz 1-2 & 5-6” experiments nearly halved after
+L00499	dataset cleaning, and the number of both training and testing images for the “Fitz 1-4” experiments decreased by more than 50%.
+L00500	We believe that the newly proposed Fitzpatrick17k-C along with the well-defined and disjoint training, validation, and testing partitions, the benchmarks, and the publicly available training and evaluation code will help other researchers better utilize the
+L00501	dataset and make comparison across
+L00502	methods easier and standardized.
+L00503	Comparison to other works One of the first works on analyzing skin image analysis
+L00504	datasets by Abhishek 34 focused on ISIC Challenge
+L00505	datasets for the skin lesion segmentation task, specifically on the challenges from 2016, 2017, and 2018.
+L00506	They found these
+L00507	datasets to have considerable overlap across their training partitions, and this can be attributed to all of them being subsets of the ISIC Archive 118 .
+L00508	Their analysis, however, was limited to overlap detection simply based on the filenames, since all the filenames in the ISIC Archive follow the template ISIC_{ISIC identifier}.jpg.
+L00509	Specific to Fitzpatrick17k, Pakzad et al.’s work 80 was the first to mention the presence of “erroneous and wrongly labeled images”, and how the images therein have non-standard illumination and camera perspectives, highlighting the need for cleaning Fitzpatrick17k.
+L00510	Groger et al .
+L00511	37 conducted a data quality analysis on the presence of “irrelevant samples”, near duplicates, and label errors in 6
+L00512	datasets.
+L00513	They used a self-supervised DL-based method for generating rankings of images potentially containing data quality issues, following which, 3 experts including a board-certified dermatologist manually reviewed the images and answered a questionnaire.
+L00514	The authors also noted that non-expert annotations may be sufficient for confirming duplicate images.
+L00515	Vega et al .
+L00516	36 analyzed a popular and well-cited monkeypox skin image
+L00517	dataset, and found it to contain “medically irrelevant images”.
+L00518	They discovered that the images were extracted from online repositories through web-scraping and lacked medical validation.
+L00519	Finally, their experiments showed that the claims made by the
+L00520	dataset’s authors about the utility of the images might not have been true, since a model trained by Vega et al . on “blinded” images (i.e., images where the regions of interest related to the disease were covered by black rectangles) was also able to
+L00521	accurately classify the diseases.
+L00522	The closest
+L00523	dataset analysis to our work, both in the scale of the analyses and the sizes of the
+L00524	datasets analyzed, is the work by Cassidy et al .
+L00525	35 on the ISIC Challenge
+L00526	datasets from 2016 through 2020, where the authors employed a multi-step duplicate removal strategy.
+L00527	First, similar to our previous work 34 , they removed duplicates across
+L00528	dataset partitions based on filenames.
+L00529	Next, they used the following tools and
+L00530	methods on “ a random selection of training images for 72 hours ”: (a) a Python library called ImageHash to measure similarity based on several hashing
+L00531	methods (average, perceptual, difference, and wavelet), (b) mean-squared error (MSE)-based image similarity detection, (c) structural similarity index measure (SSIM)-based image similarity detection, and (d) cosine similarity-based detection.
+L00532	Finally, they used a Python library called FSlint to detect duplicates based on MD5 and SHA-1 file checksum signatures.
+L00533	The analyses of the three
+L00534	datasets in this paper: DermaMNIST, HAM10000, and Fitzpatrick17k arguably goes beyond those presented in these previous works.
+L00535	For DermaMNIST, since we were able to request the exact training-validation-testing splits’ filenames, we could simply cross-reference those to the publicly available HAM10000 metadata to detect and correct data leakage.
+L00536	Our analysis of Fitzpatrick17k is much more in-depth and involved: we start with finding similar images and erroneous images in the embeddings’ latent space, followed by a manual non-expert review to confirm the duplicates, and then coalesce duplicates to form larger clusters wherever applicable.
+L00537	The filenames in Fitzpatrick17k follow the template <MD5_hash>.jpg, meaning that all the images have a unique MD5 checksum, which in turn implies that file checksum-based duplicate detection would not be possible.
+L00538	The Python library cleanvision that we use for duplicate detection already relies upon ImageHash for hashing-based similarity measurement.
+L00539	Measuring similarity scores in the embedding space is arguably superior to doing so in the input space (e.g., MSE, SSIM-based duplication checks by Cassidy et al .
+L00540	35 ), since a latent representation goes beyond pixel-level information and is able to better capture semantic information about the image as a whole.
+L00541	Finally, because of the large scale of Fitzpatrick17k (16,577 images), manual review by experts become cost prohibitive.
+L00542	Data leakage and reproducibility crisis Kapoor et al .
+L00543	25 presented an in-depth review of instances of data leakage in machine learning (ML) applications across 17 scientific domains, and how such leakage can lead to a reproducibility crisis in ML-based science.
+L00544	They also proposed a hierarchical taxonomy of leakage types, which has 8 types of leakage across 2 levels.
+L00545	Our analysis of DermaMNIST shows that it suffers from “ [L1.4] : Duplicates in
+L00546	datasets ” and “ [L3.2] : Non-independence between train and test samples ”, where the latter is a direct consequence of the former.
+L00547	Concerningly, Fitzpatrick17k exhibited three types of data leakage: “ [L1.1] : No test set ”, since it did not have a disjoint held-out test set and had duplicate images, along with the aforementioned [L1.4] and [L3.2] .
+L00548	In
+L00549	conclusion, in this paper, we examined the data quality of three popular skin image analysis
+L00550	datasets: DermaMNIST from the MedMNIST collection, its source HAM10000, and Fitzpatrick17k.
+L00551	For DermaMNIST, we investigated the extent of data leakage across its partitions and proposed two new and improved versions: a corrected
+L00552	dataset that does not have any leakage (DermaMNIST-C) and an extended and arguably more challenging
+L00553	dataset (DermaMNIST-E) that is almost the same as the ISIC 2018 Challenge
+L00554	dataset except the images are resized to 28 × 28 and 224 × 224 and the “easter egg” image is removed from the test partition.
+L00555	We also investigated the presence of duplicates in HAM10000, the source
+L00556	dataset for DermaMNIST, and discovered 18 new duplicate image pairs that were unaccounted for in the metadata.
+L00557	For Fitzpatrick17k, we conducted a systematic analysis encompassing data duplication, mislabeling of diagnosis and skin tone labels, as well as the identification of outlier images, followed by cleaning the
+L00558	dataset to propose a cleaned version Fitzpatrick17k-Cwith standardized training, validation, and testing partitions.
+L00559	We also showed how Fitzpatrick17k contains labels that do not fully align, which we recommend they should, with internationally recognized standards such as ICD-11 and SNOMED-CT, limiting its utility for hierarchical and differential diagnosis-based approaches.
+L00560	For all the
+L00561	datasets, we conducted benchmark evaluations using multiple
+L00562	methods, repeated 3 times for robustness.
+L00563	The primary
+L00564	objective of this paper is to raise awareness about potential data quality issues that may arise in large
+L00565	datasets, and how these issues can go unnoticed even in popular
+L00566	datasets, casting doubts on the
+L00567	conclusions made about the robustness and the generalizability of the models trained on these
+L00568	datasets.
+L00569	We hope this can serve as a call to action for more stringent data quality assessments.
+L00570	To facilitate this, we plan to make our evaluation method and code publicly available so that they can be used and extended upon for evaluating more existing and new
+L00571	datasets.
+L00572	Methods DermaMNIST Detecting and correcting data leakage We used HAM10000’s publicly available metadata, which contains image ID to lesion ID mappings, and DermaMNIST partitions’ filenames, which contain image IDs, to perform an inner-join using the Python library pandas.
+L00573	By doing so, we were able to obtain the list of images belonging to the same lesion that were common across train-valid, train-test, valid-test, and train-valid-test partitions.
+L00574	To correct the leakage, we follow this approach: if images of a lesion ID exist in the training partition, move all images belonging to that lesion ID from validation and testing partitions to the training.
+L00575	For instance, for the images visualized in Fig.
+L00576	1(a) , since images belonging to lesion ID HAM_0002364, i.e., ISIC_0024712, ISIC_0025446, and ISIC_0030348, are present in the training partition, we move the other images of the same lesion, i.e., ISIC_0029838 and ISIC_0032042 from testing and validation partitions, respectively to the training partition.
+L00577	For detecting duplicates in HAM10000 based on image embedding similarity, we used fastdup to extract a 960-dimensional embedding for all the 10,015 images.
+L00578	The similarities between all the \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}10,015\\ 2\end{array}\right)$$\end{document} 10 , 015 2 pairs of images, denoted by \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}$$\end{document} S , were calculated using the cosine similarity, where \documentclass[12pt]{minimal}
+L00579	\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$0\le {\mathscr{S}}\le 1$$\end{document} 0 ≤ S ≤ 1 and a higher cosine similarity score corresponds to a higher similarity.
+L00580	It should be noted that using cosine similarity in a lower-dimensional embedding space yields more accurate matches, as compared to using it in the high-dimensional image space, where it
+L00581	results in “ only false positive
+L00582	results ”, as noted by Cassidy et al .
+L00583	35 .
+L00584	Image resizing The 28 × 28 images in DermaMNIST-C and DermaMNIST-E were obtained by resizing the original high-resolution skin lesion images from HAM10000 and other sources using bicubic interpolation.
+L00585	For the 224 × 224 resolution, unlike DermaMNIST which first resized the images from the original resolution to 28 × 28 using bicubic interpolation and then resizing to 224 × 224 using nearest neighbor interpolation, the images in DermaMNIST-C and DermaMNIST-E were obtained by directly
+L00586	resizing the original resolution images to 224 × 224 using bicubic interpolation.
+L00587	All image resizing operations were performed using the Python library PIL.
+L00588	Model training and evaluation We used the official MedMNIST training and evaluation code 119 by Yang et al .
+L00589	38 , 39 .
+L00590	Both the model architectures: ResNet-18 and ResNet-50, are trained for 100 epochs with the cross-entropy loss and the Adam 120 optimizer with a batch size of 128.
+L00591	An initial learning rate of 0.001 was used, and a learning rate scheduler reduced it by a factor of 10 after the 50 th and the 75 th epochs.
+L00592	Over the training epochs, the model with the best area under the ROC curve (AUC) on the validation partition was used for testing.
+L00593	The reported metrics for evaluation were the AUC and the overall classification accuracy (ACC).
+L00594	All models were trained and evaluated using PyTorch 121 .
+L00595	Fitzpatrick17k Duplicate detection and manual verification The images in Fitzpatrick17k were downloaded using the image URLs in the
+L00596	dataset’s metadata.
+L00597	For all the 16,577 images in Fitzpatrick17k, a 960-dimensional embedding was extracted using fastdup.
+L00598	All subsequent analysis (duplicate pairs detection, duplicate clusters detection, outlier detection) used these embeddings.
+L00599	The similarities between all possible pairs of images (i.e., \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left(\begin{array}{c}16,577\\ 2\end{array}\right)$$\end{document} 16 , 577 2 possible pairs), denoted by \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\mathscr{S}}$$\end{document} S , were calculated using the cosine
+L00600	similarity.
+L00601	The original filenames in Fitzpatrick17k follow the format {MD5_hash}.jpg, which is arguably not helpful in interpreting either the diagnosis or the FST label without looking up the metadata.
+L00602	For an intuitive understanding of the images, we renamed them from their original filenames to a more interpretable format {diag. abbrv.}_f{FST label}_{image index}_{truncated MD5hash}.jpg.
+L00603	Images with missing FST labels are assigned FST 0.
+L00604	For example, a file originally called 0a94359e7eaacd7178e06b2823777789.jpg is renamed to ps_f1_0_0a94359e.jpg, which can be interpreted as: this is the first image (index 0) of “psoriasis” (ps) and has FST 1 (f1) and truncated MD5 hash 0a94359e.
+L00605	We chose to include a truncated MD5 hash of length 8 to make it easier to map new filenames to the original ones while still avoiding hash collision.
+L00606	A version of Fitzpatrick17k with renamed files and the metadata containing all the old and new filenames and the diagnosis labels’ abbreviations are available on Zenodo 40 .
+L00607	To detect duplicates, all image pairs’ similarity scores were filtered based on the threshold(s), and this resulted in 6,622 unique image pairs with cosine similarity over 0.90 (i.e., \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$| \{{{\mathscr{S}}}_{0.90}\}| $$\end{document} ∣ { S 0.90 }
+L00608	∣ ) and 1,425 unique images pairs for with similarity over 0.95 (i.e., \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$| \{{{\mathscr{S}}}_{0.90}\}| $$\end{document} ∣ { S 0.90 } ∣ ).
+L00609	For the manual review of duplicates, a GUI was created using the Python library tkinter that displayed the candidate duplicate image pairs detected by fastdup, and three clickable buttons: “Duplicate”, “Unclear”, and “Different”.
+L00610	Two annotators were tasked with independently reviewing the 1,425 duplicate images pairs each, and their responses were recorded in a CSV file.
+L00611	For using cleanvision to detect duplicates, we filtered the image quality report for “near_duplicates” and “exact_duplicates”, which were 100 and 10 unique image pairs, respectively.
+L00612	Upon filtering these output pairs to those detected and verified using fastdup’s output, we found 19 unique duplicate pairs that were not detected using fastdup.
+L00613	Interpreting fastdup duplicates visualization Next, we describe how the table of duplicates in Fitzpatrick17k detected using fastdup, which is available on Zenodo 40 , can be interpreted.
+L00614	Consider the 21 st row of the table (please see the arXiv pre-print 100 version of our paper for this visualization and several others that have been omitted from this publisher’s version of the paper): /rh_91/rh_f4_32_b6349594.jpg (Image 1): Image of “rhinophyma” (rh) with FST 4.
+L00615	This is image #33 of total 91 rhinophyma images. /ro_102/ro_f2_90_0d586f26.jpg (Image 2): Image of “rosacea” (ro) with FST 2.
+L00616	This is image #91 of total 102 rosacea images. “Blended” Image: Output of α -blending of the two images with α = 0.5.
+L00617	Similarity: The cosine similarity between the embeddings of the two images is 0.991658.
+L00618	The “distance = 0.99” watermark on Image 1 is a misnomer.
+L00619	Despite being called “distance” (a fastdup default), it is indeed reporting the cosine similarity value as expected.
+L00620	Erroneous image detection Using the image embeddings calculated for all the 16,577 images, we adopt the following approach for detecting erroneous images: for each image x i , we calculate its N nearest neighbors { x i 1 , …, x i N } in
+L00621	the embedding space, and their corresponding similarities \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\{{{\mathscr{S}}}_{i,i1},\cdots ,{{\mathscr{S}}}_{i,iN}\}$$\end{document} { S i , i 1 , ⋯ , S i , i N } .
+L00622	An outlier would be dissimilar to other skin images in the
+L00623	dataset, and would therefore have low similarity scores with its nearest neighbors.
+L00624	To list all possible outliers in Fitzpatrick17k, we choose N = 5 and prepare tuples of \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\left({x}_{i},min\left(\{{{\mathscr{S}}}_{i,i1},\ldots ,{{\mathscr{S}}}_{i,i5}\}\right)\right)$$\end{document} x i , m i n { S i , i 1 , … , S i ,
+L00625	i 5 } , where \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$min\left(\{{{\mathscr{S}}}_{i,i1},\ldots ,{{\mathscr{S}}}_{i,i5}\}\right)$$\end{document} m i n { S i , i 1 , … , S i , i 5 } , called the outlier score, is inversely proportional to the likelihood
+L00626	of an image being an erroneous image.
+L00627	These tuples are then sorted by the ascending order of their outlier score, i.e., the image with the lowest score and therefore the most likely to be an erroneous image is listed first, and are displayed on Zenodo 40 .
+L00628	Correcting Fitzpatrick17k The Fitzpatrick17k cleaning pipeline consists of the following steps: Similarity score-based filtering: We specify an image similarity threshold of 0.99, meaning any image whose maximum similarity score to any other image in the
+L00629	dataset is greater than this threshold is removed.
+L00630	This is done to remove the near-exact duplicates.
+L00631	Processing duplicates: We then process the duplicate pairs and clusters detected by fastdup and cleanvision to merge them into larger clusters if they exist, using the union-find algorithm 122 .
+L00632	For the final list of clusters, we check if the clusters are “homogenous”, meaning if all the duplicate images in a cluster share the same diagnosis and FST labels.
+L00633	If a cluster is not homogenous, we remove all the images in it from Fitzpatrick17k, but if it is, we retain the single largest image in the cluster by spatial resolution and remove the rest.
+L00634	Remove erroneous images : Finally, we remove the erroneous images detected in Fitzpatrick17k.
+L00635	While we do not do this in Fitzpatrick17k-C, the data cleaning code also allows the users to remove images from Fitzpatrick17k that have missing FST labels.
+L00636	Model training and evaluation We use the official Fitzpatrick17k training and evaluation code 123 by Groh et al .
+L00637	20 with some modifications.
+L00638	First, we use separate partitions for validation (i.e., picking the best performing model across training epochs based on the highest validation accuracy) and for testing (i.e., for reporting the final Fitzpatrick17k-C benchmarks in Table 2 ), and therefore the code is modified accordingly.
+L00639	Next, Next, the
+L00640	datasets for the seven experimental settings (i.e., “Verified”, “Random”, “Source A”, “Source B”, “FST 3–6”, “FST 1–2 & 5–6”, and “FST 1–4”) proposed by Groh et al .
+L00641	20 vary considerably in the number of images across training-validation-testing partitions (Table 2 ), we conduct a hyperparameter search for each setting.
+L00642	We vary the optimizer: {Adam, SGD}, the learning rate: {1 e − 2, 1 e − 3, 1 e − 4}, and the number of training epochs: {20, 50, 100, 200}, and for each of the 7 experimental settings, we train 3 models with each
+L00643	of the above hyperparameter settings with different seed values, effectively training 2 × 3 × 4 × 7 × 3 = 504 models.
+L00644	For each experimental setting, the hyperparameter setting with the highest accuracy on the validation partition was used for the final testing, and the
+L00645	results are reported in Table 2 .
+L00646	Finally, we used mixed precision training through Hugging Face Accelerate 124 to speed up the training.
+L00647	For all the experiments, we use the same image transformations as those in Groh et al.’s work.
+L00648	The reported metrics for evaluation were the overall and the FST-wise classification accuracies.
+L00649	All models were trained and evaluated using PyTorch 121 and Accelerate 124 .
+L00650	To understand how sensitive these classification models are to the hyperparameter choices, we also evaluated models optimized on one experiment’s best hyperparameters on another experiment’s test set, and these
+L00651	results are presented in Table 3 .
+L00652	The columns represent the optimal hyperparameters for each setting, and the rows represent the overall test set accuracies for all the settings when evaluated using those particular hyperparameters.
+L00653	We observe that varying the hyperparameters does not considerably affect the test accuracies.
+L00654	Additionally, the entries along the diagonal of Table 3 are the same as the overall accuracies in Table 2 , since these are the test accuracies of models trained and evaluated on each particular setting’s optimal hyperparameters.
+L00655	Hardware and Software Environments All experiments were carried out on a workstation running Ubuntu 20.04 with AMD Ryzen 9 16-core 5950X CPU, 32 GB RAM, and NVIDIA RTX 3090 24 GB GPU.
+L00656	The following versions of software packages were used: Python 3.10, torch 1.11.0, torchvision 0.12.0, PIL 10.0.1, fastdup 1.71, cleanvision 0.3.4, and accelerate 0.9.0.
+L00657	Source
+L00658	Datasets’ Licenses All the source
+L00659	datasets are associated with the Creative Commons (CC) Licenses: DermaMNIST (CC BY-NC 4.0) 125 , Fitzpatrick17k (CC BY-NC-SA 3.0) 123 , and ISIC 2018 Challenge
+L00660	Datasets (CC BY-NC 4.0) 126 .
+L00661	Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+L00662	Acknowledgements K.A. is funded by Natural Sciences and Engineering Research Council of Canada (NSERC) Discovery grant RGPIN 06795 and Simon Fraser University.
+L00663	The authors would like to thank Rui Shi for sharing the image IDs of the training, validation, and testing partitions of the DermaMNIST
+L00664	dataset.
+L00665	The authors are grateful to Prof.
+L00666	Rafeef Garbi for suggesting the idea of documenting and publicly disseminating these important data quality issues in a paper.
+L00667	The authors are also thankful to Hanene Ben Yedder and Arezou Pakzad of the Medical Image Analysis Lab for the helpful discussions, and to the NVIDIA Corporation and the Digital Research Alliance of Canada for providing the computational resources.
+L00668	Author contributions K.A. worked on writing the code, performing the formal analysis and the experiments, and preparing the figures, with support from A.J. and G.H.
+L00669	K.A. and A.J. worked on data curation.
+L00670	K.A. worked on writing the initial draft.
+L00671	G.H. supervised the project and provided the resources and funding for the project.
+L00672	All authors contributed to the design and the evaluation of the algorithms.
+L00673	All authors contributed to writing, reviewing, and editing the manuscript.
+L00674	All authors read and approved the manuscript.
+L00675	Data availability All the
+L00676	datasets released with this work: DermaMNIST-C, DermaMNIST-E, and Fitzpatrick17k-C are publicly available on Zenodo 40 .
+L00677	Code availability The codebase for the analyses and the experiments in this paper is available at https://github.com/kakumarabhishek/Corrected-Skin-Image-
+L00678	Datasets .
+L00679	The
+L00680	results of analysis, including the visualizations, are available online on Zenodo 40 .
+L00681	Competing interests The authors declare no competing interests.
+L00682	References 1.
+L00683	Schofield J Fleming D Grindlay D Williams H Skin conditions are the commonest new reason people present to general practitioners in England and Wales British Journal of Dermatology 2011 165 1044 1050 10.1111/j.1365-2133.2011.10464.x 21692764 Schofield, J., Fleming, D., Grindlay, D. & Williams, H.
+L00684	Skin conditions are the commonest new reason people present to general practitioners in England and Wales.
+L00685	British Journal of Dermatology 165 , 1044–1050, 10.1111/j.1365-2133.2011.10464.x (2011).
+L00686	21692764 10.1111/j.1365-2133.2011.10464.x 2.
+L00687	Hay RJ The Global Burden of Skin Disease in 2010: An Analysis of the Prevalence and Impact of Skin Conditions Journal of Investigative Dermatology 2014 134 1527 1534 10.1038/jid.2013.446 24166134 Hay, R.
+L00688	J. et al .
+L00689	The Global Burden of Skin Disease in 2010: An Analysis of the Prevalence and Impact of Skin Conditions.
+L00690	Journal of Investigative Dermatology 134 , 1527–1534, 10.1038/jid.2013.446 (2014).
+L00691	24166134 10.1038/jid.2013.446 3.
+L00692	Flohr C Hay R Putting the burden of skin diseases on the global map British Journal of Dermatology 2021 184 189 190 10.1111/bjd.19704 33544440 Flohr, C. & Hay, R.
+L00693	Putting the burden of skin diseases on the global map.
+L00694	British Journal of Dermatology 184 , 189–190, 10.1111/bjd.19704 (2021).
+L00695	33544440 10.1111/bjd.19704 4.
+L00696	Karimkhani C Global Skin Disease Morbidity and Mortality: An Update From the Global Burden of Disease Study 2013 JAMA Dermatology 2017 153 406 10.1001/jamadermatol.2016.5538 28249066 PMC5817488 Karimkhani, C. et al .
+L00697	Global Skin Disease Morbidity and Mortality: An Update From the Global Burden of Disease Study 2013.
+L00698	JAMA Dermatology 153 , 406, 10.1001/jamadermatol.2016.5538 (2017).
+L00699	28249066 10.1001/jamadermatol.2016.5538 PMC5817488 5.
+L00700	Lim HW The burden of skin disease in the United States Journal of the American Academy of Dermatology 2017 76 958–972.e2 10.1016/j.jaad.2016.12.043 28259441 Lim, H.
+L00701	W. et al .
+L00702	The burden of skin disease in the United States.
+L00703	Journal of the American Academy of Dermatology 76 , 958–972.e2, 10.1016/j.jaad.2016.12.043 (2017).
+L00704	28259441 10.1016/j.jaad.2016.12.043 6.
+L00705	World Health Organization.
+L00706	Cancer. https://www.who.int/news-room/fact-sheets/detail/cancer/ . [Online.
+L00707	Accessed June 19, 2023].
+L00708	7.
+L00709	Barata, C., Marques, J.
+L00710	S. & Celebi, M.
+L00711	E.
+L00712	Deep Attention Model for the Hierarchical Diagnosis of Skin Lesions.
+L00713	In 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) , 2757–2765, 10.1109/CVPRW.2019.00334 (IEEE, Long Beach, CA, USA, 2019).
+L00714	8.
+L00715	Benyahia, S., Meftah, B. & Lézoray, O.
+L00716	Hierarchical Approach for the Classification of Multi-class Skin Lesions Based on Deep Convolutional Neural Networks.
+L00717	In El Yacoubi, M., Granger, E., Yuen, P.
+L00718	C., Pal, U. & Vincent, N. (eds.) Pattern Recognition and Artificial Intelligence , vol.
+L00719	13364, 139–149, 10.1007/978-3-031-09282-4_12 (Springer International Publishing, Cham, 2022).
+L00720	9.
+L00721	Yu, Z. et al .
+L00722	Skin Lesion Recognition with Class-Hierarchy Regularized Hyperbolic Embeddings.
+L00723	In Wang, L., Dou, Q., Fletcher, P.
+L00724	T., Speidel, S. & Li, S. (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2022 , vol.
+L00725	13433, 594–603, 10.1007/978-3-031-16437-8_57 (Springer Nature Switzerland, Cham, 2022).
+L00726	10.
+L00727	Liu Y A deep learning system for differential diagnosis of skin diseases Nature Medicine 2020 26 900 908 10.1038/s41591-020-0842-3 32424212 Liu, Y. et al .
+L00728	A deep learning system for differential diagnosis of skin diseases.
+L00729	Nature Medicine 26 , 900–908, 10.1038/s41591-020-0842-3 (2020).
+L00730	32424212 10.1038/s41591-020-0842-3 11.
+L00731	Asgari Taghanaki S Abhishek K Cohen JP Cohen-Adad J Hamarneh G Deep semantic segmentation of natural and medical images: a review Artificial Intelligence Review 2021 54 137 178 10.1007/s10462-020-09854-1 Asgari Taghanaki, S., Abhishek, K., Cohen, J.
+L00732	P., Cohen-Adad, J. & Hamarneh, G.
+L00733	Deep semantic segmentation of natural and medical images: a review.
+L00734	Artificial Intelligence Review 54 , 137–178, 10.1007/s10462-020-09854-1 (2021).
+L00735	12.
+L00736	Kiryati N Landau Y
+L00737	Dataset Growth in Medical Image Analysis Research Journal of Imaging 2021 7 155 10.3390/jimaging7080155 34460791 PMC8404917 Kiryati, N. & Landau, Y.
+L00738	Dataset Growth in Medical Image Analysis Research.
+L00739	Journal of Imaging 7 , 155, 10.3390/jimaging7080155 (2021).
+L00740	34460791 10.3390/jimaging7080155 PMC8404917 13.
+L00741	Wen D Characteristics of publicly available skin cancer image
+L00742	datasets: a systematic review The Lancet Digital Health 2022 4 e64 e74 10.1016/S2589-7500(21)00252-1 34772649 Wen, D. et al .
+L00743	Characteristics of publicly available skin cancer image
+L00744	datasets: a systematic review.
+L00745	The Lancet Digital Health 4 , e64–e74, 10.1016/S2589-7500(21)00252-1 (2022).
+L00746	34772649 10.1016/S2589-7500(21)00252-1 14.
+L00747	Mirikharaji Z A survey on deep learning for skin lesion segmentation Medical Image Analysis 2023 88 102863 10.1016/j.media.2023.102863 37343323 Mirikharaji, Z. et al .
+L00748	A survey on deep learning for skin lesion segmentation.
+L00749	Medical Image Analysis 88 , 102863, 10.1016/j.media.2023.102863 (2023).
+L00750	37343323 10.1016/j.media.2023.102863 15.
+L00751	Tschandl P Rosendahl C Kittler H The HAM10000
+L00752	dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions Scientific Data 2018 5 180161 10.1038/sdata.2018.161 30106392 PMC6091241 Tschandl, P., Rosendahl, C. & Kittler, H.
+L00753	The HAM10000
+L00754	dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions.
+L00755	Scientific Data 5 , 180161, 10.1038/sdata.2018.161 (2018).
+L00756	30106392 10.1038/sdata.2018.161 PMC6091241 16.
+L00757	Combalia, M. et al .
+L00758	BCN20000: Dermoscopic Lesions in the Wild. arXiv 10.48550/ARXIV.1908.02288 (2019).
+L00759	17.
+L00760	Sun, X., Yang, J., Sun, M. & Wang, K.
+L00761	A Benchmark for Automatic Visual Classification of Clinical Skin Disease Images.
+L00762	In Leibe, B., Matas, J., Sebe, N. & Welling, M. (eds.) Computer Vision - ECCV 2016 , vol.
+L00763	9910, 206–222, 10.1007/978-3-319-46466-4_13 (Springer International Publishing, Cham, 2016).
+L00764	Series Title: Lecture Notes in Computer Science.
+L00765	18.
+L00766	Yang J Self-Paced Balance Learning for Clinical Skin Disease Recognition IEEE transactions on neural networks and learning systems 2019 31 2832 2846 10.1109/TNNLS.2019.2917524 31199274 Yang, J. et al .
+L00767	Self-Paced Balance Learning for Clinical Skin Disease Recognition.
+L00768	IEEE transactions on neural networks and learning systems 31 , 2832–2846, 10.1109/TNNLS.2019.2917524 (2019).
+L00769	31199274 10.1109/TNNLS.2019.2917524 19.
+L00770	Kawahara, J., Daneshvar, S., Argenziano, G. & Hamarneh, G.
+L00771	7-Point Checklist and Skin Lesion Classification using Multi-Task Multi-Modal Neural Nets.
+L00772	IEEE journal of biomedical and health informatics 10.1109/JBHI.2018.2824327 (2018).
+L00773	10.1109/JBHI.2018.2824327 29993994 20.
+L00774	Groh, M. et al .
+L00775	Evaluating Deep Neural Networks Trained on Clinical Images in Dermatology with the Fitzpatrick 17k
+L00776	Dataset.
+L00777	In 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) , 1820–1828, 10.1109/CVPRW53098.2021.00201 (IEEE, Nashville, TN, USA, 2021).
+L00778	21.
+L00779	Norori N Hu Q Aellen FM Faraci FD Tzovara A Addressing bias in big data and AI for health care: A call for open science Patterns 2021 2 100347 10.1016/j.patter.2021.100347 34693373 PMC8515002 Norori, N., Hu, Q., Aellen, F.
+L00780	M., Faraci, F.
+L00781	D. & Tzovara, A.
+L00782	Addressing bias in big data and AI for health care: A call for open science.
+L00783	Patterns 2 , 100347, 10.1016/j.patter.2021.100347 (2021).
+L00784	34693373 10.1016/j.patter.2021.100347 PMC8515002 22.
+L00785	Sambasivan, N. et al . “Everyone wants to do the model work, not the data work”: Data Cascades in High-Stakes AI.
+L00786	In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems , 1–15, 10.1145/3411764.3445518 (ACM, Yokohama Japan, 2021).
+L00787	23.
+L00788	Munappy AR Bosch J Olsson HH Arpteg A Brinne B Data management for production quality deep learning models: Challenges and solutions Journal of Systems and Software 2022 191 111359 10.1016/j.jss.2022.111359 Munappy, A.
+L00789	R., Bosch, J., Olsson, H.
+L00790	H., Arpteg, A. & Brinne, B.
+L00791	Data management for production quality deep learning models: Challenges and solutions.
+L00792	Journal of Systems and Software 191 , 111359, 10.1016/j.jss.2022.111359 (2022).
+L00793	24.
+L00794	Budach, L. et al .
+L00795	The Effects of Data Quality on Machine Learning Performance. arXiv 10.48550/ARXIV.2207.14529 (2022).
+L00796	25.
+L00797	Kapoor, S. & Narayanan, A.
+L00798	Leakage and the reproducibility crisis in machine-learning-based science.
+L00799	Patterns 4, 100804, 10.1016/j.patter.2023.100804 (2023).
+L00800	10.1016/j.patter.2023.100804 PMC10499856 37720327 26.
+L00801	Northcutt, C.
+L00802	G., Athalye, A. & Mueller, J.
+L00803	Pervasive label errors in test sets destabilize machine learning benchmarks.
+L00804	In Thirty-fifth Conference on Neural Information Processing Systems
+L00805	Datasets and Benchmarks Track (Round 1) (2021).
+L00806	27.
+L00807	Oner, M.
+L00808	U., Cheng, Y.-C., Lee, H.
+L00809	K. & Sung, W.-K.
+L00810	Training machine learning models on patient level data segregation is crucial in practical clinical applications. medRxiv 10.1101/2020.04.23.20076406 (2020).
+L00811	28.
+L00812	Bussola, N., Marcolini, A., Maggio, V., Jurman, G. & Furlanello, C.
+L00813	AI Slipping on Tiles: Data Leakage in Digital Pathology.
+L00814	In Del Bimbo, A. et al . (eds.) Pattern Recognition.
+L00815	ICPR International Workshops and Challenges , vol.
+L00816	12661, 167–182, 10.1007/978-3-030-68763-2_13 (Springer International Publishing, Cham, 2021).
+L00817	29.
+L00818	Samala, R.
+L00819	K., Chan, H.-P., Hadjiiski, L. & Koneru, S.
+L00820	Hazards of data leakage in machine learning: a study on classification of breast cancer using deep neural networks.
+L00821	In Hahn, H.
+L00822	K. & Mazurowski, M.
+L00823	A. (eds.) Medical Imaging 2020: Computer-Aided Diagnosis , 39, 10.1117/12.2549313 (SPIE, Houston, United States, 2020).
+L00824	30.
+L00825	Samala RK Chan H Hadjiiski L Helvie MA Risks of feature leakage and sample size dependencies in deep feature extraction for breast mass classification Medical Physics 2021 48 2827 2837 10.1002/mp.14678 33368376 PMC8601676 Samala, R.
+L00826	K., Chan, H., Hadjiiski, L. & Helvie, M.
+L00827	A.
+L00828	Risks of feature leakage and sample size dependencies in deep feature extraction for breast mass classification.
+L00829	Medical Physics 48 , 2827–2837, 10.1002/mp.14678 (2021).
+L00830	33368376 10.1002/mp.14678 PMC8601676 31.
+L00831	Tampu IE Eklund A Haj-Hosseini N Inflation of test accuracy due to data leakage in deep learning-based classification of OCT images Scientific Data 2022 9 580 10.1038/s41597-022-01618-6 36138025 PMC9500039 Tampu, I.
+L00832	E., Eklund, A. & Haj-Hosseini, N.
+L00833	Inflation of test accuracy due to data leakage in deep learning-based classification of OCT images.
+L00834	Scientific Data 9 , 580, 10.1038/s41597-022-01618-6 (2022).
+L00835	36138025 10.1038/s41597-022-01618-6 PMC9500039 32.
+L00836	Yagis E Effect of data leakage in brain MRI classification using 2D convolutional neural networks Scientific Reports 2021 11 22544 10.1038/s41598-021-01681-w 34799630 PMC8604922 Yagis, E. et al .
+L00837	Effect of data leakage in brain MRI classification using 2D convolutional neural networks.
+L00838	Scientific Reports 11 , 22544, 10.1038/s41598-021-01681-w (2021).
+L00839	34799630 10.1038/s41598-021-01681-w PMC8604922 33.
+L00840	Rumala, D.
+L00841	J.
+L00842	How You Split Matters: Data Leakage and Subject Characteristics Studies in Longitudinal Brain MRI Analysis.
+L00843	In Wesarg, S. et al . (eds.) Clinical Image-Based Procedures, Fairness of AI in Medical Imaging, and Ethical and Philosophical Issues in Medical Imaging , vol.
+L00844	14242, 235–245, 10.1007/978-3-031-45249-9_23 (Springer Nature Switzerland, Cham, 2023).
+L00845	34.
+L00846	Abhishek, K.
+L00847	Input Space Augmentation for Skin Lesion Segmentation in Dermoscopic Images .
+L00848	Master’s thesis, Simon Fraser University, Burnaby, Canada (2020).
+L00849	35.
+L00850	Cassidy, B., Kendrick, C., Brodzicki, A., Jaworek-Korjakowska, J. & Yap, M.
+L00851	H.
+L00852	Analysis of the ISIC image
+L00853	datasets: Usage, benchmarks and recommendations.
+L00854	Medical Image Analysis 75 , 102305, 10.1016/j.media.2021.102305 (2022).
+L00855	10.1016/j.media.2021.102305 34852988 36.
+L00856	Vega C Schneider R Satagopam V Analysis: Flawed
+L00857	Datasets of Monkeypox Skin Images Journal of Medical Systems 2023 47 1 16 10.1007/s10916-023-01928-1 PMC10024024 36933065 Vega, C., Schneider, R. & Satagopam, V.
+L00858	Analysis: Flawed
+L00859	Datasets of Monkeypox Skin Images.
+L00860	Journal of Medical Systems 47 , 1–16, 10.1007/s10916-023-01928-1 (2023).
+L00861	10.1007/s10916-023-01928-1 PMC10024024 36933065 37.
+L00862	Groger, F. et al .
+L00863	Towards Reliable Dermatology Evaluation Benchmarks.
+L00864	In Proceedings of the 3rd Machine Learning for Health Symposium , vol.
+L00865	225 of Proceedings of Machine Learning Research , 101–128 (PMLR, 2023).
+L00866	38.
+L00867	Yang, J., Shi, R. & Ni, B.
+L00868	MedMNIST Classification Decathlon: A Lightweight AutoML Benchmark for Medical Image Analysis.
+L00869	In 2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI) , 191–195, 10.1109/ISBI48211.2021.9434062 (IEEE, Nice, France, 2021).
+L00870	39.
+L00871	Yang J MedMNIST v2 - A large-scale lightweight benchmark for 2D and 3D biomedical image classification Scientific Data 2023 10 41 10.1038/s41597-022-01721-8 36658144 PMC9852451 Yang, J. et al .
+L00872	MedMNIST v2 - A large-scale lightweight benchmark for 2D and 3D biomedical image classification.
+L00873	Scientific Data 10 , 41, 10.1038/s41597-022-01721-8 (2023).
+L00874	36658144 10.1038/s41597-022-01721-8 PMC9852451 40.
+L00875	Abhishek, K., Jain, A. & Hamarneh, G.
+L00876	Investigating the quality of DermaMNIST and Fitzpatrick17k dermatological image
+L00877	datasets, 10.5281/ZENODO.11101337 (2024).
+L00878	10.1038/s41597-025-04382-5 PMC11787307 39893183 41.
+L00879	Sportisse, A., Schmutz, H., Humbert, O., Bouveyron, C. & Mattei, P.-A.
+L00880	Are labels informative in semi-supervised learning?
+L00881	Estimating and leveraging the missing-data mechanism.
+L00882	In Krause, A. et al . (eds.) Proceedings of the 40th international conference on machine learning , vol.
+L00883	202 of Proceedings of machine learning research , 32521–32539 (PMLR, 2023).
+L00884	42.
+L00885	Kang, M. et al .
+L00886	Label-Assemble: Leveraging Multiple
+L00887	Datasets with Partial Labels.
+L00888	In 2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI) , 1–5, 10.1109/ISBI53787.2023.10230766 (IEEE, Cartagena, Colombia, 2023).
+L00889	43.
+L00890	Chen W Li C Chen D Luo X A knowledge-based learning framework for self-supervised pre-training towards enhanced recognition of biomedical microscopy images Neural Networks 2023 167 810 826 10.1016/j.neunet.2023.09.001 37738716 Chen, W., Li, C., Chen, D. & Luo, X.
+L00891	A knowledge-based learning framework for self-supervised pre-training towards enhanced recognition of biomedical microscopy images.
+L00892	Neural Networks 167 , 810–826, 10.1016/j.neunet.2023.09.001 (2023).
+L00893	37738716 10.1016/j.neunet.2023.09.001 44.
+L00894	Lu, C., Yu, Y., Karimireddy, S.
+L00895	P., Jordan, M. & Raskar, R.
+L00896	Federated conformal predictors for distributed uncertainty quantification.
+L00897	In Krause, A. et al . (eds.) Proceedings of the 40th international conference on machine learning , vol.
+L00898	202 of Proceedings of machine learning research , 22942–22964 (PMLR, 2023).
+L00899	45.
+L00900	Zhu, W. & Luo, J.
+L00901	Federated Medical Image Analysis with Virtual Sample Synthesis.
+L00902	In Wang, L., Dou, Q., Fletcher, P.
+L00903	T., Speidel, S. & Li, S. (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2022 , vol.
+L00904	13433, 728–738, 10.1007/978-3-031-16437-8_70 (Springer Nature Switzerland, Cham, 2022).
+L00905	46.
+L00906	Kim, S., Bae, S., Song, H. & Yun, S.-Y.
+L00907	Re-Thinking Federated Active Learning Based on Inter-Class Diversity.
+L00908	In 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , 3944–3953, 10.1109/CVPR52729.2023.00384 (IEEE, Vancouver, BC, Canada, 2023).
+L00909	47.
+L00910	Tang, X., Panda, A., Sehwag, V. & Mittal, P.
+L00911	Differentially private image classification by learning priors from random processes.
+L00912	In Oh, A. et al . (eds.) Advances in neural information processing systems , vol.
+L00913	36, 35855–35877 (Curran Associates, Inc., 2023).
+L00914	48.
+L00915	Lee, S., Lee, G., Kim, J.
+L00916	W., Shin, J. & Lee, M.-K.
+L00917	HETAL: Efficient privacy-preserving transfer learning with homomorphic encryption.
+L00918	In Krause, A. et al . (eds.) Proceedings of the 40th international conference on machine learning , vol.
+L00919	202 of Proceedings of machine learning research , 19010–19035 (PMLR, 2023).
+L00920	49.
+L00921	Xu, H., Wang, D., Sowmya, A. & Katz, I.
+L00922	Detection of Basal Cell Carcinoma in Whole Slide Images.
+L00923	In Greenspan, H. et al . (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2023 , vol.
+L00924	14225, 263–272, 10.1007/978-3-031-43987-2_26 (Springer Nature Switzerland, Cham, 2023).
+L00925	50.
+L00926	Wang, Y. et al .
+L00927	MedNAS: Multi-Scale Training-Free Neural Architecture Search for Medical Image Analysis.
+L00928	IEEE Transactions on Evolutionary Computation 1–1, 10.1109/TEVC.2024.3352641 (2024).
+L00929	51.
+L00930	Xu M Zhang T Zhang D MedRDF: A Robust and Retrain-Less Diagnostic Framework for Medical Pretrained Models Against Adversarial Attack IEEE Transactions on Medical Imaging 2022 41 2130 2143 10.1109/TMI.2022.3156268 35235504 Xu, M., Zhang, T. & Zhang, D.
+L00931	MedRDF: A Robust and Retrain-Less Diagnostic Framework for Medical Pretrained Models Against Adversarial Attack.
+L00932	IEEE Transactions on Medical Imaging 41 , 2130–2143, 10.1109/TMI.2022.3156268 (2022).
+L00933	35235504 10.1109/TMI.2022.3156268 52.
+L00934	Ahmed S Dera D Hassan SU Bouaynaya N Rasool G Failure Detection in Deep Neural Networks for Medical Imaging Frontiers in Medical Technology 2022 4 919046 10.3389/fmedt.2022.919046 35958121 PMC9359318 Ahmed, S., Dera, D., Hassan, S.
+L00935	U., Bouaynaya, N. & Rasool, G.
+L00936	Failure Detection in Deep Neural Networks for Medical Imaging.
+L00937	Frontiers in Medical Technology 4 , 919046, 10.3389/fmedt.2022.919046 (2022).
+L00938	35958121 10.3389/fmedt.2022.919046 PMC9359318 53.
+L00939	Yang, K. et al .
+L00940	Adversarial auto-augment with label preservation: A representation learning principle guided approach.
+L00941	In Koyejo, S. et al . (eds.) Advances in neural information processing systems , vol.
+L00942	35, 22035–22048 (Curran Associates, Inc., 2022).
+L00943	54.
+L00944	Abhishek K Brown CJ Hamarneh G Multi-sample ζ-mixup: richer, more realistic synthetic samples from a p-series interpolant Journal of Big Data 2024 11 43 10.1186/s40537-024-00898-6 38528850 PMC10960781 Abhishek, K., Brown, C.
+L00945	J. & Hamarneh, G.
+L00946	Multi-sample ζ-mixup: richer, more realistic synthetic samples from a p-series interpolant.
+L00947	Journal of Big Data 11 , 43, 10.1186/s40537-024-00898-6 (2024).
+L00948	38528850 10.1186/s40537-024-00898-6 PMC10960781 55.
+L00949	Wang J Autoencoder-based conditional optimal transport generative adversarial network for medical image generation Visual Informatics 2024 8 15 25 10.1016/j.visinf.2023.11.001 Wang, J. et al .
+L00950	Autoencoder-based conditional optimal transport generative adversarial network for medical image generation.
+L00951	Visual Informatics 8 , 15–25, 10.1016/j.visinf.2023.11.001 (2024).
+L00952	56.
+L00953	Nguyen A-P Moreno DL Le-Bel N Rodríguez Martínez M Nguyen A-P Moreno DL Le-Bel N Rodríguez Martínez M MonoNet: enhancing interpretability in neural networks via monotonic features Bioinformatics Advances 2023 3 vbad016 10.1093/bioadv/vbad016 37143924 PMC10152389 Nguyen, A.-P., Moreno, D.
+L00954	L., Le-Bel, N., Rodríguez Martínez, M., Nguyen, A.-P., Moreno, D.
+L00955	L., Le-Bel, N. & Rodríguez Martínez, M.
+L00956	MonoNet: enhancing interpretability in neural networks via monotonic features.
+L00957	Bioinformatics Advances 3 , vbad016, 10.1093/bioadv/vbad016 (2023).
+L00958	37143924 10.1093/bioadv/vbad016 PMC10152389 57.
+L00959	Kumar, R., Romano, J., Ritchie, M. & Moore, J.
+L00960	Extending Tree-Based Automated Machine Learning to Biomedical Image and Text Data Using Custom Feature Extractors.
+L00961	In Proceedings of the Companion Conference on Genetic and Evolutionary Computation , 599–602, 10.1145/3583133.3590584 (ACM, Lisbon Portugal, 2023).
+L00962	58.
+L00963	Das, A.
+L00964	M. et al .
+L00965	Accelerating batch active learning using continual learning techniques.
+L00966	Transactions on Machine Learning Research (2023).
+L00967	59.
+L00968	Cherrat EA Quantum Vision Transformers Quantum 2024 8 1265 10.22331/q-2024-02-22-1265 Cherrat, E.
+L00969	A. et al .
+L00970	Quantum Vision Transformers.
+L00971	Quantum 8 , 1265, 10.22331/q-2024-02-22-1265 (2024).
+L00972	60.
+L00973	Lin, W. et al .
+L00974	PMC-CLIP: Contrastive Language-Image Pre-training Using Biomedical Documents.
+L00975	In Greenspan, H. et al . (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2023 , vol.
+L00976	14227, 525–536, 10.1007/978-3-031-43993-3_51 (Springer Nature Switzerland, Cham, 2023).
+L00977	61.
+L00978	Zhang K A generalist vision-language foundation model for diverse biomedical tasks Nature Medicine 2024 30 3129 3141 10.1038/s41591-024-03185-2 39112796 PMC12581140 Zhang, K. et al .
+L00979	A generalist vision-language foundation model for diverse biomedical tasks.
+L00980	Nature Medicine 30 , 3129–3141, 10.1038/s41591-024-03185-2 (2024).
+L00981	39112796 10.1038/s41591-024-03185-2 PMC12581140 62.
+L00982	Zhu, X., Hu, Y., Mo, F., Li, M. & Wu, J.
+L00983	Uni-med: a unified medical generalist foundation model for multi-task learning via connector-MoE.
+L00984	In The thirty-eighth annual conference on neural information processing systems (2024).
+L00985	63.
+L00986	Di Salvo, F., Doerrich, S. & Ledig, C.
+L00987	MedMNIST-C: Comprehensive benchmark and improved classifier robustness by simulating realistic image corruptions, 10.48550/ARXIV.2406.17536 (2024).
+L00988	64.
+L00989	Doerrich, S., Di Salvo, F., Brockmann, J. & Ledig, C.
+L00990	Rethinking Model Prototyping through the MedMNIST+
+L00991	Dataset Collection, 10.48550/ARXIV.2404.15786 (2024).
+L00992	65.
+L00993	Codella, N. et al .
+L00994	Skin Lesion Analysis Toward Melanoma Detection 2018: A Challenge Hosted by the International Skin Imaging Collaboration (ISIC). arXiv 10.48550/ARXIV.1902.03368 (2019).
+L00995	66.
+L00996	ISIC.
+L00997	International Skin Imaging Collaboration (ISIC) 2019 Challenge (2019).
+L00998	67.
+L00999	Tschandl, P. et al .
+L01000	Human-computer collaboration for skin cancer recognition.
+L01001	Nature Medicine 26, 1229-1234, 10.1038/s41591-020-0942-0 (2020).
+L01002	10.1038/s41591-020-0942-0 32572267 68.
+L01003	Barata C A reinforcement learning model for AI-based decision support in skin cancer Nature Medicine 2023 29 1941 1946 10.1038/s41591-023-02475-5 37501017 PMC10427421 Barata, C. et al .
+L01004	A reinforcement learning model for AI-based decision support in skin cancer.
+L01005	Nature Medicine 29 , 1941–1946, 10.1038/s41591-023-02475-5 (2023).
+L01006	37501017 10.1038/s41591-023-02475-5 PMC10427421 69. visual layer.
+L01007	Github – fastdup. https://github.com/visual-layer/fastdup . [Online.
+L01008	Accessed 7-Jan-2024].
+L01009	70.
+L01010	MedMNIST.
+L01011	Github – experiments/medmnist2d/train_and_eval_pytorch.py at 8b0f553. https://github.com/MedMNIST/experiments/blob/8b0f553f95ea6b5f5517e49c539952cb21c79d89/MedMNIST2D/train_and_eval_pytorch.py#L54 . [Online.
+L01012	Accessed 7-Jan-2024].
+L01013	71.
+L01014	Alipour, N., Burke, T. & Courtney, J.
+L01015	Skin Type Diversity: a Case Study in Skin Lesion
+L01016	Datasets.
+L01017	Current Dermatology Reports 13 , 198–210, 10.1007/s13671-024-00440-0 (2024).
+L01018	10.1007/s13671-024-00440-0 PMC11343783 39184010 72.
+L01019	Amin AlKattash, J.
+L01020	DermaAmin. https://www.dermaamin.com/site/ . [Online.
+L01021	Accessed 19-Jun-2023].
+L01022	73.
+L01023	Freire da Silva, S.
+L01024	Atlas Dermatologico. https://www.atlasdermatologico.com.br/ . [Online.
+L01025	Accessed 19-Jun-2023].
+L01026	74.
+L01027	Abid, A., Yuksekgonul, M. & Zou, J.
+L01028	Meaningfully debugging model mistakes using conceptual counterfactual explanations.
+L01029	In Chaudhuri, K. et al . (eds.) Proceedings of the 39th international conference on machine learning , vol.
+L01030	162 of Proceedings of machine learning research , 66–88 (PMLR, 2022).
+L01031	75.
+L01032	Ghadiri, A., Pagnucco, M. & Song, Y.
+L01033	XTranPrune: eXplainability-Aware Transformer Pruning for Bias Mitigation in Dermatological Disease Classification.
+L01034	In Linguraru, M.
+L01035	G. et al . (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2024 , vol.
+L01036	15010, 749–758, 10.1007/978-3-031-72117-5_70 (Springer Nature Switzerland, Cham, 2024).
+L01037	76.
+L01038	Yan, S. et al .
+L01039	Towards Trustable Skin Cancer Diagnosis via Rewriting Model’s Decision.
+L01040	In 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , 11568–11577, 10.1109/CVPR52729.2023.01113 (IEEE, Vancouver, BC, Canada, 2023).
+L01041	77.
+L01042	Bevan, P.
+L01043	J. & Atapour-Abarghouei, A.
+L01044	Detecting Melanoma Fairly: Skin Tone Detection and Debiasing for Skin Lesion Classification.
+L01045	In Kamnitsas, K. et al . (eds.) Domain Adaptation and Representation Transfer , vol.
+L01046	13542, 1–11, 10.1007/978-3-031-16852-9_1 (Springer Nature Switzerland, Cham, 2022).
+L01047	78.
+L01048	Yuksekgonul, M., Zhang, L., Zou, J. & Guestrin, C.
+L01049	Beyond confidence: Reliable models should also consider atypicality.
+L01050	In Thirty-seventh conference on neural information processing systems (2023).
+L01051	79.
+L01052	Du, S., Hers, B., Bayasi, N., Hamarneh, G. & Garbi, R.
+L01053	FairDisCo: Fairer AI in Dermatology via Disentanglement Contrastive Learning.
+L01054	In Karlinsky, L., Michaeli, T. & Nishino, K. (eds.) Computer Vision - ECCV 2022 Workshops , vol.
+L01055	13804, 185–202, 10.1007/978-3-031-25069-9_13 (Springer Nature Switzerland, Cham, 2022).
+L01056	80.
+L01057	Pakzad, A., Abhishek, K. & Hamarneh, G.
+L01058	CIRCLe: Color Invariant Representation Learning for Unbiased Classification of Skin Lesions.
+L01059	In Karlinsky, L., Michaeli, T. & Nishino, K. (eds.) Computer Vision - ECCV 2022 Workshops , vol.
+L01060	13804, 203–219, 10.1007/978-3-031-25069-9_14 (Springer Nature Switzerland, Cham, 2022).
+L01061	81.
+L01062	Seth, P. & Pai, A.
+L01063	K.
+L01064	Does the Fairness of Your Pre-Training Hold Up?
+L01065	Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification.
+L01066	In 2024 IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW), 580–587, 10.1109/WACVW60836.2024.00067 (IEEE, Waikoloa, HI, USA, 2024).
+L01067	82.
+L01068	Wang, J., Zhang, Y., Ding, Z. & Hamm, J.
+L01069	Achieving Reliable and Fair Skin Lesion Diagnosis via Unsupervised Domain Adaptation.
+L01070	In 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) , 5157–5166, 10.1109/CVPRW63382.2024.00523 (IEEE, Seattle, WA, USA, 2024).
+L01071	83.
+L01072	Chiu C-H Chen Y-J Wu Y Shi Y Ho T-Y Achieve fairness without demographics for dermatological disease diagnosis Medical Image Analysis 2024 95 103188 10.1016/j.media.2024.103188 38718715 Chiu, C.-H., Chen, Y.-J., Wu, Y., Shi, Y. & Ho, T.-Y.
+L01073	Achieve fairness without demographics for dermatological disease diagnosis.
+L01074	Medical Image Analysis 95 , 103188, 10.1016/j.media.2024.103188 (2024).
+L01075	38718715 10.1016/j.media.2024.103188 84.
+L01076	Aayushman, Gaddey, H., Mittal, V., Chawla, M. & Gupta, G.
+L01077	R.
+L01078	Fair and Accurate Skin Disease Image Classification by Alignment with Clinical Labels.
+L01079	In Linguraru, M.
+L01080	G. et al . (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2024 , vol.
+L01081	15001, 394–404, 10.1007/978-3-031-72378-0_37 (Springer Nature Switzerland, Cham, 2024).
+L01082	85.
+L01083	Kim C Transparent medical image AI via an image-text foundation model grounded in medical literature Nature Medicine 2024 30 1154 1165 10.1038/s41591-024-02887-x 38627560 Kim, C. et al .
+L01084	Transparent medical image AI via an image-text foundation model grounded in medical literature.
+L01085	Nature Medicine 30 , 1154–1165, 10.1038/s41591-024-02887-x (2024).
+L01086	38627560 10.1038/s41591-024-02887-x 86.
+L01087	Akuffo-Addo E Assessing GPT-4’s diagnostic accuracy with darker skin tones: underperformance and implications Clinical and Experimental Dermatology 2024 49 1244 1245 10.1093/ced/llae158 38696699 Akuffo-Addo, E. et al .
+L01088	Assessing GPT-4’s diagnostic accuracy with darker skin tones: underperformance and implications.
+L01089	Clinical and Experimental Dermatology 49 , 1244–1245, 10.1093/ced/llae158 (2024).
+L01090	38696699 10.1093/ced/llae158 87.
+L01091	Chen, P. et al .
+L01092	GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI, 10.48550/arXiv.2408.03361 (2024).
+L01093	88.
+L01094	Yan, S. et al .
+L01095	A General-Purpose Multimodal Foundation Model for Dermatology, 10.48550/arXiv.2410.15038 (2024).
+L01096	89.
+L01097	Zhou J Pre-trained multimodal large language model enhances dermatological diagnosis using SkinGPT-4 Nature Communications 2024 15 5649 10.1038/s41467-024-50043-3 38969632 PMC11226626 Zhou, J. et al .
+L01098	Pre-trained multimodal large language model enhances dermatological diagnosis using SkinGPT-4.
+L01099	Nature Communications 15 , 5649, 10.1038/s41467-024-50043-3 (2024).
+L01100	38969632 10.1038/s41467-024-50043-3 PMC11226626 90.
+L01101	Hu, Y. et al .
+L01102	OmniMedVQA: A New Large-Scale Comprehensive Evaluation Benchmark for Medical LVLM.
+L01103	In 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) , 22170–22183, 10.1109/CVPR52733.2024.02093 (IEEE, Seattle, WA, USA, 2024).
+L01104	91.
+L01105	Yim, W.-w. et al .
+L01106	DermaVQA: A Multilingual Visual Question Answering
+L01107	Dataset for Dermatology.
+L01108	In Linguraru, M.
+L01109	G. et al . (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2024 , vol.
+L01110	15005, 209–219, 10.1007/978-3-031-72086-4_20 (Springer Nature Switzerland, Cham, 2024).
+L01111	92.
+L01112	Groh M Deep learning-aided decision support for diagnosis of skin disease across skin tones Nature Medicine 2024 30 573 583 10.1038/s41591-023-02728-3 38317019 PMC10878981 Groh, M. et al .
+L01113	Deep learning-aided decision support for diagnosis of skin disease across skin tones.
+L01114	Nature Medicine 30 , 573–583, 10.1038/s41591-023-02728-3 (2024).
+L01115	38317019 10.1038/s41591-023-02728-3 PMC10878981 93.
+L01116	Sagers, L.
+L01117	W. et al .
+L01118	Improving dermatology classifiers across populations using images generated by large diffusion models.
+L01119	In NeurIPS 2022 workshop on synthetic data for empowering ML research (2022).
+L01120	94.
+L01121	Lin, B. et al .
+L01122	SkinGEN: an Explainable Dermatology Diagnosis-to-Generation Framework with Interactive Vision-Language Models, 10.48550/ARXIV.2404.14755 (2024).
+L01123	95.
+L01124	Mekala, R.
+L01125	R. et al .
+L01126	Synthetic Generation of Dermatoscopic Images with GAN and Closed-Form Factorization, 10.48550/ARXIV.2410.05114 (2024).
+L01127	96.
+L01128	Alhamoud, K. et al .
+L01129	FedMedICL: Towards Holistic Evaluation of Distribution Shifts in Federated Medical Imaging.
+L01130	In Linguraru, M.
+L01131	G. et al . (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2024, vol.
+L01132	15010, 383–393, 10.1007/978-3-031-72117-5_36 (Springer Nature Switzerland, Cham, 2024).
+L01133	97.
+L01134	Daneshjou, R., Yuksekgonul, M., Cai, Z.
+L01135	R., Novoa, R.
+L01136	A. & Zou, J.
+L01137	SkinCon: A skin disease
+L01138	dataset densely annotated by domain experts for fine-grained debugging and analysis.
+L01139	In Thirty-sixth conference on Neural Information Processing Systems
+L01140	Datasets and Benchmarks Track (2022).
+L01141	98.
+L01142	Cohen, J.
+L01143	A Coefficient of Agreement for Nominal Scales.
+L01144	Educational and Psychological Measurement 20, 37-46, 10.1177/001316446002000104 (1960).
+L01145	99.
+L01146	Landis JR Koch GG The Measurement of Observer Agreement for Categorical Data Biometrics 1977 33 159 10.2307/2529310 843571 Landis, J.
+L01147	R. & Koch, G.
+L01148	G.
+L01149	The Measurement of Observer Agreement for Categorical Data.
+L01150	Biometrics 33 , 159, 10.2307/2529310 (1977).
+L01151	843571 100.
+L01152	Abhishek, K., Jain, A. & Hamarneh, G.
+L01153	Investigating the Quality of DermaMNIST and Fitzpatrick17k Dermatological Image
+L01154	Datasets, 10.48550/arXiv.2401.14497 (2024).
+L01155	10.1038/s41597-025-04382-5 PMC11787307 39893183 101. cleanlab.
+L01156	Github – cleanvision. https://github.com/cleanlab/cleanvision . [Online.
+L01157	Accessed 7-Jan-2024].
+L01158	102.
+L01159	Groh, M.
+L01160	Github – fitzpatrick17k/train.py at 26d5074. https://github.com/mattgroh/fitzpatrick17k/blob/26d50745348f82a76f872ed7924361d1dccd629e/train.py#L82 . [Online.
+L01161	Accessed 7-Jan-2024].
+L01162	103.
+L01163	Groh, M.
+L01164	Github – fitzpatrick17k/train.py at 26d5074. https://github.com/mattgroh/fitzpatrick17k/blob/26d50745348f82a76f872ed7924361d1dccd629e/train.py#L342 . [Online.
+L01165	Accessed 7-Jan-2024].
+L01166	104.
+L01167	Yoon, C., Hamarneh, G. & Garbi, R.
+L01168	Generalizable Feature Learning in the Presence of Data Bias and Domain Class Imbalance with Application to Skin Lesion Classification.
+L01169	In Shen, D. et al . (eds.) Medical Image Computing and Computer Assisted Intervention - MICCAI 2019 , vol.
+L01170	11767, 365–373, 10.1007/978-3-030-32251-9_40 (Springer International Publishing, Cham, 2019).
+L01171	105.
+L01172	Abhishek, K.
+L01173	Github – corrected-skin-image-
+L01174	datasets. https://github.com/kakumarabhishek/Corrected-Skin-Image-
+L01175	Datasets . [Online.
+L01176	Accessed 12-May-2024].
+L01177	106.
+L01178	S.
+L01179	Levin Y Warshaw EM Teledermatology: A Review of Reliability and Accuracy of Diagnosis and Management Dermatologic Clinics 2009 27 163 176 10.1016/j.det.2008.11.012 19254660 S.
+L01180	Levin, Y. & Warshaw, E.
+L01181	M.
+L01182	Teledermatology: A Review of Reliability and Accuracy of Diagnosis and Management.
+L01183	Dermatologic Clinics 27 , 163–176, 10.1016/j.det.2008.11.012 (2009).
+L01184	19254660 10.1016/j.det.2008.11.012 107.
+L01185	Gerhardt, C.
+L01186	A., Foels, R., Grewe, S. & Baldwin, B.
+L01187	T.
+L01188	Assessing the Diagnostic Accuracy of Teledermatology Consultations at a Local Veterans Affairs Dermatology Clinic.
+L01189	Cureus 10.7759/cureus.15406 (2021).
+L01190	10.7759/cureus.15406 PMC8253700 34249554 108.
+L01191	Gunn, H. & Argáez, C.
+L01192	Asynchronous Teledermatology Consultations Using Store-and-Forward Technology: Diagnostic Accuracy, Clinical Utility, and Cost-Effectiveness.
+L01193	Tech.
+L01194	Rep.
+L01195	RB1523-000, Canadian Agency for Drugs and Technologies in Health (CADTH), Canada (2020).
+L01196	109.
+L01197	WHO.
+L01198	International Classification of Diseases, Eleventh Revision (ICD-11) (2019).
+L01199	110.
+L01200	WHO.
+L01201	ICD-11 for Mortality and Morbidity Statistics — icd.who.int. https://icd.who.int/browse11 . [Online.
+L01202	Accessed 23-Mar-2024].
+L01203	111.
+L01204	WHO.
+L01205	ICD-11 Coding Tool Mortality and Morbidity Statistics (MMS) — icd.who.int. https://icd.who.int/ct/icd11_mms/en/release . [Online.
+L01206	Accessed 23-Mar-2024].
+L01207	112.
+L01208	White J Lui H Chute C Jakob R Chalmers R The WHO ICD-11 Classification of Dermatological Diseases: a new comprehensive online skin disease taxonomy designed by and for dermatologists British Journal of Dermatology 2022 186 178 179 10.1111/bjd.20656 34289080 White, J., Lui, H., Chute, C.,
+L01209	Jakob, R. & Chalmers, R.
+L01210	The WHO ICD-11 Classification of Dermatological Diseases: a new comprehensive online skin disease taxonomy designed by and for dermatologists.
+L01211	British Journal of Dermatology 186 , 178–179, 10.1111/bjd.20656 (2022).
+L01212	34289080 10.1111/bjd.20656 113.
+L01213	WHO.
+L01214	ICD-11 Classification of Dermatological Diseases — icd.who.int. https://icd.who.int/dev11/l-derma/en . [Online.
+L01215	Accessed 23-Mar-2024].
+L01216	114.
+L01217	Thun S Dewenter H ICD-11, ICHI und SNOMED CT - was bedeuten die Systematiken für E-Health-Anwendungen?
+L01218	Bundesgesundheitsblatt - Gesundheitsforschung - Gesundheitsschutz 2018 61 812 820 10.1007/s00103-018-2759-2 29846742 Thun, S. & Dewenter, H.
+L01219	ICD-11, ICHI und SNOMED CT - was bedeuten die Systematiken für E-Health-Anwendungen?
+L01220	Bundesgesundheitsblatt - Gesundheitsforschung - Gesundheitsschutz 61 , 812–820, 10.1007/s00103-018-2759-2 (2018).
+L01221	29846742 10.1007/s00103-018-2759-2 115.
+L01222	International, S.
+L01223	SNOMED International Browser — browser.ihtsdotools.org. https://browser.ihtsdotools.org/?perspective=full&conceptId1=404684003&edition=MAIN/2024-05-01&release=&languages=en [Online.
+L01224	Accessed 23-Mar-2024].
+L01225	116.
+L01226	Naji S Jalab HA Kareem SA A survey on skin detection in colored images Artificial Intelligence Review 2019 52 1041 1087 10.1007/s10462-018-9664-9 Naji, S., Jalab, H.
+L01227	A. & Kareem, S.
+L01228	A.
+L01229	A survey on skin detection in colored images.
+L01230	Artificial Intelligence Review 52 , 1041–1087, 10.1007/s10462-018-9664-9 (2019).
+L01231	117.
+L01232	Nanni L Loreggia A Lumini A Dorizza A A Standardized Approach for Skin Detection: Analysis of the Literature and Case Studies Journal of Imaging 2023 9 35 10.3390/jimaging9020035 36826954 PMC9965146 Nanni, L., Loreggia, A., Lumini, A. & Dorizza, A.
+L01233	A Standardized Approach for Skin Detection: Analysis of the Literature and Case Studies.
+L01234	Journal of Imaging 9 , 35, 10.3390/jimaging9020035 (2023).
+L01235	36826954 10.3390/jimaging9020035 PMC9965146 118.
+L01236	ISIC.
+L01237	International Skin Imaging Collaboration: Melanoma Project (2023).
+L01238	119.
+L01239	MedMNIST.
+L01240	Github – experiments at 8b0f553. https://github.com/MedMNIST/experiments/tree/8b0f553f95ea6b5f5517e49c539952cb21c79d89 . [Online.
+L01241	Accessed 7-Jan-2024].
+L01242	120.
+L01243	Kingma, D.
+L01244	P. & Ba, J.
+L01245	Adam: A Method for Stochastic Optimization. arXiv 10.48550/ARXIV.1412.6980 (2014).
+L01246	121.
+L01247	Paszke, A. et al.
+L01248	PyTorch: An Imperative Style, High-Performance Deep Learning Library.
+L01249	In Proceedings of the 33rd International Conference on Neural Information Processing Systems , 8026–8037 (Curran Associates Inc., Red Hook, NY, USA, 2019).
+L01250	122.
+L01251	Wikipedia contributors.
+L01252	Disjoint-set data structure — Wikipedia, the free encyclopedia [Online.
+L01253	Accessed 7-Jan-2024] (2023).
+L01254	123.
+L01255	Groh, M.
+L01256	Github – fitzpatrick17k at 26d5074. https://github.com/mattgroh/fitzpatrick17k/tree/26d50745348f82a76f872ed7924361d1dccd629e . [Online.
+L01257	Accessed 7-Jan-2024].
+L01258	124.
+L01259	Gugger, S. et al.
+L01260	Accelerate: Training and inference at scale made simple, efficient and adaptable. https://github.com/huggingface/accelerate [Online.
+L01261	Accessed 19-Jun-2023] (2022) 125.
+L01262	MedMNIST.
+L01263	MedMNIST – 18x standardized
+L01264	datasets for 2D and 3D biomedical image classification. https://www.medmnist.com [Online.
+L01265	Accessed 19-Jun-2023].
+L01266	126.
+L01267	ISIC.
+L01268	ISIC Challenge
+L01269	Datasets – 2018. https://challenge.isic-archive.com/data/#2018 [Online.
+L01270	Accessed 19-Jun-2023].

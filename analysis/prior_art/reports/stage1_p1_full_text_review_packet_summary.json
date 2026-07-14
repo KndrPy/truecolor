@@ -1,0 +1,16 @@
+{
+  "flattened_text_packet_count": 4,
+  "full_text_paper_count": 6,
+  "manifest_csv": "analysis/prior_art/scientific_extraction/stage1_p1_full_text_review_packet_manifest.csv",
+  "manifest_json": "analysis/prior_art/scientific_extraction/stage1_p1_full_text_review_packet_manifest.json",
+  "maximum_word_count_delta": 3,
+  "physical_line_packet_count": 2,
+  "purpose": "Create stable line-addressable review packets while preserving source text.",
+  "record_state": "SOURCE_PACKET_READY",
+  "review_packet_count": 6,
+  "schema_version": "1.1.0",
+  "scientific_inference_performed": false,
+  "total_detected_sections": 341,
+  "total_numbered_lines": 3654,
+  "work_package": "S1-EXTRACT-02A"
+}

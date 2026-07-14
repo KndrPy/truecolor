@@ -1,0 +1,37 @@
+[
+  {
+    "classification": "ABSTRACT",
+    "line": 16,
+    "text": "Abstract: Artificial intelligence (AI) in dermatology has moved beyond the early paradigm of single-image"
+  },
+  {
+    "classification": "INTRODUCTION",
+    "line": 35,
+    "text": "1. Introduction body site, distribution, skin tone, symptoms, palpation,"
+  },
+  {
+    "classification": "DATA",
+    "line": 69,
+    "text": "data (10-15). The goal is not simply to improve top-1 care physicians, or specialists using different devices,"
+  },
+  {
+    "classification": "DATA",
+    "line": 226,
+    "text": "data acquisition and clinical questioning rather than Melanoma screening illustrates this distinction. For"
+  },
+  {
+    "classification": "DATA",
+    "line": 261,
+    "text": "4.1. Data quality and annotation: Labels must depict validation, counterfactual removal of rulers and markers,"
+  },
+  {
+    "classification": "DATA",
+    "line": 288,
+    "text": "data scaling. common teledermatology scenarios, including multiple-"
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 553,
+    "text": "7. Conclusion the prevalence and impact of skin conditions. J Invest"
+  }
+]

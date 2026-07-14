@@ -1,0 +1,57 @@
+[
+  {
+    "classification": "ABSTRACT",
+    "line": 10,
+    "text": "Abstract (HSIs) typically have a multitude of spectral bands rang-"
+  },
+  {
+    "classification": "INTRODUCTION",
+    "line": 44,
+    "text": "1. Introduction sponding HSI [16, 33, 4, 26, 28, 32]. Besides, the self-"
+  },
+  {
+    "classification": "METHODS",
+    "line": 99,
+    "text": "methods have been widely studied and developed with the duce the computational burden. Hu et al. [14] proposed"
+  },
+  {
+    "classification": "METHODS",
+    "line": 241,
+    "text": "Method Method"
+  },
+  {
+    "classification": "METHODS",
+    "line": 257,
+    "text": "Method MRAE Runtime/s Compute Platform"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 317,
+    "text": "4.3. Results"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 334,
+    "text": "results, we display some visual reconstructed HSIs and the"
+  },
+  {
+    "classification": "RESULTS",
+    "line": 345,
+    "text": "result. Additional two models with 8 DRABs and 200 out-"
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 351,
+    "text": "5. Conclusion"
+  },
+  {
+    "classification": "METHODS",
+    "line": 352,
+    "text": "method as NTIRE2020 “Real World” track. Also, addi-"
+  },
+  {
+    "classification": "REFERENCES",
+    "line": 366,
+    "text": "References [14] Jie Hu, Li Shen, and Gang Sun. Squeeze-and-excitation net-"
+  }
+]

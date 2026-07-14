@@ -1,0 +1,62 @@
+[
+  {
+    "classification": "METHODS",
+    "line": 12,
+    "text": "Methods Two image recognition models were trained, validated, and tested."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 15,
+    "text": "Results The image recognition models trained and validated on images with light skin color had higher sensitivity, specificity, positive predictive value, negative predictive value, and F1 score than the image recognition models trained and validated on images of skin of color for differentiation between melanoma"
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 17,
+    "text": "Conclusions A higher number of images of dermatological diseases in individuals with darker skin color than images of dermatological diseases in individuals with light skin color would need to be gathered for artificial intelligence models to perform equally well. deep learning melanoma basal cell carcinoma"
+  },
+  {
+    "classification": "INTRODUCTION",
+    "line": 20,
+    "text": "Introduction"
+  },
+  {
+    "classification": "METHODS",
+    "line": 29,
+    "text": "Methods Open-source images of melanoma and basal cell carcinoma (BCC) were acquired from the Hellenic Dermatological Atlas [ 4 ], the Dermatology Atlas [ 5 ], the Interactive Dermatology Atlas [ 6 ], and DermNet NZ [ 7 ]."
+  },
+  {
+    "classification": "METHODS",
+    "line": 31,
+    "text": "methodology as described previously [ 8 ]."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 41,
+    "text": "results were statistically analyzed."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 52,
+    "text": "Results When asked to differentiate between melanoma and BCC, the image recognition model trained and validated on images of light skin color had higher sensitivity, specificity, PPV, NPV, and F1 score than the image recognition model trained and validated on images of skin of color"
+  },
+  {
+    "classification": "DISCUSSION",
+    "line": 64,
+    "text": "Discussion"
+  },
+  {
+    "classification": "LIMITATIONS",
+    "line": 65,
+    "text": "Limitations The number of images available was limited for Fitzpatrick skin types 4 and 5; as such, both the light skin color and skin of color models were investigated with this constraint for the number of images used during training."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 67,
+    "text": "results recur consistently."
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 68,
+    "text": "Conclusion When the same number of images is used for training, validation, and testing, the AI model that was provided images of melanoma and BCC belonging to Fitzpatrick classification skin types 1, 2, and 3 performed better than the AI model that was provided with"
+  }
+]

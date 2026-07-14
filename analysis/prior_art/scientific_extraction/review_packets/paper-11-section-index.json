@@ -1,0 +1,327 @@
+[
+  {
+    "classification": "METHODS",
+    "line": 2,
+    "text": "Methodology, Formal analysis, Data curation, Writing – original draft, Writing – review & editing, Project administration 1 Zaman Tanzida"
+  },
+  {
+    "classification": "METHODS",
+    "line": 3,
+    "text": "Methodology, Formal analysis, Data curation, Writing – original draft, Writing – review & editing, Project administration 1 Okello Amanda M"
+  },
+  {
+    "classification": "METHODS",
+    "line": 4,
+    "text": "Methodology, Formal analysis, Data curation, Writing – original draft, Writing – review & editing, Project administration 1 Dennis Leslie K Conceptualization,"
+  },
+  {
+    "classification": "METHODS",
+    "line": 5,
+    "text": "Methodology, Data curation, Writing – review & editing, Project administration 1 * 1 Department of Epidemiology and Biostatistics, Mel and Enid Zuckerman College of Public Health, Tucson, AZ 85724, USA * Correspondence: ldennis@arizona.edu 8 3 2023 30 3 3189 3189–3200 29 3 2023 © 2023"
+  },
+  {
+    "classification": "ABSTRACT",
+    "line": 9,
+    "text": "Abstract Our goal is to determine whether our"
+  },
+  {
+    "classification": "DATA",
+    "line": 11,
+    "text": "Subjects were asked to self-identify their skin tones using the SASTP."
+  },
+  {
+    "classification": "INTRODUCTION",
+    "line": 21,
+    "text": "Introduction Skin cancer is an important public health issue [ 1 ]."
+  },
+  {
+    "classification": "DATA",
+    "line": 33,
+    "text": "participants or by the same participant at a later time [ 6 ]."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 36,
+    "text": "results represented a fair to good reliability among White populations."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 39,
+    "text": "results for self-assessing risk indicate the need for a more concrete method of describing skin color, such as a more diverse color palette that could be used to better self-assess skin characteristics and skin cancer risk."
+  },
+  {
+    "classification": "METHODS",
+    "line": 46,
+    "text": "Methods 2.1."
+  },
+  {
+    "classification": "DATA",
+    "line": 54,
+    "text": "participants’ skin tones [ 18 ]."
+  },
+  {
+    "classification": "DATA",
+    "line": 57,
+    "text": "subjects who cannot tan."
+  },
+  {
+    "classification": "DATA",
+    "line": 61,
+    "text": "Participants had the ability to hold up the palette to compare to their forearm and inner arm during"
+  },
+  {
+    "classification": "DATA",
+    "line": 62,
+    "text": "data collection."
+  },
+  {
+    "classification": "DATA",
+    "line": 72,
+    "text": "participants’ upper-inner arm and outer forearm."
+  },
+  {
+    "classification": "DATA",
+    "line": 97,
+    "text": "participants chose from nine skin tone choices which they believed to match their (1) upper-inner arm and (2) forearm."
+  },
+  {
+    "classification": "DATA",
+    "line": 102,
+    "text": "data collection booth at the annual Melanoma Walk to create awareness of melanoma on campus and recruited students within an undergraduate statistics course, collecting their data either before or after class on several occasions."
+  },
+  {
+    "classification": "DATA",
+    "line": 105,
+    "text": "participants and collected data."
+  },
+  {
+    "classification": "DATA",
+    "line": 107,
+    "text": "participants were allowed to withdraw at any time or refuse to answer any questions."
+  },
+  {
+    "classification": "DATA",
+    "line": 109,
+    "text": "subjects who participated in the test–retest reliability, they were recontacted 3–5 weeks after their first in-person survey; some preferred to be recontacted via email and an online second survey."
+  },
+  {
+    "classification": "DATA",
+    "line": 110,
+    "text": "Data were entered and stored on password-protected computers, and physical copies of the questionnaires were kept locked in an investigator’s office."
+  },
+  {
+    "classification": "DATA",
+    "line": 114,
+    "text": "participants reporting use of tanning beds or artificial tanning sprays and creams in the prior month, as the artificial tan can influence the melanin index measurements."
+  },
+  {
+    "classification": "DATA",
+    "line": 116,
+    "text": "subjects were more likely to be age 18–29 and female."
+  },
+  {
+    "classification": "DATA",
+    "line": 125,
+    "text": "subjects who repeated questions about the color of their upper-inner arm and color of their forearm using the SASTP re-assessed one month later [ 18 ]."
+  },
+  {
+    "classification": "DATA",
+    "line": 127,
+    "text": "subjects completed the re-assessment in-person and half completed it online."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 133,
+    "text": "results on the same"
+  },
+  {
+    "classification": "DATA",
+    "line": 134,
+    "text": "subjects."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 145,
+    "text": "Results Of the 188"
+  },
+  {
+    "classification": "DATA",
+    "line": 146,
+    "text": "participants, about 50% self-classified as White, 30% as Hispanic or White-Hispanic, 12% as Asian, 3% Native American or Alaskan, and 4% African American."
+  },
+  {
+    "classification": "DATA",
+    "line": 148,
+    "text": "participants were 18–29 years of age (81%), with 5% ages 30–39, 1% ages 40–49, 8% ages 50–59, and 5% age 60 or older."
+  },
+  {
+    "classification": "DATA",
+    "line": 150,
+    "text": "participants were female (70%)."
+  },
+  {
+    "classification": "DATA",
+    "line": 152,
+    "text": "subjects excluded from validity analyses for use of tanning sprays or creams in the prior month were more likely to be younger, female, and more likely to burn."
+  },
+  {
+    "classification": "DATA",
+    "line": 154,
+    "text": "participants had slightly lower average melanin ( M ) index value ( M = 39.4) than male"
+  },
+  {
+    "classification": "DATA",
+    "line": 155,
+    "text": "participants ( M = 41.2) for the upper-inner arm (unexposed), and even more so for average melanin of the forearm (exposed), with 46.2 for females compared to 52.7 for males."
+  },
+  {
+    "classification": "DATA",
+    "line": 160,
+    "text": "subjects reporting a severe and painful sunburn to 42.2 for those who answered no burn."
+  },
+  {
+    "classification": "DATA",
+    "line": 165,
+    "text": "participants had the greatest variability of melanin index values with a range of 20 to 60."
+  },
+  {
+    "classification": "DATA",
+    "line": 167,
+    "text": "subjects who self-reported their"
+  },
+  {
+    "classification": "DATA",
+    "line": 170,
+    "text": "subjects of a wide range of skin types, the survey and colorimeter data did not capture very many"
+  },
+  {
+    "classification": "DATA",
+    "line": 171,
+    "text": "subjects who self-classified as Black or had melanin values above 70 ( Table 1 ; Figure 2 )."
+  },
+  {
+    "classification": "DATA",
+    "line": 188,
+    "text": "participants."
+  },
+  {
+    "classification": "DATA",
+    "line": 191,
+    "text": "subjects choosing 7, 8, or 9."
+  },
+  {
+    "classification": "DATA",
+    "line": 196,
+    "text": "subjects; SASTP, Self-Assessment of Skin Tone Palette; 1 Instructions: Using the color palette provided, what color best matches the skin color of your…; 2 The upper-limit of validity was estimated based on the reliability; 3 Test–retest reliability of the Self-Assessment of Skin Tone Palette (SASTP)"
+  },
+  {
+    "classification": "DISCUSSION",
+    "line": 199,
+    "text": "Discussion Our SASTP was developed to include Hispanic people and others in skin cancer research that is often restricted to non-Hispanic White people."
+  },
+  {
+    "classification": "DATA",
+    "line": 223,
+    "text": "subjects who reported to have “no tan” ( M = 44) were higher than those “deeply tanned” ( M = 41)."
+  },
+  {
+    "classification": "DATA",
+    "line": 231,
+    "text": "participants [ 42 ]."
+  },
+  {
+    "classification": "DATA",
+    "line": 249,
+    "text": "participants in the Philadelphia area in spring of 2007."
+  },
+  {
+    "classification": "DATA",
+    "line": 258,
+    "text": "subjects, and an"
+  },
+  {
+    "classification": "DATA",
+    "line": 261,
+    "text": "subjects that self-identified as White and Hispanic, along with a few other"
+  },
+  {
+    "classification": "DATA",
+    "line": 262,
+    "text": "subjects who self-classified as Asian, Native American, or African American."
+  },
+  {
+    "classification": "DATA",
+    "line": 267,
+    "text": "participants selected skin tones C1-C3 that were in the “dark” skin tone category."
+  },
+  {
+    "classification": "DATA",
+    "line": 269,
+    "text": "participants for each of the nine skin tones would provide a more accurate representation of the full-scale."
+  },
+  {
+    "classification": "LIMITATIONS",
+    "line": 272,
+    "text": "limitations of this study include a younger population, therefore, additional research among older"
+  },
+  {
+    "classification": "DATA",
+    "line": 273,
+    "text": "subjects is warranted."
+  },
+  {
+    "classification": "DATA",
+    "line": 275,
+    "text": "data collection [ 48 ]."
+  },
+  {
+    "classification": "CONCLUSION",
+    "line": 278,
+    "text": "Conclusions Our SASTP was shown to be an alternative, less expensive method that is comparable to a colorimeter within our predominantly White and Hispanic population."
+  },
+  {
+    "classification": "DATA",
+    "line": 281,
+    "text": "participants to choose the color closest to their skin color."
+  },
+  {
+    "classification": "METHODS",
+    "line": 285,
+    "text": "methodology, M.K.M., T.Z., A.M.O. and L.K.D.; formal analysis, M.K.M., T.Z. and A.M.O.; data curation, M.K.M., T.Z., A.M.O. and L.K.D.; writing—original draft preparation, M.K.M., T.Z. and A.M.O.; writing—review and editing, M.K.M., T.Z., A.M.O. and L.K.D.; project administration, M.K.M., T.Z., A.M.O. and L.K.D."
+  },
+  {
+    "classification": "DATA",
+    "line": 290,
+    "text": "Subjects were provided elements of consent for these anonymously collected."
+  },
+  {
+    "classification": "DATA",
+    "line": 291,
+    "text": "Data Availability Statement These data were collected with IRB approval as part of course so were not publicly."
+  },
+  {
+    "classification": "METHODS",
+    "line": 296,
+    "text": "methods, instructions or products referred to in the content."
+  },
+  {
+    "classification": "REFERENCES",
+    "line": 297,
+    "text": "References 1."
+  },
+  {
+    "classification": "METHODS",
+    "line": 377,
+    "text": "Methods for Rates and Proportions."
+  },
+  {
+    "classification": "METHODS",
+    "line": 434,
+    "text": "methods of measuring skin color and damage."
+  },
+  {
+    "classification": "RESULTS",
+    "line": 538,
+    "text": "Results from the 2015 Summer ConsumerStyles survey."
+  }
+]

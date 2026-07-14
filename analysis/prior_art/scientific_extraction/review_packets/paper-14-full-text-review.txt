@@ -1,0 +1,79 @@
+L00001	pmc JMIR Dermatol JMIR Dermatol 4421 jmirderm JDERM JMIR Dermatology 2562-0959 JMIR Publications Inc.
+L00002	PMC10334948 PMC10334948.1 10334948 10334948 37632853 10.2196/31697 v4i2e31697 1 Short Paper Short Paper Performance of Artificial Intelligence Imaging Models in Detecting Dermatological Manifestations in Higher Fitzpatrick Skin Color Classifications Dellavalle Robert Sivesind Torunn Mytle Dr.
+L00003	Nutan Koritala Thoyaja Aggarwal Pushkar MBA https://orcid.org/0000-0001-5271-8127 1 College of Medicine University of Cincinnati 3230 Eden Ave Cincinnati, OH, 45267 United States 1 2402000896 aggarwpr@mail.uc.edu 1 College of Medicine University of Cincinnati Cincinnati, OH United States Corresponding Author: Pushkar Aggarwal aggarwpr@mail.uc.edu Jul-Dec 2021 12 10
+L00004	2021 4 2 440486 e31697 30 6 2021 18 8 2021 23 8 2021 26 8 2021 12 10 2021 18 07 2023 20 09 2024 ©Pushkar Aggarwal.
+L00005	Originally published in JMIR Dermatology (http://derma.jmir.org), 12.10.2021.
+L00006	2021 https://creativecommons.org/licenses/by/4.0/ This is an open-access article distributed under the terms of the Creative Commons Attribution License ( https://creativecommons.org/licenses/by/4.0/ ), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work, first published in JMIR Dermatology Research, is properly cited.
+L00007	The complete bibliographic information, a link to the original publication on http://derma.jmir.org , as well as this copyright and license information must be included.
+L00008	Background The performance of deep-learning image recognition models is below par when applied to images with Fitzpatrick classification skin types 4 and 5.
+L00009	Objective The
+L00010	objective of this research was to assess whether image recognition models perform differently when differentiating between dermatological diseases in individuals with darker skin color (Fitzpatrick skin types 4 and 5) than when differentiating between the same dermatological diseases in Caucasians (Fitzpatrick skin types 1, 2,
+L00011	and 3) when both models are trained on the same number of images.
+L00012	Methods Two image recognition models were trained, validated, and tested.
+L00013	The goal of each model was to differentiate between melanoma and basal cell carcinoma.
+L00014	Open-source images of melanoma and basal cell carcinoma were acquired from the Hellenic Dermatological Atlas, the Dermatology Atlas, the Interactive Dermatology Atlas, and DermNet NZ.
+L00015	Results The image recognition models trained and validated on images with light skin color had higher sensitivity, specificity, positive predictive value, negative predictive value, and F1 score than the image recognition models trained and validated on images of skin of color for differentiation between melanoma
+L00016	and basal cell carcinoma.
+L00017	Conclusions A higher number of images of dermatological diseases in individuals with darker skin color than images of dermatological diseases in individuals with light skin color would need to be gathered for artificial intelligence models to perform equally well. deep learning melanoma basal cell carcinoma
+L00018	skin of color image recognition dermatology disease convolutional neural network specificity prediction artificial intelligence skin color skin tone pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no pmc-status-released yes pmc-prop-open-access yes pmc-prop-olf no pmc-prop-manuscript no pmc-prop-legally-suppressed no pmc-prop-has-pdf yes pmc-prop-has-supplement no pmc-prop-pdf-only no pmc-prop-suppress-copyright no pmc-prop-is-real-version no pmc-prop-is-scanned-article
+L00019	no pmc-prop-preprint no pmc-prop-in-epmc yes pmc-license-ref CC BY
+L00020	Introduction
+L00021	Background In dermatology, artificial intelligence (AI) is poised to improve the efficiency and accuracy of traditional diagnostic approaches, including visual examination, skin biopsy, and histopathologic examination [ 1 ].
+L00022	Deep-learning image recognition models have had success in differentiating between dermatological diseases using images of light-skinned individuals.
+L00023	However, when these models are tested on images of people with skin of color, the performance drops [ 2 ].
+L00024	It is thought that the primary reason for this difference is the lack of available images of dermatological diseases in individuals with darker skin color (Fitzpatrick classification of skin types 4 and 5) [ 3 ].
+L00025	However, is it also possible that even when the same number of images are available, image recognition models will have a harder time differentiating between dermatological diseases in individuals with Fitzpatrick skin types 4 and 5 compared to skin types 1, 2, and 3?
+L00026	Objective The
+L00027	objective of this research was to assess whether image recognition models perform differently when differentiating between dermatological diseases in individuals of color (Fitzpatrick skin types 4 and 5) than when differentiating between the same dermatological diseases in Caucasians (Fitzpatrick skin types 1, 2, and 3)
+L00028	when both models are trained on an equal number of images.
+L00029	Methods Open-source images of melanoma and basal cell carcinoma (BCC) were acquired from the Hellenic Dermatological Atlas [ 4 ], the Dermatology Atlas [ 5 ], the Interactive Dermatology Atlas [ 6 ], and DermNet NZ [ 7 ].
+L00030	Two image recognition models were trained, validated, and tested using
+L00031	methodology as described previously [ 8 ].
+L00032	TensorFlow [ 9 ], an open-source software library by Google, was used as a deep-learning framework and was used to retrain Inception, version 3 (v3).
+L00033	Inception v3 is a deep convolutional neural network.
+L00034	This neural network consists of a hierarchy of multiple computational layers that each have an input and output.
+L00035	All layers except the final layer of this neural network are pretrained with more than 1.2 million images.
+L00036	The final layer of the neural network was retrained with the gathered dermatological images.
+L00037	During the retraining process, the neural network underwent both a training and validation step.
+L00038	In the training step, the inputted images were used to train the neural network.
+L00039	In the validation step, inputted naïve images were used to iteratively assess training accuracy [ 10 ].
+L00040	After the model had been retrained (trained and validated), a user-inputted testing/assessment step was performed in which test images were inputted and the
+L00041	results were statistically analyzed.
+L00042	The program assessment output is expressed in terms of percentages of the probability of each of the dermatological manifestations for each testing image inputted.
+L00043	R software (R Foundation for Statistical Computing) [ 11 ] was used to perform the statistical analysis.
+L00044	Sensitivity, specificity, positive predictive value (PPV), negative predictive value (NPV), and F1 score were calculated for each dermatological manifestation.
+L00045	The F1 score is the harmonic average of the sensitivity and PPV (mean of the recall and precision).
+L00046	The goal of each model was to differentiate between melanoma and BCC.
+L00047	The first model was: Trained on 150 images of individuals with light skin color (Fitzpatrick skin types 1, 2, and 3), 75 melanoma and 75 BCC images; Validated on 38 images of individuals with light skin color (Fitzpatrick skin types 1, 2, and 3), 19
+L00048	melanoma and 19 BCC images; Tested on 30 images of individuals with light skin color (Fitzpatrick skin types 1, 2, and 3), 15 melanoma and 15 BCC images.
+L00049	The second model was: Trained on 150 images of individuals with skin of color (Fitzpatrick skin types 4 and 5), 75 melanoma and 75 BCC images; Validated on 38 images of individuals with skin of color (Fitzpatrick skin types 4 and 5), 19 melanoma and
+L00050	19 BCC images; Tested on 30 images of individuals with skin of color (Fitzpatrick skin types 4 and 5), 15 melanoma and 15 BCC images.
+L00051	Area under the receiver operating characteristic (AUC) curves for melanoma and BCC were calculated to determine the performance of the two models.
+L00052	Results When asked to differentiate between melanoma and BCC, the image recognition model trained and validated on images of light skin color had higher sensitivity, specificity, PPV, NPV, and F1 score than the image recognition model trained and validated on images of skin of color
+L00053	( Table 1 ).
+L00054	In predicting melanoma, the image recognition model trained and validated on images of light skin color had a sensitivity of 0.60, specificity of 0.53, PPV of 0.56, NPV of 0.57, and F1 score of 0.58.
+L00055	On the other hand, in predicting melanoma, the same image recognition model trained and validated on images of skin of color had a sensitivity of 0.53, specificity of 0.47, PPV of 0.50, NPV of 0.50, and F1 score of 0.52.
+L00056	In predicting BCC, the image recognition model trained and validated on images of light skin color had a sensitivity of 0.53, specificity of 0.60, PPV of 0.57, NPV of 0.56, and F1 score of 0.55.
+L00057	On the other hand, for prediction of BCC, the same image recognition model trained and validated on images of skin of color had a sensitivity of 0.47, specificity of 0.53, PPV of 0.50, NPV of 0.50, and F1 score of 0.48.
+L00058	The average AUC for the two light skin color image recognition models was 0.598, compared to 0.500 (values point out the difference) for the skin of color image recognition models ( Table 1 and Figure 1 ).
+L00059	Table 1 Statistical measures of the deep-learning model trained, validated, and tested on different Fitzpatrick skin type classifications (types 1, 2, and 3 vs types 4 and 5) for evaluating melanoma and basal cell carcinoma.
+L00060	Measure Melanoma model Basal cell carcinoma model Skin types 1, 2, and 3 Skin types 4 and 5 Skin types 1, 2, and 3 Skin types 4 and 5 Sensitivity 0.60 0.53 0.53 0.47 Specificity 0.53 0.47 0.60 0.53 Positive predictive value 0.56 0.50 0.57
+L00061	0.50 Negative predictive value 0.57 0.50 0.56 0.50 F1 score 0.58 0.52 0.55 0.48 Area under the receiver operating characteristic curve 0.59 0.57 0.60 0.53 Figure 1 Receiver operating characteristic curves for melanoma and basal cell carcinoma (BCC) in each of the two models for
+L00062	different skin types.
+L00063	FC: Fitzpatrick classification.
+L00064	Discussion
+L00065	Limitations The number of images available was limited for Fitzpatrick skin types 4 and 5; as such, both the light skin color and skin of color models were investigated with this constraint for the number of images used during training.
+L00066	A larger sample size would have been better to test if the
+L00067	results recur consistently.
+L00068	Conclusion When the same number of images is used for training, validation, and testing, the AI model that was provided images of melanoma and BCC belonging to Fitzpatrick classification skin types 1, 2, and 3 performed better than the AI model that was provided with
+L00069	images of melanoma and BCC in skin types 4 and 5.
+L00070	This may be because dermatological diseases can have more variability in presentation in individuals with darker skin; additionally, cutaneous manifestations may not be as easily distinguished from the surrounding skin in darker-skinned individuals.
+L00071	As such, a higher number of images of skin of color with dermatological diseases than images of light skin color with dermatological diseases would need to be gathered for the AI models to perform equally well.
+L00072	Conflicts of Interest: None declared.
+L00073	Abbreviations AI artificial intelligence AUC area under the receiver operating characteristic BCC basal cell carcinoma NPV negative predictive value PPV positive predictive value 1 Patel S Wang JV Motaparthi K Lee JB Artificial intelligence in dermatology for the clinician Clinics in Dermatology 2021 3 21
+L00074	8 e208 10.1016/j.clindermatol.2021.03.012 34237259 S1473-3099(21)00397-2 34809771 2 Kamulegeya LH Okello M Bwanika JM MusinguziD D Lubega W Rusoke D Nassiwa F Börve F Using artificial intelligence on dermatology conditions in Uganda: A case for diversity in training data sets for machine learning bioRxiv.
+L00075	Preprint posted online October 31, 2019 https://www.biorxiv.org/content/10.1101/826057v1 10.1101/826057 PMC10782289 38223594 3 Adamson AS Smith A Machine Learning and Health Care Disparities in Dermatology JAMA Dermatol 2018 11 01 154 11 1247 1248 10.1001/jamadermatol.2018.2348 30073260 2688587 30073260 4 Verros CD Hellenic Dermatological Atlas 2011 2021-09-02 http://www.hellenicdermatlas.com/en/
+L00076	5 da Silva SF Dermatology Atlas 2021 2021-09-02 http://www.atlasdermatologico.com.br/ 6 Usatine RP Madden BD Interactive Dermatology Atlas 2019 2021-09-02 https://www.dermatlas.net/ 7 Oakley A Suhonen R Ashton R Waikato District Health Board New Zealand Dermatological Society Inc DermNet NZ 2021-09-02 https://dermnetnz.org/ 8 Aggarwal Pushkar Data augmentation
+L00077	in dermatology image recognition using machine learning Skin Res Technol 2019 11 25 6 815 820 10.1111/srt.12726 31140653 31140653 9 Abadi M Barham P Chen J Chen Z Davis A Dean J Devin M TensorFlow: A system for large-scale machine learning arXiv.
+L00078	Preprint posted online May 27, 2016 10 Zhang YC Kagen AC Machine Learning Interface for Medical Image Analysis J Digit Imaging 2017 10 30 5 615 621 10.1007/s10278-016-9910-0 27730415 10.1007/s10278-016-9910-0 27730415 PMC5603426 11 R Core Team R: A language and environment for statistical computing 2021-09-02
+L00079	Vienna, Austria R Foundation for Statistical Computing http://www.R-project.org/
