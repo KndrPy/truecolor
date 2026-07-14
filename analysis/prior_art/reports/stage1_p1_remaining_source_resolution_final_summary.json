@@ -1,0 +1,20 @@
+{
+  "all_terminal_states_closed": true,
+  "attempt_count": 42,
+  "attempts_csv": "analysis/prior_art/acquisition/manual_recovery/stage1_p1_remaining_source_attempts.csv",
+  "output_csv": "analysis/prior_art/acquisition/manual_recovery/stage1_p1_remaining_source_resolution_final.csv",
+  "paper_count": 11,
+  "qa_adjudicated_count": 7,
+  "qa_adjudication_csv": "analysis/prior_art/acquisition/manual_recovery/stage1_p1_source_resolution_qa_adjudication.csv",
+  "qa_exception_count": 7,
+  "resolution_rule": "Terminal states reflect the strongest scientifically validated content actually obtained. Metadata or a nominal document URL alone does not establish full scientific-text availability.",
+  "schema_version": "1.1.0",
+  "terminal_state_counts": {
+    "ABSTRACT_ONLY": 6,
+    "FULL_TEXT_ACQUIRED": 1,
+    "PAYWALLED_OR_INACCESSIBLE": 2,
+    "SOURCE_NOT_FOUND": 1,
+    "SUBSTANTIVE_PARTIAL_ONLY": 1
+  },
+  "work_package": "S1-SOURCE-02G"
+}

@@ -1,0 +1,22 @@
+{
+  "fixed_remaining_paper_count": 11,
+  "input_state_counts": {
+    "ABSTRACT_OR_PREVIEW_ONLY": 6,
+    "SUBSTANTIVE_PARTIAL_TEXT": 1,
+    "UNRESOLVED_NO_VALIDATED_SOURCE": 4
+  },
+  "output_csv": "analysis/prior_art/acquisition/manual_recovery/stage1_p1_remaining_source_resolution_queue.csv",
+  "output_json": "analysis/prior_art/acquisition/manual_recovery/stage1_p1_remaining_source_resolution_queue.json",
+  "resolution_status": "OPEN",
+  "schema_version": "1.0.0",
+  "scope_rule": "Resolve only these eleven fixed P1 papers. Do not add papers, parsers, ranking logic, retrieval architecture, or corpus discovery.",
+  "terminal_states": [
+    "FULL_TEXT_ACQUIRED",
+    "AUTHOR_MANUSCRIPT_ACQUIRED",
+    "SUBSTANTIVE_PARTIAL_ONLY",
+    "ABSTRACT_ONLY",
+    "PAYWALLED_OR_INACCESSIBLE",
+    "SOURCE_NOT_FOUND"
+  ],
+  "work_package": "S1-SOURCE-02C"
+}

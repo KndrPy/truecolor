@@ -1,0 +1,51 @@
+[
+  {
+    "adjudication_basis": "Springer returned cookie-error article HTML rather than a validated PDF or complete structured article. The available content did not establish complete methods, results, and discussion sections.",
+    "canonical_key": "doi:10.1007/s10043-010-0040-5",
+    "final_terminal_state": "ABSTRACT_ONLY",
+    "prior_terminal_state": "ABSTRACT_ONLY",
+    "qa_disposition": "CLOSED"
+  },
+  {
+    "adjudication_basis": "Springer returned cookie-error article HTML rather than a validated PDF or complete structured article. The available content did not establish complete methods, results, and discussion sections.",
+    "canonical_key": "doi:10.1007/s10043-015-0177-3",
+    "final_terminal_state": "ABSTRACT_ONLY",
+    "prior_terminal_state": "ABSTRACT_ONLY",
+    "qa_disposition": "CLOSED"
+  },
+  {
+    "adjudication_basis": "Identity-valid PubMed abstract contained approximately 1,140 words. The Elsevier XML response contained only 67 words and did not provide complete methods, results, discussion, or references.",
+    "canonical_key": "doi:10.1046/j.0022-202x.2001.01577.x",
+    "final_terminal_state": "ABSTRACT_ONLY",
+    "prior_terminal_state": "ABSTRACT_ONLY",
+    "qa_disposition": "CLOSED"
+  },
+  {
+    "adjudication_basis": "The identity-valid PMC article page supplied approximately 1,943 words of substantive scientific content, but complete methods, results, and discussion structure was not validated.",
+    "canonical_key": "doi:10.1111/jdv.17076",
+    "final_terminal_state": "SUBSTANTIVE_PARTIAL_ONLY",
+    "prior_terminal_state": "ABSTRACT_ONLY",
+    "qa_disposition": "CLOSED"
+  },
+  {
+    "adjudication_basis": "A publisher document route and submitted-version repository route were recorded, but Optica bot protection and the repository access gate prevented retrieval of a validated scientific document.",
+    "canonical_key": "doi:10.1364/oe.425401",
+    "final_terminal_state": "PAYWALLED_OR_INACCESSIBLE",
+    "prior_terminal_state": "SOURCE_NOT_FOUND",
+    "qa_disposition": "CLOSED"
+  },
+  {
+    "adjudication_basis": "The identity-valid Imaging Science article page contained approximately 554 words and did not establish complete methods, results, discussion, or reference content.",
+    "canonical_key": "doi:10.2352/issn.2470-1173.2016.13.iqsp-219",
+    "final_terminal_state": "ABSTRACT_ONLY",
+    "prior_terminal_state": "SOURCE_NOT_FOUND",
+    "qa_disposition": "CLOSED"
+  },
+  {
+    "adjudication_basis": "Open-access and Creative Commons metadata were present, but the MDPI PDF and article routes returned an interstitial or access-control HTML payload rather than the scientific document. The classification denotes technical inaccessibility, not a paywall.",
+    "canonical_key": "doi:10.3390/app15158321",
+    "final_terminal_state": "PAYWALLED_OR_INACCESSIBLE",
+    "prior_terminal_state": "PAYWALLED_OR_INACCESSIBLE",
+    "qa_disposition": "CLOSED"
+  }
+]

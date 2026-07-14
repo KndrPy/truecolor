@@ -1,0 +1,11 @@
+{
+  "output_csv": "analysis/prior_art/acquisition/manual_recovery/stage1_p1_remaining_route_dossier.csv",
+  "output_json": "analysis/prior_art/acquisition/manual_recovery/stage1_p1_remaining_route_dossier.json",
+  "paper_count": 11,
+  "papers_with_downloadable_routes": 10,
+  "papers_with_repository_routes": 7,
+  "route_count": 101,
+  "schema_version": "1.0.0",
+  "scope_rule": "Use only the fixed eleven-paper recovery tranche and already-recorded paper-specific locations.",
+  "work_package": "S1-SOURCE-02D"
+}

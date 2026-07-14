@@ -1,18 +1,20 @@
 schema_version: 1.0.0
 stage: 1
 state: BLOCKED
-blocker_code: P1_SCIENTIFIC_SOURCE_COVERAGE_INCOMPLETE
-finding: The fixed 16-paper P1 closest-paper tranche has five validated full scientific
-  texts, one substantive partial text, six abstract or preview-only sources, and four
-  papers without a validated scientific source.
+blocker_code: P1_SCIENTIFIC_ADJUDICATION_INCOMPLETE
+finding: Source acquisition for the fixed 16-paper P1 tranche is terminally closed.
+  Six papers have validated full scientific text, one has substantive partial text,
+  six have abstract or preview evidence only, and three have no validated scientific
+  source. Scientific extraction, overlap adjudication, second review, kill-condition
+  decisions, and synthesis remain open.
 observed_assets:
   review_papers: 48
   p1_review_papers: 16
-  p1_validated_source_records: 12
-  p1_full_scientific_texts: 5
+  p1_validated_source_records: 13
+  p1_full_scientific_texts: 6
   p1_substantive_partial_texts: 1
   p1_abstract_or_preview_only: 6
-  p1_unresolved_sources: 4
+  p1_unresolved_sources: 3
   pre_acquisition_papers_with_scientific_content: 0
   pre_acquisition_canonical_documents: 0
   pre_acquisition_pdf_files: 0
@@ -23,17 +25,24 @@ observed_assets:
   current_local_xml_sources: 4
   current_local_html_sources: 6
   current_local_extracted_texts: 12
+  p1_terminal_source_states: 16
+  p1_complete_review_ready: 6
+  p1_bounded_review_ready: 7
 prohibited_inferences:
 - Do not infer methods, equations, datasets, validation, results, or limitations from
   titles or bibliographic metadata.
 - Do not adjudicate novelty overlap before scientific source content is acquired.
 - Do not classify the papers themselves as scientifically insufficient.
-unblock_condition: Acquire and validate sufficient scientific content for every P1
-  closest paper required for complete novelty-overlap adjudication.
+unblock_condition: Complete evidence-bound scientific extraction for all 16 P1 papers,
+  independent second review for the five closest papers, six claim-level overlap matrices,
+  six novelty kill-condition decisions, and the Stage 1 synthesis.
 acquisition_queue: analysis/prior_art/adjudication/stage1_source_acquisition_queue.csv
 availability_evidence: analysis/prior_art/adjudication/stage1_scientific_content_availability.csv
 availability_sha256: 0854b4e26108e902ed12182f23918f4a58fb52152f7e3e09f8ff0e55f44a574e
 p1_source_status: analysis/prior_art/acquisition/stage1_p1_source_status_final.csv
-p1_source_status_sha256: 48d50b641287a1f8322e1665732734903a04f87d700bc5375cda722cb401c978
+p1_source_status_sha256: 330552e2d9abddcd21c6d44907444ecba291f870d2d91c1200422bb5f1d708eb
 manual_recovery_manifest: analysis/prior_art/acquisition/manual_recovery/paper-012-awan-author-manuscript.json
 manual_recovery_manifest_sha256: cbd90a7e0de7f19dc9c78bb3d667309fe5c5945cabe90ef5b40bc6e35cabcd7b
+terminal_resolution_ledger: analysis/prior_art/acquisition/manual_recovery/stage1_p1_remaining_source_resolution_final.csv
+terminal_resolution_ledger_sha256: c867e55439eb37ffe0b7767464710d254019980e761da0c11a73297941468045
+source_acquisition_state: TERMINAL_CLOSED

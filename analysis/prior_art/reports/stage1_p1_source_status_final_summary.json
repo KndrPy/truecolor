@@ -1,6 +1,6 @@
 {
-  "blocker_code": "P1_SCIENTIFIC_SOURCE_COVERAGE_INCOMPLETE",
-  "bounded_review_ready_count": 6,
+  "blocker_code": "P1_SCIENTIFIC_ADJUDICATION_INCOMPLETE",
+  "bounded_review_ready_count": 7,
   "claim_coverage": {
     "TC-NOV-001": {
       "bounded_review_ready_count": 1,
@@ -9,7 +9,7 @@
       "p1_paper_count": 5
     },
     "TC-NOV-002": {
-      "bounded_review_ready_count": 2,
+      "bounded_review_ready_count": 3,
       "full_review_ready_count": 2,
       "not_full_review_ready_count": 7,
       "p1_paper_count": 9
@@ -22,37 +22,49 @@
     },
     "TC-NOV-004": {
       "bounded_review_ready_count": 3,
-      "full_review_ready_count": 2,
-      "not_full_review_ready_count": 3,
+      "full_review_ready_count": 3,
+      "not_full_review_ready_count": 2,
       "p1_paper_count": 5
     },
     "TC-NOV-005": {
-      "bounded_review_ready_count": 2,
+      "bounded_review_ready_count": 3,
       "full_review_ready_count": 2,
       "not_full_review_ready_count": 5,
       "p1_paper_count": 7
     },
     "TC-NOV-006": {
       "bounded_review_ready_count": 3,
-      "full_review_ready_count": 2,
-      "not_full_review_ready_count": 4,
+      "full_review_ready_count": 3,
+      "not_full_review_ready_count": 3,
       "p1_paper_count": 6
     }
   },
-  "complete_review_ready_count": 5,
-  "manual_recovery_records": [
-    "analysis/prior_art/acquisition/manual_recovery/paper-012-awan-author-manuscript.json"
-  ],
+  "complete_review_ready_count": 6,
   "output_csv": "analysis/prior_art/acquisition/stage1_p1_source_status_final.csv",
   "output_json": "analysis/prior_art/acquisition/stage1_p1_source_status_final.json",
   "p1_paper_count": 16,
-  "schema_version": "1.1.0",
+  "remaining_stage_1_work": [
+    "Create sixteen scientific evidence records",
+    "Independently second-review the five closest papers",
+    "Complete six claim-overlap matrices",
+    "Apply six novelty kill conditions",
+    "Write the Stage 1 scientific synthesis"
+  ],
+  "schema_version": "2.0.0",
   "scientific_content_state_counts": {
     "ABSTRACT_OR_PREVIEW_ONLY": 6,
-    "FULL_SCIENTIFIC_TEXT": 5,
+    "FULL_SCIENTIFIC_TEXT": 6,
     "SUBSTANTIVE_PARTIAL_TEXT": 1,
-    "UNRESOLVED_NO_VALIDATED_SOURCE": 4
+    "UNRESOLVED_NO_VALIDATED_SOURCE": 3
   },
+  "source_acquisition_state": "TERMINAL_CLOSED",
   "stage_1_state": "BLOCKED",
-  "work_package": "S1-SOURCE-02B"
+  "terminal_resolution_counts_for_remaining_11": {
+    "ABSTRACT_ONLY": 6,
+    "FULL_TEXT_ACQUIRED": 1,
+    "PAYWALLED_OR_INACCESSIBLE": 2,
+    "SOURCE_NOT_FOUND": 1,
+    "SUBSTANTIVE_PARTIAL_ONLY": 1
+  },
+  "work_package": "S1-SOURCE-02H"
 }
