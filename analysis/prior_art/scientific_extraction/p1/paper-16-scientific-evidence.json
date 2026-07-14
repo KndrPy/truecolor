@@ -16,162 +16,623 @@
   "extraction_scope": "COMPLETE_SCIENTIFIC_EXTRACTION",
   "fields": {
     "algorithm_or_workflow": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00250",
+          "line_start": "L00203",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The proposed architecture and processing workflow are described."
+        },
+        {
+          "line_end": "L00320",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review adds failure testing, external validation, capture controls, and fairness requirements."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Assess incoming image quality and skin tone",
+        "Request missing or improved acquisition data",
+        "Segment relevant lesions",
+        "Analyze morphology and distribution",
+        "Ground findings to anatomical sites",
+        "Extract structured history from text",
+        "Compare current and prior images",
+        "Align clinical and pathology evidence",
+        "Retrieve relevant guidelines or prior cases",
+        "Generate a ranked differential diagnosis",
+        "Calibrate uncertainty",
+        "Provide visual and textual explanations",
+        "Recommend triage or next steps",
+        "Escalate high-risk cases to clinician review",
+        "Reject inadequate inputs safely",
+        "Monitor subgroup and device performance"
+      ]
     },
     "author_claimed_contribution": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00033",
+          "line_start": "L00016",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The abstract states the review's framing and scope."
+        },
+        {
+          "line_end": "L00250",
+          "line_start": "L00203",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The proposed multimodal architecture is described."
+        },
+        {
+          "line_end": "L00470",
+          "line_start": "L00429",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review proposes reporting, validation, fairness, and monitoring requirements."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "A dermatology-specific reframing from lesion classification to multimodal clinical reasoning",
+        "A synthesis of skin-tone bias, optical visibility, acquisition variability, dataset quality, fairness, and deployment challenges",
+        "A proposed multimodal reasoning architecture with interactive data acquisition and clinician oversight",
+        "Recommended fairness-by-design, calibration, external validation, prospective evaluation, and post-deployment monitoring requirements"
+      ]
     },
     "calibration_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00293",
+          "line_start": "L00270",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Color calibration, reference cards, and cross-device validation are recommended."
+        },
+        {
+          "line_end": "L00470",
+          "line_start": "L00429",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review recommends reporting calibration, external validation, and post-deployment recalibration."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "recommendations": [
+          "Color calibration where feasible",
+          "Reference cards where feasible",
+          "Device-stratified validation",
+          "Periodic recalibration",
+          "Subgroup calibration monitoring",
+          "Drift detection after deployment"
+        ],
+        "status": "Recommended calibration controls rather than an executed calibration experiment"
+      }
     },
     "camera_assumptions": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00060",
+          "line_start": "L00052",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Device variation is identified as a source of clinical reliability loss."
+        },
+        {
+          "line_end": "L00293",
+          "line_start": "L00270",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Smartphone color calibration, automatic white balance, and device validation are explicitly discussed."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Real-world dermatology images may originate from heterogeneous smartphone and clinical cameras.",
+        "Automatic white balance can alter apparent erythema and pigmentation.",
+        "Camera and device differences may cause dataset-to-clinic performance degradation.",
+        "Validation should be stratified across devices."
+      ]
     },
     "capture_protocol": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00293",
+          "line_start": "L00270",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review recommends acquisition guidance, calibration, device validation, rejection, and real-world capture testing."
+        }
+      ],
+      "review_notes": "Paper 16 does not execute this protocol; it proposes it as a deployment requirement.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "recommended_controls": [
+          "Image-quality feedback",
+          "Standardized acquisition instructions",
+          "Close-up and distant photographs",
+          "Body-site and distribution capture",
+          "Color calibration when feasible",
+          "Reference cards when feasible",
+          "Validation across devices",
+          "Safe rejection of inadequate images",
+          "Testing under different distances and lighting conditions"
+        ],
+        "status": "Recommended deployment protocol, not an executed study protocol"
+      }
     },
     "chromophore_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The review discusses pigmentation and erythema visibility but does not estimate melanin, hemoglobin, or other chromophore concentrations.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "computational_model": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00250",
+          "line_start": "L00203",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review describes candidate multimodal methods and its proposed reasoning architecture."
+        }
+      ],
+      "review_notes": "This is a review-proposed architecture. The paper does not report implementation, training, or experimental validation of this architecture.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "candidate_components": [
+          "Vision-language models",
+          "Foundation models",
+          "Lesion segmentation",
+          "Morphology analysis",
+          "Distribution and body-site analysis",
+          "Temporal-change detection",
+          "Clinicopathologic alignment",
+          "Retrieval-augmented generation",
+          "Uncertainty calibration"
+        ],
+        "human_role": "Interactive data acquisition and clinician oversight",
+        "model_family": "Dermatology-specific multimodal reasoning system",
+        "study_role": "Proposed conceptual architecture rather than an implemented or experimentally validated model"
+      }
     },
     "datasets": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00320",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review discusses dataset labels, shortcuts, bias, acquisition variability, and real-world transfer."
+        },
+        {
+          "line_end": "L00470",
+          "line_start": "L00429",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The source specifies diverse data composition and reporting requirements."
+        }
+      ],
+      "review_notes": "This field records reviewed dataset families, not an original training or validation corpus.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "examples_discussed": [
+          "ISIC",
+          "HAM10000",
+          "DDI",
+          "Fitzpatrick17k",
+          "PAD-UFES-20",
+          "BCN20000"
+        ],
+        "review_findings": [
+          "Public benchmarks enabled reproducible segmentation and classification",
+          "Many datasets underrepresent darker skin, rare disorders, nonpigmented lesions, and primary-care images",
+          "Curated benchmark performance may not transfer to real-world smartphone or teledermatology images"
+        ],
+        "study_role": "Representative datasets and evidence families reviewed; no original Paper 16 dataset"
+      }
     },
     "equations": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The review does not introduce a mathematical model, loss function, estimator, or original metric equation.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "evaluation_metrics": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00320",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review argues that aggregate AUC must be supplemented by failure and subgroup analysis."
+        },
+        {
+          "line_end": "L00470",
+          "line_start": "L00429",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Prospective clinical and equity outcomes are specified."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Aggregate AUC",
+        "Skin-tone-stratified performance",
+        "Race and ethnicity subgroup performance",
+        "False-negative rate",
+        "False-positive rate",
+        "High-risk triage sensitivity",
+        "Calibration",
+        "Uncertainty quality",
+        "Image rejection rate",
+        "Clinician override rate",
+        "Missed malignancies",
+        "Delayed diagnosis",
+        "Unnecessary biopsies",
+        "Referral burden",
+        "Biopsy yield",
+        "Time to melanoma diagnosis",
+        "Equity of clinical outcomes"
+      ]
     },
     "illumination_assumptions": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00060",
+          "line_start": "L00052",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Lighting is identified as a source of real-world image variation."
+        },
+        {
+          "line_end": "L00293",
+          "line_start": "L00270",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review treats lighting variation as a diagnostic-signal and deployment problem."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Real-world images may be captured under uncontrolled and differing lighting conditions.",
+        "Lighting variation directly changes the diagnostic signal available to clinicians and models.",
+        "Systems should be stress-tested under real-world lighting and acquisition variation."
+      ]
     },
     "instrument_or_camera": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00060",
+          "line_start": "L00052",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review describes real-world photographs from heterogeneous devices and conditions."
+        },
+        {
+          "line_end": "L00250",
+          "line_start": "L00203",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Clinical images, dermoscopy, and multimodal imaging sources are included in the proposed architecture."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "instrument_boundary": "No single camera, dermatoscope, or acquisition device is selected or experimentally evaluated",
+        "modalities_considered": [
+          "Clinical photography",
+          "Smartphone photography",
+          "Teledermatology images",
+          "Dermoscopy",
+          "Total-body photography",
+          "Histopathology imaging"
+        ]
+      }
     },
     "measured_inputs": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00250",
+          "line_start": "L00203",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The proposed multimodal pipeline identifies its intended image, text, structured, temporal, and pathology inputs."
+        }
+      ],
+      "review_notes": "These are proposed system inputs synthesized by the review, not measurements collected in an original Paper 16 cohort.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Clinical photographs",
+        "Dermoscopic images",
+        "Distant distribution photographs",
+        "Body-site metadata",
+        "Patient history",
+        "Symptoms",
+        "Medication timelines",
+        "Prior images",
+        "Histopathology reports",
+        "Image-quality information",
+        "Skin-tone information",
+        "Longitudinal treatment and outcome data"
+      ]
     },
     "observables": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00250",
+          "line_start": "L00203",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The architecture specifies intermediate features and output observables."
+        },
+        {
+          "line_end": "L00320",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review specifies validation and failure observables including subgroup and device performance."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Image quality",
+        "Skin tone",
+        "Lesion morphology",
+        "Lesion boundaries",
+        "Distribution and body site",
+        "Temporal change",
+        "Clinical-history features",
+        "Diagnostic uncertainty",
+        "Ranked differential diagnosis",
+        "Triage recommendation",
+        "Missing-information request",
+        "Skin-tone subgroup performance",
+        "Device-stratified performance",
+        "False-negative and false-positive rates"
+      ]
     },
     "physical_model": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The review discusses optical visibility and color variation but does not define a formal light–tissue interaction, reflectance, absorption, or scattering model.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "problem_addressed": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00033",
+          "line_start": "L00016",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The abstract identifies image-only classification limits, skin-tone bias, smartphone variability, dataset imbalance, and the benchmark-to-clinic gap."
+        },
+        {
+          "line_end": "L00060",
+          "line_start": "L00052",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review describes degradation across devices, image quality, clinical settings, populations, lighting, distance, compression, and background pigmentation."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Single-image dermatology classifiers omit morphology, distribution, symptoms, temporal evolution, history, pathology, treatment response, and acquisition context. Their performance may also degrade across skin tones, devices, lighting conditions, image quality, disease spectra, and care settings."
     },
     "reported_limitations": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00033",
+          "line_start": "L00016",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The abstract identifies core scientific and deployment limitations."
+        },
+        {
+          "line_end": "L00320",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review details capture variability, shortcuts, weak labels, bias, and real-world deployment limitations."
+        },
+        {
+          "line_end": "L00579",
+          "line_start": "L00553",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The conclusion reiterates acquisition, skin-tone, context, and prospective-validation barriers."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": [
+        "Single-image systems omit clinically necessary context for many dermatologic differentials.",
+        "Curated benchmark performance may fail under real-world devices, lighting, compression, distance, and image-quality variation.",
+        "Darker skin, rare disorders, acral disease, mucosal disease, and limited-resource settings are underrepresented.",
+        "Fitzpatrick labels incompletely represent skin color and optical visibility.",
+        "Datasets may encode device, ruler, marker, background, referral, workup, and spectrum shortcuts.",
+        "Reference standards may be mixed, noisy, or dependent on follow-up and treatment response.",
+        "Aggregate AUC does not establish fairness, clinical utility, safety, or deployment readiness.",
+        "The proposed multimodal architecture is not implemented or validated in this paper.",
+        "The paper reports no original cohort, dataset, experiment, or quantitative performance."
+      ]
     },
     "reported_results": {
-      "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "evidence": [
+        {
+          "line_end": "L00108",
+          "line_start": "L00052",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review synthesizes dataset-to-clinic, skin-tone visibility, and fairness findings."
+        },
+        {
+          "line_end": "L00320",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review synthesizes real-world capture, shortcut, and deployment failure modes."
+        }
+      ],
+      "review_notes": "These are review-level conclusions attributed to the surveyed literature, not results generated by an original Paper 16 experiment.",
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "result_type": "Narrative synthesis of prior literature; no original Paper 16 quantitative result",
+        "synthesized_findings": [
+          "Image-only models lose reliability across devices, image quality, settings, and patient populations",
+          "Dermatology AI can perform worse on datasets enriched for darker skin tones",
+          "Post-hoc reweighting may not fully correct models trained on narrow data",
+          "Fitzpatrick labels do not capture the full range of color, hue, undertone, and imaging contrast",
+          "Automatic white balance and smartphone color processing can alter erythema and pigmentation",
+          "Curated benchmark AUC does not establish clinical readiness"
+        ]
+      }
     },
     "sample_or_subject_population": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "Paper 16 is a mini-review and proposed framework. It does not enroll participants, define a patient cohort, or report an original image-level sample.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "scattering_representation": {
       "evidence": [],
-      "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
+      "review_notes": "The review does not define or estimate optical scattering.",
+      "state": "NOT_ESTABLISHED_FROM_AVAILABLE_SOURCE",
       "value": null
     },
     "scientific_objective": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00033",
+          "line_start": "L00016",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The abstract states the review's central argument, scope, and intended pathway."
+        },
+        {
+          "line_end": "L00108",
+          "line_start": "L00069",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The introduction defines dermatology-specific requirements for multimodal and skin-tone-aware reasoning."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": "Synthesize dermatology AI evidence and propose a transition from isolated image classification to dermatology-specific multimodal clinical reasoning that is skin-tone-aware, clinically grounded, interpretable, prospectively validated, and deployed with clinician oversight."
     },
     "skin_representation": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00108",
+          "line_start": "L00081",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The source explains skin-tone-dependent visibility and the limitations of Fitzpatrick labels."
+        },
+        {
+          "line_end": "L00140",
+          "line_start": "L00126",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review recommends explicit skin-tone, race, ethnicity, site, source, and subgroup reporting."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "fitzpatrick_boundary": "Fitzpatrick labels are considered useful but incomplete because they represent ultraviolet response rather than the full range of color, hue, undertone, and imaging contrast.",
+        "recommended_representation": [
+          "Explicit skin-tone assessment",
+          "Pigmentation-sensitive optical visibility",
+          "Hue and undertone beyond Fitzpatrick labels",
+          "Skin-tone subgroup reporting",
+          "Race and ethnicity when ethically collected",
+          "Anatomical-site conditioning"
+        ]
+      }
     },
     "truecolor_relevance": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00108",
+          "line_start": "L00081",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Skin-tone-dependent optical visibility and Fitzpatrick limitations are explicit."
+        },
+        {
+          "line_end": "L00293",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Camera, white-balance, lighting, calibration, and reference-card requirements are explicit."
+        },
+        {
+          "line_end": "L00470",
+          "line_start": "L00429",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "Skin-tone-aware reporting, calibration, local validation, and prospective monitoring are explicit."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "boundary": "Paper 16 identifies the need for reliable color handling and skin-tone-aware validation but does not provide a TrueColor estimator, camera-response recovery method, illuminant estimator, spectral reconstruction algorithm, chromophore model, or validated calibration implementation.",
+        "directly_relevant_findings": [
+          "Skin pigmentation changes the visibility of erythema, vascular structures, pigment networks, and inflammatory findings",
+          "Smartphone camera processing and automatic white balance can alter diagnostic color",
+          "Lighting, distance, compression, cosmetics, and device variation alter the observable signal",
+          "Fitzpatrick labels do not represent the full range of skin color, hue, undertone, and imaging contrast",
+          "Color calibration, reference cards, device-stratified validation, skin-tone subgroup reporting, and local validation are recommended"
+        ],
+        "relevant_claims": [
+          "TC-NOV-001",
+          "TC-NOV-002",
+          "TC-NOV-003",
+          "TC-NOV-004",
+          "TC-NOV-005",
+          "TC-NOV-006"
+        ]
+      }
     },
     "validation_design": {
-      "evidence": [],
+      "evidence": [
+        {
+          "line_end": "L00140",
+          "line_start": "L00126",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The source states that equity must be built into collection, annotation, training, external validation, and monitoring."
+        },
+        {
+          "line_end": "L00320",
+          "line_start": "L00253",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The review specifies shortcut, device, compression, and prospective workflow tests."
+        },
+        {
+          "line_end": "L00470",
+          "line_start": "L00429",
+          "source": "analysis/prior_art/scientific_extraction/review_packets/paper-16-full-text-review.txt",
+          "support": "The source specifies global reporting, prospective outcomes, recalibration, and post-deployment monitoring."
+        }
+      ],
       "review_notes": null,
-      "state": "PENDING_SOURCE_REVIEW",
-      "value": null
+      "state": "ESTABLISHED_FROM_SOURCE",
+      "value": {
+        "required_validation": [
+          "Skin-tone subgroup analysis",
+          "Race and ethnicity subgroup analysis",
+          "Anatomical-site stratification",
+          "Image-source stratification",
+          "Device-stratified validation",
+          "External validation",
+          "Prospective clinical trials",
+          "Metadata ablation",
+          "Background masking",
+          "Lesion-only versus context-aware comparison",
+          "Compression robustness testing",
+          "Shortcut stress testing",
+          "False-negative and false-positive auditing",
+          "Local validation",
+          "Post-deployment monitoring",
+          "Drift detection"
+        ],
+        "status": "Review-synthesized validation framework rather than an original validation study"
+      }
     }
   },
   "minimum_claim_rank": 5,
+  "primary_extraction_evidence_selection": "analysis/prior_art/scientific_extraction/review_packets/paper-16-evidence-selection.txt",
   "quality_control": {
     "discrepancies": [],
-    "final_review_state": "NOT_REVIEWED",
-    "primary_review_completed": false,
-    "primary_reviewer": null,
+    "final_review_state": "PRIMARY_REVIEW_COMPLETE",
+    "primary_review_completed": true,
+    "primary_reviewer": "OPENAI_GPT_5_6_ASSISTED_REVIEW",
     "second_review_completed": false,
     "second_review_required": false,
     "second_review_selection_rule": null,
     "second_reviewer": null
   },
-  "record_state": "SOURCE_PACKET_READY",
+  "record_state": "PRIMARY_SCIENTIFIC_EXTRACTION_COMPLETE",
   "review_eligibility": "COMPLETE",
   "schema_version": "1.0.0",
   "scientific_content_state": "FULL_SCIENTIFIC_TEXT",
@@ -214,6 +675,6 @@
     }
   ],
   "unique_review_order": 19,
-  "work_package": "S1-EXTRACT-01A",
+  "work_package": "S1-EXTRACT-07C",
   "year": "2026.0"
 }
