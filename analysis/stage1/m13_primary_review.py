@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import argparse
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Any, Mapping
 
 from analysis.stage1.stage1_runtime_contracts import (
@@ -16,7 +16,7 @@ from analysis.stage1.stage1_runtime_contracts import (
 )
 
 MODULE_ID = "S1-M13"
-IDENTITY_FIELDS = (
+IDENTITY_FIELDS = {
     "work_id",
     "file_id",
     "source_file_id",
@@ -24,18 +24,76 @@ IDENTITY_FIELDS = (
     "canonical_file_id",
     "document_id",
     "content_sha256",
-)
+    "source_sha256",
+    "file_sha256",
+    "source_path",
+    "file_path",
+    "canonical_path",
+    "relative_path",
+    "path",
+    "filename",
+    "file_name",
+    "source_name",
+}
+PATH_FIELDS = {
+    "source_path",
+    "file_path",
+    "canonical_path",
+    "relative_path",
+    "path",
+    "filename",
+    "file_name",
+    "source_name",
+}
+
+
+def _normalized_identity_values(key: str, value: Any) -> set[str]:
+    if value is None or isinstance(value, (dict, list, tuple, set)):
+        return set()
+    text = str(value).strip()
+    if not text:
+        return set()
+    values = {text}
+    if key in PATH_FIELDS:
+        normalized = text.replace("\\", "/")
+        path = PurePosixPath(normalized)
+        values.add(normalized)
+        values.add(path.name)
+        if path.suffix:
+            values.add(path.stem)
+    return {item for item in values if item}
 
 
 def _identity_values(record: Mapping[str, Any]) -> set[str]:
-    return {
-        str(record.get(field)).strip()
-        for field in IDENTITY_FIELDS
-        if record.get(field) is not None and str(record.get(field)).strip()
-    }
+    """Collect canonical identity aliases from top-level or nested provenance objects.
+
+    Stage artifacts do not use one uniform provenance shape. M01 commonly stores source
+    aliases at the work level, while M08 may nest them under provenance/source objects.
+    Only explicitly identity-bearing keys are traversed; claim/element identifiers are
+    intentionally excluded so matching remains fail-closed.
+    """
+    values: set[str] = set()
+
+    def visit(value: Any) -> None:
+        if isinstance(value, Mapping):
+            for raw_key, child in value.items():
+                key = str(raw_key).strip().lower()
+                if key in IDENTITY_FIELDS:
+                    values.update(_normalized_identity_values(key, child))
+                if isinstance(child, (Mapping, list, tuple)):
+                    visit(child)
+        elif isinstance(value, (list, tuple)):
+            for child in value:
+                if isinstance(child, (Mapping, list, tuple)):
+                    visit(child)
+
+    visit(record)
+    return values
 
 
-def _claims_by_work(works: list[Mapping[str, Any]], claims: list[Mapping[str, Any]]) -> dict[str, list[str]]:
+def _claims_by_work(
+    works: list[Mapping[str, Any]], claims: list[Mapping[str, Any]]
+) -> dict[str, list[str]]:
     identifier_to_work: dict[str, str] = {}
     result: dict[str, list[str]] = {}
     for work in works:
@@ -43,7 +101,10 @@ def _claims_by_work(works: list[Mapping[str, Any]], claims: list[Mapping[str, An
         if not work_id:
             raise Stage1ContractError("M13 work record missing work_id")
         result[work_id] = []
-        for identifier in _identity_values(work):
+        identities = _identity_values(work)
+        if not identities:
+            raise Stage1ContractError(f"M13 work has no resolvable identity aliases: {work_id}")
+        for identifier in identities:
             previous = identifier_to_work.get(identifier)
             if previous and previous != work_id:
                 raise Stage1ContractError(
@@ -52,6 +113,7 @@ def _claims_by_work(works: list[Mapping[str, Any]], claims: list[Mapping[str, An
             identifier_to_work[identifier] = work_id
 
     unmatched: list[str] = []
+    ambiguous: list[str] = []
     for claim in claims:
         claim_id = str(claim.get("claim_id", "")).strip()
         if not claim_id:
@@ -61,15 +123,21 @@ def _claims_by_work(works: list[Mapping[str, Any]], claims: list[Mapping[str, An
             for value in _identity_values(claim)
             if value in identifier_to_work
         }
-        if len(candidates) != 1:
+        if len(candidates) == 0:
             unmatched.append(claim_id)
+            continue
+        if len(candidates) > 1:
+            ambiguous.append(claim_id)
             continue
         result[next(iter(candidates))].append(claim_id)
 
-    if unmatched:
-        preview = ", ".join(unmatched[:10])
+    if unmatched or ambiguous:
+        unmatched_preview = ", ".join(unmatched[:10])
+        ambiguous_preview = ", ".join(ambiguous[:10])
         raise Stage1ContractError(
-            f"M13 could not resolve {len(unmatched)} grounded claims to exactly one work: {preview}"
+            "M13 could not resolve grounded claims to exactly one work: "
+            f"unmatched={len(unmatched)} [{unmatched_preview}], "
+            f"ambiguous={len(ambiguous)} [{ambiguous_preview}]"
         )
     return result
 
@@ -106,7 +174,7 @@ class PrimaryReviewQueue:
                 }
             )
         output = "primary_review_registry.json"
-        atomic_json(output_root / output, {"schema_version": 2, "records": tasks})
+        atomic_json(output_root / output, {"schema_version": 3, "records": tasks})
         closure = ModuleClosure(
             MODULE_ID,
             "READY_FOR_REVIEW",
