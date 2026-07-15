@@ -1,0 +1,22 @@
+{
+  "schema": "truecolor.document-repositories",
+  "schema_version": 1,
+  "repositories": {
+    "user_upload_inbox": {
+      "path": "document_ingress/user_upload_inbox",
+      "authority": "UNTRUSTED_INGRESS",
+      "service_consumption": "PROHIBITED_UNTIL_PROMOTED"
+    },
+    "ground_truth_documents": {
+      "path": "document_repository/ground_truth",
+      "authority": "CANONICAL_INTERNAL_SOURCE",
+      "service_consumption": "REQUIRED"
+    },
+    "temporary_real_file_validation_source": {
+      "path": "preprocessed_intake/corpus_prior_art_paper-pdf",
+      "authority": "MIGRATION_SOURCE_ONLY",
+      "service_consumption": "S1_M01_VALIDATION_ONLY",
+      "retire_after_promotion": true
+    }
+  }
+}
