@@ -16,12 +16,15 @@ from analysis.prior_art.mutable_corpus_enterprise import (
     atomic_write_json,
     validate_projection_integrity,
 )
+from analysis.prior_art.mutable_corpus_recovery_projection import (
+    finalize_extraction_recovery_contracts,
+)
 from analysis.prior_art.mutable_corpus_runtime import (
     expected_sources_from_review_csv,
     load_optional,
     merge_expected_sources,
-    run_runtime,
 )
+from analysis.prior_art.mutable_corpus_runtime_v2 import run_runtime
 
 
 @contextlib.contextmanager
@@ -74,6 +77,7 @@ def run_consumer_reconciliation(
             expected_sources,
             extraction_backend,
         )
+        finalize_extraction_recovery_contracts(output_root)
         artifact_hash_manifest(output_root)
         validate_projection_integrity(output_root)
         semantic_gates = validate_consumer_closure(output_root)
@@ -84,6 +88,7 @@ def run_consumer_reconciliation(
             "snapshot_id": result["snapshot_id"],
             "semantic_gates": semantic_gates,
             "capability_state": "CLOSED",
+            "extraction_recovery_count": result.get("extraction_recovery_count", 0),
         }
         atomic_write_json(closure_path, closure)
         artifact_hash_manifest(output_root)
@@ -128,6 +133,7 @@ def main() -> None:
     print(f"run_id={result['run_id']}")
     print(f"snapshot_id={result['snapshot_id']}")
     print(f"capability_state={result['capability_state']}")
+    print(f"extraction_recovery_count={result.get('extraction_recovery_count', 0)}")
     for gate, state in sorted(result["semantic_gates"].items()):
         print(f"gate.{gate}={state}")
 
