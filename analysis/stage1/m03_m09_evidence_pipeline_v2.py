@@ -13,6 +13,7 @@ from analysis.stage1.m03_m09_evidence_pipeline import (
     NonBodyEvidence,
     Terminology,
 )
+from analysis.stage1.m03_section_path_projection import project_section_paths
 
 
 def run_all(args: argparse.Namespace) -> list[ModuleResult]:
@@ -30,7 +31,10 @@ def run_all(args: argparse.Namespace) -> list[ModuleResult]:
         )
     )
     if results[-1].module_state not in {"CLOSED", "PARTIALLY_CLOSED"}:
-        raise RuntimeError(f"S1-M03 did not reach an executable terminal state: {results[-1].module_state}")
+        raise RuntimeError(
+            f"S1-M03 did not reach an executable terminal state: {results[-1].module_state}"
+        )
+    project_section_paths(m03_root / "document_elements.jsonl")
 
     m04_root = output_root / "m04"
     results.append(
@@ -58,6 +62,7 @@ def run_all(args: argparse.Namespace) -> list[ModuleResult]:
             "schema_version": 2,
             "m03_implementation": "HYBRID_NATIVE_AND_SELECTIVE_SPATIAL_OCR",
             "m03_fusion_policy": "PRESERVE_LAYERS_NO_SEMANTIC_OVERWRITE",
+            "section_path_projection": "EXACT_HEADING_MATCH_WITH_FORWARD_INHERITANCE",
             "module_states": {
                 result.module_id: result.module_state for result in results
             },
