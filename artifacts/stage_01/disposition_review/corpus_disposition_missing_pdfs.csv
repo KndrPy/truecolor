@@ -1,0 +1,11 @@
+review_order,task_id,canonical_identity,title,doi,pmid,pdf_state
+23,DISPOSITION-TASK-11f30fb957882c10,doi:10.1364/josaa.23.001814,Metamer-set-based approach to estimating surface reflectance from camera RGB,10.1364/josaa.23.001814,,PDF_NOT_PRESENT
+24,DISPOSITION-TASK-caacedd3bf88372c,doi:10.1371/journal.pone.0280670,New AI-algorithms on smartphones to detect skin cancer in a clinical setting-A validation study.,10.1371/journal.pone.0280670,36791068.0,PDF_NOT_PRESENT
+25,DISPOSITION-TASK-279512c38e323944,doi:10.19184/cerimre.v5i2.31668,Optical Ray Tracing Simulation by Using Monte Carlo Method for Reflectance-based Photoplethysmography Sensor in Human Skin and Fingertip Model,10.19184/cerimre.v5i2.31668,,PDF_NOT_PRESENT
+26,DISPOSITION-TASK-216e636378952ff3,doi:10.3390/jimaging12050203,Characterization of RGB-Polarization Sensor-Based Cameras.,10.3390/jimaging12050203,42188240.0,PDF_NOT_PRESENT
+27,DISPOSITION-TASK-c78ba86b99b9b24a,doi:10.3390/jimaging9020047,Spectral Reflectance Estimation from Camera Responses Using Local Optimal Dataset,10.3390/jimaging9020047,36826966.0,PDF_NOT_PRESENT
+28,DISPOSITION-TASK-f080b5839173d8c5,doi:10.3390/s130607902,Estimation of Melanin and Hemoglobin Using Spectral Reflectance Images Reconstructed from a Digital RGB  Image by the Wiener Estimation Method,10.3390/s130607902,,PDF_NOT_PRESENT
+29,DISPOSITION-TASK-caa3807463814a9c,doi:10.3390/s22134923,Auxiliary Reference Samples for Extrapolating Spectral Reflectance from Camera RGB Signals,10.3390/s22134923,,PDF_NOT_PRESENT
+30,DISPOSITION-TASK-f3072983e3180c15,doi:10.3390/s23083888,Multispectral Imaging for Skin Diseases Assessment-State of the Art and Perspectives.,10.3390/s23083888,37112229.0,PDF_NOT_PRESENT
+31,DISPOSITION-TASK-5c8179033fa93f1f,doi:10.5753/sibgrapi.est.2024.31648,Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale,10.5753/sibgrapi.est.2024.31648,,PDF_NOT_PRESENT
+32,DISPOSITION-TASK-cea3a0861fd3571a,doi:10.7759/cureus.94909,Exploring the Diagnostic Capability of Artificial Intelligence in Dermatology for Darker Skin Tones: A Narrative Review.,10.7759/cureus.94909,41262830.0,PDF_NOT_PRESENT

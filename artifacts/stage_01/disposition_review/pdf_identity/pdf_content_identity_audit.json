@@ -1,0 +1,1243 @@
+{
+  "ambiguous_governed_record_count": 2,
+  "ambiguous_matches": [
+    {
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "best_title_candidate": "We present an approach to estimating the reflectance of a surface given its camera response. In this approach",
+          "best_title_overlap": 0.8333,
+          "canonical_identity": "doi:10.1364/josaa.23.001814",
+          "governed_doi": "10.1364/josaa.23.001814",
+          "governed_title": "Metamer-set-based approach to estimating surface reflectance from camera RGB",
+          "pdf_doi_candidates": [],
+          "pdf_filename": "28_JOSAA_MetSetRefRec_MorovicFinlayson_2006.pdf",
+          "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/28_JOSAA_MetSetRefRec_MorovicFinlayson_2006.pdf",
+          "pdf_sha256": "09826a5b4a282783bbf8f42951c662ea4c8d6dab0bc4188facbe29f35a30e15f",
+          "reasons": [
+            "TITLE_OVERLAP_GE_0_70"
+          ],
+          "review_order": "23",
+          "score": 250,
+          "task_id": "DISPOSITION-TASK-11f30fb957882c10"
+        }
+      ],
+      "canonical_identity": "doi:10.1364/josaa.23.001814",
+      "governed_title": "Metamer-set-based approach to estimating surface reflectance from camera RGB",
+      "review_order": "23",
+      "task_id": "DISPOSITION-TASK-11f30fb957882c10"
+    },
+    {
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "best_title_candidate": "Enhancing Fairness in Machine Learning:",
+          "best_title_overlap": 0.5,
+          "canonical_identity": "doi:10.5753/sibgrapi.est.2024.31648",
+          "governed_doi": "10.5753/sibgrapi.est.2024.31648",
+          "governed_title": "Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale",
+          "pdf_doi_candidates": [],
+          "pdf_filename": "23_Enhanced_fairness_ML-1-10-20241127.pdf",
+          "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/23_Enhanced_fairness_ML-1-10-20241127.pdf",
+          "pdf_sha256": "f033c287726f82f0bbfc7731bb81c7bb57a09de49938a833a54aec629930e94d",
+          "reasons": [
+            "TITLE_OVERLAP_GE_0_50"
+          ],
+          "review_order": "31",
+          "score": 100,
+          "task_id": "DISPOSITION-TASK-5c8179033fa93f1f"
+        }
+      ],
+      "canonical_identity": "doi:10.5753/sibgrapi.est.2024.31648",
+      "governed_title": "Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale",
+      "review_order": "31",
+      "task_id": "DISPOSITION-TASK-5c8179033fa93f1f"
+    }
+  ],
+  "audit_error_count": 0,
+  "audit_errors": [],
+  "confirmed_match_count": 8,
+  "confirmed_matches": [
+    {
+      "best_title_candidate": "New AI-algorithms on smartphones to detect skin cancer in a clinical setting\u2014A validation study",
+      "best_title_overlap": 1.0,
+      "canonical_identity": "doi:10.1371/journal.pone.0280670",
+      "governed_doi": "10.1371/journal.pone.0280670",
+      "governed_title": "New AI-algorithms on smartphones to detect skin cancer in a clinical setting-A validation study.",
+      "pdf_doi_candidates": [
+        "10.1371/journal.pone.0280670"
+      ],
+      "pdf_filename": "29_new_ai_algorithms_on_smartphone_detect_Skincancer_2023.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/29_new_ai_algorithms_on_smartphone_detect_Skincancer_2023.pdf",
+      "pdf_sha256": "7c481d3f4231afbcf0480e32f9e9ed426349d97544ffd2d22fb0c1fbaaf90afd",
+      "reasons": [
+        "EXACT_DOI",
+        "TITLE_OVERLAP_GE_0_85"
+      ],
+      "review_order": "24",
+      "score": 1500,
+      "task_id": "DISPOSITION-TASK-caacedd3bf88372c"
+    },
+    {
+      "best_title_candidate": "Optical Ray Tracing Simulation by Using Monte Carlo Method for",
+      "best_title_overlap": 0.5,
+      "canonical_identity": "doi:10.19184/cerimre.v5i2.31668",
+      "governed_doi": "10.19184/cerimre.v5i2.31668",
+      "governed_title": "Optical Ray Tracing Simulation by Using Monte Carlo Method for Reflectance-based Photoplethysmography Sensor in Human Skin and Fingertip Model",
+      "pdf_doi_candidates": [
+        "10.19184/cerimre.v5i2.31668"
+      ],
+      "pdf_filename": "30_optical_ra_tracing_2022.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/30_optical_ra_tracing_2022.pdf",
+      "pdf_sha256": "c03c3a431b94a800da464be0971ad3982df63d4c2676b7d577df69aa0dbc518d",
+      "reasons": [
+        "EXACT_DOI",
+        "TITLE_OVERLAP_GE_0_50"
+      ],
+      "review_order": "25",
+      "score": 1100,
+      "task_id": "DISPOSITION-TASK-279512c38e323944"
+    },
+    {
+      "best_title_candidate": "Characterization of RGB-Polarization Sensor-Based Cameras",
+      "best_title_overlap": 1.0,
+      "canonical_identity": "doi:10.3390/jimaging12050203",
+      "governed_doi": "10.3390/jimaging12050203",
+      "governed_title": "Characterization of RGB-Polarization Sensor-Based Cameras.",
+      "pdf_doi_candidates": [
+        "10.3390/jimaging12050203"
+      ],
+      "pdf_filename": "27_jimaging-12-00203-v3.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/27_jimaging-12-00203-v3.pdf",
+      "pdf_sha256": "2bc3de6f758b0f1c516b190e3f36fc8f57afc2b530403c672b2104ba043e56b0",
+      "reasons": [
+        "EXACT_DOI",
+        "TITLE_OVERLAP_GE_0_85"
+      ],
+      "review_order": "26",
+      "score": 1500,
+      "task_id": "DISPOSITION-TASK-216e636378952ff3"
+    },
+    {
+      "best_title_candidate": "Spectral Reflectance Estimation from Camera Responses Using Local Optimal Dataset",
+      "best_title_overlap": 1.0,
+      "canonical_identity": "doi:10.3390/jimaging9020047",
+      "governed_doi": "10.3390/jimaging9020047",
+      "governed_title": "Spectral Reflectance Estimation from Camera Responses Using Local Optimal Dataset",
+      "pdf_doi_candidates": [
+        "10.3390/jimaging9020047"
+      ],
+      "pdf_filename": "26_jimaging-09-00047-v2.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/26_jimaging-09-00047-v2.pdf",
+      "pdf_sha256": "73de27d569f3a72a9d4c4d061128102211a9c56487045d99e6f09607c32b0935",
+      "reasons": [
+        "EXACT_DOI",
+        "TITLE_OVERLAP_GE_0_85"
+      ],
+      "review_order": "27",
+      "score": 1500,
+      "task_id": "DISPOSITION-TASK-c78ba86b99b9b24a"
+    },
+    {
+      "best_title_candidate": "Estimation of Melanin and Hemoglobin Using Spectral Reflectance Images Reconstructed from a Digital RGB Image by the Wiener Estimation Method",
+      "best_title_overlap": 1.0,
+      "canonical_identity": "doi:10.3390/s130607902",
+      "governed_doi": "10.3390/s130607902",
+      "governed_title": "Estimation of Melanin and Hemoglobin Using Spectral Reflectance Images Reconstructed from a Digital RGB  Image by the Wiener Estimation Method",
+      "pdf_doi_candidates": [
+        "10.3390/s130607902"
+      ],
+      "pdf_filename": "32_sensors-13-07902.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/32_sensors-13-07902.pdf",
+      "pdf_sha256": "61e530a6d2a2af1b827e4632910a0bab25052a8d6247cf3104f175c8946f54f2",
+      "reasons": [
+        "EXACT_DOI",
+        "TITLE_OVERLAP_GE_0_85"
+      ],
+      "review_order": "28",
+      "score": 1500,
+      "task_id": "DISPOSITION-TASK-f080b5839173d8c5"
+    },
+    {
+      "best_title_candidate": "Auxiliary Reference Samples for Extrapolating Spectral Reflectance from Camera RGB Signals",
+      "best_title_overlap": 1.0,
+      "canonical_identity": "doi:10.3390/s22134923",
+      "governed_doi": "10.3390/s22134923",
+      "governed_title": "Auxiliary Reference Samples for Extrapolating Spectral Reflectance from Camera RGB Signals",
+      "pdf_doi_candidates": [
+        "10.3390/s22134923"
+      ],
+      "pdf_filename": "34_sensors-22-04923-v2.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/34_sensors-22-04923-v2.pdf",
+      "pdf_sha256": "5d395ed649a09afa85d06b16d5a3a1982e93943894cdac02d09baab840e2e4f1",
+      "reasons": [
+        "EXACT_DOI",
+        "TITLE_OVERLAP_GE_0_85"
+      ],
+      "review_order": "29",
+      "score": 1500,
+      "task_id": "DISPOSITION-TASK-caa3807463814a9c"
+    },
+    {
+      "best_title_candidate": "Multispectral Imaging for Skin Diseases Assessment\u2014State of the Art and Perspectives",
+      "best_title_overlap": 1.0,
+      "canonical_identity": "doi:10.3390/s23083888",
+      "governed_doi": "10.3390/s23083888",
+      "governed_title": "Multispectral Imaging for Skin Diseases Assessment-State of the Art and Perspectives.",
+      "pdf_doi_candidates": [
+        "10.3390/s23083888"
+      ],
+      "pdf_filename": "35_sensors-23-03888.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/35_sensors-23-03888.pdf",
+      "pdf_sha256": "801295af82128b7dd6b5a97bead4f31a11b6cae74455877da95b0cc4cc0d8a5f",
+      "reasons": [
+        "EXACT_DOI",
+        "TITLE_OVERLAP_GE_0_85"
+      ],
+      "review_order": "30",
+      "score": 1500,
+      "task_id": "DISPOSITION-TASK-f3072983e3180c15"
+    },
+    {
+      "best_title_candidate": "Exploring the Diagnostic Capability of Artificial",
+      "best_title_overlap": 0.4444,
+      "canonical_identity": "doi:10.7759/cureus.94909",
+      "governed_doi": "10.7759/cureus.94909",
+      "governed_title": "Exploring the Diagnostic Capability of Artificial Intelligence in Dermatology for Darker Skin Tones: A Narrative Review.",
+      "pdf_doi_candidates": [
+        "10.7759/cureus.94909"
+      ],
+      "pdf_filename": "24_AII_darer_skin_cureus-0017-00000094909.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/24_AII_darer_skin_cureus-0017-00000094909.pdf",
+      "pdf_sha256": "595db8f948e4bf14faa91a6b3264b1ee64711cb433dec996ffb6c0d598b0af2b",
+      "reasons": [
+        "EXACT_DOI"
+      ],
+      "review_order": "32",
+      "score": 1000,
+      "task_id": "DISPOSITION-TASK-cea3a0861fd3571a"
+    }
+  ],
+  "exact_duplicate_group_count": 0,
+  "exact_duplicate_groups": [],
+  "extra_or_unmapped_pdf_count": 28,
+  "extra_or_unmapped_pdfs": [
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "21",
+      "pdf_filename": "01_color_clinical_decoupling_2025.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/01_color_clinical_decoupling_2025.pdf",
+      "pdf_sha256": "22a2865354ce7555d301c242af15dd5d591132a17e4dc9af62b7cd1116c988f8",
+      "pdf_size_bytes": 1872500,
+      "pdfinfo_title": "Region-Specific Calibration Achieves Excellent Inter-Device Reliability for Smartphone Dermatology: A Multi-Device Benchmark on Korean Facial Skin",
+      "title_candidates": [
+        "Region-Specific Calibration Achieves Excellent Inter-Device Reliability for Smartphone Dermatology: A Multi-Device Benchmark on Korean Facial Skin",
+        "Region-Specific Calibration Achieves Excellent Inter-Device",
+        "Reliability for Smartphone Dermatology: A Multi-Device",
+        "Benchmark on Korean Facial Skin",
+        "Sungwoo Kang and Jong-Kook Kim",
+        "Department of Electrical and Computer Engineering, Korea University, Seoul,",
+        "School of Electrical Engineering, Korea University, Seoul, Republic of Korea",
+        "arXiv:2512.21988v4 [eess.IV] 2 Jul 2026",
+        "Background: Smartphone-based dermatology requires inter-device colorimetric reliabil-",
+        "ity that holds across calibration regimes, yet quantitative multi-device benchmarks remain",
+        "scarce. Materials and Methods: We analyzed matched facial images from 965 Korean",
+        "subjects captured by a digital single-lens reflex (DSLR) camera, a consumer tablet, and a"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "28",
+      "pdf_filename": "02_limitations_data_driven_spectral_reconstruction_2024.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/02_limitations_data_driven_spectral_reconstruction_2024.pdf",
+      "pdf_sha256": "3b548e943f0fc1d63d3899f4ca3a26e139f97025c8f824c44359a3d13fd77a3a",
+      "pdf_size_bytes": 21396748,
+      "pdfinfo_title": "Limitations of Data-Driven Spectral Reconstruction -- An Optics-Aware Analysis",
+      "title_candidates": [
+        "Limitations of Data-Driven Spectral Reconstruction -- An Optics-Aware Analysis",
+        "Limitations of Data-Driven Spectral Reconstruction:",
+        "An Optics-Aware Analysis",
+        "Qiang Fu*, Matheus Souza*, Eunsue Choi, Suhyun Shin, Seung-Hwan Baek, Wolfgang Heidrich Fellow, IEEE",
+        "systems with the distinct capability of identifying materials which cannot be distinguished from their RGB colors. Skin",
+        "through recording their spectral signatures. Recent efforts in tumors could not be diagnosed from surrounding tissues of",
+        "data-driven spectral reconstruction aim at extracting spectral",
+        "information from RGB images captured by cost-effective RGB the same color. It is difficult to spot and sort out plastic leaves",
+        "cameras, instead of dedicated hardware. Published work reports from living plants by their greenish colors. Therefore, spectral",
+        "arXiv:2401.03835v4 [cs.CV] 19 Oct 2025",
+        "exceedingly high numerical scores for this reconstruction task, imaging has been applied in many fields, including computer",
+        "yet real-world performance lags substantially behind. graphics [49], machine vision [34], [65], healthcare [57],"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "13",
+      "pdf_filename": "03_hyper_skin_2023.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/03_hyper_skin_2023.pdf",
+      "pdf_sha256": "1e1eb86e85d48213ede04324576a8599a6d0fc3991d1a7149406428fb9e159c2",
+      "pdf_size_bytes": 1279782,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Hyper-Skin: A Hyperspectral Dataset for",
+        "Reconstructing Facial Skin-Spectra from RGB Images",
+        "Pai Chet Ng 1 , Zhixiang Chi 1 , Yannick Verdie 2 , Juwei Lu 2 , Konstantinos N. Plataniotis 1",
+        "The Edward S. Rogers Sr. Department of Electrical and Computer Engineering, University of Toronto",
+        "Huawei Noah\u2019s Ark Laboratory, Huawei Canada",
+        "arXiv:2310.17911v1 [eess.IV] 27 Oct 2023",
+        "We introduce Hyper-Skin, a hyperspectral dataset covering wide range of wave-",
+        "lengths from visible (VIS) spectrum (400nm - 700nm) to near-infrared (NIR)",
+        "spectrum (700nm - 1000nm), uniquely designed to facilitate research on facial",
+        "skin-spectra reconstruction. By reconstructing skin spectra from RGB images,",
+        "our dataset enables the study of hyperspectral skin analysis, such as melanin",
+        "and hemoglobin concentrations, directly on the consumer device. Overcom-"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "31",
+      "pdf_filename": "04_cleanpatrick_2025.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/04_cleanpatrick_2025.pdf",
+      "pdf_sha256": "a7664599d76f227dc397e18aa031ff25ba577ae2163914d818b96aebb8f23169",
+      "pdf_size_bytes": 5819962,
+      "pdfinfo_title": "CleanPatrick: A Benchmark for Image Data Cleaning",
+      "title_candidates": [
+        "CleanPatrick: A Benchmark for Image Data Cleaning",
+        "Journal of Data-centric Machine Learning Research (2026) Submitted 9/25; Revised 05/26; Published 05/26",
+        "Fabian Gro\u0308ger\u22171,2 , Simone Lionetti2 , Philippe Gottfrois1 ,",
+        "Alvaro Gonzalez-Jimenez2,3 , Ludovic Amruthalingam2 ,",
+        "Elisabeth V. Goessinger3 , Hanna Lindemann3 , Marie Bargiela3 ,",
+        "Marie Hofbauer3 , Omar Badri5 , Philipp Tschandl6 , Arash Koochek7 ,",
+        "Matthew Groh4 , Alexander A. Navarini\u20201,3 , Marc Pouly\u20202",
+        "University of Basel 2 Lucerne University of Applied Sciences and Arts",
+        "University Hospital of Basel 4 Northwestern University",
+        "arXiv:2505.11034v2 [cs.CV] 9 Jun 2026",
+        "Northeast Dermatology Associates 6 Medical University of Vienna 7 Banner Health"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "7",
+      "pdf_filename": "05_ddi_2021.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/05_ddi_2021.pdf",
+      "pdf_sha256": "a080914346bc6e38a0f07af3cfc1ef8a65ab1bcbaf6ec299a025d58b6965c939",
+      "pdf_size_bytes": 4188409,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Proceedings of Machine Learning Research LEAVE UNSET:1\u20137, 2021 Machine Learning for Health (ML4H) 2021",
+        "Disparities in Dermatology AI: Assessments Using Diverse",
+        "Roxana Daneshjou\u2217 roxanad@stanford.edu",
+        "Kailas Voldrahalli\u2217 kailasv@stanford.edu",
+        "Weixin Liang\u2217 wxliang@stanford.edu",
+        "Roberto Novoa rnovoa@stanford.edu",
+        "Melissa Jenkins mjj@stanford.edu",
+        "arXiv:2111.08006v1 [eess.IV] 15 Nov 2021",
+        "Stanford University, CA, 94305",
+        "Veronica Rotemberg rotembev@mskcc.org",
+        "Memorial Sloan Kettering, NY, 10065",
+        "Justin Ko jmko@stanford.edu"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "9",
+      "pdf_filename": "06_fitzpatrick17k_2021.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/06_fitzpatrick17k_2021.pdf",
+      "pdf_sha256": "827fd6540d0246a38114d08cd9c3d2e749caa58f51beb2d4ec2525c24295291d",
+      "pdf_size_bytes": 1132095,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Evaluating Deep Neural Networks Trained on Clinical Images in Dermatology",
+        "with the Fitzpatrick 17k Dataset",
+        "Matthew Groh Caleb Harris Luis Soenksen Felix Lau",
+        "MIT Media Lab MIT Media Lab MIT, Harvard University Scale",
+        "Cambridge, MA Cambridge, MA Cambridge, MA San Francisco, CA",
+        "groh@mit.edu harrisc@mit.edu soenksen@mit.edu felix.lau@scale.com",
+        "arXiv:2104.09957v1 [cs.CV] 20 Apr 2021",
+        "Rachel Han Aerin Kim Arash Koochek",
+        "Scale Scale Banner Health",
+        "San Francisco, CA San Francisco, CA Phoenix, AZ",
+        "rachel.han@scale.com aerin.kim@scale.com arash.koochek@bannerhealth.com",
+        "Northeast Dermatology Associates"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "30",
+      "pdf_filename": "07_mste_2023.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/07_mste_2023.pdf",
+      "pdf_sha256": "779b2390bfb237ec4dfb29643263295997646081a28a1103a384ca0e55f47ada",
+      "pdf_size_bytes": 8662552,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Consensus and Subjectivity of Skin Tone Annotation",
+        "Candice Schumann Gbolahan O. Olanubi Auriel Wright",
+        "Google Google Google",
+        "United States United States United States",
+        "cschumann@google.com femio@google.com aurielwright@google.com",
+        "arXiv:2305.09073v3 [cs.CV] 2 Jan 2024",
+        "Ellis Monk, Jr. Courtney Heldreth Susanna Ricco",
+        "Harvard University\u2217 Google Google",
+        "emonk@fas.harvard.edu cheldreth@google.com ricco@google.com",
+        "Understanding different human attributes and how they affect model behavior may",
+        "become a standard need for all model creation and usage, from traditional computer"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "29",
+      "pdf_filename": "08_smartphone_tristimulus_colorimetry_2024.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/08_smartphone_tristimulus_colorimetry_2024.pdf",
+      "pdf_sha256": "96797443e7e23a60daba8633911aa96fd8371a2b524f5c609ae5aea9bdf26263",
+      "pdf_size_bytes": 7487527,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Smartphone tristimulus colorimetry for skin-tone analysis at",
+        "common pulse oximetry anatomical sites",
+        "Joshua A. Burrowa,* , Rutendo Jakachiraa,b , Gannon Lemastera , Kimani C. Toussaint, Jr.a,c,*",
+        "Brown University, PROBE Lab, School of Engineering, 184 Hope Street, Providence, RI, 02906, USA",
+        "Brown University, Physics Department, 184 Hope Street, Providence, RI, 02906, USA",
+        "Brown University Center for Digital Health, 139 Point Street, Providence, Rhode Island, 02912, USA",
+        "arXiv:2411.13832v1 [physics.med-ph] 21 Nov 2024",
+        "Significance: Smartphones hold great potential in point-of-care settings due to their accessibility and computational",
+        "capabilities. This is critical as clinicians increasingly seek to quantify skin-tone, a characteristic which has been shown",
+        "to impact the accuracy of pulse oximetry readings particularly for dark skin tones, and hence, disproportionately affect",
+        "Aim: This study presents a smartphone-based imaging technique for determining individual typology angle (ITA) and",
+        "compares these results to those obtained using an industry-standard tristimulus colorimeter, particularly for the finger,"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "27",
+      "pdf_filename": "09_standardized_camera_calibration_2019.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/09_standardized_camera_calibration_2019.pdf",
+      "pdf_sha256": "9c47dad4cb21dd1af93091e0728ddad14144205f7087db4675ff8450be67eb29",
+      "pdf_size_bytes": 1218443,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Standardized spectral and radiometric",
+        "calibration of consumer cameras",
+        "O LIVIER B URGGRAAFF 1,2,* , N ORBERT S CHMIDT 3 , J AIME",
+        "Z AMORANO 4 , K LAAS PAULY 5 , S ERGIO PASCUAL 4 , C ARLOS TAPIA 4 ,",
+        "E VANGELOS S PYRAKOS 6 , AND F RANS S NIK 1",
+        "1 Leiden Observatory, Leiden University, PO Box 9513, 2300 RA Leiden, The Netherlands",
+        "2 Institute of Environmental Sciences (CML), Leiden University, PO Box 9518, 2300 RA Leiden, The",
+        "arXiv:1906.04155v1 [physics.ins-det] 7 Jun 2019",
+        "3 DDQ Apps, Webservices, Project Management, Maastricht, The Netherlands",
+        "4 Dept. Astrof\u00edsica y CC. de la Atm\u00f3sfera, IPARCOS, Universidad Complutense de Madrid, Madrid, 28040,",
+        "5 VITO; Flemish Institute for Technological Research, Mol, Belgium",
+        "6 Biological and Environmental Sciences, School of Natural Sciences, University of Stirling, Stirling, United"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "21",
+      "pdf_filename": "10_spectral_sensitivity_without_camera_2023.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/10_spectral_sensitivity_without_camera_2023.pdf",
+      "pdf_sha256": "db18e92a45f46b7dae7fd635f868d6e423970e5b6de67514fa7d864356634f28",
+      "pdf_size_bytes": 11946241,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Spectral Sensitivity Estimation Without a",
+        "Grigory Solomatov, Member, IEEE, and Derya Akkaynak, Member, IEEE",
+        "As consumer cameras are not designed for high-precision visual tasks, manufacturers do not disclose spectral sensitivities. Their",
+        "estimation requires a costly optical setup, which triggered researchers to come up with numerous indirect methods that aim to lower",
+        "cost and complexity by using color targets. However, the use of color targets gives rise to new complications that make the estimation",
+        "more difficult, and consequently, there currently exists no simple, low-cost, robust go-to method for spectral sensitivity estimation that",
+        "non-specialized research labs can adopt. Furthermore, even if not limited by hardware or cost, researchers frequently work with",
+        "imagery from multiple cameras that they do not have in their possession. To provide a practical solution to this problem, we propose a",
+        "arXiv:2304.11549v2 [eess.IV] 11 Jul 2023",
+        "framework for spectral sensitivity estimation that not only does not require any hardware (including a color target), but also does not",
+        "require physical access to the camera itself. Similar to other work, we formulate an optimization problem that minimizes a two-term",
+        "objective function: a camera-specific term from a system of equations, and a universal term that bounds the solution space. Different"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "51",
+      "pdf_filename": "11_polarisation_optics_biomedical_review_2021.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/11_polarisation_optics_biomedical_review_2021.pdf",
+      "pdf_sha256": "1c21dc75e255be61bd0ed0a01784037c9cae6af1fe38aa00f456f548e8f15207",
+      "pdf_size_bytes": 17377052,
+      "pdfinfo_title": "Microsoft Word - Polarisation optics for biomedical and clinical applications a review.docx",
+      "title_candidates": [
+        "Microsoft Word - Polarisation optics for biomedical and clinical applications a review.docx",
+        "Polarisation optics for biomedical and clinical applications: a review",
+        "Chao He1,*, Honghui He2,3,*, Jintao Chang2,4, Binguo Chen2,5, Hui Ma2,3,4 and Martin J. Booth1,*",
+        "Department of Engineering Science, University of Oxford, Parks Road, Oxford, OX1 3PJ, UK",
+        "Guangdong Engineering Center of Polarisation Imaging and Sensing Technology, Tsinghua Shenzhen International Graduate",
+        "School, Tsinghua University, Shenzhen 518055, China",
+        "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University,",
+        "Shenzhen 518055, China",
+        "Department of Physics, Tsinghua University, Beijing 100084, China",
+        "Department of Biomedical Engineering, Tsinghua University, Beijing 100084, China",
+        "Corresponding authors: chao.he@eng.ox.ac.uk; he.honghui@sz.tsinghua.edu.cn; martin.booth@eng.ox.ac.uk",
+        "Many polarisation techniques have been harnessed for decades in biological and clinical research, each based"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "17",
+      "pdf_filename": "12_skin_biophysical_model_2022.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/12_skin_biophysical_model_2022.pdf",
+      "pdf_sha256": "f35f4f74163219b27f4daf177d2857ac6ea08f27c3e318344b9733a1b9187e64",
+      "pdf_size_bytes": 37662312,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Estimation of Spectral Biophysical Skin Properties",
+        "from Captured RGB Albedo",
+        "C. Aliaga1 C. Hery1 M.Xia1,2",
+        "Meta Reality Labs Research Cornell University2",
+        "arXiv:2201.10695v1 [cs.CV] 26 Jan 2022",
+        "Figure 1: Our model takes RGB albedo captures as input, and reconstructs a set of biophysical properties of human skin. On the left, an",
+        "example of a captured albedo vs the reconstruction of our model (top) using the estimated skin properties, of which melanin and hemoglobin",
+        "are shown in the bottom. On the right, renderings using albedos modified through edits of some of the estimated parameters, under two",
+        "different lighting setups (top and bottom rows).",
+        "We present a new method to reconstruct and manipulate the spectral properties of human skin from simple RGB albedo captures.",
+        "To this end, we leverage Monte Carlo light simulation over an accurate biophysical human skin layering model parameterized",
+        "by its most important components, thereby covering a plausible range of colors. The practical complexity of the model allows"
+      ]
+    },
+    {
+      "doi_candidates": [
+        "10.1038/s41598-022-16223-1"
+      ],
+      "first_page_text_available": true,
+      "page_count": "17",
+      "pdf_filename": "13_computational_spectral_reconstruction_survey_2021.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/13_computational_spectral_reconstruction_survey_2021.pdf",
+      "pdf_sha256": "ce43da28be65de5ca50c6d4cc8c240431d0313e786012cf6f4e43181c53c46fb",
+      "pdf_size_bytes": 2021243,
+      "pdfinfo_title": "A survey on computational spectral reconstruction methods from RGB to hyperspectral imaging",
+      "title_candidates": [
+        "A survey on computational spectral reconstruction methods from RGB to hyperspectral imaging",
+        "OPEN A survey on computational spectral",
+        "reconstruction methods from RGB",
+        "to hyperspectral imaging",
+        "Jingang Zhang1,7, Runmu Su1,2,7, Qiang Fu3, Wenqi Ren4, Felix Heide5 & Yunfeng Nie6*",
+        "Hyperspectral imaging enables many versatile applications for its competence in capturing abundant",
+        "spatial and spectral information, which is crucial for identifying substances. However, the devices",
+        "for acquiring hyperspectral images are typically expensive and very complicated, hindering the",
+        "promotion of their application in consumer electronics, such as daily food inspection and point-of-",
+        "care medical screening, etc. Recently, many computational spectral imaging methods have been",
+        "proposed by directly reconstructing the hyperspectral information from widely available RGB images.",
+        "These reconstruction methods can exclude the usage of burdensome spectral camera hardware while"
+      ]
+    },
+    {
+      "doi_candidates": [
+        "10.18434/m38597",
+        "10.6028/jres.122.026"
+      ],
+      "first_page_text_available": true,
+      "page_count": "5",
+      "pdf_filename": "14_nist_human_skin_reflectance_2017.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/14_nist_human_skin_reflectance_2017.pdf",
+      "pdf_sha256": "2e91ad83098bea20b454faac1607b8e581a4a1a936f4d5b331dcd9bae3eed5e5",
+      "pdf_size_bytes": 339138,
+      "pdfinfo_title": "Reference Data Set of Human Skin Reflectance",
+      "title_candidates": [
+        "Reference Data Set of Human Skin Reflectance",
+        "Volume 122 (2017) https://doi.org/10.6028/jres.122.026",
+        "Journal of Research of the National Institute of Standards and Technology",
+        "Reference Data Set of Human Skin",
+        "Catherine C. Cooksey, David W. Allen, and Benjamin K. Tsai",
+        "National Institute of Standards and Technology,",
+        "Gaithersburg, MD 20899, USA",
+        "catherine.cooksey@nist.gov",
+        "benjamin.tsai@nist.gov",
+        "Data DOI: https://doi.org/10.18434/M38597",
+        "Key words: hyperspectral; medical; reflectance; remote sensing; skin; spectral; tissue.",
+        "This data set contains 100 reference reflectance spectra of human skin, spanning the wavelength region"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": false,
+      "page_count": "17",
+      "pdf_filename": "15_hyperspectral_imaging_database_human_facial_skin_2025.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/15_hyperspectral_imaging_database_human_facial_skin_2025.pdf",
+      "pdf_sha256": "b598e69d89248e4dd6821186269a1d5491eb3d40597244fe03fcad8ed207c13a",
+      "pdf_size_bytes": 19510058,
+      "pdfinfo_title": "15_hyperspacial_image_database_of_human_faciial_color.pdf",
+      "title_candidates": [
+        "15_hyperspacial_image_database_of_human_faciial_color.pdf"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "11",
+      "pdf_filename": "16_estimating_skin_tone_dermatology_2019.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/16_estimating_skin_tone_dermatology_2019.pdf",
+      "pdf_sha256": "a9087a43f914b7d82a05c94f75f52d0b22b0e8957cc6cbe736b6e72e4d1da5ae",
+      "pdf_size_bytes": 2546247,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Estimating Skin Tone and Effects on Classification",
+        "Performance in Dermatology Datasets",
+        "Newton M. Kinyanjui,1,4 Timothy Odonga,1,4 Celia Cintas,1 Noel C. F. Codella,2",
+        "Rameswar Panda,3 Prasanna Sattigeri,2 and Kush R. Varshney1,2",
+        "IBM Research, 1 Nairobi, Kenya, 2 Yorktown Heights, NY, USA, 3 Cambridge, MA, USA",
+        "arXiv:1910.13268v1 [cs.CV] 29 Oct 2019",
+        "Carnegie Mellon University Africa, Kigali, Rwanda",
+        "Recent advances in computer vision and deep learning have led to breakthroughs",
+        "in the development of automated skin image analysis. In particular, skin cancer",
+        "classification models have achieved performance higher than trained expert der-",
+        "matologists. However, no attempt has been made to evaluate the consistency in",
+        "performance of machine learning models across populations with varying skin"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "19",
+      "pdf_filename": "17_eigenspectra_optoacoustic_2015.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/17_eigenspectra_optoacoustic_2015.pdf",
+      "pdf_sha256": "f2291b20d3cc4cf49ac27cbda0d2cb5f864bc50e9996a9f3f1d2f1eade20695f",
+      "pdf_size_bytes": 2580318,
+      "pdfinfo_title": "\uf020",
+      "title_candidates": [
+        "\uf020",
+        "Eigenspectra optoacoustic tomography achieves",
+        "quantitative blood oxygenation imaging deep in tissues",
+        "Stratis Tzoumas1,3\u2020, Antonio Nunes1,\u2020 , Ivan Olefir1, Stefan Stangl2, Panagiotis Symvoulidis1,3, Sarah Glasl1,3,",
+        "Christine Bayer2, Gabriele Multhoff2,4, Vasilis Ntziachristos1,3*",
+        "Institute for Biological and Medical Imaging (IBMI), Helmholtz Zentrum M\u00fcnchen, Neuherberg, Germany",
+        "Department of Radiation Oncology, Klinikum rechts der Isar, Technische Universit\u00e4t M\u00fcnchen, M\u00fcnchen, Germany",
+        "Chair for Biological Imaging, Technische Universit\u00e4t M\u00fcnchen. M\u00fcnchen, Germany",
+        "CCG \u2013 Innate immunity in Tumor Biology, Helmholtz Zentrum M\u00fcnchen, Neuherberg, Germany",
+        "Light propagating in tissue attains a spectrum that varies with dynamic imaging capabilities. Electron paramagnetic",
+        "location due to wavelength-dependent fluence attenuation by resonance imaging3 can measure tissue pO2 but is not widely",
+        "tissue optical properties, an effect that causes spectral corruption. used due to limitations in spatial and temporal resolution."
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "17",
+      "pdf_filename": "18_physical_plausible_spectral_reconstruction_2020.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/18_physical_plausible_spectral_reconstruction_2020.pdf",
+      "pdf_sha256": "7559d8e739fb48a367beb2084f3e412cfc747bd83e231744372021082c07d25a",
+      "pdf_size_bytes": 5533324,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "NTIRE 2020 Challenge on Spectral Reconstruction from an RGB Image",
+        "Boaz Arad Radu Timofte Ohad Ben-Shahar Yi-Tun Lin Graham Finlayson",
+        "Shai Givati Jiaojiao Li Chaoxiong Wu Rui Song Yunsong Li Fei Liu",
+        "Zhiqiang Lang Wei Wei Lei Zhang Jiangtao Nie Yuzhi Zhao Lai-Man Po",
+        "Qiong Yan Wei Liu Tingyu Lin Youngjung Kim Changyeop Shin",
+        "Kyeongha Rho Sungho Kim Zhiyu ZHU Junhui HOU He Sun Jinchang Ren",
+        "arXiv:2005.03412v1 [eess.IV] 7 May 2020",
+        "Zhenyu Fang Yijun Yan Hao Peng Xiaomei Chen Jie Zhao Tarek Stiebel",
+        "Simon Koppers Dorit Merhof Honey Gupta Kaushik Mitra Biebele Joslyn Fubara",
+        "Mohamed Sedky Dave Dyke Atmadeep Banerjee Akash Palrecha Sabarinathan",
+        "K Uma D Synthiya Vinothini B Sathya Bama S M Md Mansoor Roomi",
+        "tral bands [14]. However, the rich, spectral, information"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "19",
+      "pdf_filename": "19_Arad_NTIRE_2022_Spectral_Recovery_Challenge_and_Data_Set_CVPRW_2022_paper.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/19_Arad_NTIRE_2022_Spectral_Recovery_Challenge_and_Data_Set_CVPRW_2022_paper.pdf",
+      "pdf_sha256": "7b55f81d8d4b4111288157b8850fe177412c614fa03cafff70827d847c7f07a4",
+      "pdf_size_bytes": 2959406,
+      "pdfinfo_title": "NTIRE 2022 Spectral Recovery Challenge and Data Set",
+      "title_candidates": [
+        "NTIRE 2022 Spectral Recovery Challenge and Data Set",
+        "Boaz Arad Radu Timofte Rony Yahel Nimrod Morag Amir Bernat",
+        "Yuanhao Cai Jing Lin Zudi Lin Haoqian Wang Yulun Zhang Hanspeter Pfister",
+        "Luc Van Gool Shuai Liu Yongqiang Li Chaoyu Feng Lei Lei Jiaojiao Li",
+        "Songcheng Du Chaoxiong Wu Yihong Leng Rui Song Mingwei Zhang",
+        "Chongxing Song Shuyi Zhao Zhiqiang Lang Wei Wei Lei Zhang Renwei Dian",
+        "Tianci Shan Anjing Guo Chengguo Feng Jinyang Liu Mirko Agarla",
+        "Simone Bianco Marco Buzzelli Luigi Celona Raimondo Schettini Jiang He",
+        "Yi Xiao Jiajun Xiao Qiangqiang Yuan Jie Li Liangpei Zhang Taesung Kwon",
+        "Dohoon Ryu Hyokyoung Bae Hao-Hsiang Yang Hua-En Chang Zhi-Kai Huang",
+        "Wei-Ting Chen Sy-Yen Kuo Junyu Chen Haiwei Li Song Liu Sabarinathan"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "9",
+      "pdf_filename": "20_CHROMA-FIT_Dataset_Characterizing_Human_Ranges_of_Melanin_for_Increased_WACVW_2024_paper.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/20_CHROMA-FIT_Dataset_Characterizing_Human_Ranges_of_Melanin_for_Increased_WACVW_2024_paper.pdf",
+      "pdf_sha256": "b491a81a436373f8f8de62f44d06c69d0720eaeec383abaee6116a777ea436c3",
+      "pdf_size_bytes": 7709621,
+      "pdfinfo_title": "The CHROMA-FIT Dataset: Characterizing Human Ranges of Melanin for Increased Tone-Awareness",
+      "title_candidates": [
+        "The CHROMA-FIT Dataset: Characterizing Human Ranges of Melanin for Increased Tone-Awareness",
+        "This WACV workshop paper is the Open Access version, provided by the Computer Vision Foundation.",
+        "Except for this watermark, it is identical to the accepted version;",
+        "the final published version of the proceedings is available on IEEE Xplore.",
+        "The CHROMA-FIT Dataset:",
+        "Characterizing Human Ranges of Melanin",
+        "For Increased Tone-awareness",
+        "Gabriella Pangelinan, Xavier Merino, Samuel Langborgh, Kushal Vangara,",
+        "Joyce Annan, Audison Beaubrun, Troy Weekes, Michael C. King",
+        "Florida Institute of Technology",
+        "{gpangelinan, slangborgh2021, kvangara2015, jannan2021, abeaubrun2013}@my.fit.edu",
+        "{xmerino2012, tweekes, michaelking}@fit.edu"
+      ]
+    },
+    {
+      "doi_candidates": [
+        "10.1038/s41746-025-02245-2"
+      ],
+      "first_page_text_available": true,
+      "page_count": "10",
+      "pdf_filename": "21_evaluating_skintone_s41746-025-02245-2.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/21_evaluating_skintone_s41746-025-02245-2.pdf",
+      "pdf_sha256": "78068ca871bf08f54c56f3a79a8ae58626b70309971152456daaeb68efb7d7a1",
+      "pdf_size_bytes": 1539429,
+      "pdfinfo_title": "Evaluating skin tone scales for dermatologic dataset labeling: a prospective-comparative study",
+      "title_candidates": [
+        "Evaluating skin tone scales for dermatologic dataset labeling: a prospective-comparative study",
+        "npj | digital medicine Article",
+        "Evaluating skin tone scales for",
+        "dermatologic dataset labeling: a",
+        "prospective-comparative study",
+        "Vanessa R. Weir , Yingjoy Li , Maura C. Gillis , Nicholas R. Kurtansky , Trina Salvador ,",
+        "Allan C. Halpern1, Kelly C. Nelson3, Jenna C. Lester4 & Veronica Rotemberg1",
+        "Skin tone affects arti\ufb01cial intelligence (AI) performance in dermatology. While labeling datasets for skin",
+        "tone could improve algorithm generalizability for detecting dermatologic malignancies, large-scale",
+        "validation of skin tone assessments is lacking. This prospective observational study assessed",
+        "reliability of subjective tools (Fitzpatrick Skin Type [FST], Monk Skin Tone [MST], Pantone SkinTone",
+        "Guide) and an objective colorimeter for in-person and photography-based settings to evaluate utility"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "12",
+      "pdf_filename": "22_skin_tone_wild.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/22_skin_tone_wild.pdf",
+      "pdf_sha256": "1f911f4a200666efd31cd3d3065bc833f94810462110e43f54fa3161203f4e16",
+      "pdf_size_bytes": 7071234,
+      "pdfinfo_title": "Large-Scale Dataset and Benchmark for Skin Tone Classification in the Wild",
+      "title_candidates": [
+        "Large-Scale Dataset and Benchmark for Skin Tone Classification in the Wild",
+        "Large-Scale Dataset and Benchmark for Skin Tone Classification in",
+        "Vitor Pereira Matias, Ma\u0301rcus Vin\u0131\u0301cius Lobo Costa, Joa\u0303o Batista Neto, and Tiago Novello",
+        "Instituto de Cie\u0302ncias Matema\u0301ticas e de Computac\u0327a\u0303o (ICMC), Universidade de Sa\u0303o Paulo",
+        "(USP), Sa\u0303o Carlos, Sa\u0303o Paulo, Brazil & Instituto de Matema\u0301tica Pura e Aplica, Rio de",
+        "arXiv:2603.02475v1 [cs.CV] 2 Mar 2026",
+        "Deep learning models often inherit biases from their training data. While fairness across gender and ethnicity",
+        "is well-studied, fine-grained skin tone analysis remains a challenge due to the lack of granular, annotated",
+        "datasets. Existing methods often rely on the medical 6-tone Fitzpatrick scale, which lacks visual representa-",
+        "tiveness, or use small, private datasets that prevent reproducibility, or often rely on classic computer vision",
+        "pipelines, with a few using deep learning. They overlook issues like train-test leakage and dataset imbal-",
+        "ance, and are limited by small or unavailable datasets. In this work, we present a comprehensive framework"
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "6",
+      "pdf_filename": "23_Enhanced_fairness_ML-1-10-20241127.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/23_Enhanced_fairness_ML-1-10-20241127.pdf",
+      "pdf_sha256": "f033c287726f82f0bbfc7731bb81c7bb57a09de49938a833a54aec629930e94d",
+      "pdf_size_bytes": 4942468,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "Enhancing Fairness in Machine Learning:",
+        "Skin Tone Classification Using the",
+        "Monk Skin Tone Scale",
+        "Vitor Pereira Matias and Joa\u0303o Batista Neto",
+        "Institute of Mathematics and Computer Science",
+        "University of Sa\u0303o Paulo",
+        "Sa\u0303o Carlos, SP, Brazil",
+        "Email: vitorpmatias@usp.br, jbatista@usp.br",
+        "poorly curated datasets are a pressing issue, especially in fields Monk Skin Tone (MST) [8] which is the one that we adopt",
+        "related to skin tone recognition in which imbalanced datasets lead in our work. As opposed to the 6-tone FST scale, the MST",
+        "to biased results. Developing a skin tone classification algorithm",
+        "helps identify such imbalances. Existing methods range from scale suggests 10 distinct skin tones, which makes it more"
+      ]
+    },
+    {
+      "doi_candidates": [
+        "10.1088/1742-6596/3128/1/012011"
+      ],
+      "first_page_text_available": true,
+      "page_count": "10",
+      "pdf_filename": "25_metamer_mismatch_Forsythe_2025_J._Phys.__Conf._Ser._3128_012011.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/25_metamer_mismatch_Forsythe_2025_J._Phys.__Conf._Ser._3128_012011.pdf",
+      "pdf_sha256": "cde544ab9374eaafaecb5b7310888e61ebfe3930c26433f789bdbef52dd15760",
+      "pdf_size_bytes": 560501,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "PAPER \u2022 OPEN ACCESS You may also like",
+        "- Charamer mismatch-based spectral gamut",
+        "Metamer Mismatch Bodies: Foundations, mapping",
+        "Methods, and Applications in Color Science - Phase coordination and phase\u2013velocity",
+        "relationship in metameric robot locomotion",
+        "Hongbin Fang, Suyi Li, K W Wang et al.",
+        "To cite this article: Alexander Forsythe and Brian Funt 2025 J. Phys.: Conf. Ser. 3128 012011",
+        "- Tuning light to make fruit look natural:",
+        "Memory colours, metamers and",
+        "illumination modulation",
+        "Yesesvi Somayaji Konakanchi and Anya",
+        "View the article online for updates and enhancements."
+      ]
+    },
+    {
+      "doi_candidates": [],
+      "first_page_text_available": true,
+      "page_count": "9",
+      "pdf_filename": "28_JOSAA_MetSetRefRec_MorovicFinlayson_2006.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/28_JOSAA_MetSetRefRec_MorovicFinlayson_2006.pdf",
+      "pdf_sha256": "09826a5b4a282783bbf8f42951c662ea4c8d6dab0bc4188facbe29f35a30e15f",
+      "pdf_size_bytes": 131933,
+      "pdfinfo_title": "",
+      "title_candidates": [
+        "1814 J. Opt. Soc. Am. A / Vol. 23, No. 8 / August 2006 P. Morovi\u010d and G. D. Finlayson",
+        "Metamer-set-based approach to estimating surface",
+        "reflectance from camera RGB",
+        "Peter Morovi~ and Graham D. Finlayson",
+        "University of East Anglia, School of Computing Sciences, Norwich, NR4 7TJ, England",
+        "We present an approach to estimating the reflectance of a surface given its camera response. In this approach",
+        "we first solve the general form of this problem: We calculate the set of all possible surface reflectances, called",
+        "the metamer set, and then choose a member from this set. Three possibilities in choosing a single reflectance",
+        "are described here. First, we assume that all reflectances are equally likely and minimize worst-case error.",
+        "Second, we adopt the assumption that reflectances follow a normal probability distribution and maximize this",
+        "probability. Finally, we assume that reflectances are smooth and maximize this property. The results of our",
+        "experiments show that there is significant benefit from the proposed approach in terms of the accuracy of the"
+      ]
+    },
+    {
+      "doi_candidates": [
+        "10.1371/journal.pone.0125817",
+        "10.7910/dvn/29370"
+      ],
+      "first_page_text_available": true,
+      "page_count": "31",
+      "pdf_filename": "31_reconstruction-of-biological-colors.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/31_reconstruction-of-biological-colors.pdf",
+      "pdf_sha256": "0220840ab0254a0494c7177760baec8089d0cf52c13e7d7564769b9d1e6dda6d",
+      "pdf_size_bytes": 5902606,
+      "pdfinfo_title": "Differentiating Biological Colours with Few and Many Sensors: Spectral Reconstruction with RGB and Hyperspectral Cameras",
+      "title_candidates": [
+        "Differentiating Biological Colours with Few and Many Sensors: Spectral Reconstruction with RGB and Hyperspectral Cameras",
+        "Differentiating Biological Colours with Few",
+        "and Many Sensors: Spectral Reconstruction",
+        "with RGB and Hyperspectral Cameras",
+        "Jair E. Garcia1*, Madeline B. Girard2, Michael Kasumovic3, Phred Petersen1, Philip",
+        "A. Wilksch4, Adrian G. Dyer1",
+        "1 School of Media and Communication, RMIT University, Melbourne, Victoria, Australia, 2 Department of",
+        "Environmental Science, Policy and Management, University of California, Berkeley, California, USA,",
+        "3 Ecology & Evolution Research Centre, University of New South Wales, Sydney, New South Wales,",
+        "a11111 Australia, 4 School of Applied Sciences, RMIT University, Melbourne, Victoria, Australia",
+        "* jair.garcia@rmit.edu.au",
+        "Citation: Garcia JE, Girard MB, Kasumovic M,"
+      ]
+    },
+    {
+      "doi_candidates": [
+        "10.3390/s20216399"
+      ],
+      "first_page_text_available": true,
+      "page_count": "25",
+      "pdf_filename": "33_phhyysiically_plausible_spectral_reconstruction.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/33_phhyysiically_plausible_spectral_reconstruction.pdf",
+      "pdf_sha256": "95678686496b98bf9da738834cef81f87997127f4e139e9308f44e84ec72b2ad",
+      "pdf_size_bytes": 13180086,
+      "pdfinfo_title": "Physically Plausible Spectral Reconstruction",
+      "title_candidates": [
+        "Physically Plausible Spectral Reconstruction",
+        "Physically Plausible Spectral Reconstruction \u2020",
+        "Yi-Tun Lin * and Graham D. Finlayson",
+        "School of Computing Sciences, University of East Anglia, Norwich NR4 7TJ, UK; G.Finlayson@uea.ac.uk",
+        "* Correspondence: Yi-Tun.Lin@uea.ac.uk",
+        "\u2020 This paper is an extension version of the conference paper: Lin, Y.T.; Finlayson, G.D. Physically Plausible",
+        "Spectral Reconstruction from RGB Images. In Proceedings of the IEEE/CVF Conference on Computer Vision",
+        "and Pattern Recognition Workshops, Seattle, WA, USA, 14\u201319 June 2020.",
+        "with the very best algorithms using deep learning\u2014can already solve this problem with good spectral",
+        "accuracy. However, the recovered spectra are physically incorrect in that they do not induce the RGBs",
+        "from which they are recovered. Moreover, if the exposure of the RGB image changes then the recovery",
+        "performance often degrades significantly\u2014i.e., most contemporary methods only work for a fixed"
+      ]
+    },
+    {
+      "doi_candidates": [
+        "10.17559/tv-20230720000818"
+      ],
+      "first_page_text_available": true,
+      "page_count": "9",
+      "pdf_filename": "36_wiiener_algo_31_2024_2_557-565.pdf",
+      "pdf_path": "preprocessed_intake/corpus_prior_art_paper-pdf/36_wiiener_algo_31_2024_2_557-565.pdf",
+      "pdf_sha256": "0dda488a72947b1e9bf6d92b17c0bac7dd876bba0b734355ac6aba69dbb277e5",
+      "pdf_size_bytes": 1517677,
+      "pdfinfo_title": "Microsoft Word - TV_31_2024_2_557-565.docx",
+      "title_candidates": [
+        "Microsoft Word - TV_31_2024_2_557-565.docx",
+        "ISSN 1330-3651 (Print), ISSN 1848-6339 (Online) https://doi.org/10.17559/TV-20230720000818",
+        "Original scientific paper",
+        "Implementation of Wiener Algorithm for Spectral Reflectance Reconstruction of 3 and 6",
+        "Andrej U\u010cAKAR*, Primo\u017e WEINGERL, Andrej KO\u0160IR, Ale\u0161 HLADNIK",
+        "images acquired using traditional RGB camera was compared with that of 6-channel images captured by a modified 6-channel camera. 240 patches of ColorChecker DC",
+        "Chart were used for training and testing of the models.Their performance was assessed via quality metrics PSNR, RMSE and CIE DE2000 based on the reconstructed and",
+        "spectrophotometrically measured reflectance values. Compared to the 3-channel models, 6-channel models in general provided better results. Lowest color difference CIE",
+        "DE2000 was obtained when using 10 calculation terms in the 3-channel algorithm and 13 terms in the 6-channel. Best reconstruction models, i.e. lowest CIE DE2000 and",
+        "RMSE and highest PSNR values, were found for the skin and neutral tones while the performance was the poorest with the saturated color patches. The obtained results",
+        "can be of use in various practical applications, such as in a printing workflow with high precision color rendering or for accurate digitization of paintings and other works of",
+        "1 INTRODUCTION precision color rendering [14]. The field of fine art"
+      ]
+    }
+  ],
+  "governed_record_count": 32,
+  "governed_without_confirmed_pdf": [
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1016/j.jaad.2022.06.115",
+      "corpus_member_id": "CORPUS-c84160c4be5aec03",
+      "doi": "10.1016/j.jaad.2022.06.115",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "1",
+      "source_metadata_json": "{\"best_domain_rank\":3,\"canonical_key\":\"doi:10.1016/j.jaad.2022.06.115\",\"claim_count\":2,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":6,\"claims_json\":\"[\\\"TC-NOV-004\\\",\\\"TC-NOV-006\\\"]\",\"doi\":\"10.1016/j.jaad.2022.06.115\",\"domain_count\":1,\"domains_json\":\"[\\\"physics_informed_clinical_image_analysis\\\"]\",\"maximum_domain_score\":9.0,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":72.33333333333334,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"32993 Association of pigment contrast on multispectral dermatoscopic imaging with pigmented lesion histopathologic diagnosis\",\"unique_review_order\":21,\"url\":\"https://doi.org/10.1016/j.jaad.2022.06.115\",\"year\":\"2022.0\"}",
+      "task_id": "DISPOSITION-TASK-c84160c4be5aec03",
+      "task_sha256": "2947566a963b7b8795c3ce0a35c7266de3ec70c077b0e41a130a16ec5f0dfccb",
+      "title": "32993 Association of pigment contrast on multispectral dermatoscopic imaging with pigmented lesion histopathologic diagnosis",
+      "year": "2022.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1016/j.visres.2022.108048",
+      "corpus_member_id": "CORPUS-0fdb2019d281b81c",
+      "doi": "10.1016/j.visres.2022.108048",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "2",
+      "source_metadata_json": "{\"best_domain_rank\":7,\"canonical_key\":\"doi:10.1016/j.visres.2022.108048\",\"claim_count\":3,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":10,\"claims_json\":\"[\\\"TC-NOV-001\\\",\\\"TC-NOV-003\\\",\\\"TC-NOV-005\\\"]\",\"doi\":\"10.1016/j.visres.2022.108048\",\"domain_count\":3,\"domains_json\":\"[\\\"fisher_information_and_cramer_rao_skin_imaging\\\",\\\"melanin_hemoglobin_and_scattering_identifiability\\\",\\\"multispectral_band_selection_and_measurement_design\\\"]\",\"maximum_domain_score\":11.255273,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":89.79626028571428,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Effect of skin colors due to hemoglobin or melanin modulation on facial expression recognition\",\"unique_review_order\":8,\"url\":\"https://doi.org/10.1016/j.visres.2022.108048\",\"year\":\"2022.0\"}",
+      "task_id": "DISPOSITION-TASK-0fdb2019d281b81c",
+      "task_sha256": "b0bd4f5416bdcda6dc8f9d284f34c11f1983198d1d902c2ca62fb5242e9c254f",
+      "title": "Effect of skin colors due to hemoglobin or melanin modulation on facial expression recognition",
+      "year": "2022.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1016/s0924-2031(01)00144-8",
+      "corpus_member_id": "CORPUS-c6ae9161a87747ca",
+      "doi": "10.1016/s0924-2031(01)00144-8",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "3",
+      "source_metadata_json": "{\"best_domain_rank\":2,\"canonical_key\":\"doi:10.1016/s0924-2031(01)00144-8\",\"claim_count\":1,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":8,\"claims_json\":\"[\\\"TC-NOV-001\\\"]\",\"doi\":\"10.1016/s0924-2031(01)00144-8\",\"domain_count\":1,\"domains_json\":\"[\\\"fisher_information_and_cramer_rao_skin_imaging\\\"]\",\"maximum_domain_score\":10.653213,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":92.306426,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Melanin as a confounding factor in near infrared spectroscopy of skin\",\"unique_review_order\":35,\"url\":\"https://doi.org/10.1016/s0924-2031(01)00144-8\",\"year\":\"2002.0\"}",
+      "task_id": "DISPOSITION-TASK-c6ae9161a87747ca",
+      "task_sha256": "2982606895c91fbacbf12917700c4d4e28ce06405af8eab3c6fa8aee4db153a8",
+      "title": "Melanin as a confounding factor in near infrared spectroscopy of skin",
+      "year": "2002.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1038/s41591-023-02540-z",
+      "corpus_member_id": "CORPUS-eec76c4dd7b0817f",
+      "doi": "10.1038/s41591-023-02540-z",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "4",
+      "source_metadata_json": "{\"best_domain_rank\":4,\"canonical_key\":\"doi:10.1038/s41591-023-02540-z\",\"claim_count\":2,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":8,\"claims_json\":\"[\\\"TC-NOV-004\\\",\\\"TC-NOV-006\\\"]\",\"doi\":\"10.1038/s41591-023-02540-z\",\"domain_count\":1,\"domains_json\":\"[\\\"clinical_external_validation_and_domain_shift\\\"]\",\"maximum_domain_score\":9.664353,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":65.328706,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"External validation of AI models in health should be replaced with recurring local validation\",\"unique_review_order\":25,\"url\":\"https://doi.org/10.1038/s41591-023-02540-z\",\"year\":\"2023.0\"}",
+      "task_id": "DISPOSITION-TASK-eec76c4dd7b0817f",
+      "task_sha256": "700d320b42b44744d60fbbd4a01c0e2c2e3018f9783cbef50dd449afb0ba0f62",
+      "title": "External validation of AI models in health should be replaced with recurring local validation",
+      "year": "2023.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1093/bjd/ljag151.052",
+      "corpus_member_id": "CORPUS-bc75393e9f09c939",
+      "doi": "10.1093/bjd/ljag151.052",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "5",
+      "source_metadata_json": "{\"best_domain_rank\":9,\"canonical_key\":\"doi:10.1093/bjd/ljag151.052\",\"claim_count\":1,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":15,\"claims_json\":\"[\\\"TC-NOV-004\\\"]\",\"doi\":\"10.1093/bjd/ljag151.052\",\"domain_count\":1,\"domains_json\":\"[\\\"dermatology_ai_fairness_and_skin_tone\\\"]\",\"maximum_domain_score\":12.5,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":57.11111111111112,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"P11 Objective measurement of skin tone using artificial intelligence\",\"unique_review_order\":48,\"url\":\"https://doi.org/10.1093/bjd/ljag151.052\",\"year\":\"2026.0\"}",
+      "task_id": "DISPOSITION-TASK-bc75393e9f09c939",
+      "task_sha256": "846a7bba569f4e9a045f6640ddf1441a66ed4c20e26dcf5b8b6933810e39c7e4",
+      "title": "P11 Objective measurement of skin tone using artificial intelligence",
+      "year": "2026.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1093/ced/llaf145",
+      "corpus_member_id": "CORPUS-b865cc8780095eb9",
+      "doi": "10.1093/ced/llaf145",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "6",
+      "source_metadata_json": "{\"best_domain_rank\":5,\"canonical_key\":\"doi:10.1093/ced/llaf145\",\"claim_count\":2,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":7,\"claims_json\":\"[\\\"TC-NOV-004\\\",\\\"TC-NOV-006\\\"]\",\"doi\":\"10.1093/ced/llaf145\",\"domain_count\":1,\"domains_json\":\"[\\\"dermatology_ai_fairness_and_skin_tone\\\"]\",\"maximum_domain_score\":13.5,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":68.0,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Comment on \\u2018Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study\\u2019\",\"unique_review_order\":23,\"url\":\"https://doi.org/10.1093/ced/llaf145\",\"year\":\"2025.0\"}",
+      "task_id": "DISPOSITION-TASK-b865cc8780095eb9",
+      "task_sha256": "66d29703924cfc09fbb5f401f5a1dc7cd66ae6756b16f927bb36fae768911d48",
+      "title": "Comment on \u2018Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study\u2019",
+      "year": "2025.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1109/iccphot.2016.7492879",
+      "corpus_member_id": "CORPUS-9800795f20165472",
+      "doi": "10.1109/iccphot.2016.7492879",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "7",
+      "source_metadata_json": "{\"best_domain_rank\":5,\"canonical_key\":\"doi:10.1109/iccphot.2016.7492879\",\"claim_count\":1,\"claim_id\":\"TC-NOV-006\",\"claim_rank\":15,\"claims_json\":\"[\\\"TC-NOV-006\\\"]\",\"doi\":\"10.1109/iccphot.2016.7492879\",\"domain_count\":1,\"domains_json\":\"[\\\"capture_variability_white_balance_and_illumination\\\"]\",\"maximum_domain_score\":10.255273,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":61.510546000000005,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"White balance under mixed illumination using flash photography\",\"unique_review_order\":47,\"url\":\"https://doi.org/10.1109/iccphot.2016.7492879\",\"year\":\"2016.0\"}",
+      "task_id": "DISPOSITION-TASK-9800795f20165472",
+      "task_sha256": "3b1531ae9bef9d62a5e5622bfdf18f38be87206e55e04710a0baf140bd667c54",
+      "title": "White balance under mixed illumination using flash photography",
+      "year": "2016.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1109/iccvw60793.2023.00122",
+      "corpus_member_id": "CORPUS-b6ab3fc03178082f",
+      "doi": "10.1109/iccvw60793.2023.00122",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "8",
+      "source_metadata_json": "{\"best_domain_rank\":3,\"canonical_key\":\"doi:10.1109/iccvw60793.2023.00122\",\"claim_count\":1,\"claim_id\":\"TC-NOV-006\",\"claim_rank\":7,\"claims_json\":\"[\\\"TC-NOV-006\\\"]\",\"doi\":\"10.1109/iccvw60793.2023.00122\",\"domain_count\":1,\"domains_json\":\"[\\\"capture_variability_white_balance_and_illumination\\\"]\",\"maximum_domain_score\":10.90309,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":76.13951333333334,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Deterministic Neural Illumination Mapping for Efficient Auto-White Balance Correction\",\"unique_review_order\":34,\"url\":\"https://doi.org/10.1109/iccvw60793.2023.00122\",\"year\":\"2023.0\"}",
+      "task_id": "DISPOSITION-TASK-b6ab3fc03178082f",
+      "task_sha256": "740f27af8187c6d057caf5b6ecae31420690eff5436dab2db35009a522b7142a",
+      "title": "Deterministic Neural Illumination Mapping for Efficient Auto-White Balance Correction",
+      "year": "2023.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1109/tip.2017.2764264",
+      "corpus_member_id": "CORPUS-e6236613e4733a0d",
+      "doi": "10.1109/tip.2017.2764264",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "9",
+      "source_metadata_json": "{\"best_domain_rank\":4,\"canonical_key\":\"doi:10.1109/tip.2017.2764264\",\"claim_count\":1,\"claim_id\":\"TC-NOV-006\",\"claim_rank\":11,\"claims_json\":\"[\\\"TC-NOV-006\\\"]\",\"doi\":\"10.1109/tip.2017.2764264\",\"domain_count\":1,\"domains_json\":\"[\\\"capture_variability_white_balance_and_illumination\\\"]\",\"maximum_domain_score\":10.255273,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":66.510546,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"A Data Set for Camera-Independent Color Constancy\",\"unique_review_order\":36,\"url\":\"https://doi.org/10.1109/tip.2017.2764264\",\"year\":\"2018.0\"}",
+      "task_id": "DISPOSITION-TASK-e6236613e4733a0d",
+      "task_sha256": "1da5818e56ce1feb51275429fa5c09adde451559c5bdff5eed7598526dbaee6b",
+      "title": "A Data Set for Camera-Independent Color Constancy",
+      "year": "2018.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1109/wacvw60836.2024.00067",
+      "corpus_member_id": "CORPUS-3043caf9e757ba1d",
+      "doi": "10.1109/wacvw60836.2024.00067",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "10",
+      "source_metadata_json": "{\"best_domain_rank\":8,\"canonical_key\":\"doi:10.1109/wacvw60836.2024.00067\",\"claim_count\":1,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":13,\"claims_json\":\"[\\\"TC-NOV-004\\\"]\",\"doi\":\"10.1109/wacvw60836.2024.00067\",\"domain_count\":1,\"domains_json\":\"[\\\"dermatology_ai_fairness_and_skin_tone\\\"]\",\"maximum_domain_score\":13.345098,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":60.190196,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification\",\"unique_review_order\":41,\"url\":\"https://doi.org/10.1109/wacvw60836.2024.00067\",\"year\":\"2024.0\"}",
+      "task_id": "DISPOSITION-TASK-3043caf9e757ba1d",
+      "task_sha256": "4be0c14395b3992930bb8f8bf1855a0737fe64cf245a0f9abc6abd960ff42bc4",
+      "title": "Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification",
+      "year": "2024.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1111/ics.12147",
+      "corpus_member_id": "CORPUS-a9aa478e6b533356",
+      "doi": "10.1111/ics.12147",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "11",
+      "source_metadata_json": "{\"best_domain_rank\":3,\"canonical_key\":\"doi:10.1111/ics.12147\",\"claim_count\":2,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":9,\"claims_json\":\"[\\\"TC-NOV-001\\\",\\\"TC-NOV-005\\\"]\",\"doi\":\"10.1111/ics.12147\",\"domain_count\":1,\"domains_json\":\"[\\\"skin_reflectance_inverse_models\\\"]\",\"maximum_domain_score\":15.954243,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":91.24181933333334,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Determination of melanin types and relative concentrations: an observational study using a non\\u2010invasive inverse skin reflectance analysis\",\"unique_review_order\":28,\"url\":\"https://doi.org/10.1111/ics.12147\",\"year\":\"2014.0\"}",
+      "task_id": "DISPOSITION-TASK-a9aa478e6b533356",
+      "task_sha256": "5174c483e4e60ed486cc76d2eadefc402ce7eee3bbfa910665136b425f930f63",
+      "title": "Determination of melanin types and relative concentrations: an observational study using a non\u2010invasive inverse skin reflectance analysis",
+      "year": "2014.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1111/ijd.70452",
+      "corpus_member_id": "CORPUS-65e3bb54b0d7adc4",
+      "doi": "10.1111/ijd.70452",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "12",
+      "source_metadata_json": "{\"best_domain_rank\":5,\"canonical_key\":\"doi:10.1111/ijd.70452\",\"claim_count\":1,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":11,\"claims_json\":\"[\\\"TC-NOV-004\\\"]\",\"doi\":\"10.1111/ijd.70452\",\"domain_count\":1,\"domains_json\":\"[\\\"dermatology_dataset_duplicates_labels_and_quality\\\"]\",\"maximum_domain_score\":10.0,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":61.0,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Diagnostic Accuracy of Three Large Language Models on Clinical Images Varies by Skin Tone: Findings From the Stanford Diverse Dermatology Images Dataset\",\"unique_review_order\":37,\"url\":\"https://doi.org/10.1111/ijd.70452\",\"year\":\"2026.0\"}",
+      "task_id": "DISPOSITION-TASK-65e3bb54b0d7adc4",
+      "task_sha256": "b732f0ad6b42313f3f282a459eca95fcfce436fc55785d942dbd6fc018d1507f",
+      "title": "Diagnostic Accuracy of Three Large Language Models on Clinical Images Varies by Skin Tone: Findings From the Stanford Diverse Dermatology Images Dataset",
+      "year": "2026.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1111/j.1600-0846.1997.tb00191.x",
+      "corpus_member_id": "CORPUS-e7f3fc0263e72f79",
+      "doi": "10.1111/j.1600-0846.1997.tb00191.x",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "13",
+      "source_metadata_json": "{\"best_domain_rank\":3,\"canonical_key\":\"doi:10.1111/j.1600-0846.1997.tb00191.x\",\"claim_count\":1,\"claim_id\":\"TC-NOV-003\",\"claim_rank\":15,\"claims_json\":\"[\\\"TC-NOV-003\\\"]\",\"doi\":\"10.1111/j.1600-0846.1997.tb00191.x\",\"domain_count\":1,\"domains_json\":\"[\\\"skin_colorimetry_ita_and_color_measurement\\\"]\",\"maximum_domain_score\":11.113943,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":76.56121933333334,\"screen_decision\":\"INCLUDE_CONTEXTUAL\",\"title\":\"A comparison between a tristimulus colorimeter (Minolta ChromaMeter CR\\u2010200) and two spectrophotometers (Minolta Spectrophotometer CM\\u2010508i and CM\\u20102002). Quantification of UV\\u2010B induced erythema in a hairless guinea pig model\",\"unique_review_order\":46,\"url\":\"https://doi.org/10.1111/j.1600-0846.1997.tb00191.x\",\"year\":\"1997.0\"}",
+      "task_id": "DISPOSITION-TASK-e7f3fc0263e72f79",
+      "task_sha256": "1876b15295fa4662d4e7aeadde43150886495677311badd596ea83fb2dd83d0b",
+      "title": "A comparison between a tristimulus colorimeter (Minolta ChromaMeter CR\u2010200) and two spectrophotometers (Minolta Spectrophotometer CM\u2010508i and CM\u20102002). Quantification of UV\u2010B induced erythema in a hairless guinea pig model",
+      "year": "1997.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1111/srt.12396",
+      "corpus_member_id": "CORPUS-5916f5967be4db17",
+      "doi": "10.1111/srt.12396",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "14",
+      "source_metadata_json": "{\"best_domain_rank\":6,\"canonical_key\":\"doi:10.1111/srt.12396\",\"claim_count\":1,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":15,\"claims_json\":\"[\\\"TC-NOV-001\\\"]\",\"doi\":\"10.1111/srt.12396\",\"domain_count\":2,\"domains_json\":\"[\\\"fisher_information_and_cramer_rao_skin_imaging\\\",\\\"melanin_hemoglobin_and_scattering_identifiability\\\"]\",\"maximum_domain_score\":11.623249,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":76.91316466666666,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"SpectraCam<sup>\\u00ae</sup>: A new polarized hyperspectral imaging system for repeatable and reproducible in vivo skin quantification of melanin, total hemoglobin, and oxygen saturation\",\"unique_review_order\":45,\"url\":\"https://doi.org/10.1111/srt.12396\",\"year\":\"2018.0\"}",
+      "task_id": "DISPOSITION-TASK-5916f5967be4db17",
+      "task_sha256": "2744ae24ca7fc888f04a901e335a661deeeef9cc624dbd03f6678b9cb8662c4f",
+      "title": "SpectraCam<sup>\u00ae</sup>: A new polarized hyperspectral imaging system for repeatable and reproducible in vivo skin quantification of melanin, total hemoglobin, and oxygen saturation",
+      "year": "2018.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1111/srt.12421",
+      "corpus_member_id": "CORPUS-45015e13a1263d20",
+      "doi": "10.1111/srt.12421",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "15",
+      "source_metadata_json": "{\"best_domain_rank\":4,\"canonical_key\":\"doi:10.1111/srt.12421\",\"claim_count\":2,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":12,\"claims_json\":\"[\\\"TC-NOV-001\\\",\\\"TC-NOV-005\\\"]\",\"doi\":\"10.1111/srt.12421\",\"domain_count\":1,\"domains_json\":\"[\\\"skin_tissue_optical_forward_models\\\"]\",\"maximum_domain_score\":16.079181,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":83.158362,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Analysis of the influence of collagen fibres in the dermis on skin optical reflectance by Monte Carlo simulation in a nine\\u2010layered skin model\",\"unique_review_order\":33,\"url\":\"https://doi.org/10.1111/srt.12421\",\"year\":\"2018.0\"}",
+      "task_id": "DISPOSITION-TASK-45015e13a1263d20",
+      "task_sha256": "a43a8e9be26469f994c48a7c93c054ed2be7549698d101c2286808586849fd9c",
+      "title": "Analysis of the influence of collagen fibres in the dermis on skin optical reflectance by Monte Carlo simulation in a nine\u2010layered skin model",
+      "year": "2018.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1111/srt.13207",
+      "corpus_member_id": "CORPUS-0c20a1f05d8be4be",
+      "doi": "10.1111/srt.13207",
+      "existing_observations_json": "[]",
+      "pmid": "36210488.0",
+      "review_order": "16",
+      "source_metadata_json": "{\"best_domain_rank\":2,\"canonical_key\":\"doi:10.1111/srt.13207\",\"claim_count\":2,\"claim_id\":\"TC-NOV-003\",\"claim_rank\":10,\"claims_json\":\"[\\\"TC-NOV-003\\\",\\\"TC-NOV-005\\\"]\",\"doi\":\"10.1111/srt.13207\",\"domain_count\":1,\"domains_json\":\"[\\\"skin_colorimetry_ita_and_color_measurement\\\"]\",\"maximum_domain_score\":11.646128,\"pmid\":\"36210488.0\",\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":94.292256,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Validity of self\\u2010reported skin color by using skin color evaluation scale\",\"unique_review_order\":30,\"url\":\"https://doi.org/10.1111/srt.13207\",\"year\":\"2022.0\"}",
+      "task_id": "DISPOSITION-TASK-0c20a1f05d8be4be",
+      "task_sha256": "b54b53b04fcd8513730d3f0fd4148ed18ee04ba29b7bfc7d35ccfd4b8a097bbe",
+      "title": "Validity of self\u2010reported skin color by using skin color evaluation scale",
+      "year": "2022.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1117/1.jbo.27.2.026004",
+      "corpus_member_id": "CORPUS-13fcfe1ce95a00f0",
+      "doi": "10.1117/1.jbo.27.2.026004",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "17",
+      "source_metadata_json": "{\"best_domain_rank\":2,\"canonical_key\":\"doi:10.1117/1.jbo.27.2.026004\",\"claim_count\":2,\"claim_id\":\"TC-NOV-002\",\"claim_rank\":10,\"claims_json\":\"[\\\"TC-NOV-002\\\",\\\"TC-NOV-003\\\"]\",\"doi\":\"10.1117/1.jbo.27.2.026004\",\"domain_count\":2,\"domains_json\":\"[\\\"camera_metamerism_and_spectral_reconstruction\\\",\\\"camera_spectral_sensitivity_and_observation_operators\\\"]\",\"maximum_domain_score\":13.541393,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":109.082786,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Skin chromophore mapping by smartphone RGB camera under spectral band and spectral line illumination\",\"unique_review_order\":22,\"url\":\"https://doi.org/10.1117/1.jbo.27.2.026004\",\"year\":\"2022.0\"}",
+      "task_id": "DISPOSITION-TASK-13fcfe1ce95a00f0",
+      "task_sha256": "9e288669f5533ddef95f9ddd8bef83ee4400c651dd00f60fb32f8eab5b3b6c56",
+      "title": "Skin chromophore mapping by smartphone RGB camera under spectral band and spectral line illumination",
+      "year": "2022.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1117/1.jbo.28.10.107001",
+      "corpus_member_id": "CORPUS-4b1e6a689b9d4328",
+      "doi": "10.1117/1.jbo.28.10.107001",
+      "existing_observations_json": "[]",
+      "pmid": "37915398.0",
+      "review_order": "18",
+      "source_metadata_json": "{\"best_domain_rank\":4,\"canonical_key\":\"doi:10.1117/1.jbo.28.10.107001\",\"claim_count\":3,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":7,\"claims_json\":\"[\\\"TC-NOV-001\\\",\\\"TC-NOV-002\\\",\\\"TC-NOV-005\\\"]\",\"doi\":\"10.1117/1.jbo.28.10.107001\",\"domain_count\":2,\"domains_json\":\"[\\\"skin_reflectance_inverse_models\\\",\\\"skin_tissue_optical_forward_models\\\"]\",\"maximum_domain_score\":15.579181,\"pmid\":\"37915398.0\",\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":93.158362,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Measuring and imaging of transcutaneous bilirubin, hemoglobin, and melanin based on diffuse reflectance spectroscopy\",\"unique_review_order\":7,\"url\":\"https://doi.org/10.1117/1.jbo.28.10.107001\",\"year\":\"2023.0\"}",
+      "task_id": "DISPOSITION-TASK-4b1e6a689b9d4328",
+      "task_sha256": "dd4b5099ebfaf5c9a57644b5ccd78a4d288b46108ee9bf538b144c8cd1df2932",
+      "title": "Measuring and imaging of transcutaneous bilirubin, hemoglobin, and melanin based on diffuse reflectance spectroscopy",
+      "year": "2023.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1117/1.jbo.29.9.093507",
+      "corpus_member_id": "CORPUS-ead1102aae0c938a",
+      "doi": "10.1117/1.jbo.29.9.093507",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "19",
+      "source_metadata_json": "{\"best_domain_rank\":2,\"canonical_key\":\"doi:10.1117/1.jbo.29.9.093507\",\"claim_count\":3,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":6,\"claims_json\":\"[\\\"TC-NOV-001\\\",\\\"TC-NOV-002\\\",\\\"TC-NOV-005\\\"]\",\"doi\":\"10.1117/1.jbo.29.9.093507\",\"domain_count\":1,\"domains_json\":\"[\\\"melanin_hemoglobin_and_scattering_identifiability\\\"]\",\"maximum_domain_score\":13.454243,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":102.908486,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Hyperspectral imaging with deep learning for quantification of tissue hemoglobin, melanin, and scattering\",\"unique_review_order\":6,\"url\":\"https://doi.org/10.1117/1.jbo.29.9.093507\",\"year\":\"2024.0\"}",
+      "task_id": "DISPOSITION-TASK-ead1102aae0c938a",
+      "task_sha256": "a78c4ac4f242aec4d7d2e92c8453e2f3614093e0ae3bbc7bf401c94ba3b288f6",
+      "title": "Hyperspectral imaging with deep learning for quantification of tissue hemoglobin, melanin, and scattering",
+      "year": "2024.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1117/12.3098404",
+      "corpus_member_id": "CORPUS-1f4f0478ed0babcf",
+      "doi": "10.1117/12.3098404",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "20",
+      "source_metadata_json": "{\"best_domain_rank\":7,\"canonical_key\":\"doi:10.1117/12.3098404\",\"claim_count\":1,\"claim_id\":\"TC-NOV-001\",\"claim_rank\":13,\"claims_json\":\"[\\\"TC-NOV-001\\\"]\",\"doi\":\"10.1117/12.3098404\",\"domain_count\":2,\"domains_json\":\"[\\\"skin_tissue_optical_forward_models\\\",\\\"spectral_reflectance_geometry_and_dimension\\\"]\",\"maximum_domain_score\":14.0,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":79.28571428571428,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Monte Carlo simulation of spectral reflectance images of human skin with embedded lesions\",\"unique_review_order\":40,\"url\":\"https://doi.org/10.1117/12.3098404\",\"year\":\"2025.0\"}",
+      "task_id": "DISPOSITION-TASK-1f4f0478ed0babcf",
+      "task_sha256": "bac1f75b78090c7edac14c88f8c3a5ab8b093d46b464b1b65ecf978db8a076e0",
+      "title": "Monte Carlo simulation of spectral reflectance images of human skin with embedded lesions",
+      "year": "2025.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1364/boe.507361",
+      "corpus_member_id": "CORPUS-eb4b597fdf8a1bc0",
+      "doi": "10.1364/boe.507361",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "21",
+      "source_metadata_json": "{\"best_domain_rank\":2,\"canonical_key\":\"doi:10.1364/boe.507361\",\"claim_count\":2,\"claim_id\":\"TC-NOV-002\",\"claim_rank\":13,\"claims_json\":\"[\\\"TC-NOV-002\\\",\\\"TC-NOV-005\\\"]\",\"doi\":\"10.1364/boe.507361\",\"domain_count\":1,\"domains_json\":\"[\\\"spectral_reflectance_geometry_and_dimension\\\"]\",\"maximum_domain_score\":13.977121,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":98.954242,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Dynamic model for the strain-modulated spectral reflectance of the human skin in vivo\",\"unique_review_order\":26,\"url\":\"https://doi.org/10.1364/boe.507361\",\"year\":\"2024.0\"}",
+      "task_id": "DISPOSITION-TASK-eb4b597fdf8a1bc0",
+      "task_sha256": "367d497c1518e92ab9e3a966a8b5f1b81364083367c28cd98c36ef8166d02612",
+      "title": "Dynamic model for the strain-modulated spectral reflectance of the human skin in vivo",
+      "year": "2024.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1364/boe.570414",
+      "corpus_member_id": "CORPUS-37d387d2ae7cd099",
+      "doi": "10.1364/boe.570414",
+      "existing_observations_json": "[]",
+      "pmid": "41394505.0",
+      "review_order": "22",
+      "source_metadata_json": "{\"best_domain_rank\":5,\"canonical_key\":\"doi:10.1364/boe.570414\",\"claim_count\":1,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":14,\"claims_json\":\"[\\\"TC-NOV-004\\\"]\",\"doi\":\"10.1364/boe.570414\",\"domain_count\":1,\"domains_json\":\"[\\\"physics_informed_clinical_image_analysis\\\"]\",\"maximum_domain_score\":8.80103,\"pmid\":\"41394505.0\",\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":58.60206,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Dynamic contrast in dual-beam optical coherence tomography imaging of human skin.\",\"unique_review_order\":44,\"url\":\"https://europepmc.org/article/MED/41394505\",\"year\":\"2025.0\"}",
+      "task_id": "DISPOSITION-TASK-37d387d2ae7cd099",
+      "task_sha256": "18d6d34fa3249c6f491bce795bb07f32100ac11161dec9b318760200edd45e9b",
+      "title": "Dynamic contrast in dual-beam optical coherence tomography imaging of human skin.",
+      "year": "2025.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.1364/josaa.23.001814",
+      "corpus_member_id": "CORPUS-11f30fb957882c10",
+      "doi": "10.1364/josaa.23.001814",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "23",
+      "source_metadata_json": "{\"best_domain_rank\":3,\"canonical_key\":\"doi:10.1364/josaa.23.001814\",\"claim_count\":1,\"claim_id\":\"TC-NOV-003\",\"claim_rank\":12,\"claims_json\":\"[\\\"TC-NOV-003\\\"]\",\"doi\":\"10.1364/josaa.23.001814\",\"domain_count\":1,\"domains_json\":\"[\\\"camera_metamerism_and_spectral_reconstruction\\\"]\",\"maximum_domain_score\":13.00515,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":80.34363333333334,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Metamer-set-based approach to estimating surface reflectance from camera RGB\",\"unique_review_order\":38,\"url\":\"https://doi.org/10.1364/josaa.23.001814\",\"year\":\"2006.0\"}",
+      "task_id": "DISPOSITION-TASK-11f30fb957882c10",
+      "task_sha256": "0229ee66f60dd4bb70f9c96f6e6d2fd56ad23819807e91e7444b639ae113226b",
+      "title": "Metamer-set-based approach to estimating surface reflectance from camera RGB",
+      "year": "2006.0"
+    },
+    {
+      "allowed_terminal_roles": "FULL_SCIENTIFIC_EXTRACTION|BOUNDED_SCIENTIFIC_REVIEW|MATERIAL_LINEAGE_REFERENCE|EXCLUDED_WITH_REASON|TERMINAL_SOURCE_UNAVAILABLE",
+      "canonical_identity": "doi:10.5753/sibgrapi.est.2024.31648",
+      "corpus_member_id": "CORPUS-5c8179033fa93f1f",
+      "doi": "10.5753/sibgrapi.est.2024.31648",
+      "existing_observations_json": "[]",
+      "pmid": "",
+      "review_order": "31",
+      "source_metadata_json": "{\"best_domain_rank\":7,\"canonical_key\":\"doi:10.5753/sibgrapi.est.2024.31648\",\"claim_count\":2,\"claim_id\":\"TC-NOV-004\",\"claim_rank\":10,\"claims_json\":\"[\\\"TC-NOV-004\\\",\\\"TC-NOV-006\\\"]\",\"doi\":\"10.5753/sibgrapi.est.2024.31648\",\"domain_count\":1,\"domains_json\":\"[\\\"dermatology_ai_fairness_and_skin_tone\\\"]\",\"maximum_domain_score\":13.5,\"review_status\":\"PENDING_EVIDENCE_RESOLUTION\",\"scientific_review_priority\":62.285714285714285,\"screen_decision\":\"UNADJUDICATED\",\"title\":\"Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale\",\"unique_review_order\":31,\"url\":\"https://doi.org/10.5753/sibgrapi.est.2024.31648\",\"year\":\"2024.0\"}",
+      "task_id": "DISPOSITION-TASK-5c8179033fa93f1f",
+      "task_sha256": "8b4a8d50bbfac2a58b8a547a06461bf033867b1a2596a63892984ef2fe9f6ffd",
+      "title": "Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale",
+      "year": "2024.0"
+    }
+  ],
+  "governed_without_confirmed_pdf_count": 24,
+  "pdf_file_count": 36,
+  "report_schema": "qudipi.stage1.pdf-content-identity-audit",
+  "report_version": 1
+}

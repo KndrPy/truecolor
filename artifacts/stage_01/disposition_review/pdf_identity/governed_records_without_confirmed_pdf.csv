@@ -1,0 +1,25 @@
+review_order,task_id,canonical_identity,title,doi,pmid
+1,DISPOSITION-TASK-c84160c4be5aec03,doi:10.1016/j.jaad.2022.06.115,32993 Association of pigment contrast on multispectral dermatoscopic imaging with pigmented lesion histopathologic diagnosis,10.1016/j.jaad.2022.06.115,
+2,DISPOSITION-TASK-0fdb2019d281b81c,doi:10.1016/j.visres.2022.108048,Effect of skin colors due to hemoglobin or melanin modulation on facial expression recognition,10.1016/j.visres.2022.108048,
+3,DISPOSITION-TASK-c6ae9161a87747ca,doi:10.1016/s0924-2031(01)00144-8,Melanin as a confounding factor in near infrared spectroscopy of skin,10.1016/s0924-2031(01)00144-8,
+4,DISPOSITION-TASK-eec76c4dd7b0817f,doi:10.1038/s41591-023-02540-z,External validation of AI models in health should be replaced with recurring local validation,10.1038/s41591-023-02540-z,
+5,DISPOSITION-TASK-bc75393e9f09c939,doi:10.1093/bjd/ljag151.052,P11 Objective measurement of skin tone using artificial intelligence,10.1093/bjd/ljag151.052,
+6,DISPOSITION-TASK-b865cc8780095eb9,doi:10.1093/ced/llaf145,Comment on ‘Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study’,10.1093/ced/llaf145,
+7,DISPOSITION-TASK-9800795f20165472,doi:10.1109/iccphot.2016.7492879,White balance under mixed illumination using flash photography,10.1109/iccphot.2016.7492879,
+8,DISPOSITION-TASK-b6ab3fc03178082f,doi:10.1109/iccvw60793.2023.00122,Deterministic Neural Illumination Mapping for Efficient Auto-White Balance Correction,10.1109/iccvw60793.2023.00122,
+9,DISPOSITION-TASK-e6236613e4733a0d,doi:10.1109/tip.2017.2764264,A Data Set for Camera-Independent Color Constancy,10.1109/tip.2017.2764264,
+10,DISPOSITION-TASK-3043caf9e757ba1d,doi:10.1109/wacvw60836.2024.00067,Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification,10.1109/wacvw60836.2024.00067,
+11,DISPOSITION-TASK-a9aa478e6b533356,doi:10.1111/ics.12147,Determination of melanin types and relative concentrations: an observational study using a non‐invasive inverse skin reflectance analysis,10.1111/ics.12147,
+12,DISPOSITION-TASK-65e3bb54b0d7adc4,doi:10.1111/ijd.70452,Diagnostic Accuracy of Three Large Language Models on Clinical Images Varies by Skin Tone: Findings From the Stanford Diverse Dermatology Images Dataset,10.1111/ijd.70452,
+13,DISPOSITION-TASK-e7f3fc0263e72f79,doi:10.1111/j.1600-0846.1997.tb00191.x,A comparison between a tristimulus colorimeter (Minolta ChromaMeter CR‐200) and two spectrophotometers (Minolta Spectrophotometer CM‐508i and CM‐2002). Quantification of UV‐B induced erythema in a hairless guinea pig model,10.1111/j.1600-0846.1997.tb00191.x,
+14,DISPOSITION-TASK-5916f5967be4db17,doi:10.1111/srt.12396,"SpectraCam<sup>®</sup>: A new polarized hyperspectral imaging system for repeatable and reproducible in vivo skin quantification of melanin, total hemoglobin, and oxygen saturation",10.1111/srt.12396,
+15,DISPOSITION-TASK-45015e13a1263d20,doi:10.1111/srt.12421,Analysis of the influence of collagen fibres in the dermis on skin optical reflectance by Monte Carlo simulation in a nine‐layered skin model,10.1111/srt.12421,
+16,DISPOSITION-TASK-0c20a1f05d8be4be,doi:10.1111/srt.13207,Validity of self‐reported skin color by using skin color evaluation scale,10.1111/srt.13207,36210488.0
+17,DISPOSITION-TASK-13fcfe1ce95a00f0,doi:10.1117/1.jbo.27.2.026004,Skin chromophore mapping by smartphone RGB camera under spectral band and spectral line illumination,10.1117/1.jbo.27.2.026004,
+18,DISPOSITION-TASK-4b1e6a689b9d4328,doi:10.1117/1.jbo.28.10.107001,"Measuring and imaging of transcutaneous bilirubin, hemoglobin, and melanin based on diffuse reflectance spectroscopy",10.1117/1.jbo.28.10.107001,37915398.0
+19,DISPOSITION-TASK-ead1102aae0c938a,doi:10.1117/1.jbo.29.9.093507,"Hyperspectral imaging with deep learning for quantification of tissue hemoglobin, melanin, and scattering",10.1117/1.jbo.29.9.093507,
+20,DISPOSITION-TASK-1f4f0478ed0babcf,doi:10.1117/12.3098404,Monte Carlo simulation of spectral reflectance images of human skin with embedded lesions,10.1117/12.3098404,
+21,DISPOSITION-TASK-eb4b597fdf8a1bc0,doi:10.1364/boe.507361,Dynamic model for the strain-modulated spectral reflectance of the human skin in vivo,10.1364/boe.507361,
+22,DISPOSITION-TASK-37d387d2ae7cd099,doi:10.1364/boe.570414,Dynamic contrast in dual-beam optical coherence tomography imaging of human skin.,10.1364/boe.570414,41394505.0
+23,DISPOSITION-TASK-11f30fb957882c10,doi:10.1364/josaa.23.001814,Metamer-set-based approach to estimating surface reflectance from camera RGB,10.1364/josaa.23.001814,
+31,DISPOSITION-TASK-5c8179033fa93f1f,doi:10.5753/sibgrapi.est.2024.31648,Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale,10.5753/sibgrapi.est.2024.31648,

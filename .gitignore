@@ -119,3 +119,6 @@ venv/
 artifacts/**/tmp/
 artifacts/**/cache/
 /artifacts/stage_00/*.tmp.json
+
+# Researcher-controlled mutable intake; never committed
+/preprocessed_intake/
