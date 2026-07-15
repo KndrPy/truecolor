@@ -1,0 +1,2195 @@
+{
+  "construction_errors": [],
+  "packet_schema": "qudipi.stage1.corpus-disposition-review-packet",
+  "packet_version": 1,
+  "preserved_decision_count": 0,
+  "queue_path": "artifacts/stage_01/corpus_disposition_queue.json",
+  "queue_sha256": "b3c18a2e039c7043ad8718bcc51a169cfc3379ae90049cdb8b29e6223415495e",
+  "records": [
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1016/j.jaad.2022.06.115",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 1,
+      "source_metadata": {
+        "best_domain_rank": 3,
+        "canonical_key": "doi:10.1016/j.jaad.2022.06.115",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 6,
+        "claims_json": "[\"TC-NOV-004\",\"TC-NOV-006\"]",
+        "doi": "10.1016/j.jaad.2022.06.115",
+        "domain_count": 1,
+        "domains_json": "[\"physics_informed_clinical_image_analysis\"]",
+        "maximum_domain_score": 9.0,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 72.33333333333334,
+        "screen_decision": "UNADJUDICATED",
+        "title": "32993 Association of pigment contrast on multispectral dermatoscopic imaging with pigmented lesion histopathologic diagnosis",
+        "unique_review_order": 21,
+        "url": "https://doi.org/10.1016/j.jaad.2022.06.115",
+        "year": "2022.0"
+      },
+      "task_id": "DISPOSITION-TASK-c84160c4be5aec03",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_c84160c4be5aec03.json",
+      "task_sha256": "2947566a963b7b8795c3ce0a35c7266de3ec70c077b0e41a130a16ec5f0dfccb"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1016/j.visres.2022.108048",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 2,
+      "source_metadata": {
+        "best_domain_rank": 7,
+        "canonical_key": "doi:10.1016/j.visres.2022.108048",
+        "claim_count": 3,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 10,
+        "claims_json": "[\"TC-NOV-001\",\"TC-NOV-003\",\"TC-NOV-005\"]",
+        "doi": "10.1016/j.visres.2022.108048",
+        "domain_count": 3,
+        "domains_json": "[\"fisher_information_and_cramer_rao_skin_imaging\",\"melanin_hemoglobin_and_scattering_identifiability\",\"multispectral_band_selection_and_measurement_design\"]",
+        "maximum_domain_score": 11.255273,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 89.79626028571428,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Effect of skin colors due to hemoglobin or melanin modulation on facial expression recognition",
+        "unique_review_order": 8,
+        "url": "https://doi.org/10.1016/j.visres.2022.108048",
+        "year": "2022.0"
+      },
+      "task_id": "DISPOSITION-TASK-0fdb2019d281b81c",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_0fdb2019d281b81c.json",
+      "task_sha256": "b0bd4f5416bdcda6dc8f9d284f34c11f1983198d1d902c2ca62fb5242e9c254f"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1016/s0924-2031(01)00144-8",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 3,
+      "source_metadata": {
+        "best_domain_rank": 2,
+        "canonical_key": "doi:10.1016/s0924-2031(01)00144-8",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 8,
+        "claims_json": "[\"TC-NOV-001\"]",
+        "doi": "10.1016/s0924-2031(01)00144-8",
+        "domain_count": 1,
+        "domains_json": "[\"fisher_information_and_cramer_rao_skin_imaging\"]",
+        "maximum_domain_score": 10.653213,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 92.306426,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Melanin as a confounding factor in near infrared spectroscopy of skin",
+        "unique_review_order": 35,
+        "url": "https://doi.org/10.1016/s0924-2031(01)00144-8",
+        "year": "2002.0"
+      },
+      "task_id": "DISPOSITION-TASK-c6ae9161a87747ca",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_c6ae9161a87747ca.json",
+      "task_sha256": "2982606895c91fbacbf12917700c4d4e28ce06405af8eab3c6fa8aee4db153a8"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1038/s41591-023-02540-z",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 4,
+      "source_metadata": {
+        "best_domain_rank": 4,
+        "canonical_key": "doi:10.1038/s41591-023-02540-z",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 8,
+        "claims_json": "[\"TC-NOV-004\",\"TC-NOV-006\"]",
+        "doi": "10.1038/s41591-023-02540-z",
+        "domain_count": 1,
+        "domains_json": "[\"clinical_external_validation_and_domain_shift\"]",
+        "maximum_domain_score": 9.664353,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 65.328706,
+        "screen_decision": "UNADJUDICATED",
+        "title": "External validation of AI models in health should be replaced with recurring local validation",
+        "unique_review_order": 25,
+        "url": "https://doi.org/10.1038/s41591-023-02540-z",
+        "year": "2023.0"
+      },
+      "task_id": "DISPOSITION-TASK-eec76c4dd7b0817f",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_eec76c4dd7b0817f.json",
+      "task_sha256": "700d320b42b44744d60fbbd4a01c0e2c2e3018f9783cbef50dd449afb0ba0f62"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1093/bjd/ljag151.052",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 5,
+      "source_metadata": {
+        "best_domain_rank": 9,
+        "canonical_key": "doi:10.1093/bjd/ljag151.052",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 15,
+        "claims_json": "[\"TC-NOV-004\"]",
+        "doi": "10.1093/bjd/ljag151.052",
+        "domain_count": 1,
+        "domains_json": "[\"dermatology_ai_fairness_and_skin_tone\"]",
+        "maximum_domain_score": 12.5,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 57.11111111111112,
+        "screen_decision": "UNADJUDICATED",
+        "title": "P11 Objective measurement of skin tone using artificial intelligence",
+        "unique_review_order": 48,
+        "url": "https://doi.org/10.1093/bjd/ljag151.052",
+        "year": "2026.0"
+      },
+      "task_id": "DISPOSITION-TASK-bc75393e9f09c939",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_bc75393e9f09c939.json",
+      "task_sha256": "846a7bba569f4e9a045f6640ddf1441a66ed4c20e26dcf5b8b6933810e39c7e4"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1093/ced/llaf145",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 6,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.1093/ced/llaf145",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 7,
+        "claims_json": "[\"TC-NOV-004\",\"TC-NOV-006\"]",
+        "doi": "10.1093/ced/llaf145",
+        "domain_count": 1,
+        "domains_json": "[\"dermatology_ai_fairness_and_skin_tone\"]",
+        "maximum_domain_score": 13.5,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 68.0,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Comment on \u2018Representations of skin tone and sex in dermatology by generative artificial intelligence: a comparative study\u2019",
+        "unique_review_order": 23,
+        "url": "https://doi.org/10.1093/ced/llaf145",
+        "year": "2025.0"
+      },
+      "task_id": "DISPOSITION-TASK-b865cc8780095eb9",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_b865cc8780095eb9.json",
+      "task_sha256": "66d29703924cfc09fbb5f401f5a1dc7cd66ae6756b16f927bb36fae768911d48"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1109/iccphot.2016.7492879",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 7,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.1109/iccphot.2016.7492879",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-006",
+        "claim_rank": 15,
+        "claims_json": "[\"TC-NOV-006\"]",
+        "doi": "10.1109/iccphot.2016.7492879",
+        "domain_count": 1,
+        "domains_json": "[\"capture_variability_white_balance_and_illumination\"]",
+        "maximum_domain_score": 10.255273,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 61.510546000000005,
+        "screen_decision": "UNADJUDICATED",
+        "title": "White balance under mixed illumination using flash photography",
+        "unique_review_order": 47,
+        "url": "https://doi.org/10.1109/iccphot.2016.7492879",
+        "year": "2016.0"
+      },
+      "task_id": "DISPOSITION-TASK-9800795f20165472",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_9800795f20165472.json",
+      "task_sha256": "3b1531ae9bef9d62a5e5622bfdf18f38be87206e55e04710a0baf140bd667c54"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1109/iccvw60793.2023.00122",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 8,
+      "source_metadata": {
+        "best_domain_rank": 3,
+        "canonical_key": "doi:10.1109/iccvw60793.2023.00122",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-006",
+        "claim_rank": 7,
+        "claims_json": "[\"TC-NOV-006\"]",
+        "doi": "10.1109/iccvw60793.2023.00122",
+        "domain_count": 1,
+        "domains_json": "[\"capture_variability_white_balance_and_illumination\"]",
+        "maximum_domain_score": 10.90309,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 76.13951333333334,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Deterministic Neural Illumination Mapping for Efficient Auto-White Balance Correction",
+        "unique_review_order": 34,
+        "url": "https://doi.org/10.1109/iccvw60793.2023.00122",
+        "year": "2023.0"
+      },
+      "task_id": "DISPOSITION-TASK-b6ab3fc03178082f",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_b6ab3fc03178082f.json",
+      "task_sha256": "740f27af8187c6d057caf5b6ecae31420690eff5436dab2db35009a522b7142a"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1109/tip.2017.2764264",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 9,
+      "source_metadata": {
+        "best_domain_rank": 4,
+        "canonical_key": "doi:10.1109/tip.2017.2764264",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-006",
+        "claim_rank": 11,
+        "claims_json": "[\"TC-NOV-006\"]",
+        "doi": "10.1109/tip.2017.2764264",
+        "domain_count": 1,
+        "domains_json": "[\"capture_variability_white_balance_and_illumination\"]",
+        "maximum_domain_score": 10.255273,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 66.510546,
+        "screen_decision": "UNADJUDICATED",
+        "title": "A Data Set for Camera-Independent Color Constancy",
+        "unique_review_order": 36,
+        "url": "https://doi.org/10.1109/tip.2017.2764264",
+        "year": "2018.0"
+      },
+      "task_id": "DISPOSITION-TASK-e6236613e4733a0d",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_e6236613e4733a0d.json",
+      "task_sha256": "1da5818e56ce1feb51275429fa5c09adde451559c5bdff5eed7598526dbaee6b"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1109/wacvw60836.2024.00067",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 10,
+      "source_metadata": {
+        "best_domain_rank": 8,
+        "canonical_key": "doi:10.1109/wacvw60836.2024.00067",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 13,
+        "claims_json": "[\"TC-NOV-004\"]",
+        "doi": "10.1109/wacvw60836.2024.00067",
+        "domain_count": 1,
+        "domains_json": "[\"dermatology_ai_fairness_and_skin_tone\"]",
+        "maximum_domain_score": 13.345098,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 60.190196,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification",
+        "unique_review_order": 41,
+        "url": "https://doi.org/10.1109/wacvw60836.2024.00067",
+        "year": "2024.0"
+      },
+      "task_id": "DISPOSITION-TASK-3043caf9e757ba1d",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_3043caf9e757ba1d.json",
+      "task_sha256": "4be0c14395b3992930bb8f8bf1855a0737fe64cf245a0f9abc6abd960ff42bc4"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1111/ics.12147",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 11,
+      "source_metadata": {
+        "best_domain_rank": 3,
+        "canonical_key": "doi:10.1111/ics.12147",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 9,
+        "claims_json": "[\"TC-NOV-001\",\"TC-NOV-005\"]",
+        "doi": "10.1111/ics.12147",
+        "domain_count": 1,
+        "domains_json": "[\"skin_reflectance_inverse_models\"]",
+        "maximum_domain_score": 15.954243,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 91.24181933333334,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Determination of melanin types and relative concentrations: an observational study using a non\u2010invasive inverse skin reflectance analysis",
+        "unique_review_order": 28,
+        "url": "https://doi.org/10.1111/ics.12147",
+        "year": "2014.0"
+      },
+      "task_id": "DISPOSITION-TASK-a9aa478e6b533356",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_a9aa478e6b533356.json",
+      "task_sha256": "5174c483e4e60ed486cc76d2eadefc402ce7eee3bbfa910665136b425f930f63"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1111/ijd.70452",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 12,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.1111/ijd.70452",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 11,
+        "claims_json": "[\"TC-NOV-004\"]",
+        "doi": "10.1111/ijd.70452",
+        "domain_count": 1,
+        "domains_json": "[\"dermatology_dataset_duplicates_labels_and_quality\"]",
+        "maximum_domain_score": 10.0,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 61.0,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Diagnostic Accuracy of Three Large Language Models on Clinical Images Varies by Skin Tone: Findings From the Stanford Diverse Dermatology Images Dataset",
+        "unique_review_order": 37,
+        "url": "https://doi.org/10.1111/ijd.70452",
+        "year": "2026.0"
+      },
+      "task_id": "DISPOSITION-TASK-65e3bb54b0d7adc4",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_65e3bb54b0d7adc4.json",
+      "task_sha256": "b732f0ad6b42313f3f282a459eca95fcfce436fc55785d942dbd6fc018d1507f"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1111/j.1600-0846.1997.tb00191.x",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 13,
+      "source_metadata": {
+        "best_domain_rank": 3,
+        "canonical_key": "doi:10.1111/j.1600-0846.1997.tb00191.x",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-003",
+        "claim_rank": 15,
+        "claims_json": "[\"TC-NOV-003\"]",
+        "doi": "10.1111/j.1600-0846.1997.tb00191.x",
+        "domain_count": 1,
+        "domains_json": "[\"skin_colorimetry_ita_and_color_measurement\"]",
+        "maximum_domain_score": 11.113943,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 76.56121933333334,
+        "screen_decision": "INCLUDE_CONTEXTUAL",
+        "title": "A comparison between a tristimulus colorimeter (Minolta ChromaMeter CR\u2010200) and two spectrophotometers (Minolta Spectrophotometer CM\u2010508i and CM\u20102002). Quantification of UV\u2010B induced erythema in a hairless guinea pig model",
+        "unique_review_order": 46,
+        "url": "https://doi.org/10.1111/j.1600-0846.1997.tb00191.x",
+        "year": "1997.0"
+      },
+      "task_id": "DISPOSITION-TASK-e7f3fc0263e72f79",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_e7f3fc0263e72f79.json",
+      "task_sha256": "1876b15295fa4662d4e7aeadde43150886495677311badd596ea83fb2dd83d0b"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1111/srt.12396",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 14,
+      "source_metadata": {
+        "best_domain_rank": 6,
+        "canonical_key": "doi:10.1111/srt.12396",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 15,
+        "claims_json": "[\"TC-NOV-001\"]",
+        "doi": "10.1111/srt.12396",
+        "domain_count": 2,
+        "domains_json": "[\"fisher_information_and_cramer_rao_skin_imaging\",\"melanin_hemoglobin_and_scattering_identifiability\"]",
+        "maximum_domain_score": 11.623249,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 76.91316466666666,
+        "screen_decision": "UNADJUDICATED",
+        "title": "SpectraCam<sup>\u00ae</sup>: A new polarized hyperspectral imaging system for repeatable and reproducible in vivo skin quantification of melanin, total hemoglobin, and oxygen saturation",
+        "unique_review_order": 45,
+        "url": "https://doi.org/10.1111/srt.12396",
+        "year": "2018.0"
+      },
+      "task_id": "DISPOSITION-TASK-5916f5967be4db17",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_5916f5967be4db17.json",
+      "task_sha256": "2744ae24ca7fc888f04a901e335a661deeeef9cc624dbd03f6678b9cb8662c4f"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1111/srt.12421",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 15,
+      "source_metadata": {
+        "best_domain_rank": 4,
+        "canonical_key": "doi:10.1111/srt.12421",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 12,
+        "claims_json": "[\"TC-NOV-001\",\"TC-NOV-005\"]",
+        "doi": "10.1111/srt.12421",
+        "domain_count": 1,
+        "domains_json": "[\"skin_tissue_optical_forward_models\"]",
+        "maximum_domain_score": 16.079181,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 83.158362,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Analysis of the influence of collagen fibres in the dermis on skin optical reflectance by Monte Carlo simulation in a nine\u2010layered skin model",
+        "unique_review_order": 33,
+        "url": "https://doi.org/10.1111/srt.12421",
+        "year": "2018.0"
+      },
+      "task_id": "DISPOSITION-TASK-45015e13a1263d20",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_45015e13a1263d20.json",
+      "task_sha256": "a43a8e9be26469f994c48a7c93c054ed2be7549698d101c2286808586849fd9c"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1111/srt.13207",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 16,
+      "source_metadata": {
+        "best_domain_rank": 2,
+        "canonical_key": "doi:10.1111/srt.13207",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-003",
+        "claim_rank": 10,
+        "claims_json": "[\"TC-NOV-003\",\"TC-NOV-005\"]",
+        "doi": "10.1111/srt.13207",
+        "domain_count": 1,
+        "domains_json": "[\"skin_colorimetry_ita_and_color_measurement\"]",
+        "maximum_domain_score": 11.646128,
+        "pmid": "36210488.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 94.292256,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Validity of self\u2010reported skin color by using skin color evaluation scale",
+        "unique_review_order": 30,
+        "url": "https://doi.org/10.1111/srt.13207",
+        "year": "2022.0"
+      },
+      "task_id": "DISPOSITION-TASK-0c20a1f05d8be4be",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_0c20a1f05d8be4be.json",
+      "task_sha256": "b54b53b04fcd8513730d3f0fd4148ed18ee04ba29b7bfc7d35ccfd4b8a097bbe"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1117/1.jbo.27.2.026004",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 17,
+      "source_metadata": {
+        "best_domain_rank": 2,
+        "canonical_key": "doi:10.1117/1.jbo.27.2.026004",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-002",
+        "claim_rank": 10,
+        "claims_json": "[\"TC-NOV-002\",\"TC-NOV-003\"]",
+        "doi": "10.1117/1.jbo.27.2.026004",
+        "domain_count": 2,
+        "domains_json": "[\"camera_metamerism_and_spectral_reconstruction\",\"camera_spectral_sensitivity_and_observation_operators\"]",
+        "maximum_domain_score": 13.541393,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 109.082786,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Skin chromophore mapping by smartphone RGB camera under spectral band and spectral line illumination",
+        "unique_review_order": 22,
+        "url": "https://doi.org/10.1117/1.jbo.27.2.026004",
+        "year": "2022.0"
+      },
+      "task_id": "DISPOSITION-TASK-13fcfe1ce95a00f0",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_13fcfe1ce95a00f0.json",
+      "task_sha256": "9e288669f5533ddef95f9ddd8bef83ee4400c651dd00f60fb32f8eab5b3b6c56"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1117/1.jbo.28.10.107001",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 18,
+      "source_metadata": {
+        "best_domain_rank": 4,
+        "canonical_key": "doi:10.1117/1.jbo.28.10.107001",
+        "claim_count": 3,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 7,
+        "claims_json": "[\"TC-NOV-001\",\"TC-NOV-002\",\"TC-NOV-005\"]",
+        "doi": "10.1117/1.jbo.28.10.107001",
+        "domain_count": 2,
+        "domains_json": "[\"skin_reflectance_inverse_models\",\"skin_tissue_optical_forward_models\"]",
+        "maximum_domain_score": 15.579181,
+        "pmid": "37915398.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 93.158362,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Measuring and imaging of transcutaneous bilirubin, hemoglobin, and melanin based on diffuse reflectance spectroscopy",
+        "unique_review_order": 7,
+        "url": "https://doi.org/10.1117/1.jbo.28.10.107001",
+        "year": "2023.0"
+      },
+      "task_id": "DISPOSITION-TASK-4b1e6a689b9d4328",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_4b1e6a689b9d4328.json",
+      "task_sha256": "dd4b5099ebfaf5c9a57644b5ccd78a4d288b46108ee9bf538b144c8cd1df2932"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1117/1.jbo.29.9.093507",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 19,
+      "source_metadata": {
+        "best_domain_rank": 2,
+        "canonical_key": "doi:10.1117/1.jbo.29.9.093507",
+        "claim_count": 3,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 6,
+        "claims_json": "[\"TC-NOV-001\",\"TC-NOV-002\",\"TC-NOV-005\"]",
+        "doi": "10.1117/1.jbo.29.9.093507",
+        "domain_count": 1,
+        "domains_json": "[\"melanin_hemoglobin_and_scattering_identifiability\"]",
+        "maximum_domain_score": 13.454243,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 102.908486,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Hyperspectral imaging with deep learning for quantification of tissue hemoglobin, melanin, and scattering",
+        "unique_review_order": 6,
+        "url": "https://doi.org/10.1117/1.jbo.29.9.093507",
+        "year": "2024.0"
+      },
+      "task_id": "DISPOSITION-TASK-ead1102aae0c938a",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_ead1102aae0c938a.json",
+      "task_sha256": "a78c4ac4f242aec4d7d2e92c8453e2f3614093e0ae3bbc7bf401c94ba3b288f6"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1117/12.3098404",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 20,
+      "source_metadata": {
+        "best_domain_rank": 7,
+        "canonical_key": "doi:10.1117/12.3098404",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 13,
+        "claims_json": "[\"TC-NOV-001\"]",
+        "doi": "10.1117/12.3098404",
+        "domain_count": 2,
+        "domains_json": "[\"skin_tissue_optical_forward_models\",\"spectral_reflectance_geometry_and_dimension\"]",
+        "maximum_domain_score": 14.0,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 79.28571428571428,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Monte Carlo simulation of spectral reflectance images of human skin with embedded lesions",
+        "unique_review_order": 40,
+        "url": "https://doi.org/10.1117/12.3098404",
+        "year": "2025.0"
+      },
+      "task_id": "DISPOSITION-TASK-1f4f0478ed0babcf",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_1f4f0478ed0babcf.json",
+      "task_sha256": "bac1f75b78090c7edac14c88f8c3a5ab8b093d46b464b1b65ecf978db8a076e0"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1364/boe.507361",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 21,
+      "source_metadata": {
+        "best_domain_rank": 2,
+        "canonical_key": "doi:10.1364/boe.507361",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-002",
+        "claim_rank": 13,
+        "claims_json": "[\"TC-NOV-002\",\"TC-NOV-005\"]",
+        "doi": "10.1364/boe.507361",
+        "domain_count": 1,
+        "domains_json": "[\"spectral_reflectance_geometry_and_dimension\"]",
+        "maximum_domain_score": 13.977121,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 98.954242,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Dynamic model for the strain-modulated spectral reflectance of the human skin in vivo",
+        "unique_review_order": 26,
+        "url": "https://doi.org/10.1364/boe.507361",
+        "year": "2024.0"
+      },
+      "task_id": "DISPOSITION-TASK-eb4b597fdf8a1bc0",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_eb4b597fdf8a1bc0.json",
+      "task_sha256": "367d497c1518e92ab9e3a966a8b5f1b81364083367c28cd98c36ef8166d02612"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1364/boe.570414",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 22,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.1364/boe.570414",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 14,
+        "claims_json": "[\"TC-NOV-004\"]",
+        "doi": "10.1364/boe.570414",
+        "domain_count": 1,
+        "domains_json": "[\"physics_informed_clinical_image_analysis\"]",
+        "maximum_domain_score": 8.80103,
+        "pmid": "41394505.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 58.60206,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Dynamic contrast in dual-beam optical coherence tomography imaging of human skin.",
+        "unique_review_order": 44,
+        "url": "https://europepmc.org/article/MED/41394505",
+        "year": "2025.0"
+      },
+      "task_id": "DISPOSITION-TASK-37d387d2ae7cd099",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_37d387d2ae7cd099.json",
+      "task_sha256": "18d6d34fa3249c6f491bce795bb07f32100ac11161dec9b318760200edd45e9b"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1364/josaa.23.001814",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 23,
+      "source_metadata": {
+        "best_domain_rank": 3,
+        "canonical_key": "doi:10.1364/josaa.23.001814",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-003",
+        "claim_rank": 12,
+        "claims_json": "[\"TC-NOV-003\"]",
+        "doi": "10.1364/josaa.23.001814",
+        "domain_count": 1,
+        "domains_json": "[\"camera_metamerism_and_spectral_reconstruction\"]",
+        "maximum_domain_score": 13.00515,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 80.34363333333334,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Metamer-set-based approach to estimating surface reflectance from camera RGB",
+        "unique_review_order": 38,
+        "url": "https://doi.org/10.1364/josaa.23.001814",
+        "year": "2006.0"
+      },
+      "task_id": "DISPOSITION-TASK-11f30fb957882c10",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_11f30fb957882c10.json",
+      "task_sha256": "0229ee66f60dd4bb70f9c96f6e6d2fd56ad23819807e91e7444b639ae113226b"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.1371/journal.pone.0280670",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 24,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.1371/journal.pone.0280670",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 12,
+        "claims_json": "[\"TC-NOV-004\"]",
+        "doi": "10.1371/journal.pone.0280670",
+        "domain_count": 1,
+        "domains_json": "[\"clinical_external_validation_and_domain_shift\"]",
+        "maximum_domain_score": 9.646128,
+        "pmid": "36791068.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 60.292256,
+        "screen_decision": "UNADJUDICATED",
+        "title": "New AI-algorithms on smartphones to detect skin cancer in a clinical setting-A validation study.",
+        "unique_review_order": 39,
+        "url": "https://europepmc.org/article/MED/36791068",
+        "year": "2023.0"
+      },
+      "task_id": "DISPOSITION-TASK-caacedd3bf88372c",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_caacedd3bf88372c.json",
+      "task_sha256": "a879848c86c306c27d9813a7b418834403adc7567d7c88b7eb36d21ed1ccffea"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.19184/cerimre.v5i2.31668",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 25,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.19184/cerimre.v5i2.31668",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 14,
+        "claims_json": "[\"TC-NOV-001\"]",
+        "doi": "10.19184/cerimre.v5i2.31668",
+        "domain_count": 1,
+        "domains_json": "[\"skin_tissue_optical_forward_models\"]",
+        "maximum_domain_score": 16.0,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 78.0,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Optical Ray Tracing Simulation by Using Monte Carlo Method for Reflectance-based Photoplethysmography Sensor in Human Skin and Fingertip Model",
+        "unique_review_order": 42,
+        "url": "https://doi.org/10.19184/cerimre.v5i2.31668",
+        "year": "2022.0"
+      },
+      "task_id": "DISPOSITION-TASK-279512c38e323944",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_279512c38e323944.json",
+      "task_sha256": "6ef268745bada7a0fadd3942f1c1b446b20b124e3d292e8730cf7a2a89dae13d"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.3390/jimaging12050203",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 26,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.3390/jimaging12050203",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-003",
+        "claim_rank": 13,
+        "claims_json": "[\"TC-NOV-003\",\"TC-NOV-006\"]",
+        "doi": "10.3390/jimaging12050203",
+        "domain_count": 2,
+        "domains_json": "[\"camera_spectral_sensitivity_and_observation_operators\",\"capture_variability_white_balance_and_illumination\"]",
+        "maximum_domain_score": 11.0,
+        "pmid": "42188240.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 79.0,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Characterization of RGB-Polarization Sensor-Based Cameras.",
+        "unique_review_order": 20,
+        "url": "https://europepmc.org/article/MED/42188240",
+        "year": "2026.0"
+      },
+      "task_id": "DISPOSITION-TASK-216e636378952ff3",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_216e636378952ff3.json",
+      "task_sha256": "d14df673ef7c3d894ffc136b8f34b07d97a16ab935b8f2158f13d8f0f39d6197"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.3390/jimaging9020047",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 27,
+      "source_metadata": {
+        "best_domain_rank": 3,
+        "canonical_key": "doi:10.3390/jimaging9020047",
+        "claim_count": 1,
+        "claim_id": "TC-NOV-003",
+        "claim_rank": 14,
+        "claims_json": "[\"TC-NOV-003\"]",
+        "doi": "10.3390/jimaging9020047",
+        "domain_count": 1,
+        "domains_json": "[\"camera_spectral_sensitivity_and_observation_operators\"]",
+        "maximum_domain_score": 11.278151,
+        "pmid": "36826966.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 76.88963533333333,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Spectral Reflectance Estimation from Camera Responses Using Local Optimal Dataset",
+        "unique_review_order": 43,
+        "url": "https://doi.org/10.3390/jimaging9020047",
+        "year": "2023.0"
+      },
+      "task_id": "DISPOSITION-TASK-c78ba86b99b9b24a",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_c78ba86b99b9b24a.json",
+      "task_sha256": "f4a7f0475298e3cda95ca9652d6498a5b2d5f3985a8b3152ea2498b589b75c6d"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.3390/s130607902",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 28,
+      "source_metadata": {
+        "best_domain_rank": 5,
+        "canonical_key": "doi:10.3390/s130607902",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-001",
+        "claim_rank": 11,
+        "claims_json": "[\"TC-NOV-001\",\"TC-NOV-005\"]",
+        "doi": "10.3390/s130607902",
+        "domain_count": 2,
+        "domains_json": "[\"melanin_hemoglobin_and_scattering_identifiability\",\"skin_reflectance_inverse_models\"]",
+        "maximum_domain_score": 14.351258,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 85.702516,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Estimation of Melanin and Hemoglobin Using Spectral Reflectance Images Reconstructed from a Digital RGB  Image by the Wiener Estimation Method",
+        "unique_review_order": 32,
+        "url": "https://doi.org/10.3390/s130607902",
+        "year": "2013.0"
+      },
+      "task_id": "DISPOSITION-TASK-f080b5839173d8c5",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_f080b5839173d8c5.json",
+      "task_sha256": "189c3355c970b2875d9472c1ba23fc301a3af8d5152baa1205da82bcbb58b45d"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.3390/s22134923",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 29,
+      "source_metadata": {
+        "best_domain_rank": 2,
+        "canonical_key": "doi:10.3390/s22134923",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-002",
+        "claim_rank": 11,
+        "claims_json": "[\"TC-NOV-002\",\"TC-NOV-003\"]",
+        "doi": "10.3390/s22134923",
+        "domain_count": 2,
+        "domains_json": "[\"camera_metamerism_and_spectral_reconstruction\",\"camera_spectral_sensitivity_and_observation_operators\"]",
+        "maximum_domain_score": 11.778151,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 105.556302,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Auxiliary Reference Samples for Extrapolating Spectral Reflectance from Camera RGB Signals",
+        "unique_review_order": 24,
+        "url": "https://doi.org/10.3390/s22134923",
+        "year": "2022.0"
+      },
+      "task_id": "DISPOSITION-TASK-caa3807463814a9c",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_caa3807463814a9c.json",
+      "task_sha256": "02688bd350b4433b5c0fb0565eed6ce8b161f735d290813d00f9354cd62928e2"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.3390/s23083888",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 30,
+      "source_metadata": {
+        "best_domain_rank": 2,
+        "canonical_key": "doi:10.3390/s23083888",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-002",
+        "claim_rank": 14,
+        "claims_json": "[\"TC-NOV-002\",\"TC-NOV-003\"]",
+        "doi": "10.3390/s23083888",
+        "domain_count": 1,
+        "domains_json": "[\"multispectral_band_selection_and_measurement_design\"]",
+        "maximum_domain_score": 12.230449,
+        "pmid": "37112229.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 95.460898,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Multispectral Imaging for Skin Diseases Assessment-State of the Art and Perspectives.",
+        "unique_review_order": 27,
+        "url": "https://europepmc.org/article/MED/37112229",
+        "year": "2023.0"
+      },
+      "task_id": "DISPOSITION-TASK-f3072983e3180c15",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_f3072983e3180c15.json",
+      "task_sha256": "f488f5a32b492ad5f1ba28968576472e331120acc4587c533cc6327fa03c6772"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.5753/sibgrapi.est.2024.31648",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 31,
+      "source_metadata": {
+        "best_domain_rank": 7,
+        "canonical_key": "doi:10.5753/sibgrapi.est.2024.31648",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 10,
+        "claims_json": "[\"TC-NOV-004\",\"TC-NOV-006\"]",
+        "doi": "10.5753/sibgrapi.est.2024.31648",
+        "domain_count": 1,
+        "domains_json": "[\"dermatology_ai_fairness_and_skin_tone\"]",
+        "maximum_domain_score": 13.5,
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 62.285714285714285,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Enhancing Fairness in Machine Learning: Skin Tone Classification Using the Monk Skin Tone Scale",
+        "unique_review_order": 31,
+        "url": "https://doi.org/10.5753/sibgrapi.est.2024.31648",
+        "year": "2024.0"
+      },
+      "task_id": "DISPOSITION-TASK-5c8179033fa93f1f",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_5c8179033fa93f1f.json",
+      "task_sha256": "8b4a8d50bbfac2a58b8a547a06461bf033867b1a2596a63892984ef2fe9f6ffd"
+    },
+    {
+      "allowed_terminal_roles": [
+        "FULL_SCIENTIFIC_EXTRACTION",
+        "BOUNDED_SCIENTIFIC_REVIEW",
+        "MATERIAL_LINEAGE_REFERENCE",
+        "EXCLUDED_WITH_REASON",
+        "TERMINAL_SOURCE_UNAVAILABLE"
+      ],
+      "canonical_identity": "doi:10.7759/cureus.94909",
+      "decision_contract": {
+        "fuzzy_identity_matching_prohibited": true,
+        "rank_only_decision_prohibited": true,
+        "role_contracts": {
+          "BOUNDED_SCIENTIFIC_REVIEW": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "EXCLUDED_WITH_REASON": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          },
+          "FULL_SCIENTIFIC_EXTRACTION": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "MATERIAL_LINEAGE_REFERENCE": {
+            "evidence_basis_required": true,
+            "reason_required": false,
+            "reviewer_attestation_required": true
+          },
+          "TERMINAL_SOURCE_UNAVAILABLE": {
+            "evidence_basis_required": true,
+            "reason_required": true,
+            "reviewer_attestation_required": true
+          }
+        },
+        "scientific_claim_inference_prohibited": true,
+        "terminal_role_requires_explicit_reviewer_decision": true,
+        "title_only_decision_prohibited": true
+      },
+      "existing_disposition_observations": [],
+      "review_order": 32,
+      "source_metadata": {
+        "best_domain_rank": 6,
+        "canonical_key": "doi:10.7759/cureus.94909",
+        "claim_count": 2,
+        "claim_id": "TC-NOV-004",
+        "claim_rank": 9,
+        "claims_json": "[\"TC-NOV-004\",\"TC-NOV-006\"]",
+        "doi": "10.7759/cureus.94909",
+        "domain_count": 1,
+        "domains_json": "[\"dermatology_ai_fairness_and_skin_tone\"]",
+        "maximum_domain_score": 13.5,
+        "pmid": "41262830.0",
+        "review_status": "PENDING_EVIDENCE_RESOLUTION",
+        "scientific_review_priority": 64.66666666666667,
+        "screen_decision": "UNADJUDICATED",
+        "title": "Exploring the Diagnostic Capability of Artificial Intelligence in Dermatology for Darker Skin Tones: A Narrative Review.",
+        "unique_review_order": 29,
+        "url": "https://europepmc.org/article/MED/41262830",
+        "year": "2025.0"
+      },
+      "task_id": "DISPOSITION-TASK-cea3a0861fd3571a",
+      "task_path": "artifacts/stage_01/disposition_tasks/disposition_task_cea3a0861fd3571a.json",
+      "task_sha256": "4328673be4d13b6a704cd265c990a91c23e24416278545c0d001498df49f0f5b"
+    }
+  ],
+  "task_count": 32
+}

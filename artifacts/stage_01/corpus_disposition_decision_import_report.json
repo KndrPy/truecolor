@@ -1,0 +1,11 @@
+{
+  "applied_task_ids": [],
+  "blank_row_count": 32,
+  "error_count": 0,
+  "errors": [],
+  "input_row_count": 32,
+  "mode": "VALIDATE_ONLY",
+  "report_schema": "qudipi.stage1.corpus-disposition-decision-import",
+  "report_version": 1,
+  "valid_decision_count": 0
+}

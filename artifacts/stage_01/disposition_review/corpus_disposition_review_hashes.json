@@ -1,0 +1,6 @@
+{
+  "artifacts/stage_01/disposition_review/corpus_disposition_decisions.csv": "4156effcfcdece0289e0fe385a8d43b2ff73506dcc396a5506e8ecf9228530f4",
+  "artifacts/stage_01/disposition_review/corpus_disposition_review.csv": "d4cba46a81a6b4ecb6dcc91f5f8c12eab1f30cf7ad02693aad987851241081aa",
+  "artifacts/stage_01/disposition_review/corpus_disposition_review_instructions.md": "27c004ddff4e0ebdade22f25911d8b086d5c7e7031fca170b05ba3b9b6db4eab",
+  "artifacts/stage_01/disposition_review/corpus_disposition_review_packet.json": "5996ee5729ac9cb4b49293977acfc7ee9a3f32bc07a48e223b4b4408742a5656"
+}
