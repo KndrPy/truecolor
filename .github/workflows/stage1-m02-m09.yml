@@ -8,8 +8,11 @@ on:
       - "analysis/stage1/canonical_stage1_contracts.py"
       - "analysis/stage1/m02_source_preflight.py"
       - "analysis/stage1/m03_spatial_ocr.py"
+      - "analysis/stage1/m03_hybrid_reconstruction.py"
       - "analysis/stage1/m03_m09_evidence_pipeline.py"
+      - "analysis/stage1/m03_m09_evidence_pipeline_v2.py"
       - "tests/stage1/test_s1_m03_spatial_ocr.py"
+      - "tests/stage1/test_s1_m03_hybrid_reconstruction.py"
       - "tests/stage1/test_s1_m02_m09_canonical_pipeline.py"
       - ".github/workflows/stage1-m02-m09.yml"
   pull_request:
@@ -17,8 +20,11 @@ on:
       - "analysis/stage1/canonical_stage1_contracts.py"
       - "analysis/stage1/m02_source_preflight.py"
       - "analysis/stage1/m03_spatial_ocr.py"
+      - "analysis/stage1/m03_hybrid_reconstruction.py"
       - "analysis/stage1/m03_m09_evidence_pipeline.py"
+      - "analysis/stage1/m03_m09_evidence_pipeline_v2.py"
       - "tests/stage1/test_s1_m03_spatial_ocr.py"
+      - "tests/stage1/test_s1_m03_hybrid_reconstruction.py"
       - "tests/stage1/test_s1_m02_m09_canonical_pipeline.py"
       - ".github/workflows/stage1-m02-m09.yml"
   workflow_dispatch:
@@ -54,9 +60,12 @@ jobs:
             analysis/stage1/canonical_stage1_contracts.py \
             analysis/stage1/m02_source_preflight.py \
             analysis/stage1/m03_spatial_ocr.py \
-            analysis/stage1/m03_m09_evidence_pipeline.py
+            analysis/stage1/m03_hybrid_reconstruction.py \
+            analysis/stage1/m03_m09_evidence_pipeline.py \
+            analysis/stage1/m03_m09_evidence_pipeline_v2.py
       - name: Run closure and falsification tests
         run: |
           python -m pytest -q \
             tests/stage1/test_s1_m03_spatial_ocr.py \
+            tests/stage1/test_s1_m03_hybrid_reconstruction.py \
             tests/stage1/test_s1_m02_m09_canonical_pipeline.py
