@@ -93,6 +93,12 @@ jobs:
           from pathlib import Path
 
           root = Path('artifacts/ci/stage1-m01-real')
+          corpus_root = Path('document_repository/ground_truth')
+          manifest_count = sum(
+              1
+              for line in (corpus_root / 'ground_truth_sha256_manifest.txt').read_text().splitlines()
+              if line.strip()
+          )
           closure = json.loads((root / 'stage1/m01/S1_M01_CLOSED.json').read_text())
           preflight = json.loads((root / 'corpus_preflight_report.json').read_text())
           physical = json.loads((root / 'physical_file_registry.json').read_text())
@@ -102,12 +108,13 @@ jobs:
           assert closure['module_state'] == 'CLOSED'
           assert closure['stage1_state'] == 'OPEN'
           assert all(value == 'PASS' for value in closure['semantic_gates'].values())
+          assert len(accepted) == manifest_count
           assert len(accepted) == len(physical['records'])
           assert len(physical['records']) == len(versions['records'])
-          assert len(physical['records']) == 36, len(physical['records'])
           assert works['records']
           print(json.dumps({
               'snapshot_id': closure['snapshot_id'],
+              'manifest_files': manifest_count,
               'physical_files': len(physical['records']),
               'document_versions': len(versions['records']),
               'scientific_works': len(works['records']),
