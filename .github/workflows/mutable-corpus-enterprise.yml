@@ -59,4 +59,5 @@ jobs:
         run: |
           python -m pytest -q \
             tests/qudipi/test_mutable_corpus.py \
-            tests/qudipi/test_mutable_corpus_enterprise.py
+            tests/qudipi/test_mutable_corpus_enterprise.py \
+            tests/qudipi/test_mutable_corpus_consumer.py
