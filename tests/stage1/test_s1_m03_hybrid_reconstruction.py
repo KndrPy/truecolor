@@ -11,6 +11,7 @@ from analysis.stage1.m03_hybrid_reconstruction import (
     _tsv_words,
     classify_page,
 )
+from analysis.stage1.m03_section_path_projection import project_section_paths
 
 
 def test_native_page_routes_without_ocr() -> None:
@@ -79,6 +80,7 @@ def test_v2_pipeline_uses_hybrid_reconstructor() -> None:
     assert "HybridSpatialReconstructor().reconstruct" in source
     assert "SpatialReconstruction().run" not in source
     assert "HYBRID_NATIVE_AND_SELECTIVE_SPATIAL_OCR" in source
+    assert "project_section_paths" in source
 
 
 def test_mixed_page_falsification_gate_is_present() -> None:
@@ -86,3 +88,29 @@ def test_mixed_page_falsification_gate_is_present() -> None:
     assert "mixed page did not preserve both evidence layers" in source
     assert "page representation is not total" in source
     assert "element coordinate or source lineage is incomplete" in source
+
+
+def test_section_path_projection_preserves_cardinality_and_methods_grounding(tmp_path: Path) -> None:
+    path = tmp_path / "document_elements.jsonl"
+    records = [
+        {
+            "element_id": "E1",
+            "file_id": "F1",
+            "page_number": 1,
+            "reading_order": 0,
+            "raw_text": "Materials and Methods",
+        },
+        {
+            "element_id": "E2",
+            "file_id": "F1",
+            "page_number": 1,
+            "reading_order": 1,
+            "raw_text": "The spectra were measured and normalized.",
+        },
+    ]
+    path.write_text("".join(json.dumps(item) + "\n" for item in records), encoding="utf-8")
+    project_section_paths(path)
+    projected = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()]
+    assert len(projected) == 2
+    assert projected[0]["role"] == "SECTION_HEADING"
+    assert projected[1]["section_path"] == ["Materials and Methods"]
