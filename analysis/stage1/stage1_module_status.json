@@ -17,8 +17,11 @@
     },
     "S1-M03": {
       "module_state": "OPEN",
-      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
-      "canonical_role": "Lossless Spatial Document Reconstruction"
+      "implementation_state": "HYBRID_NATIVE_SELECTIVE_SPATIAL_OCR_IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Lossless Spatial Document Reconstruction",
+      "implementation": "analysis.stage1.m03_hybrid_reconstruction",
+      "pipeline_entrypoint": "analysis.stage1.m03_m09_evidence_pipeline_v2",
+      "evidence_model": "Preserve native PDF objects where sufficient; add coordinate-bearing OCR over a hashed rendered evidence plane only where native structure is absent or insufficient; preserve both layers on mixed pages without semantic overwrite."
     },
     "S1-M04": {
       "module_state": "OPEN",
