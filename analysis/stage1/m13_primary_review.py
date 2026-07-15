@@ -19,37 +19,70 @@ MODULE_ID = "S1-M13"
 IDENTITY_FIELDS = {
     "work_id",
     "file_id",
+    "file_ids",
     "source_file_id",
+    "source_file_ids",
     "physical_file_id",
+    "physical_file_ids",
     "canonical_file_id",
+    "canonical_file_ids",
     "document_id",
+    "document_ids",
+    "version_id",
+    "version_ids",
     "content_sha256",
     "source_sha256",
     "file_sha256",
     "source_path",
+    "source_paths",
     "file_path",
+    "file_paths",
     "canonical_path",
+    "canonical_paths",
     "relative_path",
+    "relative_paths",
     "path",
+    "paths",
     "filename",
+    "filenames",
     "file_name",
+    "file_names",
     "source_name",
+    "source_names",
 }
 PATH_FIELDS = {
     "source_path",
+    "source_paths",
     "file_path",
+    "file_paths",
     "canonical_path",
+    "canonical_paths",
     "relative_path",
+    "relative_paths",
     "path",
+    "paths",
     "filename",
+    "filenames",
     "file_name",
+    "file_names",
     "source_name",
+    "source_names",
 }
 
 
 def _normalized_identity_values(key: str, value: Any) -> set[str]:
-    if value is None or isinstance(value, (dict, list, tuple, set)):
+    if value is None:
         return set()
+    if isinstance(value, Mapping):
+        values: set[str] = set()
+        for child_key, child in value.items():
+            values.update(_normalized_identity_values(str(child_key).strip().lower(), child))
+        return values
+    if isinstance(value, (list, tuple, set)):
+        values: set[str] = set()
+        for child in value:
+            values.update(_normalized_identity_values(key, child))
+        return values
     text = str(value).strip()
     if not text:
         return set()
@@ -68,9 +101,9 @@ def _identity_values(record: Mapping[str, Any]) -> set[str]:
     """Collect canonical identity aliases from top-level or nested provenance objects.
 
     Stage artifacts do not use one uniform provenance shape. M01 commonly stores source
-    aliases at the work level, while M08 may nest them under provenance/source objects.
-    Only explicitly identity-bearing keys are traversed; claim/element identifiers are
-    intentionally excluded so matching remains fail-closed.
+    aliases in plural arrays such as ``file_ids`` and ``version_ids`` while downstream
+    claim artifacts usually carry a scalar ``file_id``. Every explicitly identity-bearing
+    key is normalized recursively; claim and element identifiers remain excluded.
     """
     values: set[str] = set()
 
@@ -80,11 +113,11 @@ def _identity_values(record: Mapping[str, Any]) -> set[str]:
                 key = str(raw_key).strip().lower()
                 if key in IDENTITY_FIELDS:
                     values.update(_normalized_identity_values(key, child))
-                if isinstance(child, (Mapping, list, tuple)):
+                if isinstance(child, (Mapping, list, tuple, set)):
                     visit(child)
-        elif isinstance(value, (list, tuple)):
+        elif isinstance(value, (list, tuple, set)):
             for child in value:
-                if isinstance(child, (Mapping, list, tuple)):
+                if isinstance(child, (Mapping, list, tuple, set)):
                     visit(child)
 
     visit(record)
@@ -174,7 +207,7 @@ class PrimaryReviewQueue:
                 }
             )
         output = "primary_review_registry.json"
-        atomic_json(output_root / output, {"schema_version": 3, "records": tasks})
+        atomic_json(output_root / output, {"schema_version": 4, "records": tasks})
         closure = ModuleClosure(
             MODULE_ID,
             "READY_FOR_REVIEW",
