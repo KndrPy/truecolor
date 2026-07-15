@@ -41,8 +41,12 @@ def _fixture(tmp_path: Path) -> tuple[Path, Path]:
                     ]
                 },
             )
-        elif filename == "grounded_claim_assessment_registry.jsonl":
+        elif filename == "claim_registry.jsonl":
             atomic_jsonl(root / filename, [{"claim_id": "c1", "file_id": "f1"}])
+        elif filename == "grounded_claim_assessment_registry.jsonl":
+            # M12 deliberately omits file identity; packet construction must
+            # recover it from the authoritative M08 atomic claim record.
+            atomic_jsonl(root / filename, [{"claim_id": "c1", "assessment": "grounded"}])
         else:
             _write(root / filename)
     atomic_json(
@@ -147,3 +151,10 @@ def test_packet_tampering_is_detected(tmp_path: Path) -> None:
     packet_path.write_text("{}\n", encoding="utf-8")
     with pytest.raises(Stage1ContractError, match="packet changed"):
         validate_submission_manifest(template_path, out / "packet_index.json")
+
+
+def test_m12_claim_without_m08_atomic_source_fails_closed(tmp_path: Path) -> None:
+    stage, m01 = _fixture(tmp_path)
+    atomic_jsonl(stage / "m08" / "claim_registry.jsonl", [])
+    with pytest.raises(Stage1ContractError, match="absent from M08"):
+        build_packets(stage, m01, "primary", tmp_path / "packets")
