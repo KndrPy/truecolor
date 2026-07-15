@@ -1,0 +1,55 @@
+name: Mutable Corpus Reconciliation
+
+on:
+  push:
+    branches:
+      - analysis/canonical-stage0-refactor
+    paths:
+      - "analysis/prior_art/mutable_corpus.py"
+      - "analysis/prior_art/mutable_corpus_service.py"
+      - "tests/qudipi/test_mutable_corpus_service.py"
+      - ".github/workflows/mutable-corpus-ci.yml"
+  pull_request:
+    paths:
+      - "analysis/prior_art/mutable_corpus.py"
+      - "analysis/prior_art/mutable_corpus_service.py"
+      - "tests/qudipi/test_mutable_corpus_service.py"
+      - ".github/workflows/mutable-corpus-ci.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mutable-corpus-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install validation dependency
+        run: python -m pip install --disable-pip-version-check pytest
+
+      - name: Compile mutable corpus modules
+        run: |
+          python -m py_compile \
+            analysis/prior_art/mutable_corpus.py \
+            analysis/prior_art/mutable_corpus_service.py
+
+      - name: Run falsification suite
+        run: python -m pytest -q tests/qudipi/test_mutable_corpus_service.py
