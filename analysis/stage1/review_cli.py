@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import shutil
+import sys
 import tempfile
 from pathlib import Path
 from typing import Any, Callable, Iterable, Mapping
@@ -20,18 +21,58 @@ from analysis.stage1.review_execution import (
     submit_review,
     validate_independence,
 )
-from analysis.stage1.stage1_runtime_contracts import Stage1ContractError, load_json, sha256_file
-
+from analysis.stage1.stage1_runtime_contracts import (
+    Stage1ContractError,
+    atomic_json,
+    load_json,
+    sha256_file,
+)
 
 PRIMARY_FIELD = "primary_review_task_id"
 INDEPENDENT_FIELD = "independent_review_task_id"
 
 
 def _stage(args: argparse.Namespace) -> Path:
-    return Path(args.stage_root)
+    root = Path(args.stage_root)
+    if not root.is_dir():
+        raise Stage1ContractError(f"stage root does not exist: {root}")
+    return root
+
+
+def _reject_placeholder(value: str, field: str) -> str:
+    text = str(value).strip()
+    lowered = text.lower()
+    if not text:
+        raise Stage1ContractError(f"{field} must not be empty")
+    if (text.startswith("<") and text.endswith(">")) or lowered in {
+        "task_id",
+        "reviewer_id",
+        "work_id",
+        "claim_id",
+        "primary_task_id",
+        "independent_task_id",
+        "your_reviewer_id",
+    }:
+        raise Stage1ContractError(
+            f"{field} contains a placeholder value: {text}. "
+            "Use 'list-pending' to obtain real task/work/claim identifiers."
+        )
+    return text
+
+
+def _existing_manifest(value: str) -> Path:
+    path = Path(value)
+    if not path.is_file():
+        raise Stage1ContractError(
+            f"manifest file does not exist: {path}. "
+            "Use 'generate-assignment-manifest' or create the JSON file before running a batch command."
+        )
+    return path
 
 
 def _json_list(path: Path) -> list[dict[str, Any]]:
+    if not path.is_file():
+        raise Stage1ContractError(f"manifest file does not exist: {path}")
     payload = load_json(path)
     records = payload.get("records")
     if not isinstance(records, list):
@@ -43,7 +84,7 @@ def _required_text(item: Mapping[str, Any], key: str) -> str:
     value = str(item.get(key, "")).strip()
     if not value:
         raise Stage1ContractError(f"manifest record missing {key}")
-    return value
+    return _reject_placeholder(value, key)
 
 
 def _required_list(item: Mapping[str, Any], key: str) -> list[Any]:
@@ -63,12 +104,7 @@ def _reject_duplicate_ids(records: Iterable[Mapping[str, Any]], key: str) -> Non
 
 
 def _transactional_files(paths: list[Path], operation: Callable[[dict[Path, Path]], None]) -> None:
-    """Execute a multi-file mutation against private copies, then publish all outputs.
-
-    The original files remain unchanged if validation or execution fails. Publication
-    uses same-filesystem os.replace for each target. A recovery journal is retained
-    until every replacement succeeds, making interrupted publication detectable.
-    """
+    """Execute a multi-file mutation against private copies, then publish all outputs."""
     if not paths:
         raise Stage1ContractError("transaction requires at least one file")
     parents = {path.parent.resolve() for path in paths}
@@ -99,7 +135,8 @@ def _transactional_files(paths: list[Path], operation: Callable[[dict[Path, Path
                 },
                 indent=2,
                 sort_keys=True,
-            ) + "\n",
+            )
+            + "\n",
             encoding="utf-8",
         )
         for target in paths:
@@ -111,20 +148,110 @@ def _transactional_files(paths: list[Path], operation: Callable[[dict[Path, Path
 
 
 def _snapshot(value: str) -> str:
+    value = _reject_placeholder(value, "source_snapshot")
     candidate = Path(value)
     return sha256_file(candidate) if candidate.is_file() else value
 
 
+def _registry_for_plane(root: Path, plane: str) -> tuple[Path, str]:
+    if plane == "primary":
+        return root / "m13" / "primary_review_registry.json", PRIMARY_FIELD
+    if plane == "independent":
+        return root / "m14" / "independent_review_registry.json", INDEPENDENT_FIELD
+    raise Stage1ContractError(f"unsupported review plane: {plane}")
+
+
+def list_pending(args: argparse.Namespace) -> None:
+    root = _stage(args)
+    plane = args.plane
+    if plane in {"primary", "independent"}:
+        registry, task_field = _registry_for_plane(root, plane)
+        records = [
+            {
+                "task_id": item.get(task_field),
+                "work_id": item.get("work_id"),
+                "review_state": item.get("review_state"),
+                "reviewer_id": item.get("reviewer_id"),
+            }
+            for item in _json_list(registry)
+            if item.get("review_state") in {"PENDING", "ASSIGNED"}
+        ]
+    elif plane == "resolution":
+        registry = root / "m15" / "review_conflict_resolution_registry.json"
+        records = [
+            {
+                "work_id": item.get("work_id"),
+                "resolution_state": item.get("resolution_state"),
+                "primary_disposition": item.get("primary_disposition"),
+                "independent_disposition": item.get("independent_disposition"),
+            }
+            for item in _json_list(registry)
+            if item.get("resolution_state") not in {"AGREEMENT", "RESOLVED"}
+        ]
+    else:
+        registry = root / "m16" / "novelty_adjudication_registry.json"
+        records = [
+            {
+                "claim_id": item.get("claim_id"),
+                "review_state": item.get("review_state"),
+                "atomic_claim": item.get("atomic_claim"),
+            }
+            for item in _json_list(registry)
+            if item.get("review_state") != "ADJUDICATED"
+        ]
+    limit = max(0, int(args.limit))
+    print(json.dumps({"plane": plane, "total_pending": len(records), "records": records[:limit]}, indent=2))
+
+
+def generate_assignment_manifest(args: argparse.Namespace) -> None:
+    root = _stage(args)
+    reviewer_id = _reject_placeholder(args.reviewer_id, "reviewer_id")
+    role = _reject_placeholder(args.role, "role")
+    output = Path(args.output)
+    if output.exists() and not args.overwrite:
+        raise Stage1ContractError(f"refusing to overwrite existing manifest: {output}")
+    registry, task_field = _registry_for_plane(root, args.plane)
+    records = []
+    for item in _json_list(registry):
+        if item.get("review_state") != "PENDING":
+            continue
+        records.append(
+            {
+                "task_id": item.get(task_field),
+                "work_id": item.get("work_id"),
+                "reviewer_id": reviewer_id,
+                "role": role,
+            }
+        )
+    if not records:
+        raise Stage1ContractError(f"no pending {args.plane} review tasks found")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    atomic_json(output, {"schema_version": 1, "plane": args.plane, "records": records})
+    print(json.dumps({"output": output.as_posix(), "records": len(records)}, indent=2))
+
+
 def assign_primary(args: argparse.Namespace) -> None:
     root = _stage(args)
-    assign_review(root / "m13" / "primary_review_registry.json", PRIMARY_FIELD, args.task_id, args.reviewer_id, args.role)
+    assign_review(
+        root / "m13" / "primary_review_registry.json",
+        PRIMARY_FIELD,
+        _reject_placeholder(args.task_id, "task_id"),
+        _reject_placeholder(args.reviewer_id, "reviewer_id"),
+        _reject_placeholder(args.role, "role"),
+    )
 
 
 def assign_independent(args: argparse.Namespace) -> None:
     root = _stage(args)
     primary = root / "m13" / "primary_review_registry.json"
     independent = root / "m14" / "independent_review_registry.json"
-    assign_review(independent, INDEPENDENT_FIELD, args.task_id, args.reviewer_id, args.role)
+    assign_review(
+        independent,
+        INDEPENDENT_FIELD,
+        _reject_placeholder(args.task_id, "task_id"),
+        _reject_placeholder(args.reviewer_id, "reviewer_id"),
+        _reject_placeholder(args.role, "role"),
+    )
     validate_independence(primary, independent)
 
 
@@ -135,11 +262,23 @@ def _submit(args: argparse.Namespace, independent: bool) -> None:
     field = INDEPENDENT_FIELD if independent else PRIMARY_FIELD
     registry = root / module / name
     ledger = root / module / "review_submission_ledger.jsonl"
-    evidence = list(args.evidence_id)
+    evidence = [_reject_placeholder(value, "evidence_id") for value in args.evidence_id]
     snapshot = _snapshot(args.source_snapshot)
+    task_id = _reject_placeholder(args.task_id, "task_id")
+    reviewer_id = _reject_placeholder(args.reviewer_id, "reviewer_id")
 
     def apply(mapping: dict[Path, Path]) -> None:
-        submit_review(mapping[registry], field, args.task_id, args.reviewer_id, args.disposition, evidence, args.rationale, snapshot, mapping[ledger])
+        submit_review(
+            mapping[registry],
+            field,
+            task_id,
+            reviewer_id,
+            args.disposition,
+            evidence,
+            args.rationale,
+            snapshot,
+            mapping[ledger],
+        )
 
     _transactional_files([registry, ledger], apply)
     if independent:
@@ -148,16 +287,29 @@ def _submit(args: argparse.Namespace, independent: bool) -> None:
 
 def validate_reviews(args: argparse.Namespace) -> None:
     root = _stage(args)
-    validate_independence(root / "m13" / "primary_review_registry.json", root / "m14" / "independent_review_registry.json")
+    validate_independence(
+        root / "m13" / "primary_review_registry.json",
+        root / "m14" / "independent_review_registry.json",
+    )
 
 
 def resolve_review(args: argparse.Namespace) -> None:
     root = _stage(args)
     resolution = root / "m15" / "review_conflict_resolution_registry.json"
     ledger = root / "m15" / "review_resolution_ledger.jsonl"
+    work_id = _reject_placeholder(args.work_id, "work_id")
+    resolver_id = _reject_placeholder(args.resolver_id, "resolver_id")
 
     def apply(mapping: dict[Path, Path]) -> None:
-        resolve_conflict(mapping[resolution], args.work_id, args.resolver_id, args.disposition, list(args.evidence_id), args.rationale, mapping[ledger])
+        resolve_conflict(
+            mapping[resolution],
+            work_id,
+            resolver_id,
+            args.disposition,
+            [_reject_placeholder(value, "evidence_id") for value in args.evidence_id],
+            args.rationale,
+            mapping[ledger],
+        )
 
     _transactional_files([resolution, ledger], apply)
 
@@ -166,19 +318,32 @@ def adjudicate_one(args: argparse.Namespace) -> None:
     root = _stage(args)
     registry = root / "m16" / "novelty_adjudication_registry.json"
     ledger = root / "m16" / "novelty_adjudication_ledger.jsonl"
-    overlap = json.loads(Path(args.overlap_matrix).read_text(encoding="utf-8"))
+    overlap_path = _existing_manifest(args.overlap_matrix)
+    overlap = json.loads(overlap_path.read_text(encoding="utf-8"))
     if not isinstance(overlap, list):
         raise Stage1ContractError("overlap matrix file must contain a JSON list")
 
     def apply(mapping: dict[Path, Path]) -> None:
-        adjudicate_claim(mapping[registry], args.claim_id, args.adjudicator_id, args.decision, list(args.relevant_source_id), overlap, args.single_source_anticipation, args.multi_source_combination, args.temporal_priority, args.rationale, mapping[ledger])
+        adjudicate_claim(
+            mapping[registry],
+            _reject_placeholder(args.claim_id, "claim_id"),
+            _reject_placeholder(args.adjudicator_id, "adjudicator_id"),
+            args.decision,
+            [_reject_placeholder(value, "relevant_source_id") for value in args.relevant_source_id],
+            overlap,
+            args.single_source_anticipation,
+            args.multi_source_combination,
+            args.temporal_priority,
+            args.rationale,
+            mapping[ledger],
+        )
 
     _transactional_files([registry, ledger], apply)
 
 
 def batch_adjudicate(args: argparse.Namespace) -> None:
     root = _stage(args)
-    records = _json_list(Path(args.manifest))
+    records = _json_list(_existing_manifest(args.manifest))
     _reject_duplicate_ids(records, "claim_id")
     registry = root / "m16" / "novelty_adjudication_registry.json"
     ledger = root / "m16" / "novelty_adjudication_ledger.jsonl"
@@ -189,7 +354,14 @@ def batch_adjudicate(args: argparse.Namespace) -> None:
             raise Stage1ContractError(f"invalid novelty decision: {decision}")
         _required_list(item, "relevant_source_ids")
         _required_list(item, "overlap_matrix")
-        for key in ("claim_id", "adjudicator_id", "single_source_anticipation", "multi_source_combination", "temporal_priority", "rationale"):
+        for key in (
+            "claim_id",
+            "adjudicator_id",
+            "single_source_anticipation",
+            "multi_source_combination",
+            "temporal_priority",
+            "rationale",
+        ):
             _required_text(item, key)
 
     def apply(mapping: dict[Path, Path]) -> None:
@@ -213,17 +385,20 @@ def batch_adjudicate(args: argparse.Namespace) -> None:
 
 def batch_assign(args: argparse.Namespace) -> None:
     root = _stage(args)
-    records = _json_list(Path(args.manifest))
+    records = _json_list(_existing_manifest(args.manifest))
     _reject_duplicate_ids(records, "task_id")
     independent = args.plane == "independent"
-    module = "m14" if independent else "m13"
-    name = "independent_review_registry.json" if independent else "primary_review_registry.json"
-    field = INDEPENDENT_FIELD if independent else PRIMARY_FIELD
-    registry = root / module / name
+    registry, field = _registry_for_plane(root, args.plane)
 
     def apply(mapping: dict[Path, Path]) -> None:
         for item in records:
-            assign_review(mapping[registry], field, _required_text(item, "task_id"), _required_text(item, "reviewer_id"), _required_text(item, "role"))
+            assign_review(
+                mapping[registry],
+                field,
+                _required_text(item, "task_id"),
+                _required_text(item, "reviewer_id"),
+                _required_text(item, "role"),
+            )
 
     _transactional_files([registry], apply)
     if independent:
@@ -232,7 +407,7 @@ def batch_assign(args: argparse.Namespace) -> None:
 
 def batch_submit(args: argparse.Namespace) -> None:
     root = _stage(args)
-    records = _json_list(Path(args.manifest))
+    records = _json_list(_existing_manifest(args.manifest))
     _reject_duplicate_ids(records, "task_id")
     independent = args.plane == "independent"
     module = "m14" if independent else "m13"
@@ -251,9 +426,15 @@ def batch_submit(args: argparse.Namespace) -> None:
     def apply(mapping: dict[Path, Path]) -> None:
         for item in records:
             submit_review(
-                mapping[registry], field, _required_text(item, "task_id"), _required_text(item, "reviewer_id"),
-                _required_text(item, "disposition"), [str(value) for value in _required_list(item, "evidence_ids")],
-                _required_text(item, "rationale"), _snapshot(_required_text(item, "source_snapshot")), mapping[ledger],
+                mapping[registry],
+                field,
+                _required_text(item, "task_id"),
+                _required_text(item, "reviewer_id"),
+                _required_text(item, "disposition"),
+                [str(value) for value in _required_list(item, "evidence_ids")],
+                _required_text(item, "rationale"),
+                _snapshot(_required_text(item, "source_snapshot")),
+                mapping[ledger],
             )
 
     _transactional_files([registry, ledger], apply)
@@ -264,21 +445,35 @@ def batch_submit(args: argparse.Namespace) -> None:
 def recompute_m15(args: argparse.Namespace) -> None:
     root = _stage(args)
     existing_path = root / "m15" / "review_conflict_resolution_registry.json"
-    existing = {str(item.get("work_id")): dict(item) for item in _json_list(existing_path)} if existing_path.is_file() else {}
+    existing = (
+        {str(item.get("work_id")): dict(item) for item in _json_list(existing_path)}
+        if existing_path.is_file()
+        else {}
+    )
     ReviewConflictResolution().run(root / "m13", root / "m14", root / "m15")
     payload = load_json(existing_path)
     fresh = [dict(item) for item in payload.get("records", [])]
     for item in fresh:
         old = existing.get(str(item.get("work_id")))
         if old and old.get("resolution_state") == "RESOLVED":
-            item.update({key: value for key, value in old.items() if key.startswith("resolution_") or key in {"resolution_state", "resolved_disposition", "resolver_id"}})
-    from analysis.stage1.stage1_runtime_contracts import atomic_json
+            item.update(
+                {
+                    key: value
+                    for key, value in old.items()
+                    if key.startswith("resolution_")
+                    or key in {"resolution_state", "resolved_disposition", "resolver_id"}
+                }
+            )
     atomic_json(existing_path, {**dict(payload), "records": fresh})
 
 
 def recompute_m17(args: argparse.Namespace) -> None:
     root = _stage(args)
-    Stage1ClosureAuthority().run(root, root / "m17", {"m01": Path(args.m01_root), "m02": Path(args.m02_root)})
+    Stage1ClosureAuthority().run(
+        root,
+        root / "m17",
+        {"m01": Path(args.m01_root), "m02": Path(args.m02_root)},
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -288,6 +483,21 @@ def build_parser() -> argparse.ArgumentParser:
     status = sub.add_parser("status")
     status.add_argument("--stage-root", required=True)
     status.set_defaults(handler=lambda args: print(json.dumps(progress(_stage(args)), indent=2)))
+
+    pending = sub.add_parser("list-pending")
+    pending.add_argument("--stage-root", required=True)
+    pending.add_argument("--plane", choices=("primary", "independent", "resolution", "adjudication"), required=True)
+    pending.add_argument("--limit", type=int, default=20)
+    pending.set_defaults(handler=list_pending)
+
+    generate = sub.add_parser("generate-assignment-manifest")
+    generate.add_argument("--stage-root", required=True)
+    generate.add_argument("--plane", choices=("primary", "independent"), required=True)
+    generate.add_argument("--reviewer-id", required=True)
+    generate.add_argument("--role", required=True)
+    generate.add_argument("--output", required=True)
+    generate.add_argument("--overwrite", action="store_true")
+    generate.set_defaults(handler=generate_assignment_manifest)
 
     for name, handler in (("assign-primary", assign_primary), ("assign-independent", assign_independent)):
         cmd = sub.add_parser(name)
@@ -359,8 +569,13 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
-    args = build_parser().parse_args()
-    args.handler(args)
+    parser = build_parser()
+    args = parser.parse_args()
+    try:
+        args.handler(args)
+    except (Stage1ContractError, FileNotFoundError, json.JSONDecodeError) as error:
+        print(f"ERROR: {error}", file=sys.stderr)
+        raise SystemExit(2) from None
     print(f"TRUECOLOR_STAGE1_REVIEW_CLI_{args.command.upper().replace('-', '_')}=PASS")
 
 
