@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 from typing import Any, Mapping
 
-from analysis.stage1.m13_primary_review import _claims_by_work
+from analysis.stage1.m13_primary_review import IDENTITY_FIELDS, _claims_by_work
 from analysis.stage1.stage1_runtime_contracts import (
     Stage1ContractError,
     atomic_json,
@@ -76,9 +76,58 @@ def _work_identity_map(m01_root: Path) -> dict[str, dict[str, Any]]:
     }
 
 
+def _claim_provenance_records(stage_root: Path) -> list[dict[str, Any]]:
+    """Join M12 assessments to M08 atomic claims so document identity is retained.
+
+    M12 is intentionally assessment-centric and may contain only claim_id plus
+    grounding fields. M08 is the authority for the claim's source/document
+    identity. A review packet must therefore join on claim_id before resolving
+    the claim to an M01 work identity.
+    """
+    atomic_claims = load_jsonl(stage_root / "m08" / "claim_registry.jsonl")
+    assessments = load_jsonl(stage_root / "m12" / "grounded_claim_assessment_registry.jsonl")
+    atomic_by_id: dict[str, dict[str, Any]] = {}
+    for record in atomic_claims:
+        claim_id = str(record.get("claim_id", "")).strip()
+        if not claim_id:
+            raise Stage1ContractError("M08 atomic claim missing claim_id")
+        if claim_id in atomic_by_id:
+            raise Stage1ContractError(f"duplicate M08 claim_id: {claim_id}")
+        atomic_by_id[claim_id] = dict(record)
+
+    assessment_ids: set[str] = set()
+    joined: list[dict[str, Any]] = []
+    for assessment in assessments:
+        claim_id = str(assessment.get("claim_id", "")).strip()
+        if not claim_id:
+            raise Stage1ContractError("M12 grounded assessment missing claim_id")
+        if claim_id in assessment_ids:
+            raise Stage1ContractError(f"duplicate M12 claim_id: {claim_id}")
+        assessment_ids.add(claim_id)
+        atomic = atomic_by_id.get(claim_id)
+        if atomic is None:
+            raise Stage1ContractError(f"M12 claim is absent from M08 atomic registry: {claim_id}")
+        merged = {**atomic, **dict(assessment), "claim_id": claim_id}
+        # M08 remains authoritative for source/work identity even when an
+        # assessment happens to carry an empty or transformed identity field.
+        for field in IDENTITY_FIELDS:
+            value = atomic.get(field)
+            if value is not None and str(value).strip():
+                merged[field] = value
+        joined.append(merged)
+
+    missing_assessments = sorted(set(atomic_by_id) - assessment_ids)
+    if missing_assessments:
+        preview = ", ".join(missing_assessments[:10])
+        raise Stage1ContractError(
+            f"M08 atomic claims lack M12 assessments: {len(missing_assessments)}; {preview}"
+        )
+    return joined
+
+
 def _work_claim_map(stage_root: Path, m01_root: Path) -> dict[str, list[str]]:
     works = _work_identity_records(m01_root)
-    claims = load_jsonl(stage_root / "m12" / "grounded_claim_assessment_registry.jsonl")
+    claims = _claim_provenance_records(stage_root)
     mapping = _claims_by_work(works, claims)
     linked = sum(len(values) for values in mapping.values())
     if linked != len(claims):
@@ -130,7 +179,7 @@ def build_packets(
         if claim_ids is None:
             raise Stage1ContractError(f"review task work is absent from canonical claim map: {work_id}")
         packet = {
-            "schema_version": 2,
+            "schema_version": 3,
             "packet_id": stable_id("REVIEW-PACKET", {"plane": plane, "task": task_id, "snapshot": snapshot_sha256}),
             "review_plane": plane,
             "task_id": task_id,
@@ -171,7 +220,7 @@ def build_packets(
         })
 
     manifest = {
-        "schema_version": 2,
+        "schema_version": 3,
         "plane": plane,
         "source_snapshot_path": snapshot_path.as_posix(),
         "source_snapshot_sha256": snapshot_sha256,
@@ -208,7 +257,7 @@ def build_submission_template(packet_index: Path, output: Path, overwrite: bool 
             "packet_sha256": sha256_file(packet_path),
         })
     result = {
-        "schema_version": 2,
+        "schema_version": 3,
         "plane": plane,
         "source_snapshot_sha256": payload["source_snapshot_sha256"],
         "records": template_records,
@@ -245,7 +294,7 @@ def validate_submission_manifest(manifest: Path, packet_index: Path) -> dict[str
             incomplete.append(task_id)
     missing = sorted(set(expected) - seen)
     return {
-        "schema_version": 2,
+        "schema_version": 3,
         "plane": index.get("plane"),
         "expected": len(expected),
         "present": len(seen),
