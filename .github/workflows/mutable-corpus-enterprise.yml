@@ -1,0 +1,62 @@
+name: mutable-corpus-enterprise
+
+on:
+  push:
+    branches:
+      - analysis/canonical-stage0-refactor
+    paths:
+      - "analysis/prior_art/mutable_corpus*.py"
+      - "tests/qudipi/test_mutable_corpus*.py"
+      - ".github/workflows/mutable-corpus-enterprise.yml"
+  pull_request:
+    paths:
+      - "analysis/prior_art/mutable_corpus*.py"
+      - "tests/qudipi/test_mutable_corpus*.py"
+      - ".github/workflows/mutable-corpus-enterprise.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mutable-corpus-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install system PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends poppler-utils
+
+      - name: Install Python test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest
+
+      - name: Compile mutable corpus modules
+        run: |
+          python -m compileall -q analysis/prior_art/mutable_corpus.py
+          python -m compileall -q analysis/prior_art/mutable_corpus_service.py
+          python -m compileall -q analysis/prior_art/mutable_corpus_enterprise.py
+          python -m compileall -q analysis/prior_art/mutable_corpus_runtime.py
+          python -m compileall -q analysis/prior_art/mutable_corpus_contracts.py
+          python -m compileall -q analysis/prior_art/mutable_corpus_closure_validator.py
+          python -m compileall -q analysis/prior_art/mutable_corpus_consumer.py
+
+      - name: Run mutable corpus falsification suite
+        run: |
+          python -m pytest -q \
+            tests/qudipi/test_mutable_corpus.py \
+            tests/qudipi/test_mutable_corpus_enterprise.py
