@@ -123,8 +123,9 @@ def route_extraction_recovery(output_root: Path) -> Mapping[str, Any]:
 
 
 def finalize_extraction_recovery_contracts(output_root: Path) -> None:
-    """Extend generated contracts after consumer projections are written."""
+    """Make generated contract projections consistent with recovery routing."""
     output_root = output_root.resolve()
+
     contract_path = output_root / "mutable_corpus_contract.json"
     if contract_path.is_file():
         contract = dict(load_snapshot(contract_path))
@@ -137,3 +138,21 @@ def finalize_extraction_recovery_contracts(output_root: Path) -> None:
             "EXTRACTION_FAILURE_MUST_NOT_IMPLY_NON_SCIENTIFIC"
         )
         atomic_write_json(contract_path, contract)
+
+    queue_path = output_root / "extraction_recovery_queue.json"
+    work_states_path = output_root / "work_identity_state_registry.json"
+    if queue_path.is_file() and work_states_path.is_file():
+        queue = load_snapshot(queue_path)
+        recovery_work_ids = {
+            str(item.get("work_id", ""))
+            for item in _records(queue)
+            if item.get("work_id")
+        }
+        work_states = dict(load_snapshot(work_states_path))
+        updated = []
+        for record in _records(work_states):
+            if str(record.get("work_id", "")) in recovery_work_ids:
+                record["identity_state"] = RECOVERY_STATE
+            updated.append(record)
+        work_states["records"] = updated
+        atomic_write_json(work_states_path, work_states)
