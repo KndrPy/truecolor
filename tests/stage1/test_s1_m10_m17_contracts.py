@@ -1,10 +1,10 @@
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 from analysis.stage1.m10_corpus_ontology_alignment import signature
-from analysis.stage1.m17_stage1_closure import Stage1ClosureAuthority
-from analysis.stage1.stage1_runtime_contracts import atomic_jsonl, load_jsonl, stable_id
+from analysis.stage1.stage1_runtime_contracts import atomic_json, atomic_jsonl, load_json, load_jsonl, stable_id
 
 
 def test_signature_preserves_material_tokens() -> None:
@@ -35,3 +35,23 @@ def test_review_modules_do_not_fabricate_dispositions() -> None:
         source = Path("analysis/stage1") / name
         text = source.read_text(encoding="utf-8")
         assert '"disposition": None' in text or '"resolved_disposition": left if state == "AGREEMENT" else None' in text
+
+
+def test_m17_resolves_m01_m02_from_explicit_external_roots() -> None:
+    source = Path("analysis/stage1/m17_stage1_closure.py").read_text(encoding="utf-8")
+    assert "external_module_roots" in source
+    assert 'external.get(module, stage_root / module)' in source
+    assert '"external_module_roots_resolved": "PASS"' in source
+    pipeline = Path("analysis/stage1/stage1_m10_m17_pipeline.py").read_text(encoding="utf-8")
+    assert '{"m01": m01_root, "m02": m02_root}' in pipeline
+    assert 'parser.add_argument("--m02-root", required=True)' in pipeline
+
+
+def test_m17_missing_input_hash_target_is_stale_not_silently_ignored() -> None:
+    source = Path("analysis/stage1/m17_stage1_closure.py").read_text(encoding="utf-8")
+    assert 'stale_artifacts.append(f"MISSING:{raw_path}")' in source
+
+
+def test_m17_matches_module_id_not_arbitrary_closure_filename() -> None:
+    source = Path("analysis/stage1/m17_stage1_closure.py").read_text(encoding="utf-8")
+    assert 'payload.get("module_id") == expected_id' in source
