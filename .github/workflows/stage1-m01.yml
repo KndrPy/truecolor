@@ -1,0 +1,63 @@
+name: Stage 1 S1-M01
+
+on:
+  push:
+    branches:
+      - analysis/canonical-stage0-refactor
+    paths:
+      - "analysis/stage1/**"
+      - "analysis/prior_art/mutable_corpus*.py"
+      - "tests/stage1/test_s1_m01_corpus_reconciliation.py"
+      - ".github/workflows/stage1-m01.yml"
+  pull_request:
+    paths:
+      - "analysis/stage1/**"
+      - "analysis/prior_art/mutable_corpus*.py"
+      - "tests/stage1/test_s1_m01_corpus_reconciliation.py"
+      - ".github/workflows/stage1-m01.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-s1-m01:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONHASHSEED: "0"
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install test runtime
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest
+      - name: Compile S1-M01 and mutable-corpus dependencies
+        run: |
+          python -m compileall -q \
+            analysis/stage1 \
+            analysis/prior_art/mutable_corpus.py \
+            analysis/prior_art/mutable_corpus_service.py \
+            analysis/prior_art/mutable_corpus_enterprise.py \
+            analysis/prior_art/mutable_corpus_enterprise_overrides.py \
+            analysis/prior_art/mutable_corpus_runtime.py \
+            analysis/prior_art/mutable_corpus_contracts.py \
+            analysis/prior_art/mutable_corpus_closure_validator.py \
+            analysis/prior_art/mutable_corpus_consumer.py
+      - name: Run existing mutable-corpus regression suite
+        run: |
+          python -m pytest -q \
+            tests/qudipi/test_mutable_corpus_service.py \
+            tests/qudipi/test_mutable_corpus_enterprise.py \
+            tests/qudipi/test_mutable_corpus_consumer.py
+      - name: Run S1-M01 complete verification suite
+        run: |
+          python -m pytest -q tests/stage1/test_s1_m01_corpus_reconciliation.py
