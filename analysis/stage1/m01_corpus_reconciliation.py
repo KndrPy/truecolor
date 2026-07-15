@@ -71,6 +71,8 @@ class M01ResourceBudget:
 class M01ExecutionMetrics:
     wall_seconds: float
     peak_rss_bytes: int
+    self_peak_rss_bytes: int
+    child_peak_rss_bytes: int
     run_output_bytes: int
     accepted_source_file_count: int
     scientific_work_count: int
@@ -95,8 +97,8 @@ def _atomic_append_jsonl(path: Path, record: Mapping[str, Any]) -> None:
         raise
 
 
-def _rss_bytes() -> int:
-    value = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+def _rss_value_bytes(who: int) -> int:
+    value = resource.getrusage(who).ru_maxrss
     return int(value if platform.system() == "Darwin" else value * 1024)
 
 
@@ -115,6 +117,37 @@ def _runtime_dependency_report(backend: ExtractionBackend | None) -> Mapping[str
     if missing:
         raise M01ClosureError("required PDF runtime dependencies absent: " + ", ".join(missing))
     return {"mode": "POPPLER", **dependencies}
+
+
+def _prior_lifecycle_from_snapshot(prior: Mapping[str, Any]) -> Mapping[str, Any]:
+    observed_at = str(prior.get("observed_at", ""))
+    records = []
+    for item in prior.get("files", []):
+        if not isinstance(item, Mapping):
+            raise M01ValidationError("prior snapshot contains malformed file records")
+        file_id = str(item["file_id"])
+        relative_path = str(item["relative_path"])
+        binary_sha256 = str(item["binary_sha256"])
+        records.append(
+            {
+                "file_id": file_id,
+                "first_seen_at": observed_at,
+                "path_history": [{"path": relative_path, "observed_at": observed_at}],
+                "binary_sha256_history": [
+                    {"binary_sha256": binary_sha256, "observed_at": observed_at}
+                ],
+                "current_state": "PRESENT",
+                "current_path": relative_path,
+                "current_binary_sha256": binary_sha256,
+                "last_seen_at": observed_at,
+                "removed_at": "",
+            }
+        )
+    return {
+        "schema": "qudipi.mutable-corpus.physical-file-lifecycle-registry",
+        "schema_version": 2,
+        "records": sorted(records, key=lambda item: item["file_id"]),
+    }
 
 
 def _install_prior_snapshot(prior_snapshot_path: Path, output_root: Path) -> Mapping[str, Any]:
@@ -136,10 +169,25 @@ def _install_prior_snapshot(prior_snapshot_path: Path, output_root: Path) -> Map
     finally:
         if temporary.exists():
             temporary.unlink()
+
+    sibling_lifecycle = prior_snapshot_path.parent / "physical_file_lifecycle_registry.json"
+    if sibling_lifecycle.is_file():
+        lifecycle = load_json(sibling_lifecycle)
+        if not isinstance(lifecycle.get("records"), list):
+            raise M01ValidationError("prior lifecycle registry is malformed")
+    else:
+        lifecycle = _prior_lifecycle_from_snapshot(prior)
+    atomic_write_json(output_root / "physical_file_lifecycle_registry.json", lifecycle)
+
     return {
         "snapshot_id": prior["snapshot_id"],
         "sha256": sha256_file(target),
         "source_path": prior_snapshot_path.resolve().as_posix(),
+        "lifecycle_source": (
+            sibling_lifecycle.resolve().as_posix()
+            if sibling_lifecycle.is_file()
+            else "SYNTHESIZED_FROM_PRIOR_SNAPSHOT"
+        ),
     }
 
 
@@ -198,17 +246,20 @@ def _enforce_budget(metrics: M01ExecutionMetrics, budget: M01ResourceBudget) -> 
 
 def _write_module_hash_manifest(module_root: Path, artifacts: list[Path]) -> Mapping[str, Any]:
     manifest_path = module_root / "m01_artifact_hashes.json"
-    records = [
-        {
-            "path": path.resolve().relative_to(module_root.parent.parent.resolve()).as_posix()
-            if path.resolve().is_relative_to(module_root.parent.parent.resolve())
-            else path.resolve().as_posix(),
-            "sha256": sha256_file(path),
-            "size_bytes": path.stat().st_size,
-        }
-        for path in sorted({item.resolve() for item in artifacts if item.is_file()})
-        if path != manifest_path.resolve()
-    ]
+    output_root = module_root.parent.parent.resolve()
+    records = []
+    for path in sorted({item.resolve() for item in artifacts if item.is_file()}):
+        if path == manifest_path.resolve():
+            continue
+        records.append(
+            {
+                "path": path.relative_to(output_root).as_posix()
+                if path.is_relative_to(output_root)
+                else path.as_posix(),
+                "sha256": sha256_file(path),
+                "size_bytes": path.stat().st_size,
+            }
+        )
     manifest = {
         "schema": "qudipi.stage1.m01-artifact-hashes",
         "schema_version": 1,
@@ -276,9 +327,13 @@ def run_m01(
         works = load_json(output_root / "scientific_work_registry.json").get("records", [])
         versions = load_json(output_root / "document_version_registry.json").get("records", [])
         root_artifacts = _root_artifacts(output_root)
+        self_rss = _rss_value_bytes(resource.RUSAGE_SELF)
+        child_rss = _rss_value_bytes(resource.RUSAGE_CHILDREN)
         metrics = M01ExecutionMetrics(
             wall_seconds=wall_seconds,
-            peak_rss_bytes=_rss_bytes(),
+            peak_rss_bytes=self_rss + child_rss,
+            self_peak_rss_bytes=self_rss,
+            child_peak_rss_bytes=child_rss,
             run_output_bytes=_current_run_output_bytes(root_artifacts, []),
             accepted_source_file_count=accepted_count,
             scientific_work_count=len(works) if isinstance(works, list) else 0,
