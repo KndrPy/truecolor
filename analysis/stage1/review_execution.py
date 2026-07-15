@@ -247,10 +247,28 @@ def progress(stage_root: Path) -> Mapping[str, Any]:
     resolutions = _load_records(stage_root / "m15" / "review_conflict_resolution_registry.json")
     adjudications = _load_records(stage_root / "m16" / "novelty_adjudication_registry.json")
     return {
-        "primary": {"total": len(primary), "submitted": sum(item.get("review_state") == "SUBMITTED" for item in primary)},
-        "independent": {"total": len(independent), "submitted": sum(item.get("review_state") == "SUBMITTED" for item in independent)},
-        "resolutions": {"total": len(resolutions), "resolved": sum(item.get("resolution_state") in {"AGREEMENT", "RESOLVED"} and item.get("resolved_disposition") for item in resolutions)},
-        "adjudications": {"total": len(adjudications), "adjudicated": sum(item.get("review_state") == "ADJUDICATED" for item in adjudications)},
+        "primary": {
+            "total": len(primary),
+            "submitted": sum(item.get("review_state") == "SUBMITTED" for item in primary),
+        },
+        "independent": {
+            "total": len(independent),
+            "submitted": sum(item.get("review_state") == "SUBMITTED" for item in independent),
+        },
+        "resolutions": {
+            "total": len(resolutions),
+            "resolved": sum(
+                bool(
+                    item.get("resolution_state") in {"AGREEMENT", "RESOLVED"}
+                    and item.get("resolved_disposition")
+                )
+                for item in resolutions
+            ),
+        },
+        "adjudications": {
+            "total": len(adjudications),
+            "adjudicated": sum(item.get("review_state") == "ADJUDICATED" for item in adjudications),
+        },
     }
 
 
