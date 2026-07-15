@@ -1,0 +1,54 @@
+{
+  "schema": "truecolor.stage1.module-status",
+  "schema_version": 1,
+  "stage1_state": "OPEN",
+  "authority_rule": "A module is CLOSED only after real-corpus execution, artifact validation, falsification tests, and explicit closure evidence. Code-level self-checks do not close a module.",
+  "modules": {
+    "S1-M01": {
+      "module_state": "CLOSED",
+      "implementation_state": "REAL_CORPUS_VALIDATED",
+      "notes": "Mutable corpus reconciliation and extraction-recovery routing are closure-proven."
+    },
+    "S1-M02": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Source Preflight and Acquisition Integrity",
+      "recovery_engine": "analysis.stage1.m02_adaptive_document_parser"
+    },
+    "S1-M03": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Lossless Spatial Document Reconstruction"
+    },
+    "S1-M04": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Tables, Figures, Equations, Notes and Marginalia"
+    },
+    "S1-M05": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Named Entities, Terminology and Definitions"
+    },
+    "S1-M06": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Author Problem, Failure and Success Models"
+    },
+    "S1-M07": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "DJI Atomic Method Decomposition"
+    },
+    "S1-M08": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Quantitative and Qualitative Claim Reconstruction"
+    },
+    "S1-M09": {
+      "module_state": "OPEN",
+      "implementation_state": "IMPLEMENTED_AWAITING_REAL_CORPUS_VALIDATION",
+      "canonical_role": "Paper-Local Ontology and Taxonomy"
+    }
+  }
+}
