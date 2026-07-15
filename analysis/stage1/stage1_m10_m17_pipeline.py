@@ -15,20 +15,29 @@ from analysis.stage1.m17_stage1_closure import Stage1ClosureAuthority
 
 def run(args: argparse.Namespace) -> None:
     root = Path(args.stage_root)
+    m01_root = Path(args.m01_root)
+    m02_root = Path(args.m02_root)
     CorpusOntologyAlignment().run(root / "m05", root / "m09", root / "m10")
     EvidenceGrounding().run(root / "m03", root / "m08", root / "m11")
     GapAndCompetingExplanationAnalysis().run(root / "m11", root / "m12")
-    PrimaryReviewQueue().run(Path(args.m01_root), root / "m12", root / "m13")
+    PrimaryReviewQueue().run(m01_root, root / "m12", root / "m13")
     IndependentReviewQueue().run(root / "m13", root / "m14")
     ReviewConflictResolution().run(root / "m13", root / "m14", root / "m15")
     NoveltyAdjudicationQueue().run(root / "m08", root / "m10", root / "m12", root / "m16")
-    Stage1ClosureAuthority().run(root, root / "m17")
+    Stage1ClosureAuthority().run(
+        root,
+        root / "m17",
+        {"m01": m01_root, "m02": m02_root},
+    )
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run Stage 1 M10 through M17 sequentially without bypassing module contracts.")
+    parser = argparse.ArgumentParser(
+        description="Run Stage 1 M10 through M17 sequentially without bypassing module contracts."
+    )
     parser.add_argument("--stage-root", required=True)
     parser.add_argument("--m01-root", required=True)
+    parser.add_argument("--m02-root", required=True)
     args = parser.parse_args()
     run(args)
     print("TRUECOLOR_STAGE1_M10_M17=PASS")
