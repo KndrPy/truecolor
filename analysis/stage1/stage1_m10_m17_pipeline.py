@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from analysis.stage1.m01_closure_adapter import materialize_m01_closure
 from analysis.stage1.m10_corpus_ontology_alignment import CorpusOntologyAlignment
 from analysis.stage1.m11_evidence_grounding import EvidenceGrounding
 from analysis.stage1.m12_gap_and_competing_explanations import GapAndCompetingExplanationAnalysis
@@ -17,6 +18,7 @@ def run(args: argparse.Namespace) -> None:
     root = Path(args.stage_root)
     m01_root = Path(args.m01_root)
     m02_root = Path(args.m02_root)
+    materialize_m01_closure(m01_root)
     CorpusOntologyAlignment().run(root / "m05", root / "m09", root / "m10")
     EvidenceGrounding().run(root / "m03", root / "m08", root / "m11")
     GapAndCompetingExplanationAnalysis().run(root / "m11", root / "m12")
