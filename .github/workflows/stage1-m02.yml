@@ -1,0 +1,95 @@
+name: Stage 1 S1-M02 Adaptive Parser
+
+on:
+  push:
+    branches:
+      - analysis/canonical-stage0-refactor
+    paths:
+      - "analysis/stage1/m02_adaptive_document_parser.py"
+      - "tests/stage1/test_s1_m02_adaptive_document_parser.py"
+      - "document_repository/ground_truth/15_hyperspectral_imaging_database_human_facial_skin_2025.pdf"
+      - ".github/workflows/stage1-m02.yml"
+  pull_request:
+    paths:
+      - "analysis/stage1/m02_adaptive_document_parser.py"
+      - "tests/stage1/test_s1_m02_adaptive_document_parser.py"
+      - "document_repository/ground_truth/15_hyperspectral_imaging_database_human_facial_skin_2025.pdf"
+      - ".github/workflows/stage1-m02.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-adaptive-parser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install bounded local parser toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends poppler-utils tesseract-ocr
+          python -m pip install --upgrade pip
+          python -m pip install pytest PyMuPDF
+      - name: Compile and test adaptive parser
+        run: |
+          python -m compileall -q analysis/stage1/m02_adaptive_document_parser.py
+          python -m pytest -q tests/stage1/test_s1_m02_adaptive_document_parser.py
+      - name: Recover real image-only scientific PDF
+        run: |
+          rm -rf artifacts/ci/stage1-m02-real
+          python -m analysis.stage1.m02_adaptive_document_parser \
+            --input document_repository/ground_truth/15_hyperspectral_imaging_database_human_facial_skin_2025.pdf \
+            --output-root artifacts/ci/stage1-m02-real
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('artifacts/ci/stage1-m02-real')
+          manifests = list(root.glob('*/m02_parse_manifest.json'))
+          assert len(manifests) == 1
+          manifest = json.loads(manifests[0].read_text())
+          text = (manifests[0].parent / manifest['output_text']).read_text()
+          assert manifest['page_count'] == 17
+          assert manifest['usable_page_count'] > 0
+          assert manifest['page_coverage'] >= 0.80, manifest['page_coverage']
+          assert manifest['document_state'] in {'RECOVERED_OCR', 'RECOVERED_HYBRID', 'PARTIALLY_RECOVERED'}
+          assert len(text.strip()) > 5000
+          assert any(
+              attempt['strategy'].startswith('OCR_')
+              for page in manifest['pages']
+              for attempt in page['attempts']
+          )
+          assert manifest['scientificity'] == 'UNRESOLVED_PENDING_CONTENT_ANALYSIS'
+          print(json.dumps({
+              'document_state': manifest['document_state'],
+              'page_count': manifest['page_count'],
+              'usable_page_count': manifest['usable_page_count'],
+              'page_coverage': manifest['page_coverage'],
+              'elapsed_seconds': manifest['elapsed_seconds'],
+              'text_characters': len(text),
+          }, sort_keys=True))
+          PY
+      - name: Verify cache hit
+        run: |
+          output=$(python -m analysis.stage1.m02_adaptive_document_parser \
+            --input document_repository/ground_truth/15_hyperspectral_imaging_database_human_facial_skin_2025.pdf \
+            --output-root artifacts/ci/stage1-m02-real)
+          printf '%s\n' "$output"
+          grep -q 'cache_state=HIT' <<< "$output"
+      - name: Upload M02 recovery evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: s1-m02-real-image-pdf-recovery
+          path: artifacts/ci/stage1-m02-real
+          if-no-files-found: error
