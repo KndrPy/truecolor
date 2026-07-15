@@ -7,7 +7,7 @@ on:
     paths:
       - "analysis/stage1/**"
       - "analysis/prior_art/mutable_corpus*.py"
-      - "tests/stage1/test_s1_m01_corpus_reconciliation.py"
+      - "tests/stage1/**"
       - "document_repository/ground_truth/**"
       - ".github/workflows/stage1-m01.yml"
       - ".gitattributes"
@@ -15,7 +15,7 @@ on:
     paths:
       - "analysis/stage1/**"
       - "analysis/prior_art/mutable_corpus*.py"
-      - "tests/stage1/test_s1_m01_corpus_reconciliation.py"
+      - "tests/stage1/**"
       - "document_repository/ground_truth/**"
       - ".github/workflows/stage1-m01.yml"
       - ".gitattributes"
@@ -59,7 +59,7 @@ jobs:
           test "$pdf_count" -gt 0
           test "$pdf_count" -eq "$manifest_count"
           sha256sum --check document_repository/ground_truth/ground_truth_sha256_manifest.txt
-      - name: Compile S1-M01 and mutable-corpus dependencies
+      - name: Compile Stage 1 and mutable-corpus dependencies
         run: |
           python -m compileall -q \
             analysis/stage1 \
@@ -68,6 +68,8 @@ jobs:
             analysis/prior_art/mutable_corpus_enterprise.py \
             analysis/prior_art/mutable_corpus_enterprise_overrides.py \
             analysis/prior_art/mutable_corpus_runtime.py \
+            analysis/prior_art/mutable_corpus_runtime_v2.py \
+            analysis/prior_art/mutable_corpus_recovery_projection.py \
             analysis/prior_art/mutable_corpus_contracts.py \
             analysis/prior_art/mutable_corpus_closure_validator.py \
             analysis/prior_art/mutable_corpus_consumer.py
@@ -80,6 +82,9 @@ jobs:
       - name: Run S1-M01 closure and falsification suite
         run: |
           python -m pytest -q tests/stage1/test_s1_m01_corpus_reconciliation.py
+      - name: Run S1-M02 adaptive routing unit suite
+        run: |
+          python -m pytest -q tests/stage1/test_s1_m02_adaptive_document_parser.py
       - name: Run S1-M01 against committed real corpus
         run: |
           rm -rf artifacts/ci/stage1-m01-real
@@ -104,7 +109,12 @@ jobs:
           physical = json.loads((root / 'physical_file_registry.json').read_text())
           versions = json.loads((root / 'document_version_registry.json').read_text())
           works = json.loads((root / 'scientific_work_registry.json').read_text())
+          recovery = json.loads((root / 'extraction_recovery_queue.json').read_text())
+          projection = json.loads((root / 'stage1_review_queue_projection.json').read_text())
+          non_scientific = json.loads((root / 'non_scientific_document_report.json').read_text())
           accepted = [item for item in preflight['records'] if item['state'] == 'ACCEPTED']
+          target = '15_hyperspectral_imaging_database_human_facial_skin_2025.pdf'
+          target_recovery = [item for item in recovery['records'] if item['relative_path'] == target]
           assert closure['module_state'] == 'CLOSED'
           assert closure['stage1_state'] == 'OPEN'
           assert all(value == 'PASS' for value in closure['semantic_gates'].values())
@@ -112,12 +122,20 @@ jobs:
           assert len(accepted) == len(physical['records'])
           assert len(physical['records']) == len(versions['records'])
           assert works['records']
+          assert len(target_recovery) == 1
+          target_file_id = target_recovery[0]['file_id']
+          assert target_recovery[0]['scientificity'] == 'UNRESOLVED_PENDING_CONTENT_RECOVERY'
+          assert not any(item.get('file_id') == target_file_id for item in non_scientific['records'])
+          target_tasks = [task for task in projection['tasks'] if target_file_id in task['file_ids']]
+          assert len(target_tasks) == 1
+          assert target_tasks[0]['task_state'] == 'AUTOMATED_EXTRACTION_RECOVERY_REQUIRED'
           print(json.dumps({
               'snapshot_id': closure['snapshot_id'],
               'manifest_files': manifest_count,
               'physical_files': len(physical['records']),
               'document_versions': len(versions['records']),
               'scientific_works': len(works['records']),
+              'extraction_recovery_count': recovery['record_count'],
               'wall_seconds': closure['metrics']['wall_seconds'],
               'peak_rss_bytes': closure['metrics']['peak_rss_bytes'],
           }, sort_keys=True))
