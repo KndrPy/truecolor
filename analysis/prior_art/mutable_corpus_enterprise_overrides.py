@@ -144,12 +144,7 @@ def infer_version_relationships(
     records: Mapping[str, PhysicalFileRecord],
     policy: EnterpriseCorpusPolicy,
 ) -> tuple[tuple[VersionRelationship, ...], tuple[IdentityIssue, ...]]:
-    """Resolve document relationships without allowing weak metadata to collapse works.
-
-    Exact identifiers dominate. Conflicting resolved identifiers combined with strong
-    bibliographic or content agreement are surfaced as ambiguity. Preprint/published
-    pairs may form a version family when title and document content independently agree.
-    """
+    """Resolve relationships using independent, conservative evidence channels."""
     relationships: list[VersionRelationship] = []
     issues: list[IdentityIssue] = []
     published_types = {"JOURNAL", "PUBLISHED", "CONFERENCE"}
@@ -204,10 +199,16 @@ def infer_version_relationships(
                 )
                 strong_title = title_score >= policy.title_match_threshold
                 strong_content = content_score >= policy.content_match_threshold
+                related_content = content_score >= policy.related_work_threshold
                 strong_abstract = abstract_score >= policy.abstract_match_threshold
+                exact_abstract = bool(
+                    left.fingerprint.abstract_sha256
+                    and left.fingerprint.abstract_sha256
+                    == right.fingerprint.abstract_sha256
+                )
                 author_support = author_score >= policy.author_match_threshold
                 strong_bibliographic_convergence = strong_title and (
-                    author_support or strong_abstract or strong_content
+                    author_support or strong_abstract or strong_content or exact_abstract
                 )
 
                 if same_doi or same_pmid:
@@ -246,15 +247,19 @@ def infer_version_relationships(
                     evidence.append("conflicting_primary_identifier")
                 else:
                     preprint_published_pair = (
-                        (left.version_type == "PREPRINT" and right.version_type in published_types)
-                        or (right.version_type == "PREPRINT" and left.version_type in published_types)
+                        left.version_type == "PREPRINT" and right.version_type in published_types
+                    ) or (
+                        right.version_type == "PREPRINT" and left.version_type in published_types
                     )
-                    same_version_evidence = (
+                    same_version_evidence = bool(
                         left_file.normalized_text_sha256
-                        and left_file.normalized_text_sha256 == right_file.normalized_text_sha256
+                        and left_file.normalized_text_sha256
+                        == right_file.normalized_text_sha256
                     )
-                    version_family_evidence = strong_title and strong_content and (
-                        author_support or strong_abstract
+                    version_family_evidence = strong_title and (
+                        exact_abstract
+                        or (strong_abstract and related_content)
+                        or (strong_content and author_support)
                     )
 
                     if same_version_evidence:
@@ -264,15 +269,15 @@ def infer_version_relationships(
                     elif preprint_published_pair and version_family_evidence:
                         relation = "SAME_WORK_DIFFERENT_VERSION"
                         confidence = "HIGH"
-                        evidence.extend(
-                            (
-                                "preprint_published_pair",
-                                "high_title_similarity",
-                                "content_similarity",
-                            )
-                        )
-                        if strong_abstract:
+                        evidence.extend(("preprint_published_pair", "high_title_similarity"))
+                        if exact_abstract:
+                            evidence.append("exact_abstract_fingerprint")
+                        elif strong_abstract:
                             evidence.append("abstract_similarity")
+                        if strong_content:
+                            evidence.append("content_similarity")
+                        elif related_content:
+                            evidence.append("related_content_similarity")
                         if author_support:
                             evidence.append("author_overlap")
                     elif version_family_evidence:
@@ -282,7 +287,7 @@ def infer_version_relationships(
                             else "SAME_WORK_SAME_VERSION"
                         )
                         confidence = "MODERATE"
-                        evidence.extend(("bibliographic_similarity", "content_similarity"))
+                        evidence.extend(("bibliographic_similarity", "independent_version_evidence"))
                     elif score >= policy.related_work_threshold:
                         relation = "RELATED_WORK"
                         confidence = "MODERATE"
