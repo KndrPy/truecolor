@@ -24,7 +24,21 @@ class Stage1EvidenceError(RuntimeError):
 
 
 def canonical_json(value: Any) -> str:
-    return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
+    payload = json.dumps(
+        value,
+        sort_keys=True,
+        separators=(",", ":"),
+        ensure_ascii=False,
+    )
+    # JSON permits U+0085/U+2028/U+2029 inside strings, but line-oriented
+    # readers commonly treat them as record separators. Escape them so one
+    # physical LF always equals one JSONL record boundary.
+    return (
+        payload
+        .replace("\u0085", "\\u0085")
+        .replace("\u2028", "\\u2028")
+        .replace("\u2029", "\\u2029")
+    )
 
 
 def sha256_bytes(value: bytes) -> str:
@@ -82,13 +96,19 @@ def load_json(path: Path) -> Mapping[str, Any]:
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
-    for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        if not line.strip():
-            continue
-        value = json.loads(line)
-        if not isinstance(value, Mapping):
-            raise Stage1EvidenceError(f"expected object at {path}:{line_no}")
-        records.append(dict(value))
+    with path.open("r", encoding="utf-8", newline="") as handle:
+        for line_no, line in enumerate(handle, 1):
+            if not line.strip():
+                continue
+            try:
+                value = json.loads(line)
+            except json.JSONDecodeError as error:
+                raise Stage1EvidenceError(
+                    f"invalid JSONL record at {path}:{line_no}: {error.msg}"
+                ) from error
+            if not isinstance(value, Mapping):
+                raise Stage1EvidenceError(f"expected object at {path}:{line_no}")
+            records.append(dict(value))
     return records
 
 
