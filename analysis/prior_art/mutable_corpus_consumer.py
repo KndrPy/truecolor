@@ -7,10 +7,8 @@ from pathlib import Path
 from typing import Any, Iterable, Mapping
 
 from analysis.prior_art.mutable_corpus import ExtractionBackend, PopplerExtractionBackend
-from analysis.prior_art.mutable_corpus_contracts import (
-    validate_closure,
-    write_contract_projections,
-)
+from analysis.prior_art.mutable_corpus_closure_validator import validate_consumer_closure
+from analysis.prior_art.mutable_corpus_contracts import write_contract_projections
 from analysis.prior_art.mutable_corpus_enterprise import (
     EnterpriseCorpusError,
     EnterpriseCorpusPolicy,
@@ -78,7 +76,7 @@ def run_consumer_reconciliation(
         )
         artifact_hash_manifest(output_root)
         validate_projection_integrity(output_root)
-        semantic_gates = validate_closure(output_root)
+        semantic_gates = validate_consumer_closure(output_root)
         closure = {
             "schema": "qudipi.mutable-corpus.closure-evidence",
             "schema_version": 2,
