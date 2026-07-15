@@ -120,5 +120,21 @@ artifacts/**/tmp/
 artifacts/**/cache/
 /artifacts/stage_00/*.tmp.json
 
-# Researcher-controlled mutable intake; never committed
-/preprocessed_intake/
+# User-driven document ingress is a transient landing zone. Contents are never
+# canonical and are not committed; only its contract and placeholder are tracked.
+/document_ingress/user_upload_inbox/**
+!/document_ingress/user_upload_inbox/README.md
+!/document_ingress/user_upload_inbox/.gitkeep
+
+# Temporary prior-art corpus publication for real-file S1-M01 validation.
+# This exception is intentionally narrow: only PDFs in the established corpus
+# directory are eligible. Remove after the validated ground-truth migration.
+/preprocessed_intake/**
+!/preprocessed_intake/corpus_prior_art_paper-pdf/
+!/preprocessed_intake/corpus_prior_art_paper-pdf/**/*.pdf
+
+# Internal system ground-truth document repository. This is the sole canonical
+# parsing source after promotion from ingress. Generated derivatives remain elsewhere.
+!/document_repository/
+!/document_repository/ground_truth/
+!/document_repository/ground_truth/**
