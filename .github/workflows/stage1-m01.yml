@@ -8,13 +8,17 @@ on:
       - "analysis/stage1/**"
       - "analysis/prior_art/mutable_corpus*.py"
       - "tests/stage1/test_s1_m01_corpus_reconciliation.py"
+      - "document_repository/ground_truth/**"
       - ".github/workflows/stage1-m01.yml"
+      - ".gitattributes"
   pull_request:
     paths:
       - "analysis/stage1/**"
       - "analysis/prior_art/mutable_corpus*.py"
       - "tests/stage1/test_s1_m01_corpus_reconciliation.py"
+      - "document_repository/ground_truth/**"
       - ".github/workflows/stage1-m01.yml"
+      - ".gitattributes"
   workflow_dispatch:
 
 permissions:
@@ -23,7 +27,7 @@ permissions:
 jobs:
   verify-s1-m01:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       PYTHONHASHSEED: "0"
       OMP_NUM_THREADS: "1"
@@ -32,14 +36,29 @@ jobs:
       NUMEXPR_NUM_THREADS: "1"
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
-      - name: Install test runtime
+      - name: Install runtime dependencies
         run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends poppler-utils
           python -m pip install --upgrade pip
           python -m pip install pytest
+      - name: Verify committed ground-truth corpus
+        run: |
+          test -d document_repository/ground_truth
+          test -f document_repository/ground_truth/ground_truth_sha256_manifest.txt
+          pdf_count=$(find document_repository/ground_truth -type f -iname '*.pdf' -printf '%p\n' | wc -l)
+          manifest_count=$(wc -l < document_repository/ground_truth/ground_truth_sha256_manifest.txt)
+          printf 'pdf_count=%s\n' "$pdf_count"
+          printf 'manifest_count=%s\n' "$manifest_count"
+          test "$pdf_count" -gt 0
+          test "$pdf_count" -eq "$manifest_count"
+          sha256sum --check document_repository/ground_truth/ground_truth_sha256_manifest.txt
       - name: Compile S1-M01 and mutable-corpus dependencies
         run: |
           python -m compileall -q \
@@ -52,12 +71,54 @@ jobs:
             analysis/prior_art/mutable_corpus_contracts.py \
             analysis/prior_art/mutable_corpus_closure_validator.py \
             analysis/prior_art/mutable_corpus_consumer.py
-      - name: Run existing mutable-corpus regression suite
+      - name: Run mutable-corpus regression suite
         run: |
           python -m pytest -q \
             tests/qudipi/test_mutable_corpus_service.py \
             tests/qudipi/test_mutable_corpus_enterprise.py \
             tests/qudipi/test_mutable_corpus_consumer.py
-      - name: Run S1-M01 complete verification suite
+      - name: Run S1-M01 closure and falsification suite
         run: |
           python -m pytest -q tests/stage1/test_s1_m01_corpus_reconciliation.py
+      - name: Run S1-M01 against committed real corpus
+        run: |
+          rm -rf artifacts/ci/stage1-m01-real
+          python -m analysis.stage1.m01_corpus_reconciliation \
+            --corpus-root document_repository/ground_truth \
+            --output-root artifacts/ci/stage1-m01-real
+          test -f artifacts/ci/stage1-m01-real/stage1/m01/S1_M01_CLOSED.json
+          test ! -f artifacts/ci/stage1-m01-real/STAGE_01_CLOSED.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('artifacts/ci/stage1-m01-real')
+          closure = json.loads((root / 'stage1/m01/S1_M01_CLOSED.json').read_text())
+          preflight = json.loads((root / 'corpus_preflight_report.json').read_text())
+          physical = json.loads((root / 'physical_file_registry.json').read_text())
+          versions = json.loads((root / 'document_version_registry.json').read_text())
+          works = json.loads((root / 'scientific_work_registry.json').read_text())
+          accepted = [item for item in preflight['records'] if item['state'] == 'ACCEPTED']
+          assert closure['module_state'] == 'CLOSED'
+          assert closure['stage1_state'] == 'OPEN'
+          assert all(value == 'PASS' for value in closure['semantic_gates'].values())
+          assert len(accepted) == len(physical['records'])
+          assert len(physical['records']) == len(versions['records'])
+          assert len(physical['records']) == 36, len(physical['records'])
+          assert works['records']
+          print(json.dumps({
+              'snapshot_id': closure['snapshot_id'],
+              'physical_files': len(physical['records']),
+              'document_versions': len(versions['records']),
+              'scientific_works': len(works['records']),
+              'wall_seconds': closure['metrics']['wall_seconds'],
+              'peak_rss_bytes': closure['metrics']['peak_rss_bytes'],
+          }, sort_keys=True))
+          PY
+      - name: Upload S1-M01 closure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: s1-m01-real-corpus-evidence
+          path: artifacts/ci/stage1-m01-real
+          if-no-files-found: error
