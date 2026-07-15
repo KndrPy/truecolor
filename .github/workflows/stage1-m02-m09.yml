@@ -7,14 +7,18 @@ on:
     paths:
       - "analysis/stage1/canonical_stage1_contracts.py"
       - "analysis/stage1/m02_source_preflight.py"
+      - "analysis/stage1/m03_spatial_ocr.py"
       - "analysis/stage1/m03_m09_evidence_pipeline.py"
+      - "tests/stage1/test_s1_m03_spatial_ocr.py"
       - "tests/stage1/test_s1_m02_m09_canonical_pipeline.py"
       - ".github/workflows/stage1-m02-m09.yml"
   pull_request:
     paths:
       - "analysis/stage1/canonical_stage1_contracts.py"
       - "analysis/stage1/m02_source_preflight.py"
+      - "analysis/stage1/m03_spatial_ocr.py"
       - "analysis/stage1/m03_m09_evidence_pipeline.py"
+      - "tests/stage1/test_s1_m03_spatial_ocr.py"
       - "tests/stage1/test_s1_m02_m09_canonical_pipeline.py"
       - ".github/workflows/stage1-m02-m09.yml"
   workflow_dispatch:
@@ -40,6 +44,8 @@ jobs:
           cache: pip
       - name: Install bounded local runtime
         run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends poppler-utils tesseract-ocr
           python -m pip install --upgrade pip
           python -m pip install pytest pymupdf pyarrow
       - name: Compile canonical Stage 1 modules
@@ -47,8 +53,10 @@ jobs:
           python -m compileall -q \
             analysis/stage1/canonical_stage1_contracts.py \
             analysis/stage1/m02_source_preflight.py \
+            analysis/stage1/m03_spatial_ocr.py \
             analysis/stage1/m03_m09_evidence_pipeline.py
       - name: Run closure and falsification tests
         run: |
           python -m pytest -q \
+            tests/stage1/test_s1_m03_spatial_ocr.py \
             tests/stage1/test_s1_m02_m09_canonical_pipeline.py
