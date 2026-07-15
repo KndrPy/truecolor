@@ -5,10 +5,12 @@ import json
 from pathlib import Path
 from typing import Any, Mapping
 
+from analysis.stage1.m13_primary_review import _claims_by_work
 from analysis.stage1.stage1_runtime_contracts import (
     Stage1ContractError,
     atomic_json,
     load_json,
+    load_jsonl,
     sha256_file,
     stable_id,
 )
@@ -54,41 +56,36 @@ def build_snapshot(stage_root: Path, m01_root: Path) -> dict[str, Any]:
         path = _artifact_path(stage_root, m01_root, module, filename)
         if not path.is_file():
             raise Stage1ContractError(f"review evidence artifact missing: {path}")
-        artifacts.append(
-            {
-                "module": module,
-                "path": path.as_posix(),
-                "sha256": sha256_file(path),
-            }
-        )
-    identity = stable_id("REVIEW-SNAPSHOT", {item["path"]: item["sha256"] for item in artifacts})
+        artifacts.append({"module": module, "path": path.as_posix(), "sha256": sha256_file(path)})
     return {
         "schema_version": 1,
-        "snapshot_id": identity,
+        "snapshot_id": stable_id("REVIEW-SNAPSHOT", {item["path"]: item["sha256"] for item in artifacts}),
         "artifacts": artifacts,
     }
 
 
-def _work_claim_map(stage_root: Path) -> dict[str, list[str]]:
-    primary = _records(stage_root / "m13" / "primary_review_registry.json")
-    mapping: dict[str, list[str]] = {}
-    for item in primary:
-        work_id = str(item.get("work_id", ""))
-        if not work_id:
-            raise Stage1ContractError("primary review task missing work_id")
-        claims = item.get("claim_ids", [])
-        if not isinstance(claims, list):
-            raise Stage1ContractError(f"primary review claim_ids must be list: {work_id}")
-        mapping[work_id] = [str(value) for value in claims if str(value)]
-    return mapping
+def _work_identity_records(m01_root: Path) -> list[dict[str, Any]]:
+    return _records(m01_root / "work_identity_state_registry.json")
 
 
 def _work_identity_map(m01_root: Path) -> dict[str, dict[str, Any]]:
     return {
         str(item.get("work_id")): item
-        for item in _records(m01_root / "work_identity_state_registry.json")
+        for item in _work_identity_records(m01_root)
         if item.get("work_id")
     }
+
+
+def _work_claim_map(stage_root: Path, m01_root: Path) -> dict[str, list[str]]:
+    works = _work_identity_records(m01_root)
+    claims = load_jsonl(stage_root / "m12" / "grounded_claim_assessment_registry.jsonl")
+    mapping = _claims_by_work(works, claims)
+    linked = sum(len(values) for values in mapping.values())
+    if linked != len(claims):
+        raise Stage1ContractError(
+            f"review packet claim-link coverage mismatch: linked={linked}, claims={len(claims)}"
+        )
+    return mapping
 
 
 def build_packets(
@@ -117,7 +114,7 @@ def build_packets(
         task_field = "independent_review_task_id"
 
     tasks = _records(registry_path)
-    claim_map = _work_claim_map(stage_root)
+    claim_map = _work_claim_map(stage_root, m01_root)
     identities = _work_identity_map(m01_root)
     index: list[dict[str, Any]] = []
 
@@ -129,8 +126,11 @@ def build_packets(
             raise Stage1ContractError(f"review task missing identity in {registry_path}")
         if task.get("review_state") not in {"ASSIGNED", "PENDING"}:
             continue
+        claim_ids = claim_map.get(work_id)
+        if claim_ids is None:
+            raise Stage1ContractError(f"review task work is absent from canonical claim map: {work_id}")
         packet = {
-            "schema_version": 1,
+            "schema_version": 2,
             "packet_id": stable_id("REVIEW-PACKET", {"plane": plane, "task": task_id, "snapshot": snapshot_sha256}),
             "review_plane": plane,
             "task_id": task_id,
@@ -138,13 +138,13 @@ def build_packets(
             "reviewer_id": reviewer_id or None,
             "review_state": task.get("review_state"),
             "identity_state": identities.get(work_id, {}).get("identity_state"),
-            "claim_ids": claim_map.get(work_id, []),
+            "claim_ids": claim_ids,
             "review_requirements": list(task.get("review_requirements") or REVIEW_REQUIREMENTS),
             "source_snapshot_path": snapshot_path.as_posix(),
             "source_snapshot_sha256": snapshot_sha256,
             "evidence_artifacts": snapshot["artifacts"],
             "blindness_contract": {
-                "primary_disposition_visible": plane == "primary",
+                "prior_primary_disposition_visible": False,
                 "other_reviewer_identity_visible": False,
                 "other_review_rationale_visible": False,
                 "other_review_evidence_visible": False,
@@ -156,28 +156,27 @@ def build_packets(
                 "source_snapshot_sha256_required": snapshot_sha256,
             },
         }
-        # Never carry a prior disposition, rationale, evidence list, or submission event into a packet.
         forbidden = {"disposition", "rationale", "evidence_ids", "submission_event_id", "submitted_at"}
         if forbidden.intersection(packet):
             raise Stage1ContractError("review packet leaked prior review outcome fields")
         packet_path = output_root / f"{task_id}.json"
         atomic_json(packet_path, packet)
-        index.append(
-            {
-                "task_id": task_id,
-                "work_id": work_id,
-                "packet_path": packet_path.as_posix(),
-                "packet_sha256": sha256_file(packet_path),
-                "source_snapshot_sha256": snapshot_sha256,
-            }
-        )
+        index.append({
+            "task_id": task_id,
+            "work_id": work_id,
+            "packet_path": packet_path.as_posix(),
+            "packet_sha256": sha256_file(packet_path),
+            "source_snapshot_sha256": snapshot_sha256,
+            "claim_count": len(claim_ids),
+        })
 
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "plane": plane,
         "source_snapshot_path": snapshot_path.as_posix(),
         "source_snapshot_sha256": snapshot_sha256,
         "packet_count": len(index),
+        "claim_count": sum(item["claim_count"] for item in index),
         "records": index,
     }
     atomic_json(output_root / "packet_index.json", manifest)
@@ -198,20 +197,18 @@ def build_submission_template(packet_index: Path, output: Path, overwrite: bool 
     for item in records:
         packet_path = Path(str(item.get("packet_path", "")))
         packet = load_json(packet_path)
-        template_records.append(
-            {
-                "task_id": packet["task_id"],
-                "reviewer_id": packet.get("reviewer_id"),
-                "disposition": None,
-                "evidence_ids": [],
-                "rationale": None,
-                "source_snapshot": packet["source_snapshot_sha256"],
-                "packet_id": packet["packet_id"],
-                "packet_sha256": sha256_file(packet_path),
-            }
-        )
+        template_records.append({
+            "task_id": packet["task_id"],
+            "reviewer_id": packet.get("reviewer_id"),
+            "disposition": None,
+            "evidence_ids": [],
+            "rationale": None,
+            "source_snapshot": packet["source_snapshot_sha256"],
+            "packet_id": packet["packet_id"],
+            "packet_sha256": sha256_file(packet_path),
+        })
     result = {
-        "schema_version": 1,
+        "schema_version": 2,
         "plane": plane,
         "source_snapshot_sha256": payload["source_snapshot_sha256"],
         "records": template_records,
@@ -247,8 +244,8 @@ def validate_submission_manifest(manifest: Path, packet_index: Path) -> dict[str
         if not item.get("disposition") or not item.get("evidence_ids") or not str(item.get("rationale") or "").strip():
             incomplete.append(task_id)
     missing = sorted(set(expected) - seen)
-    result = {
-        "schema_version": 1,
+    return {
+        "schema_version": 2,
         "plane": index.get("plane"),
         "expected": len(expected),
         "present": len(seen),
@@ -256,29 +253,24 @@ def validate_submission_manifest(manifest: Path, packet_index: Path) -> dict[str
         "incomplete_task_ids": incomplete,
         "ready_for_batch_submit": not missing and not incomplete,
     }
-    return result
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build blind, immutable Stage 1 scientific review packets")
     sub = parser.add_subparsers(dest="command", required=True)
-
     build = sub.add_parser("build-packets")
     build.add_argument("--stage-root", required=True)
     build.add_argument("--m01-root", required=True)
     build.add_argument("--plane", choices=("primary", "independent"), required=True)
     build.add_argument("--output-root", required=True)
     build.add_argument("--overwrite", action="store_true")
-
     template = sub.add_parser("build-submission-template")
     template.add_argument("--packet-index", required=True)
     template.add_argument("--output", required=True)
     template.add_argument("--overwrite", action="store_true")
-
     validate = sub.add_parser("validate-submission")
     validate.add_argument("--packet-index", required=True)
     validate.add_argument("--manifest", required=True)
-
     args = parser.parse_args()
     if args.command == "build-packets":
         result = build_packets(Path(args.stage_root), Path(args.m01_root), args.plane, Path(args.output_root), args.overwrite)
