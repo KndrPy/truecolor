@@ -1,8 +1,22 @@
 from __future__ import annotations
 
+from datetime import datetime, timezone
+from pathlib import Path
 from typing import Mapping
 
-from analysis.prior_art.mutable_corpus import CorpusSnapshot, PhysicalFileRecord
+from analysis.prior_art.mutable_corpus import (
+    ARXIV_PATTERN,
+    DOI_PATTERN,
+    PMID_PATTERN,
+    YEAR_PATTERN,
+    CorpusSnapshot,
+    DocumentIdentity,
+    ExtractedDocument,
+    clean_line,
+    normalized_doi,
+    probable_authors,
+    probable_title,
+)
 from analysis.prior_art.mutable_corpus_enterprise import (
     DocumentVersionRecord,
     EnterpriseCorpusPolicy,
@@ -11,6 +25,67 @@ from analysis.prior_art.mutable_corpus_enterprise import (
     fingerprint_document,
     stable_id,
 )
+
+
+def infer_primary_identity(path: Path, extracted: ExtractedDocument) -> DocumentIdentity:
+    text = extracted.text
+    lowered = text.lower()
+    reference_positions = [
+        position
+        for marker in ("\nreferences", "\nbibliography", "\nworks cited")
+        if (position := lowered.find(marker)) >= 0
+    ]
+    bibliographic_region = text[: min(reference_positions) if reference_positions else 20_000]
+    header_region = bibliographic_region[:8_000]
+    searchable = "\n".join(
+        (
+            extracted.metadata.get("Title", ""),
+            extracted.metadata.get("Subject", ""),
+            header_region,
+        )
+    )
+    dois = tuple(
+        dict.fromkeys(
+            normalized_doi(match) for match in DOI_PATTERN.findall(searchable)
+        )
+    )
+    arxiv_ids = tuple(dict.fromkeys(ARXIV_PATTERN.findall(searchable)))
+    pmids = tuple(dict.fromkeys(PMID_PATTERN.findall(searchable)))
+    title, title_evidence = probable_title(text, extracted.metadata, path.name)
+    authors = probable_authors(text, title)
+    year_values = [int(value) for value in YEAR_PATTERN.findall(searchable)]
+    current_year = datetime.now(timezone.utc).year
+    plausible_years = [value for value in year_values if 1900 <= value <= current_year + 1]
+    year = plausible_years[0] if plausible_years else None
+    venue = clean_line(extracted.metadata.get("Subject", ""))
+    evidence = list(title_evidence)
+    if dois:
+        evidence.append("primary_doi_from_bibliographic_region")
+    if arxiv_ids:
+        evidence.append("primary_arxiv_from_bibliographic_region")
+    if pmids:
+        evidence.append("primary_pmid_from_bibliographic_region")
+    if authors:
+        evidence.append("authors_inferred")
+    if extracted.extraction_errors:
+        evidence.append("extraction_errors_present")
+    if dois or pmids:
+        confidence = "HIGH"
+    elif arxiv_ids or (title and authors):
+        confidence = "MODERATE"
+    else:
+        confidence = "LOW"
+    return DocumentIdentity(
+        title=title,
+        authors=authors,
+        year=year,
+        venue=venue,
+        dois=dois[:1],
+        arxiv_ids=arxiv_ids[:1],
+        pmids=pmids[:1],
+        confidence=confidence,
+        evidence=tuple(evidence),
+    )
 
 
 def build_document_versions(
