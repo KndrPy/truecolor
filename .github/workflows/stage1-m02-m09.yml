@@ -9,6 +9,7 @@ on:
       - "analysis/stage1/m02_source_preflight.py"
       - "analysis/stage1/m03_spatial_ocr.py"
       - "analysis/stage1/m03_hybrid_reconstruction.py"
+      - "analysis/stage1/m03_section_path_projection.py"
       - "analysis/stage1/m03_m09_evidence_pipeline.py"
       - "analysis/stage1/m03_m09_evidence_pipeline_v2.py"
       - "tests/stage1/test_s1_m03_spatial_ocr.py"
@@ -21,6 +22,7 @@ on:
       - "analysis/stage1/m02_source_preflight.py"
       - "analysis/stage1/m03_spatial_ocr.py"
       - "analysis/stage1/m03_hybrid_reconstruction.py"
+      - "analysis/stage1/m03_section_path_projection.py"
       - "analysis/stage1/m03_m09_evidence_pipeline.py"
       - "analysis/stage1/m03_m09_evidence_pipeline_v2.py"
       - "tests/stage1/test_s1_m03_spatial_ocr.py"
@@ -61,6 +63,7 @@ jobs:
             analysis/stage1/m02_source_preflight.py \
             analysis/stage1/m03_spatial_ocr.py \
             analysis/stage1/m03_hybrid_reconstruction.py \
+            analysis/stage1/m03_section_path_projection.py \
             analysis/stage1/m03_m09_evidence_pipeline.py \
             analysis/stage1/m03_m09_evidence_pipeline_v2.py
       - name: Run closure and falsification tests
