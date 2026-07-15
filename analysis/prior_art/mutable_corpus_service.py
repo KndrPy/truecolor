@@ -21,7 +21,6 @@ from analysis.prior_art.mutable_corpus import (
     discover_files,
     extract_referenced_dois,
     infer_identity,
-    invalidated_artifacts,
     load_snapshot,
     normalized_text,
     relationship_between,
@@ -89,7 +88,46 @@ def validate_snapshot(snapshot: CorpusSnapshot) -> None:
             raise CorpusReconciliationError(f"work references an unknown physical file: {work.work_id}")
 
 
-def _missing_references(records: Sequence[PhysicalFileRecord], works: Sequence[Any]) -> tuple[Mapping[str, Any], ...]:
+def conservative_relationship(
+    left: PhysicalFileRecord,
+    right: PhysicalFileRecord,
+    policy: CorpusPolicy,
+) -> Relationship | None:
+    relationship = relationship_between(left, right, policy)
+    if relationship is None:
+        return None
+
+    left_dois = set(left.identity.dois)
+    right_dois = set(right.identity.dois)
+    distinct_resolved_dois = bool(left_dois and right_dois and left_dois.isdisjoint(right_dois))
+    left_pmids = set(left.identity.pmids)
+    right_pmids = set(right.identity.pmids)
+    distinct_resolved_pmids = bool(left_pmids and right_pmids and left_pmids.isdisjoint(right_pmids))
+
+    if (
+        relationship.relationship_type.startswith("SAME_WORK")
+        and (distinct_resolved_dois or distinct_resolved_pmids)
+    ):
+        evidence = list(relationship.evidence)
+        if distinct_resolved_dois:
+            evidence.append("distinct_resolved_dois")
+        if distinct_resolved_pmids:
+            evidence.append("distinct_resolved_pmids")
+        return Relationship(
+            relationship_type="RELATED_WORK",
+            left_file_id=relationship.left_file_id,
+            right_file_id=relationship.right_file_id,
+            confidence="HIGH",
+            score=relationship.score,
+            evidence=tuple(evidence),
+        )
+    return relationship
+
+
+def _missing_references(
+    records: Sequence[PhysicalFileRecord],
+    works: Sequence[Any],
+) -> tuple[Mapping[str, Any], ...]:
     corpus_dois = {doi for work in works for doi in work.canonical_dois}
     citations: dict[str, set[str]] = {}
     for record in records:
@@ -133,7 +171,9 @@ def reconcile_corpus(
                 relative_path=relative_path,
                 size_bytes=path.stat().st_size,
                 binary_sha256=binary_hash,
-                normalized_text_sha256=sha256_bytes(normalized.encode("utf-8")) if normalized else "",
+                normalized_text_sha256=(
+                    sha256_bytes(normalized.encode("utf-8")) if normalized else ""
+                ),
                 simhash64=simhash64(normalized),
                 page_count=extracted.page_count,
                 extraction_backend=extracted.extraction_backend,
@@ -144,14 +184,18 @@ def reconcile_corpus(
                 ),
                 extraction_errors=extracted.extraction_errors,
                 identity=identity,
-                cited_dois=extract_referenced_dois(extracted.text, identity.dois, policy),
+                cited_dois=extract_referenced_dois(
+                    extracted.text,
+                    identity.dois,
+                    policy,
+                ),
             )
         )
 
     relationships: list[Relationship] = []
     for index, left in enumerate(records):
         for right in records[index + 1 :]:
-            relationship = relationship_between(left, right, policy)
+            relationship = conservative_relationship(left, right, policy)
             if relationship is not None:
                 relationships.append(relationship)
     relationships.sort(
@@ -161,6 +205,7 @@ def reconcile_corpus(
             item.right_file_id,
         )
     )
+
     works = build_works(records, relationships)
     missing = _missing_references(records, works)
     summary = {
@@ -232,9 +277,13 @@ def compare_snapshot_states(
     removed_by_hash: dict[str, list[str]] = {}
     added_by_hash: dict[str, list[str]] = {}
     for file_id in removed_ids:
-        removed_by_hash.setdefault(previous_files[file_id]["binary_sha256"], []).append(file_id)
+        removed_by_hash.setdefault(
+            previous_files[file_id]["binary_sha256"], []
+        ).append(file_id)
     for file_id in added_ids:
-        added_by_hash.setdefault(current_files[file_id].binary_sha256, []).append(file_id)
+        added_by_hash.setdefault(
+            current_files[file_id].binary_sha256, []
+        ).append(file_id)
 
     events: list[Mapping[str, Any]] = []
     consumed_removed: set[str] = set()
@@ -309,6 +358,40 @@ def compare_snapshot_states(
     )
 
 
+def changed_source_ids(events: Sequence[Mapping[str, Any]]) -> set[str]:
+    changed: set[str] = set()
+    for event in events:
+        for field in ("file_id", "previous_file_id"):
+            value = str(event.get(field, "")).strip()
+            if value:
+                changed.add(value)
+    return changed
+
+
+def invalidate_dependencies(
+    events: Sequence[Mapping[str, Any]],
+    dependency_manifest: Mapping[str, Any] | None,
+) -> tuple[Mapping[str, Any], ...]:
+    if not dependency_manifest or not events:
+        return ()
+    changed = changed_source_ids(events)
+    records: list[Mapping[str, Any]] = []
+    for artifact in dependency_manifest.get("artifacts", []):
+        dependencies = {
+            str(value) for value in artifact.get("source_file_ids", [])
+        }
+        overlap = sorted(changed & dependencies)
+        if overlap:
+            records.append(
+                {
+                    "artifact_path": artifact.get("artifact_path", ""),
+                    "state": "STALE",
+                    "changed_source_file_ids": overlap,
+                }
+            )
+    return tuple(sorted(records, key=lambda item: str(item["artifact_path"])))
+
+
 def write_projection_set(
     output_root: Path,
     snapshot: CorpusSnapshot,
@@ -361,7 +444,7 @@ def run_reconciliation(
         observed_at=observed_at,
     )
     events = compare_snapshot_states(previous_snapshot, snapshot)
-    stale = invalidated_artifacts(events, dependency_manifest)
+    stale = invalidate_dependencies(events, dependency_manifest)
     atomic_write_json(
         output_root / "corpus_change_set.json",
         {
@@ -394,8 +477,16 @@ def main() -> None:
     args = parser.parse_args()
 
     policy_mapping = load_snapshot(Path(args.policy)) if args.policy else None
-    previous = load_snapshot(Path(args.previous_snapshot)) if args.previous_snapshot else None
-    dependencies = load_snapshot(Path(args.dependency_manifest)) if args.dependency_manifest else None
+    previous = (
+        load_snapshot(Path(args.previous_snapshot))
+        if args.previous_snapshot
+        else None
+    )
+    dependencies = (
+        load_snapshot(Path(args.dependency_manifest))
+        if args.dependency_manifest
+        else None
+    )
     policy = CorpusPolicy.from_mapping(policy_mapping)
     snapshot = run_reconciliation(
         Path(args.corpus_root),
@@ -406,7 +497,9 @@ def main() -> None:
         args.observed_at,
     )
     change_set = load_snapshot(Path(args.output_root) / "corpus_change_set.json")
-    stale = load_snapshot(Path(args.output_root) / "stale_downstream_artifact_report.json")
+    stale = load_snapshot(
+        Path(args.output_root) / "stale_downstream_artifact_report.json"
+    )
     print("QUDIPI_MUTABLE_CORPUS_RECONCILIATION=PASS")
     print(f"snapshot_id={snapshot.snapshot_id}")
     for key, value in snapshot.summary.items():
